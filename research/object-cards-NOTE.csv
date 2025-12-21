@@ -1,0 +1,15 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+id,Long,cm_note_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+note,String,cm_note,content_parseable,true,yes,yes,yes,Content,string,fa-sticky-note,body,1,Note content - truncate for cards
+type,String,cm_note_type,note_type_s,false,optional,yes,yes,Type,string,fa-tag,meta,2,Note type (GENERAL INTERNAL etc)
+tag,String,cm_tag,,false,no,optional,yes,Tag,string,fa-bookmark,meta,3,Optional tag
+author,String,cm_author,author_lcs,false,optional,yes,yes,Author,user,fa-user,meta,2,Note author
+parentId,Long,cm_parent_id,parent_object_id_i,true,no,no,optional,Parent ID,number,fa-link,hidden,5,Parent object ID
+parentType,String,cm_parent_type,parent_object_type_s,true,no,optional,yes,Parent Type,string,fa-link,body,3,Parent object type
+parentTitle,String,cm_parent_title,parent_ref_s,false,no,optional,yes,Parent,string,fa-folder,body,3,Parent object name
+legacySystemFlag,Boolean,cm_legacy_system_flag,,false,no,no,optional,Legacy,boolean,fa-history,hidden,5,Legacy indicator
+created,Date,cm_created,create_date_tdt,true,optional,yes,yes,Created,datetime,fa-plus-circle,footer,2,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,3,Creator
+modified,Date,cm_modified,modified_date_tdt,true,no,optional,yes,Modified,datetime,fa-pencil,footer,3,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,no,optional,Modified By,user,fa-user-o,footer,4,Last modifier
+objectType,String,,,true,yes,yes,yes,Type,string,fa-sticky-note,header,1,Always NOTE for this type

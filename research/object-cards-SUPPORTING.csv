@@ -1,0 +1,92 @@
+ObjectType,Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+BUSINESS_PROCESS,id,Long,cm_business_process_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+BUSINESS_PROCESS,status,String,cm_status,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Process status
+BUSINESS_PROCESS,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+BUSINESS_PROCESS,creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+BUSINESS_PROCESS,objectType,String,,,true,yes,yes,yes,Type,string,fa-cogs,header,1,Always BUSINESS_PROCESS
+OBJECT_ASSOCIATION,associationId,Long,cm_association_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+OBJECT_ASSOCIATION,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Association status
+OBJECT_ASSOCIATION,parentType,String,cm_parent_type,,true,no,optional,yes,Source Type,string,fa-link,body,3,Source object type
+OBJECT_ASSOCIATION,parentId,Long,cm_parent_id,,true,no,no,optional,Source ID,number,fa-link,hidden,5,Source object ID
+OBJECT_ASSOCIATION,parentName,String,cm_parent_name,,false,yes,yes,yes,Source,string,fa-folder,title,1,Source object name
+OBJECT_ASSOCIATION,targetType,String,cm_target_type,,true,no,optional,yes,Target Type,string,fa-link,body,3,Target object type
+OBJECT_ASSOCIATION,targetId,Long,cm_target_id,,true,no,no,optional,Target ID,number,fa-link,hidden,5,Target object ID
+OBJECT_ASSOCIATION,targetName,String,cm_target_name,,false,yes,yes,yes,Target,string,fa-folder,title,1,Target object name
+OBJECT_ASSOCIATION,associationType,String,cm_association_type,,false,optional,yes,yes,Relationship,string,fa-random,meta,2,REFERENCE OWNERSHIP etc
+OBJECT_ASSOCIATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-link,header,1,Always OBJECT_ASSOCIATION
+TAG,id,Long,cm_tag_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+TAG,tagName,String,cm_tag_name,tag_name_lcs,true,yes,yes,yes,Tag,string,fa-tag,title,1,Tag name - unique
+TAG,tagText,String,cm_tag_text,,false,no,optional,yes,Text,string,fa-tag,meta,2,Display text
+TAG,tagDescription,String,cm_tag_description,,false,no,no,yes,Description,string,fa-align-left,body,3,Tag description
+TAG,objectType,String,,,true,yes,yes,yes,Type,string,fa-tag,header,1,Always TAG
+ASSOCIATED_TAG,id,Long,cm_associated_tag_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+ASSOCIATED_TAG,parentId,Long,cm_parent_id,,true,no,no,optional,Object ID,number,fa-link,hidden,5,Tagged object ID
+ASSOCIATED_TAG,parentType,String,cm_parent_type,,true,no,optional,yes,Object Type,string,fa-link,body,3,Tagged object type
+ASSOCIATED_TAG,tagName,String,,tag_name_lcs,false,yes,yes,yes,Tag,string,fa-tag,title,1,Tag name
+ASSOCIATED_TAG,objectType,String,,,true,yes,yes,yes,Type,string,fa-tags,header,1,Always ASSOCIATED_TAG
+COSTSHEET,id,Long,cm_costsheet_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+COSTSHEET,costsheetNumber,String,cm_costsheet_number,name_lcs,true,yes,yes,yes,Number,string,fa-money,meta,1,Costsheet identifier
+COSTSHEET,title,String,cm_title,title_parseable,false,yes,yes,yes,Title,string,fa-heading,title,1,Costsheet title
+COSTSHEET,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Current status
+COSTSHEET,parentType,String,cm_parent_type,,true,no,optional,yes,Parent Type,string,fa-link,body,3,Parent object type
+COSTSHEET,parentNumber,String,cm_parent_number,,false,no,optional,yes,Parent,string,fa-folder,body,3,Parent case number
+COSTSHEET,totalCost,Double,,,false,optional,yes,yes,Total,currency,fa-dollar,meta,2,Sum of costs
+COSTSHEET,objectType,String,,,true,yes,yes,yes,Type,string,fa-money,header,1,Always COSTSHEET
+COST,id,Long,cm_cost_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+COST,date,Date,cm_date,,false,optional,yes,yes,Date,date,fa-calendar,meta,2,Cost date
+COST,value,Double,cm_value,,false,yes,yes,yes,Amount,currency,fa-dollar,title,1,Cost amount
+COST,title,String,cm_title,,false,yes,yes,yes,Description,string,fa-align-left,body,2,Cost description
+COST,objectType,String,,,true,yes,yes,yes,Type,string,fa-money,header,1,Always COST
+SUBSCRIPTION,subscriptionId,Long,cm_subscription_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+SUBSCRIPTION,userId,String,cm_user_id,user_lcs,true,yes,yes,yes,Subscriber,user,fa-user,meta,1,Subscribed user
+SUBSCRIPTION,objectType,String,cm_object_type,,true,no,optional,yes,Object Type,string,fa-link,body,3,Subscribed object type
+SUBSCRIPTION,objectId,Long,cm_object_id,,true,no,no,optional,Object ID,number,fa-link,hidden,5,Subscribed object ID
+SUBSCRIPTION,objectName,String,cm_object_name,,false,yes,yes,yes,Object,string,fa-folder,title,1,Subscribed object name
+SUBSCRIPTION,entityType,String,,,true,yes,yes,yes,Type,string,fa-bell-o,header,1,Always SUBSCRIPTION
+QUEUE,id,Long,cm_queue_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+QUEUE,name,String,cm_queue_name,name_lcs,true,yes,yes,yes,Queue Name,string,fa-inbox,title,1,Queue name
+QUEUE,displayOrder,Integer,cm_display_order,,false,no,optional,yes,Order,number,fa-sort,meta,3,Sort order
+QUEUE,objectType,String,,,true,yes,yes,yes,Type,string,fa-inbox,header,1,Always QUEUE
+CHAT_CONVERSATION,id,Long,cm_conversation_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+CHAT_CONVERSATION,title,String,cm_title,title_parseable,false,yes,yes,yes,Title,string,fa-comments,title,1,Conversation title
+CHAT_CONVERSATION,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,ACTIVE ARCHIVED DELETED
+CHAT_CONVERSATION,userId,String,cm_user_id,user_lcs,true,no,yes,yes,User,user,fa-user,meta,2,Conversation owner
+CHAT_CONVERSATION,contextObjectType,String,cm_context_object_type,,false,no,optional,yes,Context Type,string,fa-link,body,3,Related object type
+CHAT_CONVERSATION,contextObjectId,Long,cm_context_object_id,,false,no,no,optional,Context ID,number,fa-link,hidden,5,Related object ID
+CHAT_CONVERSATION,messageCount,Integer,,,false,no,optional,yes,Messages,number,fa-comments,body,3,Message count
+CHAT_CONVERSATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-comments,header,1,Always CHAT_CONVERSATION
+CONTACT_METHOD,id,Long,cm_contact_method_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+CONTACT_METHOD,type,String,cm_type,,false,optional,yes,yes,Type,string,fa-tag,meta,2,EMAIL PHONE FAX etc
+CONTACT_METHOD,subType,String,cm_sub_type,,false,no,optional,yes,Sub Type,string,fa-tag,meta,3,WORK HOME PERSONAL
+CONTACT_METHOD,value,String,cm_value,,true,yes,yes,yes,Value,string,fa-info-circle,title,1,Contact value
+CONTACT_METHOD,status,String,cm_status,status_lcs,false,no,optional,yes,Status,status,fa-circle,header,3,ACTIVE INACTIVE
+CONTACT_METHOD,objectType,String,,,true,yes,yes,yes,Type,string,fa-address-card,header,1,Always CONTACT_METHOD
+POSTAL_ADDRESS,id,Long,cm_postal_address_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+POSTAL_ADDRESS,type,String,cm_type,,false,optional,yes,yes,Type,string,fa-tag,meta,2,MAILING BILLING PHYSICAL
+POSTAL_ADDRESS,streetAddress,String,cm_street_address,,false,yes,yes,yes,Street,string,fa-road,body,1,Street line 1
+POSTAL_ADDRESS,streetAddress2,String,cm_street_address_2,,false,no,no,yes,Street 2,string,fa-road,body,2,Street line 2
+POSTAL_ADDRESS,city,String,cm_city,,false,optional,yes,yes,City,string,fa-building,body,2,City
+POSTAL_ADDRESS,state,String,cm_state,,false,optional,yes,yes,State,string,fa-map,body,2,State/region
+POSTAL_ADDRESS,zip,String,cm_zip,,false,no,yes,yes,ZIP,string,fa-map-marker,body,3,Postal code
+POSTAL_ADDRESS,country,String,cm_country,,false,no,optional,yes,Country,string,fa-flag,body,3,Country
+POSTAL_ADDRESS,status,String,cm_status,status_lcs,false,no,optional,yes,Status,status,fa-circle,header,3,ACTIVE INACTIVE
+POSTAL_ADDRESS,objectType,String,,,true,yes,yes,yes,Type,string,fa-map-marker,header,1,Always POSTAL_ADDRESS
+IDENTIFICATION,identificationID,Long,cm_identification_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+IDENTIFICATION,identificationType,String,cm_identification_type,,false,optional,yes,yes,Type,string,fa-tag,meta,2,DRIVER_LICENSE PASSPORT etc
+IDENTIFICATION,identificationNumber,String,cm_identification_number,,true,yes,yes,yes,Number,string,fa-id-card,title,1,ID value - may need masking
+IDENTIFICATION,identificationIssuer,String,cm_identification_issuer,,false,no,optional,yes,Issuer,string,fa-university,body,3,Issuing authority
+IDENTIFICATION,identificationYearIssued,Date,cm_identification_year_issued,,false,no,no,optional,Issued,date,fa-calendar,body,4,Issue date
+IDENTIFICATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-id-badge,header,1,Always IDENTIFICATION
+GROUP,name,String,cm_group_name,id,true,yes,yes,yes,Group Name,string,fa-users,title,1,Primary key - group name
+GROUP,displayName,String,cm_display_name,name_lcs,false,yes,yes,yes,Display Name,string,fa-users,title,1,Friendly name
+GROUP,description,String,cm_description,,false,no,no,yes,Description,string,fa-align-left,body,3,Group description
+GROUP,type,Enum,cm_group_type,,false,no,optional,yes,Type,string,fa-tag,meta,2,ADHOC_GROUP LDAP_GROUP SYSTEM_GROUP
+GROUP,status,Enum,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,ACTIVE INACTIVE
+GROUP,memberCount,Integer,,,false,no,optional,yes,Members,number,fa-users,body,3,User count
+GROUP,objectType,String,,,true,yes,yes,yes,Type,string,fa-users,header,1,Always GROUP
+FOLDER,id,Long,cm_folder_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+FOLDER,name,String,cm_folder_name,name_lcs,true,yes,yes,yes,Folder Name,string,fa-folder,title,1,Folder name
+FOLDER,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,ACTIVE INACTIVE
+FOLDER,parentFolderName,String,,,false,no,optional,yes,Parent Folder,string,fa-folder-open,body,3,Parent folder
+FOLDER,fileCount,Integer,,,false,no,optional,yes,Files,number,fa-files-o,body,3,Contained files
+FOLDER,objectType,String,,,true,yes,yes,yes,Type,string,fa-folder,header,1,Always FOLDER

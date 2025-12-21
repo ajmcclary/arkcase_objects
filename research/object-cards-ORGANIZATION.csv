@@ -1,0 +1,22 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+organizationId,Long,cm_organization_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+organizationValue,String,cm_organization_value,name_lcs,true,yes,yes,yes,Name,string,fa-building,title,1,Organization name - primary display
+organizationType,String,cm_organization_type,organization_type_lcs,false,no,optional,yes,Type,string,fa-tag,meta,3,Organization type
+status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Status (ACTIVE/INACTIVE)
+details,String,cm_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Extended details
+restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+defaultPhone,String,,,false,no,optional,yes,Phone,string,fa-phone,meta,2,Primary phone
+defaultEmail,String,,email_lcs,false,no,yes,yes,Email,string,fa-envelope,meta,2,Primary email
+defaultFax,String,,,false,no,no,optional,Fax,string,fa-fax,body,4,Primary fax
+defaultUrl,String,,,false,no,optional,yes,Website,string,fa-globe,body,3,Primary URL
+defaultAddress,String,,,false,no,no,yes,Address,string,fa-map-marker,body,4,Primary address
+primaryContact,String,,,false,no,optional,yes,Primary Contact,user,fa-user,meta,3,Primary contact person
+personCount,Integer,,,false,no,no,optional,People,number,fa-users,body,5,Associated persons
+dbaCount,Integer,,,false,no,no,optional,DBAs,number,fa-id-card,body,5,Doing-business-as names
+identificationCount,Integer,,,false,no,no,optional,IDs,number,fa-id-badge,body,5,Business IDs (tax etc)
+parentOrganization,String,,,false,no,no,optional,Parent Org,string,fa-sitemap,body,4,Parent organization
+objectType,String,,,true,yes,yes,yes,Type,string,fa-building,header,1,Always ORGANIZATION for this type

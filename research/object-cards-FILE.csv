@@ -1,0 +1,30 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+fileId,Long,cm_file_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+fileName,String,cm_file_name,name_lcs,true,yes,yes,yes,File Name,string,fa-file,title,1,Document file name - primary display
+fileType,String,cm_file_type,file_type_s,false,no,optional,yes,Type,string,fa-tag,meta,3,File type category
+fileActiveVersionNameExtension,String,cm_active_version_name_ext,ext_s,false,optional,yes,yes,Extension,string,fa-file-code-o,meta,2,File extension (.pdf .docx etc)
+fileSource,String,cm_file_source,,false,no,no,optional,Source,string,fa-cloud-upload,body,5,Source system
+status,String,cm_file_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,File status
+category,String,cm_category,category_s,false,no,optional,yes,Category,string,fa-folder,meta,3,Category classification
+pageCount,Integer,cm_page_count,page_count_i,false,no,optional,yes,Pages,number,fa-file-text,body,3,Number of pages
+securityClassification,String,cm_security_classification,,false,no,no,optional,Classification,string,fa-shield,header,4,Security level
+cmisRepositoryId,String,cm_cmis_repository_id,,false,no,no,optional,Repository,string,fa-database,hidden,5,CMIS repository
+cmisObjectId,String,cm_cmis_object_id,,false,no,no,optional,CMIS ID,string,fa-key,hidden,5,CMIS object ID
+versionSeriesId,String,cm_version_series_id,,false,no,no,optional,Version Series,string,fa-code-fork,hidden,5,Version series ID
+legacySystemId,String,cm_legacy_system_id,legacy_system_id_s,false,no,no,optional,Legacy ID,string,fa-history,hidden,5,Legacy reference
+publicFlag,Boolean,cm_public_flag,,false,no,no,optional,Public,boolean,fa-globe,header,4,Publicly accessible
+restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+fileSizeBytes,Long,,file_size_i,false,no,optional,yes,Size,filesize,fa-hdd-o,body,3,File size in bytes
+mimeType,String,,mime_type_s,false,no,optional,yes,MIME Type,string,fa-file-code-o,body,4,Content type
+versionCount,Integer,,,false,no,no,optional,Versions,number,fa-code-fork,body,4,Number of versions
+currentVersion,String,,version_s,false,no,optional,yes,Version,string,fa-tag,meta,3,Current version label
+parentFolderName,String,,parent_folder_name_s,false,no,optional,yes,Folder,string,fa-folder-open,body,3,Parent folder name
+parentObjectType,String,,parent_object_type_s,false,no,optional,yes,Parent Type,string,fa-link,body,4,Owner object type (CASE_FILE etc)
+parentObjectId,Long,,parent_object_id_i,false,no,no,optional,Parent ID,number,fa-link,hidden,5,Owner object ID
+parentObjectName,String,,parent_ref_s,false,no,yes,yes,Parent,string,fa-folder,body,2,Owner object number
+thumbnailUrl,String,,,false,no,optional,yes,Thumbnail,string,fa-image,header,3,Preview thumbnail URL
+objectType,String,,,true,yes,yes,yes,Type,string,fa-file,header,1,Always FILE for this type

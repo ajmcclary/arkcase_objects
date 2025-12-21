@@ -1,0 +1,26 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+userId,String,cm_user_id,id,true,yes,yes,yes,User ID,string,fa-at,meta,1,Primary key - username/email
+fullName,String,cm_full_name,name_lcs,false,yes,yes,yes,Full Name,string,fa-user,title,1,Display name - primary
+firstName,String,cm_first_name,first_name_lcs,false,no,optional,yes,First Name,string,fa-user,title,2,First name
+lastName,String,cm_last_name,last_name_lcs,false,no,optional,yes,Last Name,string,fa-user,title,2,Last name
+userDirectoryName,String,cm_user_directory_name,,false,no,no,optional,Directory,string,fa-sitemap,hidden,5,LDAP directory
+sAMAccountName,String,cm_sam_account_name,,false,no,no,optional,SAM Account,string,fa-windows,hidden,5,Windows account
+userPrincipalName,String,cm_user_principal_name,,false,no,no,optional,UPN,string,fa-id-card,body,5,user@domain format
+mail,String,cm_mail,email_lcs,false,optional,yes,yes,Email,string,fa-envelope,meta,2,Email address
+distinguishedName,String,cm_distinguished_name,,false,no,no,optional,DN,string,fa-key,hidden,5,LDAP distinguished name
+uid,String,cm_uid,,false,no,no,optional,UID,string,fa-id-badge,hidden,5,Unix/LDAP UID
+country,String,cm_country,,false,no,no,optional,Country,string,fa-flag,body,5,Country
+countryAbbreviation,String,cm_country_abbreviation,,false,no,no,optional,Country Code,string,fa-flag,body,5,Country code
+department,String,cm_department,department_s,false,no,optional,yes,Department,string,fa-building-o,body,3,Department name
+company,String,cm_company,organization_lcs,false,no,optional,yes,Company,string,fa-building,body,3,Company name
+title,String,cm_title,title_s,false,no,optional,yes,Job Title,string,fa-briefcase,meta,3,Job title
+lang,String,cm_lang,,false,no,no,optional,Language,string,fa-language,body,5,Preferred language
+userState,Enum,cm_user_state,,false,no,optional,yes,State,status,fa-circle,header,2,VALID/INVALID/DISABLED
+activeState,Enum,cm_active_state,,false,optional,yes,yes,Active,status,fa-toggle-on,header,2,ACTIVE/INACTIVE
+passwordExpirationDate,LocalDate,cm_password_expiration_date,,false,no,no,optional,Password Expires,date,fa-key,body,5,Password expiry
+created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Account created
+modified,Date,cm_modified,modified_date_tdt,true,no,optional,yes,Modified,datetime,fa-pencil,footer,3,Last modified
+deletedAt,Date,cm_deleted_at,,false,no,no,optional,Deleted,datetime,fa-trash,footer,5,Soft delete timestamp
+groupCount,Integer,,,false,no,optional,yes,Groups,number,fa-users,body,4,Group membership count
+avatarUrl,String,,,false,no,optional,yes,Avatar,string,fa-image,header,3,User avatar URL
+objectType,String,,,true,yes,yes,yes,Type,string,fa-user,header,1,Always USER for this type

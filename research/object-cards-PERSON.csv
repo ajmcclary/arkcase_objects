@@ -1,0 +1,32 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+id,Long,cm_person_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+givenName,String,cm_given_name,first_name_lcs,true,yes,yes,yes,First Name,string,fa-user,title,1,Given/first name
+middleName,String,cm_middle_name,middle_name_lcs,false,no,no,optional,Middle Name,string,fa-user,title,4,Middle name
+familyName,String,cm_family_name,last_name_lcs,true,yes,yes,yes,Last Name,string,fa-user,title,1,Family/last name
+fullName,String,,name_lcs,true,yes,yes,yes,Full Name,string,fa-user,title,1,Computed full name - primary display
+title,String,cm_title,,false,no,optional,yes,Title,string,fa-id-badge,meta,3,Honorific (Dr. Mr. Ms.)
+company,String,cm_company,organization_lcs,false,no,optional,yes,Company,string,fa-building,body,3,Employer/company name
+status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Person status (ACTIVE/INACTIVE)
+dateOfBirth,LocalDate,cm_date_of_birth,,false,no,no,optional,Date of Birth,date,fa-birthday-cake,body,4,Birth date - sensitive
+placeOfBirth,String,cm_place_of_birth,,false,no,no,optional,Place of Birth,string,fa-map-marker,body,5,Birth location
+dateMarried,LocalDate,cm_date_married,,false,no,no,optional,Date Married,date,fa-heart,body,5,Marriage date
+hairColor,String,cm_hair_color,,false,no,no,optional,Hair Color,string,fa-user,body,5,Physical descriptor
+eyeColor,String,cm_eye_color,,false,no,no,optional,Eye Color,string,fa-eye,body,5,Physical descriptor
+heightInInches,Long,cm_height_inches,,false,no,no,optional,Height,number,fa-arrows-v,body,5,Height in inches
+weightInPounds,Long,cm_weight_pounds,,false,no,no,optional,Weight,number,fa-balance-scale,body,5,Weight in pounds
+details,String,cm_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Extended details
+restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+anonymousFlag,Boolean,cm_anonymous_flag,,false,no,no,optional,Anonymous,boolean,fa-user-secret,header,5,Anonymous person flag
+ldapUserId,String,cm_ldap_user_id,,false,no,no,optional,LDAP User,string,fa-id-card,hidden,5,Linked system user
+created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+defaultPhone,String,,,false,no,optional,yes,Phone,string,fa-phone,meta,2,Primary phone number
+defaultEmail,String,,email_lcs,false,no,yes,yes,Email,string,fa-envelope,meta,2,Primary email
+defaultAddress,String,,,false,no,no,yes,Address,string,fa-map-marker,body,4,Primary address
+organizationCount,Integer,,,false,no,no,optional,Organizations,number,fa-building,body,5,Associated org count
+aliasCount,Integer,,,false,no,no,optional,Aliases,number,fa-id-card,body,5,Alternate names count
+identificationCount,Integer,,,false,no,no,optional,IDs,number,fa-id-badge,body,5,Identification count
+pictureUrl,String,,,false,no,optional,yes,Picture,string,fa-image,header,3,Profile picture URL
+objectType,String,,,true,yes,yes,yes,Type,string,fa-user,header,1,Always PERSON for this type

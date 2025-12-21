@@ -1,0 +1,143 @@
+ObjectType,Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+CASE_FILE,id,Long,cm_case_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+CASE_FILE,caseNumber,String,cm_case_number,name_lcs,true,yes,yes,yes,Case Number,string,fa-folder-open,meta,1,Human-readable identifier
+CASE_FILE,caseType,String,cm_case_type,case_type_lcs,false,no,optional,yes,Case Type,string,fa-tag,meta,3,Category/type
+CASE_FILE,title,String,cm_case_title,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Case title
+CASE_FILE,status,String,cm_case_status,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status
+CASE_FILE,details,String,cm_case_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Long description
+CASE_FILE,priority,String,cm_case_priority,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level
+CASE_FILE,disposition,String,cm_case_disposition,disposition_lcs,false,no,no,yes,Disposition,string,fa-gavel,body,4,Case outcome
+CASE_FILE,incidentDate,Date,cm_incident_date,incident_date_tdt,false,no,optional,yes,Incident Date,date,fa-calendar-times-o,body,3,Date of incident
+CASE_FILE,dueDate,Date,cm_due_date,due_tdt,false,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Response due date
+CASE_FILE,closed,Date,cm_closed,closed_date_tdt,false,no,optional,yes,Closed Date,date,fa-calendar-minus-o,body,4,Closure date
+CASE_FILE,restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+CASE_FILE,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+CASE_FILE,creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+CASE_FILE,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+CASE_FILE,modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+CASE_FILE,assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Primary assignee
+CASE_FILE,owningGroup,String,,owner_lcs,false,no,optional,yes,Owning Group,string,fa-users,body,3,Responsible group
+CASE_FILE,documentCount,Integer,,doc_count_i,false,no,optional,yes,Documents,number,fa-files-o,body,4,Attached documents
+CASE_FILE,queueName,String,,queue_name_s,false,no,optional,yes,Queue,string,fa-inbox,meta,3,Current queue
+CASE_FILE,objectType,String,,,true,yes,yes,yes,Type,string,fa-folder-open,header,1,Always CASE_FILE
+COMPLAINT,complaintId,Long,cm_complaint_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+COMPLAINT,complaintNumber,String,cm_complaint_number,name_lcs,true,yes,yes,yes,Complaint Number,string,fa-exclamation-circle,meta,1,Human-readable identifier
+COMPLAINT,complaintType,String,cm_complaint_type,complaint_type_lcs,false,no,optional,yes,Complaint Type,string,fa-tag,meta,3,Type of complaint
+COMPLAINT,complaintTitle,String,cm_complaint_title,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Complaint title
+COMPLAINT,status,String,cm_complaint_status,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status
+COMPLAINT,details,String,cm_complaint_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Description
+COMPLAINT,priority,String,cm_complaint_priority,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level
+COMPLAINT,incidentDate,Date,cm_incident_date,incident_date_tdt,false,no,optional,yes,Incident Date,date,fa-calendar-times-o,body,3,Incident date
+COMPLAINT,dueDate,Date,cm_due_date,due_tdt,false,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Due date
+COMPLAINT,closed,Date,cm_closed,closed_date_tdt,false,no,optional,yes,Closed Date,date,fa-calendar-minus-o,body,4,Closure date
+COMPLAINT,restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+COMPLAINT,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+COMPLAINT,creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+COMPLAINT,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+COMPLAINT,modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+COMPLAINT,assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Primary assignee
+COMPLAINT,owningGroup,String,,owner_lcs,false,no,optional,yes,Owning Group,string,fa-users,body,3,Responsible group
+COMPLAINT,objectType,String,,,true,yes,yes,yes,Type,string,fa-exclamation-circle,header,1,Always COMPLAINT
+CONSULTATION,id,Long,cm_consultation_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+CONSULTATION,consultationNumber,String,cm_consultation_number,name_lcs,true,yes,yes,yes,Consultation Number,string,fa-comments,meta,1,Identifier
+CONSULTATION,consultationType,String,cm_consultation_type,consultation_type_lcs,false,no,optional,yes,Type,string,fa-tag,meta,3,Consultation type
+CONSULTATION,title,String,cm_title,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Title
+CONSULTATION,status,String,cm_status,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status
+CONSULTATION,details,String,cm_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Description
+CONSULTATION,priority,String,cm_priority,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level
+CONSULTATION,dueDate,Date,cm_due_date,due_tdt,false,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Due date
+CONSULTATION,closed,Date,cm_closed,closed_date_tdt,false,no,optional,yes,Closed Date,date,fa-calendar-minus-o,body,4,Closure date
+CONSULTATION,externalRequestingAgency,String,cm_external_agency,,false,no,optional,yes,Requesting Agency,string,fa-university,body,3,External agency
+CONSULTATION,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+CONSULTATION,creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator
+CONSULTATION,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+CONSULTATION,assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Primary assignee
+CONSULTATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-comments,header,1,Always CONSULTATION
+TASK,taskId,Long,,id,true,no,no,optional,Task ID,number,fa-hashtag,hidden,5,Task identifier
+TASK,title,String,,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Task title
+TASK,type,String,,task_type_lcs,false,no,optional,yes,Task Type,string,fa-tag,meta,3,Type of task
+TASK,status,String,,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status
+TASK,priority,String,,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level
+TASK,details,String,,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Description
+TASK,completed,Boolean,,,false,no,optional,yes,Completed,boolean,fa-check-circle,header,3,Completion flag
+TASK,percentComplete,Integer,,percent_complete_i,false,no,optional,yes,Progress,percentage,fa-tasks,body,3,0-100 percentage
+TASK,assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Assigned user
+TASK,owner,String,,owner_lcs,false,no,optional,yes,Owner,user,fa-user-circle,body,3,Task owner
+TASK,createDate,Date,,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation date
+TASK,dueDate,Date,,due_tdt,true,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Due date
+TASK,taskFinishedDate,Date,,end_date_tdt,false,no,optional,yes,Finished,datetime,fa-stop,body,4,Completion date
+TASK,attachedToObjectName,String,,parent_ref_s,false,no,yes,yes,Parent,string,fa-folder,body,2,Parent case number
+TASK,outcomeName,String,,,false,no,optional,yes,Outcome,string,fa-check-square,body,3,Selected outcome
+TASK,objectType,String,,,true,yes,yes,yes,Type,string,fa-tasks,header,1,Always TASK
+PERSON,id,Long,cm_person_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+PERSON,fullName,String,,name_lcs,true,yes,yes,yes,Full Name,string,fa-user,title,1,Display name
+PERSON,givenName,String,cm_given_name,first_name_lcs,true,no,optional,yes,First Name,string,fa-user,title,2,Given name
+PERSON,familyName,String,cm_family_name,last_name_lcs,true,no,optional,yes,Last Name,string,fa-user,title,2,Family name
+PERSON,title,String,cm_title,,false,no,optional,yes,Title,string,fa-id-badge,meta,3,Honorific
+PERSON,company,String,cm_company,organization_lcs,false,no,optional,yes,Company,string,fa-building,body,3,Employer
+PERSON,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,ACTIVE/INACTIVE
+PERSON,defaultPhone,String,,,false,no,optional,yes,Phone,string,fa-phone,meta,2,Primary phone
+PERSON,defaultEmail,String,,email_lcs,false,no,yes,yes,Email,string,fa-envelope,meta,2,Primary email
+PERSON,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation
+PERSON,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+PERSON,objectType,String,,,true,yes,yes,yes,Type,string,fa-user,header,1,Always PERSON
+ORGANIZATION,organizationId,Long,cm_organization_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+ORGANIZATION,organizationValue,String,cm_organization_value,name_lcs,true,yes,yes,yes,Name,string,fa-building,title,1,Organization name
+ORGANIZATION,organizationType,String,cm_organization_type,organization_type_lcs,false,no,optional,yes,Type,string,fa-tag,meta,3,Organization type
+ORGANIZATION,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,ACTIVE/INACTIVE
+ORGANIZATION,defaultPhone,String,,,false,no,optional,yes,Phone,string,fa-phone,meta,2,Primary phone
+ORGANIZATION,defaultEmail,String,,email_lcs,false,no,yes,yes,Email,string,fa-envelope,meta,2,Primary email
+ORGANIZATION,primaryContact,String,,,false,no,optional,yes,Primary Contact,user,fa-user,meta,3,Primary contact
+ORGANIZATION,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation
+ORGANIZATION,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+ORGANIZATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-building,header,1,Always ORGANIZATION
+FILE,fileId,Long,cm_file_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+FILE,fileName,String,cm_file_name,name_lcs,true,yes,yes,yes,File Name,string,fa-file,title,1,Document name
+FILE,fileType,String,cm_file_type,file_type_s,false,no,optional,yes,Type,string,fa-tag,meta,3,File type
+FILE,fileActiveVersionNameExtension,String,cm_active_version_name_ext,ext_s,false,optional,yes,yes,Extension,string,fa-file-code-o,meta,2,File extension
+FILE,status,String,cm_file_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,File status
+FILE,pageCount,Integer,cm_page_count,page_count_i,false,no,optional,yes,Pages,number,fa-file-text,body,3,Number of pages
+FILE,fileSizeBytes,Long,,file_size_i,false,no,optional,yes,Size,filesize,fa-hdd-o,body,3,File size
+FILE,currentVersion,String,,version_s,false,no,optional,yes,Version,string,fa-tag,meta,3,Version label
+FILE,parentObjectName,String,,parent_ref_s,false,no,yes,yes,Parent,string,fa-folder,body,2,Owner object
+FILE,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation
+FILE,modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+FILE,objectType,String,,,true,yes,yes,yes,Type,string,fa-file,header,1,Always FILE
+USER,userId,String,cm_user_id,id,true,yes,yes,yes,User ID,string,fa-at,meta,1,Username/email
+USER,fullName,String,cm_full_name,name_lcs,false,yes,yes,yes,Full Name,string,fa-user,title,1,Display name
+USER,firstName,String,cm_first_name,first_name_lcs,false,no,optional,yes,First Name,string,fa-user,title,2,First name
+USER,lastName,String,cm_last_name,last_name_lcs,false,no,optional,yes,Last Name,string,fa-user,title,2,Last name
+USER,mail,String,cm_mail,email_lcs,false,optional,yes,yes,Email,string,fa-envelope,meta,2,Email address
+USER,department,String,cm_department,department_s,false,no,optional,yes,Department,string,fa-building-o,body,3,Department
+USER,company,String,cm_company,organization_lcs,false,no,optional,yes,Company,string,fa-building,body,3,Company
+USER,title,String,cm_title,title_s,false,no,optional,yes,Job Title,string,fa-briefcase,meta,3,Job title
+USER,activeState,Enum,cm_active_state,,false,optional,yes,yes,Active,status,fa-toggle-on,header,2,ACTIVE/INACTIVE
+USER,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Account created
+USER,groupCount,Integer,,,false,no,optional,yes,Groups,number,fa-users,body,4,Group count
+USER,objectType,String,,,true,yes,yes,yes,Type,string,fa-user,header,1,Always USER
+NOTE,id,Long,cm_note_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+NOTE,note,String,cm_note,content_parseable,true,yes,yes,yes,Content,string,fa-sticky-note,body,1,Note content
+NOTE,type,String,cm_note_type,note_type_s,false,optional,yes,yes,Type,string,fa-tag,meta,2,Note type
+NOTE,author,String,cm_author,author_lcs,false,optional,yes,yes,Author,user,fa-user,meta,2,Note author
+NOTE,parentType,String,cm_parent_type,parent_object_type_s,true,no,optional,yes,Parent Type,string,fa-link,body,3,Parent object type
+NOTE,parentTitle,String,cm_parent_title,parent_ref_s,false,no,optional,yes,Parent,string,fa-folder,body,3,Parent name
+NOTE,created,Date,cm_created,create_date_tdt,true,optional,yes,yes,Created,datetime,fa-plus-circle,footer,2,Creation
+NOTE,objectType,String,,,true,yes,yes,yes,Type,string,fa-sticky-note,header,1,Always NOTE
+NOTIFICATION,id,Long,cm_notification_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+NOTIFICATION,title,String,cm_title,title_parseable,false,yes,yes,yes,Title,string,fa-bell,title,1,Notification title
+NOTIFICATION,note,String,cm_note,content_parseable,false,no,optional,yes,Message,string,fa-align-left,body,2,Content
+NOTIFICATION,type,String,cm_type,notification_type_s,false,optional,yes,yes,Type,string,fa-tag,meta,2,AUTOMATED USER
+NOTIFICATION,status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Current status
+NOTIFICATION,user,String,cm_user,user_lcs,false,optional,yes,yes,Recipient,user,fa-user,meta,2,Target user
+NOTIFICATION,actionDate,Date,cm_action_date,action_date_tdt,false,no,optional,yes,Action Date,datetime,fa-calendar,body,3,When occurred
+NOTIFICATION,parentType,String,cm_parent_type,parent_object_type_s,false,no,optional,yes,Parent Type,string,fa-link,body,3,Related type
+NOTIFICATION,parentName,String,cm_parent_name,parent_ref_s,false,no,optional,yes,Parent,string,fa-folder,body,3,Related object
+NOTIFICATION,created,Date,cm_created,create_date_tdt,true,optional,yes,yes,Created,datetime,fa-plus-circle,footer,2,Creation
+NOTIFICATION,objectType,String,,,true,yes,yes,yes,Type,string,fa-bell,header,1,Always NOTIFICATION
+PARTICIPANT,id,Long,cm_participant_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+PARTICIPANT,participantType,String,cm_participant_type,participant_type_s,false,yes,yes,yes,Role,string,fa-tag,meta,1,ASSIGNEE OWNING_GROUP etc
+PARTICIPANT,participantName,String,,participant_name_s,false,yes,yes,yes,Name,string,fa-user,title,1,Display name
+PARTICIPANT,objectType,String,cm_object_type,parent_object_type_s,true,no,optional,yes,Parent Type,string,fa-link,body,3,Parent object type
+PARTICIPANT,created,Date,cm_created,create_date_tdt,true,no,optional,yes,Assigned,datetime,fa-plus-circle,footer,2,When assigned
+PARTICIPANT,creator,String,cm_creator,creator_lcs,true,no,optional,yes,Assigned By,user,fa-user-plus,footer,3,Who assigned
+PARTICIPANT,objectTypeDisplay,String,,,true,yes,yes,yes,Type,string,fa-users,header,1,Always PARTICIPANT

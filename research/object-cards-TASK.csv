@@ -1,0 +1,39 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+taskId,Long,,id,true,no,no,optional,Task ID,number,fa-hashtag,hidden,5,Task identifier - from workflow
+title,String,,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Task title
+type,String,,task_type_lcs,false,no,optional,yes,Task Type,string,fa-tag,meta,3,Type of task
+status,String,,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status
+pendingStatus,String,,,false,no,no,optional,Pending Status,string,fa-hourglass,meta,4,Pending transition status
+priority,String,,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level
+details,String,,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Task description
+completed,Boolean,,,false,no,optional,yes,Completed,boolean,fa-check-circle,header,3,Completion flag
+adhocTask,Boolean,,,false,no,no,optional,Ad-hoc,boolean,fa-bolt,meta,5,Is ad-hoc task
+percentComplete,Integer,,percent_complete_i,false,no,optional,yes,Progress,percentage,fa-tasks,body,3,0-100 completion percentage
+assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Assigned user
+owner,String,,owner_lcs,false,no,optional,yes,Owner,user,fa-user-circle,body,3,Task owner/creator
+nextAssignee,String,,,false,no,no,optional,Next Assignee,user,fa-user-plus,body,5,Next person in chain
+candidateGroups,List<String>,,candidate_groups_ss,false,no,no,optional,Candidate Groups,string,fa-users,body,5,Groups that can claim
+reworkInstructions,String,,,false,no,no,optional,Rework Instructions,string,fa-redo,body,5,Instructions for rework
+createDate,Date,,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Task creation date
+dueDate,Date,,due_tdt,true,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Task due date
+taskStartDate,Date,,start_date_tdt,false,no,optional,yes,Started,datetime,fa-play,body,4,When task started
+taskFinishedDate,Date,,end_date_tdt,false,no,optional,yes,Finished,datetime,fa-stop,body,4,Completion date
+taskDurationInMillis,Long,,,false,no,no,optional,Duration,number,fa-clock-o,body,5,Total duration in ms
+attachedToObjectType,String,,parent_type_s,false,no,optional,yes,Parent Type,string,fa-link,body,3,Parent object type
+attachedToObjectId,Long,,parent_id_s,false,no,no,optional,Parent ID,number,fa-link,hidden,5,Parent object ID
+attachedToObjectName,String,,parent_ref_s,false,no,yes,yes,Parent,string,fa-folder,body,2,Parent case/complaint number
+parentObjectId,Long,,,false,no,no,optional,Parent Object ID,number,fa-sitemap,hidden,5,Parent case ID
+parentObjectType,String,,,false,no,no,optional,Parent Object Type,string,fa-sitemap,hidden,5,Parent type
+parentObjectTitle,String,,,false,no,optional,yes,Parent Title,string,fa-folder-open,body,3,Parent object title
+businessProcessName,String,,business_process_name_s,false,no,no,optional,Process Name,string,fa-cogs,body,5,Activiti process name
+businessProcessId,Long,,,false,no,no,optional,Process ID,number,fa-cog,hidden,5,Process instance ID
+workflowRequestType,String,,,false,no,no,optional,Request Type,string,fa-random,body,5,Workflow request type
+workflowRequestId,Long,,,false,no,no,optional,Request ID,number,fa-random,hidden,5,Workflow request ID
+outcomeName,String,,,false,no,optional,yes,Outcome,string,fa-check-square,body,3,Selected outcome
+taskNotes,String,,,false,no,no,yes,Notes,string,fa-sticky-note,body,4,Completion notes
+buckslipTask,Boolean,,,false,no,no,optional,Buckslip,boolean,fa-list-ol,meta,5,Buckslip routing task
+restricted,Boolean,,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction
+legacySystemId,String,,legacy_system_id_s,false,no,no,optional,Legacy ID,string,fa-history,hidden,5,Legacy reference
+documentUnderReviewName,String,,,false,no,optional,yes,Document,string,fa-file,body,3,Document being reviewed
+documentsToReviewCount,Integer,,,false,no,optional,yes,Docs to Review,number,fa-files-o,body,4,Documents to review count
+objectType,String,,,true,yes,yes,yes,Type,string,fa-tasks,header,1,Always TASK for this type

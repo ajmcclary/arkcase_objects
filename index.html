@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArkCase Design System - Wireframe Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        html { scroll-behavior: smooth; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Header -->
+    <nav id="header" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 h-16">
+        <div class="flex items-center justify-between h-full px-6">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
+                    <div class="bg-indigo-600 text-white w-9 h-9 flex items-center justify-center font-bold rounded-lg mr-3">
+                        A
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">ArkCase</span>
+                </a>
+                <div class="ml-8 flex items-center bg-gray-100 rounded-lg px-4 py-2">
+                    <i class="fa-solid fa-swatchbook text-indigo-600 mr-2"></i>
+                    <span class="text-sm font-medium text-gray-700">Design System</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" title="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors relative" title="Notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <button class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" title="Help">
+                    <i class="fa-solid fa-question-circle"></i>
+                </button>
+                <div class="w-9 h-9 rounded-full bg-indigo-600 flex items-center justify-center text-white font-semibold cursor-pointer ml-2">
+                    JD
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Layout Container -->
+    <div id="app-container" class="flex pt-16">
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="fixed left-0 top-16 bottom-0 w-64 bg-white border-r border-gray-200 overflow-y-auto">
+            <nav class="py-4">
+                <!-- Home -->
+                <div class="px-3 mb-4">
+                    <a href="index.html" class="flex items-center px-3 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-lg">
+                        <i class="fa-solid fa-home w-5 text-indigo-600"></i>
+                        <span class="ml-3">Wireframe Index</span>
+                    </a>
+                </div>
+
+                <!-- Core Objects -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Core Objects</div>
+                    <a href="Case.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-briefcase w-5 text-gray-400"></i>
+                        <span class="ml-3">Case</span>
+                    </a>
+                    <a href="Complaint.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-file-lines w-5 text-gray-400"></i>
+                        <span class="ml-3">Complaint</span>
+                    </a>
+                    <a href="Consultation.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-comments w-5 text-gray-400"></i>
+                        <span class="ml-3">Consultation</span>
+                    </a>
+                    <a href="Task.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-list-check w-5 text-gray-400"></i>
+                        <span class="ml-3">Task</span>
+                    </a>
+                </div>
+
+                <!-- People & Orgs -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">People & Orgs</div>
+                    <a href="Person.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-user w-5 text-gray-400"></i>
+                        <span class="ml-3">Person</span>
+                    </a>
+                    <a href="User.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-user-gear w-5 text-gray-400"></i>
+                        <span class="ml-3">User</span>
+                    </a>
+                    <a href="Organization.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-building w-5 text-gray-400"></i>
+                        <span class="ml-3">Organization</span>
+                    </a>
+                    <a href="Group.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-users w-5 text-gray-400"></i>
+                        <span class="ml-3">Group</span>
+                    </a>
+                    <a href="Participant.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-user-plus w-5 text-gray-400"></i>
+                        <span class="ml-3">Participant</span>
+                    </a>
+                </div>
+
+                <!-- Documents -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Documents</div>
+                    <a href="File Object.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-file w-5 text-gray-400"></i>
+                        <span class="ml-3">File Object</span>
+                    </a>
+                    <a href="File Version.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-code-branch w-5 text-gray-400"></i>
+                        <span class="ml-3">File Version</span>
+                    </a>
+                    <a href="Folder.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-folder w-5 text-gray-400"></i>
+                        <span class="ml-3">Folder</span>
+                    </a>
+                    <a href="Container.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-box w-5 text-gray-400"></i>
+                        <span class="ml-3">Container</span>
+                    </a>
+                    <a href="Note.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-sticky-note w-5 text-gray-400"></i>
+                        <span class="ml-3">Note</span>
+                    </a>
+                </div>
+
+                <!-- Workflow -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Workflow</div>
+                    <a href="Queue.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-layer-group w-5 text-gray-400"></i>
+                        <span class="ml-3">Queue</span>
+                    </a>
+                    <a href="Business Process.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-diagram-project w-5 text-gray-400"></i>
+                        <span class="ml-3">Business Process</span>
+                    </a>
+                </div>
+
+                <!-- Communication -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Communication</div>
+                    <a href="Chat Conversation.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-comments w-5 text-gray-400"></i>
+                        <span class="ml-3">Chat Conversation</span>
+                    </a>
+                    <a href="Chat Message.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-message w-5 text-gray-400"></i>
+                        <span class="ml-3">Chat Message</span>
+                    </a>
+                    <a href="Notification.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-bell w-5 text-gray-400"></i>
+                        <span class="ml-3">Notification</span>
+                    </a>
+                    <a href="Subscription.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-rss w-5 text-gray-400"></i>
+                        <span class="ml-3">Subscription</span>
+                    </a>
+                </div>
+
+                <!-- Financial -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Financial</div>
+                    <a href="Cost.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-dollar-sign w-5 text-gray-400"></i>
+                        <span class="ml-3">Cost</span>
+                    </a>
+                    <a href="Costsheet.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-file-invoice-dollar w-5 text-gray-400"></i>
+                        <span class="ml-3">Costsheet</span>
+                    </a>
+                </div>
+
+                <!-- Metadata -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Metadata</div>
+                    <a href="Tag.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-tag w-5 text-gray-400"></i>
+                        <span class="ml-3">Tag</span>
+                    </a>
+                    <a href="Associated Tag.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-tags w-5 text-gray-400"></i>
+                        <span class="ml-3">Associated Tag</span>
+                    </a>
+                    <a href="Object Association.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-link w-5 text-gray-400"></i>
+                        <span class="ml-3">Object Association</span>
+                    </a>
+                </div>
+
+                <!-- Audit -->
+                <div class="px-3 mb-4">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Audit</div>
+                    <a href="Audit Event.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-clipboard-list w-5 text-gray-400"></i>
+                        <span class="ml-3">Audit Event</span>
+                    </a>
+                    <a href="Object History.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-clock-rotate-left w-5 text-gray-400"></i>
+                        <span class="ml-3">Object History</span>
+                    </a>
+                    <a href="Recycle Bin Item.html" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-trash-can w-5 text-gray-400"></i>
+                        <span class="ml-3">Recycle Bin Item</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content" class="flex-1 ml-64 min-h-screen">
+            <div class="max-w-7xl mx-auto px-8 py-8">
+
+                <!-- Hero Section -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
+                        <h1 class="text-4xl font-bold mb-4">ArkCase Design System</h1>
+                        <p class="text-xl text-indigo-100 max-w-2xl mb-6">
+                            Comprehensive wireframe library for enterprise case management.
+                            Explore 28 object types across Small, Medium, and Large card variants.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">28 Object Types</span>
+                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">3 Card Sizes</span>
+                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Access -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Access</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <a href="Case.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                                <i class="fa-solid fa-briefcase text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Case</h3>
+                            <p class="text-sm text-gray-500">Core case management cards</p>
+                        </a>
+                        <a href="Task.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
+                                <i class="fa-solid fa-list-check text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Task</h3>
+                            <p class="text-sm text-gray-500">Task tracking and workflow</p>
+                        </a>
+                        <a href="Person.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
+                                <i class="fa-solid fa-user text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Person</h3>
+                            <p class="text-sm text-gray-500">People and contacts</p>
+                        </a>
+                        <a href="File Object.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
+                                <i class="fa-solid fa-file text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900 mb-1">File Object</h3>
+                            <p class="text-sm text-gray-500">Document management</p>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- All Wireframes by Category -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">All Wireframes</h2>
+
+                    <!-- Core Objects -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-cube text-indigo-500 mr-2"></i>
+                            Core Objects
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Case.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-briefcase text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Case</div>
+                            </a>
+                            <a href="Complaint.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-file-lines text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Complaint</div>
+                            </a>
+                            <a href="Consultation.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-comments text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Consultation</div>
+                            </a>
+                            <a href="Task.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-list-check text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Task</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- People & Orgs -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-users text-indigo-500 mr-2"></i>
+                            People & Organizations
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                            <a href="Person.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-user text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Person</div>
+                            </a>
+                            <a href="User.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-user-gear text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">User</div>
+                            </a>
+                            <a href="Organization.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-building text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Organization</div>
+                            </a>
+                            <a href="Group.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-users text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Group</div>
+                            </a>
+                            <a href="Participant.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-user-plus text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Participant</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Documents -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-folder-open text-indigo-500 mr-2"></i>
+                            Documents
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                            <a href="File Object.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-file text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">File Object</div>
+                            </a>
+                            <a href="File Version.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-code-branch text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">File Version</div>
+                            </a>
+                            <a href="Folder.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-folder text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Folder</div>
+                            </a>
+                            <a href="Container.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-box text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Container</div>
+                            </a>
+                            <a href="Note.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-sticky-note text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Note</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Workflow -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-diagram-project text-indigo-500 mr-2"></i>
+                            Workflow
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Queue.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-layer-group text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Queue</div>
+                            </a>
+                            <a href="Business Process.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-diagram-project text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Business Process</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Communication -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-comments text-indigo-500 mr-2"></i>
+                            Communication
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Chat Conversation.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-comments text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Chat Conversation</div>
+                            </a>
+                            <a href="Chat Message.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-message text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Chat Message</div>
+                            </a>
+                            <a href="Notification.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-bell text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Notification</div>
+                            </a>
+                            <a href="Subscription.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-rss text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Subscription</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Financial -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-dollar-sign text-indigo-500 mr-2"></i>
+                            Financial
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Cost.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-dollar-sign text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Cost</div>
+                            </a>
+                            <a href="Costsheet.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-file-invoice-dollar text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Costsheet</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Metadata -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-tags text-indigo-500 mr-2"></i>
+                            Metadata
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Tag.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-tag text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Tag</div>
+                            </a>
+                            <a href="Associated Tag.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-tags text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Associated Tag</div>
+                            </a>
+                            <a href="Object Association.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-link text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Object Association</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Audit -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-clipboard-list text-indigo-500 mr-2"></i>
+                            Audit
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <a href="Audit Event.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-clipboard-list text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Audit Event</div>
+                            </a>
+                            <a href="Object History.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-clock-rotate-left text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Object History</div>
+                            </a>
+                            <a href="Recycle Bin Item.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
+                                <i class="fa-solid fa-trash-can text-gray-400 mb-2"></i>
+                                <div class="text-sm font-medium text-gray-700">Recycle Bin Item</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="ml-64 bg-gradient-to-r from-gray-800 via-gray-850 to-gray-900 text-white py-12 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Column -->
+                <div class="col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-500 text-white w-10 h-10 flex items-center justify-center font-bold rounded-lg mr-3">
+                            A
+                        </div>
+                        <div>
+                            <div class="text-lg font-bold">ArkCase</div>
+                            <div class="text-xs text-gray-400">Design System</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Enterprise-grade wireframe components for case management applications.
+                    </p>
+                </div>
+
+                <!-- Core Objects Column -->
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-300 mb-4">Core Objects</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="Case.html" class="hover:text-white transition-colors">Case Cards</a></li>
+                        <li><a href="Complaint.html" class="hover:text-white transition-colors">Complaint Cards</a></li>
+                        <li><a href="Task.html" class="hover:text-white transition-colors">Task Cards</a></li>
+                        <li><a href="Person.html" class="hover:text-white transition-colors">Person Cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Card Variants Column -->
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-300 mb-4">Card Variants</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><span class="text-gray-500">Small Cards</span></li>
+                        <li><span class="text-gray-500">Medium Cards</span></li>
+                        <li><span class="text-gray-500">Large Cards</span></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-300 mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Component Index</a></li>
+                        <li><span class="text-gray-500">Usage Guidelines</span></li>
+                        <li><span class="text-gray-500">Accessibility</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between">
+                <p class="text-sm text-gray-500">
+                    &copy; 2024 ArkCase Design System. All rights reserved.
+                </p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-xs text-gray-500">Version 1.0</span>
+                    <span class="text-gray-600">|</span>
+                    <span class="text-xs text-gray-500">Last updated: December 2024</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

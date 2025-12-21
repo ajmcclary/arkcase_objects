@@ -1,0 +1,73 @@
+Field,DisplayLabel,FormatType,CASE_FILE,COMPLAINT,CONSULTATION,TASK,PERSON,ORGANIZATION,FILE,USER,NOTE,NOTIFICATION,SharedCount,Notes
+id,ID,number,id,complaintId,id,taskId,id,organizationId,fileId,userId,id,id,10,Primary key - always present
+objectType,Type,string,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,10,Object type constant
+title,Title,string,title,complaintTitle,title,title,fullName,organizationValue,fileName,fullName,note,title,10,Primary display field - name varies
+status,Status,status,yes,yes,yes,yes,yes,yes,yes,activeState,no,yes,9,Current status with badge
+priority,Priority,priority,yes,yes,yes,yes,no,no,no,no,no,no,4,Priority level
+dueDate,Due Date,date,yes,yes,yes,yes,no,no,no,no,no,no,4,Response/task due date
+created,Created,datetime,yes,yes,yes,createDate,yes,yes,yes,yes,yes,yes,10,Creation timestamp
+creator,Created By,user,yes,yes,yes,owner,yes,yes,yes,no,yes,yes,9,Creator user ID
+modified,Modified,datetime,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,9,Last modification
+modifier,Modified By,user,yes,yes,yes,no,yes,yes,yes,no,yes,yes,8,Last modifier
+assignee,Assignee,user,yes,yes,yes,yes,no,no,no,no,no,no,4,Primary assignee
+owningGroup,Owning Group,string,yes,yes,yes,no,no,no,no,no,no,no,3,Responsible group
+details,Details,string,yes,yes,yes,yes,yes,yes,no,no,no,note,7,Long description
+restricted,Restricted,boolean,yes,yes,yes,yes,yes,yes,yes,no,no,no,7,Access restriction flag
+legacySystemId,Legacy ID,string,yes,yes,yes,yes,no,no,yes,no,no,no,5,Legacy system reference
+closed,Closed Date,date,yes,yes,yes,taskFinishedDate,no,no,no,deletedAt,no,no,4,Closure/completion date
+incidentDate,Incident Date,date,yes,yes,no,no,no,no,no,no,no,no,2,Date of incident
+objectNumber,Number,string,caseNumber,complaintNumber,consultationNumber,no,no,no,no,no,no,no,3,Human-readable identifier
+parentId,Parent ID,number,no,no,no,attachedToObjectId,no,no,parentObjectId,no,parentId,parentId,4,Parent object reference
+parentType,Parent Type,string,no,no,no,attachedToObjectType,no,no,parentObjectType,no,parentType,parentType,4,Parent object type
+parentName,Parent,string,no,no,no,attachedToObjectName,no,no,parentObjectName,no,parentTitle,parentName,4,Parent object name
+documentCount,Documents,number,yes,yes,yes,documentsToReviewCount,no,no,no,no,no,no,4,Attached document count
+email,Email,string,no,no,no,no,defaultEmail,defaultEmail,no,mail,no,no,4,Email address
+phone,Phone,string,no,no,no,no,defaultPhone,defaultPhone,no,no,no,no,2,Phone number
+company,Company,string,no,no,no,no,company,no,no,company,no,no,2,Company/employer
+department,Department,string,no,no,no,no,no,no,no,department,no,no,1,Department name
+firstName,First Name,string,no,no,no,no,givenName,no,no,firstName,no,no,2,Given name
+lastName,Last Name,string,no,no,no,no,familyName,no,no,lastName,no,no,2,Family name
+type,Type,string,caseType,complaintType,consultationType,type,no,organizationType,fileType,no,type,type,7,Subtype classification
+external,External,boolean,yes,no,yes,no,no,no,no,no,no,no,2,External parties flag
+responseDueDate,Response Due,date,yes,no,yes,no,no,no,no,no,no,no,2,Response deadline
+responsibleOrganization,Responsible Org,string,yes,no,no,no,no,no,no,no,no,no,1,Responsible organization
+disposition,Disposition,string,yes,dispositionType,no,outcomeName,no,no,no,no,no,no,3,Outcome/resolution
+queueName,Queue,string,yes,no,no,no,no,no,no,no,no,no,1,Current workflow queue
+percentComplete,Progress,percentage,no,no,no,yes,no,no,no,no,no,no,1,Task completion percentage
+completed,Completed,boolean,no,no,no,yes,no,no,no,no,no,no,1,Completion flag
+adhocTask,Ad-hoc,boolean,no,no,no,yes,no,no,no,no,no,no,1,Ad-hoc task flag
+taskNotes,Notes,string,no,no,no,yes,no,no,no,no,no,no,1,Task completion notes
+buckslipTask,Buckslip,boolean,no,no,no,yes,no,no,no,no,no,no,1,Buckslip routing
+candidateGroups,Candidate Groups,string,no,no,no,yes,no,no,no,no,no,no,1,Groups that can claim
+nextAssignee,Next Assignee,user,no,no,no,yes,no,no,no,no,no,no,1,Next person in chain
+componentAgency,Component Agency,string,no,no,yes,no,no,no,no,no,no,no,1,Government component
+externalRequestingAgency,Requesting Agency,string,no,no,yes,no,no,no,no,no,no,no,1,External agency
+receivedDate,Received,datetime,no,no,yes,no,no,no,no,no,no,no,1,Date received
+frequency,Frequency,string,no,yes,no,no,no,no,no,no,no,no,1,One-time/recurring
+tag,Tag,string,no,yes,no,no,no,no,no,no,tag,no,2,Category tag
+originatorName,Originator,user,no,yes,no,no,no,no,no,no,no,no,1,Complaint originator
+defaultAddress,Address,string,no,yes,no,no,yes,yes,no,no,no,no,3,Primary address
+dateOfBirth,Date of Birth,date,no,no,no,no,yes,no,no,no,no,no,1,Birth date
+placeOfBirth,Place of Birth,string,no,no,no,no,yes,no,no,no,no,no,1,Birth location
+hairColor,Hair Color,string,no,no,no,no,yes,no,no,no,no,no,1,Physical descriptor
+eyeColor,Eye Color,string,no,no,no,no,yes,no,no,no,no,no,1,Physical descriptor
+anonymousFlag,Anonymous,boolean,no,no,no,no,yes,no,no,no,no,no,1,Anonymous person
+pictureUrl,Picture,string,no,no,no,no,yes,no,no,avatarUrl,no,no,2,Profile picture
+primaryContact,Primary Contact,user,no,no,no,no,no,yes,no,no,no,no,1,Primary contact person
+parentOrganization,Parent Org,string,no,no,no,no,no,yes,no,no,no,no,1,Parent organization
+pageCount,Pages,number,no,no,no,no,no,no,yes,no,no,no,1,Number of pages
+fileSizeBytes,Size,filesize,no,no,no,no,no,no,yes,no,no,no,1,File size
+mimeType,MIME Type,string,no,no,no,no,no,no,yes,no,no,no,1,Content type
+versionCount,Versions,number,no,no,no,no,no,no,yes,no,no,no,1,Version count
+currentVersion,Version,string,no,no,no,no,no,no,yes,no,no,no,1,Current version label
+publicFlag,Public,boolean,no,no,no,no,no,no,yes,no,no,no,1,Publicly accessible
+securityClassification,Classification,string,no,no,no,no,no,no,yes,no,no,no,1,Security level
+thumbnailUrl,Thumbnail,string,no,no,no,no,no,no,yes,no,no,no,1,Preview thumbnail
+userState,State,status,no,no,no,no,no,no,no,yes,no,no,1,VALID/INVALID/DISABLED
+groupCount,Groups,number,no,no,no,no,no,no,no,yes,no,no,1,Group membership count
+author,Author,user,no,no,no,no,no,no,no,no,yes,no,1,Note author
+user,Recipient,user,no,no,no,no,no,no,no,no,no,yes,1,Notification target
+action,Action,string,no,no,no,no,no,no,no,no,no,yes,1,Triggered action
+actionDate,Action Date,datetime,no,no,no,no,no,no,no,no,no,yes,1,When action occurred
+attachFiles,Has Attachments,boolean,no,no,no,no,no,no,no,no,no,yes,1,Include attachments
+subject,Subject,string,no,no,no,no,no,no,no,no,no,yes,1,Email subject

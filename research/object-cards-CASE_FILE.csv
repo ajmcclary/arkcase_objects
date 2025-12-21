@@ -1,0 +1,36 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+id,Long,cm_case_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key - extract from Solr ID pattern
+caseNumber,String,cm_case_number,name_lcs,true,yes,yes,yes,Case Number,string,fa-folder-open,meta,1,Human-readable identifier - always show
+caseType,String,cm_case_type,case_type_lcs,false,no,optional,yes,Case Type,string,fa-tag,meta,3,Category/type of case
+title,String,cm_case_title,title_parseable,true,yes,yes,yes,Title,string,fa-heading,title,1,Case title - primary display field
+status,String,cm_case_status,status_lcs,true,yes,yes,yes,Status,status,fa-circle,header,1,Current status with badge styling
+details,String,cm_case_details,description_no_html_tags_parseable,false,no,no,yes,Details,string,fa-align-left,body,4,Long description - truncate to 150 chars
+caseDetailsSummary,String,cm_case_details_summary,,false,no,optional,yes,Summary,string,fa-file-text,body,3,Summary text for display
+priority,String,cm_case_priority,priority_lcs,false,optional,yes,yes,Priority,priority,fa-flag,meta,2,Priority level with color coding
+disposition,String,cm_case_disposition,disposition_lcs,false,no,no,yes,Disposition,string,fa-gavel,body,4,Case outcome/disposition
+external,Boolean,cm_external,,false,no,no,optional,External,boolean,fa-external-link,meta,5,External parties flag
+incidentDate,Date,cm_incident_date,incident_date_tdt,false,no,optional,yes,Incident Date,date,fa-calendar-times-o,body,3,Date of incident
+dueDate,Date,cm_due_date,due_tdt,false,optional,yes,yes,Due Date,date,fa-calendar-check-o,meta,2,Response due date
+originalDueDate,Date,cm_original_due_date,,false,no,no,optional,Original Due Date,date,fa-calendar,body,5,Original due before extension
+closed,Date,cm_closed,closed_date_tdt,false,no,optional,yes,Closed Date,date,fa-calendar-minus-o,body,4,Closure date
+responseDueDate,LocalDate,cm_response_due_date,response_due_date_tdt,false,no,optional,yes,Response Due,date,fa-clock-o,meta,3,Response deadline
+restricted,Boolean,cm_restricted,restricted_flag_b,false,no,no,optional,Restricted,boolean,fa-lock,header,4,Access restriction flag
+deniedFlag,Boolean,cm_denied_flag,,false,no,no,optional,Denied,boolean,fa-ban,header,5,FOIA denial flag
+officeLocationType,String,cm_office_location_type,,false,no,no,optional,Office Location,string,fa-building-o,body,5,Office classification
+responsibleOrganization,String,cm_responsible_org,,false,no,no,optional,Responsible Org,string,fa-sitemap,body,4,Responsible organization
+courtroomName,String,cm_courtroom_name,,false,no,no,optional,Courtroom,string,fa-university,body,5,Courtroom if applicable
+nextCourtDate,Date,cm_next_court_date,,false,no,no,optional,Next Court Date,date,fa-calendar,body,5,Next court appearance
+legacySystemId,String,cm_legacy_system_id,legacy_system_id_s,false,no,no,optional,Legacy ID,string,fa-history,hidden,5,Legacy system reference
+releasedFileId,Long,cm_released_file_id,,false,no,no,optional,Released File ID,number,fa-file-archive-o,hidden,5,Released version reference
+created,Date,cm_created,create_date_tdt,true,no,optional,yes,Created,datetime,fa-plus-circle,footer,3,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,4,Creator user ID
+modified,Date,cm_modified,modified_date_tdt,true,no,yes,yes,Modified,datetime,fa-pencil,footer,2,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,optional,yes,Modified By,user,fa-user-o,footer,4,Last modifier
+assignee,String,,assignee_full_name_lcs,false,optional,yes,yes,Assignee,user,fa-user,meta,2,Primary assignee - from participants
+owningGroup,String,,owner_lcs,false,no,optional,yes,Owning Group,string,fa-users,body,3,Responsible group
+participantCount,Integer,,,false,no,no,optional,Participants,number,fa-users,body,5,Count of participants
+documentCount,Integer,,doc_count_i,false,no,optional,yes,Documents,number,fa-files-o,body,4,Attached document count
+taskCount,Integer,,task_count_i,false,no,optional,yes,Tasks,number,fa-tasks,body,4,Associated task count
+noteCount,Integer,,note_count_i,false,no,no,optional,Notes,number,fa-sticky-note,body,5,Note count
+queueName,String,,queue_name_s,false,no,optional,yes,Queue,string,fa-inbox,meta,3,Current workflow queue
+objectType,String,,,true,yes,yes,yes,Type,string,fa-folder-open,header,1,Always CASE_FILE for this type

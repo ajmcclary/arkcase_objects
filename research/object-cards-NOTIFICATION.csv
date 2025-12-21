@@ -1,0 +1,23 @@
+Field,JavaType,DatabaseColumn,SolrField,Required,CardSize_S,CardSize_M,CardSize_L,DisplayLabel,FormatType,Icon,Section,Priority,Notes
+id,Long,cm_notification_id,id,true,no,no,optional,ID,number,fa-hashtag,hidden,5,Primary key
+title,String,cm_title,title_parseable,false,yes,yes,yes,Title,string,fa-bell,title,1,Notification title
+note,String,cm_note,content_parseable,false,no,optional,yes,Message,string,fa-align-left,body,2,Notification content
+type,String,cm_type,notification_type_s,false,optional,yes,yes,Type,string,fa-tag,meta,2,AUTOMATED USER etc
+status,String,cm_status,status_lcs,false,optional,yes,yes,Status,status,fa-circle,header,2,Current status
+action,String,cm_action,,false,no,no,optional,Action,string,fa-bolt,body,4,Triggered action
+state,String,cm_state,,false,no,no,optional,State,string,fa-info-circle,body,4,State information
+user,String,cm_user,user_lcs,false,optional,yes,yes,Recipient,user,fa-user,meta,2,Target user
+data,String,cm_data,,false,no,no,optional,Data,string,fa-database,hidden,5,Additional data
+actionDate,Date,cm_action_date,action_date_tdt,false,no,optional,yes,Action Date,datetime,fa-calendar,body,3,When action occurred
+parentId,Long,cm_parent_id,parent_object_id_i,false,no,no,optional,Parent ID,number,fa-link,hidden,5,Related object ID
+parentType,String,cm_parent_type,parent_object_type_s,false,no,optional,yes,Parent Type,string,fa-link,body,3,Related object type
+parentName,String,cm_parent_name,parent_ref_s,false,no,optional,yes,Parent,string,fa-folder,body,3,Related object name
+templateModelName,String,cm_template_model_name,,false,no,no,optional,Template,string,fa-file-code-o,hidden,5,Template reference
+attachFiles,Boolean,cm_attach_files,,false,no,no,optional,Has Attachments,boolean,fa-paperclip,body,4,Include attachments
+emailAddresses,String,cm_email_addresses,,false,no,no,optional,To,string,fa-envelope,body,4,Recipients
+subject,String,cm_subject,,false,no,optional,yes,Subject,string,fa-envelope-o,meta,3,Email subject
+created,Date,cm_created,create_date_tdt,true,optional,yes,yes,Created,datetime,fa-plus-circle,footer,2,Creation timestamp
+creator,String,cm_creator,creator_lcs,true,no,optional,yes,Created By,user,fa-user-plus,footer,3,Creator
+modified,Date,cm_modified,modified_date_tdt,true,no,optional,yes,Modified,datetime,fa-pencil,footer,3,Last modification
+modifier,String,cm_modifier,modifier_lcs,true,no,no,optional,Modified By,user,fa-user-o,footer,4,Last modifier
+objectType,String,,,true,yes,yes,yes,Type,string,fa-bell,header,1,Always NOTIFICATION for this type
