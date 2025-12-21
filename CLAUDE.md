@@ -22,13 +22,24 @@ ArkCase UI Wireframes - A static HTML design system and component library for th
   - Responsive grid layouts (mobile 1-col → tablet 2-col → desktop 3-col)
 
 ### Page Structure
-All pages share a consistent layout:
+All pages share a consistent responsive layout:
 ```
-├── Header (fixed, h-16) - ArkCase logo, Design System badge, search/notifications/help, avatar
-├── Sidebar (fixed, w-64) - Navigation with all 28 objects in 8 categories
-├── Main Content (ml-64) - Card variants and documentation
-└── Footer (ml-64, dark gradient) - 4-column grid with links
+├── Header (fixed, h-16) - Hamburger menu (mobile), ArkCase logo, Design System badge (tablet+), search/notifications/help, avatar
+├── Sidebar (fixed, w-64) - Off-canvas drawer on mobile, always visible on tablet+
+├── Main Content (ml-0 md:ml-64) - Card variants and documentation
+└── Footer (ml-0 md:ml-64, dark gradient) - 4-column grid with links
 ```
+
+### Mobile Navigation
+The layout uses a responsive off-canvas navigation pattern:
+- **Mobile (<768px)**: Sidebar hidden, hamburger menu toggle, slide-out drawer with backdrop overlay
+- **Tablet/Desktop (768px+)**: Sidebar always visible, no hamburger menu
+
+Key elements:
+- `#sidebar-toggle` - Hamburger button (visible on mobile only)
+- `#sidebar-backdrop` - Dark overlay behind sidebar on mobile
+- `#sidebar-close` - Close button inside sidebar (mobile only)
+- JavaScript at end of `<body>` handles toggle, backdrop click, Escape key, and resize events
 
 ### Sidebar Categories
 - **Core Objects**: Case, Complaint, Consultation, Task
