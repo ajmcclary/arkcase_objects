@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+
+        /* Style-guide framing: remove application chrome (global sidebar/footer). */
+        #sidebar, #footer { display: none !important; }
+        #main-content { margin-left: 0 !important; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<div id="main-container" class="flex min-h-screen">
+    
+    <aside id="sidebar" class="w-64 bg-white border-r border-gray-200 flex flex-col fixed h-full">
+        <div class="p-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="bg-indigo-600 text-white w-9 h-9 flex items-center justify-center font-semibold rounded">
+                    A
+                </div>
+                <div class="ml-3">
+                    <div class="text-sm font-semibold text-gray-900">ArkCase</div>
+                    <div class="text-xs text-gray-500">Design System</div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="flex-1 overflow-y-auto py-4">
+            <div class="px-3 mb-4">
+                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">
+                    Core Objects
+                </div>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-briefcase w-5 text-gray-400"></i>
+                    <span class="ml-3">Cases</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-file-lines w-5 text-gray-400"></i>
+                    <span class="ml-3">Complaints</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-list-check w-5 text-gray-400"></i>
+                    <span class="ml-3">Tasks</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-folder w-5 text-gray-400"></i>
+                    <span class="ml-3">Documents</span>
+                </a>
+            </div>
+            
+            <div class="px-3 mb-4">
+                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">
+                    Organization
+                </div>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-users w-5 text-gray-400"></i>
+                    <span class="ml-3">Groups</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-building w-5 text-gray-400"></i>
+                    <span class="ml-3">Organizations</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-user w-5 text-gray-400"></i>
+                    <span class="ml-3">People</span>
+                </a>
+            </div>
+            
+            <div class="px-3 mb-4">
+                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">
+                    Workflow
+                </div>
+                <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-md">
+                    <i class="fa-solid fa-layer-group w-5 text-indigo-600"></i>
+                    <span class="ml-3">Queues</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-diagram-project w-5 text-gray-400"></i>
+                    <span class="ml-3">Business Processes</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-clock w-5 text-gray-400"></i>
+                    <span class="ml-3">SLA Tracking</span>
+                </a>
+            </div>
+            
+            <div class="px-3">
+                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">
+                    Card Components
+                </div>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-table-cells w-5 text-gray-400"></i>
+                    <span class="ml-3">All Components</span>
+                </a>
+                <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50">
+                    <i class="fa-solid fa-palette w-5 text-gray-400"></i>
+                    <span class="ml-3">Design Tokens</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-8 h-8 rounded-full">
+                <div class="ml-3 flex-1">
+                    <div class="text-sm font-medium text-gray-900">John Designer</div>
+                    <div class="text-xs text-gray-500">Admin</div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-content" class="flex-1 ml-64">
+        
+        <header id="page-header" class="bg-white border-b border-gray-200 sticky top-0 z-10">
+            <div class="px-8 py-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <a href="#" class="hover:text-gray-700">Design System</a>
+                            <i class="fa-solid fa-chevron-right mx-2 text-xs"></i>
+                            <a href="#" class="hover:text-gray-700">Card Components</a>
+                            <i class="fa-solid fa-chevron-right mx-2 text-xs"></i>
+                            <span class="text-gray-900">Queue Cards</span>
+                        </div>
+                        <h1 class="text-3xl font-bold text-gray-900">Queue Object Cards</h1>
+                        <p class="text-gray-600 mt-2">Card-based wireframes for workflow queue representation across Small, Medium, and Large variants</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                            <i class="fa-solid fa-download mr-2"></i>
+                            Export Specs
+                        </button>
+                        <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
+                            <i class="fa-solid fa-code mr-2"></i>
+                            View Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="overview-section" class="px-8 py-8 bg-white border-b border-gray-200">
+            <div class="max-w-5xl">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Overview</h2>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-layer-group text-indigo-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-sm font-semibold text-gray-900">Object Type</div>
+                                <div class="text-xs text-gray-500">Queue</div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600">Workflow queues route, prioritize, and organize work items including cases, complaints, and tasks throughout the system.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-check-double text-green-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-sm font-semibold text-gray-900">Variants</div>
+                                <div class="text-xs text-gray-500">3 Sizes</div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600">Small (26.1), Medium (26.2), and Large (26.3) card variants designed for different contexts and information density needs.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-eye text-amber-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-sm font-semibold text-gray-900">Focus</div>
+                                <div class="text-xs text-gray-500">Workload Context</div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600">Cards emphasize workload visibility and navigation, not queue configuration or administrative settings.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <div class="flex">
+                        <i class="fa-solid fa-circle-info text-blue-600 mt-0.5"></i>
+                        <div class="ml-3">
+                            <h3 class="text-sm font-semibold text-blue-900 mb-1">Design Principle</h3>
+                            <p class="text-sm text-blue-800">All queue card variants must clearly communicate the object type, queue name, work type handled, relative workload, and queue usage context. Cards align visually with Group and Business Process cards for system-wide consistency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="small-card-section" class="px-8 py-8 bg-gray-50">
+            <div class="max-w-5xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <div class="flex items-center mb-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-indigo-100 text-indigo-800">26.1</span>
+                            <h2 class="text-2xl font-bold text-gray-900 ml-3">Queue — Small Card</h2>
+                        </div>
+                        <p class="text-gray-600">Compact variant optimized for queue pickers, filters, and dense list views</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Purpose & Context</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Used in queue pickers and filter dropdowns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Optimized for quick identification in dense lists</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Minimal vertical height for space efficiency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Entire card is clickable/selectable</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Required Elements</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-indigo-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Icon</div>
+                                    <div class="text-gray-600">Visual identifier for queue object type</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-indigo-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Name</div>
+                                    <div class="text-gray-600">Primary identifying text</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-gray-400 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Item Count <span class="text-gray-500 font-normal">(Optional)</span></div>
+                                    <div class="text-gray-600">Compact workload indicator</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg border border-gray-200 p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-semibold text-gray-900">Visual Examples</h3>
+                        <div class="flex items-center space-x-2 text-xs text-gray-500">
+                            <span>Variant A: With Count</span>
+                            <span class="text-gray-300">|</span>
+                            <span>Variant B: Name Only</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="border border-gray-200 rounded-md hover:border-indigo-400 hover:bg-indigo-50 transition-colors cursor-pointer">
+                            <div class="px-3 py-2.5 flex items-center justify-between">
+                                <div class="flex items-center min-w-0">
+                                    <i class="fa-solid fa-layer-group text-indigo-600 text-sm mr-3 flex-shrink-0"></i>
+                                    <span class="text-sm font-medium text-gray-900 truncate">Intake & Triage</span>
+                                </div>
+                                <span class="ml-3 text-xs font-medium text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full flex-shrink-0">24</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-md hover:border-indigo-400 hover:bg-indigo-50 transition-colors cursor-pointer">
+                            <div class="px-3 py-2.5 flex items-center justify-between">
+                                <div class="flex items-center min-w-0">
+                                    <i class="fa-solid fa-layer-group text-indigo-600 text-sm mr-3 flex-shrink-0"></i>
+                                    <span class="text-sm font-medium text-gray-900 truncate">Investigation Review</span>
+                                </div>
+                                <span class="ml-3 text-xs font-medium text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full flex-shrink-0">7</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-md hover:border-indigo-400 hover:bg-indigo-50 transition-colors cursor-pointer">
+                            <div class="px-3 py-2.5 flex items-center">
+                                <i class="fa-solid fa-layer-group text-indigo-600 text-sm mr-3 flex-shrink-0"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Legal Review & Approval</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-md hover:border-indigo-400 hover:bg-indigo-50 transition-colors cursor-pointer">
+                            <div class="px-3 py-2.5 flex items-center justify-between">
+                                <div class="flex items-center min-w-0">
+                                    <i class="fa-solid fa-layer-group text-indigo-600 text-sm mr-3 flex-shrink-0"></i>
+                                    <span class="text-sm font-medium text-gray-900 truncate">Escalated Cases</span>
+                                </div>
+                                <span class="ml-3 text-xs font-medium text-red-600 bg-red-50 px-2 py-0.5 rounded-full flex-shrink-0">3</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-md hover:border-indigo-400 hover:bg-indigo-50 transition-colors cursor-pointer">
+                            <div class="px-3 py-2.5 flex items-center">
+                                <i class="fa-solid fa-layer-group text-indigo-600 text-sm mr-3 flex-shrink-0"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Final Disposition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 grid grid-cols-2 gap-6">
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-lightbulb text-amber-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-amber-900 mb-1">Behavioral Note</h4>
+                                <p class="text-sm text-amber-800">No visible actions or hover menus. The entire card acts as a single clickable target for selection or navigation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-ruler-combined text-purple-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-purple-900 mb-1">Layout Constraint</h4>
+                                <p class="text-sm text-purple-800">Single-row or tight single-column layout. Visual density must align with other Small organizational cards (Groups, Business Processes).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="medium-card-section" class="px-8 py-8 bg-white">
+            <div class="max-w-5xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <div class="flex items-center mb-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-green-100 text-green-800">26.2</span>
+                            <h2 class="text-2xl font-bold text-gray-900 ml-3">Queue — Medium Card</h2>
+                        </div>
+                        <p class="text-gray-600">Default representation balancing identity with light workload context</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Purpose & Context</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Default card in dashboards and queue overviews</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Balances queue identity with workload indicators</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Clear vertical hierarchy for readability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Moderate spacing optimized for grid layouts</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Required Elements</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Icon + Type Label</div>
+                                    <div class="text-gray-600">Object type identifier ("Queue")</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Name</div>
+                                    <div class="text-gray-600">Primary heading</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Description/Purpose</div>
+                                    <div class="text-gray-600">Clamped supporting text</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Item Count</div>
+                                    <div class="text-gray-600">Workload indicator (e.g., "14 open items")</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Primary Action</div>
+                                    <div class="text-gray-600">E.g., "View Queue" button</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg border border-gray-200 p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-sm font-semibold text-gray-900">Visual Examples</h3>
+                        <div class="text-xs text-gray-500">Grid layout preview</div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg border border-gray-200 hover:border-indigo-400 hover:shadow-md transition-all">
+                            <div class="p-5">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-indigo-600"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide">Queue</div>
+                                            <div class="text-base font-semibold text-gray-900 mt-0.5">Intake & Triage</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">Initial review and categorization of incoming cases, complaints, and requests for proper routing.</p>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-inbox text-gray-400 mr-2"></i>
+                                        <span class="font-semibold text-gray-900">24</span>
+                                        <span class="text-gray-600 ml-1">open items</span>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-gray-800 transition-colors">
+                                    View Queue
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border border-gray-200 hover:border-indigo-400 hover:shadow-md transition-all">
+                            <div class="p-5">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-indigo-600"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide">Queue</div>
+                                            <div class="text-base font-semibold text-gray-900 mt-0.5">Investigation Review</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                            <i class="fa-solid fa-clock mr-1"></i>SLA
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">Active investigations requiring supervisory review and approval before proceeding to next stage.</p>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-inbox text-gray-400 mr-2"></i>
+                                        <span class="font-semibold text-gray-900">7</span>
+                                        <span class="text-gray-600 ml-1">open items</span>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-gray-800 transition-colors">
+                                    View Queue
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border border-gray-200 hover:border-indigo-400 hover:shadow-md transition-all">
+                            <div class="p-5">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-indigo-600"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide">Queue</div>
+                                            <div class="text-base font-semibold text-gray-900 mt-0.5">Legal Review</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">Cases requiring legal department review and formal approval before final disposition.</p>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-inbox text-gray-400 mr-2"></i>
+                                        <span class="font-semibold text-gray-900">12</span>
+                                        <span class="text-gray-600 ml-1">open items</span>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-gray-800 transition-colors">
+                                    View Queue
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border border-red-200 hover:border-red-400 hover:shadow-md transition-all">
+                            <div class="p-5">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-red-600"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide">Queue</div>
+                                            <div class="text-base font-semibold text-gray-900 mt-0.5">Escalated Cases</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
+                                            <i class="fa-solid fa-exclamation-triangle mr-1"></i>Priority
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">High-priority cases escalated to senior management requiring immediate attention and resolution.</p>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-inbox text-red-400 mr-2"></i>
+                                        <span class="font-semibold text-red-600">3</span>
+                                        <span class="text-gray-600 ml-1">open items</span>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full bg-red-600 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-red-700 transition-colors">
+                                    View Queue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 grid grid-cols-2 gap-6">
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-blue-900 mb-1">Optional Elements</h4>
+                                <p class="text-sm text-blue-800">Priority or SLA indicators may be shown when applicable. These should be visually compact and positioned near the queue name or in the top-right corner.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-ban text-amber-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-amber-900 mb-1">Constraint</h4>
+                                <p class="text-sm text-amber-800">Avoid showing individual work items. Workload indicators must remain visually compact. Actions should be minimal and predictable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="large-card-section" class="px-8 py-8 bg-gray-50">
+            <div class="max-w-5xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <div class="flex items-center mb-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-purple-100 text-purple-800">26.3</span>
+                            <h2 class="text-2xl font-bold text-gray-900 ml-3">Queue — Large Card</h2>
+                        </div>
+                        <p class="text-gray-600">Comprehensive variant for inspector panels and expanded queue previews</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Purpose & Context</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Used in inspector panels and expanded previews</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Provides queue context without configuration UI</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Strong hierarchy separating identity, workload, and actions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Structured with clear visual sections</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Required Elements</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Icon + Type Label</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Queue Name (Prominent)</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Description/Purpose</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Workload Summary</div>
+                                    <div class="text-gray-600">Total items + status breakdown</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Metadata Grid</div>
+                                    <div class="text-gray-600">Created date, display order</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-1.5 mr-2"></div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Action Bar</div>
+                                    <div class="text-gray-600">Multiple permission-aware actions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg border border-gray-200 p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-sm font-semibold text-gray-900">Visual Examples</h3>
+                        <div class="text-xs text-gray-500">Inspector panel context</div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg border-2 border-gray-300 overflow-hidden">
+                            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 px-6 py-5 border-b border-gray-200">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-white text-lg"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-xs text-gray-600 font-semibold uppercase tracking-wider mb-1">Queue</div>
+                                            <h3 class="text-xl font-bold text-gray-900">Intake & Triage</h3>
+                                        </div>
+                                    </div>
+                                    <button class="text-gray-400 hover:text-gray-600">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                                
+                                <p class="text-sm text-gray-700 leading-relaxed">Initial review and categorization of incoming cases, complaints, and service requests. Items are evaluated for priority, assigned to appropriate departments, and routed to specialized queues for further processing.</p>
+                            </div>
+                            
+                            <div class="px-6 py-5 border-b border-gray-200">
+                                <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Workload Summary</h4>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fa-solid fa-inbox text-gray-400 mr-3"></i>
+                                        <span class="text-sm text-gray-600">Total Items</span>
+                                    </div>
+                                    <span class="text-2xl font-bold text-gray-900">24</span>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">New / Unassigned</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-900">18</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">In Progress</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-900">5</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">Overdue</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-red-600">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="px-6 py-5 border-b border-gray-200">
+                                <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Queue Information</h4>
+                                
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Created</div>
+                                        <div class="text-sm font-medium text-gray-900">January 15, 2024</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Display Order</div>
+                                        <div class="text-sm font-medium text-gray-900">1</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                                        <div class="text-sm font-medium text-gray-900">2 hours ago</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Active Users</div>
+                                        <div class="text-sm font-medium text-gray-900">6 members</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="px-6 py-4 bg-gray-50 flex items-center justify-between">
+                                <button class="flex-1 bg-gray-900 text-white text-sm font-medium py-2.5 px-4 rounded-md hover:bg-gray-800 transition-colors mr-3">
+                                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                                    View Items
+                                </button>
+                                <button class="bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-md hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border-2 border-gray-300 overflow-hidden">
+                            <div class="bg-gradient-to-r from-red-50 to-orange-50 px-6 py-5 border-b border-gray-200">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-layer-group text-white text-lg"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-xs text-gray-600 font-semibold uppercase tracking-wider mb-1">Queue</div>
+                                            <div class="flex items-center">
+                                                <h3 class="text-xl font-bold text-gray-900">Escalated Cases</h3>
+                                                <span class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                                    <i class="fa-solid fa-exclamation-triangle mr-1"></i>High Priority
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="text-gray-400 hover:text-gray-600">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                                
+                                <p class="text-sm text-gray-700 leading-relaxed">Critical cases that have been escalated to senior management or specialized teams. These items require immediate attention and expedited resolution due to severity, complexity, or stakeholder impact.</p>
+                            </div>
+                            
+                            <div class="px-6 py-5 border-b border-gray-200">
+                                <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Workload Summary</h4>
+                                
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fa-solid fa-inbox text-red-400 mr-3"></i>
+                                        <span class="text-sm text-gray-600">Total Items</span>
+                                    </div>
+                                    <span class="text-2xl font-bold text-red-600">3</span>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-red-600 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">Awaiting Review</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-900">2</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">Under Investigation</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-900">1</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-gray-300 rounded-full mr-3"></div>
+                                            <span class="text-sm text-gray-700">On Hold</span>
+                                        </div>
+                                        <span class="text-sm font-semibold text-gray-900">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="px-6 py-5 border-b border-gray-200">
+                                <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Queue Information</h4>
+                                
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Created</div>
+                                        <div class="text-sm font-medium text-gray-900">January 15, 2024</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Display Order</div>
+                                        <div class="text-sm font-medium text-gray-900">5</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                                        <div class="text-sm font-medium text-gray-900">15 minutes ago</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Active Users</div>
+                                        <div class="text-sm font-medium text-gray-900">3 members</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">SLA Threshold</div>
+                                        <div class="text-sm font-medium text-gray-900">4 hours</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Escalation Level</div>
+                                        <div class="text-sm font-medium text-gray-900">Executive</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="px-6 py-4 bg-gray-50 flex items-center justify-between">
+                                <button class="flex-1 bg-red-600 text-white text-sm font-medium py-2.5 px-4 rounded-md hover:bg-red-700 transition-colors mr-3">
+                                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                                    View Items
+                                </button>
+                                <button class="bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-md hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 grid grid-cols-2 gap-6">
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-ban text-red-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-red-900 mb-1">Critical Constraint</h4>
+                                <p class="text-sm text-red-800">Do not show queue rules, assignment logic, or routing conditions. This is not a configuration interface. Focus strictly on workload visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-shield-halved text-green-600 mt-0.5"></i>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-semibold text-green-900 mb-1">Permission-Aware</h4>
+                                <p class="text-sm text-green-800">All actions must respect user permissions. Some metadata or actions may be hidden, disabled, or redacted based on access rights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consistency-rules-section" class="px-8 py-8 bg-white border-t border-gray-200">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Cross-Variant Consistency Rules</h2>
+                
+                <div class="grid grid-cols-3 gap-6 mb-8">
+                    <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-5">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-palette text-white"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-2">Visual Alignment</h3>
+                        <p class="text-sm text-gray-700">Queue cards must align visually with Group and Business Process cards to maintain system-wide consistency.</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-5">
+                        <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-icons text-white"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-2">Naming & Iconography</h3>
+                        <p class="text-sm text-gray-700">Queue naming conventions and icon usage must remain consistent across all card sizes and contexts.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-5">
+                        <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-chart-line text-white"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-2">Progressive Disclosure</h3>
+                        <p class="text-sm text-gray-700">Workload indicators scale gradually from Small → Medium → Large, revealing more detail at each level.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Scaling Principle</h3>
+                    <p class="text-sm text-gray-700 mb-4">All variants should feel like scaled versions of the same component, not different designs. Information density increases predictably, but the core identity remains constant.</p>
+                    
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-white rounded-md border border-gray-200 p-4">
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Small Card</div>
+                            <ul class="space-y-1 text-xs text-gray-700">
+                                <li>• Icon + Name</li>
+                                <li>• Optional count badge</li>
+                                <li>• Single-row layout</li>
+                                <li>• No actions visible</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-md border border-gray-200 p-4">
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Medium Card</div>
+                            <ul class="space-y-1 text-xs text-gray-700">
+                                <li>• Icon + Type + Name</li>
+                                <li>• Description (clamped)</li>
+                                <li>• Item count display</li>
+                                <li>• Primary action button</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-md border border-gray-200 p-4">
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Large Card</div>
+                            <ul class="space-y-1 text-xs text-gray-700">
+                                <li>• Full header with icon/type</li>
+                                <li>• Complete description</li>
+                                <li>• Status breakdown</li>
+                                <li>• Metadata grid</li>
+                                <li>• Multiple actions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage-guidelines-section" class="px-8 py-8 bg-gray-50">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Usage Guidelines</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-check-circle text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-base font-semibold text-gray-900 mb-2">When to Use Small Cards</h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-blue-600 mr-2">→</span>
+                                        <span>Queue selection dropdowns or pickers in forms</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-600 mr-2">→</span>
+                                        <span>Filter panels where users need to select multiple queues</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-600 mr-2">→</span>
+                                        <span>Dense sidebar navigation lists</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-blue-600 mr-2">→</span>
+                                        <span>Autocomplete search results</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-check-circle text-green-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-base font-semibold text-gray-900 mb-2">When to Use Medium Cards</h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-600 mr-2">→</span>
+                                        <span>Dashboard queue overview grids (2-3 columns)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-600 mr-2">→</span>
+                                        <span>Queue management list views</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-600 mr-2">→</span>
+                                        <span>Team workload distribution displays</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-600 mr-2">→</span>
+                                        <span>Queue comparison interfaces</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-check-circle text-purple-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-base font-semibold text-gray-900 mb-2">When to Use Large Cards</h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-purple-600 mr-2">→</span>
+                                        <span>Inspector panels showing queue details</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-600 mr-2">→</span>
+                                        <span>Queue detail modal dialogs</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-600 mr-2">→</span>
+                                        <span>Expanded preview states in split-view layouts</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-purple-600 mr-2">→</span>
+                                        <span>Standalone queue overview pages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="constraints-section" class="px-8 py-8 bg-white border-t border-gray-200">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Design Constraints & Boundaries</h2>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-red-600 mb-4 uppercase tracking-wide flex items-center">
+                            <i class="fa-solid fa-ban mr-2"></i>
+                            Do Not Include
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-times text-red-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-red-900 mb-1">Queue Configuration UI</div>
+                                        <div class="text-sm text-red-800">No rule editors, routing logic, or assignment configuration interfaces</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-times text-red-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-red-900 mb-1">Individual Work Items</div>
+                                        <div class="text-sm text-red-800">Cards show workload summaries only, never lists of specific cases or tasks</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-times text-red-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-red-900 mb-1">Administrative Settings</div>
+                                        <div class="text-sm text-red-800">No permission management, user assignment, or system configuration options</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-times text-red-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-red-900 mb-1">Complex Workflows</div>
+                                        <div class="text-sm text-red-800">Avoid showing routing conditions, business rules, or automation triggers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm font-semibold text-green-600 mb-4 uppercase tracking-wide flex items-center">
+                            <i class="fa-solid fa-check mr-2"></i>
+                            Must Include
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-green-900 mb-1">Clear Object Type</div>
+                                        <div class="text-sm text-green-800">Always identify the card as representing a "Queue" object</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-green-900 mb-1">Workload Context</div>
+                                        <div class="text-sm text-green-800">Show item counts and status breakdowns appropriate to card size</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-green-900 mb-1">Purpose Description</div>
+                                        <div class="text-sm text-green-800">Explain what type of work the queue handles and how it's used</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <div class="text-sm font-medium text-green-900 mb-1">Navigation Actions</div>
+                                        <div class="text-sm text-green-800">Provide clear paths to view queue contents or access related functions</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interaction-patterns-section" class="px-8 py-8 bg-gray-50">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Interaction Patterns</h2>
+                
+                <div class="grid grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-lg border border-gray-200 p-5">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-hand-pointer text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 ml-3">Click Behavior</h3>
+                        </div>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div><span class="font-medium">Small:</span> Entire card clickable</div>
+                            <div><span class="font-medium">Medium:</span> Card + primary button</div>
+                            <div><span class="font-medium">Large:</span> Multiple action targets</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-5">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-mouse-pointer text-purple-600"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 ml-3">Hover States</h3>
+                        </div>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div>Border color change</div>
+                            <div>Subtle background shift</div>
+                            <div>Optional shadow elevation</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-5">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-keyboard text-green-600"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 ml-3">Keyboard Nav</h3>
+                        </div>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div>Tab focus on card/actions</div>
+                            <div>Enter/Space to activate</div>
+                            <div>Arrow keys in lists</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Accessibility Requirements</h3>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Screen Reader Support</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>All icons paired with descriptive text or aria-labels</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Semantic HTML structure (heading hierarchy)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Status indicators announced with role="status"</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Button labels clearly describe action outcome</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Visual Considerations</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Minimum 4.5:1 contrast ratio for text</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Color never sole indicator of status</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Focus indicators clearly visible (2px outline)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                    <span>Click targets minimum 44x44px touch area</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="variants-comparison-section" class="px-8 py-8 bg-white border-t border-gray-200">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Side-by-Side Variant Comparison</h2>
+                
+                <div class="bg-gray-50 rounded-lg border border-gray-200 p-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-300">
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Feature</th>
+                                    <th class="text-center py-3 px-4 text-sm font-semibold text-indigo-600">Small (26.1)</th>
+                                    <th class="text-center py-3 px-4 text-sm font-semibold text-green-600">Medium (26.2)</th>
+                                    <th class="text-center py-3 px-4 text-sm font-semibold text-purple-600">Large (26.3)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Queue Icon</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-indigo-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-green-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Object Type Label</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-green-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Queue Name</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-indigo-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-green-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Description</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Clamped</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Full</td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Item Count</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Optional</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-green-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Status Breakdown</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Metadata Grid</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Priority Indicator</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Optional</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Optional</td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Primary Action</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">Implicit</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-green-600"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Secondary Actions</td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-times text-gray-300"></i></td>
+                                    <td class="py-3 px-4 text-center"><i class="fa-solid fa-check text-purple-600"></i></td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="py-3 px-4 text-sm text-gray-900 font-medium">Typical Height</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">40-48px</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">180-220px</td>
+                                    <td class="py-3 px-4 text-center text-xs text-gray-600">400-500px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="implementation-notes-section" class="px-8 py-8 bg-gray-50">
+            <div class="max-w-5xl">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Implementation Notes</h2>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-code text-blue-600"></i>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 ml-3">Component Architecture</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-blue-600 text-xs mr-3 mt-1"></i>
+                                <span>Build as a single component with size prop (small | medium | large)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-blue-600 text-xs mr-3 mt-1"></i>
+                                <span>Use conditional rendering based on variant to show/hide elements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-blue-600 text-xs mr-3 mt-1"></i>
+                                <span>Accept queue data object with all possible fields</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-blue-600 text-xs mr-3 mt-1"></i>
+                                <span>Handle missing optional data gracefully</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-database text-amber-600"></i>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 ml-3">Data Requirements</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                                <span>Queue ID, name, and type (required)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                                <span>Description/purpose text</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                                <span>Workload counts (total, by status)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                                <span>Metadata (created date, display order, etc.)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                                <span>Optional: Priority level, SLA status</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-mobile-screen-button text-purple-600"></i>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 ml-3">Responsive Behavior</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-purple-600 text-xs mr-3 mt-1"></i>
+                                <span>Small cards remain consistent across breakpoints</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-purple-600 text-xs mr-3 mt-1"></i>
+                                <span>Medium cards may stack in single column on mobile</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-purple-600 text-xs mr-3 mt-1"></i>
+                                <span>Large cards adapt to full-width on smaller screens</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-purple-600 text-xs mr-3 mt-1"></i>
+                                <span>Consider collapsing metadata grid to single column</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-bolt text-green-600"></i>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 ml-3">Performance Tips</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-green-600 text-xs mr-3 mt-1"></i>
+                                <span>Virtualize lists when rendering 50+ small cards</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-green-600 text-xs mr-3 mt-1"></i>
+                                <span>Lazy load workload data for large card expansions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-green-600 text-xs mr-3 mt-1"></i>
+                                <span>Cache queue metadata to reduce API calls</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle text-green-600 text-xs mr-3 mt-1"></i>
+                                <span>Use skeleton loaders during data fetch</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="px-8 py-6 bg-white border-t border-gray-200 mt-8">
+            <div class="max-w-5xl">
+                <div class="flex items-center justify-between">
+                    <div class="text-sm text-gray-600">
+                        <span class="font-semibold">ArkCase Design System</span> — Queue Object Cards (26.1, 26.2, 26.3)
+                    </div>
+                    <div class="flex items-center space-x-6 text-sm text-gray-600">
+                        <a href="#" class="hover:text-gray-900">Documentation</a>
+                        <a href="#" class="hover:text-gray-900">Component Library</a>
+                        <a href="#" class="hover:text-gray-900">GitHub</a>
+                    </div>
+                </div>
+                <div class="mt-4 text-xs text-gray-500">
+                    Last updated: December 2024 • Version 1.0 • © 2024 ArkCase LLC
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

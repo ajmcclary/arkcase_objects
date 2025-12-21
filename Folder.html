@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 p-8">
+
+<div id="main-container" class="max-w-7xl mx-auto">
+
+    <section id="header-section" class="mb-12">
+        <div class="bg-white border-b border-gray-200 -mx-8 -mt-8 px-8 py-6 mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">Folder Object Cards — ArkCase ECM</h1>
+            <p class="text-gray-600">Card-based wireframes representing folder objects within the document management system. These cards communicate structure, containment, and navigation without exposing file content.</p>
+        </div>
+    </section>
+
+    <section id="small-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center mb-3">
+                <h2 class="text-2xl font-bold text-gray-900">13.1 — Folder Small Card</h2>
+                <span class="ml-3 px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">COMPACT</span>
+            </div>
+            <p class="text-gray-600 mb-4">Optimized for dense folder lists, tree-style views, and navigation panels. Minimal vertical height with essential identification only.</p>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+                <p class="text-sm text-blue-900"><strong>Use Case:</strong> Sidebar navigation, nested folder trees, quick-scan lists</p>
+            </div>
+        </div>
+
+        <div id="small-card-examples" class="space-y-4">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant A: Standard Folder</h3>
+                <div class="bg-gray-50 p-4 rounded border border-gray-200">
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-regular fa-folder text-blue-600 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-900 truncate">Case Attachments</span>
+                        </div>
+                        <div class="flex items-center space-x-2 flex-shrink-0">
+                            <span class="text-xs text-gray-500">24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant B: Restricted Folder</h3>
+                <div class="bg-gray-50 p-4 rounded border border-gray-200">
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-solid fa-folder text-amber-600 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-900 truncate">Confidential Documents</span>
+                        </div>
+                        <div class="flex items-center space-x-2 flex-shrink-0">
+                            <i class="fa-solid fa-lock text-amber-600 text-xs"></i>
+                            <span class="text-xs text-gray-500">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant C: Empty Folder</h3>
+                <div class="bg-gray-50 p-4 rounded border border-gray-200">
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-regular fa-folder text-gray-400 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-600 truncate">Evidence Archive</span>
+                        </div>
+                        <div class="flex items-center space-x-2 flex-shrink-0">
+                            <span class="text-xs text-gray-400">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant D: List Context</h3>
+                <div class="bg-gray-50 p-4 rounded border border-gray-200 space-y-1">
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-regular fa-folder text-blue-600 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-900 truncate">Legal Correspondence</span>
+                        </div>
+                        <span class="text-xs text-gray-500 flex-shrink-0">142</span>
+                    </div>
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-solid fa-folder text-amber-600 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-900 truncate">Medical Records</span>
+                        </div>
+                        <div class="flex items-center space-x-2 flex-shrink-0">
+                            <i class="fa-solid fa-lock text-amber-600 text-xs"></i>
+                            <span class="text-xs text-gray-500">67</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-regular fa-folder text-blue-600 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-900 truncate">Financial Statements</span>
+                        </div>
+                        <span class="text-xs text-gray-500 flex-shrink-0">29</span>
+                    </div>
+                    <div class="flex items-center justify-between hover:bg-gray-100 px-3 py-2 rounded cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3 flex-1 min-w-0">
+                            <i class="fa-regular fa-folder text-gray-400 text-lg flex-shrink-0"></i>
+                            <span class="font-medium text-gray-600 truncate">Archived Materials</span>
+                        </div>
+                        <span class="text-xs text-gray-400 flex-shrink-0">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center mb-3">
+                <h2 class="text-2xl font-bold text-gray-900">13.2 — Folder Medium Card</h2>
+                <span class="ml-3 px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">DEFAULT</span>
+            </div>
+            <p class="text-gray-600 mb-4">Default representation in folder lists and document panels. Balances navigation with light metadata and clear context.</p>
+            <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+                <p class="text-sm text-green-900"><strong>Use Case:</strong> Document management panels, folder browsers, attachment lists</p>
+            </div>
+        </div>
+
+        <div id="medium-card-examples" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant A: Standard Folder</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-regular fa-folder text-blue-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Case Attachments</h4>
+                            <p class="text-sm text-gray-500">Case #2024-1847-CR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-file text-gray-400"></i>
+                                <span>24 items</span>
+                            </div>
+                            <div class="text-gray-400">•</div>
+                            <span class="text-gray-500">Modified 2 days ago</span>
+                        </div>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant B: Restricted Folder</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder text-amber-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-xs font-semibold rounded">Restricted</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Confidential Documents</h4>
+                            <p class="text-sm text-gray-500">Complaint #COM-2024-0392</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-file text-gray-400"></i>
+                                <span>8 items</span>
+                            </div>
+                            <div class="text-gray-400">•</div>
+                            <span class="text-gray-500">Modified 5 hours ago</span>
+                        </div>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant C: Empty Folder</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-regular fa-folder text-gray-400 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-600 mb-1 truncate">Evidence Archive</h4>
+                            <p class="text-sm text-gray-500">Task #TSK-2024-1203</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-file text-gray-400"></i>
+                                <span class="text-gray-400">0 items</span>
+                            </div>
+                            <div class="text-gray-400">•</div>
+                            <span class="text-gray-500">Created today</span>
+                        </div>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant D: With Subfolders</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-regular fa-folder text-blue-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Legal Correspondence</h4>
+                            <p class="text-sm text-gray-500">Container: Main Repository</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-file text-gray-400"></i>
+                                <span>142 items</span>
+                            </div>
+                            <div class="text-gray-400">•</div>
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-folder text-gray-400"></i>
+                                <span>6 folders</span>
+                            </div>
+                        </div>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant E: Disabled State</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-60 cursor-not-allowed">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder text-gray-400 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-semibold rounded">No Access</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-600 mb-1 truncate">HR Personnel Files</h4>
+                            <p class="text-sm text-gray-500">Case #2024-2156-HR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-solid fa-lock text-gray-400"></i>
+                                <span class="text-gray-400">Restricted</span>
+                            </div>
+                        </div>
+                        <button class="px-3 py-1 bg-gray-300 text-gray-500 text-sm font-medium rounded cursor-not-allowed" disabled>
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant F: Active/Selected State</h3>
+                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4 shadow-md cursor-pointer">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder text-blue-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-blue-700 uppercase tracking-wide">Folder</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Selected</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Financial Statements</h4>
+                            <p class="text-sm text-blue-700">Case #2024-1847-CR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-blue-200">
+                        <div class="flex items-center space-x-4 text-sm text-gray-700">
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-regular fa-file text-blue-600"></i>
+                                <span>29 items</span>
+                            </div>
+                            <div class="text-blue-400">•</div>
+                            <span class="text-gray-600">Modified 1 week ago</span>
+                        </div>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center mb-3">
+                <h2 class="text-2xl font-bold text-gray-900">13.3 — Folder Large Card</h2>
+                <span class="ml-3 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">DETAILED</span>
+            </div>
+            <p class="text-gray-600 mb-4">Used in inspector panels and expanded previews. Provides structural context and comprehensive metadata without turning into a file browser.</p>
+            <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-6">
+                <p class="text-sm text-purple-900"><strong>Use Case:</strong> Inspector panels, detail views, expanded previews, audit trails</p>
+            </div>
+        </div>
+
+        <div id="large-card-examples" class="space-y-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant A: Standard Folder - Full Details</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-regular fa-folder text-blue-600 text-3xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Folder</span>
+                                    <span class="text-gray-300">|</span>
+                                    <span class="text-xs text-gray-500">ID: FLD-2024-1847-01</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Case Attachments</h3>
+                                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fa-solid fa-briefcase text-gray-400"></i>
+                                        <span>Case #2024-1847-CR</span>
+                                    </div>
+                                    <span class="text-gray-300">•</span>
+                                    <span>United States v. Johnson</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Items</div>
+                                <div class="text-2xl font-bold text-gray-900">24</div>
+                                <div class="text-xs text-gray-500 mt-1">18 files, 6 subfolders</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Size</div>
+                                <div class="text-2xl font-bold text-gray-900">127 MB</div>
+                                <div class="text-xs text-gray-500 mt-1">Across all items</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created</span>
+                                <span class="text-sm text-gray-900">January 15, 2024 at 9:42 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Last Modified</span>
+                                <span class="text-sm text-gray-900">March 18, 2024 at 2:15 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created By</span>
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-6 h-6 rounded-full">
+                                    <span class="text-sm text-gray-900">Michael Rodriguez</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Parent Object</span>
+                                <span class="text-sm text-blue-600 hover:underline cursor-pointer">Case #2024-1847-CR</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm font-medium text-gray-600">Access Level</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Standard Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-t border-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <button class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Folder
+                            </button>
+                            <div class="flex items-center space-x-2">
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    View Contents
+                                </button>
+                                <button class="p-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant B: Restricted Folder - Full Details</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center relative">
+                                    <i class="fa-solid fa-folder text-amber-600 text-3xl"></i>
+                                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-amber-600 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-lock text-white text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Folder</span>
+                                    <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-xs font-semibold rounded">Restricted</span>
+                                    <span class="text-gray-300">|</span>
+                                    <span class="text-xs text-gray-500">ID: FLD-2024-0392-03</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Confidential Documents</h3>
+                                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fa-solid fa-file-contract text-gray-400"></i>
+                                        <span>Complaint #COM-2024-0392</span>
+                                    </div>
+                                    <span class="text-gray-300">•</span>
+                                    <span>Employee Misconduct Investigation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-shield-halved text-amber-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <div class="font-semibold text-amber-900 mb-1">Restricted Access</div>
+                                    <div class="text-sm text-amber-800">This folder contains sensitive information. Access is limited to authorized personnel only. All access is logged and monitored.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Items</div>
+                                <div class="text-2xl font-bold text-gray-900">8</div>
+                                <div class="text-xs text-gray-500 mt-1">8 files, 0 subfolders</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Security Level</div>
+                                <div class="text-lg font-bold text-amber-700">Level 3</div>
+                                <div class="text-xs text-gray-500 mt-1">High Confidentiality</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created</span>
+                                <span class="text-sm text-gray-900">February 8, 2024 at 11:23 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Last Modified</span>
+                                <span class="text-sm text-gray-900">March 19, 2024 at 8:47 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created By</span>
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-6 h-6 rounded-full">
+                                    <span class="text-sm text-gray-900">Sarah Chen</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Parent Object</span>
+                                <span class="text-sm text-blue-600 hover:underline cursor-pointer">Complaint #COM-2024-0392</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Authorized Users</span>
+                                <span class="text-sm text-gray-900">5 users</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm font-medium text-gray-600">Access Level</span>
+                                <span class="px-2 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded">Restricted Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-t border-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <button class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Folder
+                            </button>
+                            <div class="flex items-center space-x-2">
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    View Contents
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    View Access Log
+                                </button>
+                                <button class="p-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant C: Empty Folder - Full Details</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-regular fa-folder text-gray-400 text-3xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Folder</span>
+                                    <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-xs font-semibold rounded">Empty</span>
+                                    <span class="text-gray-300">|</span>
+                                    <span class="text-xs text-gray-500">ID: FLD-2024-1203-02</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-600 mb-2">Evidence Archive</h3>
+                                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fa-solid fa-list-check text-gray-400"></i>
+                                        <span>Task #TSK-2024-1203</span>
+                                    </div>
+                                    <span class="text-gray-300">•</span>
+                                    <span>Document Collection Phase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-info-circle text-blue-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <div class="font-semibold text-blue-900 mb-1">No Items Yet</div>
+                                    <div class="text-sm text-blue-800">This folder was recently created and doesn't contain any files or subfolders. Upload documents or create subfolders to organize your content.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Items</div>
+                                <div class="text-2xl font-bold text-gray-400">0</div>
+                                <div class="text-xs text-gray-500 mt-1">No content</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Size</div>
+                                <div class="text-2xl font-bold text-gray-400">0 KB</div>
+                                <div class="text-xs text-gray-500 mt-1">Empty folder</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created</span>
+                                <span class="text-sm text-gray-900">March 20, 2024 at 10:05 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Last Modified</span>
+                                <span class="text-sm text-gray-900">March 20, 2024 at 10:05 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created By</span>
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-6 h-6 rounded-full">
+                                    <span class="text-sm text-gray-900">James Patterson</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Parent Object</span>
+                                <span class="text-sm text-blue-600 hover:underline cursor-pointer">Task #TSK-2024-1203</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm font-medium text-gray-600">Access Level</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Standard Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-t border-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <button class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Upload Files
+                            </button>
+                            <div class="flex items-center space-x-2">
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    Create Subfolder
+                                </button>
+                                <button class="p-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Variant D: Complex Hierarchy - Full Details</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-tree text-blue-600 text-3xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Folder</span>
+                                    <span class="text-gray-300">|</span>
+                                    <span class="text-xs text-gray-500">ID: FLD-2024-MAIN-01</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Legal Correspondence</h3>
+                                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fa-solid fa-box text-gray-400"></i>
+                                        <span>Container: Main Repository</span>
+                                    </div>
+                                    <span class="text-gray-300">•</span>
+                                    <span>Root Level Folder</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Total Items</div>
+                                <div class="text-2xl font-bold text-gray-900">142</div>
+                                <div class="text-xs text-gray-500 mt-1">All content</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Files</div>
+                                <div class="text-2xl font-bold text-gray-900">89</div>
+                                <div class="text-xs text-gray-500 mt-1">Direct files</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Subfolders</div>
+                                <div class="text-2xl font-bold text-gray-900">6</div>
+                                <div class="text-xs text-gray-500 mt-1">Child folders</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg border border-gray-200 p-4 mb-6">
+                            <div class="text-sm font-semibold text-gray-700 mb-3">Folder Structure</div>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Client Communications (24 items)</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Court Filings (38 items)</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Discovery Materials (19 items)</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Expert Reports (12 items)</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Settlement Negotiations (8 items)</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-600">
+                                    <i class="fa-solid fa-folder text-blue-500"></i>
+                                    <span>Trial Preparation (41 items)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created</span>
+                                <span class="text-sm text-gray-900">December 1, 2023 at 2:30 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Last Modified</span>
+                                <span class="text-sm text-gray-900">March 19, 2024 at 4:22 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Created By</span>
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-6 h-6 rounded-full">
+                                    <span class="text-sm text-gray-900">David Thompson</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Total Size</span>
+                                <span class="text-sm text-gray-900">2.4 GB</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                <span class="text-sm font-medium text-gray-600">Parent Object</span>
+                                <span class="text-sm text-blue-600 hover:underline cursor-pointer">Main Repository</span>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm font-medium text-gray-600">Access Level</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Standard Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-t border-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <button class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Folder
+                            </button>
+                            <div class="flex items-center space-x-2">
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    View Contents
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    Manage Subfolders
+                                </button>
+                                <button class="p-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Cross-Variant Comparison</h2>
+            <p class="text-gray-600 mb-4">Side-by-side comparison demonstrating consistent visual language and progressive information disclosure across all three card sizes.</p>
+        </div>
+
+        <div id="comparison-grid" class="bg-white border border-gray-200 rounded-lg p-6">
+            <div class="grid grid-cols-3 gap-6">
+                <div>
+                    <div class="text-center mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">SMALL</span>
+                        <div class="text-sm text-gray-600 mt-2">Compact Navigation</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-center justify-between hover:bg-gray-100 px-2 py-2 rounded cursor-pointer">
+                            <div class="flex items-center space-x-2 flex-1 min-w-0">
+                                <i class="fa-regular fa-folder text-blue-600"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Case Attachments</span>
+                            </div>
+                            <span class="text-xs text-gray-500">24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="text-center mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">MEDIUM</span>
+                        <div class="text-sm text-gray-600 mt-2">Default View</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <i class="fa-regular fa-folder text-blue-600 text-xl mt-1"></i>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-xs text-gray-500 uppercase mb-1">Folder</div>
+                                <div class="text-sm font-semibold text-gray-900 truncate">Case Attachments</div>
+                                <div class="text-xs text-gray-500">Case #2024-1847-CR</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-2 border-t border-gray-200">
+                            <span class="text-xs text-gray-600">24 items</span>
+                            <button class="px-2 py-1 bg-blue-600 text-white text-xs rounded">Open</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="text-center mb-4">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">LARGE</span>
+                        <div class="text-sm text-gray-600 mt-2">Detailed Inspector</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="p-3">
+                            <div class="flex items-start space-x-2 mb-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-regular fa-folder text-blue-600 text-lg"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-xs text-gray-500 uppercase mb-1">Folder</div>
+                                    <div class="text-sm font-bold text-gray-900">Case Attachments</div>
+                                    <div class="text-xs text-gray-500">Case #2024-1847-CR</div>
+                                </div>
+                            </div>
+                            <div class="space-y-1 text-xs mb-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Items:</span>
+                                    <span class="text-gray-900">24</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Modified:</span>
+                                    <span class="text-gray-900">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border-t border-gray-200 px-3 py-2 flex justify-between">
+                            <button class="px-2 py-1 bg-blue-600 text-white text-xs rounded">Open</button>
+                            <button class="px-2 py-1 border border-gray-300 text-gray-700 text-xs rounded">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="behavioral-states-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Behavioral States & Interactions</h2>
+            <p class="text-gray-600 mb-4">Comprehensive state variations demonstrating hover, selected, disabled, and error states across folder cards.</p>
+        </div>
+
+        <div id="behavioral-examples" class="grid grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Hover State</h3>
+                <div class="bg-gray-50 border border-gray-300 rounded-lg p-4 shadow-md transition-shadow">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-regular fa-folder text-blue-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Case Attachments</h4>
+                            <p class="text-sm text-gray-500">Case #2024-1847-CR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <span class="text-sm text-gray-600">24 items</span>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Selected State</h3>
+                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4 shadow-lg">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder text-blue-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-blue-700 uppercase tracking-wide">Folder</span>
+                                <i class="fa-solid fa-check-circle text-blue-600"></i>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Case Attachments</h4>
+                            <p class="text-sm text-blue-700">Case #2024-1847-CR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-blue-200">
+                        <span class="text-sm text-gray-700">24 items</span>
+                        <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded">
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Disabled State</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder text-gray-400 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-semibold rounded">No Access</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-600 mb-1 truncate">HR Personnel Files</h4>
+                            <p class="text-sm text-gray-500">Case #2024-2156-HR</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <span class="text-sm text-gray-400">Restricted</span>
+                        <button class="px-3 py-1 bg-gray-300 text-gray-500 text-sm font-medium rounded cursor-not-allowed" disabled>
+                            Open
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Error State</h3>
+                <div class="bg-red-50 border-2 border-red-300 rounded-lg p-4">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <i class="fa-solid fa-folder-open text-red-600 text-2xl mt-1"></i>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Folder</span>
+                                <span class="px-2 py-0.5 bg-red-200 text-red-900 text-xs font-semibold rounded">Error</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Corrupted Archive</h4>
+                            <p class="text-sm text-red-700">Unable to load folder contents</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-red-200">
+                        <span class="text-sm text-red-700">Access failed</span>
+                        <button class="px-3 py-1 bg-red-600 text-white text-sm font-medium rounded hover:bg-red-700">
+                            Retry
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contextual-usage-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Contextual Usage Examples</h2>
+            <p class="text-gray-600 mb-4">Real-world implementation scenarios showing how folder cards integrate into different UI contexts and workflows.</p>
+        </div>
+
+        <div id="contextual-examples" class="space-y-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Context A: Sidebar Navigation Tree</h3>
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-4 bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Document Browser</div>
+                        <div class="space-y-1">
+                            <div class="flex items-center space-x-2 px-2 py-2 hover:bg-gray-100 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                <i class="fa-regular fa-folder text-blue-600"></i>
+                                <span class="text-sm font-medium text-gray-900">Case Files</span>
+                            </div>
+                            <div class="ml-4 space-y-1">
+                                <div class="flex items-center space-x-2 px-2 py-2 bg-blue-50 border-l-2 border-blue-600 rounded cursor-pointer">
+                                    <i class="fa-solid fa-chevron-down text-gray-600 text-xs"></i>
+                                    <i class="fa-solid fa-folder text-blue-600"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Case Attachments</span>
+                                    <span class="ml-auto text-xs text-gray-500">24</span>
+                                </div>
+                                <div class="ml-6 space-y-1">
+                                    <div class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-100 rounded cursor-pointer">
+                                        <i class="fa-regular fa-file text-gray-400"></i>
+                                        <span class="text-sm text-gray-700">Evidence_001.pdf</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-100 rounded cursor-pointer">
+                                        <i class="fa-regular fa-file text-gray-400"></i>
+                                        <span class="text-sm text-gray-700">Witness_Statement.docx</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 px-2 py-2 hover:bg-gray-100 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                <i class="fa-solid fa-folder text-amber-600"></i>
+                                <span class="text-sm font-medium text-gray-900">Confidential</span>
+                                <i class="fa-solid fa-lock text-amber-600 text-xs ml-1"></i>
+                            </div>
+                            <div class="flex items-center space-x-2 px-2 py-2 hover:bg-gray-100 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                <i class="fa-regular fa-folder text-blue-600"></i>
+                                <span class="text-sm font-medium text-gray-900">Legal Docs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-8 bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-2 text-sm text-gray-600">
+                                <span class="hover:underline cursor-pointer">Case Files</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                                <span class="font-semibold text-gray-900">Case Attachments</span>
+                            </div>
+                            <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">
+                                <i class="fa-solid fa-plus mr-1"></i>
+                                Upload
+                            </button>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">24 items in this folder</div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="border border-gray-200 rounded p-3 hover:shadow-md cursor-pointer">
+                                <i class="fa-regular fa-file-pdf text-red-500 text-2xl mb-2"></i>
+                                <div class="text-sm font-medium text-gray-900 truncate">Evidence_001.pdf</div>
+                                <div class="text-xs text-gray-500">2.4 MB</div>
+                            </div>
+                            <div class="border border-gray-200 rounded p-3 hover:shadow-md cursor-pointer">
+                                <i class="fa-regular fa-file-word text-blue-500 text-2xl mb-2"></i>
+                                <div class="text-sm font-medium text-gray-900 truncate">Witness_Statement.docx</div>
+                                <div class="text-xs text-gray-500">156 KB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Context B: Document Panel List View</h3>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-semibold text-gray-900">All Folders</h4>
+                        <div class="flex items-center space-x-2">
+                            <button class="px-3 py-1 border border-gray-300 text-gray-700 text-sm rounded hover:bg-gray-100">
+                                <i class="fa-solid fa-filter mr-1"></i>
+                                Filter
+                            </button>
+                            <button class="px-3 py-1 border border-gray-300 text-gray-700 text-sm rounded hover:bg-gray-100">
+                                <i class="fa-solid fa-sort mr-1"></i>
+                                Sort
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-regular fa-folder text-blue-600 text-2xl mt-1"></i>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">Folder</span>
+                                    </div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Case Attachments</h4>
+                                    <p class="text-sm text-gray-500">Case #2024-1847-CR • 24 items • Modified 2 days ago</p>
+                                </div>
+                                <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
+                                    Open
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-folder text-amber-600 text-2xl mt-1"></i>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">Folder</span>
+                                        <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-xs font-semibold rounded">Restricted</span>
+                                    </div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Confidential Documents</h4>
+                                    <p class="text-sm text-gray-500">Complaint #COM-2024-0392 • 8 items • Modified 5 hours ago</p>
+                                </div>
+                                <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
+                                    Open
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-regular fa-folder text-blue-600 text-2xl mt-1"></i>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">Folder</span>
+                                    </div>
+                                    <h4 class="text-base font-semibold text-gray-900 mb-1">Legal Correspondence</h4>
+                                    <p class="text-sm text-gray-500">Container: Main Repository • 142 items • 6 subfolders</p>
+                                </div>
+                                <button class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
+                                    Open
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Context C: Inspector Panel Detail View</h3>
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-7 bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Folder List</div>
+                        <div class="space-y-2">
+                            <div class="bg-white border border-gray-200 rounded p-3 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fa-regular fa-folder text-blue-600"></i>
+                                    <span class="text-sm font-medium">Case Attachments</span>
+                                    <span class="ml-auto text-xs text-gray-500">24</span>
+                                </div>
+                            </div>
+                            <div class="bg-blue-50 border-2 border-blue-600 rounded p-3 cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-folder text-blue-600"></i>
+                                    <span class="text-sm font-semibold">Legal Correspondence</span>
+                                    <span class="ml-auto text-xs text-gray-700">142</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded p-3 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-folder text-amber-600"></i>
+                                    <span class="text-sm font-medium">Confidential</span>
+                                    <i class="fa-solid fa-lock text-amber-600 text-xs ml-1"></i>
+                                    <span class="ml-auto text-xs text-gray-500">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-5 bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm font-semibold text-gray-900">Folder Details</span>
+                                <button class="text-gray-500 hover:text-gray-700">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-tree text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 uppercase mb-1">Folder</div>
+                                    <div class="text-base font-bold text-gray-900">Legal Correspondence</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between py-1 border-b border-gray-100">
+                                    <span class="text-gray-600">Items:</span>
+                                    <span class="text-gray-900 font-medium">142</span>
+                                </div>
+                                <div class="flex justify-between py-1 border-b border-gray-100">
+                                    <span class="text-gray-600">Subfolders:</span>
+                                    <span class="text-gray-900 font-medium">6</span>
+                                </div>
+                                <div class="flex justify-between py-1 border-b border-gray-100">
+                                    <span class="text-gray-600">Size:</span>
+                                    <span class="text-gray-900 font-medium">2.4 GB</span>
+                                </div>
+                                <div class="flex justify-between py-1">
+                                    <span class="text-gray-600">Modified:</span>
+                                    <span class="text-gray-900 font-medium">Mar 19, 2024</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <button class="w-full px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700">
+                                    Open Folder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-specifications-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Design Specifications & Guidelines</h2>
+            <p class="text-gray-600 mb-4">Technical specifications, spacing guidelines, and implementation notes for developers and designers.</p>
+        </div>
+
+        <div id="specifications-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Typography Scale</h3>
+                <div class="space-y-3">
+                    <div class="flex items-baseline justify-between border-b border-gray-100 pb-2">
+                        <span class="text-xs text-gray-600 uppercase">Object Type Label</span>
+                        <span class="text-xs font-mono text-gray-900">10px / 0.625rem</span>
+                    </div>
+                    <div class="flex items-baseline justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Folder Name (Small)</span>
+                        <span class="text-xs font-mono text-gray-900">14px / 0.875rem</span>
+                    </div>
+                    <div class="flex items-baseline justify-between border-b border-gray-100 pb-2">
+                        <span class="text-base text-gray-600">Folder Name (Medium)</span>
+                        <span class="text-xs font-mono text-gray-900">16px / 1rem</span>
+                    </div>
+                    <div class="flex items-baseline justify-between border-b border-gray-100 pb-2">
+                        <span class="text-lg text-gray-600">Folder Name (Large)</span>
+                        <span class="text-xs font-mono text-gray-900">20px / 1.25rem</span>
+                    </div>
+                    <div class="flex items-baseline justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Metadata Text</span>
+                        <span class="text-xs font-mono text-gray-900">12px / 0.75rem</span>
+                    </div>
+                    <div class="flex items-baseline justify-between">
+                        <span class="text-sm text-gray-600">Item Count</span>
+                        <span class="text-xs font-mono text-gray-900">12px / 0.75rem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Icon Sizes</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-regular fa-folder text-blue-600 text-base"></i>
+                            <span class="text-sm text-gray-700">Small Card</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">16px / 1rem</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-regular fa-folder text-blue-600 text-xl"></i>
+                            <span class="text-sm text-gray-700">Medium Card</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">24px / 1.5rem</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-regular fa-folder text-blue-600 text-3xl"></i>
+                            <span class="text-sm text-gray-700">Large Card</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">48px / 3rem</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-lock text-amber-600 text-xs"></i>
+                            <span class="text-sm text-gray-700">Status Icons</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">12px / 0.75rem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Color Palette</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded bg-blue-600"></div>
+                            <span class="text-sm text-gray-700">Standard Folder</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">#2563EB</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded bg-amber-600"></div>
+                            <span class="text-sm text-gray-700">Restricted Folder</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">#D97706</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded bg-gray-400"></div>
+                            <span class="text-sm text-gray-700">Empty/Disabled</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">#9CA3AF</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded bg-green-600"></div>
+                            <span class="text-sm text-gray-700">Standard Access</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">#059669</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded bg-red-600"></div>
+                            <span class="text-sm text-gray-700">Error State</span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-900">#DC2626</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Spacing & Padding</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Small Card Padding</span>
+                        <span class="text-xs font-mono text-gray-900">8px / 0.5rem</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Medium Card Padding</span>
+                        <span class="text-xs font-mono text-gray-900">16px / 1rem</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Large Card Padding</span>
+                        <span class="text-xs font-mono text-gray-900">24px / 1.5rem</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Icon-Text Gap</span>
+                        <span class="text-xs font-mono text-gray-900">12px / 0.75rem</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-sm text-gray-600">Section Divider</span>
+                        <span class="text-xs font-mono text-gray-900">12px / 0.75rem</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Card Border Radius</span>
+                        <span class="text-xs font-mono text-gray-900">8px / 0.5rem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6 lg:col-span-2">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Implementation Notes</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-blue-900 text-sm mb-1">Visual Consistency</div>
+                                <div class="text-xs text-blue-800">Folder icons, colors, and restriction indicators must remain consistent across all card sizes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-green-900 text-sm mb-1">Accessibility</div>
+                                <div class="text-xs text-green-800">All interactive elements must meet WCAG 2.1 AA standards for contrast and keyboard navigation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <i class="fa-solid fa-circle-check text-purple-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-purple-900 text-sm mb-1">Progressive Disclosure</div>
+                                <div class="text-xs text-purple-800">Information density increases from small to large cards without overwhelming users</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-amber-900 text-sm mb-1">Security Indicators</div>
+                                <div class="text-xs text-amber-800">Restricted folders must display clear visual warnings and lock icons in all states</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-section" class="mb-8">
+        <div class="bg-gray-100 border border-gray-200 rounded-lg p-6">
+            <div class="flex items-start space-x-4">
+                <i class="fa-solid fa-lightbulb text-blue-600 text-2xl mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Design System Integration</h3>
+                    <p class="text-sm text-gray-700 mb-3">These folder card wireframes are part of the ArkCase ECM object card library and should be implemented alongside File Cards (Section 12) and Container Cards (Section 14) to ensure visual consistency across the document management system.</p>
+                    <div class="flex items-center space-x-4 text-sm">
+                        <a href="#" class="text-blue-600 hover:underline flex items-center space-x-1">
+                            <i class="fa-solid fa-file"></i>
+                            <span>View File Cards</span>
+                        </a>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center space-x-1">
+                            <i class="fa-solid fa-box"></i>
+                            <span>View Container Cards</span>
+                        </a>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center space-x-1">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Full Documentation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        danger: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="main-container" class="min-h-screen p-8">
+    
+    <section id="header-section" class="mb-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="bg-blue-100 p-3 rounded-lg">
+                    <i class="fa-solid fa-bell text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Subscription Object Wireframes</h1>
+                    <p class="text-gray-600 mt-1">Card-based representations for subscription objects in ArkCase</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <p class="text-sm text-gray-700"><span class="font-semibold">Design System:</span> Enterprise card architecture showcasing Small (25.1), Medium (25.2), and Large (25.3) variants</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="small-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full">25.1</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Subscription — Small Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Compact representation for dense subscription lists and related-object panels. Optimized for quick recognition with minimal vertical height.</p>
+                <div class="bg-gray-100 rounded-lg p-4 border border-gray-200">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="font-semibold text-gray-700">Use Cases:</span>
+                            <span class="text-gray-600"> Dense lists, related-object panels, compact views</span>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-gray-700">Behavior:</span>
+                            <span class="text-gray-600"> Entire card clickable, no visible actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                
+                <div id="small-card-variant-1" class="bg-white rounded-lg border border-gray-200 p-4">
+                    <h3 class="text-xs font-semibold text-gray-500 uppercase mb-4 tracking-wide">Variant A: Single-row Layout</h3>
+                    <div class="space-y-3">
+                        
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0">
+                                <i class="fa-solid fa-bell text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Case #2024-0847: Property Damage Investigation</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0">
+                                <i class="fa-solid fa-bell text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Task: Review Financial Documents</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0">
+                                <i class="fa-solid fa-bell text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Complaint #COM-5821: Service Quality Issue</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0">
+                                <i class="fa-solid fa-bell text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Document: Annual Compliance Report 2024</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="small-card-variant-2" class="bg-white rounded-lg border border-gray-200 p-4">
+                    <h3 class="text-xs font-semibold text-gray-500 uppercase mb-4 tracking-wide">Variant B: Tight Single-column Layout</h3>
+                    <div class="space-y-3">
+                        
+                        <div class="p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                                <span class="text-xs font-medium text-gray-500">Subscription</span>
+                            </div>
+                            <div class="text-sm font-medium text-gray-900 mb-1 truncate">Case #2024-0847: Property Damage Investigation</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-5 h-5 rounded-full border border-gray-200">
+                                <span class="text-xs text-gray-600">Michael Chen</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                                <span class="text-xs font-medium text-gray-500">Subscription</span>
+                            </div>
+                            <div class="text-sm font-medium text-gray-900 mb-1 truncate">Task: Review Financial Documents</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-5 h-5 rounded-full border border-gray-200">
+                                <span class="text-xs text-gray-600">Sarah Martinez</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                                <span class="text-xs font-medium text-gray-500">Subscription</span>
+                            </div>
+                            <div class="text-sm font-medium text-gray-900 mb-1 truncate">Complaint #COM-5821: Service Quality Issue</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-5 h-5 rounded-full border border-gray-200">
+                                <span class="text-xs text-gray-600">David Thompson</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="small-card-variant-3" class="bg-white rounded-lg border border-gray-200 p-4">
+                    <h3 class="text-xs font-semibold text-gray-500 uppercase mb-4 tracking-wide">Variant C: Icon-emphasized Layout</h3>
+                    <div class="space-y-3">
+                        
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Case #2024-0847</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Task: Review Documents</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Complaint #COM-5821</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-all cursor-pointer">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded">
+                                <i class="fa-solid fa-bell text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-medium text-gray-900 truncate block">Document: Annual Report</span>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-6 h-6 rounded-full border border-gray-200">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">25.2</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Subscription — Medium Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Default representation in subscription panels. Balances identity with context, providing clear hierarchy and moderate spacing for readability.</p>
+                <div class="bg-gray-100 rounded-lg p-4 border border-gray-200">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="font-semibold text-gray-700">Use Cases:</span>
+                            <span class="text-gray-600"> Subscription panels, list views, overview screens</span>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-gray-700">Behavior:</span>
+                            <span class="text-gray-600"> Primary action visible, predictable interactions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <div id="medium-card-variant-1" class="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-bell text-blue-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Subscription</span>
+                                <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded">Active</span>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mb-1">Case #2024-0847</h3>
+                            <p class="text-sm text-gray-600 truncate">Property Damage Investigation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-8 h-8 rounded-full border-2 border-gray-200">
+                            <div>
+                                <div class="text-xs text-gray-500">Subscriber</div>
+                                <div class="text-sm font-medium text-gray-900">Michael Chen</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Created Jan 15, 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button class="flex-1 bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            View Case
+                        </button>
+                        <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-variant-2" class="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-bell text-blue-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Subscription</span>
+                                <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded">Active</span>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mb-1">Task: Review Financial Documents</h3>
+                            <p class="text-sm text-gray-600">Priority: High</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-8 h-8 rounded-full border-2 border-gray-200">
+                            <div>
+                                <div class="text-xs text-gray-500">Subscriber</div>
+                                <div class="text-sm font-medium text-gray-900">Sarah Martinez</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Created Jan 18, 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button class="flex-1 bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            View Task
+                        </button>
+                        <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-variant-3" class="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-bell text-blue-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Subscription</span>
+                                <span class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-0.5 rounded">Paused</span>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mb-1">Complaint #COM-5821</h3>
+                            <p class="text-sm text-gray-600 truncate">Service Quality Issue - Customer Relations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-8 h-8 rounded-full border-2 border-gray-200">
+                            <div>
+                                <div class="text-xs text-gray-500">Subscriber</div>
+                                <div class="text-sm font-medium text-gray-900">David Thompson</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Created Dec 28, 2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button class="flex-1 bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            View Complaint
+                        </button>
+                        <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-variant-4" class="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-bell text-blue-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Subscription</span>
+                                <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded">Active</span>
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mb-1">Document: Annual Compliance Report 2024</h3>
+                            <p class="text-sm text-gray-600">Updates on Document Changes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-8 h-8 rounded-full border-2 border-gray-200">
+                            <div>
+                                <div class="text-xs text-gray-500">Subscriber</div>
+                                <div class="text-sm font-medium text-gray-900">James Rodriguez</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Created Jan 22, 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button class="flex-1 bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            View Document
+                        </button>
+                        <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">25.3</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Subscription — Large Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Used in inspector panels and expanded previews. Provides comprehensive clarity around subscription context with structured sections and strong visual hierarchy.</p>
+                <div class="bg-gray-100 rounded-lg p-4 border border-gray-200">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="font-semibold text-gray-700">Use Cases:</span>
+                            <span class="text-gray-600"> Inspector panels, expanded previews, detailed views</span>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-gray-700">Behavior:</span>
+                            <span class="text-gray-600"> Multiple actions, permission-aware unsubscribe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                
+                <div id="large-card-variant-1" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 border-b border-gray-200">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm">
+                                <i class="fa-solid fa-bell text-blue-600 text-2xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider">Subscription Object</span>
+                                    <span class="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Active</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Case #2024-0847: Property Damage Investigation</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-600">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span>Case Management</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span>Priority: High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscriber Information</h4>
+                            <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-white shadow">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900">Michael Chen</div>
+                                    <div class="text-sm text-gray-600">Senior Case Manager</div>
+                                    <div class="text-xs text-gray-500 mt-1">michael.chen@arkcase.com</div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1 rounded">Active User</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscription Metadata</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-calendar text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created Date</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">January 15, 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">10:24 AM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-user text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created By</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">Michael Chen</div>
+                                    <div class="text-xs text-gray-500 mt-1">Self-subscribed</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Last Modified</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">January 15, 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">10:24 AM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-solid fa-toggle-on text-green-500"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Status</span>
+                                    </div>
+                                    <div class="font-semibold text-green-700">Active</div>
+                                    <div class="text-xs text-gray-500 mt-1">Receiving notifications</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscribed Object Details</h4>
+                            <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                <div class="flex items-start gap-3">
+                                    <div class="flex-shrink-0 bg-blue-600 text-white p-2 rounded">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900 mb-1">Case #2024-0847</div>
+                                        <div class="text-sm text-gray-700 mb-2">Property Damage Investigation</div>
+                                        <div class="flex items-center gap-4 text-xs text-gray-600">
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>Assigned to: Sarah Martinez</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-calendar"></i>
+                                                <span>Due: Jan 30, 2024</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-flag"></i>
+                                                <span>Priority: High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <div class="flex items-center gap-3">
+                                <button class="flex-1 bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>View Subscribed Object</span>
+                                </button>
+                                <button class="px-6 py-3 border border-red-300 text-red-600 font-medium rounded-lg hover:bg-red-50 transition-colors flex items-center gap-2">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                    <span>Unsubscribe</span>
+                                </button>
+                                <button class="p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-variant-2" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-6 border-b border-gray-200">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm">
+                                <i class="fa-solid fa-bell text-purple-600 text-2xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider">Subscription Object</span>
+                                    <span class="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Active</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Task: Review Financial Documents</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-600">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <span>Task Management</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span>Priority: High</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span>Due: Jan 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscriber Information</h4>
+                            <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-white shadow">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900">Sarah Martinez</div>
+                                    <div class="text-sm text-gray-600">Financial Analyst</div>
+                                    <div class="text-xs text-gray-500 mt-1">sarah.martinez@arkcase.com</div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded">Active User</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscription Metadata</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-calendar text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created Date</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">January 18, 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">2:15 PM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-user text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created By</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">Sarah Martinez</div>
+                                    <div class="text-xs text-gray-500 mt-1">Self-subscribed</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Last Modified</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">January 20, 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">9:42 AM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-solid fa-toggle-on text-green-500"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Status</span>
+                                    </div>
+                                    <div class="font-semibold text-green-700">Active</div>
+                                    <div class="text-xs text-gray-500 mt-1">Receiving notifications</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscribed Object Details</h4>
+                            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                                <div class="flex items-start gap-3">
+                                    <div class="flex-shrink-0 bg-purple-600 text-white p-2 rounded">
+                                        <i class="fa-solid fa-list-check"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900 mb-1">Task: Review Financial Documents</div>
+                                        <div class="text-sm text-gray-700 mb-2">Quarterly financial review and compliance verification</div>
+                                        <div class="flex items-center gap-4 text-xs text-gray-600">
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>Assigned to: Sarah Martinez</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-calendar"></i>
+                                                <span>Due: Jan 25, 2024</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-flag"></i>
+                                                <span>Priority: High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <div class="flex items-center gap-3">
+                                <button class="flex-1 bg-purple-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>View Subscribed Object</span>
+                                </button>
+                                <button class="px-6 py-3 border border-red-300 text-red-600 font-medium rounded-lg hover:bg-red-50 transition-colors flex items-center gap-2">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                    <span>Unsubscribe</span>
+                                </button>
+                                <button class="p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-variant-3" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gradient-to-r from-amber-50 to-amber-100 p-6 border-b border-gray-200">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm">
+                                <i class="fa-solid fa-bell text-amber-600 text-2xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider">Subscription Object</span>
+                                    <span class="bg-yellow-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Paused</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Complaint #COM-5821: Service Quality Issue</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-600">
+                                    <i class="fa-solid fa-exclamation-triangle"></i>
+                                    <span>Complaint Management</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span>Priority: Medium</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span>Status: Under Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscriber Information</h4>
+                            <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-white shadow">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900">David Thompson</div>
+                                    <div class="text-sm text-gray-600">Customer Relations Manager</div>
+                                    <div class="text-xs text-gray-500 mt-1">david.thompson@arkcase.com</div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1 rounded">Active User</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscription Metadata</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-calendar text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created Date</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">December 28, 2023</div>
+                                    <div class="text-xs text-gray-500 mt-1">11:30 AM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-user text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Created By</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">Jennifer Adams</div>
+                                    <div class="text-xs text-gray-500 mt-1">System Administrator</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Last Modified</span>
+                                    </div>
+                                    <div class="font-semibold text-gray-900">January 10, 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">3:15 PM EST</div>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fa-solid fa-pause-circle text-yellow-500"></i>
+                                        <span class="text-xs font-semibold text-gray-500 uppercase">Status</span>
+                                    </div>
+                                    <div class="font-semibold text-yellow-700">Paused</div>
+                                    <div class="text-xs text-gray-500 mt-1">Notifications temporarily disabled</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Subscribed Object Details</h4>
+                            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                                <div class="flex items-start gap-3">
+                                    <div class="flex-shrink-0 bg-amber-600 text-white p-2 rounded">
+                                        <i class="fa-solid fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900 mb-1">Complaint #COM-5821</div>
+                                        <div class="text-sm text-gray-700 mb-2">Service Quality Issue - Customer Relations Department</div>
+                                        <div class="flex items-center gap-4 text-xs text-gray-600">
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>Assigned to: David Thompson</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-calendar"></i>
+                                                <span>Filed: Dec 15, 2023</span>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <i class="fa-solid fa-flag"></i>
+                                                <span>Priority: Medium</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-info-circle text-yellow-600 mt-0.5"></i>
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 mb-1">Subscription Paused</div>
+                                    <div class="text-sm text-gray-700">This subscription was paused on January 10, 2024. You will not receive notifications until it is resumed.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <div class="flex items-center gap-3">
+                                <button class="flex-1 bg-amber-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-amber-700 transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>View Subscribed Object</span>
+                                </button>
+                                <button class="px-6 py-3 border border-green-300 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-colors flex items-center gap-2">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>Resume</span>
+                                </button>
+                                <button class="px-6 py-3 border border-red-300 text-red-600 font-medium rounded-lg hover:bg-red-50 transition-colors flex items-center gap-2">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                    <span>Unsubscribe</span>
+                                </button>
+                                <button class="p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Cross-Variant Comparison</h2>
+                <p class="text-gray-600">Visual comparison showing how subscription context scales across card sizes</p>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b border-gray-200">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Feature</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Small Card (25.1)</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Medium Card (25.2)</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Large Card (25.3)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Subscription Icon</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Visible
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Visible
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Prominent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Object Name</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Truncated
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Full with context
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Full with metadata
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Subscriber Identity</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Avatar only
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Avatar + Name
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Full profile card
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Subscription Status</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> Hidden
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Badge
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Badge + Details
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Created Date</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> Hidden
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Visible
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Full timestamp
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Created By</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> Hidden
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> Hidden
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Visible
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Actions</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> None visible
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Primary action
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Multiple actions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Object Details</td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-xmark text-red-600"></i> Minimal
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Secondary text
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    <i class="fa-solid fa-check text-green-600"></i> Full context card
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-principles-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Design Principles & Guidelines</h2>
+                <p class="text-gray-600">Core principles governing subscription card design in ArkCase</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div id="principle-card-1" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-eye text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Clear Object Identity</h3>
+                            <p class="text-sm text-gray-600">Every subscription card must immediately communicate what object is being subscribed to, with clear visual hierarchy distinguishing the subscription from the subscribed object.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                        <div class="text-xs font-semibold text-blue-900 mb-2">Implementation</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Subscription icon always visible</li>
+                            <li>• Object type clearly labeled</li>
+                            <li>• Primary title uses consistent formatting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="principle-card-2" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-green-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-user-check text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Subscriber Prominence</h3>
+                            <p class="text-sm text-gray-600">The subscribed user must be immediately identifiable through avatar, name, or both depending on card size, ensuring clarity about who will receive notifications.</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+                        <div class="text-xs font-semibold text-green-900 mb-2">Implementation</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Avatar in all variants</li>
+                            <li>• Name visible in medium and large</li>
+                            <li>• Role/title in large cards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="principle-card-3" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-purple-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-layer-group text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Scalable Context</h3>
+                            <p class="text-sm text-gray-600">Information density must scale appropriately from small to large cards, with each variant feeling like a natural expansion of the previous, not a completely different design.</p>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                        <div class="text-xs font-semibold text-purple-900 mb-2">Implementation</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Consistent visual language</li>
+                            <li>• Progressive information disclosure</li>
+                            <li>• Predictable layout expansion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="principle-card-4" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-orange-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-shield-halved text-orange-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Permission Awareness</h3>
+                            <p class="text-sm text-gray-600">Subscription cards must respect permission boundaries, showing or hiding actions like unsubscribe based on user roles and object access rights.</p>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50 rounded-lg p-4 border border-orange-200">
+                        <div class="text-xs font-semibold text-orange-900 mb-2">Implementation</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Conditional action visibility</li>
+                            <li>• Disabled states for restricted actions</li>
+                            <li>• Clear permission indicators</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="principle-card-5" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-red-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-ban text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">No Notification Mechanics</h3>
+                            <p class="text-sm text-gray-600">Subscription cards focus on subscription context, not notification delivery. Avoid showing notification types, schedules, or delivery preferences.</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                        <div class="text-xs font-semibold text-red-900 mb-2">What to Avoid</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Notification frequency settings</li>
+                            <li>• Delivery channel preferences</li>
+                            <li>• Message templates or rules</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="principle-card-6" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 bg-teal-100 p-3 rounded-lg">
+                            <i class="fa-solid fa-arrows-up-down text-teal-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Status Visibility</h3>
+                            <p class="text-sm text-gray-600">Subscription state (active, paused, expired) must be clearly visible and consistently styled across all card variants to prevent confusion.</p>
+                        </div>
+                    </div>
+                    <div class="bg-teal-50 rounded-lg p-4 border border-teal-200">
+                        <div class="text-xs font-semibold text-teal-900 mb-2">Implementation</div>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li>• Color-coded status badges</li>
+                            <li>• Consistent badge positioning</li>
+                            <li>• Explanatory text in large cards</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="behavioral-notes-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Behavioral Specifications</h2>
+                <p class="text-gray-600">Interaction patterns and behavioral requirements for subscription cards</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                
+                <div id="behavior-card-1" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900">Small Card Behavior</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Entire Card Clickable</div>
+                                    <div class="text-sm text-gray-600">The entire card acts as a single click target, navigating to the subscribed object or opening a detailed view.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">No Visible Actions</div>
+                                    <div class="text-sm text-gray-600">Actions like unsubscribe or settings are not shown to maintain minimal height and visual simplicity.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Hover State</div>
+                                    <div class="text-sm text-gray-600">Subtle background color change and border emphasis on hover to indicate interactivity.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Text Truncation</div>
+                                    <div class="text-sm text-gray-600">Long object names are truncated with ellipsis to maintain single-row or tight column layout.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="behavior-card-2" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900">Medium Card Behavior</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Primary Action Visible</div>
+                                    <div class="text-sm text-gray-600">A single primary action button (e.g., "View Case") is always visible at the bottom of the card.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Secondary Actions Menu</div>
+                                    <div class="text-sm text-gray-600">Additional actions accessible through a more menu (three-dot icon) to avoid cluttering the interface.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Status Badge Interaction</div>
+                                    <div class="text-sm text-gray-600">Status badges are non-interactive but may show tooltips on hover explaining the current state.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Subscriber Click</div>
+                                    <div class="text-sm text-gray-600">Clicking on subscriber avatar or name opens the user profile or contact card.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="behavior-card-3" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900">Large Card Behavior</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 text-orange-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Multiple Actions</div>
+                                    <div class="text-sm text-gray-600">All relevant actions (View, Unsubscribe, Pause, etc.) are visible in an action bar at the bottom of the card.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 text-orange-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Permission-Aware Unsubscribe</div>
+                                    <div class="text-sm text-gray-600">Unsubscribe button is only enabled if the current user has permission to modify the subscription.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 text-orange-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Metadata Grid Interaction</div>
+                                    <div class="text-sm text-gray-600">Metadata fields may be clickable to show more details or related objects (e.g., clicking "Created By" shows user profile).</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 text-orange-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Object Context Card</div>
+                                    <div class="text-sm text-gray-600">The subscribed object details section is clickable and navigates to the full object view.</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 text-orange-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">5</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Status-Specific Actions</div>
+                                    <div class="text-sm text-gray-600">If subscription is paused, a "Resume" action appears. If expired, a "Renew" action may be shown.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Common Use Cases</h2>
+                <p class="text-gray-600">Real-world scenarios showing subscription cards in context</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <div id="use-case-1" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-blue-100 p-2 rounded-lg">
+                            <i class="fa-solid fa-list text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Subscription List View</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">User viewing all their active subscriptions in a dedicated subscriptions panel or page. Medium cards provide the right balance of information and density.</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div class="text-xs font-semibold text-gray-700 mb-2">Recommended Card Size</div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded">Medium Card (25.2)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="use-case-2" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-purple-100 p-2 rounded-lg">
+                            <i class="fa-solid fa-sidebar text-purple-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Related Object Panel</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Sidebar showing related subscriptions for a case or task. Small cards maximize space efficiency while maintaining clarity.</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div class="text-xs font-semibold text-gray-700 mb-2">Recommended Card Size</div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded">Small Card (25.1)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="use-case-3" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-orange-100 p-2 rounded-lg">
+                            <i class="fa-solid fa-magnifying-glass text-orange-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Inspector Panel</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Detailed view when user clicks on a subscription to see full context, metadata, and available actions. Large cards provide comprehensive information.</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div class="text-xs font-semibold text-gray-700 mb-2">Recommended Card Size</div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-orange-100 text-orange-700 text-xs font-medium px-2 py-1 rounded">Large Card (25.3)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="use-case-4" class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-teal-100 p-2 rounded-lg">
+                            <i class="fa-solid fa-table-cells text-teal-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Dashboard Widget</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Dashboard showing recent subscriptions or subscription activity. Medium or small cards depending on widget size and information needs.</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div class="text-xs font-semibold text-gray-700 mb-2">Recommended Card Size</div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded">Medium Card (25.2)</span>
+                            <span class="text-gray-400">or</span>
+                            <span class="bg-purple-100 text-purple-700 text-xs font-medium px-2 py-1 rounded">Small Card (25.1)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="accessibility-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Accessibility Considerations</h2>
+                <p class="text-gray-600">Ensuring subscription cards are usable by all users</p>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-blue-100 p-2 rounded">
+                                    <i class="fa-solid fa-keyboard text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Keyboard Navigation</h4>
+                                    <p class="text-sm text-gray-600">All interactive elements must be keyboard accessible with visible focus indicators. Tab order should follow visual hierarchy.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-green-100 p-2 rounded">
+                                    <i class="fa-solid fa-universal-access text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Screen Reader Support</h4>
+                                    <p class="text-sm text-gray-600">Proper ARIA labels for icons, buttons, and status indicators. Announce subscription type, object, and subscriber information.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-purple-100 p-2 rounded">
+                                    <i class="fa-solid fa-palette text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Color Contrast</h4>
+                                    <p class="text-sm text-gray-600">Status badges and text must meet WCAG AA standards (4.5:1 for normal text, 3:1 for large text). Never rely on color alone.</p>
+                                </div>
+                            </div>
+                
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-orange-100 p-2 rounded">
+                                    <i class="fa-solid fa-text-height text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Text Sizing</h4>
+                                    <p class="text-sm text-gray-600">Support browser text zoom up to 200% without loss of functionality or content overlap. Use relative units for sizing.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-red-100 p-2 rounded">
+                                    <i class="fa-solid fa-exclamation-circle text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Error States</h4>
+                                    <p class="text-sm text-gray-600">Clear error messaging for failed actions with specific instructions. Errors announced to screen readers via aria-live regions.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 bg-teal-100 p-2 rounded">
+                                    <i class="fa-solid fa-mouse-pointer text-teal-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Touch Targets</h4>
+                                    <p class="text-sm text-gray-600">Minimum 44x44px touch target size for all interactive elements. Adequate spacing between clickable areas to prevent mis-taps.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-section" class="mb-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-2">Subscription Object Wireframes</h2>
+                        <p class="text-blue-100">Card-based representations for ArkCase subscription management</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-right">
+                            <div class="text-sm text-blue-100">Card Variants</div>
+                            <div class="text-3xl font-bold">3</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm text-blue-100">Design Principles</div>
+                            <div class="text-3xl font-bold">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

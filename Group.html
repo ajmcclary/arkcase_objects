@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<div id="main-container" class="p-8">
+    <div id="header-section" class="mb-12">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-semibold text-gray-900 mb-2">Group Object Cards</h1>
+            <p class="text-gray-600">Card-based wireframes for Group objects in ArkCase — Small, Medium, and Large variants</p>
+        </div>
+    </div>
+
+    <div id="small-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">9.1 — Small Card Variant</h2>
+                <p class="text-gray-600 mb-4">Compact representation for assignment pickers, participant lists, and dense views</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg border border-gray-200">
+                <div class="space-y-4">
+                    <div id="small-card-1" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Customer Success Team</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+
+                    <div id="small-card-2" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-purple-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Legal Review Board</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+
+                    <div id="small-card-3" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-orange-600 text-sm"></i>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="font-medium text-gray-900">Finance Approvers</div>
+                                <span class="text-xs text-gray-500">LDAP</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+
+                    <div id="small-card-4" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">IT Security Team</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded">Inactive</span>
+                        </div>
+                    </div>
+
+                    <div id="small-card-5" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-teal-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-teal-600 text-sm"></i>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="font-medium text-gray-900">Operations Work Queue</div>
+                                <span class="text-xs text-gray-500">System</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+
+                    <div id="small-card-6" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-indigo-100 rounded flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-users text-indigo-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Executive Leadership</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="medium-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">9.2 — Medium Card Variant</h2>
+                <p class="text-gray-600 mb-4">Default representation in group lists and related-object panels with structural context</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">Customer Success Team</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">LDAP</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Owning Group</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Parent Group</div>
+                            <div class="text-sm text-gray-700">Customer Operations</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-2" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">Legal Review Board</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">System</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Approver Group</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Supervisor</div>
+                            <div class="text-sm text-gray-700">Sarah Johnson</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-3" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-orange-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">Finance Approvers</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">LDAP</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Approver Group</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Parent Group</div>
+                            <div class="text-sm text-gray-700">Finance Department</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-4" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-red-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">IT Security Team</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded">Inactive</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">System</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Work Queue</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Supervisor</div>
+                            <div class="text-sm text-gray-700">Michael Chen</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-5" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-teal-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-teal-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">Operations Work Queue</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">System</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Routing Group</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Parent Group</div>
+                            <div class="text-sm text-gray-700">Operations Division</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-6" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-indigo-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-lg">Executive Leadership</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Group Type</div>
+                                <div class="text-sm font-medium text-gray-900">Ad-hoc</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Primary Function</div>
+                                <div class="text-sm font-medium text-gray-900">Approver Group</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Supervisor</div>
+                            <div class="text-sm text-gray-700">Jennifer Martinez</div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Group
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="large-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">9.3 — Large Card Variant</h2>
+                <p class="text-gray-600 mb-4">Expanded representation for inspector panels with comprehensive structural context and associations</p>
+            </div>
+
+            <div class="space-y-6">
+                <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1.5">Group</div>
+                                    <div class="font-semibold text-gray-900 text-2xl mb-1">Customer Success Team</div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <span class="px-2.5 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">LDAP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Structural Context</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Parent Group</div>
+                                    <div class="text-sm font-medium text-gray-900">Customer Operations</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Child Groups</div>
+                                    <div class="text-sm font-medium text-gray-900">3 groups</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Primary Function</div>
+                                    <div class="text-sm font-medium text-gray-900">Owning Group</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Metadata</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Supervisor</div>
+                                    <div class="text-sm text-gray-900">Sarah Johnson</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Directory Source</div>
+                                    <div class="text-sm text-gray-900">Active Directory</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Member Count</div>
+                                    <div class="text-sm text-gray-900">24 members</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Created</div>
+                                    <div class="text-sm text-gray-900">Jan 15, 2023</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Last Modified</div>
+                                    <div class="text-sm text-gray-900">Dec 8, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Modified By</div>
+                                    <div class="text-sm text-gray-900">David Lee</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Associations</div>
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Cases</div>
+                                    <div class="text-xl font-semibold text-gray-900">147</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Tasks</div>
+                                    <div class="text-xl font-semibold text-gray-900">89</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Workflows</div>
+                                    <div class="text-xl font-semibold text-gray-900">23</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Documents</div>
+                                    <div class="text-xl font-semibold text-gray-900">456</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <button class="flex-1 px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1.5">Group</div>
+                                    <div class="font-semibold text-gray-900 text-2xl mb-1">Legal Review Board</div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <span class="px-2.5 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded">System</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Structural Context</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Parent Group</div>
+                                    <div class="text-sm font-medium text-gray-900">Legal Department</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Child Groups</div>
+                                    <div class="text-sm font-medium text-gray-900">None</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Primary Function</div>
+                                    <div class="text-sm font-medium text-gray-900">Approver Group</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Metadata</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Supervisor</div>
+                                    <div class="text-sm text-gray-900">Robert Williams</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Directory Source</div>
+                                    <div class="text-sm text-gray-900">Internal System</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Member Count</div>
+                                    <div class="text-sm text-gray-900">8 members</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Created</div>
+                                    <div class="text-sm text-gray-900">Mar 22, 2022</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Last Modified</div>
+                                    <div class="text-sm text-gray-900">Nov 30, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Modified By</div>
+                                    <div class="text-sm text-gray-900">Admin User</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Associations</div>
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Cases</div>
+                                    <div class="text-xl font-semibold text-gray-900">52</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Tasks</div>
+                                    <div class="text-xl font-semibold text-gray-900">34</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Workflows</div>
+                                    <div class="text-xl font-semibold text-gray-900">67</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Documents</div>
+                                    <div class="text-xl font-semibold text-gray-900">892</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <button class="flex-1 px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-3" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-orange-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1.5">Group</div>
+                                    <div class="font-semibold text-gray-900 text-2xl mb-1">Finance Approvers</div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <span class="px-2.5 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">LDAP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Structural Context</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Parent Group</div>
+                                    <div class="text-sm font-medium text-gray-900">Finance Department</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Child Groups</div>
+                                    <div class="text-sm font-medium text-gray-900">2 groups</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Primary Function</div>
+                                    <div class="text-sm font-medium text-gray-900">Approver Group</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 pb-6 border-b border-gray-200">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Metadata</div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Supervisor</div>
+                                    <div class="text-sm text-gray-900">Patricia Anderson</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Directory Source</div>
+                                    <div class="text-sm text-gray-900">Active Directory</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Member Count</div>
+                                    <div class="text-sm text-gray-900">12 members</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Created</div>
+                                    <div class="text-sm text-gray-900">Feb 8, 2023</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Last Modified</div>
+                                    <div class="text-sm text-gray-900">Dec 12, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1.5">Modified By</div>
+                                    <div class="text-sm text-gray-900">System Admin</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="text-sm font-medium text-gray-900 mb-3">Associations</div>
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Cases</div>
+                                    <div class="text-xl font-semibold text-gray-900">234</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Tasks</div>
+                                    <div class="text-xl font-semibold text-gray-900">156</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Workflows</div>
+                                    <div class="text-xl font-semibold text-gray-900">45</div>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-xs text-gray-500 mb-1">Documents</div>
+                                    <div class="text-xl font-semibold text-gray-900">1,203</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <button class="flex-1 px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comparison-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Cross-Variant Comparison</h2>
+                <p class="text-gray-600 mb-4">Side-by-side comparison showing progressive information disclosure</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="grid grid-cols-3 gap-6">
+                    <div id="comparison-small" class="border-r border-gray-200 pr-6">
+                        <div class="text-sm font-medium text-gray-900 mb-4">Small Card</div>
+                        <div class="flex items-center justify-between p-3 border border-gray-300 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Customer Success</div>
+                                </div>
+                            </div>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                        <div class="mt-4 text-xs text-gray-600">
+                            <div class="mb-2"><strong>Focus:</strong> Fast identification</div>
+                            <div class="mb-2"><strong>Use cases:</strong> Pickers, lists</div>
+                            <div><strong>Interaction:</strong> Click to select</div>
+                        </div>
+                    </div>
+
+                    <div id="comparison-medium" class="border-r border-gray-200 pr-6">
+                        <div class="text-sm font-medium text-gray-900 mb-4">Medium Card</div>
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="p-4">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-gray-500 uppercase font-medium">Group</div>
+                                            <div class="font-semibold text-gray-900 text-sm">Customer Success</div>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
+                                    <div>
+                                        <div class="text-gray-500">Type</div>
+                                        <div class="font-medium">LDAP</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Function</div>
+                                        <div class="font-medium">Owning</div>
+                                    </div>
+                                </div>
+                                <button class="w-full px-3 py-1.5 bg-blue-600 text-white text-xs font-medium rounded">
+                                    View Group
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-xs text-gray-600">
+                            <div class="mb-2"><strong>Focus:</strong> Context + identity</div>
+                            <div class="mb-2"><strong>Use cases:</strong> Lists, panels</div>
+                            <div><strong>Interaction:</strong> View details</div>
+                        </div>
+                    </div>
+
+                    <div id="comparison-large">
+                        <div class="text-sm font-medium text-gray-900 mb-4">Large Card</div>
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <div class="p-4">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-users text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-gray-500 uppercase font-medium">Group</div>
+                                            <div class="font-semibold text-gray-900">Customer Success</div>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                </div>
+                                <div class="mb-3 pb-3 border-b border-gray-200">
+                                    <div class="text-xs font-medium text-gray-900 mb-2">Structure</div>
+                                    <div class="grid grid-cols-2 gap-2 text-xs">
+                                        <div>
+                                            <div class="text-gray-500">Parent</div>
+                                            <div class="font-medium">Operations</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-gray-500">Children</div>
+                                            <div class="font-medium">3 groups</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-xs font-medium text-gray-900 mb-2">Associations</div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <div class="p-2 bg-gray-50 rounded text-xs">
+                                            <div class="text-gray-500">Cases</div>
+                                            <div class="font-semibold">147</div>
+                                        </div>
+                                        <div class="p-2 bg-gray-50 rounded text-xs">
+                                            <div class="text-gray-500">Tasks</div>
+                                            <div class="font-semibold">89</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="flex-1 px-2 py-1.5 bg-blue-600 text-white text-xs font-medium rounded">
+                                        Details
+                                    </button>
+                                    <button class="px-2 py-1.5 border border-gray-300 text-xs rounded">
+                                        <i class="fa-solid fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-xs text-gray-600">
+                            <div class="mb-2"><strong>Focus:</strong> Full context</div>
+                            <div class="mb-2"><strong>Use cases:</strong> Inspectors</div>
+                            <div><strong>Interaction:</strong> Multiple actions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="states-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">State Variations</h2>
+                <p class="text-gray-600 mb-4">Different states and conditions for group cards</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div id="state-active" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Active Group</div>
+                    <div class="flex items-center justify-between p-3 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Marketing Team</div>
+                                <div class="text-xs text-gray-500">24 members</div>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                    </div>
+                </div>
+
+                <div id="state-inactive" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Inactive Group</div>
+                    <div class="flex items-center justify-between p-3 border border-gray-300 rounded-lg opacity-60">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-gray-200 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-gray-500 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Legacy Support</div>
+                                <div class="text-xs text-gray-500">Archived</div>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded">Inactive</span>
+                    </div>
+                </div>
+
+                <div id="state-restricted" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Restricted Access</div>
+                    <div class="flex items-center justify-between p-3 border border-red-300 rounded-lg bg-red-50">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-lock text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Executive Board</div>
+                                <div class="text-xs text-red-600">Limited access</div>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Restricted</span>
+                    </div>
+                </div>
+
+                <div id="state-hover" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Hover State</div>
+                    <div class="flex items-center justify-between p-3 border border-blue-400 rounded-lg bg-blue-50 shadow-sm">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Sales Team</div>
+                                <div class="text-xs text-gray-500">18 members</div>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                    </div>
+                </div>
+
+                <div id="state-selected" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Selected State</div>
+                    <div class="flex items-center justify-between p-3 border-2 border-blue-600 rounded-lg bg-blue-50">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Product Team</div>
+                                <div class="text-xs text-blue-600">Selected</div>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                    </div>
+                </div>
+
+                <div id="state-loading" class="bg-white border border-gray-200 rounded-lg p-5">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Loading State</div>
+                    <div class="flex items-center justify-between p-3 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-gray-200 rounded flex items-center justify-center animate-pulse">
+                                <i class="fa-solid fa-spinner fa-spin text-gray-500 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="h-4 bg-gray-200 rounded w-32 animate-pulse"></div>
+                                <div class="h-3 bg-gray-100 rounded w-20 mt-1 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="h-6 bg-gray-200 rounded w-16 animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="group-types-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Group Type Indicators</h2>
+                <p class="text-gray-600 mb-4">Visual differentiation for different group types</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div id="type-ldap" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-server text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">LDAP Group</div>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">LDAP</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Synced from Active Directory or LDAP server</p>
+                    </div>
+
+                    <div id="type-system" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-cog text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">System Group</div>
+                                <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-medium rounded">System</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Built-in group managed by ArkCase</p>
+                    </div>
+
+                    <div id="type-adhoc" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-user-plus text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Ad-hoc Group</div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-medium rounded">Ad-hoc</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Manually created group for specific purposes</p>
+                    </div>
+
+                    <div id="type-workqueue" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-inbox text-orange-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Work Queue</div>
+                                <span class="px-2 py-0.5 bg-orange-100 text-orange-700 text-xs font-medium rounded">Queue</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Group used for task routing and assignment</p>
+                    </div>
+
+                    <div id="type-owning" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-shield text-teal-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Owning Group</div>
+                                <span class="px-2 py-0.5 bg-teal-100 text-teal-700 text-xs font-medium rounded">Owner</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Group with ownership permissions for objects</p>
+                    </div>
+
+                    <div id="type-approver" class="p-4 border border-gray-300 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-check-circle text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">Approver Group</div>
+                                <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs font-medium rounded">Approver</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600">Group designated for approval workflows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hierarchy-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Hierarchical Representation</h2>
+                <p class="text-gray-600 mb-4">Showing parent-child relationships in group structures</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div id="hierarchy-tree" class="space-y-4">
+                    <div class="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                        <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center">
+                            <i class="fa-solid fa-users text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="font-medium text-gray-900">Corporate Division</div>
+                            <div class="text-xs text-gray-500">Parent Group • 5 child groups</div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                    </div>
+
+                    <div class="ml-8 space-y-3">
+                        <div class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg">
+                            <div class="w-2 h-8 border-l-2 border-b-2 border-gray-300 absolute -ml-6"></div>
+                            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-purple-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-gray-900">Operations Team</div>
+                                <div class="text-xs text-gray-500">Child of Corporate Division • 2 child groups</div>
+                            </div>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="ml-8 space-y-3">
+                            <div class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg bg-gray-50">
+                                <div class="w-2 h-8 border-l-2 border-b-2 border-gray-300 absolute -ml-6"></div>
+                                <div class="w-8 h-8 bg-teal-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-users text-teal-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-medium text-gray-900">Customer Success</div>
+                                    <div class="text-xs text-gray-500">Child of Operations Team</div>
+                                </div>
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg bg-gray-50">
+                                <div class="w-2 h-8 border-l-2 border-b-2 border-gray-300 absolute -ml-6"></div>
+                                <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-users text-orange-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-medium text-gray-900">Technical Support</div>
+                                    <div class="text-xs text-gray-500">Child of Operations Team</div>
+                                </div>
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg">
+                            <div class="w-2 h-8 border-l-2 border-b-2 border-gray-300 absolute -ml-6"></div>
+                            <div class="w-8 h-8 bg-indigo-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-indigo-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-gray-900">Finance Team</div>
+                                <div class="text-xs text-gray-500">Child of Corporate Division</div>
+                            </div>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+
+                        <div class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg">
+                            <div class="w-2 h-8 border-l-2 border-b-2 border-gray-300 absolute -ml-6"></div>
+                            <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-users text-red-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-gray-900">Legal Department</div>
+                                <div class="text-xs text-gray-500">Child of Corporate Division</div>
+                            </div>
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="usage-contexts-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Usage Contexts</h2>
+                <p class="text-gray-600 mb-4">How group cards appear in different UI contexts</p>
+            </div>
+
+            <div class="space-y-6">
+                <div id="context-picker" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Assignment Picker Context</div>
+                    <div class="border border-gray-300 rounded-lg p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="text-sm font-medium text-gray-700">Select Assignment Group</div>
+                            <button class="text-gray-400 hover:text-gray-600">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="relative mb-3">
+                            <input type="text" placeholder="Search groups..." class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                            <i class="fa-solid fa-search absolute right-3 top-3 text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="space-y-2 max-h-64 overflow-y-auto">
+                            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-users text-blue-600 text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-900">Customer Success Team</span>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Active</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-6 h-6 bg-purple-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-users text-purple-600 text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-900">Legal Review Board</span>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Active</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 hover:bg-gray-50 rounded cursor-pointer">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-users text-orange-600 text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-900">Finance Approvers</span>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="context-list" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="text-sm font-medium text-gray-900 mb-4">List View Context</div>
+                    <div class="border border-gray-300 rounded-lg overflow-hidden">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-300">
+                            <div class="flex items-center justify-between">
+                                <div class="text-sm font-medium text-gray-700">Groups (24)</div>
+                                <div class="flex items-center space-x-2">
+                                    <button class="px-3 py-1.5 text-xs border border-gray-300 rounded hover:bg-white">
+                                        <i class="fa-solid fa-filter mr-1"></i>
+                                        Filter
+                                    </button>
+                                    <button class="px-3 py-1.5 text-xs border border-gray-300 rounded hover:bg-white">
+                                        <i class="fa-solid fa-sort mr-1"></i>
+                                        Sort
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-4 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-users text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900">Customer Success Team</div>
+                                            <div class="text-xs text-gray-500">LDAP • Owning Group • 24 members</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <button class="text-gray-400 hover:text-gray-600">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-purple-100 rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-users text-purple-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900">Legal Review Board</div>
+                                            <div class="text-xs text-gray-500">System • Approver Group • 8 members</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <button class="text-gray-400 hover:text-gray-600">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-orange-100 rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-users text-orange-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900">Finance Approvers</div>
+                                            <div class="text-xs text-gray-500">LDAP • Approver Group • 12 members</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <button class="text-gray-400 hover:text-gray-600">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="context-inspector" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="text-sm font-medium text-gray-900 mb-4">Inspector Panel Context</div>
+                    <div class="border border-gray-300 rounded-lg overflow-hidden">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-300 flex items-center justify-between">
+                            <div class="text-sm font-medium text-gray-700">Group Details</div>
+                            <button class="text-gray-400 hover:text-gray-600">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start space-x-4 mb-6">
+                                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-users text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 uppercase font-medium mb-1">Group</div>
+                                    <div class="font-semibold text-gray-900 text-xl mb-2">Customer Success Team</div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        <span class="px-2.5 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">LDAP</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-2">OVERVIEW</div>
+                                    <div class="grid grid-cols-2 gap-3 text-sm">
+                                        <div>
+                                            <div class="text-gray-500 text-xs mb-1">Members</div>
+                                            <div class="text-gray-900 font-medium">24</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-gray-500 text-xs mb-1">Function</div>
+                                            <div class="text-gray-900 font-medium">Owning Group</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-gray-500 text-xs mb-1">Parent</div>
+                                            <div class="text-gray-900 font-medium">Operations</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-gray-500 text-xs mb-1">Supervisor</div>
+                                            <div class="text-gray-900 font-medium">Sarah Johnson</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-2">ACTIVITY</div>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="p-3 bg-gray-50 rounded">
+                                            <div class="text-xs text-gray-500 mb-1">Cases</div>
+                                            <div class="text-lg font-semibold text-gray-900">147</div>
+                                        </div>
+                                        <div class="p-3 bg-gray-50 rounded">
+                                            <div class="text-xs text-gray-500 mb-1">Tasks</div>
+                                            <div class="text-lg font-semibold text-gray-900">89</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <button class="w-full px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
+                                    Open Full Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="design-principles-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Design Principles</h2>
+                <p class="text-gray-600 mb-4">Core principles guiding the group card design system</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="principle-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-eye text-blue-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Progressive Disclosure</div>
+                            <p class="text-sm text-gray-600">Information complexity scales from Small to Large variants. Each card size reveals appropriate detail for its context.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Small: Name + Status only</div>
+                        <div>• Medium: + Type, Function, Parent</div>
+                        <div>• Large: + Structure, Metadata, Associations</div>
+                    </div>
+                </div>
+
+                <div id="principle-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-layer-group text-purple-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Visual Consistency</div>
+                            <p class="text-sm text-gray-600">All group cards share common visual patterns with User and Organization cards. Icons, colors, and spacing remain consistent.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Shared icon system</div>
+                        <div>• Consistent status indicators</div>
+                        <div>• Unified typography hierarchy</div>
+                    </div>
+                </div>
+
+                <div id="principle-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-bolt text-green-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Scannable Identity</div>
+                            <p class="text-sm text-gray-600">Group name and type are immediately recognizable. Status and function are clearly visible at a glance.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Prominent group name</div>
+                        <div>• Clear type indicators</div>
+                        <div>• Visible status badges</div>
+                    </div>
+                </div>
+
+                <div id="principle-4" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-shield-alt text-orange-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Permission-Aware</div>
+                            <p class="text-sm text-gray-600">Cards adapt based on user permissions. Sensitive information and actions are conditionally displayed or hidden.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Conditional field visibility</div>
+                        <div>• Action button permissions</div>
+                        <div>• Restricted access indicators</div>
+                    </div>
+                </div>
+
+                <div id="principle-5" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-sitemap text-red-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Structural Clarity</div>
+                            <p class="text-sm text-gray-600">Hierarchical relationships are clearly communicated. Parent-child connections and organizational structure are visible.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Parent group references</div>
+                        <div>• Child group counts</div>
+                        <div>• Visual hierarchy indicators</div>
+                    </div>
+                </div>
+
+                <div id="principle-6" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-mouse-pointer text-teal-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Contextual Actions</div>
+                            <p class="text-sm text-gray-600">Available actions match the card's context and size. Primary actions are prominent, secondary actions are accessible.</p>
+                        </div>
+                    </div>
+                    <div class="pl-13 space-y-2 text-xs text-gray-600">
+                        <div>• Context-appropriate buttons</div>
+                        <div>• Clear primary actions</div>
+                        <div>• Organized secondary menus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="implementation-notes-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Implementation Notes</h2>
+                <p class="text-gray-600 mb-4">Technical guidelines and considerations for developers</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="space-y-6">
+                    <div id="note-responsive">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-mobile-alt text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">Responsive Behavior</div>
+                                <p class="text-sm text-gray-600 mb-2">Cards should adapt gracefully across screen sizes. On mobile, medium cards may collapse to small card layout, and large cards should stack content vertically.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="note-accessibility">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-universal-access text-green-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">Accessibility Requirements</div>
+                                <p class="text-sm text-gray-600 mb-2">All cards must be keyboard navigable and screen reader friendly. Include proper ARIA labels and semantic HTML structure.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    role="button", aria-label, tabindex, focus states
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="note-performance">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-tachometer-alt text-purple-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">Performance Optimization</div>
+                                <p class="text-sm text-gray-600 mb-2">For lists with many groups, implement virtual scrolling. Lazy load large card details and associations data on demand.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    Virtual scrolling for 100+ items, lazy loading for associations
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="note-state-management">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-database text-orange-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">State Management</div>
+                                <p class="text-sm text-gray-600 mb-2">Maintain consistent state across card variants. Selection, hover, and loading states should be managed centrally.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    Centralized state: selected, hovered, loading, error
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="note-data-structure">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-code text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">Data Structure</div>
+                                <p class="text-sm text-gray-600 mb-2">Group object should include: id, name, type, status, parentId, childCount, supervisor, members, associations, metadata.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    { id, name, type, status, parentId, supervisor, memberCount, ... }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="note-permissions">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-teal-100 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-lock text-teal-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900 mb-2">Permission Checks</div>
+                                <p class="text-sm text-gray-600 mb-2">Check user permissions before rendering actions or sensitive data. Hide restricted fields and disable unauthorized actions.</p>
+                                <div class="bg-gray-50 p-3 rounded text-xs font-mono text-gray-700">
+                                    canView, canEdit, canAssign, canDelete permissions
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

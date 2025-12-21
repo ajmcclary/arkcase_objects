@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="main-container" class="max-w-[1800px] mx-auto p-8">
+
+    <div id="header-section" class="mb-12">
+        <div class="flex items-center justify-between mb-3">
+            <div>
+                <h1 class="text-3xl font-semibold text-gray-900 mb-2">Organization Card Variants</h1>
+                <p class="text-base text-gray-600">Comprehensive wireframe system for organization objects across different contexts and use cases</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    <i class="fa-solid fa-download mr-2"></i>Export Specs
+                </button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">
+                    <i class="fa-solid fa-code mr-2"></i>View Components
+                </button>
+            </div>
+        </div>
+        <div class="flex items-center gap-2 text-sm text-gray-500">
+            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded-md font-medium">ArkCase Design System</span>
+            <span class="text-gray-400">•</span>
+            <span>Object Type: Organization</span>
+            <span class="text-gray-400">•</span>
+            <span>3 Card Variants</span>
+        </div>
+    </div>
+
+    <div id="small-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">7.1 — Small Card Variant</h2>
+                    <p class="text-gray-600">Optimized for association lists, pickers, and dense related-object views</p>
+                </div>
+                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Compact Layout</span>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <p class="text-sm text-blue-900"><strong>Use Case:</strong> Fast recognition in lists, quick pickers, related object panels, and search results</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div id="small-card-example-1" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 1: Active Organization</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-building text-blue-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h4 class="text-sm font-semibold text-gray-900 truncate">Acme Corporation</h4>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Corporation</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-example-2" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 2: Government Agency</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-landmark text-purple-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h4 class="text-sm font-semibold text-gray-900 truncate">Department of Health Services</h4>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Government Agency</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-example-3" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 3: Inactive Status</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer opacity-75">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-building text-gray-500 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h4 class="text-sm font-semibold text-gray-700 truncate">Legacy Systems Inc.</h4>
+                                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 rounded text-xs font-medium">Inactive</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Corporation</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-example-4" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 4: Non-Profit Organization</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-hands-holding-circle text-teal-600 text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h4 class="text-sm font-semibold text-gray-900 truncate">Community Health Foundation</h4>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Non-Profit</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="small-card-specs" class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Small Card Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Required Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization icon (contextual color)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization name (primary text)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Status indicator badge</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Optional Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Organization type label (small)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Chevron indicator for navigation</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Behavioral Notes</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Entire card is clickable</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>No contact details displayed</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Minimal vertical height</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="medium-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">7.2 — Medium Card Variant</h2>
+                    <p class="text-gray-600">Default representation balancing identity with contextual detail</p>
+                </div>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Standard Layout</span>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <p class="text-sm text-blue-900"><strong>Use Case:</strong> Organization lists, related-object panels, and standard list views with moderate context</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div id="medium-card-example-1" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 1: Corporation with Contact</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-5 hover:border-blue-500 hover:shadow-lg transition-all">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-building text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Organization</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1">Acme Corporation</h4>
+                            <p class="text-sm text-gray-600">Corporation • Technology Services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">(555) 123-4567</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700 truncate">contact@acme.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-link text-amber-600 text-sm"></i>
+                            <span class="text-xs font-medium text-amber-800">Responsible Organization</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            View Organization
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-example-2" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 2: Government Agency</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-5 hover:border-blue-500 hover:shadow-lg transition-all">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-landmark text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Organization</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-700 rounded text-xs font-medium flex items-center gap-1">
+                                    <i class="fa-solid fa-lock text-xs"></i>Restricted
+                                </span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1">Department of Health Services</h4>
+                            <p class="text-sm text-gray-600">Government Agency • Public Health</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">(555) 987-6543</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700 truncate">info@dhs.gov</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-sitemap text-blue-600 text-sm"></i>
+                            <span class="text-xs font-medium text-blue-800">Parent: State Health Authority</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            View Organization
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-example-3" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 3: Non-Profit Organization</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-5 hover:border-blue-500 hover:shadow-lg transition-all">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-hands-holding-circle text-teal-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Organization</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1">Community Health Foundation</h4>
+                            <p class="text-sm text-gray-600">Non-Profit • Community Services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">(555) 456-7890</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700 truncate">hello@chf.org</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-handshake text-green-600 text-sm"></i>
+                            <span class="text-xs font-medium text-green-800">Partner Organization</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            View Organization
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-example-4" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 4: Educational Institution</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-5 hover:border-blue-500 hover:shadow-lg transition-all">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-graduation-cap text-indigo-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Organization</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded text-xs font-medium">Active</span>
+                            </div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1">Metropolitan University</h4>
+                            <p class="text-sm text-gray-600">Educational Institution • Higher Education</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mb-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">(555) 234-5678</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700 truncate">admin@metro.edu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-users text-purple-600 text-sm"></i>
+                            <span class="text-xs font-medium text-purple-800">Associated Organization</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            View Organization
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="medium-card-specs" class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Medium Card Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Required Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization icon + type label</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization name (prominent)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization type & status</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Primary contact method</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Relationship context badge</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Primary action button</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Optional Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Restriction indicator</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Parent organization reference</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Secondary contact method</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>More actions menu</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Behavioral Notes</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Contact info must be concise</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Relationship context visually secondary</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Actions minimal and predictable</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Clear visual hierarchy</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="large-card-section" class="mb-16">
+        <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">7.3 — Large Card Variant</h2>
+                    <p class="text-gray-600">Comprehensive representation for inspector panels and expanded previews</p>
+                </div>
+                <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Expanded Layout</span>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <p class="text-sm text-blue-900"><strong>Use Case:</strong> Inspector panels, expanded previews, and detailed organization views without full page navigation</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 mb-8">
+            <div id="large-card-example-1" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 1: Full Corporation Details</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-6 hover:border-blue-500 transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-building text-blue-600 text-2xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Organization</span>
+                                    <span class="px-2.5 py-1 bg-green-100 text-green-700 rounded-md text-xs font-semibold">Active</span>
+                                    <span class="px-2.5 py-1 bg-red-100 text-red-700 rounded-md text-xs font-semibold flex items-center gap-1">
+                                        <i class="fa-solid fa-lock text-xs"></i>Restricted
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Acme Corporation</h3>
+                                <div class="flex items-center gap-4 text-sm text-gray-600">
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-tag text-gray-400"></i>
+                                        Corporation
+                                    </span>
+                                    <span class="text-gray-300">•</span>
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-briefcase text-gray-400"></i>
+                                        Technology Services
+                                    </span>
+                                    <span class="text-gray-300">•</span>
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-calendar text-gray-400"></i>
+                                        Est. 1995
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Contact Information</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Primary Email</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                    <a href="mailto:contact@acme.com" class="text-sm text-blue-600 hover:text-blue-700 font-medium">contact@acme.com</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Primary Phone</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                    <a href="tel:+15551234567" class="text-sm text-blue-600 hover:text-blue-700 font-medium">(555) 123-4567</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Secondary Email</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                    <a href="mailto:support@acme.com" class="text-sm text-blue-600 hover:text-blue-700 font-medium">support@acme.com</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Fax</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-fax text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">(555) 123-4568</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Addresses</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-building text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold text-gray-900 uppercase">Primary Office</span>
+                                        <span class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs font-medium">Headquarters</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">123 Technology Drive, Suite 400</p>
+                                    <p class="text-sm text-gray-700">San Francisco, CA 94105, United States</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-gray-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold text-gray-900 uppercase">Branch Office</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">456 Innovation Parkway</p>
+                                    <p class="text-sm text-gray-700">Austin, TX 78701, United States</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Organization Hierarchy</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-sitemap text-gray-400 text-sm"></i>
+                                    <div class="flex-1">
+                                        <div class="text-xs text-gray-500">Parent Organization</div>
+                                        <div class="text-sm font-medium text-gray-900">Acme Holdings Group</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-diagram-project text-gray-400 text-sm"></i>
+                                    <div class="flex-1">
+                                        <div class="text-xs text-gray-500">Child Organizations</div>
+                                        <div class="text-sm font-medium text-gray-900">3 subsidiaries</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">DBA Names</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Acme Tech Solutions</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">ACME Digital Services</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-lg p-4 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Associations</h4>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-open text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">24</div>
+                                    <div class="text-xs text-gray-600">Active Cases</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-users text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">156</div>
+                                    <div class="text-xs text-gray-600">Related People</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-file-contract text-teal-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">8</div>
+                                    <div class="text-xs text-gray-600">Consultations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <button class="px-5 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    View Full Details
+                                </button>
+                                <button class="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Contact
+                                </button>
+                                <button class="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 flex items-center gap-2">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Edit
+                                </button>
+                            </div>
+                            <button class="px-4 py-2.5 text-gray-600 hover:text-gray-800 text-sm font-medium flex items-center gap-2">
+                                More Actions
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-example-2" class="bg-white rounded-xl border border-gray-200 p-6">
+                <div class="mb-4 pb-4 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Example 2: Government Agency Details</h3>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg p-6 hover:border-blue-500 transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-landmark text-purple-600 text-2xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Organization</span>
+                                    <span class="px-2.5 py-1 bg-green-100 text-green-700 rounded-md text-xs font-semibold">Active</span>
+                                    <span class="px-2.5 py-1 bg-red-100 text-red-700 rounded-md text-xs font-semibold flex items-center gap-1">
+                                        <i class="fa-solid fa-lock text-xs"></i>Restricted
+                                    </span>
+                                    <span class="px-2.5 py-1 bg-yellow-100 text-yellow-700 rounded-md text-xs font-semibold">Federal Agency</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Department of Health Services</h3>
+                                <div class="flex items-center gap-4 text-sm text-gray-600">
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-tag text-gray-400"></i>
+                                        Government Agency
+                                    </span>
+                                    <span class="text-gray-300">•</span>
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-briefcase text-gray-400"></i>
+                                        Public Health
+                                    </span>
+                                    <span class="text-gray-300">•</span>
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-calendar text-gray-400"></i>
+                                        Est. 1965
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Contact Information</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Primary Email</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                    <a href="mailto:info@dhs.gov" class="text-sm text-blue-600 hover:text-blue-700 font-medium">info@dhs.gov</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Primary Phone</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                    <a href="tel:+15559876543" class="text-sm text-blue-600 hover:text-blue-700 font-medium">(555) 987-6543</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Public Inquiries</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-gray-400 text-sm"></i>
+                                    <a href="mailto:public@dhs.gov" class="text-sm text-blue-600 hover:text-blue-700 font-medium">public@dhs.gov</a>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="text-xs font-medium text-gray-500 uppercase">Emergency Line</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">(555) 987-6544</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4">Addresses</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-building text-purple-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold text-gray-900 uppercase">Main Office</span>
+                                        <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded text-xs font-medium">Federal Building</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">200 Independence Avenue SW</p>
+                                    <p class="text-sm text-gray-700">Washington, DC 20201, United States</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-gray-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold text-gray-900 uppercase">Regional Office</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">90 7th Street, Suite 4-100</p>
+                                    <p class="text-sm text-gray-700">San Francisco, CA 94103, United States</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Organization Hierarchy</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-sitemap text-gray-400 text-sm"></i>
+                                    <div class="flex-1">
+                                        <div class="text-xs text-gray-500">Parent Organization</div>
+                                        <div class="text-sm font-medium text-gray-900">State Health Authority</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-diagram-project text-gray-400 text-sm"></i>
+                                    <div class="flex-1">
+                                        <div class="text-xs text-gray-500">Child Organizations</div>
+                                        <div class="text-sm font-medium text-gray-900">12 regional offices</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">DBA Names</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">DHS</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Health Services Department</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 rounded-lg p-4 mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Associations</h4>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-open text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">89</div>
+                                    <div class="text-xs text-gray-600">Active Cases</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-users text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">342</div>
+                                    <div class="text-xs text-gray-600">Related People</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-file-contract text-teal-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-gray-900">45</div>
+                                    <div class="text-xs text-gray-600">Consultations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <button class="px-5 py-2.5 bg-purple-600 text-white rounded-lg text-sm font-semibold hover:bg-purple-700 flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    View Full Details
+                                </button>
+                                <button class="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Contact
+                                </button>
+                                <button class="px-5 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg text-sm font-semibold hover:bg-gray-50 flex items-center gap-2">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Edit
+                                </button>
+                            </div>
+                            <button class="px-4 py-2.5 text-gray-600 hover:text-gray-800 text-sm font-medium flex items-center gap-2">
+                                More Actions
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="large-card-specs" class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Large Card Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Required Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization icon + type label</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization name (prominent)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Organization type and status</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Restriction indicator</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Contact section (email + phone)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Addresses (summarized)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Metadata grid</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Associations section</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Action bar with multiple actions</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Optional Elements</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>DBA names (summarized)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Parent/child relationships</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Secondary contact methods</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>Additional metadata fields</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle text-gray-400 text-xs mt-1"></i>
+                            <span>More actions dropdown</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Behavioral Notes</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Addresses must be summarized</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Relationships as counts/labels</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>DBA names don't dominate layout</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Actions are permission-aware</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <span>Strong visual hierarchy</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="consistency-rules-section" class="mb-16">
+        <div class="bg-white rounded-xl border border-gray-200 p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Cross-Variant Consistency Rules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i class="fa-solid fa-align-left text-blue-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Visual Alignment</h3>
+                            <p class="text-sm text-gray-700">Organization cards must align visually with Person and User cards across the entire system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-r-lg">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i class="fa-solid fa-heading text-purple-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Name Consistency</h3>
+                            <p class="text-sm text-gray-700">Name placement and styling should be consistent across all card sizes and variants</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-r-lg">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i class="fa-solid fa-chart-line text-teal-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Progressive Disclosure</h3>
+                            <p class="text-sm text-gray-700">Contact and hierarchy information should scale gradually from Small → Medium → Large variants</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i class="fa-solid fa-layer-group text-amber-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Scaled Components</h3>
+                            <p class="text-sm text-gray-700">All variants should feel like scaled versions of the same component with consistent design language</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="usage-context-section" class="mb-16">
+        <div class="bg-white rounded-xl border border-gray-200 p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Usage Context & Implementation</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-blue-500 pl-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Small Card Context</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Ideal Use Cases</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-blue-500 text-xs"></i>
+                                    <span>Organization picker dialogs</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-blue-500 text-xs"></i>
+                                    <span>Related organization lists</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-blue-500 text-xs"></i>
+                                    <span>Search result previews</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-blue-500 text-xs"></i>
+                                    <span>Dense association panels</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Layout Constraints</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-ruler-horizontal text-gray-400"></i>
+                                    <span>Maximum height: 60px</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-left-right text-gray-400"></i>
+                                    <span>Responsive width (100%)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-text-height text-gray-400"></i>
+                                    <span>Single-line text truncation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-purple-500 pl-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Medium Card Context</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Ideal Use Cases</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-purple-500 text-xs"></i>
+                                    <span>Organization directory lists</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-purple-500 text-xs"></i>
+                                    <span>Case-related organization panels</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-purple-500 text-xs"></i>
+                                    <span>Dashboard organization widgets</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-purple-500 text-xs"></i>
+                                    <span>Organization comparison views</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Layout Constraints</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-ruler-horizontal text-gray-400"></i>
+                                    <span>Typical height: 180-220px</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-left-right text-gray-400"></i>
+                                    <span>Minimum width: 320px</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-text-height text-gray-400"></i>
+                                    <span>Multi-line text support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-teal-500 pl-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Large Card Context</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Ideal Use Cases</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-teal-500 text-xs"></i>
+                                    <span>Inspector panel previews</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-teal-500 text-xs"></i>
+                                    <span>Detailed organization modals</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-teal-500 text-xs"></i>
+                                    <span>Organization profile summaries</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle text-teal-500 text-xs"></i>
+                                    <span>Relationship detail views</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Layout Constraints</h4>
+                            <ul class="space-y-1 text-sm text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-ruler-horizontal text-gray-400"></i>
+                                    <span>Typical height: 500-700px</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-arrows-left-right text-gray-400"></i>
+                                    <span>Minimum width: 600px</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-text-height text-gray-400"></i>
+                                    <span>Full content display</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="design-tokens-section" class="mb-16">
+        <div class="bg-white rounded-xl border border-gray-200 p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Design Tokens & Specifications</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-palette text-blue-600"></i>
+                        Color Palette
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Primary Blue</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-blue-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#2563EB</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Purple</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-purple-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#9333EA</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Teal</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-teal-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#0D9488</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Success Green</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-green-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#16A34A</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Warning Amber</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-amber-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#D97706</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Error Red</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-red-600 rounded border border-gray-300"></div>
+                                <span class="text-xs font-mono text-gray-500">#DC2626</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-text-height text-purple-600"></i>
+                        Typography Scale
+                    </h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Card Title (Large)</div>
+                            <div class="text-xl font-bold text-gray-900">Organization Name</div>
+                            <div class="text-xs font-mono text-gray-500 mt-1">20px / 1.25rem • Bold</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Card Title (Medium)</div>
+                            <div class="text-base font-semibold text-gray-900">Organization Name</div>
+                            <div class="text-xs font-mono text-gray-500 mt-1">16px / 1rem • Semibold</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Card Title (Small)</div>
+                            <div class="text-sm font-semibold text-gray-900">Organization Name</div>
+                            <div class="text-xs font-mono text-gray-500 mt-1">14px / 0.875rem • Semibold</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Body Text</div>
+                            <div class="text-sm text-gray-700">Supporting information</div>
+                            <div class="text-xs font-mono text-gray-500 mt-1">14px / 0.875rem • Regular</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Label Text</div>
+                            <div class="text-xs font-medium text-gray-500 uppercase">Label</div>
+                            <div class="text-xs font-mono text-gray-500 mt-1">12px / 0.75rem • Medium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-5">
+                    <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-ruler-combined text-teal-600"></i>
+                        Spacing System
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">XXS</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-200 h-2" style="width: 8px;"></div>
+                                <span class="text-xs font-mono text-gray-500">2px / 0.125rem</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">XS</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-300 h-2" style="width: 16px;"></div>
+                                <span class="text-xs font-mono text-gray-500">4px / 0.25rem</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">SM</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-400 h-2" style="width: 24px;"></div>
+                                <span class="text-xs font-mono text-gray-500">8px / 0.5rem</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">MD</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-500 h-2" style="width: 32px;"></div>
+                                <span class="text-xs font-mono text-gray-500">12px / 0.75rem</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">LG</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-600 h-2" style="width: 48px;"></div>
+                                <span class="text-xs font-mono text-gray-500">16px / 1rem</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">XL</span>
+                            <div class="flex items-center gap-2">
+                                <div class="bg-blue-700 h-2" style="width: 64px;"></div>
+                                <span class="text-xs font-mono text-gray-500">24px / 1.5rem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="accessibility-section" class="mb-16">
+        <div class="bg-white rounded-xl border border-gray-200 p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Accessibility & Interaction Guidelines</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-keyboard text-blue-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Keyboard Navigation</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+                            <span>All interactive elements must be keyboard accessible</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+                            <span>Tab order follows logical reading sequence</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+                            <span>Enter/Space activates primary actions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+                            <span>Escape closes modals and menus</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-purple-50 rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-universal-access text-purple-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Screen Reader Support</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-purple-600 mt-0.5"></i>
+                            <span>All icons paired with descriptive text or ARIA labels</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-purple-600 mt-0.5"></i>
+                            <span>Status badges announced with role and state</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-purple-600 mt-0.5"></i>
+                            <span>Card structure uses semantic HTML</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-purple-600 mt-0.5"></i>
+                            <span>Relationship context clearly announced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-teal-50 rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-eye text-teal-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Visual Indicators</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-teal-600 mt-0.5"></i>
+                            <span>Focus states clearly visible with 2px outline</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-teal-600 mt-0.5"></i>
+                            <span>Hover states provide visual feedback</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-teal-600 mt-0.5"></i>
+                            <span>Color contrast meets WCAG AA standards</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-teal-600 mt-0.5"></i>
+                            <span>Status communicated through color and text</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-amber-50 rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-hand-pointer text-amber-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Touch Targets</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-amber-600 mt-0.5"></i>
+                            <span>Minimum touch target size: 44x44px</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-amber-600 mt-0.5"></i>
+                            <span>Adequate spacing between interactive elements</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-amber-600 mt-0.5"></i>
+                            <span>Cards provide clear click/tap feedback</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-amber-600 mt-0.5"></i>
+                            <span>Action buttons easily distinguishable</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-section" class="bg-white rounded-xl border border-gray-200 p-8">
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Organization Card System</h2>
+                <p class="text-sm text-gray-600">Comprehensive wireframe specifications for ArkCase organization objects</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Version 1.0</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">ArkCase Design System</span>
+            </div>
+        </div>
+        <div class="border-t border-gray-200 pt-6">
+            <div class="grid grid-cols-3 gap-6 text-sm">
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Card Variants</h4>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Small Card (7.1)</li>
+                        <li>• Medium Card (7.2)</li>
+                        <li>• Large Card (7.3)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features</h4>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Progressive disclosure</li>
+                        <li>• Consistent hierarchy</li>
+                        <li>• Accessibility compliant</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Design Tokens</h4>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Color palette defined</li>
+                        <li>• Typography scale</li>
+                        <li>• Spacing system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

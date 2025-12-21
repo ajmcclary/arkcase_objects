@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div class="max-w-7xl mx-auto p-8">
+
+    <section id="header-section" class="mb-12">
+        <div class="flex items-center mb-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                <i class="fa-solid fa-file-lines text-white text-lg"></i>
+            </div>
+            <h1 class="text-3xl font-bold text-gray-900">Complaint Card Wireframes</h1>
+        </div>
+        <p class="text-gray-600 text-base ml-13">Comprehensive card-based representations for Complaint objects in ArkCase</p>
+    </section>
+
+    <section id="small-card-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">2.1 — Small Card Variant</h2>
+            <p class="text-gray-600 text-sm">Optimized for dense queues, inboxes, and search results. Minimal vertical height with essential information only.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <div id="small-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start flex-1 min-w-0">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="ml-3 flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Unauthorized access to customer database</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">CPL-2024-00847</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 ml-3 flex-shrink-0">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
+                                High Priority
+                            </span>
+                            <span class="text-xs text-gray-500 whitespace-nowrap">Due: Jan 28</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start flex-1 min-w-0">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="ml-3 flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Delayed response to service outage notification</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">CPL-2024-00846</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 ml-3 flex-shrink-0">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">
+                                In Review
+                            </span>
+                            <span class="text-xs text-gray-500 whitespace-nowrap">Due: Jan 30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start flex-1 min-w-0">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="ml-3 flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Billing discrepancy in Q4 invoice</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">CPL-2024-00845</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 ml-3 flex-shrink-0">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
+                                Resolved
+                            </span>
+                            <span class="text-xs text-gray-500 whitespace-nowrap">Closed: Jan 15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start flex-1 min-w-0">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="ml-3 flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Inappropriate conduct during customer interaction</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">CPL-2024-00844</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 ml-3 flex-shrink-0">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                                Under Investigation
+                            </span>
+                            <span class="text-xs text-gray-500 whitespace-nowrap">Due: Feb 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-5" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start flex-1 min-w-0">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="ml-3 flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Product defect causing safety concerns</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">CPL-2024-00843</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 ml-3 flex-shrink-0">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                                New
+                            </span>
+                            <span class="text-xs text-gray-500 whitespace-nowrap">Due: Jan 25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">2.2 — Medium Card Variant</h2>
+            <p class="text-gray-600 text-sm">Default representation in dashboards and browse views. Balanced density supporting categorization and prioritization.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Complaint</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-red-100 text-red-800">
+                                High Priority
+                            </span>
+                        </div>
+                    </div>
+
+                    <h3 class="text-base font-semibold text-gray-900 mb-1">Unauthorized access to customer database</h3>
+                    <p class="text-sm text-gray-500 mb-4">CPL-2024-00847</p>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Status</p>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                                Under Investigation
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Due Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 28, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Type</p>
+                            <p class="text-sm font-medium text-gray-900">Data Security</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 18, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-xs text-gray-500 mb-2">Assigned To</p>
+                        <div class="flex items-center gap-2">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                            <span class="text-sm text-gray-700">Security Team</span>
+                            <span class="text-xs text-gray-400">•</span>
+                            <span class="text-xs text-gray-500">Compliance Group</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        Open Complaint
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Complaint</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-yellow-100 text-yellow-800">
+                                Medium Priority
+                            </span>
+                            <i class="fa-solid fa-lock text-gray-400 text-xs" title="Restricted"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-base font-semibold text-gray-900 mb-1">Delayed response to service outage notification</h3>
+                    <p class="text-sm text-gray-500 mb-4">CPL-2024-00846</p>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Status</p>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-800">
+                                In Review
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Due Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 30, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Type</p>
+                            <p class="text-sm font-medium text-gray-900">Service Quality</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 20, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-xs text-gray-500 mb-2">Assigned To</p>
+                        <div class="flex items-center gap-2">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                            <span class="text-sm text-gray-700">Customer Relations</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        Open Complaint
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Complaint</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-green-100 text-green-800">
+                                Low Priority
+                            </span>
+                        </div>
+                    </div>
+
+                    <h3 class="text-base font-semibold text-gray-900 mb-1">Billing discrepancy in Q4 invoice</h3>
+                    <p class="text-sm text-gray-500 mb-4">CPL-2024-00845</p>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Status</p>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">
+                                Resolved
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Closed Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 15, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Type</p>
+                            <p class="text-sm font-medium text-gray-900">Financial</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 5, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-xs text-gray-500 mb-2">Assigned To</p>
+                        <div class="flex items-center gap-2">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                            <span class="text-sm text-gray-700">Finance Department</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        Open Complaint
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Complaint</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-red-100 text-red-800">
+                                High Priority
+                            </span>
+                            <i class="fa-solid fa-eye-slash text-gray-400 text-xs" title="External Restriction"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-base font-semibold text-gray-900 mb-1">Inappropriate conduct during customer interaction</h3>
+                    <p class="text-sm text-gray-500 mb-4">CPL-2024-00844</p>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Status</p>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">
+                                Under Investigation
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Due Date</p>
+                            <p class="text-sm font-medium text-gray-900">February 5, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Type</p>
+                            <p class="text-sm font-medium text-gray-900">HR / Personnel</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 22, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-xs text-gray-500 mb-2">Assigned To</p>
+                        <div class="flex items-center gap-2">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                            <span class="text-sm text-gray-700">HR Compliance</span>
+                            <span class="text-xs text-gray-400">•</span>
+                            <span class="text-xs text-gray-500">Legal Team</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        Open Complaint
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">2.3 — Large Card Variant</h2>
+            <p class="text-gray-600 text-sm">Used in preview panels and expanded card views. Provides comprehensive context without full navigation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6">
+            <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="border-b border-gray-200 bg-gray-50 px-6 py-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-white text-lg"></i>
+                            </div>
+                            <div class="ml-4">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Complaint</span>
+                                <h3 class="text-xl font-bold text-gray-900 mt-0.5">Unauthorized access to customer database</h3>
+                                <p class="text-sm text-gray-600 mt-1">CPL-2024-00847</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-red-100 text-red-800">
+                                High Priority
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-orange-100 text-orange-800">
+                                Under Investigation
+                            </span>
+                            <i class="fa-solid fa-lock text-gray-400 ml-1" title="Restricted Access"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-6 py-5">
+                    <div class="mb-5">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Summary</h4>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Multiple unauthorized login attempts detected on customer database system between January 18-19, 2024. Initial investigation reveals potential credential compromise affecting approximately 2,500 customer records. Security protocols have been activated and affected parties are being notified according to compliance requirements.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-6 mb-5 pb-5 border-b border-gray-200">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Priority</p>
+                            <p class="text-sm font-semibold text-red-600">High</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Due Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 28, 2024</p>
+                            <p class="text-xs text-red-600 mt-0.5">3 days remaining</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 18, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Type</p>
+                            <p class="text-sm font-medium text-gray-900">Data Security</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 pb-5 border-b border-gray-200">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Responsible Organization</h4>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-shield-halved text-blue-600 text-sm"></i>
+                            </div>
+                            <span class="ml-3 text-sm font-medium text-gray-900">Security & Compliance Division</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 pb-5 border-b border-gray-200">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Participants</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">James Mitchell</p>
+                                        <p class="text-xs text-gray-500">Lead Investigator</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Security Team</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Sarah Chen</p>
+                                        <p class="text-xs text-gray-500">Compliance Officer</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Compliance Group</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Marcus Rodriguez</p>
+                                        <p class="text-xs text-gray-500">Legal Counsel</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Legal Department</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Related Objects</h4>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-paperclip text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">12</p>
+                                    <p class="text-xs text-gray-500">Files</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-clipboard-list text-purple-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">8</p>
+                                    <p class="text-xs text-gray-500">Tasks</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-comment text-green-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">24</p>
+                                    <p class="text-xs text-gray-500">Notes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-link text-orange-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">3</p>
+                                    <p class="text-xs text-gray-500">Associations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 bg-gray-50 px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="inline-flex items-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-colors">
+                                <i class="fa-solid fa-folder-open mr-2"></i>
+                                Open Complaint
+                            </button>
+                            <button class="inline-flex items-center px-5 py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium rounded-lg transition-colors">
+                                <i class="fa-solid fa-eye mr-2"></i>
+                                View Details
+                            </button>
+                        </div>
+                        <button class="inline-flex items-center px-4 py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="border-b border-gray-200 bg-gray-50 px-6 py-4">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-white text-lg"></i>
+                            </div>
+                            <div class="ml-4">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Complaint</span>
+                                <h3 class="text-xl font-bold text-gray-900 mt-0.5">Product defect causing safety concerns</h3>
+                                <p class="text-sm text-gray-600 mt-1">CPL-2024-00843</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-red-100 text-red-800">
+                                Critical Priority
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-blue-100 text-blue-800">
+                                New
+                            </span>
+                            <i class="fa-solid fa-eye-slash text-gray-400 ml-1" title="External Restriction"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-6 py-5">
+                    <div class="mb-5">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Summary</h4>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Customer reported potential safety hazard with Model X-450 heating element. Unit overheated during normal operation causing minor property damage. Engineering team has been notified for immediate product review. Recall assessment in progress. Customer has been provided temporary replacement unit and full refund pending investigation completion.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-6 mb-5 pb-5 border-b border-gray-200">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Priority</p>
+                            <p class="text-sm font-semibold text-red-600">Critical</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Due Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 25, 2024</p>
+                            <p class="text-xs text-red-600 mt-0.5">Overdue by 1 day</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Incident Date</p>
+                            <p class="text-sm font-medium text-gray-900">January 16, 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Type</p>
+                            <p class="text-sm font-medium text-gray-900">Product Safety</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 pb-5 border-b border-gray-200">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Responsible Organization</h4>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-triangle-exclamation text-red-600 text-sm"></i>
+                            </div>
+                            <span class="ml-3 text-sm font-medium text-gray-900">Product Safety & Quality Assurance</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 pb-5 border-b border-gray-200">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Participants</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">David Thompson</p>
+                                        <p class="text-xs text-gray-500">Safety Engineer</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Engineering</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Jennifer Park</p>
+                                        <p class="text-xs text-gray-500">Quality Manager</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">QA Department</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Robert Kim</p>
+                                        <p class="text-xs text-gray-500">Product Manager</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Product Team</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="Avatar" class="w-8 h-8 rounded-full">
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Emily Watson</p>
+                                        <p class="text-xs text-gray-500">Regulatory Compliance</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-gray-500">Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Related Objects</h4>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-paperclip text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">18</p>
+                                    <p class="text-xs text-gray-500">Files</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-clipboard-list text-purple-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">15</p>
+                                    <p class="text-xs text-gray-500">Tasks</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-comment text-green-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">32</p>
+                                    <p class="text-xs text-gray-500">Notes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-link text-orange-600 text-sm"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-lg font-bold text-gray-900">7</p>
+                                    <p class="text-xs text-gray-500">Associations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 bg-gray-50 px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="inline-flex items-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-colors">
+                                <i class="fa-solid fa-folder-open mr-2"></i>
+                                Open Complaint
+                            </button>
+                            <button class="inline-flex items-center px-5 py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium rounded-lg transition-colors">
+                                <i class="fa-solid fa-eye mr-2"></i>
+                                View Details
+                            </button>
+                        </div>
+                        <button class="inline-flex items-center px-4 py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Cross-Variant Comparison</h2>
+            <p class="text-gray-600 text-sm">Visual comparison demonstrating consistent hierarchy and scaling across all three card variants.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Element</th>
+                            <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Small Card</th>
+                            <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Medium Card</th>
+                            <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Large Card</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Object Icon</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">8×8 compact</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">10×10 standard</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">12×12 prominent</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Title Display</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Truncated, single line</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Full width, wraps if needed</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Prominent, full visibility</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Complaint Number</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Visible, muted</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Visible, muted</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Visible, muted</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Status Badge</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Compact pill</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Standard badge</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Prominent badge</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Priority Indicator</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Badge only</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Badge + context</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Badge + full context</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Date Information</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Due date only</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Due + incident date</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">All dates + urgency</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Description</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Not shown</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Not shown</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Clamped preview (3 lines)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Participants</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Not shown</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Summary (1-3)</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Full list with roles</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Related Objects</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Not shown</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Not shown</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Count indicators</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Actions</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Implicit (card click)</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Single primary button</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">Multiple actions + menu</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm text-gray-900 font-medium">Vertical Height</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">~60-70px</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">~280-320px</td>
+                            <td class="py-3 px-4 text-sm text-gray-600">~550-650px</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="metadata-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Complaint Metadata Structure</h2>
+            <p class="text-gray-600 text-sm">Comprehensive breakdown of all complaint object attributes and their display patterns.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div id="metadata-card-1" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-circle-info text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 ml-3">Core Identifiers</h3>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Object Type</span>
+                        <span class="text-sm font-medium text-gray-900">Complaint</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Complaint Title</span>
+                        <span class="text-sm font-medium text-gray-900 text-right">Primary heading</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Complaint Number</span>
+                        <span class="text-sm font-medium text-gray-900">CPL-YYYY-XXXXX</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Status</span>
+                        <span class="text-sm font-medium text-gray-900">Badge indicator</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2">
+                        <span class="text-sm text-gray-600">Priority</span>
+                        <span class="text-sm font-medium text-gray-900">Critical / High / Medium / Low</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="metadata-card-2" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-calendar text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 ml-3">Temporal Information</h3>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Created Date</span>
+                        <span class="text-sm font-medium text-gray-900">System generated</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Incident Date</span>
+                        <span class="text-sm font-medium text-gray-900">When event occurred</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Due Date</span>
+                        <span class="text-sm font-medium text-gray-900">Resolution deadline</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Modified Date</span>
+                        <span class="text-sm font-medium text-gray-900">Last update timestamp</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2">
+                        <span class="text-sm text-gray-600">Closed Date</span>
+                        <span class="text-sm font-medium text-gray-900">If resolved</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="metadata-card-3" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-tag text-green-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 ml-3">Classification</h3>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Complaint Type</span>
+                        <span class="text-sm font-medium text-gray-900 text-right">Category classification</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Nature/Category</span>
+                        <span class="text-sm font-medium text-gray-900 text-right">Subcategory detail</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Severity Level</span>
+                        <span class="text-sm font-medium text-gray-900">Impact assessment</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Restriction Level</span>
+                        <span class="text-sm font-medium text-gray-900">Access controls</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2">
+                        <span class="text-sm text-gray-600">External Flag</span>
+                        <span class="text-sm font-medium text-gray-900">Visibility indicator</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="metadata-card-4" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-users text-orange-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 ml-3">Organizational Context</h3>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Responsible Org</span>
+                        <span class="text-sm font-medium text-gray-900 text-right">Owning department</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Queue Assignment</span>
+                        <span class="text-sm font-medium text-gray-900">Workflow queue</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Participants</span>
+                        <span class="text-sm font-medium text-gray-900">Involved personnel</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2 border-b border-gray-100">
+                        <span class="text-sm text-gray-600">Reporter</span>
+                        <span class="text-sm font-medium text-gray-900">Complaint submitter</span>
+                    </div>
+                    <div class="flex justify-between items-start py-2">
+                        <span class="text-sm text-gray-600">Assignee</span>
+                        <span class="text-sm font-medium text-gray-900">Current owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="status-variations-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Status & Priority Variations</h2>
+            <p class="text-gray-600 text-sm">Visual reference for all complaint status states and priority levels with consistent color coding.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div id="status-card" class="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Status Badges</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">New</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-blue-100 text-blue-800">
+                            New
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">In Review</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-yellow-100 text-yellow-800">
+                            In Review
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Under Investigation</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-orange-100 text-orange-800">
+                            Under Investigation
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Pending Response</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-purple-100 text-purple-800">
+                            Pending Response
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Resolved</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-green-100 text-green-800">
+                            Resolved
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Closed</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-gray-100 text-gray-800">
+                            Closed
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Escalated</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-red-100 text-red-800">
+                            Escalated
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="priority-card" class="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Priority Levels</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Critical Priority</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-red-100 text-red-800">
+                            Critical Priority
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">High Priority</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-red-100 text-red-800">
+                            High Priority
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Medium Priority</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-yellow-100 text-yellow-800">
+                            Medium Priority
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Low Priority</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-green-100 text-green-800">
+                            Low Priority
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                        <span class="text-sm text-gray-600">Unassigned Priority</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-gray-100 text-gray-800">
+                            Unassigned
+                        </span>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h4 class="text-sm font-semibold text-gray-900 mb-3">Restriction Indicators</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between py-2">
+                            <span class="text-sm text-gray-600">Internal Restriction</span>
+                            <i class="fa-solid fa-lock text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <span class="text-sm text-gray-600">External Restriction</span>
+                            <i class="fa-solid fa-eye-slash text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <span class="text-sm text-gray-600">Confidential</span>
+                            <i class="fa-solid fa-shield-halved text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interaction-patterns-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction Patterns</h2>
+            <p class="text-gray-600 text-sm">Consistent behavior patterns across all card variants ensuring predictable user experience.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div id="interaction-card-1" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-hand-pointer text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Primary Click Action</h3>
+                <p class="text-sm text-gray-600 mb-4">All card sizes support full-card click to open complaint details in main view.</p>
+                <div class="text-xs text-gray-500 bg-gray-50 rounded p-3 font-mono">
+                    onClick → navigateToComplaint(id)
+                </div>
+            </div>
+
+            <div id="interaction-card-2" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-computer-mouse text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Hover States</h3>
+                <p class="text-sm text-gray-600 mb-4">Cards show subtle elevation and border color change on hover to indicate interactivity.</p>
+                <div class="text-xs text-gray-500 bg-gray-50 rounded p-3 font-mono">
+                    hover:border-gray-300<br/>hover:shadow-md
+                </div>
+            </div>
+
+            <div id="interaction-card-3" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-keyboard text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Keyboard Navigation</h3>
+                <p class="text-sm text-gray-600 mb-4">All cards are keyboard accessible with focus states and Enter key activation.</p>
+                <div class="text-xs text-gray-500 bg-gray-50 rounded p-3 font-mono">
+                    Tab → Focus<br/>Enter → Activate
+                </div>
+            </div>
+
+            <div id="interaction-card-4" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-ellipsis-vertical text-orange-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Context Menus</h3>
+                <p class="text-sm text-gray-600 mb-4">Medium and Large cards include action menus for secondary operations.</p>
+                <div class="text-xs text-gray-500 bg-gray-50 rounded p-3">
+                    • Edit Complaint<br/>• Assign To<br/>• Change Status<br/>• Export Details
+                </div>
+            </div>
+
+            <div id="interaction-card-5" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-ban text-red-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Permission Awareness</h3>
+                <p class="text-sm text-gray-600 mb-4">Actions and fields dynamically hide or disable based on user permissions.</p>
+                <div class="text-xs text-gray-500 bg-gray-50 rounded p-3">
+                    Restricted content shows<br/>placeholder or lock icon
+                </div>
+            </div>
+
+            <div id="interaction-card-6" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-arrow-pointer text-indigo-600 text-xl"></i>
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 mb-2">Action Buttons</h3>
+                <p class="text-sm text-gray-600 mb-4">Primary actions use prominent buttons, secondary actions use ghost buttons.</p>
+                <div class="flex gap-2 mt-3">
+                    <button class="flex-1 bg-blue-600 text-white text-xs py-2 rounded">Primary</button>
+                    <button class="flex-1 border border-gray-300 text-gray-700 text-xs py-2 rounded">Secondary</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="responsive-behavior-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
+            <p class="text-gray-600 text-sm">Card adaptations for different container widths and layout contexts.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <div class="space-y-6">
+                <div id="responsive-grid-full" class="border-b border-gray-100 pb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Full Width Container (1200px+)</h3>
+                        <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Desktop</span>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="h-24 bg-blue-50 border-2 border-blue-200 rounded flex items-center justify-center text-sm text-blue-700">
+                            Medium Card
+                        </div>
+                        <div class="h-24 bg-blue-50 border-2 border-blue-200 rounded flex items-center justify-center text-sm text-blue-700">
+                            Medium Card
+                        </div>
+                        <div class="h-24 bg-blue-50 border-2 border-blue-200 rounded flex items-center justify-center text-sm text-blue-700">
+                            Medium Card
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">3-column grid layout for dashboard and browse views</p>
+                </div>
+
+                <div id="responsive-grid-medium" class="border-b border-gray-100 pb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Medium Width Container (768px-1199px)</h3>
+                        <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Tablet</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="h-24 bg-blue-50 border-2 border-blue-200 rounded flex items-center justify-center text-sm text-blue-700">
+                            Medium Card
+                        </div>
+                        <div class="h-24 bg-blue-50 border-2 border-blue-200 rounded flex items-center justify-center text-sm text-blue-700">
+                            Medium Card
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">2-column grid layout with adjusted spacing</p>
+                </div>
+
+                <div id="responsive-list" class="border-b border-gray-100 pb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">List View (Any Width)</h3>
+                        <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">All Devices</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="h-16 bg-green-50 border-2 border-green-200 rounded flex items-center px-4 text-sm text-green-700">
+                            Small Card (List Item)
+                        </div>
+                        <div class="h-16 bg-green-50 border-2 border-green-200 rounded flex items-center px-4 text-sm text-green-700">
+                            Small Card (List Item)
+                        </div>
+                        <div class="h-16 bg-green-50 border-2 border-green-200 rounded flex items-center px-4 text-sm text-green-700">
+                            Small Card (List Item)
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">Vertical stacking for queues and search results</p>
+                </div>
+
+                <div id="responsive-panel">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-semibold text-gray-900">Side Panel Preview (400px-600px)</h3>
+                        <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Panel View</span>
+                    </div>
+                    <div class="max-w-md">
+                        <div class="h-96 bg-purple-50 border-2 border-purple-200 rounded flex items-center justify-center text-sm text-purple-700">
+                            Large Card (Preview)
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">Full-height large card for inspector panels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessibility-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility Considerations</h2>
+            <p class="text-gray-600 text-sm">WCAG 2.1 AA compliant design patterns ensuring inclusive user experience.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div id="accessibility-card-1" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-universal-access text-blue-600"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-gray-900 ml-3">Semantic HTML</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Proper heading hierarchy (h1-h4)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Landmark regions (article, section)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Button elements for interactions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Lists for grouped content</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="accessibility-card-2" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-palette text-purple-600"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-gray-900 ml-3">Color Contrast</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>4.5:1 minimum for body text</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>3:1 minimum for large text</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Status badges meet contrast requirements</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Icons paired with text labels</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="accessibility-card-3" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-keyboard text-green-600"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-gray-900 ml-3">Keyboard Navigation</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Tab order follows visual layout</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Focus indicators clearly visible</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Enter/Space activate buttons</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Escape closes menus/modals</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="accessibility-card-4" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-audio-description text-orange-600"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-gray-900 ml-3">Screen Reader Support</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>ARIA labels for icons</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>ARIA live regions for updates</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Descriptive link text</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                        <span>Status announcements</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-tokens-section">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Tokens Reference</h2>
+            <p class="text-gray-600 text-sm">Systematic design values ensuring consistency across all complaint card implementations.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div id="tokens-spacing" class="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 class="text-base font-semibold text-gray-900 mb-4">Spacing Scale</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">XS</span>
+                        <span class="font-mono text-gray-900">4px</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">SM</span>
+                        <span class="font-mono text-gray-900">8px</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">MD</span>
+                        <span class="font-mono text-gray-900">12px</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">LG</span>
+                        <span class="font-mono text-gray-900">16px</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">XL</span>
+                        <span class="font-mono text-gray-900">20px</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">2XL</span>
+                        <span class="font-mono text-gray-900">24px</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tokens-typography" class="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 class="text-base font-semibold text-gray-900 mb-4">Typography</h3>
+                <div class="space-y-3">
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Title (Large)</p>
+                        <p class="font-semibold text-gray-900">20px / 700</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Title (Medium)</p>
+                        <p class="font-semibold text-gray-900">16px / 600</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Title (Small)</p>
+                        <p class="font-semibold text-gray-900">14px / 600</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Body</p>
+                        <p class="text-gray-900">14px / 400</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Caption</p>
+                        <p class="text-gray-900">12px / 400</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 mb-1">Label</p>
+                        <p class="text-gray-900">12px / 500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tokens-colors" class="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 class="text-base font-semibold text-gray-900 mb-4">Color Palette</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-blue-600 rounded"></div>
+                        <div>
+                            <p class="text-xs text-gray-500">Primary</p>
+                            <p class="font-mono text-xs text-gray-900">#2563EB</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-red-600 rounded"></div>
+                        <div>
+                            <p class="text-xs text-gray-500">Critical</p>
+                            <p class="font-mono text-xs text-gray-900">#DC2626</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-orange-600 rounded"></div>
+                        <div>
+                            <p class="text-xs text-gray-500">Warning</p>
+                            <p class="font-mono text-xs text-gray-900">#EA580C</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-green-600 rounded"></div>
+                        <div>
+                            <p class="text-xs text-gray-500">Success</p>
+                            <p class="font-mono text-xs text-gray-900">#16A34A</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gray-600 rounded"></div>
+                        <div>
+                            <p class="text-xs text-gray-500">Neutral</p>
+                            <p class="font-mono text-xs text-gray-900">#4B5563</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

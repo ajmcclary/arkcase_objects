@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<main id="main-content" class="p-8">
+    
+    <section id="card-overview" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">User Object — Card Variants</h1>
+                <p class="text-gray-600">Enterprise card components for representing system users in ArkCase</p>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <div class="flex items-start">
+                    <i class="fa-solid fa-circle-info text-blue-600 mt-1 mr-3"></i>
+                    <div>
+                        <h3 class="font-semibold text-blue-900 mb-1">Design Specifications</h3>
+                        <p class="text-sm text-blue-800">These wireframes represent User objects (internal staff accounts) across three density levels: Small (compact lists), Medium (default views), and Large (inspector panels). All variants maintain visual consistency with Person and Organization cards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="small-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center mb-3">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mr-3">8.1</span>
+                    <h2 class="text-2xl font-bold text-gray-900">User — Small Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Compact representation for participant lists, assignment pickers, and dense views. Optimized for quick identification with minimal vertical height.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div id="small-card-1" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                            SJ
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                                    Active
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Case Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-2" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-10 h-10 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                                    Active
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Senior Investigator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-3" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer opacity-75">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                            ER
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Emily Rodriguez</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600 flex-shrink-0">
+                                    Disabled
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Legal Analyst</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-4" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="David Park" class="w-10 h-10 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">David Park</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                                    Active
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Administrator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-5" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                            JW
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Jessica Williams</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                                    Active
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Compliance Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-6" class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Robert Martinez" class="w-10 h-10 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Robert Martinez</h3>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">
+                                    Active
+                                </span>
+                            </div>
+                            <p class="text-xs text-gray-500 truncate">Records Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-6 bg-gray-100 border border-gray-200 rounded-lg p-5">
+                <h4 class="font-semibold text-gray-900 mb-3 text-sm">Small Card Specifications</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Layout:</span> Single-row horizontal</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Height:</span> Minimal (56-64px)</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Avatar:</span> 40px circle</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Primary Text:</span> Display Name (truncated)</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Status:</span> Inline badge (Active/Disabled)</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Secondary:</span> Role label (optional)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center mb-3">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mr-3">8.2</span>
+                    <h2 class="text-2xl font-bold text-gray-900">User — Medium Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Default representation in user lists and participant summaries. Balances identity with light system context while maintaining readability and hierarchy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                                SJ
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">Sarah Johnson</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Case Manager</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Legal Department</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">District Office - North</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">Michael Chen</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Senior Investigator</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Investigations</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Regional Office - East</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-envelope text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600 truncate">m.chen@arkcase.gov</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all opacity-75">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                                ER
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">Emily Rodriguez</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
+                                        Disabled
+                                    </span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                        <i class="fa-solid fa-lock text-[10px] mr-1"></i>
+                                        Restricted
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Legal Analyst</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Legal Affairs</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Central Office</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="David Park" class="w-12 h-12 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">David Park</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">System Administrator</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">IT Operations</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Headquarters</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-envelope text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600 truncate">d.park@arkcase.gov</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-5" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                                JW
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">Jessica Williams</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Compliance Officer</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Compliance & Risk</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Regional Office - West</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+                <div id="medium-card-6" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Robert Martinez" class="w-12 h-12 rounded-full mr-3 flex-shrink-0 object-cover"/>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-[10px] mr-1"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-base font-bold text-gray-900 mb-1">Robert Martinez</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Records Manager</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">Records & Archives</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-sitemap text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600">District Office - South</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fa-solid fa-envelope text-gray-400 w-4 mr-2"></i>
+                                <span class="text-gray-600 truncate">r.martinez@arkcase.gov</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 px-5 py-3">
+                        <button class="w-full text-sm font-medium text-blue-600 hover:text-blue-700 py-2 hover:bg-blue-50 rounded transition-colors">
+                            View User
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-6 bg-gray-100 border border-gray-200 rounded-lg p-5">
+                <h4 class="font-semibold text-gray-900 mb-3 text-sm">Medium Card Specifications</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Layout:</span> Vertical with clear sections</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Avatar:</span> 48px circle</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Object Label:</span> "User" badge with icon</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Status:</span> Prominent pill badge</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Metadata:</span> Role, department, organization</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Optional:</span> Email address (context-dependent)</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Actions:</span> Single primary action button</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Restrictions:</span> Secondary badge when applicable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center mb-3">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mr-3">8.3</span>
+                    <h2 class="text-2xl font-bold text-gray-900">User — Large Card</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Comprehensive representation for inspector panels and expanded previews. Provides meaningful system context, associations, and multiple actions while maintaining focus on user identity and participation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="p-6">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-xl mr-4 flex-shrink-0">
+                                SJ
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-xs mr-1.5"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Johnson</h3>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                                        <i class="fa-solid fa-circle text-[6px] mr-1.5"></i>
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Role & Organization</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Case Manager</p>
+                                        <p class="text-xs text-gray-500">Primary Role</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-building text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Legal Department</p>
+                                        <p class="text-xs text-gray-500">Department</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-sitemap text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">District Office - North</p>
+                                        <p class="text-xs text-gray-500">Organization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">System Information</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Status</p>
+                                    <p class="text-sm font-medium text-gray-900">Active</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Group Memberships</p>
+                                    <p class="text-sm font-medium text-gray-900">4 groups</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Last Login</p>
+                                    <p class="text-sm font-medium text-gray-900">2 hours ago</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Created</p>
+                                    <p class="text-sm font-medium text-gray-900">Mar 15, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Associations</h4>
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">24</p>
+                                    <p class="text-xs text-gray-600">Cases</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">18</p>
+                                    <p class="text-xs text-gray-600">Tasks</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">7</p>
+                                    <p class="text-xs text-gray-600">Workflows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 px-6 py-4 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 text-white text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="bg-white border border-gray-300 text-gray-700 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="p-6">
+                        <div class="flex items-start mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-16 h-16 rounded-full mr-4 flex-shrink-0 object-cover"/>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-xs mr-1.5"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Michael Chen</h3>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                                        <i class="fa-solid fa-circle text-[6px] mr-1.5"></i>
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Role & Organization</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Senior Investigator</p>
+                                        <p class="text-xs text-gray-500">Primary Role</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-building text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Investigations</p>
+                                        <p class="text-xs text-gray-500">Department</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-sitemap text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Regional Office - East</p>
+                                        <p class="text-xs text-gray-500">Organization</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-envelope text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">m.chen@arkcase.gov</p>
+                                        <p class="text-xs text-gray-500">Email</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">System Information</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Status</p>
+                                    <p class="text-sm font-medium text-gray-900">Active</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Group Memberships</p>
+                                    <p class="text-sm font-medium text-gray-900">6 groups</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Last Login</p>
+                                    <p class="text-sm font-medium text-gray-900">30 minutes ago</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Created</p>
+                                    <p class="text-sm font-medium text-gray-900">Jan 8, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Associations</h4>
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">42</p>
+                                    <p class="text-xs text-gray-600">Cases</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">31</p>
+                                    <p class="text-xs text-gray-600">Tasks</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">12</p>
+                                    <p class="text-xs text-gray-600">Workflows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 px-6 py-4 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 text-white text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="bg-white border border-gray-300 text-gray-700 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all opacity-75">
+                    <div class="p-6">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-bold text-xl mr-4 flex-shrink-0">
+                                ER
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-xs mr-1.5"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Emily Rodriguez</h3>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-circle text-[6px] mr-1.5"></i>
+                                        Disabled
+                                    </span>
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                        <i class="fa-solid fa-lock text-xs mr-1.5"></i>
+                                        Restricted
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Role & Organization</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Legal Analyst</p>
+                                        <p class="text-xs text-gray-500">Primary Role</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-building text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Legal Affairs</p>
+                                        <p class="text-xs text-gray-500">Department</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-sitemap text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Central Office</p>
+                                        <p class="text-xs text-gray-500">Organization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">System Information</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Status</p>
+                                    <p class="text-sm font-medium text-gray-900">Disabled</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Group Memberships</p>
+                                    <p class="text-sm font-medium text-gray-900">3 groups</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Last Login</p>
+                                    <p class="text-sm font-medium text-gray-900">45 days ago</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Created</p>
+                                    <p class="text-sm font-medium text-gray-900">Sep 22, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Associations</h4>
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">8</p>
+                                    <p class="text-xs text-gray-600">Cases</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">3</p>
+                                    <p class="text-xs text-gray-600">Tasks</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">1</p>
+                                    <p class="text-xs text-gray-600">Workflows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 px-6 py-4 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 text-white text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-gray-50 transition-colors opacity-50 cursor-not-allowed" disabled>
+                                Assign
+                            </button>
+                            <button class="bg-white border border-gray-300 text-gray-700 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="p-6">
+                        <div class="flex items-start mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="David Park" class="w-16 h-16 rounded-full mr-4 flex-shrink-0 object-cover"/>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                        <i class="fa-solid fa-user text-xs mr-1.5"></i>
+                                        User
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">David Park</h3>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                                        <i class="fa-solid fa-circle text-[6px] mr-1.5"></i>
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Role & Organization</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-briefcase text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">System Administrator</p>
+                                        <p class="text-xs text-gray-500">Primary Role</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-building text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">IT Operations</p>
+                                        <p class="text-xs text-gray-500">Department</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-sitemap text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Headquarters</p>
+                                        <p class="text-xs text-gray-500">Organization</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa-solid fa-envelope text-gray-400 w-5 mt-0.5 mr-3"></i>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">d.park@arkcase.gov</p>
+                                        <p class="text-xs text-gray-500">Email</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">System Information</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Status</p>
+                                    <p class="text-sm font-medium text-gray-900">Active</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Group Memberships</p>
+                                    <p class="text-sm font-medium text-gray-900">8 groups</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Last Login</p>
+                                    <p class="text-sm font-medium text-gray-900">5 minutes ago</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Account Created</p>
+                                    <p class="text-sm font-medium text-gray-900">Nov 3, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Associations</h4>
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">15</p>
+                                    <p class="text-xs text-gray-600">Cases</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">52</p>
+                                    <p class="text-xs text-gray-600">Tasks</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                                    <p class="text-2xl font-bold text-gray-900 mb-1">9</p>
+                                    <p class="text-xs text-gray-600">Workflows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 px-6 py-4 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 text-white text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                                View Details
+                            </button>
+                            <button class="flex-1 bg-white border border-gray-300 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg hover:bg-gray-50 transition-colors">
+                                Assign
+                            </button>
+                            <button class="bg-white border border-gray-300 text-gray-700 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 bg-gray-100 border border-gray-200 rounded-lg p-5">
+                <h4 class="font-semibold text-gray-900 mb-3 text-sm">Large Card Specifications</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Layout:</span> Structured multi-section card</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Avatar:</span> 64px circle</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Sections:</span> Identity, Role, System Info, Associations, Actions</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Metadata Grid:</span> 2-column layout for system data</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Associations:</span> Shown as counts (Cases, Tasks, Workflows)</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Group Memberships:</span> Summarized count only</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Actions:</span> Multiple permission-aware buttons</p>
+                        <p class="text-gray-600 mb-2"><span class="font-medium text-gray-900">Privacy:</span> No sensitive directory attributes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Cross-Variant Comparison</h2>
+                <p class="text-gray-600">Visual progression from compact to comprehensive representations</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50 border-b border-gray-200">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-semibold text-gray-900">Feature</th>
+                                <th class="px-6 py-4 text-left font-semibold text-gray-900">Small (8.1)</th>
+                                <th class="px-6 py-4 text-left font-semibold text-gray-900">Medium (8.2)</th>
+                                <th class="px-6 py-4 text-left font-semibold text-gray-900">Large (8.3)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Use Case</td>
+                                <td class="px-6 py-4 text-gray-600">Participant lists, pickers</td>
+                                <td class="px-6 py-4 text-gray-600">User lists, summaries</td>
+                                <td class="px-6 py-4 text-gray-600">Inspector panels, previews</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Avatar Size</td>
+                                <td class="px-6 py-4 text-gray-600">40px</td>
+                                <td class="px-6 py-4 text-gray-600">48px</td>
+                                <td class="px-6 py-4 text-gray-600">64px</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Display Name</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Truncated</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Full</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Prominent</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Object Type Label</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Account Status</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Inline badge</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Pill badge</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Prominent pill</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Role</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Optional label</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>With icon</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Detailed</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Department</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Organization</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Email</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Optional</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">System Metadata</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Grid layout</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Group Memberships</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Count only</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Associations</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-xmark text-red-600 mr-2"></i>No</td>
+                                <td class="px-6 py-4 text-gray-600"><i class="fa-solid fa-check text-green-600 mr-2"></i>Count cards</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Actions</td>
+                                <td class="px-6 py-4 text-gray-600">Entire card clickable</td>
+                                <td class="px-6 py-4 text-gray-600">Single button</td>
+                                <td class="px-6 py-4 text-gray-600">Multiple buttons + menu</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Vertical Height</td>
+                                <td class="px-6 py-4 text-gray-600">56-64px</td>
+                                <td class="px-6 py-4 text-gray-600">~280px</td>
+                                <td class="px-6 py-4 text-gray-600">~550px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consistency-rules" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Consistency Rules</h2>
+                <p class="text-gray-600">Guidelines for maintaining visual harmony across all User card variants</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="consistency-card-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-palette text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Visual Alignment</h3>
+                            <p class="text-sm text-gray-600">User cards must align visually with Person and Organization cards. Avatar placement, name hierarchy, and status indicators should follow identical patterns across all object types.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consistency-card-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-layer-group text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Progressive Disclosure</h3>
+                            <p class="text-sm text-gray-600">System metadata should scale gradually from Small to Large variants. Each size should feel like a natural expansion of the previous, not a completely different component.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consistency-card-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-user-shield text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Status Indicators</h3>
+                            <p class="text-sm text-gray-600">Active status uses green badges, Disabled uses gray. Restriction indicators appear as amber badges with lock icons. Status must be immediately visible in all variants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consistency-card-4" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-shield-halved text-amber-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Privacy & Security</h3>
+                            <p class="text-sm text-gray-600">Never expose sensitive directory attributes (DNs, internal IDs, passwords). Group memberships shown as counts only. Actions must respect permission boundaries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consistency-card-5" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-text-height text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Typography Hierarchy</h3>
+                            <p class="text-sm text-gray-600">Display Name is always the primary text element. Secondary text (role, department) uses smaller size and muted color. System metadata uses the smallest text size.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consistency-card-6" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-hand-pointer text-rose-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Interactive Behavior</h3>
+                            <p class="text-sm text-gray-600">Small cards are fully clickable. Medium cards have a single action button. Large cards provide multiple actions with overflow menu. Hover states must be consistent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="context-usage" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Contextual Usage Examples</h2>
+                <p class="text-gray-600">How User cards appear in different areas of the ArkCase platform</p>
+            </div>
+
+            <div class="space-y-6">
+                <div id="context-example-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Assignment Picker (Small Cards)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Users appear in a compact list when assigning cases or tasks</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4 space-y-2">
+                        <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-200 hover:border-blue-300 cursor-pointer transition-colors">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-xs font-semibold mr-2">
+                                    SJ
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
+                                    <p class="text-xs text-gray-500">Case Manager</p>
+                                </div>
+                            </div>
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800">Active</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-200 hover:border-blue-300 cursor-pointer transition-colors">
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-8 h-8 rounded-full mr-2 object-cover"/>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900">Michael Chen</p>
+                                    <p class="text-xs text-gray-500">Senior Investigator</p>
+                                </div>
+                            </div>
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800">Active</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-200 hover:border-blue-300 cursor-pointer transition-colors">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center text-white text-xs font-semibold mr-2">
+                                    JW
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900">Jessica Williams</p>
+                                    <p class="text-xs text-gray-500">Compliance Officer</p>
+                                </div>
+                            </div>
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800">Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="context-example-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">User Directory (Medium Cards)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Grid view of all users in the organization</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <div class="flex items-start mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold mr-2 text-sm">
+                                        SJ
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 inline-flex items-center mb-1">
+                                            <i class="fa-solid fa-user text-[8px] mr-1"></i>User
+                                        </p>
+                                        <h4 class="text-sm font-bold text-gray-900">Sarah Johnson</h4>
+                                    </div>
+                                </div>
+                                <div class="space-y-1.5 text-xs mb-3">
+                                    <p class="text-gray-600"><i class="fa-solid fa-briefcase w-3 mr-1.5 text-gray-400"></i>Case Manager</p>
+                                    <p class="text-gray-600"><i class="fa-solid fa-building w-3 mr-1.5 text-gray-400"></i>Legal Dept</p>
+                                </div>
+                                <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800 inline-block">Active</span>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <div class="flex items-start mb-3">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-10 h-10 rounded-full mr-2 object-cover"/>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 inline-flex items-center mb-1">
+                                            <i class="fa-solid fa-user text-[8px] mr-1"></i>User
+                                        </p>
+                                        <h4 class="text-sm font-bold text-gray-900">Michael Chen</h4>
+                                    </div>
+                                </div>
+                                <div class="space-y-1.5 text-xs mb-3">
+                                    <p class="text-gray-600"><i class="fa-solid fa-briefcase w-3 mr-1.5 text-gray-400"></i>Sr. Investigator</p>
+                                    <p class="text-gray-600"><i class="fa-solid fa-building w-3 mr-1.5 text-gray-400"></i>Investigations</p>
+                                </div>
+                                <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800 inline-block">Active</span>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 opacity-75">
+                                <div class="flex items-start mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-semibold mr-2 text-sm">
+                                        ER
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 inline-flex items-center mb-1">
+                                            <i class="fa-solid fa-user text-[8px] mr-1"></i>User
+                                        </p>
+                                        <h4 class="text-sm font-bold text-gray-900">Emily Rodriguez</h4>
+                                    </div>
+                                </div>
+                                <div class="space-y-1.5 text-xs mb-3">
+                                    <p class="text-gray-600"><i class="fa-solid fa-briefcase w-3 mr-1.5 text-gray-400"></i>Legal Analyst</p>
+                                    <p class="text-gray-600"><i class="fa-solid fa-building w-3 mr-1.5 text-gray-400"></i>Legal Affairs</p>
+                                </div>
+                                <span class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600 inline-block">Disabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="context-example-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Inspector Panel (Large Card)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Detailed view when clicking on a user from any list</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="bg-white border border-gray-200 rounded-lg max-w-md mx-auto">
+                            <div class="p-5">
+                                <div class="flex items-start mb-5">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Michael Chen" class="w-14 h-14 rounded-full mr-3 object-cover"/>
+                                    <div class="flex-1">
+                                        <p class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 inline-flex items-center mb-1">
+                                            <i class="fa-solid fa-user text-[10px] mr-1"></i>User
+                                        </p>
+                                        <h4 class="text-lg font-bold text-gray-900 mb-1">Michael Chen</h4>
+                                        <span class="text-xs px-2.5 py-1 rounded-full bg-green-100 text-green-800 font-medium inline-flex items-center">
+                                            <i class="fa-solid fa-circle text-[5px] mr-1.5"></i>Active
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-2">Role & Organization</h5>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="flex items-center">
+                                            <i class="fa-solid fa-briefcase text-gray-400 w-4 mr-2"></i>
+                                            <span class="text-gray-900 font-medium">Senior Investigator</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fa-solid fa-building text-gray-400 w-4 mr-2"></i>
+                                            <span class="text-gray-600">Investigations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-2">Associations</h5>
+                                    <div class="grid grid-cols-3 gap-2">
+                                        <div class="bg-gray-50 rounded p-2 text-center">
+                                            <p class="text-lg font-bold text-gray-900">42</p>
+                                            <p class="text-[10px] text-gray-600">Cases</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded p-2 text-center">
+                                            <p class="text-lg font-bold text-gray-900">31</p>
+                                            <p class="text-[10px] text-gray-600">Tasks</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded p-2 text-center">
+                                            <p class="text-lg font-bold text-gray-900">12</p>
+                                            <p class="text-[10px] text-gray-600">Workflows</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 px-5 py-3 bg-gray-50">
+                                <div class="flex items-center gap-2">
+                                    <button class="flex-1 bg-blue-600 text-white text-xs font-medium py-2 px-3 rounded hover:bg-blue-700 transition-colors">
+                                        View Details
+                                    </button>
+                                    <button class="flex-1 bg-white border border-gray-300 text-gray-700 text-xs font-medium py-2 px-3 rounded hover:bg-gray-50 transition-colors">
+                                        Assign
+                                    </button>
+                                    <button class="bg-white border border-gray-300 text-gray-700 px-2 py-2 rounded hover:bg-gray-50 transition-colors">
+                                        <i class="fa-solid fa-ellipsis-vertical text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="implementation-notes" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
+                <p class="text-gray-600">Technical considerations for developers implementing User cards</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa-solid fa-code text-blue-600 mr-2"></i>
+                            Component Architecture
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Use a single base component with size prop (small/medium/large)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Implement conditional rendering based on variant</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Share styles and utilities across all card types</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Support both avatar images and initials fallback</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa-solid fa-database text-blue-600 mr-2"></i>
+                            Data Requirements
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>displayName, accountStatus (required)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>role, department, organization (recommended)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>associations: caseCount, taskCount, workflowCount</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>groupMembershipCount, lastLogin, accountCreated</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa-solid fa-shield-halved text-blue-600 mr-2"></i>
+                            Security Considerations
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Never expose LDAP DNs or internal user IDs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Respect permission boundaries for actions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Filter email visibility based on context</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Show group memberships as counts only</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa-solid fa-universal-access text-blue-600 mr-2"></i>
+                            Accessibility
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Include ARIA labels for all interactive elements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Ensure keyboard navigation support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Provide text alternatives for status icons</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>
+                                <span>Maintain sufficient color contrast ratios</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

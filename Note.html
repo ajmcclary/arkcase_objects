@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<div class="max-w-[1600px] mx-auto p-8">
+
+    <section id="header-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-8">
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-note-sticky text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-semibold text-gray-900">Note Object Cards</h1>
+                    <p class="text-gray-500 mt-1">ArkCase Design System — Component Wireframes</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-6 mt-6">
+                <p class="text-gray-700 leading-relaxed">
+                    Note cards represent comments, annotations, or system notes attached to parent objects such as cases, complaints, consultations, or tasks. These cards emphasize authorship, timing, and content while maintaining visual subordination to their parent objects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="small-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">16.1 — Note Small Card</h2>
+            <p class="text-gray-600">Compact representation optimized for dense comment threads, activity feeds, and timelines</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6" id="small-cards-grid">
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-1">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-comment text-amber-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">Sarah Mitchell</span>
+                            <span class="text-xs text-gray-500">2h ago</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Updated the compliance documentation per the client's request. All sections have been reviewed and approved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-2">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-note-sticky text-blue-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">James Rodriguez</span>
+                            <span class="text-xs text-gray-500">5h ago</span>
+                            <span class="px-1.5 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">Internal</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Need to follow up with legal team regarding contract terms before proceeding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-robot text-purple-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">System</span>
+                            <span class="text-xs text-gray-500">Yesterday</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Case status automatically updated to "In Review" based on workflow rules.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-4">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-comment-dots text-green-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">Maria Chen</span>
+                            <span class="text-xs text-gray-500">Jan 15</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Client confirmed receipt of all documents. Moving forward with next phase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-5">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-orange-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-exclamation text-orange-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">David Park</span>
+                            <span class="text-xs text-gray-500">Jan 12</span>
+                            <span class="px-1.5 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">Internal</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Urgent: Missing signature on page 3 of the agreement. Holding until resolved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer" id="small-card-6">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 bg-indigo-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-note-sticky text-indigo-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm font-medium text-gray-900">Emily Watson</span>
+                            <span class="text-xs text-gray-500">Jan 10</span>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">
+                            Scheduled follow-up meeting for next Tuesday at 2 PM. Calendar invite sent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-300 rounded-lg p-6" id="small-card-specs">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Design Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Layout Characteristics</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Compact vertical stacking</li>
+                        <li>• Minimal vertical height (single-line metadata)</li>
+                        <li>• No expandable regions</li>
+                        <li>• Optimized for quick scanning</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Required Elements</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Note icon or type indicator</li>
+                        <li>• Author name (prominent)</li>
+                        <li>• Created timestamp (compact format)</li>
+                        <li>• Content preview (1-2 lines, clamped)</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Behavioral Notes</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• No visible action buttons</li>
+                        <li>• No parent object reference shown</li>
+                        <li>• Entire card clickable to expand</li>
+                        <li>• Hover state for interactivity feedback</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Use Cases</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Activity feeds and timelines</li>
+                        <li>• Dense comment threads</li>
+                        <li>• Recent activity panels</li>
+                        <li>• Notification lists</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">16.2 — Note Medium Card</h2>
+            <p class="text-gray-600">Default representation balancing readability with context for note lists and related-object panels</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="medium-cards-grid">
+            
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all" id="medium-card-1">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">General</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-1">Client Communication</h3>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Author" class="w-8 h-8 rounded-full">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Sarah Mitchell</p>
+                                <p class="text-xs text-gray-500">Created on Jan 20, 2025 at 2:45 PM</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Updated the compliance documentation per the client's request. All sections have been reviewed and approved by the legal team. The client has confirmed receipt and expressed satisfaction with the thoroughness of our response.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Compliance</span>
+                        </div>
+                        <button class="px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                            View Note
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all" id="medium-card-2">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-lock text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">Internal</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-1">Legal Review Required</h3>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Author" class="w-8 h-8 rounded-full">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">James Rodriguez</p>
+                                <p class="text-xs text-gray-500">Created on Jan 19, 2025 at 10:15 AM</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Need to follow up with legal team regarding contract terms before proceeding. Several clauses require clarification, particularly sections 4.2 and 7.1 regarding liability and termination conditions.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded">Legal</span>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded">Urgent</span>
+                        </div>
+                        <button class="px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                            View Note
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all" id="medium-card-3">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-robot text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-medium rounded">System</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-1">Status Update</h3>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-cog text-purple-700 text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">System</p>
+                                <p class="text-xs text-gray-500">Created on Jan 18, 2025 at 3:30 PM</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Case status automatically updated to "In Review" based on workflow rules. All required documents have been submitted and preliminary assessment has been completed.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">Automated</span>
+                        </div>
+                        <button class="px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                            View Note
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all" id="medium-card-4">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment-dots text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">General</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-1">Client Confirmation</h3>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="flex items-center gap-3 mb-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Author" class="w-8 h-8 rounded-full">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Maria Chen</p>
+                                <p class="text-xs text-gray-500">Created on Jan 15, 2025 at 11:20 AM</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed line-clamp-3">
+                            Client confirmed receipt of all documents. Moving forward with next phase of the project as planned. Expected completion date remains on track for end of quarter.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Client Relations</span>
+                        </div>
+                        <button class="px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                            View Note
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-300 rounded-lg p-6" id="medium-card-specs">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Design Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Layout Characteristics</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Clear vertical hierarchy</li>
+                        <li>• Moderate spacing for readability</li>
+                        <li>• Structured sections (header, content, footer)</li>
+                        <li>• Balanced information density</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Required Elements</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Note icon + object type label</li>
+                        <li>• Note type indicator (General/Internal/System)</li>
+                        <li>• Author name with avatar</li>
+                        <li>• Created date and time</li>
+                        <li>• Content preview (clamped at 3 lines)</li>
+                        <li>• Primary action button</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Optional Elements</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Tag or category labels</li>
+                        <li>• Internal vs public indicator</li>
+                        <li>• Secondary metadata (modified date)</li>
+                        <li>• Context menu (three-dot button)</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Behavioral Notes</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Content preview should not dominate</li>
+                        <li>• Metadata visually secondary</li>
+                        <li>• Actions minimal and predictable</li>
+                        <li>• Hover state enhances card elevation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">16.3 — Note Large Card</h2>
+            <p class="text-gray-600">Expanded preview providing full context for inspector panels and detailed views</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6" id="large-cards-grid">
+            
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all" id="large-card-1">
+                <div class="border-b border-gray-200 p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment text-amber-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2.5 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">General</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Client Communication Update</h3>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Author" class="w-10 h-10 rounded-full">
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-gray-900">Sarah Mitchell</p>
+                            <div class="flex items-center gap-4 mt-1">
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Created: Jan 20, 2025 at 2:45 PM</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <span>Modified: Jan 20, 2025 at 4:30 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1.5 bg-green-100 text-green-700 text-xs font-medium rounded-lg">Compliance</span>
+                            <span class="px-3 py-1.5 bg-blue-100 text-blue-700 text-xs font-medium rounded-lg">Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Note Content</h4>
+                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <p class="text-sm text-gray-800 leading-relaxed">
+                                Updated the compliance documentation per the client's request. All sections have been reviewed and approved by the legal team. The client has confirmed receipt and expressed satisfaction with the thoroughness of our response.
+                            </p>
+                            <p class="text-sm text-gray-800 leading-relaxed mt-3">
+                                Key changes include enhanced data protection clauses, updated privacy policy references, and clarified terms regarding third-party data processing. All modifications have been documented in the change log and are ready for final client signature.
+                            </p>
+                            <p class="text-sm text-gray-800 leading-relaxed mt-3">
+                                Next steps: Schedule follow-up meeting to discuss implementation timeline and any additional requirements from the client's compliance officer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Parent Context</h4>
+                        <div class="flex items-center gap-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-blue-600 font-medium uppercase tracking-wide">Case</p>
+                                <p class="text-sm font-semibold text-gray-900">CASE-2025-00847 — Enterprise Compliance Review</p>
+                            </div>
+                            <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                                View Case <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-link mr-2"></i>View Context
+                            </button>
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-share-nodes mr-2"></i>Share
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                More Actions
+                            </button>
+                            <button class="px-5 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
+                                Open Note
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all" id="large-card-2">
+                <div class="border-b border-gray-200 p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-lock text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2.5 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Internal</span>
+                                    <span class="px-2.5 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded flex items-center gap-1">
+                                        <i class="fa-solid fa-eye-slash text-xs"></i>
+                                        Restricted
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Legal Review Required — Contract Terms</h3>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Author" class="w-10 h-10 rounded-full">
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-gray-900">James Rodriguez</p>
+                            <div class="flex items-center gap-4 mt-1">
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Created: Jan 19, 2025 at 10:15 AM</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <span>Modified: Jan 19, 2025 at 3:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1.5 bg-purple-100 text-purple-700 text-xs font-medium rounded-lg">Legal</span>
+                            <span class="px-3 py-1.5 bg-orange-100 text-orange-700 text-xs font-medium rounded-lg">Urgent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Note Content</h4>
+                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <p class="text-sm text-gray-800 leading-relaxed">
+                                Need to follow up with legal team regarding contract terms before proceeding. Several clauses require clarification, particularly sections 4.2 and 7.1 regarding liability and termination conditions.
+                            </p>
+                            <p class="text-sm text-gray-800 leading-relaxed mt-3">
+                                <strong>Section 4.2 Concerns:</strong> The current language around limitation of liability may expose us to unacceptable risk. Recommend revising to cap liability at contract value and exclude consequential damages.
+                            </p>
+                            <p class="text-sm text-gray-800 leading-relaxed mt-3">
+                                <strong>Section 7.1 Concerns:</strong> Termination clause lacks clear definition of "material breach" and notice period seems insufficient for enterprise contracts of this scale. Suggest 60-day notice minimum.
+                            </p>
+                            <p class="text-sm text-gray-800 leading-relaxed mt-3">
+                                <strong>Action Required:</strong> Schedule urgent meeting with legal counsel before client presentation on Jan 25. Do not proceed with signature until these items are resolved.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Parent Context</h4>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-contract text-purple-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-purple-600 font-medium uppercase tracking-wide">Contract</p>
+                                <p class="text-sm font-semibold text-gray-900">CONTRACT-2025-00124 — Enterprise Service Agreement</p>
+                            </div>
+                            <button class="text-purple-600 hover:text-purple-700 text-sm font-medium">
+                                View Contract <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-600 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm font-semibold text-amber-900 mb-1">Restricted Access</p>
+                                <p class="text-xs text-amber-800">This note contains sensitive information. Access is limited to authorized legal and management personnel only.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-link mr-2"></i>View Context
+                            </button>
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-users mr-2"></i>Manage Access
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                More Actions
+                            </button>
+                            <button class="px-5 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
+                                Open Note
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-lg transition-all" id="large-card-3">
+                <div class="border-b border-gray-200 p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-robot text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Note</span>
+                                    <span class="px-2.5 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded">System</span>
+                                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded flex items-center gap-1">
+                                        <i class="fa-solid fa-cog text-xs"></i>
+                                        Automated
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Workflow Status Update — Review Phase Initiated</h3>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-cog text-purple-700"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-gray-900">System</p>
+                            <div class="flex items-center gap-4 mt-1">
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Created: Jan 18, 2025 at 3:30 PM</span>
+                                </div>
+                                <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                                    <i class="fa-solid fa-microchip"></i>
+                                    <span>Workflow Engine v2.4.1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg">Workflow</span>
+                            <span class="px-3 py-1.5 bg-blue-100 text-blue-700 text-xs font-medium rounded-lg">Status Change</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Note Content</h4>
+                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <p class="text-sm text-gray-800 leading-relaxed">
+                                Case status automatically updated to "In Review" based on workflow rules. All required documents have been submitted and preliminary assessment has been completed.
+                            </p>
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <p class="text-xs font-semibold text-gray-700 mb-2">Workflow Trigger Details:</p>
+                                <ul class="space-y-1.5 text-xs text-gray-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                        <span>All 12 required documents uploaded and verified</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                        <span>Initial risk assessment completed (Score: 3.2/10)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                        <span>Compliance checklist validated (18/18 items)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                        <span>Assigned reviewer notified via email</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <p class="text-xs font-semibold text-gray-700 mb-2">Next Workflow Actions:</p>
+                                <ul class="space-y-1.5 text-xs text-gray-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-regular fa-clock text-blue-600 mt-0.5"></i>
+                                        <span>Senior reviewer assignment (Due: Jan 21, 2025)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-regular fa-clock text-blue-600 mt-0.5"></i>
+                                        <span>Detailed assessment phase (SLA: 5 business days)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Parent Context</h4>
+                        <div class="flex items-center gap-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-blue-600 font-medium uppercase tracking-wide">Case</p>
+                                <p class="text-sm font-semibold text-gray-900">CASE-2025-00923 — Financial Services Audit</p>
+                            </div>
+                            <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                                View Case <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-info-circle text-blue-600 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm font-semibold text-blue-900 mb-1">System-Generated Note</p>
+                                <p class="text-xs text-blue-800">This note was created automatically by the workflow engine. No manual intervention was required for this status transition.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-link mr-2"></i>View Context
+                            </button>
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                <i class="fa-solid fa-timeline mr-2"></i>View Workflow
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm font-medium">
+                                More Actions
+                            </button>
+                            <button class="px-5 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
+                                Open Note
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-300 rounded-lg p-6" id="large-card-specs">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Design Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Layout Characteristics</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Structured card with clear visual sections</li>
+                        <li>• Strong hierarchy separating metadata and content</li>
+                        <li>• Generous spacing for readability</li>
+                        <li>• Distinct header, content, and action areas</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Required Elements</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Note icon + object type label (prominent)</li>
+                        <li>• Note type and visibility indicators</li>
+                        <li>• Author name with avatar (prominent)</li>
+                        <li>• Created and modified timestamps</li>
+                        <li>• Full note content (read-only)</li>
+                        <li>• Parent object reference with link</li>
+                        <li>• Action bar with multiple actions</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Behavioral Notes</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Content must be read-only (no inline editing)</li>
+                        <li>• No delete controls unless explicitly needed</li>
+                        <li>• Parent context visually secondary</li>
+                        <li>• Actions must be permission-aware</li>
+                        <li>• Support for contextual alerts/warnings</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Use Cases</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>• Inspector panels and side drawers</li>
+                        <li>• Expanded preview modals</li>
+                        <li>• Detailed note review interfaces</li>
+                        <li>• Audit trail and compliance views</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Cross-Variant Comparison</h2>
+            <p class="text-gray-600">Visual progression from Small to Large card variants</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Feature</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Small Card (16.1)</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Medium Card (16.2)</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Large Card (16.3)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Primary Use Case</td>
+                            <td class="px-6 py-4 text-gray-700">Activity feeds, timelines</td>
+                            <td class="px-6 py-4 text-gray-700">Note lists, related panels</td>
+                            <td class="px-6 py-4 text-gray-700">Inspector panels, expanded views</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Vertical Height</td>
+                            <td class="px-6 py-4 text-gray-700">Minimal (~80px)</td>
+                            <td class="px-6 py-4 text-gray-700">Moderate (~200px)</td>
+                            <td class="px-6 py-4 text-gray-700">Expansive (~400px+)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Content Preview</td>
+                            <td class="px-6 py-4 text-gray-700">1-2 lines (clamped)</td>
+                            <td class="px-6 py-4 text-gray-700">3 lines (clamped)</td>
+                            <td class="px-6 py-4 text-gray-700">Full content (read-only)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Author Display</td>
+                            <td class="px-6 py-4 text-gray-700">Name only</td>
+                            <td class="px-6 py-4 text-gray-700">Name + avatar</td>
+                            <td class="px-6 py-4 text-gray-700">Name + avatar + details</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Timestamp</td>
+                            <td class="px-6 py-4 text-gray-700">Relative (e.g., "2h ago")</td>
+                            <td class="px-6 py-4 text-gray-700">Full date + time</td>
+                            <td class="px-6 py-4 text-gray-700">Created + modified dates</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Note Type</td>
+                            <td class="px-6 py-4 text-gray-700">Badge (optional)</td>
+                            <td class="px-6 py-4 text-gray-700">Badge (required)</td>
+                            <td class="px-6 py-4 text-gray-700">Badge + visibility indicators</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Parent Context</td>
+                            <td class="px-6 py-4 text-gray-700">Not shown</td>
+                            <td class="px-6 py-4 text-gray-700">Not shown</td>
+                            <td class="px-6 py-4 text-gray-700">Full reference with link</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Actions</td>
+                            <td class="px-6 py-4 text-gray-700">None visible (card click)</td>
+                            <td class="px-6 py-4 text-gray-700">Primary action button</td>
+                            <td class="px-6 py-4 text-gray-700">Multiple actions + menu</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Tags/Categories</td>
+                            <td class="px-6 py-4 text-gray-700">Not shown</td>
+                            <td class="px-6 py-4 text-gray-700">1-2 tags (optional)</td>
+                            <td class="px-6 py-4 text-gray-700">Multiple tags + metadata</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Interaction</td>
+                            <td class="px-6 py-4 text-gray-700">Entire card clickable</td>
+                            <td class="px-6 py-4 text-gray-700">Card + button interactions</td>
+                            <td class="px-6 py-4 text-gray-700">Multiple interaction points</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-principles-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Design Principles & Guidelines</h2>
+            <p class="text-gray-600">Core principles governing Note card design across all variants</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-1">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-user text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Authorship Clarity</h3>
+                        <p class="text-sm text-gray-600 mt-1">Author identity must be immediately clear</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Always display author name prominently</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Use avatars for human authors in Medium/Large cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Distinguish system-generated notes with appropriate iconography</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Maintain consistent author placement across all variants</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-2">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-clock text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Temporal Context</h3>
+                        <p class="text-sm text-gray-600 mt-1">Time information must be contextually appropriate</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Use relative time ("2h ago") for Small cards in recent activity</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Show full timestamps in Medium cards for clarity</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Include both created and modified dates in Large cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Ensure timestamps are always visible and legible</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-3">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Visual Hierarchy</h3>
+                        <p class="text-sm text-gray-600 mt-1">Content priority must guide visual weight</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Note content is primary; metadata is secondary</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Use typography scale to establish clear hierarchy</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Group related information visually</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Maintain visual balance across card variants</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-4">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-orange-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Access Control</h3>
+                        <p class="text-sm text-gray-600 mt-1">Visibility and permissions must be clear</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Clearly distinguish Internal vs. General notes</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Use consistent visual indicators for restricted content</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Show permission-aware actions only</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Include access warnings for sensitive notes</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-5">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-link text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Contextual Relationship</h3>
+                        <p class="text-sm text-gray-600 mt-1">Parent object connection must be evident</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Show parent context in Large cards with clear linking</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Keep parent reference visually subordinate to note content</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Use consistent parent object card styling</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Provide clear navigation to parent object</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="principle-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-hand-pointer text-red-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Progressive Disclosure</h3>
+                        <p class="text-sm text-gray-600 mt-1">Information scales with card size</p>
+                    </div>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Small cards show minimal essential information</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Medium cards add context and preview</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Large cards reveal full content and relationships</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"></i>
+                        <span>Each variant feels like natural progression</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="type-indicators-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Note Type Indicators</h2>
+            <p class="text-gray-600">Visual system for communicating note types and visibility levels</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="type-general">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-comment text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded">General</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">General Notes</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Standard notes visible to all authorized users with access to the parent object. Used for general communication and documentation.
+                </p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Visible to all authorized users</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Can be shared externally if permitted</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Default note type</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="type-internal">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-lock text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded">Internal</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Internal Notes</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Restricted notes visible only to internal staff. Contains sensitive information not suitable for external sharing.
+                </p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Internal staff only</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Cannot be shared externally</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">May have additional access restrictions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="type-system">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-purple-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded">System</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">System Notes</h3>
+                <p class="text-sm text-gray-700 mb-4">
+                    Automatically generated notes created by workflow engines, integrations, or automated processes.
+                </p>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Automatically generated</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Cannot be manually edited</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-600 mt-0.5"></i>
+                        <span class="text-gray-700">Audit trail and workflow tracking</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-6">
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-lightbulb text-amber-600 text-xl mt-0.5"></i>
+                <div>
+                    <h4 class="text-base font-semibold text-amber-900 mb-2">Implementation Note</h4>
+                    <p class="text-sm text-amber-800">
+                        Note type badges should use consistent color coding across the entire system. General notes use blue, Internal notes use red, and System notes use purple. This color system helps users quickly identify note types at a glance, especially in dense lists and activity feeds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="responsive-behavior-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Responsive Behavior & Adaptability</h2>
+            <p class="text-gray-600">How Note cards adapt to different contexts and container sizes</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="responsive-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-mobile-screen text-teal-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Narrow Containers</h3>
+                </div>
+                <p class="text-sm text-gray-700 mb-4">
+                    When displayed in narrow side panels or mobile viewports:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-teal-600 mt-1 flex-shrink-0"></i>
+                        <span>Small cards maintain single-line layout</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-teal-600 mt-1 flex-shrink-0"></i>
+                        <span>Medium cards stack metadata vertically</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-teal-600 mt-1 flex-shrink-0"></i>
+                        <span>Large cards reduce horizontal padding</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-teal-600 mt-1 flex-shrink-0"></i>
+                        <span>Action buttons may stack or collapse to menu</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="responsive-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-table-cells text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Grid Layouts</h3>
+                </div>
+                <p class="text-sm text-gray-700 mb-4">
+                    When displayed in grid or multi-column layouts:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-cyan-600 mt-1 flex-shrink-0"></i>
+                        <span>Cards maintain consistent heights within rows</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-cyan-600 mt-1 flex-shrink-0"></i>
+                        <span>Content clamps at defined line limits</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-cyan-600 mt-1 flex-shrink-0"></i>
+                        <span>Metadata truncates with ellipsis if needed</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-cyan-600 mt-1 flex-shrink-0"></i>
+                        <span>Hover states provide expansion affordance</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="responsive-3">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-list text-violet-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">List Views</h3>
+                </div>
+                <p class="text-sm text-gray-700 mb-4">
+                    When displayed in vertical list layouts:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-violet-600 mt-1 flex-shrink-0"></i>
+                        <span>Cards span full container width</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-violet-600 mt-1 flex-shrink-0"></i>
+                        <span>Consistent spacing between cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-violet-600 mt-1 flex-shrink-0"></i>
+                        <span>Alternating backgrounds optional for density</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-violet-600 mt-1 flex-shrink-0"></i>
+                        <span>Scroll performance optimized with virtualization</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6" id="responsive-4">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-fuchsia-100 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-sidebar text-fuchsia-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Inspector Panels</h3>
+                </div>
+                <p class="text-sm text-gray-700 mb-4">
+                    When displayed in inspector or detail panels:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-fuchsia-600 mt-1 flex-shrink-0"></i>
+                        <span>Large cards preferred for maximum context</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-fuchsia-600 mt-1 flex-shrink-0"></i>
+                        <span>Full content display without truncation</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-fuchsia-600 mt-1 flex-shrink-0"></i>
+                        <span>Related notes may appear as Medium cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-arrow-right text-fuchsia-600 mt-1 flex-shrink-0"></i>
+                        <span>Scrollable container for multiple notes</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="interaction-states-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+            <p class="text-gray-600">Visual feedback for user interactions across all card variants</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                
+                <div class="p-6" id="state-default">
+                    <div class="mb-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-square text-gray-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900">Default</h3>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-3">Resting state with standard styling</p>
+                    <ul class="space-y-1.5 text-xs text-gray-600">
+                        <li>• Border: gray-200</li>
+                        <li>• Background: white</li>
+                        <li>• Shadow: none</li>
+                        <li>• Cursor: default or pointer</li>
+                    </ul>
+                </div>
+
+                <div class="p-6" id="state-hover">
+                    <div class="mb-4">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-hand-pointer text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900">Hover</h3>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-3">Indicates interactivity and clickability</p>
+                    <ul class="space-y-1.5 text-xs text-gray-600">
+                        <li>• Border: gray-300</li>
+                        <li>• Background: white</li>
+                        <li>• Shadow: subtle elevation</li>
+                        <li>• Transition: smooth 200ms</li>
+                    </ul>
+                </div>
+
+                <div class="p-6" id="state-focus">
+                    <div class="mb-4">
+                        <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-bullseye text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900">Focus</h3>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-3">Keyboard navigation and accessibility</p>
+                    <ul class="space-y-1.5 text-xs text-gray-600">
+                        <li>• Border: primary-500</li>
+                        <li>• Background: white</li>
+                        <li>• Outline: 2px primary ring</li>
+                        <li>• Keyboard accessible</li>
+                    </ul>
+                </div>
+
+                <div class="p-6" id="state-active">
+                    <div class="mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-check-circle text-primary-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900">Active/Selected</h3>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-3">Currently selected or active note</p>
+                    <ul class="space-y-1.5 text-xs text-gray-600">
+                        <li>• Border: primary-500</li>
+                        <li>• Background: primary-50</li>
+                        <li>• Shadow: medium elevation</li>
+                        <li>• Persistent until deselected</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-info text-blue-600 text-xl mt-0.5"></i>
+                <div>
+                    <h4 class="text-base font-semibold text-blue-900 mb-2">Accessibility Considerations</h4>
+                    <p class="text-sm text-blue-800">
+                        All interactive states must be keyboard accessible and provide clear visual feedback. Focus states should be distinct from hover states, and all clickable elements must have appropriate ARIA labels and roles for screen readers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-section" class="mb-12">
+        <div class="bg-gray-800 text-white rounded-lg p-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">ArkCase Design System</h3>
+                    <p class="text-gray-300 text-sm">Note Object Cards — Component Wireframes v1.0</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-gray-400 text-sm">Last Updated: January 2025</p>
+                    <p class="text-gray-400 text-sm mt-1">© 2025 ArkCase LLC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

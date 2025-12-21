@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Event Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<section id="audit-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-clipboard-list text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Audit Event Cards</h1>
+                    <p class="text-gray-600 mt-1">Immutable audit trail records for ArkCase actions</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent audit trail records that capture actions performed by users or the system on business objects. Each variant emphasizes what happened, when, and by whom, optimized for different contexts from dense activity feeds to detailed inspector panels.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">21.1 — Small Card Variant</h2>
+            <p class="text-gray-600">Compact format for dense audit logs, timelines, and activity feeds. Optimized for rapid chronological scanning.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 max-w-2xl">
+            <div id="audit-small-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-blue-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Case #2847 updated</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">2m ago</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by Sarah Chen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-small-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-file-arrow-up text-green-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Document uploaded</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">15m ago</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by Michael Torres</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-small-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-user-plus text-purple-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Participant added to case</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">1h ago</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by System</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-small-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-triangle-exclamation text-amber-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Status changed to In Review</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">3h ago</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by Jennifer Lee</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-small-card-5" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-trash text-red-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Task deleted</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">5h ago</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by David Kim</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-small-card-6" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="w-8 h-8 bg-indigo-100 rounded flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fa-solid fa-clock-rotate-left text-indigo-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Deadline extended</p>
+                            <span class="text-xs text-gray-500 ml-3 whitespace-nowrap">Yesterday</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-0.5">by System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">21.2 — Medium Card Variant</h2>
+            <p class="text-gray-600">Default representation in audit history panels. Balances clarity with basic context and provides essential metadata.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div id="audit-medium-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-shield-halved text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Case Status Modified</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Status changed from "Open" to "In Review" for compliance review process.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">Sarah Chen</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 2:34 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #2847</span>
+                            <span class="text-sm text-gray-600 ml-2">— Enterprise Contract Review</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-medium-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-file-arrow-up text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Document Upload</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">New document "Contract_Amendment_v3.pdf" uploaded to case file repository.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">Michael Torres</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 2:19 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-file-pdf text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Document #18294</span>
+                            <span class="text-sm text-gray-600 ml-2">— Contract Amendment v3</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-medium-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user-plus text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Participant Assignment</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">External legal counsel added as case participant with reviewer permissions.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 1:45 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-users text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Person #5621</span>
+                            <span class="text-sm text-gray-600 ml-2">— Rebecca Martinez</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-medium-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-trash text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Task Deletion</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Task "Review financial statements" permanently removed from workflow queue.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">David Kim</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 12:18 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-list-check text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Task #9472</span>
+                            <span class="text-sm text-gray-600 ml-2">— Review financial statements</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">21.3 — Large Card Variant</h2>
+            <p class="text-gray-600">Used in inspector panels and expanded previews. Provides full event context with comprehensive metadata and structured sections.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 max-w-4xl">
+            <div id="audit-large-card-1" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fa-solid fa-shield-halved text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                    <span class="mx-2 text-gray-300">•</span>
+                                    <span class="text-xs text-gray-500">Event ID: AE-2847-20241221-001</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Case Status Modified</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1.5"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-5">
+                        <p class="text-sm font-medium text-gray-900 mb-2">Event Description</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            The case status was changed from "Open" to "In Review" as part of the standard compliance review workflow. This transition triggers automated notifications to all assigned reviewers and updates the case timeline accordingly. The change was initiated manually by the case manager following completion of initial documentation review.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-4">Event Metadata</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Timestamp</p>
+                                <p class="text-sm font-semibold text-gray-900">December 21, 2024</p>
+                                <p class="text-sm text-gray-600">2:34:17 PM EST</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Performed By</p>
+                                <div class="flex items-center mt-1">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-8 h-8 rounded-full mr-2">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Sarah Chen</p>
+                                        <p class="text-xs text-gray-600">Case Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Result</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-circle-check text-green-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Successful Completion</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Source</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-desktop text-gray-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Web UI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-3">Affected Object</p>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fa-solid fa-briefcase text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center mb-1">
+                                            <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Case</span>
+                                            <span class="mx-2 text-blue-300">•</span>
+                                            <span class="text-xs text-blue-600">#2847</span>
+                                        </div>
+                                        <h4 class="text-base font-bold text-gray-900 mb-1">Enterprise Contract Review</h4>
+                                        <p class="text-sm text-gray-700">Multi-year service agreement requiring legal and financial compliance review.</p>
+                                        <div class="flex items-center mt-2 space-x-3">
+                                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                                <i class="fa-solid fa-clock mr-1"></i>
+                                                In Review
+                                            </span>
+                                            <span class="text-xs text-gray-600">Created: Nov 15, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <button class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                                    View Object
+                                </button>
+                                <button class="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-copy mr-2"></i>
+                                    Copy Event ID
+                                </button>
+                            </div>
+                            <button class="inline-flex items-center px-3 py-2 text-gray-600 text-sm font-medium hover:text-gray-900 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-large-card-2" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fa-solid fa-file-arrow-up text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                    <span class="mx-2 text-gray-300">•</span>
+                                    <span class="text-xs text-gray-500">Event ID: AE-18294-20241221-002</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Document Upload</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1.5"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-5">
+                        <p class="text-sm font-medium text-gray-900 mb-2">Event Description</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            A new document titled "Contract_Amendment_v3.pdf" was successfully uploaded to the case file repository. The document was scanned for security threats, validated for format compliance, and automatically indexed for search. File size: 2.4 MB. The upload process included automatic version control and metadata extraction. This document replaces the previous version (v2) which has been archived.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-4">Event Metadata</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Timestamp</p>
+                                <p class="text-sm font-semibold text-gray-900">December 21, 2024</p>
+                                <p class="text-sm text-gray-600">2:19:42 PM EST</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Performed By</p>
+                                <div class="flex items-center mt-1">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-8 h-8 rounded-full mr-2">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Michael Torres</p>
+                                        <p class="text-xs text-gray-600">Legal Analyst</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Result</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-circle-check text-green-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Upload Complete</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Source</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-desktop text-gray-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Web UI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-3">Affected Object</p>
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fa-solid fa-file-pdf text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center mb-1">
+                                            <span class="text-xs font-medium text-green-600 uppercase tracking-wide">Document</span>
+                                            <span class="mx-2 text-green-300">•</span>
+                                            <span class="text-xs text-green-600">#18294</span>
+                                        </div>
+                                        <h4 class="text-base font-bold text-gray-900 mb-1">Contract_Amendment_v3.pdf</h4>
+                                        <p class="text-sm text-gray-700">Legal contract amendment document with updated terms and conditions.</p>
+                                        <div class="flex items-center mt-2 space-x-3">
+                                            <span class="text-xs text-gray-600">
+                                                <i class="fa-solid fa-file mr-1"></i>
+                                                2.4 MB
+                                            </span>
+                                            <span class="text-xs text-gray-600">Version 3</span>
+                                            <span class="text-xs text-gray-600">Uploaded: Dec 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <button class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                                    View Object
+                                </button>
+                                <button class="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-copy mr-2"></i>
+                                    Copy Event ID
+                                </button>
+                            </div>
+                            <button class="inline-flex items-center px-3 py-2 text-gray-600 text-sm font-medium hover:text-gray-900 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="audit-large-card-3" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fa-solid fa-user-plus text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-1">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                    <span class="mx-2 text-gray-300">•</span>
+                                    <span class="text-xs text-gray-500">Event ID: AE-5621-20241221-003</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Participant Assignment</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1.5"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-4 mb-5">
+                        <p class="text-sm font-medium text-gray-900 mb-2">Event Description</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            External legal counsel Rebecca Martinez was added as a case participant with reviewer-level permissions. This assignment was triggered automatically by the workflow engine when the case entered the "In Review" status. The participant will receive email notifications for all major case updates and has read-only access to all case documents. Assignment includes automatic calendar integration for upcoming review deadlines.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-4">Event Metadata</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Timestamp</p>
+                                <p class="text-sm font-semibold text-gray-900">December 21, 2024</p>
+                                <p class="text-sm text-gray-600">1:45:33 PM EST</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Performed By</p>
+                                <div class="flex items-center mt-1">
+                                    <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-robot text-gray-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">System</p>
+                                        <p class="text-xs text-gray-600">Automated Workflow</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Result</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-circle-check text-green-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Assignment Complete</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 mb-1.5">Event Source</p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fa-solid fa-gears text-gray-600 mr-2"></i>
+                                    <span class="text-sm font-semibold text-gray-900">System Workflow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <p class="text-sm font-semibold text-gray-900 mb-3">Affected Object</p>
+                        <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center mb-1">
+                                            <span class="text-xs font-medium text-purple-600 uppercase tracking-wide">Person</span>
+                                            <span class="mx-2 text-purple-300">•</span>
+                                            <span class="text-xs text-purple-600">#5621</span>
+                                        </div>
+                                        <h4 class="text-base font-bold text-gray-900 mb-1">Rebecca Martinez</h4>
+                                        <p class="text-sm text-gray-700">External Legal Counsel — Martinez & Associates Law Firm</p>
+                                        <div class="flex items-center mt-2 space-x-3">
+                                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-purple-100 text-purple-800">
+                                                <i class="fa-solid fa-eye mr-1"></i>
+                                                Reviewer
+                                            </span>
+                                            <span class="text-xs text-gray-600">Added: Dec 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <button class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                                    View Object
+                                </button>
+                                <button class="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-copy mr-2"></i>
+                                    Copy Event ID
+                                </button>
+                            </div>
+                            <button class="inline-flex items-center px-3 py-2 text-gray-600 text-sm font-medium hover:text-gray-900 transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="system-events-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">System-Generated Events</h2>
+            <p class="text-gray-600">Examples of audit events triggered automatically by system processes, workflows, and scheduled tasks.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div id="system-audit-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-clock-rotate-left text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Deadline Extended</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Case deadline automatically extended by 5 business days due to pending external review requirements.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 20, 2024 11:30 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #2847</span>
+                            <span class="text-sm text-gray-600 ml-2">— Enterprise Contract Review</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="system-audit-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-envelope text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Notification Sent</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Email notification dispatched to 3 case participants regarding upcoming review deadline.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 20, 2024 9:00 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-bell text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Notification #8821</span>
+                            <span class="text-sm text-gray-600 ml-2">— Review Deadline Reminder</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="system-audit-card-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-database text-orange-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Data Archive Completed</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Scheduled archival process completed for closed cases older than 2 years. 47 cases archived.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 20, 2024 2:00 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-box-archive text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Archive Job #1247</span>
+                            <span class="text-sm text-gray-600 ml-2">— Scheduled Archival</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="system-audit-card-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-diagram-project text-teal-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Workflow Transition</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Case automatically transitioned to "Pending Approval" stage after all review tasks completed.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 19, 2024 4:15 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #2847</span>
+                            <span class="text-sm text-gray-600 ml-2">— Enterprise Contract Review</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="failed-events-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Failed Event Examples</h2>
+            <p class="text-gray-600">Audit events that encountered errors or did not complete successfully, showing how failure states are communicated.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div id="failed-audit-card-1" class="bg-white border border-red-200 rounded-lg hover:border-red-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-file-arrow-up text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Document Upload Failed</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                            <i class="fa-solid fa-circle-xmark mr-1 text-xs"></i>
+                            Failed
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Upload attempt failed due to file size exceeding maximum limit of 10MB. File size: 15.2MB.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">James Wilson</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 10:22 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-file text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Document Upload</span>
+                            <span class="text-sm text-gray-600 ml-2">— Presentation_Final.pptx</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="failed-audit-card-2" class="bg-white border border-red-200 rounded-lg hover:border-red-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user-slash text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Permission Denied</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                            <i class="fa-solid fa-circle-xmark mr-1 text-xs"></i>
+                            Failed
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">User attempted to modify restricted case field without required administrative permissions.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">Robert Anderson</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 9:47 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #2847</span>
+                            <span class="text-sm text-gray-600 ml-2">— Enterprise Contract Review</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="failed-audit-card-3" class="bg-white border border-amber-200 rounded-lg hover:border-amber-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Validation Error</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
+                            <i class="fa-solid fa-circle-exclamation mr-1 text-xs"></i>
+                            Warning
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Status change blocked: Required fields not completed. Missing: Case Summary, Risk Assessment.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-900">Emily Rodriguez</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 8:33 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #3149</span>
+                            <span class="text-sm text-gray-600 ml-2">— Vendor Compliance Audit</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="failed-audit-card-4" class="bg-white border border-red-200 rounded-lg hover:border-red-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-plug-circle-xmark text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">API Integration Failed</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                            <i class="fa-solid fa-circle-xmark mr-1 text-xs"></i>
+                            Failed
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">External API call timeout while attempting to sync case data with compliance management system.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-robot text-gray-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 7:15 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-sync text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Integration Job #4521</span>
+                            <span class="text-sm text-gray-600 ml-2">— Compliance Sync</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="api-events-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">API-Generated Events</h2>
+            <p class="text-gray-600">Audit events triggered through API calls, integrations, and programmatic access to the system.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl">
+            <div id="api-audit-card-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-code text-violet-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Case Created via API</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">New case created through REST API endpoint by external CRM integration system.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-violet-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-key text-violet-700 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">API Client</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 3:12 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded p-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Source</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-gray-900">API v2.1</span>
+                            <span class="text-xs text-gray-600">Client ID: crm-integration-prod</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Object</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-briefcase text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">Case #3284</span>
+                            <span class="text-sm text-gray-600 ml-2">— Customer Support Request</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="api-audit-card-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-arrows-rotate text-violet-600"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Audit Event</span>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-900 mt-0.5">Bulk Update via API</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1 text-xs"></i>
+                            Success
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-gray-700 mb-4">Batch update operation modified priority field for 23 cases through API bulk endpoint.</p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Performed By</p>
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 bg-violet-300 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-key text-violet-700 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">API Client</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Timestamp</p>
+                            <p class="text-sm font-medium text-gray-900">Dec 21, 2024 1:28 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded p-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Source</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-gray-900">API v2.1</span>
+                            <span class="text-xs text-gray-600">Client ID: automation-service</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3 mb-4">
+                        <p class="text-xs text-gray-500 mb-1">Affected Objects</p>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-layer-group text-gray-400 text-sm mr-2"></i>
+                            <span class="text-sm font-medium text-gray-900">23 Cases</span>
+                            <span class="text-sm text-gray-600 ml-2">— Bulk Priority Update</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                        <button class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View Details
+                            <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="design-specifications" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Specifications & Guidelines</h2>
+            <p class="text-gray-600">Comprehensive design system rules and cross-variant consistency requirements for Audit Event cards.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div id="spec-card-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-ruler-combined text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Sizing & Spacing</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Small Card Height:</span>
+                        <span class="text-sm font-semibold text-gray-900">~60px</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Medium Card Height:</span>
+                        <span class="text-sm font-semibold text-gray-900">~240px</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Large Card Height:</span>
+                        <span class="text-sm font-semibold text-gray-900">~500px</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Card Padding:</span>
+                        <span class="text-sm font-semibold text-gray-900">12-24px</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Icon Size:</span>
+                        <span class="text-sm font-semibold text-gray-900">32-48px</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-card-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-palette text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Color System</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Success State:</span>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-green-100 border border-green-200 rounded mr-2"></div>
+                            <span class="text-xs font-mono text-gray-900">green-100</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Error State:</span>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-red-100 border border-red-200 rounded mr-2"></div>
+                            <span class="text-xs font-mono text-gray-900">red-100</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Warning State:</span>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-amber-100 border border-amber-200 rounded mr-2"></div>
+                            <span class="text-xs font-mono text-gray-900">amber-100</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">System Event:</span>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-gray-300 border border-gray-400 rounded mr-2"></div>
+                            <span class="text-xs font-mono text-gray-900">gray-300</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">API Event:</span>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-violet-100 border border-violet-200 rounded mr-2"></div>
+                            <span class="text-xs font-mono text-gray-900">violet-100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-card-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-font text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Typography</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Card Title:</span>
+                        <span class="text-sm font-semibold text-gray-900">16-20px Bold</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Event Type:</span>
+                        <span class="text-sm font-semibold text-gray-900">14-16px Semibold</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Description:</span>
+                        <span class="text-sm font-semibold text-gray-900">14px Regular</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Metadata Labels:</span>
+                        <span class="text-sm font-semibold text-gray-900">12px Medium</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Timestamps:</span>
+                        <span class="text-sm font-semibold text-gray-900">12-14px Regular</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-card-4" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-layer-group text-indigo-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Component Hierarchy</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Event Icon:</span>
+                        <span class="text-sm font-semibold text-gray-900">Primary</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Event Type:</span>
+                        <span class="text-sm font-semibold text-gray-900">Primary</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Status Badge:</span>
+                        <span class="text-sm font-semibold text-gray-900">Secondary</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Description:</span>
+                        <span class="text-sm font-semibold text-gray-900">Secondary</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Metadata:</span>
+                        <span class="text-sm font-semibold text-gray-900">Tertiary</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-card-5" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-circle-check text-amber-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Status Indicators</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Success:</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            <i class="fa-solid fa-circle-check mr-1"></i>
+                            Success
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Failed:</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                            <i class="fa-solid fa-circle-xmark mr-1"></i>
+                            Failed
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">Warning:</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
+                            <i class="fa-solid fa-circle-exclamation mr-1"></i>
+                            Warning
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-card-6" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-hand-pointer text-cyan-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Interactive States</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Hover:</span>
+                        <span class="text-sm font-semibold text-gray-900">Border + Shadow</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Click Action:</span>
+                        <span class="text-sm font-semibold text-gray-900">View Details</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Small Card:</span>
+                        <span class="text-sm font-semibold text-gray-900">Entire card</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-sm text-gray-600">Medium/Large:</span>
+                        <span class="text-sm font-semibold text-gray-900">Button actions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="consistency-rules" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Cross-Variant Consistency Rules</h2>
+            
+            <div class="space-y-4">
+                <div id="rule-card-1" class="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            <i class="fa-solid fa-circle-check text-blue-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-2">Visual Alignment</h4>
+                            <p class="text-sm text-gray-700">Audit Event cards must align visually with Notification and Object History cards across the ArkCase design system. Icon styles, color schemes, and spacing should maintain consistency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rule-card-2" class="bg-green-50 border-l-4 border-green-600 p-5 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-2">Timestamp Placement</h4>
+                            <p class="text-sm text-gray-700">Timestamp placement must be consistent across all card sizes. Small cards show relative time (e.g., "2m ago"), while Medium and Large cards display full timestamps with date and time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rule-card-3" class="bg-purple-50 border-l-4 border-purple-600 p-5 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            <i class="fa-solid fa-circle-check text-purple-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-2">Progressive Detail</h4>
+                            <p class="text-sm text-gray-700">Event descriptions should scale gradually from Small → Medium → Large. Small cards show minimal context, Medium cards add basic metadata, and Large cards provide comprehensive event details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rule-card-4" class="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            <i class="fa-solid fa-circle-check text-amber-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-2">Component Scaling</h4>
+                            <p class="text-sm text-gray-700">All variants should feel like scaled versions of the same component. Icon containers, status badges, and action buttons should maintain proportional sizing and consistent visual language.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rule-card-5" class="bg-red-50 border-l-4 border-red-600 p-5 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            <i class="fa-solid fa-circle-xmark text-red-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-2">Prohibited Elements</h4>
+                            <p class="text-sm text-gray-700">Do not expose raw JSON payloads, diff data, or low-level log details. Do not include audit export interfaces, filtering controls, or administrative configuration options within card components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer" class="py-8 bg-gray-900 text-white">
+    <div class="container mx-auto px-8">
+        <div class="text-center">
+            <p class="text-sm text-gray-400">ArkCase Audit Event Card Component Library — Version 1.0</p>
+            <p class="text-xs text-gray-500 mt-2">Designed for immutable audit trail visibility and event traceability</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

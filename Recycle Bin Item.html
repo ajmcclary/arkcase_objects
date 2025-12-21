@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Bin Item Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="recycle-bin-overview" class="max-w-7xl mx-auto px-8 py-12">
+    <div class="mb-12">
+        <h1 class="text-3xl font-semibold text-gray-900 mb-3">Recycle Bin Item Cards</h1>
+        <p class="text-base text-gray-600 leading-relaxed">Enterprise card components for deleted files and folders in ArkCase. These cards represent temporarily retained items before permanent removal, emphasizing recovery context and provenance.</p>
+    </div>
+</div>
+
+<div id="small-card-section" class="max-w-7xl mx-auto px-8 py-16 bg-white">
+    <div class="mb-10">
+        <div class="flex items-center mb-3">
+            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded mr-3">15.1</span>
+            <h2 class="text-2xl font-semibold text-gray-900">Recycle Bin Item — Small Card</h2>
+        </div>
+        <p class="text-sm text-gray-600 mb-6">Compact representation for dense recycle bin lists. Optimized for quick identification with minimal vertical height.</p>
+    </div>
+
+    <div class="space-y-6">
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">File Variant</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="flex items-center flex-1 min-w-0">
+                        <div class="relative mr-3">
+                            <i class="fa-regular fa-file-lines text-gray-400 text-xl"></i>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Project_Proposal_Final_v3.docx</div>
+                        </div>
+                    </div>
+                    <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">2 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Folder Variant</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="flex items-center px-4 py-3">
+                    <div class="flex items-center flex-1 min-w-0">
+                        <div class="relative mr-3">
+                            <i class="fa-regular fa-folder text-amber-500 text-xl"></i>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">2024 Budget Documents</div>
+                        </div>
+                    </div>
+                    <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">5 hours ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">List Context Example</h3>
+            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div class="divide-y divide-gray-100">
+                    <div class="flex items-center px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="relative mr-3">
+                                <i class="fa-regular fa-file-pdf text-red-500 text-xl"></i>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                    <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-medium text-gray-900 truncate">Annual_Report_2024.pdf</div>
+                            </div>
+                        </div>
+                        <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">1 hour ago</div>
+                    </div>
+                    <div class="flex items-center px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="relative mr-3">
+                                <i class="fa-regular fa-folder text-amber-500 text-xl"></i>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                    <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-medium text-gray-900 truncate">Client Meeting Notes</div>
+                            </div>
+                        </div>
+                        <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">3 hours ago</div>
+                    </div>
+                    <div class="flex items-center px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="relative mr-3">
+                                <i class="fa-regular fa-file-excel text-green-600 text-xl"></i>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                    <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-medium text-gray-900 truncate">Q4_Financial_Analysis.xlsx</div>
+                            </div>
+                        </div>
+                        <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">Yesterday</div>
+                    </div>
+                    <div class="flex items-center px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="relative mr-3">
+                                <i class="fa-regular fa-file-lines text-gray-400 text-xl"></i>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                    <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-medium text-gray-900 truncate">Meeting_Transcript_20241215.txt</div>
+                            </div>
+                        </div>
+                        <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">2 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="medium-card-section" class="max-w-7xl mx-auto px-8 py-16 bg-gray-50">
+    <div class="mb-10">
+        <div class="flex items-center mb-3">
+            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded mr-3">15.2</span>
+            <h2 class="text-2xl font-semibold text-gray-900">Recycle Bin Item — Medium Card</h2>
+        </div>
+        <p class="text-sm text-gray-600 mb-6">Default representation in recycle bin views. Balances identification with recovery context and moderate spacing for readability.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">File Variant</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start mb-4">
+                        <div class="relative mr-4">
+                            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-file-lines text-gray-500 text-2xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Project_Proposal_Final_v3.docx</h4>
+                            <div class="flex items-center text-xs text-gray-600">
+                                <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted:</span>
+                            <span class="text-gray-900 font-medium">Dec 18, 2024 at 2:45 PM</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted by:</span>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                                <span class="text-gray-900 font-medium">Michael Chen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                            <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Folder Variant</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start mb-4">
+                        <div class="relative mr-4">
+                            <div class="w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-folder text-amber-500 text-2xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">2024 Budget Documents</h4>
+                            <div class="flex items-center text-xs text-gray-600">
+                                <span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted:</span>
+                            <span class="text-gray-900 font-medium">Dec 20, 2024 at 11:20 AM</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted by:</span>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                                <span class="text-gray-900 font-medium">Sarah Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                            <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">With Parent Reference</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start mb-4">
+                        <div class="relative mr-4">
+                            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-file-pdf text-red-500 text-2xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Annual_Report_2024.pdf</h4>
+                            <div class="flex items-center text-xs text-gray-600">
+                                <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted:</span>
+                            <span class="text-gray-900 font-medium">Dec 19, 2024 at 4:15 PM</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted by:</span>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                                <span class="text-gray-900 font-medium">David Park</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start text-sm">
+                            <span class="text-gray-500 w-24 flex-shrink-0">From:</span>
+                            <div class="flex items-center text-gray-900">
+                                <i class="fa-regular fa-folder text-amber-500 text-xs mr-1.5"></i>
+                                <span class="font-medium">Corporate Reports</span>
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs mx-1.5"></i>
+                                <span class="text-gray-600">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                            <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Multiple File Types</h3>
+            <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start mb-4">
+                        <div class="relative mr-4">
+                            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-file-excel text-green-600 text-2xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                            <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Q4_Financial_Analysis.xlsx</h4>
+                            <div class="flex items-center text-xs text-gray-600">
+                                <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted:</span>
+                            <span class="text-gray-900 font-medium">Dec 17, 2024 at 9:30 AM</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="text-gray-500 w-24">Deleted by:</span>
+                            <div class="flex items-center">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                                <span class="text-gray-900 font-medium">Robert Martinez</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                            <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="large-card-section" class="max-w-7xl mx-auto px-8 py-16 bg-white">
+    <div class="mb-10">
+        <div class="flex items-center mb-3">
+            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded mr-3">15.3</span>
+            <h2 class="text-2xl font-semibold text-gray-900">Recycle Bin Item — Large Card</h2>
+        </div>
+        <p class="text-sm text-gray-600 mb-6">Used in inspector panels and expanded previews. Provides comprehensive context for recovery or purge decisions with strong visual hierarchy.</p>
+    </div>
+
+    <div class="space-y-8">
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">File Variant — Full Detail</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start mb-6">
+                        <div class="relative mr-5">
+                            <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-file-lines text-gray-500 text-3xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1.5 -right-1.5 bg-red-500 rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[10px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Recycle Bin Item</div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Project_Proposal_Final_v3.docx</h4>
+                            <div class="flex items-center gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">File</span>
+                                <span class="text-gray-400">•</span>
+                                <span class="text-sm text-gray-600">Microsoft Word Document</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-triangle-exclamation text-red-600 mt-0.5 mr-3"></i>
+                            <div>
+                                <div class="text-sm font-semibold text-red-900 mb-1">This item is scheduled for permanent deletion</div>
+                                <div class="text-xs text-red-700">Items in the recycle bin are automatically purged after 30 days. This item will be permanently deleted on January 18, 2025.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Deletion Information</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted Date & Time</div>
+                                    <div class="text-sm font-medium text-gray-900">December 18, 2024 at 2:45 PM</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted By</div>
+                                    <div class="flex items-center">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Michael Chen</div>
+                                            <div class="text-xs text-gray-500">Senior Project Manager</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Days Until Permanent Deletion</div>
+                                    <div class="text-sm font-medium text-gray-900">28 days remaining</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Original Location</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Parent Folder</div>
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-regular fa-folder text-amber-500 mr-2"></i>
+                                        <span class="font-medium text-gray-900">Project Documents</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Full Path</div>
+                                    <div class="text-sm text-gray-600 flex items-center flex-wrap gap-1">
+                                        <span class="font-medium text-gray-900">Main Workspace</span>
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                        <span>2024 Projects</span>
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                        <span>Client Alpha</span>
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                        <span>Project Documents</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Associated Case</div>
+                                    <div class="text-sm">
+                                        <span class="text-blue-600 hover:text-blue-700 cursor-pointer">CASE-2024-1847</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">File Metadata</h5>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">File Size</div>
+                                <div class="text-sm font-medium text-gray-900">2.4 MB</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Created</div>
+                                <div class="text-sm font-medium text-gray-900">Nov 15, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                                <div class="text-sm font-medium text-gray-900">Dec 10, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Original Owner</div>
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="User" class="w-5 h-5 rounded-full mr-1.5">
+                                    <span class="text-sm font-medium text-gray-900">Alex Rivera</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Version</div>
+                                <div class="text-sm font-medium text-gray-900">v3.0</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">File ID</div>
+                                <div class="text-sm font-mono text-gray-600">DOC-89472</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-rotate-left mr-2"></i>Restore to Original Location
+                            </button>
+                            <button class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-trash mr-2"></i>Delete Permanently
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Folder Variant — Full Detail</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start mb-6">
+                        <div class="relative mr-5">
+                            <div class="w-16 h-16 bg-amber-50 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-folder text-amber-500 text-3xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1.5 -right-1.5 bg-red-500 rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[10px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Recycle Bin Item</div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">2024 Budget Documents</h4>
+                            <div class="flex items-center gap-2">
+                                <span class="bg-amber-50 text-amber-700 text-xs font-medium px-2.5 py-1 rounded">Folder</span>
+                                <span class="text-gray-400">•</span>
+                                <span class="text-sm text-gray-600">Contains 47 items</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-triangle-exclamation text-red-600 mt-0.5 mr-3"></i>
+                            <div>
+                                <div class="text-sm font-semibold text-red-900 mb-1">This folder and all its contents will be permanently deleted</div>
+                                <div class="text-xs text-red-700">All files and subfolders within this folder will be permanently removed on January 20, 2025. This action cannot be undone.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Deletion Information</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted Date & Time</div>
+                                    <div class="text-sm font-medium text-gray-900">December 20, 2024 at 11:20 AM</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted By</div>
+                                    <div class="flex items-center">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Sarah Johnson</div>
+                                            <div class="text-xs text-gray-500">Finance Director</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Days Until Permanent Deletion</div>
+                                    <div class="text-sm font-medium text-gray-900">30 days remaining</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Original Location</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Parent Folder</div>
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-regular fa-folder text-amber-500 mr-2"></i>
+                                        <span class="font-medium text-gray-900">Financial Records</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Full Path</div>
+                                    <div class="text-sm text-gray-600 flex items-center flex-wrap gap-1">
+                                        <span class="font-medium text-gray-900">Corporate Workspace</span>
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                        <span>Finance Department</span>
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                        <span>Financial Records</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Workspace</div>
+                                    <div class="text-sm font-medium text-gray-900">Corporate Workspace</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Folder Contents</h5>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <div class="grid grid-cols-4 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-900">47</div>
+                                    <div class="text-xs text-gray-600">Total Items</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-900">32</div>
+                                    <div class="text-xs text-gray-600">Files</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-900">15</div>
+                                    <div class="text-xs text-gray-600">Subfolders</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-900">156 MB</div>
+                                    <div class="text-xs text-gray-600">Total Size</div>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-600 text-center">
+                                <i class="fa-solid fa-info-circle mr-1"></i>
+                                All contents will be restored to their original locations
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Folder Metadata</h5>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Created</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 5, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                                <div class="text-sm font-medium text-gray-900">Dec 18, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Original Owner</div>
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-5 h-5 rounded-full mr-1.5">
+                                    <span class="text-sm font-medium text-gray-900">Sarah Johnson</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Permissions</div>
+                                <div class="text-sm font-medium text-gray-900">Restricted Access</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Shared With</div>
+                                <div class="text-sm font-medium text-gray-900">8 users</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Folder ID</div>
+                                <div class="text-sm font-mono text-gray-600">FLD-62841</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-rotate-left mr-2"></i>Restore Folder & Contents
+                            </button>
+                            <button class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-trash mr-2"></i>Delete Permanently
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Permission-Restricted View</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start mb-6">
+                        <div class="relative mr-5">
+                            <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-regular fa-file-pdf text-red-500 text-3xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1.5 -right-1.5 bg-red-500 rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
+                                <i class="fa-solid fa-trash-can text-white text-[10px]"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Recycle Bin Item</div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Confidential_Report_Q4.pdf</h4>
+                            <div class="flex items-center gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">File</span>
+                                <span class="text-gray-400">•</span>
+                                <span class="bg-red-100 text-red-700 text-xs font-medium px-2.5 py-1 rounded flex items-center">
+                                    <i class="fa-solid fa-lock text-xs mr-1"></i>Restricted
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-shield-halved text-amber-600 mt-0.5 mr-3"></i>
+                            <div>
+                                <div class="text-sm font-semibold text-amber-900 mb-1">Limited Access</div>
+                                <div class="text-xs text-amber-700">You have view-only permissions for this item. Some metadata and actions may be restricted based on your access level.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Deletion Information</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted Date & Time</div>
+                                    <div class="text-sm font-medium text-gray-900">December 19, 2024 at 3:10 PM</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Deleted By</div>
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-gray-300 rounded-full mr-2 flex items-center justify-center">
+                                            <i class="fa-solid fa-user text-gray-600 text-xs"></i>
+                                        </div>
+                                        <div class="text-sm text-gray-500 italic">Access Restricted</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Days Until Permanent Deletion</div>
+                                    <div class="text-sm font-medium text-gray-900">29 days remaining</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Original Location</h5>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Parent Folder</div>
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-lock text-gray-400 text-xs mr-2"></i>
+                                        <span class="text-gray-500 italic">Access Restricted</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Full Path</div>
+                                    <div class="text-sm text-gray-500 italic">Access Restricted</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">File Metadata</h5>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">File Size</div>
+                                <div class="text-sm font-medium text-gray-900">8.7 MB</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Created</div>
+                                <div class="text-sm text-gray-500 italic">Restricted</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                                <div class="text-sm text-gray-500 italic">Restricted</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Original Owner</div>
+                                <div class="text-sm text-gray-500 italic">Access Restricted</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Classification</div>
+                                <div class="text-sm font-medium text-red-700">Confidential</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">File ID</div>
+                                <div class="text-sm font-mono text-gray-600">DOC-73529</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-200">
+                        <div class="flex items-center gap-3">
+                            <button disabled class="flex-1 bg-gray-300 text-gray-500 text-sm font-semibold px-5 py-2.5 rounded-lg cursor-not-allowed">
+                                <i class="fa-solid fa-rotate-left mr-2"></i>Restore (Restricted)
+                            </button>
+                            <button disabled class="bg-gray-300 text-gray-500 text-sm font-semibold px-5 py-2.5 rounded-lg cursor-not-allowed">
+                                <i class="fa-solid fa-trash mr-2"></i>Delete (Restricted)
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3 text-xs text-gray-500 text-center">
+                            <i class="fa-solid fa-info-circle mr-1"></i>
+                            Contact an administrator to restore or permanently delete this item
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="grid-layout-section" class="max-w-7xl mx-auto px-8 py-16 bg-gray-50">
+    <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3">Grid Layout Examples</h2>
+        <p class="text-sm text-gray-600 mb-6">Medium cards displayed in responsive grid layouts for recycle bin dashboards and overview screens.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-file-word text-blue-600 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Meeting_Notes_Dec15.docx</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">3 hours ago</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">Lisa Wang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-folder text-amber-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Archive 2023</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Folder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">Yesterday</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">James Wilson</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-file-powerpoint text-orange-600 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Q4_Presentation.pptx</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">2 days ago</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">Emma Davis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-file-zipper text-purple-600 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Project_Assets.zip</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">1 week ago</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">Alex Rivera</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-file-image text-pink-600 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Logo_Design_Final.png</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">4 days ago</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">Maria Garcia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-start mb-4">
+                    <div class="relative mr-4">
+                        <div class="w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center">
+                            <i class="fa-regular fa-folder text-amber-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                            <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                        <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Client Deliverables</h4>
+                        <div class="flex items-center text-xs text-gray-600">
+                            <span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Folder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted:</span>
+                        <span class="text-gray-900 font-medium">6 hours ago</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 w-24">Deleted by:</span>
+                        <div class="flex items-center">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                            <span class="text-gray-900 font-medium">Robert Martinez</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="comparison-section" class="max-w-7xl mx-auto px-8 py-16 bg-white">
+    <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3">Cross-Variant Consistency</h2>
+        <p class="text-sm text-gray-600 mb-6">Visual comparison demonstrating how the same deleted item scales across Small, Medium, and Large card variants while maintaining consistent design language.</p>
+    </div>
+
+    <div class="space-y-8">
+        <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+            <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Same Item Across All Sizes</h3>
+            
+            <div class="mb-6">
+                <div class="text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">Small Card</div>
+                <div class="bg-white rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer inline-block min-w-[400px]">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="relative mr-3">
+                                <i class="fa-regular fa-file-pdf text-red-500 text-xl"></i>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                    <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-medium text-gray-900 truncate">Contract_Agreement_2024.pdf</div>
+                            </div>
+                        </div>
+                        <div class="ml-4 text-xs text-gray-500 whitespace-nowrap">5 hours ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">Medium Card</div>
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow max-w-md">
+                    <div class="p-5">
+                        <div class="flex items-start mb-4">
+                            <div class="relative mr-4">
+                                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-regular fa-file-pdf text-red-500 text-2xl"></i>
+                                </div>
+                                <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">
+                                    <i class="fa-solid fa-trash-can text-white text-[8px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-xs font-medium text-gray-500 mb-1">Recycle Bin Item</div>
+                                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Contract_Agreement_2024.pdf</h4>
+                                <div class="flex items-center text-xs text-gray-600">
+                                    <span class="bg-gray-100 px-2 py-0.5 rounded">File</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm">
+                                <span class="text-gray-500 w-24">Deleted:</span>
+                                <span class="text-gray-900 font-medium">Dec 20, 2024 at 10:15 AM</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <span class="text-gray-500 w-24">Deleted by:</span>
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-5 h-5 rounded-full mr-2">
+                                    <span class="text-gray-900 font-medium">David Park</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-100">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                                <i class="fa-solid fa-rotate-left mr-2"></i>Restore
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">Large Card</div>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6">
+                        <div class="flex items-start mb-6">
+                            <div class="relative mr-5">
+                                <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-regular fa-file-pdf text-red-500 text-3xl"></i>
+                                </div>
+                                <div class="absolute -bottom-1.5 -right-1.5 bg-red-500 rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
+                                    <i class="fa-solid fa-trash-can text-white text-[10px]"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Recycle Bin Item</div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2">Contract_Agreement_2024.pdf</h4>
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">File</span>
+                                    <span class="text-gray-400">•</span>
+                                    <span class="text-sm text-gray-600">Adobe PDF Document</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Deletion Information</h5>
+                                <div class="space-y-3">
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Deleted Date & Time</div>
+                                        <div class="text-sm font-medium text-gray-900">December 20, 2024 at 10:15 AM</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Deleted By</div>
+                                        <div class="flex items-center">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-6 h-6 rounded-full mr-2">
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">David Park</div>
+                                                <div class="text-xs text-gray-500">Legal Counsel</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Days Until Permanent Deletion</div>
+                                        <div class="text-sm font-medium text-gray-900">30 days remaining</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Original Location</h5>
+                                <div class="space-y-3">
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Parent Folder</div>
+                                        <div class="flex items-center text-sm">
+                                            <i class="fa-regular fa-folder text-amber-500 mr-2"></i>
+                                            <span class="font-medium text-gray-900">Legal Documents</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-gray-500 mb-1">Full Path</div>
+                                        <div class="text-sm text-gray-600 flex items-center flex-wrap gap-1">
+                                            <span class="font-medium text-gray-900">Legal Workspace</span>
+                                            <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                            <span>Contracts</span>
+                                            <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                            <span>2024</span>
+                                            <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                            <span>Legal Documents</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">File Metadata</h5>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">File Size</div>
+                                    <div class="text-sm font-medium text-gray-900">1.8 MB</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Created</div>
+                                    <div class="text-sm font-medium text-gray-900">Oct 5, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                                    <div class="text-sm font-medium text-gray-900">Dec 18, 2024</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-200">
+                            <div class="flex items-center gap-3">
+                                <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-rotate-left mr-2"></i>Restore to Original Location
+                                </button>
+                                <button class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-trash mr-2"></i>Delete Permanently
+                                </button>
+                                <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="design-specifications" class="max-w-7xl mx-auto px-8 py-16 bg-gray-50">
+    <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3">Design Specifications</h2>
+        <p class="text-sm text-gray-600 mb-6">Technical specifications and guidelines for implementing Recycle Bin Item cards consistently across the ArkCase platform.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-palette text-blue-600 mr-2"></i>
+                Visual Indicators
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Deleted Badge</div>
+                    <div class="flex items-center gap-3">
+                        <div class="relative">
+                            <div class="w-10 h-10 bg-gray-100 rounded flex items-center justify-center">
+                                <i class="fa-regular fa-file text-gray-500"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 bg-red-500 rounded-full w-3 h-3 flex items-center justify-center">
+                                <i class="fa-solid fa-trash-can text-white text-[6px]"></i>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-600">
+                            <div class="font-medium mb-1">Red circular badge with trash icon</div>
+                            <div>Position: Bottom-right of item icon</div>
+                            <div>Color: #EF4444 (red-500)</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Type Labels</div>
+                    <div class="flex gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">File</span>
+                        <span class="bg-amber-50 text-amber-700 text-xs font-medium px-2.5 py-1 rounded">Folder</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Warning Banner</div>
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-3 text-xs">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-triangle-exclamation text-red-600 mt-0.5 mr-2"></i>
+                            <div class="text-red-900">Used in large cards to emphasize deletion status</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-ruler-combined text-blue-600 mr-2"></i>
+                Spacing & Layout
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Small Card</div>
+                    <div class="text-xs text-gray-600 space-y-1">
+                        <div>• Padding: 12px (px-4 py-3)</div>
+                        <div>• Icon size: 20px (text-xl)</div>
+                        <div>• Badge size: 12px (w-3 h-3)</div>
+                        <div>• Height: Auto, single row</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Medium Card</div>
+                    <div class="text-xs text-gray-600 space-y-1">
+                        <div>• Padding: 20px (p-5)</div>
+                        <div>• Icon container: 48px (w-12 h-12)</div>
+                        <div>• Icon size: 24px (text-2xl)</div>
+                        <div>• Badge size: 16px (w-4 h-4)</div>
+                        <div>• Spacing: 16px between sections</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Large Card</div>
+                    <div class="text-xs text-gray-600 space-y-1">
+                        <div>• Padding: 24px (p-6)</div>
+                        <div>• Icon container: 64px (w-16 h-16)</div>
+                        <div>• Icon size: 30px (text-3xl)</div>
+                        <div>• Badge size: 20px (w-5 h-5)</div>
+                        <div>• Grid columns: 2 for metadata</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-hand-pointer text-blue-600 mr-2"></i>
+                Interaction States
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Hover States</div>
+                    <div class="space-y-2">
+                        <div class="bg-white border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all p-3 rounded text-xs cursor-pointer">
+                            Small: Border darkens + subtle shadow
+                        </div>
+                        <div class="bg-white border border-gray-200 hover:shadow-md transition-shadow p-3 rounded text-xs cursor-pointer">
+                            Medium/Large: Shadow elevation
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Action Buttons</div>
+                    <div class="space-y-2">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium px-3 py-2 rounded transition-colors">
+                            Primary: Restore (Blue)
+                        </button>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white text-xs font-medium px-3 py-2 rounded transition-colors">
+                            Destructive: Delete (Red)
+                        </button>
+                        <button class="w-full border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium px-3 py-2 rounded transition-colors">
+                            Secondary: More options
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-font text-blue-600 mr-2"></i>
+                Typography Hierarchy
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Small Card</div>
+                    <div class="space-y-1">
+                        <div class="text-sm font-medium text-gray-900">Item name: 14px, font-medium</div>
+                        <div class="text-xs text-gray-500">Metadata: 12px, text-gray-500</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Medium Card</div>
+                    <div class="space-y-1">
+                        <div class="text-xs font-medium text-gray-500 uppercase">Label: 12px, uppercase, gray-500</div>
+                        <div class="text-base font-semibold text-gray-900
+">Item name: 16px, font-semibold</div>
+                        <div class="text-sm text-gray-900">Metadata: 14px, font-medium</div>
+                        <div class="text-xs text-gray-500">Labels: 12px, text-gray-500</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Large Card</div>
+                    <div class="space-y-1">
+                        <div class="text-xs font-semibold text-gray-500 uppercase">Section label: 12px, uppercase</div>
+                        <div class="text-xl font-semibold text-gray-900">Item name: 20px, font-semibold</div>
+                        <div class="text-sm font-medium text-gray-900">Metadata values: 14px, font-medium</div>
+                        <div class="text-xs text-gray-500">Metadata labels: 12px, text-gray-500</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-shield-halved text-blue-600 mr-2"></i>
+                Permission States
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Full Access</div>
+                    <div class="text-xs text-gray-600">
+                        All metadata visible, restore and delete actions enabled
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">View Only</div>
+                    <div class="text-xs text-gray-600 mb-2">
+                        Limited metadata, actions disabled
+                    </div>
+                    <button disabled class="bg-gray-300 text-gray-500 text-xs font-medium px-3 py-2 rounded cursor-not-allowed">
+                        Restore (Restricted)
+                    </button>
+                </div>
+                <div>
+                    <div class="text-sm font-medium text-gray-900 mb-2">Restricted Access</div>
+                    <div class="bg-amber-50 border border-amber-200 rounded p-2 text-xs text-amber-900 flex items-start">
+                        <i class="fa-solid fa-shield-halved text-amber-600 mr-2 mt-0.5"></i>
+                        <span>Limited Access warning banner shown</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center">
+                <i class="fa-solid fa-file-circle-check text-blue-600 mr-2"></i>
+                File Type Icons
+            </h3>
+            <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-file-lines text-gray-400 text-xl"></i>
+                    <span class="text-sm text-gray-600">Generic file: gray-400</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-file-pdf text-red-500 text-xl"></i>
+                    <span class="text-sm text-gray-600">PDF: red-500</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-file-word text-blue-600 text-xl"></i>
+                    <span class="text-sm text-gray-600">Word: blue-600</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-file-excel text-green-600 text-xl"></i>
+                    <span class="text-sm text-gray-600">Excel: green-600</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-file-powerpoint text-orange-600 text-xl"></i>
+                    <span class="text-sm text-gray-600">PowerPoint: orange-600</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-folder text-amber-500 text-xl"></i>
+                    <span class="text-sm text-gray-600">Folder: amber-500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="usage-guidelines" class="max-w-7xl mx-auto px-8 py-16 bg-white mb-16">
+    <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3">Usage Guidelines</h2>
+        <p class="text-sm text-gray-600 mb-6">Best practices and recommendations for implementing Recycle Bin Item cards in different contexts.</p>
+    </div>
+
+    <div class="space-y-6">
+        <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h3 class="text-base font-semibold text-green-900 mb-3 flex items-center">
+                <i class="fa-solid fa-circle-check text-green-600 mr-2"></i>
+                Do's
+            </h3>
+            <ul class="space-y-2 text-sm text-green-900">
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Always display the deleted badge on the item icon to clearly indicate recycle bin status</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Show who deleted the item and when for accountability and audit trails</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Include parent folder information to help users understand the item's original context</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Use the large card variant for detailed inspector panels and decision-making contexts</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Clearly distinguish between restore and permanent delete actions with color coding</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-check text-green-600 mr-2 mt-1"></i>
+                    <span>Display countdown information for automatic purge schedules</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+            <h3 class="text-base font-semibold text-red-900 mb-3 flex items-center">
+                <i class="fa-solid fa-circle-xmark text-red-600 mr-2"></i>
+                Don'ts
+            </h3>
+            <ul class="space-y-2 text-sm text-red-900">
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't show file previews or content for deleted items</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't expose storage identifiers or CMIS internal references</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't enable permanent delete actions without proper permissions</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't make permanent delete the primary action - restore should be emphasized</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't show active file metadata like version history or collaboration details</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-xmark text-red-600 mr-2 mt-1"></i>
+                    <span>Don't use recycle bin cards for items that haven't been deleted</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-base font-semibold text-blue-900 mb-3 flex items-center">
+                <i class="fa-solid fa-lightbulb text-blue-600 mr-2"></i>
+                Context-Specific Recommendations
+            </h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="text-sm font-semibold text-blue-900 mb-1">Dense List Views</div>
+                    <div class="text-sm text-blue-800">Use small cards for maximum information density in recycle bin overview lists</div>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-blue-900 mb-1">Dashboard Widgets</div>
+                    <div class="text-sm text-blue-800">Use medium cards in grid layouts for recently deleted items dashboards</div>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-blue-900 mb-1">Inspector Panels</div>
+                    <div class="text-sm text-blue-800">Use large cards when users need to review detailed provenance before recovery decisions</div>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-blue-900 mb-1">Permission-Restricted Views</div>
+                    <div class="text-sm text-blue-800">Show appropriate warning banners and disable actions based on user permissions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

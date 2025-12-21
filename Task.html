@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<section id="small-cards-section" class="py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Task — Small Card (4.1)</h2>
+            <p class="text-gray-600">Compact variant optimized for task lists, queues, and high-density views</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div id="small-card-1" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Review financial disclosure documents</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                        In Progress
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Dec 28</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <span>J. Smith</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-2" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Approve budget request</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">
+                        Ready
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Dec 22</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <span>Unassigned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-3" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Complete compliance training</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-800">
+                        Overdue
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-red-500"></i>
+                            <span class="text-red-600 font-medium">Dec 19</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <span>M. Chen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-4" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Update case status report</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-purple-100 text-purple-800">
+                        On Hold
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Jan 5</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <span>R. Davis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-5" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Verify applicant credentials</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                        Assigned
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Dec 30</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-users text-gray-400"></i>
+                            <span>Intake Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-6" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                <div class="flex items-start justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">Schedule follow-up interview</h3>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                        Completed
+                    </span>
+                    <div class="flex items-center gap-3 text-xs text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Dec 20</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <span>A. Wilson</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="medium-cards-section" class="py-12 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Task — Medium Card (4.2)</h2>
+            <p class="text-gray-600">Default variant balancing actionability with context for dashboards and related-object lists</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                            In Progress
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Review financial disclosure documents for accuracy</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 28, 2024</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Assignee</div>
+                                <div class="text-gray-900 font-medium">Jennifer Smith</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-folder text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Case File</span>
+                        <span class="text-sm text-gray-900 font-medium">CF-2024-0892</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">65%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open Task
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-2" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-flag text-red-500 text-sm"></i>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-green-100 text-green-800">
+                                Ready
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Approve budget request for Q1 operations</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 22, 2024</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-users text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Candidate Group</div>
+                                <div class="text-gray-900 font-medium">Finance Team</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-file-alt text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Complaint</span>
+                        <span class="text-sm text-gray-900 font-medium">CMPL-2024-1156</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">0%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Start Task
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-3" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 border border-orange-300">
+                                <i class="fa-solid fa-rotate-left text-xs mr-1"></i>
+                                Rework
+                            </span>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-red-100 text-red-800">
+                                Overdue
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Complete compliance training certification</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-red-500"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-red-600 font-medium">Dec 19, 2024</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Assignee</div>
+                                <div class="text-gray-900 font-medium">Michael Chen</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-folder text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Case File</span>
+                        <span class="text-sm text-gray-900 font-medium">CF-2024-0745</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 30%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">30%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-4" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-purple-100 text-purple-800">
+                            On Hold
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Update case status report with latest findings</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-gray-900 font-medium">Jan 5, 2025</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Assignee</div>
+                                <div class="text-gray-900 font-medium">Rachel Davis</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-comments text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Consultation</span>
+                        <span class="text-sm text-gray-900 font-medium">CONS-2024-0334</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">45%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open Task
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-5" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-flag text-amber-500 text-sm"></i>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                                Assigned
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Verify applicant credentials and background</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 30, 2024</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-users text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Candidate Group</div>
+                                <div class="text-gray-900 font-medium">Intake Team</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-file-alt text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Complaint</span>
+                        <span class="text-sm text-gray-900 font-medium">CMPL-2024-0987</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 10%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">10%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                            Open Task
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-6" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-lg"></i>
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Task</span>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            <i class="fa-solid fa-check text-gray-600 text-xs mr-1"></i>
+                            Completed
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-base font-semibold text-gray-900 mb-4">Schedule follow-up interview with witness</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 20, 2024</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-user text-gray-400"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Assignee</div>
+                                <div class="text-gray-900 font-medium">Amanda Wilson</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-gray-100">
+                        <i class="fa-regular fa-folder text-gray-400 text-sm"></i>
+                        <span class="text-sm text-gray-600">Case File</span>
+                        <span class="text-sm text-gray-900 font-medium">CF-2024-0623</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-gray-500">Progress</span>
+                            <div class="w-24 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-green-600 h-1.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-700">100%</span>
+                        </div>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded hover:bg-gray-200 transition-colors">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="large-cards-section" class="py-12 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Task — Large Card (4.3)</h2>
+            <p class="text-gray-600">Expanded variant for inspector panels providing comprehensive context and multiple actions</p>
+        </div>
+        
+        <div class="space-y-6">
+            <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-xl"></i>
+                            <div>
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide block">Task</span>
+                                <h3 class="text-xl font-semibold text-gray-900 mt-1">Review financial disclosure documents for accuracy and completeness</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-flag text-red-500"></i>
+                            <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-amber-100 text-amber-800">
+                                In Progress
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-5">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Conduct a thorough review of all submitted financial disclosure documents to ensure accuracy, completeness, and compliance with regulatory requirements. Verify all numerical data, cross-reference supporting documentation, and flag any discrepancies or missing information for follow-up. Document findings in the review notes section and escalate critical issues to the compliance officer.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-6">
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Due Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400"></i>
+                                <span class="text-sm font-medium text-gray-900">December 28, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Assignee</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Jennifer Smith</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Priority</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-flag text-red-500"></i>
+                                <span class="text-sm font-medium text-red-600">High</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Percent Complete</div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900">65%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Workflow</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-project-diagram text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Financial Review Process</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Owner</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">David Martinez</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-folder text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Parent Object</span>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Case File</span>
+                                    <div class="text-sm font-semibold text-gray-900 mt-1">Financial Fraud Investigation - Morgan & Associates</div>
+                                    <div class="text-xs text-gray-600 mt-1">CF-2024-0892</div>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-700">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-paperclip text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Related Items</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-file-pdf text-red-500"></i>
+                                <span class="text-sm text-gray-700">8 Documents</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-comment text-blue-500"></i>
+                                <span class="text-sm text-gray-700">12 Notes</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-solid fa-link text-gray-500"></i>
+                                <span class="text-sm text-gray-700">3 Links</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between pt-5 border-t border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-regular fa-star"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Reassign
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Complete
+                            </button>
+                            <button class="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                Open Task
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-xl"></i>
+                            <div>
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide block">Task</span>
+                                <h3 class="text-xl font-semibold text-gray-900 mt-1">Approve budget request for Q1 operations and resource allocation</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-flag text-red-500"></i>
+                            <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-green-100 text-green-800">
+                                Ready
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-5">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Review the submitted Q1 budget request for operational expenses and resource allocation. Evaluate the justification for each line item, assess alignment with organizational priorities and available funding, and verify that all required approvals from department heads have been obtained. Provide approval or request additional information as needed. Budget must be finalized before end of fiscal quarter.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-6">
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Due Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400"></i>
+                                <span class="text-sm font-medium text-gray-900">December 22, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Candidate Group</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-users text-gray-400"></i>
+                                <span class="text-sm font-medium text-gray-900">Finance Team</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Priority</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-flag text-red-500"></i>
+                                <span class="text-sm font-medium text-red-600">High</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Percent Complete</div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900">0%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Workflow</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-project-diagram text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Budget Approval Workflow</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Owner</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Robert Thompson</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-folder text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Parent Object</span>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Complaint</span>
+                                    <div class="text-sm font-semibold text-gray-900 mt-1">Budget Irregularities - Department Operations</div>
+                                    <div class="text-xs text-gray-600 mt-1">CMPL-2024-1156</div>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-700">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-paperclip text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Related Items</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-file-excel text-green-600"></i>
+                                <span class="text-sm text-gray-700">5 Documents</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-comment text-blue-500"></i>
+                                <span class="text-sm text-gray-700">7 Notes</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-solid fa-link text-gray-500"></i>
+                                <span class="text-sm text-gray-700">2 Links</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between pt-5 border-t border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-regular fa-star"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Claim Task
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Delegate
+                            </button>
+                            <button class="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                Start Task
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-3" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-xl"></i>
+                            <div>
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide block">Task</span>
+                                <h3 class="text-xl font-semibold text-gray-900 mt-1">Complete compliance training certification and submit proof</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800 border border-orange-300">
+                                <i class="fa-solid fa-rotate-left text-xs mr-1"></i>
+                                Rework
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-red-100 text-red-800">
+                                Overdue
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-5">
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-exclamation-triangle text-red-600 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm text-red-900 font-medium mb-1">Task Returned for Rework</p>
+                                <p class="text-sm text-red-800 leading-relaxed">
+                                    Complete the mandatory annual compliance training module and submit the certification of completion. Previous submission was rejected due to incomplete quiz scores. You must achieve at least 85% on all assessment sections. Training materials are available in the learning management system. Certificate must be uploaded to the document repository upon completion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-6">
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Due Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-red-500"></i>
+                                <span class="text-sm font-medium text-red-600">December 19, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Assignee</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Michael Chen</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Priority</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-flag text-amber-500"></i>
+                                <span class="text-sm font-medium text-amber-600">Medium</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Percent Complete</div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 30%"></div>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900">30%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Workflow</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-project-diagram text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Compliance Certification</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Owner</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Sarah Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-folder text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Parent Object</span>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Case File</span>
+                                    <div class="text-sm font-semibold text-gray-900 mt-1">Annual Compliance Review - Staff Certifications</div>
+                                    <div class="text-xs text-gray-600 mt-1">CF-2024-0745</div>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-700">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-paperclip text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Related Items</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-file-pdf text-red-500"></i>
+                                <span class="text-sm text-gray-700">3 Documents</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-comment text-blue-500"></i>
+                                <span class="text-sm text-gray-700">15 Notes</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-solid fa-link text-gray-500"></i>
+                                <span class="text-sm text-gray-700">1 Link</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between pt-5 border-t border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-regular fa-star"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Request Extension
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Escalate
+                            </button>
+                            <button class="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                Resume Task
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-4" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-xl"></i>
+                            <div>
+                                <span class="text-xs font-medium text-gray-500 uppercase tracking-wide block">Task</span>
+                                <h3 class="text-xl font-semibold text-gray-900 mt-1">Update case status report with latest investigation findings</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-purple-100 text-purple-800">
+                            <i class="fa-solid fa-pause text-purple-600 text-xs mr-1.5"></i>
+                            On Hold
+                        </span>
+                    </div>
+                    
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-5">
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-info-circle text-purple-600 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm text-purple-900 font-medium mb-1">Task On Hold - Awaiting Information</p>
+                                <p class="text-sm text-purple-800 leading-relaxed">
+                                    Compile and update the comprehensive case status report with all findings from the recent investigation phase. Include witness statements, evidence analysis results, expert opinions, and recommended next steps. Ensure all information is properly cited and cross-referenced. Report format must follow the standard template and include executive summary. Currently on hold pending receipt of forensic analysis results from external lab.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-6">
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Due Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400"></i>
+                                <span class="text-sm font-medium text-gray-900">January 5, 2025</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Assignee</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Rachel Davis</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Priority</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-flag text-amber-500"></i>
+                                <span class="text-sm font-medium text-amber-600">Medium</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Percent Complete</div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900">45%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Workflow</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-project-diagram text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Case Investigation Workflow</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Owner</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Avatar" class="w-6 h-6 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">James Anderson</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-folder text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Parent Object</span>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-medium text-blue-600 uppercase tracking-wide">Consultation</span>
+                                    <div class="text-sm font-semibold text-gray-900 mt-1">Expert Review - Evidence Analysis Protocol</div>
+                                    <div class="text-xs text-gray-600 mt-1">CONS-2024-0334</div>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-700">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-paperclip text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-500">Related Items</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-file-word text-blue-600"></i>
+                                <span class="text-sm text-gray-700">11 Documents</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-regular fa-comment text-blue-500"></i>
+                                <span class="text-sm text-gray-700">24 Notes</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded">
+                                <i class="fa-solid fa-link text-gray-500"></i>
+                                <span class="text-sm text-gray-700">5 Links</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between pt-5 border-t border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-regular fa-star"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Resume
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+                                Reassign
+                            </button>
+                            <button class="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors">
+                                Open Task
+                            </button>
+                            <button class="text-gray-500 hover:text-gray-700 p-2">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="comparison-section" class="py-12 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Card Variant Comparison</h2>
+            <p class="text-gray-600">Visual comparison of Small, Medium, and Large card variants showing progressive information disclosure</p>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-6">
+            <div id="comparison-small" class="space-y-3">
+                <div class="bg-gray-100 rounded-lg p-3 text-center">
+                    <h4 class="font-semibold text-gray-900 text-sm">Small Card</h4>
+                    <p class="text-xs text-gray-600 mt-1">Task Lists & Queues</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-start justify-between mb-2">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-blue-600 text-sm"></i>
+                            <h3 class="font-semibold text-gray-900 text-sm">Verify documentation</h3>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                            In Progress
+                        </span>
+                        <div class="flex items-center gap-3 text-xs text-gray-600">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-regular fa-calendar text-gray-400"></i>
+                                <span>Dec 25</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i class="fa-regular fa-user text-gray-400"></i>
+                                <span>L. Park</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <ul class="space-y-2 text-xs text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Minimal height</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Essential information only</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Rapid scanning</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>High density views</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="comparison-medium" class="space-y-3">
+                <div class="bg-gray-100 rounded-lg p-3 text-center">
+                    <h4 class="font-semibold text-gray-900 text-sm">Medium Card</h4>
+                    <p class="text-xs text-gray-600 mt-1">Dashboards & Lists</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <div class="p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clipboard-check text-blue-600"></i>
+                                <span class="text-xs font-medium text-gray-500 uppercase">Task</span>
+                            </div>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                In Progress
+                            </span>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3">Verify documentation completeness</h3>
+                        <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
+                            <div>
+                                <div class="text-gray-500 mb-1">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 25, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500 mb-1">Assignee</div>
+                                <div class="text-gray-900 font-medium">Lisa Park</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 mb-3 pb-3 border-b text-xs">
+                            <i class="fa-regular fa-folder text-gray-400"></i>
+                            <span class="text-gray-600">Case File</span>
+                            <span class="text-gray-900 font-medium">CF-2024-0445</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 bg-gray-200 rounded-full h-1">
+                                    <div class="bg-blue-600 h-1 rounded-full" style="width: 55%"></div>
+                                </div>
+                                <span class="text-xs font-medium text-gray-700">55%</span>
+                            </div>
+                            <button class="px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded">
+                                Open
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <ul class="space-y-2 text-xs text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Balanced context</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Parent object reference</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Progress indicator</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Primary action visible</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="comparison-large" class="space-y-3">
+                <div class="bg-gray-100 rounded-lg p-3 text-center">
+                    <h4 class="font-semibold text-gray-900 text-sm">Large Card</h4>
+                    <p class="text-xs text-gray-600 mt-1">Inspector Panels</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <div class="p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clipboard-check text-blue-600"></i>
+                                <div>
+                                    <span class="text-xs font-medium text-gray-500 uppercase block">Task</span>
+                                    <h3 class="text-sm font-semibold text-gray-900 mt-1">Verify documentation completeness</h3>
+                                </div>
+                            </div>
+                            <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                In Progress
+                            </span>
+                        </div>
+                        <div class="bg-gray-50 border rounded p-2 mb-3">
+                            <p class="text-xs text-gray-700">Review all submitted documents for completeness and accuracy...</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
+                            <div>
+                                <div class="text-gray-500 mb-1">Due Date</div>
+                                <div class="text-gray-900 font-medium">Dec 25, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500 mb-1">Assignee</div>
+                                <div class="text-gray-900 font-medium">Lisa Park</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500 mb-1">Priority</div>
+                                <div class="text-amber-600 font-medium">Medium</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500 mb-1">Progress</div>
+                                <div class="text-gray-900 font-medium">55%</div>
+                            </div>
+                        </div>
+                        <div class="border-t pt-2 mb-3">
+                            <div class="bg-blue-50 border border-blue-100 rounded p-2">
+                                <div class="text-xs">
+                                    <span class="text-blue-600 font-medium">Case File</span>
+                                    <div class="text-gray-900 font-medium">CF-2024-0445</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t pt-2 mb-2">
+                            <div class="flex gap-2 text-xs">
+                                <span class="bg-gray-50 px-2 py-1 rounded">4 Docs</span>
+                                <span class="bg-gray-50 px-2 py-1 rounded">8 Notes</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 pt-2 border-t">
+                            <button class="flex-1 px-2 py-1 border text-xs rounded">Reassign</button>
+                            <button class="flex-1 px-2 py-1 bg-blue-600 text-white text-xs rounded">Open</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <ul class="space-y-2 text-xs text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Full context provided</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Task description included</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Complete metadata grid</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                            <span>Multiple actions available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="status-variants-section" class="py-12 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Task Status Variants</h2>
+            <p class="text-gray-600">Comprehensive display of all task status states and their visual representations</p>
+        </div>
+        
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div id="status-ready" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-green-100 text-green-800">
+                        Ready
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task awaiting assignment</h4>
+                <p class="text-xs text-gray-600">Available for team members to claim and begin work</p>
+            </div>
+
+            <div id="status-assigned" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-blue-100 text-blue-800">
+                        Assigned
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task assigned to user</h4>
+                <p class="text-xs text-gray-600">Allocated to specific person or group, not yet started</p>
+            </div>
+
+            <div id="status-in-progress" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-amber-100 text-amber-800">
+                        In Progress
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Active task in progress</h4>
+                <p class="text-xs text-gray-600">Currently being worked on by assignee</p>
+            </div>
+
+            <div id="status-on-hold" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-purple-100 text-purple-800">
+                        <i class="fa-solid fa-pause text-xs mr-1"></i>
+                        On Hold
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task temporarily paused</h4>
+                <p class="text-xs text-gray-600">Waiting for external input or dependencies</p>
+            </div>
+
+            <div id="status-overdue" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-red-100 text-red-800">
+                        Overdue
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task past due date</h4>
+                <p class="text-xs text-gray-600">Requires immediate attention and action</p>
+            </div>
+
+            <div id="status-rework" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800 border border-orange-300">
+                        <i class="fa-solid fa-rotate-left text-xs mr-1"></i>
+                        Rework
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task returned for revision</h4>
+                <p class="text-xs text-gray-600">Needs corrections or additional work</p>
+            </div>
+
+            <div id="status-completed" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-gray-100 text-gray-800">
+                        <i class="fa-solid fa-check text-xs mr-1"></i>
+                        Completed
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task successfully completed</h4>
+                <p class="text-xs text-gray-600">All requirements met and verified</p>
+            </div>
+
+            <div id="status-cancelled" class="bg-white border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded text-sm font-medium bg-gray-200 text-gray-700">
+                        <i class="fa-solid fa-times text-xs mr-1"></i>
+                        Cancelled
+                    </span>
+                    <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                </div>
+                <h4 class="font-medium text-gray-900 mb-2">Task cancelled</h4>
+                <p class="text-xs text-gray-600">No longer required or superseded</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="priority-indicators-section" class="py-12 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Priority Indicators</h2>
+            <p class="text-gray-600">Visual representation of task priority levels across card variants</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div id="priority-high" class="bg-white border-2 border-red-200 rounded-lg p-5">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-flag text-red-500 text-xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">High Priority</h4>
+                        <p class="text-xs text-gray-600">Urgent attention required</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-red-50 border border-red-100 rounded p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-medium text-red-600 uppercase">Task Example</span>
+                            <i class="fa-solid fa-flag text-red-500 text-sm"></i>
+                        </div>
+                        <h5 class="text-sm font-medium text-gray-900">Critical system update required</h5>
+                        <div class="flex items-center gap-2 mt-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar text-red-500"></i>
+                            <span class="text-red-600 font-medium">Due: Dec 21</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-600">
+                        <p class="font-medium mb-1">Usage Guidelines:</p>
+                        <ul class="space-y-1 ml-3">
+                            <li>• Time-sensitive tasks</li>
+                            <li>• Regulatory deadlines</li>
+                            <li>• Critical path items</li>
+                            <li>• Executive requests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="priority-medium" class="bg-white border-2 border-amber-200 rounded-lg p-5">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-flag text-amber-500 text-xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Medium Priority</h4>
+                        <p class="text-xs text-gray-600">Standard workflow tasks</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-amber-50 border border-amber-100 rounded p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-medium text-amber-600 uppercase">Task Example</span>
+                            <i class="fa-solid fa-flag text-amber-500 text-sm"></i>
+                        </div>
+                        <h5 class="text-sm font-medium text-gray-900">Review quarterly reports</h5>
+                        <div class="flex items-center gap-2 mt-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Due: Dec 28</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-600">
+                        <p class="font-medium mb-1">Usage Guidelines:</p>
+                        <ul class="space-y-1 ml-3">
+                            <li>• Regular workflow tasks</li>
+                            <li>• Scheduled reviews</li>
+                            <li>• Standard approvals</li>
+                            <li>• Routine updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="priority-low" class="bg-white border-2 border-gray-200 rounded-lg p-5">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-flag text-gray-400 text-xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Low Priority</h4>
+                        <p class="text-xs text-gray-600">Non-urgent activities</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-gray-50 border border-gray-200 rounded p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-medium text-gray-600 uppercase">Task Example</span>
+                        </div>
+                        <h5 class="text-sm font-medium text-gray-900">Update documentation</h5>
+                        <div class="flex items-center gap-2 mt-2 text-xs text-gray-600">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                            <span>Due: Jan 10</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-600">
+                        <p class="font-medium mb-1">Usage Guidelines:</p>
+                        <ul class="space-y-1 ml-3">
+                            <li>• Administrative tasks</li>
+                            <li>• Documentation updates</li>
+                            <li>• Nice-to-have items</li>
+                            <li>• Future planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="design-notes-section" class="py-12 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Design System Notes</h2>
+            <p class="text-gray-600">Key principles and consistency rules for Task card implementation</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div id="notes-hierarchy" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-layer-group text-blue-600 text-xl"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Visual Hierarchy</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Task title is always the primary visual element</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Status badge positioned consistently across all variants</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Due date and assignee information always visible</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Parent object reference scales with card size</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="notes-consistency" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-arrows-left-right text-blue-600 text-xl"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Cross-Object Consistency</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Matches visual language of Case File, Complaint cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Consistent color coding for status across object types</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Unified icon system and typography</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Predictable action button placement</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="notes-interaction" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-hand-pointer text-blue-600 text-xl"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Interaction Patterns</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Entire card acts as primary click target</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Hover states provide visual feedback</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Actions scaled to card size and context</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Permission-aware action visibility</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="notes-accessibility" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-universal-access text-blue-600 text-xl"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Accessibility</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>WCAG AA compliant color contrast ratios</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Icons paired with text labels</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Keyboard navigation support</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                        <span>Screen reader friendly structure</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

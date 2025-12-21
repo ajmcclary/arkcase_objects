@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Version Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="main-container" class="max-w-7xl mx-auto p-8">
+
+    <section id="header-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-semibold text-gray-900 mb-2">File Version Card Wireframes</h1>
+                    <p class="text-sm text-gray-600">ArkCase Design System — Component Library</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Component: File Version</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Status: Draft</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-4">Overview</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Purpose</h3>
+                    <p class="text-sm text-gray-600">Represent individual versions of documents within ArkCase, subordinate to parent File objects.</p>
+                </div>
+                <div class="border-l-4 border-green-500 pl-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Variants</h3>
+                    <p class="text-sm text-gray-600">Three card sizes: Small (12.1), Medium (12.2), and Large (12.3) for different contexts.</p>
+                </div>
+                <div class="border-l-4 border-purple-500 pl-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Context</h3>
+                    <p class="text-sm text-gray-600">Used in version history panels, inspector views, and comparison interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="small-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">12.1 — Small Card Variant</h2>
+            <p class="text-sm text-gray-600">Optimized for dense version lists and history panels. Minimal vertical height, single-row layout.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-8">
+            <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-6">Implementation Examples</h3>
+            
+            <div class="space-y-3">
+                <div id="small-card-1" class="bg-white border border-gray-300 rounded hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex-shrink-0 mr-3">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-pdf text-blue-600 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm font-semibold text-gray-900">v3.2</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-800 text-xs font-medium rounded">Current</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-4">
+                            <span class="text-xs text-gray-500">Dec 15, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-2" class="bg-white border border-gray-300 rounded hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex-shrink-0 mr-3">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-pdf text-blue-600 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm font-semibold text-gray-900">v3.1</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-4">
+                            <span class="text-xs text-gray-500">Dec 10, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-3" class="bg-white border border-gray-300 rounded hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex-shrink-0 mr-3">
+                            <div class="w-8 h-8 bg-orange-50 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-word text-orange-600 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm font-semibold text-gray-900">v3.0</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-4">
+                            <span class="text-xs text-gray-500">Nov 28, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-4" class="bg-white border border-gray-300 rounded hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex-shrink-0 mr-3">
+                            <div class="w-8 h-8 bg-green-50 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-excel text-green-600 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm font-semibold text-gray-900">v2.5</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-4">
+                            <span class="text-xs text-gray-500">Nov 15, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="small-card-5" class="bg-white border border-gray-300 rounded hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center px-4 py-3">
+                        <div class="flex-shrink-0 mr-3">
+                            <div class="w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file text-gray-600 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm font-semibold text-gray-900">v2.0</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-4">
+                            <span class="text-xs text-gray-500">Oct 30, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-blue-900 mb-3">Design Specifications</h3>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                    <span class="font-medium text-blue-900">Height:</span>
+                    <span class="text-blue-700 ml-2">48px (py-3)</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Layout:</span>
+                    <span class="text-blue-700 ml-2">Single-row horizontal</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Icon Size:</span>
+                    <span class="text-blue-700 ml-2">32px container</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Interaction:</span>
+                    <span class="text-blue-700 ml-2">Entire card clickable</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medium-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">12.2 — Medium Card Variant</h2>
+            <p class="text-sm text-gray-600">Default representation in version history lists. Balances identification with light metadata.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-8">
+            <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-6">Implementation Examples</h3>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div id="medium-card-1" class="bg-white border border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blue-50 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">File Version</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-800 text-xs font-medium rounded">Active</span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Version 4.0</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Type</span>
+                                <span class="text-gray-900 font-medium">PDF Document</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Created</span>
+                                <span class="text-gray-900 font-medium">Dec 21, 2024 3:45 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Size</span>
+                                <span class="text-gray-900 font-medium">2.4 MB</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Searchable</span>
+                                <span class="text-gray-900 font-medium flex items-center">
+                                    <i class="fa-solid fa-check text-green-600 text-xs mr-1"></i>
+                                    Yes
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors">
+                                Open Version
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-2" class="bg-white border border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-orange-50 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-word text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">File Version</span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Version 3.8</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Type</span>
+                                <span class="text-gray-900 font-medium">Word Document</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Created</span>
+                                <span class="text-gray-900 font-medium">Dec 18, 2024 11:20 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Size</span>
+                                <span class="text-gray-900 font-medium">1.8 MB</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Pages</span>
+                                <span class="text-gray-900 font-medium">47</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors">
+                                Open Version
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-3" class="bg-white border border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-50 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-video text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">File Version</span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Version 2.1</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Type</span>
+                                <span class="text-gray-900 font-medium">MP4 Video</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Created</span>
+                                <span class="text-gray-900 font-medium">Dec 10, 2024 9:15 AM</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Size</span>
+                                <span class="text-gray-900 font-medium">45.2 MB</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Duration</span>
+                                <span class="text-gray-900 font-medium">5:32</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors">
+                                Open Version
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="medium-card-4" class="bg-white border border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-md transition-all">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-green-50 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-excel text-green-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">File Version</span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Version 1.5</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Type</span>
+                                <span class="text-gray-900 font-medium">Excel Spreadsheet</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Created</span>
+                                <span class="text-gray-900 font-medium">Nov 30, 2024 2:30 PM</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">File Size</span>
+                                <span class="text-gray-900 font-medium">856 KB</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">Searchable</span>
+                                <span class="text-gray-900 font-medium flex items-center">
+                                    <i class="fa-solid fa-times text-red-600 text-xs mr-1"></i>
+                                    No
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors">
+                                Open Version
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-blue-900 mb-3">Design Specifications</h3>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                    <span class="font-medium text-blue-900">Padding:</span>
+                    <span class="text-blue-700 ml-2">20px (p-5)</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Layout:</span>
+                    <span class="text-blue-700 ml-2">Vertical hierarchy</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Icon Size:</span>
+                    <span class="text-blue-700 ml-2">40px container</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Action:</span>
+                    <span class="text-blue-700 ml-2">Single primary button</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-card-section" class="mb-12">
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">12.3 — Large Card Variant</h2>
+            <p class="text-sm text-gray-600">Used in inspector panels and expanded previews. Provides clear differentiation and comprehensive metadata.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-8">
+            <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-6">Implementation Examples</h3>
+            
+            <div class="space-y-6">
+                <div id="large-card-1" class="bg-white border-2 border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-lg transition-all">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">File Version</span>
+                                        <span class="px-2.5 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Active Version</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-1">Version 5.2</h3>
+                                    <p class="text-sm text-gray-600">Parent: Contract_Agreement_Final.pdf</p>
+                                </div>
+                            </div>
+                            <button class="p-2 text-gray-400 hover:text-gray-600 rounded hover:bg-gray-100">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Version Metadata</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Created Date</span>
+                                    <span class="text-sm font-semibold text-gray-900">December 21, 2024 at 4:32 PM</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Created By</span>
+                                    <span class="text-sm font-semibold text-gray-900">Sarah Mitchell</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">File Size</span>
+                                    <span class="text-sm font-semibold text-gray-900">3.2 MB</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">File Type</span>
+                                    <span class="text-sm font-semibold text-gray-900">PDF Document (application/pdf)</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Page Count</span>
+                                    <span class="text-sm font-semibold text-gray-900">24 pages</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Searchable Content</span>
+                                    <span class="text-sm font-semibold text-gray-900 flex items-center">
+                                        <i class="fa-solid fa-check text-green-600 text-xs mr-1.5"></i>
+                                        Yes, OCR Applied
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Integrity & Security</h4>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex-1">
+                                        <span class="text-xs text-gray-500 block mb-1">Content Hash (SHA-256)</span>
+                                        <span class="text-sm font-mono text-gray-900">a3f5...9c2e</span>
+                                    </div>
+                                    <button class="text-xs text-blue-600 hover:text-blue-700 font-medium ml-4">View Full</button>
+                                </div>
+                                <div class="mt-3 pt-3 border-t border-gray-200">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-shield-check text-green-600 mr-2"></i>
+                                        <span class="text-gray-700">Integrity verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-open mr-2"></i>
+                                    Open Version
+                                </button>
+                                <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-download mr-2"></i>
+                                    Download
+                                </button>
+                                <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-code-compare mr-2"></i>
+                                    Compare
+                                </button>
+                                <button class="bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="large-card-2" class="bg-white border-2 border-gray-300 rounded-lg hover:border-blue-400 hover:shadow-lg transition-all">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-video text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">File Version</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-1">Version 3.0</h3>
+                                    <p class="text-sm text-gray-600">Parent: Training_Video_Module_2.mp4</p>
+                                </div>
+                            </div>
+                            <button class="p-2 text-gray-400 hover:text-gray-600 rounded hover:bg-gray-100">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Version Metadata</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Created Date</span>
+                                    <span class="text-sm font-semibold text-gray-900">December 15, 2024 at 10:15 AM</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Created By</span>
+                                    <span class="text-sm font-semibold text-gray-900">Michael Chen</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">File Size</span>
+                                    <span class="text-sm font-semibold text-gray-900">127.8 MB</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">File Type</span>
+                                    <span class="text-sm font-semibold text-gray-900">MP4 Video (video/mp4)</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Duration</span>
+                                    <span class="text-sm font-semibold text-gray-900">12:47</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <span class="text-xs text-gray-500 block mb-1">Resolution</span>
+                                    <span class="text-sm font-semibold text-gray-900">1920x1080 (Full HD)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Integrity & Security</h4>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex-1">
+                                        <span class="text-xs text-gray-500 block mb-1">Content Hash (SHA-256)</span>
+                                        <span class="text-sm font-mono text-gray-900">7b8d...4f1a</span>
+                                    </div>
+                                    <button class="text-xs text-blue-600 hover:text-blue-700 font-medium ml-4">View Full</button>
+                                </div>
+                                <div class="mt-3 pt-3 border-t border-gray-200">
+                                    <div class="flex items-center text-sm">
+                                        <i class="fa-solid fa-shield-check text-green-600 mr-2"></i>
+                                        <span class="text-gray-700">Integrity verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-folder-open mr-2"></i>
+                                    Open Version
+                                </button>
+                                <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-download mr-2"></i>
+                                    Download
+                                </button>
+                                <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <i class="fa-solid fa-code-compare mr-2"></i>
+                                    Compare
+                                </button>
+                                <button class="bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-blue-900 mb-3">Design Specifications</h3>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                    <span class="font-medium text-blue-900">Padding:</span>
+                    <span class="text-blue-700 ml-2">24px (p-6)</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Layout:</span>
+                    <span class="text-blue-700 ml-2">Structured sections</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Icon Size:</span>
+                    <span class="text-blue-700 ml-2">56px container</span>
+                </div>
+                <div>
+                    <span class="font-medium text-blue-900">Actions:</span>
+                    <span class="text-blue-700 ml-2">Multiple action bar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="context-usage-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Contextual Usage Examples</h2>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div id="context-1" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Version History Panel</h3>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-medium text-gray-700">Version History</span>
+                            <span class="text-xs text-gray-500">12 versions</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="bg-white border border-gray-300 rounded px-3 py-2 flex items-center">
+                                <div class="w-6 h-6 bg-blue-50 rounded flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-pdf text-blue-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900 mr-2">v5.2</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-800 text-xs font-medium rounded mr-auto">Current</span>
+                                <span class="text-xs text-gray-500">Dec 21</span>
+                            </div>
+                            <div class="bg-white border border-gray-300 rounded px-3 py-2 flex items-center">
+                                <div class="w-6 h-6 bg-blue-50 rounded flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-pdf text-blue-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900 mr-auto">v5.1</span>
+                                <span class="text-xs text-gray-500">Dec 20</span>
+                            </div>
+                            <div class="bg-white border border-gray-300 rounded px-3 py-2 flex items-center">
+                                <div class="w-6 h-6 bg-blue-50 rounded flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-pdf text-blue-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-900 mr-auto">v5.0</span>
+                                <span class="text-xs text-gray-500">Dec 18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="context-2" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Inspector Side Panel</h3>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div class="mb-4">
+                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Current Version</span>
+                        </div>
+                        <div class="bg-white border-2 border-blue-400 rounded-lg p-4">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-blue-50 rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-file-pdf text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500">File Version</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-800 text-xs font-medium rounded">Active</span>
+                                    </div>
+                                    <h3 class="text-sm font-semibold text-gray-900">Version 5.2</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-1.5 text-xs">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Created</span>
+                                    <span class="text-gray-900 font-medium">Dec 21, 2024</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Size</span>
+                                    <span class="text-gray-900 font-medium">3.2 MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consistency-rules-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Cross-Variant Consistency Rules</h2>
+            
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
+                    <div class="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1">Visual Hierarchy</h3>
+                        <p class="text-sm text-gray-700">File Version cards must visually nest under File cards through reduced visual weight, smaller dimensions, and subordinate styling cues.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
+                    <div class="flex-shrink-0 w-6 h-6 bg-green-600 rounded-full flex items-center justify-center text-white text-xs font-bold">2</div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1">Version Labeling</h3>
+                        <p class="text-sm text-gray-700">Version labels and numbers must be consistent across all card sizes, using the same format and prominence relative to other elements.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3 p-4 bg-purple-50 rounded-lg">
+                    <div class="flex-shrink-0 w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center text-white text-xs font-bold">3</div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1">Active Indicators</h3>
+                        <p class="text-sm text-gray-700">Active/current version indicators must be visually distinct and consistently styled across all variants using color, badges, or borders.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <div class="flex-shrink-0 w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold">4</div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-1">Scalable Components</h3>
+                        <p class="text-sm text-gray-700">All variants should feel like scaled versions of the same component, maintaining proportional relationships between elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="states-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Interactive States</h2>
+            
+            <div class="grid grid-cols-3 gap-6">
+                <div id="state-default" class="border border-gray-300 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Default State</h3>
+                    <div class="bg-white border border-gray-300 rounded p-3">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-file-pdf text-blue-600 text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-gray-900">v3.2</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-2">Standard appearance with neutral border</p>
+                </div>
+
+                <div id="state-hover" class="border border-gray-300 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Hover State</h3>
+                    <div class="bg-white border border-blue-400 rounded p-3 shadow-sm">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-50 rounded flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-file-pdf text-blue-600 text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-gray-900">v3.2</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-2">Blue border with subtle shadow on hover</p>
+                </div>
+
+                <div id="state-selected" class="border border-gray-300 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Selected State</h3>
+                    <div class="bg-blue-50 border-2 border-blue-500 rounded p-3">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-file-pdf text-blue-700 text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-gray-900">v3.2</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-2">Blue background with stronger border</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="file-type-indicators-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">File Type Icon System</h2>
+            
+            <div class="grid grid-cols-4 gap-4">
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-pdf text-blue-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">PDF</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-word text-orange-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Word</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-excel text-green-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Excel</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-powerpoint text-red-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">PowerPoint</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-video text-purple-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Video</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-pink-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-audio text-pink-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Audio</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file-image text-indigo-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Image</span>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-file text-gray-600 text-xl"></i>
+                    </div>
+                    <span class="text-xs font-medium text-gray-700">Generic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="status-badges-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Status Badge System</h2>
+            
+            <div class="grid grid-cols-3 gap-6">
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Active/Current</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Active</span>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Current</span>
+                        <span class="px-2.5 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Active Version</span>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Archived</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">Archived</span>
+                        <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">Historical</span>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Draft</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded">Draft</span>
+                        <span class="px-2.5 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metadata-patterns-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Metadata Display Patterns</h2>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div id="metadata-inline" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Inline Metadata (Small/Medium)</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-500">File Type</span>
+                            <span class="text-gray-900 font-medium">PDF Document</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-500">Created</span>
+                            <span class="text-gray-900 font-medium">Dec 21, 2024</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-500">Size</span>
+                            <span class="text-gray-900 font-medium">2.4 MB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="metadata-grid" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Grid Metadata (Large)</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-50 rounded p-2">
+                            <span class="text-xs text-gray-500 block mb-1">File Type</span>
+                            <span class="text-sm font-semibold text-gray-900">PDF</span>
+                        </div>
+                        <div class="bg-gray-50 rounded p-2">
+                            <span class="text-xs text-gray-500 block mb-1">Created</span>
+                            <span class="text-sm font-semibold text-gray-900">Dec 21</span>
+                        </div>
+                        <div class="bg-gray-50 rounded p-2">
+                            <span class="text-xs text-gray-500 block mb-1">Size</span>
+                            <span class="text-sm font-semibold text-gray-900">2.4 MB</span>
+                        </div>
+                        <div class="bg-gray-50 rounded p-2">
+                            <span class="text-xs text-gray-500 block mb-1">Pages</span>
+                            <span class="text-sm font-semibold text-gray-900">24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="action-patterns-section" class="mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-6">Action Button Patterns</h2>
+            
+            <div class="space-y-6">
+                <div id="action-small" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Small Card Actions</h3>
+                    <p class="text-sm text-gray-600 mb-3">Entire card is clickable, no explicit buttons</p>
+                    <div class="bg-gray-50 rounded p-3 text-center text-sm text-gray-500 italic">
+                        Click anywhere on card to open
+                    </div>
+                </div>
+
+                <div id="action-medium" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Medium Card Actions</h3>
+                    <p class="text-sm text-gray-600 mb-3">Single primary action button</p>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded transition-colors">
+                        Open Version
+                    </button>
+                </div>
+
+                <div id="action-large" class="border border-gray-300 rounded-lg p-5">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-4">Large Card Actions</h3>
+                    <p class="text-sm text-gray-600 mb-3">Multiple actions in horizontal layout</p>
+                    <div class="flex items-center space-x-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                            <i class="fa-solid fa-folder-open mr-2"></i>
+                            Open
+                        </button>
+                        <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                            <i class="fa-solid fa-download mr-2"></i>
+                            Download
+                        </button>
+                        <button class="flex-1 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center">
+                            <i class="fa-solid fa-code-compare mr-2"></i>
+                            Compare
+                        </button>
+                        <button class="bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="constraints-section" class="mb-12">
+        <div class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+            <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0">
+                    <i class="fa-solid fa-triangle-exclamation text-amber-600 text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-amber-900 mb-4">Design Constraints</h2>
+                    <ul class="space-y-3 text-sm text-amber-900">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                            <span>Do not design diff or comparison interfaces within these cards</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                            <span>Do not expose raw CMIS or repository identifiers to users</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                            <span>Do not assume version deletion permissions are available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                            <span>Focus strictly on version identity and metadata presentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle text-amber-600 text-xs mr-3 mt-1"></i>
+                            <span>Hash or integrity data must be summarized, not displayed in raw format</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-section" class="mb-8">
+        <div class="bg-gray-900 text-white rounded-lg p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-sm font-semibold mb-1">ArkCase Design System</h3>
+                    <p class="text-xs text-gray-400">File Version Card Components — Version 1.0</p>
+                </div>
+                <div class="flex items-center space-x-4 text-xs text-gray-400">
+                    <span>Last Updated: December 21, 2024</span>
+                    <span>•</span>
+                    <span>Component ID: 12.1, 12.2, 12.3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

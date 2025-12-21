@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costsheet Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 p-8">
+
+<div id="costsheet-small-cards" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Small Card (23.1)</h2>
+        <p class="text-sm text-gray-600">Compact representation for related-object panels and dense financial summaries</p>
+    </div>
+    
+    <div class="space-y-4 max-w-md">
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 flex-1 min-w-0">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0847</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 ml-3">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 flex-1 min-w-0">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm font-semibold text-gray-900 truncate">Litigation Expenses 2024 Q1</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 ml-3">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 flex-1 min-w-0">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0623</div>
+                        <div class="text-xs text-gray-500 truncate">$24,850.00</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 ml-3">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Approved</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 flex-1 min-w-0">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm font-semibold text-gray-900 truncate">Investigation Cost Summary</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 ml-3">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 flex-1 min-w-0">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm font-semibold text-gray-900 truncate">CS-2023-1204</div>
+                        <div class="text-xs text-gray-500 truncate">$156,200.00</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 ml-3">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800">Closed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-medium-cards" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Medium Card (23.2)</h2>
+        <p class="text-sm text-gray-600">Default representation in financial panels with balanced context</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">CS-2024-0847</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Case #2024-1847</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$48,250.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Sarah Mitchell</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Mar 15, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">Litigation Expenses 2024 Q1</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Complaint #CMP-2024-0392</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$127,680.50</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>James Rodriguez</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Jan 8, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">CS-2024-0623</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Approved</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Case #2024-1623</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$24,850.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Emily Chen</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Feb 20, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">Investigation Cost Summary</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-list text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Investigation #INV-2024-0145</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$8,420.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Michael Torres</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Apr 2, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-large-cards" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Large Card (23.3)</h2>
+        <p class="text-sm text-gray-600">Expanded view for inspector panels with comprehensive financial context</p>
+    </div>
+    
+    <div class="space-y-6">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">CS-2024-0847</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                                <span class="text-xs text-gray-500">Last updated 2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600 p-1">
+                        <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$48,250.00</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                            <div class="text-2xl font-bold text-gray-900">24</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$2,010.42</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Case #2024-1847</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Sarah Mitchell</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Created Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">March 15, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">April 18, 2024 at 2:45 PM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Cost Period</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-calendar-range text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Q1 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Department</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-building text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Legal Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            View Details
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            View Costs
+                        </button>
+                        <button class="bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            <i class="fa-solid fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Litigation Expenses 2024 Q1</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-amber-100 text-amber-800">Pending Review</span>
+                                <span class="text-xs text-gray-500">Awaiting approval</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600 p-1">
+                        <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$127,680.50</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                            <div class="text-2xl font-bold text-gray-900">67</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$1,905.68</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-briefcase text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Complaint #CMP-2024-0392</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">James Rodriguez</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Created Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">January 8, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">April 16, 2024 at 11:20 AM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Cost Period</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-calendar-range text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Q1 2024 (Jan - Mar)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Department</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-building text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Litigation Department</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            View Details
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            View Costs
+                        </button>
+                        <button class="bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            <i class="fa-solid fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">CS-2024-0623</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Approved</span>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-purple-100 text-purple-800">
+                                    <i class="fa-solid fa-lock text-xs mr-1"></i>
+                                    Locked
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600 p-1">
+                        <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$24,850.00</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                            <div class="text-2xl font-bold text-gray-900">15</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$1,656.67</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Case #2024-1623</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Emily Chen</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Created Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">February 20, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">March 5, 2024 at 9:15 AM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Cost Period</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-calendar-range text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">February 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Department</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-building text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Corporate Affairs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            View Details
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            View Costs
+                        </button>
+                        <button class="bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            <i class="fa-solid fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-status-variants" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Status Variants — Medium Cards</h2>
+        <p class="text-sm text-gray-600">Costsheet cards displaying different status states</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">Investigation Cost Summary</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-list text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Investigation #INV-2024-0145</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$8,420.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Michael Torres</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Apr 2, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">CS-2024-0891</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-red-100 text-red-800">Rejected</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Case #2024-1891</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$52,300.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>David Park</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Mar 28, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">CS-2023-1204</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-800">Closed</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Case #2023-2204</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$156,200.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Rachel Adams</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Nov 12, 2023</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">External Legal Fees Q4</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-indigo-100 text-indigo-800">In Review</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Complaint #CMP-2024-0567</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$89,450.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Lisa Thompson</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Apr 10, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-grid-layout" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Grid Layout — Small Cards</h2>
+        <p class="text-sm text-gray-600">Dense grid view for financial dashboard panels</p>
+    </div>
+    
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0847</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$48,250.00</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0623</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$24,850.00</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Approved</span>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0891</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$52,300.00</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">Rejected</span>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0745</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$8,420.00</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0512</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$127,680.50</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 truncate">CS-2023-1204</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">$156,200.00</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800">Closed</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-list-layout" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">List Layout — Medium Cards</h2>
+        <p class="text-sm text-gray-600">Vertical list view for financial tracking panels</p>
+    </div>
+    
+    <div class="space-y-4 max-w-4xl">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="text-base font-semibold text-gray-900">CS-2024-0847</div>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-folder"></i>
+                                    Case #2024-1847
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user"></i>
+                                    Sarah Mitchell
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-gray-900">$48,250.00</div>
+                            <div class="text-xs text-gray-500">24 items</div>
+                        </div>
+                    </div>
+                    <button class="ml-4 text-gray-400 hover:text-gray-600">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="text-base font-semibold text-gray-900">Litigation Expenses 2024 Q1</div>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    Complaint #CMP-2024-0392
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user"></i>
+                                    James Rodriguez
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-gray-900">$127,680.50</div>
+                            <div class="text-xs text-gray-500">67 items</div>
+                        </div>
+                    </div>
+                    <button class="ml-4 text-gray-400 hover:text-gray-600">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="text-base font-semibold text-gray-900">CS-2024-0623</div>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Approved</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-folder"></i>
+                                    Case #2024-1623
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user"></i>
+                                    Emily Chen
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-gray-900">$24,850.00</div>
+                            <div class="text-xs text-gray-500">15 items</div>
+                        </div>
+                    </div>
+                    <button class="ml-4 text-gray-400 hover:text-gray-600">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
+            <div class="p-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="text-base font-semibold text-gray-900">Investigation Cost Summary</div>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                    Investigation #INV-2024-0145
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user"></i>
+                                    Michael Torres
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-gray-900">$8,420.00</div>
+                            <div class="text-xs text-gray-500">12 items</div>
+                        </div>
+                    </div>
+                    <button class="ml-4 text-gray-400 hover:text-gray-600">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-special-states" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Special States — Large Cards</h2>
+        <p class="text-sm text-gray-600">Costsheet cards with special indicators and restrictions</p>
+    </div>
+    
+    <div class="space-y-6">
+        <div class="bg-white border-2 border-purple-200 rounded-lg shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">CS-2024-0623</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Approved</span>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-purple-100 text-purple-800">
+                                    <i class="fa-solid fa-lock text-xs mr-1"></i>
+                                    Locked
+                                </span>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-orange-100 text-orange-800">
+                                    <i class="fa-solid fa-shield-halved text-xs mr-1"></i>
+                                    Restricted
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600 p-1">
+                        <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-5">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-lock text-purple-600 mt-0.5"></i>
+                        <div>
+                            <div class="text-sm font-medium text-purple-900 mb-1">This costsheet is locked</div>
+                            <div class="text-xs text-purple-700">No modifications can be made. Contact administrator for access.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$24,850.00</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                            <div class="text-2xl font-bold text-gray-900">15</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">$1,656.67</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Case #2024-1623</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Emily Chen</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Approved By</div>
+                            <div class="flex items-center gap-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                <span class="text-sm font-medium text-gray-900">Robert Williams</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Approval Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar-check text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">March 5, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            View Details
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                            View Costs
+                        </button>
+                        <button class="bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors" disabled>
+                            <i class="fa-solid fa-lock text-xs mr-1"></i>
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Confidential Legal Costs</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-red-100 text-red-800">
+                                    <i class="fa-solid fa-eye-slash text-xs mr-1"></i>
+                                    Confidential
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600 p-1">
+                        <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-5">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-shield-halved text-red-600 mt-0.5"></i>
+                        <div>
+                            <div class="text-sm font-medium text-red-900 mb-1">Confidential Financial Information</div>
+                            <div class="text-xs text-red-700">Access to detailed costs requires elevated permissions.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">
+                                <span class="blur-sm select-none">$XX,XXX.XX</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                            <div class="text-2xl font-bold text-gray-900">
+                                <span class="blur-sm select-none">XX</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                            <div class="text-2xl font-bold text-gray-900">
+                                <span class="blur-sm select-none">$X,XXX.XX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5 mb-6">
+                    <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900">Case #2024-XXXX</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-gray-400 text-sm"></i>
+                                <span class="text-sm font-medium text-gray-900 blur-sm select-none">XXXXXXXX</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Created Date</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">March 22, 2024</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Classification</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-tag text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-900">Confidential</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-5">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            Request Access
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors" disabled>
+                            View Costs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-empty-states" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Empty & Zero States</h2>
+        <p class="text-sm text-gray-600">Costsheet cards with no financial data or items</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">CS-2024-0945</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-800">Draft</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Case #2024-1945</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-5">
+                    <div class="text-center">
+                        <i class="fa-solid fa-inbox text-gray-300 text-3xl mb-3"></i>
+                        <div class="text-sm font-medium text-gray-900 mb-1">No cost items yet</div>
+                        <div class="text-xs text-gray-500">Add cost items to track expenses</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Alex Johnson</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Apr 15, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    Add Cost Items
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="p-5">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                            <div class="text-base font-semibold text-gray-900">Zero Balance Costsheet</div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-gray-400 text-xs"></i>
+                        <span class="text-sm font-medium text-gray-900">Complaint #CMP-2024-0678</span>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-2xl font-bold text-gray-900">$0.00</span>
+                        <span class="text-xs text-gray-500">Total Cost</span>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">All costs have been cleared</div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Patricia Lee</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Created Apr 8, 2024</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    View Costsheet
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="costsheet-comparison" class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Size Comparison</h2>
+        <p class="text-sm text-gray-600">Visual comparison of all three card sizes for the same costsheet</p>
+    </div>
+    
+    <div class="bg-white border border-gray-200 rounded-lg p-8">
+        <div class="mb-8">
+            <div class="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">Small Card</div>
+            <div class="max-w-md">
+                <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3 flex-1 min-w-0">
+                            <div class="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded flex items-center justify-center">
+                                <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm font-semibold text-gray-900 truncate">CS-2024-0847</div>
+                                <div class="text-xs text-gray-500 truncate">$48,250.00</div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 ml-3">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <div class="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">Medium Card</div>
+            <div class="max-w-lg">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <div class="p-5">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-file-invoice-dollar text-emerald-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Costsheet</div>
+                                    <div class="text-base font-semibold text-gray-900">CS-2024-0847</div>
+                                </div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Associated with</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Case #2024-1847</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-2xl font-bold text-gray-900">$48,250.00</span>
+                                <span class="text-xs text-gray-500">Total Cost</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-500 mb-4">
+                            <div class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Sarah Mitchell</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>Created Mar 15, 2024</span>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                            View Costsheet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">Large Card</div>
+            <div class="max-w-3xl">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-5">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-file-invoice-dollar text-emerald-600 text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Costsheet</div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-1">CS-2024-0847</h3>
+                                    <div class="flex items-center gap-2">
+                                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                                        <span class="text-xs text-gray-500">Last updated 2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 p-1">
+                                <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                            </button>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg p-5 mb-6">
+                            <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Financial Summary</div>
+                            <div class="grid grid-cols-3 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-600 mb-1">Total Cost</div>
+                                    <div class="text-2xl font-bold text-gray-900">$48,250.00</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-600 mb-1">Cost Items</div>
+                                    <div class="text-2xl font-bold text-gray-900">24</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-600 mb-1">Average Cost</div>
+                                    <div class="text-2xl font-bold text-gray-900">$2,010.42</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-5 mb-6">
+                            <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Costsheet Details</div>
+                            <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Parent Object</div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-folder text-gray-400 text-sm"></i>
+                                        <span class="text-sm font-medium text-gray-900">Case #2024-1847</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Assigned User</div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-5 h-5 rounded-full">
+                                        <span class="text-sm font-medium text-gray-900">Sarah Mitchell</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Created Date</div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-regular fa-calendar text-gray-400 text-sm"></i>
+                                        <span class="text-sm text-gray-900">March 15, 2024</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-1">Last Modified</div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-regular fa-clock text-gray-400 text-sm"></i>
+                                        <span class="text-sm text-gray-900">April 18, 2024 at 2:45 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-5">
+                            <div class="flex items-center gap-3">
+                                <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                                    View Details
+                                </button>
+                                <button class="flex-1 bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                                    View Costs
+                                </button>
+                                <button class="bg-white hover:bg-gray-50 text-gray-700 text-sm font-medium py-2.5 px-4 rounded-lg border border-gray-300 transition-colors">
+                                    <i class="fa-solid fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Process</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="main-container" class="max-w-7xl mx-auto px-8 py-12">
+
+    <div id="section-header" class="mb-16">
+        <h1 class="text-4xl font-bold text-gray-900 mb-3">Business Process Card Variants</h1>
+        <p class="text-lg text-gray-600 leading-relaxed">Comprehensive wireframe specifications for Business Process object cards across Small, Medium, and Large variants. These cards represent active or completed workflow processes that coordinate tasks, participants, and documents across the ArkCase system.</p>
+    </div>
+
+    <div id="section-small-card" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">5.1 Business Process — Small Card</h2>
+            <p class="text-gray-600 mb-1"><span class="font-semibold">Purpose:</span> Used in background process lists, related-object panels, and audit-style views. Optimized for quick status awareness.</p>
+            <p class="text-gray-600"><span class="font-semibold">Context:</span> Compact, single-column layout with minimal vertical height. No expandable sections.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6">
+            
+            <div id="small-card-variant-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-start gap-3 flex-1 min-w-0">
+                            <div class="flex-shrink-0 w-9 h-9 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate mb-1">Invoice Approval Workflow</h3>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Started 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800 flex-shrink-0">Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-variant-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-start gap-3 flex-1 min-w-0">
+                            <div class="flex-shrink-0 w-9 h-9 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate mb-1">Contract Review Process</h3>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Updated 4 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800 flex-shrink-0">Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-variant-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-start gap-3 flex-1 min-w-0">
+                            <div class="flex-shrink-0 w-9 h-9 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate mb-1">Employee Onboarding</h3>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Started Mar 15, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-yellow-100 text-yellow-800 flex-shrink-0">Suspended</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-variant-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                <div class="p-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-start gap-3 flex-1 min-w-0">
+                            <div class="flex-shrink-0 w-9 h-9 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate mb-1">Compliance Audit Process</h3>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Updated yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-red-100 text-red-800 flex-shrink-0">Terminated</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-gray-900 mb-3">Small Card Specifications</h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Required Elements:</strong> Business Process icon, Process Name, Process Status badge, Start/Update date</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Layout:</strong> Compact single-column, minimal vertical height</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Behavior:</strong> Entire card clickable, no participant lists, consistent visual weight</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                    <span><strong>Excluded:</strong> No expandable sections, no descriptive text, no action buttons</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="section-medium-card" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">5.2 Business Process — Medium Card</h2>
+            <p class="text-gray-600 mb-1"><span class="font-semibold">Purpose:</span> Default representation in dashboards and related views. Supports understanding of progress and ownership.</p>
+            <p class="text-gray-600"><span class="font-semibold">Context:</span> Clear vertical hierarchy with balanced spacing for readability. Includes participant summary and primary action.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div id="medium-card-variant-1" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Business Process</div>
+                                <h3 class="text-base font-semibold text-gray-900">Invoice Approval Workflow</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Start Date</div>
+                            <div class="text-sm font-medium text-gray-900">Mar 18, 2024</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                            <div class="text-sm font-medium text-gray-900">2 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Participants</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                            </div>
+                            <span class="text-xs text-gray-600 font-medium">3 participants</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors">
+                        View Process
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-variant-2" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Business Process</div>
+                                <h3 class="text-base font-semibold text-gray-900">Contract Review Process</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Completed</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Start Date</div>
+                            <div class="text-sm font-medium text-gray-900">Feb 28, 2024</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                            <div class="text-sm font-medium text-gray-900">4 hours ago</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Participants</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                            </div>
+                            <span class="text-xs text-gray-600 font-medium">2 participants</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors">
+                        View Process
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-variant-3" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Business Process</div>
+                                <h3 class="text-base font-semibold text-gray-900">Employee Onboarding</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-yellow-100 text-yellow-800">Suspended</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Start Date</div>
+                            <div class="text-sm font-medium text-gray-900">Mar 15, 2024</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                            <div class="text-sm font-medium text-gray-900">Mar 16, 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-pause-circle text-yellow-600"></i>
+                            <span class="text-xs text-yellow-800 font-medium">Process suspended pending review</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Participants</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                            </div>
+                            <span class="text-xs text-gray-600 font-medium">1 participant</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors">
+                        View Process
+                    </button>
+                </div>
+            </div>
+
+            <div id="medium-card-variant-4" class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Business Process</div>
+                                <h3 class="text-base font-semibold text-gray-900">Budget Allocation Review</h3>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Start Date</div>
+                            <div class="text-sm font-medium text-gray-900">Mar 20, 2024</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Last Updated</div>
+                            <div class="text-sm font-medium text-gray-900">1 hour ago</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 text-xs text-gray-600 flex items-center gap-2">
+                        <i class="fa-solid fa-link text-gray-400"></i>
+                        <span>Related to <span class="font-medium text-indigo-600">Case #2024-789</span></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Participants</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="User" class="w-7 h-7 rounded-full border-2 border-white">
+                            </div>
+                            <span class="text-xs text-gray-600 font-medium">3 participants</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors">
+                        View Process
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-gray-900 mb-3">Medium Card Specifications</h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Required Elements:</strong> Icon + object type label, Process Name, Status badge, Start Date, Last Updated, Participant summary (1-3 users), Primary action</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Optional Elements:</strong> Related parent object reference, suspension/termination indicator</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Layout:</strong> Clear vertical hierarchy with balanced spacing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Behavior:</strong> Grouped metadata, scannable format, limited actions</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="section-large-card" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">5.3 Business Process — Large Card</h2>
+            <p class="text-gray-600 mb-1"><span class="font-semibold">Purpose:</span> Used in inspector panels and expanded previews. Provides high-level insight into the process without workflow diagrams.</p>
+            <p class="text-gray-600"><span class="font-semibold">Context:</span> Structured card with clear visual sections. Strong hierarchy separating status, metadata, and actions.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8">
+            
+            <div id="large-card-variant-1" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Business Process</div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Invoice Approval Workflow</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Multi-stage approval process for vendor invoices exceeding $5,000. Includes finance review, manager approval, and final sign-off from department head before payment processing.</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">Active</span>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200 bg-gray-50">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Process Metadata</h4>
+                    <div class="grid grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Start Date</div>
+                            <div class="text-sm font-semibold text-gray-900">Mar 18, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">10:34 AM</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Last Updated</div>
+                            <div class="text-sm font-semibold text-gray-900">Mar 20, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">2 days ago</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Current State</div>
+                            <div class="text-sm font-semibold text-gray-900">Manager Review</div>
+                            <div class="text-xs text-gray-500 mt-0.5">Step 2 of 4</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Initiated By</div>
+                            <div class="text-sm font-semibold text-gray-900">Sarah Chen</div>
+                            <div class="text-xs text-gray-500 mt-0.5">Finance Team</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Participants</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">Sarah Chen</div>
+                                    <div class="text-xs text-gray-500">Process Initiator</div>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500">Finance Team</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">Michael Rodriguez</div>
+                                    <div class="text-xs text-gray-500">Current Reviewer</div>
+                                </div>
+                            </div>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Active</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">David Park</div>
+                                    <div class="text-xs text-gray-500">Pending Approval</div>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500">Department Head</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Related Objects</h4>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-tasks text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">8</div>
+                                <div class="text-xs text-gray-600">Tasks</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-alt text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">12</div>
+                                <div class="text-xs text-gray-600">Documents</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">23</div>
+                                <div class="text-xs text-gray-600">Notes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gray-50">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Process
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Related Items
+                        </button>
+                        <button class="w-10 h-10 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-variant-2" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Business Process</div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Contract Review Process</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Comprehensive legal review workflow for vendor contracts. Includes initial screening, legal department review, risk assessment, and executive approval before contract execution and vendor notification.</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Completed</span>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200 bg-gray-50">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Process Metadata</h4>
+                    <div class="grid grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Start Date</div>
+                            <div class="text-sm font-semibold text-gray-900">Feb 28, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">2:15 PM</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Last Updated</div>
+                            <div class="text-sm font-semibold text-gray-900">Mar 20, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">4 hours ago</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Current State</div>
+                            <div class="text-sm font-semibold text-gray-900">Process Complete</div>
+                            <div class="text-xs text-gray-500 mt-0.5">All steps finished</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Initiated By</div>
+                            <div class="text-sm font-semibold text-gray-900">Jennifer Walsh</div>
+                            <div class="text-xs text-gray-500 mt-0.5">Legal Department</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Participants</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">Jennifer Walsh</div>
+                                    <div class="text-xs text-gray-500">Process Initiator</div>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500">Legal Department</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">Robert Martinez</div>
+                                    <div class="text-xs text-gray-500">Legal Reviewer</div>
+                                </div>
+                            </div>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Related Objects</h4>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-tasks text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">5</div>
+                                <div class="text-xs text-gray-600">Tasks</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-alt text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">18</div>
+                                <div class="text-xs text-gray-600">Documents</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">14</div>
+                                <div class="text-xs text-gray-600">Notes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gray-50">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Process
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Related Items
+                        </button>
+                        <button class="w-10 h-10 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-variant-3" class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-indigo-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Business Process</div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Employee Onboarding Workflow</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Structured onboarding process for new employees including HR documentation, IT setup, department orientation, training schedule coordination, and 30-day check-in milestone tracking.</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-yellow-100 text-yellow-800">Suspended</span>
+                    </div>
+
+                    <div class="mt-4 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-pause-circle text-yellow-600 text-lg mt-0.5"></i>
+                            <div>
+                                <div class="text-sm font-semibold text-yellow-900 mb-1">Process Suspended</div>
+                                <p class="text-xs text-yellow-800">This process has been temporarily suspended pending additional documentation from the candidate. Process will resume upon document submission.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200 bg-gray-50">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Process Metadata</h4>
+                    <div class="grid grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Start Date</div>
+                            <div class="text-sm font-semibold text-gray-900">Mar 15, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">9:00 AM</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Last Updated</div>
+                            <div class="text-sm font-semibold text-gray-900">Mar 16, 2024</div>
+                            <div class="text-xs text-gray-500 mt-0.5">1 day ago</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Current State</div>
+                            <div class="text-sm font-semibold text-gray-900">Document Collection</div>
+                            <div class="text-xs text-gray-500 mt-0.5">Step 1 of 6</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1.5">Initiated By</div>
+                            <div class="text-sm font-semibold text-gray-900">System</div>
+                            <div class="text-xs text-gray-500 mt-0.5">HR Portal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Participants</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-9 h-9 rounded-full">
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-900">Emma Thompson</div>
+                                    <div class="text-xs text-gray-500">HR Coordinator</div>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500">Human Resources</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">Related Objects</h4>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-tasks text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">3</div>
+                                <div class="text-xs text-gray-600">Tasks</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-file-alt text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">6</div>
+                                <div class="text-xs text-gray-600">Documents</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comment text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-gray-900">2</div>
+                                <div class="text-xs text-gray-600">Notes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gray-50">
+                    <div class="flex items-center gap-3">
+                        <button class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Process
+                        </button>
+                        <button class="flex-1 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 text-sm font-semibold py-2.5 px-4 rounded-lg transition-colors">
+                            View Related Items
+                        </button>
+                        <button class="w-10 h-10 bg-white hover:bg-gray-50 border border-gray-300 text-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 bg-gray-100 border border-gray-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-gray-900 mb-3">Large Card Specifications</h3>
+            <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Required Elements:</strong> Icon + object type label, Process Name (prominent), Status badge, Process summary (clamped), Metadata grid (Start Date, Last Updated, Current State, Initiating User), Expanded participant section, Related object counts, Action bar with multiple actions</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Layout:</strong> Structured card with clear visual sections, strong hierarchy separating status, metadata, and actions</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                    <span><strong>Behavior:</strong> Summary text truncated, related objects as counts/icons, permission-aware actions, non-destructive operations</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                    <span><strong>Excluded:</strong> No workflow diagrams, no timelines, no BPMN visualizations</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="section-consistency-rules" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Cross-Variant Consistency Rules</h2>
+            <p class="text-gray-600">Foundational principles ensuring visual and behavioral coherence across all Business Process card variants.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div id="consistency-rule-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-palette text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-1">Visual Alignment</h3>
+                        <p class="text-sm text-gray-600">Business Process cards must align visually with Task and Case-related cards, maintaining consistent spacing, typography, and color schemes across the entire ArkCase design system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="consistency-rule-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-tags text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-1">Status Consistency</h3>
+                        <p class="text-sm text-gray-600">Status placement and styling should be consistent across all card sizes. Status badges must always appear in the top-right corner with standardized colors and typography.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="consistency-rule-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-layer-group text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-1">Gradual Complexity Scaling</h3>
+                        <p class="text-sm text-gray-600">Complexity should scale gradually from Small → Medium → Large variants. Each size adds appropriate detail without overwhelming the user or breaking visual hierarchy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="consistency-rule-4" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-clone text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-1">Unified Component Identity</h3>
+                        <p class="text-sm text-gray-600">All variants should feel like scaled versions of the same component. Users should immediately recognize a Business Process card regardless of its size or context.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-design-constraints" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Constraints & Boundaries</h2>
+            <p class="text-gray-600">Critical limitations and scope boundaries that define what Business Process cards should and should not include.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="p-6 border-b border-gray-200 bg-red-50">
+                <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-ban text-red-600"></i>
+                    <span>Prohibited Elements</span>
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                        <span>Do not design BPMN diagrams or task flow visualizations</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                        <span>Do not invent workflow states or metrics not provided by the system</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                        <span>Do not assume administrative workflow access or permissions</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-times text-red-600 mt-0.5"></i>
+                        <span>Do not include workflow editing or modification capabilities</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-6 bg-green-50">
+                <h3 class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-check-circle text-green-600"></i>
+                    <span>Design Focus Areas</span>
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                        <span>Focus strictly on status, context, and presentation</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                        <span>Prioritize clear communication of process state and progress</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                        <span>Emphasize participant visibility and accountability</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                        <span>Provide quick access to related objects and context</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-status-reference" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Process Status Reference Guide</h2>
+            <p class="text-gray-600">Standardized status indicators and their visual representations across all Business Process card variants.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div id="status-active" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">Active</span>
+                    <i class="fa-solid fa-play-circle text-green-600 text-xl"></i>
+                </div>
+                <h4 class="text-sm font-semibold text-gray-900 mb-2">Active Process</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Process is currently running with tasks in progress. Participants are actively working on assigned activities.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <div class="text-xs text-gray-500">Color: <span class="font-semibold">Green (#10B981)</span></div>
+                </div>
+            </div>
+
+            <div id="status-completed" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Completed</span>
+                    <i class="fa-solid fa-check-circle text-blue-600 text-xl"></i>
+                </div>
+                <h4 class="text-sm font-semibold text-gray-900 mb-2">Completed Process</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Process has successfully finished all required tasks and reached its final state. No further action required.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <div class="text-xs text-gray-500">Color: <span class="font-semibold">Blue (#3B82F6)</span></div>
+                </div>
+            </div>
+
+            <div id="status-suspended" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-yellow-100 text-yellow-800">Suspended</span>
+                    <i class="fa-solid fa-pause-circle text-yellow-600 text-xl"></i>
+                </div>
+                <h4 class="text-sm font-semibold text-gray-900 mb-2">Suspended Process</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Process is temporarily paused pending external input, approval, or resolution of blocking issues. Can be resumed.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <div class="text-xs text-gray-500">Color: <span class="font-semibold">Yellow (#F59E0B)</span></div>
+                </div>
+            </div>
+
+            <div id="status-terminated" class="bg-white border border-gray-200 rounded-lg p-5">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">Terminated</span>
+                    <i class="fa-solid fa-stop-circle text-red-600 text-xl"></i>
+                </div>
+                <h4 class="text-sm font-semibold text-gray-900 mb-2">Terminated Process</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Process was manually stopped or automatically terminated due to errors, policy violations, or administrative action.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <div class="text-xs text-gray-500">Color: <span class="font-semibold">Red (#EF4444)</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-interaction-patterns" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction Patterns & Behaviors</h2>
+            <p class="text-gray-600">Standardized interaction models and behavioral expectations for Business Process cards across different contexts.</p>
+        </div>
+
+        <div class="space-y-6">
+            
+            <div id="interaction-hover" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-hand-pointer text-indigo-600"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Hover States</h3>
+                        <p class="text-sm text-gray-600 mb-3">All clickable cards should provide visual feedback on hover including subtle border color changes and shadow elevation. Non-interactive cards (Large variant with action buttons) should not change on hover.</p>
+                        <div class="bg-gray-50 rounded-lg p-3 text-xs font-mono text-gray-700">
+                            hover:border-gray-300 hover:shadow-sm transition-all
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interaction-click" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-mouse-pointer text-blue-600"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Click Behavior</h3>
+                        <p class="text-sm text-gray-600 mb-3">Small and Medium cards: entire card is clickable and navigates to process detail view. Large cards: provide explicit action buttons for navigation and related operations.</p>
+                        <div class="flex gap-2 mt-3">
+                            <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Small: Full Card Click</span>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Medium: Full Card Click</span>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-purple-100 text-purple-800">Large: Button Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interaction-keyboard" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-keyboard text-green-600"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Keyboard Navigation</h3>
+                        <p class="text-sm text-gray-600 mb-3">All interactive elements must be keyboard accessible. Cards should be focusable via Tab key with visible focus indicators. Enter/Space activates primary action.</p>
+                        <div class="grid grid-cols-3 gap-2 mt-3">
+                            <div class="bg-gray-50 rounded p-2 text-center">
+                                <div class="text-xs font-semibold text-gray-900 mb-1">Tab</div>
+                                <div class="text-xs text-gray-600">Focus card</div>
+                            </div>
+                            <div class="bg-gray-50 rounded p-2 text-center">
+                                <div class="text-xs font-semibold text-gray-900 mb-1">Enter/Space</div>
+                                <div class="text-xs text-gray-600">Activate</div>
+                            </div>
+                            <div class="bg-gray-50 rounded p-2 text-center">
+                                <div class="text-xs font-semibold text-gray-900 mb-1">Shift+Tab</div>
+                                <div class="text-xs text-gray-600">Previous</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interaction-accessibility" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-universal-access text-purple-600"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Accessibility Requirements</h3>
+                        <p class="text-sm text-gray-600 mb-3">All cards must include proper ARIA labels, semantic HTML, sufficient color contrast (WCAG AA minimum), and screen reader compatible content structure.</p>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                <span>ARIA labels for all interactive elements</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                <span>Minimum 4.5:1 contrast ratio for text</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-600 mt-0.5"></i>
+                                <span>Status communicated via text, not color alone</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-responsive-behavior" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior Guidelines</h2>
+            <p class="text-gray-600">Adaptive layout strategies for Business Process cards across different viewport sizes and device contexts.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Card Variant</th>
+                            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Desktop (≥1024px)</th>
+                            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Tablet (768-1023px)</th>
+                            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Mobile (≤767px)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Small Card</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Full width in list context</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Full width, slightly larger padding</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Full width, touch-optimized targets</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Medium Card</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">2-column grid layout</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Single column layout</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Single column, stacked metadata</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Large Card</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Full width with 4-column metadata grid</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">2-column metadata grid</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Single column, all sections stacked</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-info-circle text-blue-600 text-lg mt-0.5"></i>
+                <div>
+                    <h4 class="text-sm font-semibold text-blue-900 mb-2">Responsive Design Note</h4>
+                    <p class="text-sm text-blue-800">While these wireframes are optimized for desktop contexts, the underlying component architecture should support responsive adaptation. Touch targets should be minimum 44x44px on mobile devices, and text should remain legible at all viewport sizes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-implementation-notes" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes for Developers</h2>
+            <p class="text-gray-600">Technical guidance and considerations for implementing Business Process card components in the ArkCase system.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div id="implementation-data-structure" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-database text-indigo-600"></i>
+                    <span>Data Structure Requirements</span>
+                </h3>
+                <div class="bg-gray-50 rounded-lg p-4 font-mono text-xs text-gray-800 overflow-x-auto">
+<pre>{
+  "processId": "string",
+  "processName": "string",
+  "processType": "string",
+  "status": "active|completed|suspended|terminated",
+  "startDate": "ISO8601",
+  "lastUpdated": "ISO8601",
+  "currentState": "string",
+  "initiatedBy": {
+    "userId": "string",
+    "userName": "string",
+    "department": "string"
+  },
+  "participants": [
+    {
+      "userId": "string",
+      "userName": "string",
+      "role": "string",
+      "status": "active|completed"
+    }
+  ],
+  "relatedObjects": {
+    "tasks": number,
+    "documents": number,
+    "notes": number
+  },
+  "parentObject": {
+    "type": "string",
+    "id": "string",
+    "name": "string"
+  },
+  "description": "string"
+}</pre>
+                </div>
+            </div>
+
+            <div id="implementation-permissions" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-green-600"></i>
+                    <span>Permission-Aware Rendering</span>
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-lock text-gray-400 mt-0.5"></i>
+                        <span>Check user permissions before rendering action buttons</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-lock text-gray-400 mt-0.5"></i>
+                        <span>Redact sensitive participant information based on access level</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-lock text-gray-400 mt-0.5"></i>
+                        <span>Hide related object counts if user lacks view permissions</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-lock text-gray-400 mt-0.5"></i>
+                        <span>Disable navigation if user cannot access process details</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-lock text-gray-400 mt-0.5"></i>
+                        <span>Show restricted indicators when process data is partially hidden</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="implementation-state-management" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-code-branch text-blue-600"></i>
+                    <span>State Management</span>
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-dot text-blue-600 mt-0.5"></i>
+                        <span>Implement optimistic UI updates for status changes</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-dot text-blue-600 mt-0.5"></i>
+                        <span>Cache process data to reduce API calls on re-renders</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-dot text-blue-600 mt-0.5"></i>
+                        <span>Subscribe to real-time updates for active processes</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-dot text-blue-600 mt-0.5"></i>
+                        <span>Handle loading and error states gracefully</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="implementation-performance" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-gauge-high text-purple-600"></i>
+                    <span>Performance Optimization</span>
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-bolt text-purple-600 mt-0.5"></i>
+                        <span>Lazy load participant avatars and related object counts</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-bolt text-purple-600 mt-0.5"></i>
+                        <span>Use virtual scrolling for long lists of process cards</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-bolt text-purple-600 mt-0.5"></i>
+                        <span>Implement pagination or infinite scroll for large datasets</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-bolt text-purple-600 mt-0.5"></i>
+                        <span>Debounce hover effects to prevent excessive re-renders</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-usage-contexts" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Contexts & Placement</h2>
+            <p class="text-gray-600">Common scenarios and UI contexts where Business Process cards appear within the ArkCase application.</p>
+        </div>
+
+        <div class="space-y-6">
+            
+            <div id="context-dashboard" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-th-large text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Dashboard Views</h3>
+                        <p class="text-sm text-gray-600">Primary location for Medium cards in grid layouts showing active processes assigned to the user or their team.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Recommended Configuration</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-indigo-100 text-indigo-800">Medium Card</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">2-3 Column Grid</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Sortable</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Filterable by Status</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="context-sidepanel" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-sidebar text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Related Process Panels</h3>
+                        <p class="text-sm text-gray-600">Small cards in sidebar panels showing processes related to the currently viewed case, document, or task.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Recommended Configuration</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-100 text-blue-800">Small Card</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Vertical Stack</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Max 5 Items</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Show More Link</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="context-inspector" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-expand text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Inspector Panels</h3>
+                        <p class="text-sm text-gray-600">Large cards in dedicated inspector views providing comprehensive process details without navigation.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Recommended Configuration</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-purple-100 text-purple-800">Large Card</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Full Width</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Scrollable Content</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Multiple Actions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="context-search" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-search text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Search Results</h3>
+                        <p class="text-sm text-gray-600">Medium cards in search result lists with highlighting for matched terms and relevance indicators.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Recommended Configuration</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-green-100 text-green-800">Medium Card</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Vertical List</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Highlight Matches</span>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-200 text-gray-800">Relevance Score</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-summary" class="mb-12">
+        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 border border-indigo-200 rounded-lg p-8">
+            <div class="flex items-start gap-4">
+                <div class="w-14 h-14 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-check-double text-white text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Design System Summary</h2>
+                    <p class="text-base text-gray-700 leading-relaxed mb-4">
+                        These Business Process card wireframes establish a comprehensive, scalable component system for representing workflow processes across the ArkCase platform. Each variant—Small, Medium, and Large—serves distinct use cases while maintaining visual consistency and behavioral predictability.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-white rounded-lg p-4 border border-indigo-200">
+                            <div class="text-2xl font-bold text-indigo-600 mb-1">3</div>
+                            <div class="text-sm text-gray-600">Card Variants</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-indigo-200">
+                            <div class="text-2xl font-bold text-indigo-600 mb-1">4</div>
+                            <div class="text-sm text-gray-600">Process States</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-indigo-200">
+                            <div class="text-2xl font-bold text-indigo-600 mb-1">100%</div>
+                            <div class="text-sm text-gray-600">Accessible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object History Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        'arkcase': {
+                            'primary': '#2563eb',
+                            'secondary': '#64748b',
+                            'accent': '#0ea5e9',
+                            'success': '#10b981',
+                            'warning': '#f59e0b',
+                            'danger': '#ef4444',
+                            'muted': '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<div id="main-container" class="max-w-7xl mx-auto px-6 py-12">
+
+    <section id="section-header" class="mb-16">
+        <div class="flex items-center mb-3">
+            <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-2xl mr-3"></i>
+            <h1 class="text-3xl font-bold text-gray-900">Object History Card Wireframes</h1>
+        </div>
+        <p class="text-gray-600 text-lg max-w-4xl">Enterprise-grade card components for displaying historical snapshots and state changes of business objects in ArkCase. Each variant optimized for specific use cases and display contexts.</p>
+    </section>
+
+    <section id="section-small-cards" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">22.1 — Small Card Variant</h2>
+            <p class="text-gray-600">Compact representation for timelines and dense history feeds. Optimized for chronological scanning with minimal vertical height.</p>
+        </div>
+
+        <div id="small-cards-grid" class="space-y-4 max-w-2xl">
+            
+            <div id="small-card-1" class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                <div class="px-4 py-3 flex items-center gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="text-sm font-semibold text-gray-900 truncate">Status changed to In Progress</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i class="fa-solid fa-user text-gray-400"></i>
+                                Sarah Chen
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="fa-regular fa-clock text-gray-400"></i>
+                                2 hours ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-2" class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                <div class="px-4 py-3 flex items-center gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                            <i class="fa-solid fa-clock-rotate-left text-green-600 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="text-sm font-semibold text-gray-900 truncate">Case created</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i class="fa-solid fa-user text-gray-400"></i>
+                                System
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="fa-regular fa-clock text-gray-400"></i>
+                                Jan 15, 2024 09:23 AM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-3" class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                <div class="px-4 py-3 flex items-center gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                            <i class="fa-solid fa-clock-rotate-left text-purple-600 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="text-sm font-semibold text-gray-900 truncate">Priority updated to High</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i class="fa-solid fa-user text-gray-400"></i>
+                                Michael Torres
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="fa-regular fa-clock text-gray-400"></i>
+                                Yesterday 3:45 PM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-4" class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                <div class="px-4 py-3 flex items-center gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
+                            <i class="fa-solid fa-clock-rotate-left text-amber-600 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="text-sm font-semibold text-gray-900 truncate">Assignee changed</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i class="fa-solid fa-user text-gray-400"></i>
+                                Jennifer Park
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="fa-regular fa-clock text-gray-400"></i>
+                                3 days ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-card-5" class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                <div class="px-4 py-3 flex items-center gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center">
+                            <i class="fa-solid fa-clock-rotate-left text-red-600 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="text-sm font-semibold text-gray-900 truncate">Document removed</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i class="fa-solid fa-user text-gray-400"></i>
+                                David Kim
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="fa-regular fa-clock text-gray-400"></i>
+                                Jan 10, 2024 11:20 AM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-medium-cards" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">22.2 — Medium Card Variant</h2>
+            <p class="text-gray-600">Default representation in history panels. Balances clarity with object context while maintaining moderate spacing for readability.</p>
+        </div>
+
+        <div id="medium-cards-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-arkcase-primary"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                <h3 class="text-base font-semibold text-gray-900">Status Changed</h3>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Status</span>
+                    </div>
+                    
+                    <div class="mb-4 text-sm text-gray-700">
+                        Status updated from <span class="font-medium">Pending Review</span> to <span class="font-medium text-arkcase-primary">In Progress</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Changed By</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Sarah Chen</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Timestamp</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Affected Object</div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-folder text-gray-400"></i>
+                            <span class="font-medium text-gray-700">Case</span>
+                            <span class="text-gray-400">·</span>
+                            <span class="text-gray-900">CASE-2024-1547</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 px-4 py-2 bg-arkcase-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                            View Snapshot
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-2" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                <h3 class="text-base font-semibold text-gray-900">Object Created</h3>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full">Create</span>
+                    </div>
+                    
+                    <div class="mb-4 text-sm text-gray-700">
+                        New case created with initial status <span class="font-medium">Draft</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Changed By</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-robot text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">System</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Timestamp</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Jan 15, 2024 09:23 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Affected Object</div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-folder text-gray-400"></i>
+                            <span class="font-medium text-gray-700">Case</span>
+                            <span class="text-gray-400">·</span>
+                            <span class="text-gray-900">CASE-2024-1547</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 px-4 py-2 bg-arkcase-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                            View Snapshot
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-3" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                <h3 class="text-base font-semibold text-gray-900">Priority Updated</h3>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full">Metadata</span>
+                    </div>
+                    
+                    <div class="mb-4 text-sm text-gray-700">
+                        Priority changed from <span class="font-medium">Medium</span> to <span class="font-medium text-red-600">High</span> due to escalation
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Changed By</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Michael Torres</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Timestamp</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Yesterday 3:45 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Affected Object</div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-folder text-gray-400"></i>
+                            <span class="font-medium text-gray-700">Case</span>
+                            <span class="text-gray-400">·</span>
+                            <span class="text-gray-900">CASE-2024-1547</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 px-4 py-2 bg-arkcase-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                            View Snapshot
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medium-card-4" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="p-5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                <h3 class="text-base font-semibold text-gray-900">Assignee Changed</h3>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full">Association</span>
+                    </div>
+                    
+                    <div class="mb-4 text-sm text-gray-700">
+                        Case reassigned from <span class="font-medium">David Kim</span> to <span class="font-medium">Jennifer Park</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100">
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Changed By</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">Jennifer Park</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-1">Timestamp</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-regular fa-clock text-gray-400 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-500 mb-2">Affected Object</div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-folder text-gray-400"></i>
+                            <span class="font-medium text-gray-700">Case</span>
+                            <span class="text-gray-400">·</span>
+                            <span class="text-gray-900">CASE-2024-1547</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 px-4 py-2 bg-arkcase-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                            View Snapshot
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-large-cards" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">22.3 — Large Card Variant</h2>
+            <p class="text-gray-600">Detailed representation for inspector panels and expanded previews. Provides comprehensive historical context without exposing raw snapshots.</p>
+        </div>
+
+        <div id="large-cards-grid" class="space-y-6">
+            
+            <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg shadow-md">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Object History</div>
+                                <h3 class="text-xl font-bold text-gray-900">Status Changed</h3>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-sm font-semibold rounded-lg">Status</span>
+                    </div>
+                    
+                    <div class="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <div class="text-sm text-gray-700 leading-relaxed">
+                            Status updated from <span class="font-semibold text-gray-900">Pending Review</span> to <span class="font-semibold text-arkcase-primary">In Progress</span>. Case moved forward after preliminary review completed. Investigation phase initiated with full team assignment.
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Change Metadata</div>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Changed By</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Sarah Chen</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Timestamp</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Category</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Status</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Type</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-pen text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Update</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Affected Object</div>
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-folder text-arkcase-primary text-lg"></i>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-0.5">Object Type</div>
+                                    <div class="text-sm font-semibold text-gray-900">Case</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-600">Reference:</span>
+                                <span class="text-sm font-semibold text-gray-900">CASE-2024-1547</span>
+                                <span class="text-gray-400">·</span>
+                                <span class="text-sm text-gray-700">Data Breach Investigation Q1 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button class="flex-1 px-5 py-2.5 bg-arkcase-primary text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-eye"></i>
+                            View Object
+                        </button>
+                        <button class="px-5 py-2.5 bg-gray-100 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg shadow-md">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-green-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Object History</div>
+                                <h3 class="text-xl font-bold text-gray-900">Object Created</h3>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1.5 bg-green-50 text-green-700 text-sm font-semibold rounded-lg">Create</span>
+                    </div>
+                    
+                    <div class="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <div class="text-sm text-gray-700 leading-relaxed">
+                            New case created with initial status <span class="font-semibold text-gray-900">Draft</span>. Case originated from automated incident detection system. Initial classification set to P2 - High Priority with standard investigation workflow assigned.
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Change Metadata</div>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Changed By</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-robot text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">System</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Timestamp</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Jan 15, 2024 09:23 AM</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Category</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Creation</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Type</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-plus text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Create</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Affected Object</div>
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-folder text-green-600 text-lg"></i>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-0.5">Object Type</div>
+                                    <div class="text-sm font-semibold text-gray-900">Case</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-600">Reference:</span>
+                                <span class="text-sm font-semibold text-gray-900">CASE-2024-1547</span>
+                                <span class="text-gray-400">·</span>
+                                <span class="text-sm text-gray-700">Data Breach Investigation Q1 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button class="flex-1 px-5 py-2.5 bg-arkcase-primary text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-eye"></i>
+                            View Object
+                        </button>
+                        <button class="px-5 py-2.5 bg-gray-100 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="large-card-3" class="bg-white border border-gray-200 rounded-lg shadow-md">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left text-purple-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Object History</div>
+                                <h3 class="text-xl font-bold text-gray-900">Priority Updated</h3>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 text-sm font-semibold rounded-lg">Metadata</span>
+                    </div>
+                    
+                    <div class="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <div class="text-sm text-gray-700 leading-relaxed">
+                            Priority changed from <span class="font-semibold text-gray-900">Medium</span> to <span class="font-semibold text-red-600">High</span> due to escalation. Additional indicators of potential data exposure identified during initial analysis. Supervisor authorization obtained for priority escalation and resource allocation.
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Change Metadata</div>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Changed By</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Michael Torres</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Timestamp</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Yesterday 3:45 PM</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Category</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-tag text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Metadata</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="text-xs text-gray-500 mb-1.5">Change Type</div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-pen text-gray-400"></i>
+                                    <span class="text-sm font-semibold text-gray-900">Update</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Affected Object</div>
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-folder text-purple-600 text-lg"></i>
+                                <div>
+                                    <div class="text-xs text-gray-500 mb-0.5">Object Type</div>
+                                    <div class="text-sm font-semibold text-gray-900">Case</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-600">Reference:</span>
+                                <span class="text-sm font-semibold text-gray-900">CASE-2024-1547</span>
+                                <span class="text-gray-400">·</span>
+                                <span class="text-sm text-gray-700">Data Breach Investigation Q1 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button class="flex-1 px-5 py-2.5 bg-arkcase-primary text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-eye"></i>
+                            View Object
+                        </button>
+                        <button class="px-5 py-2.5 bg-gray-100 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-timeline-integration" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Timeline Integration Example</h2>
+            <p class="text-gray-600">Demonstration of how small Object History cards integrate within a chronological timeline view.</p>
+        </div>
+
+        <div id="timeline-container" class="max-w-3xl">
+            <div class="relative">
+                <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                
+                <div class="relative pl-12 pb-8">
+                    <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-green-500 border-4 border-white shadow"></div>
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">January 15, 2024</div>
+                    <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-green-600 text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Case created</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-500">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-robot text-gray-400"></i>
+                                        System
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        09:23 AM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 pb-8">
+                    <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-blue-500 border-4 border-white shadow"></div>
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">January 15, 2024</div>
+                    <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-amber-600 text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Initial assignee set</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-500">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-user text-gray-400"></i>
+                                        David Kim
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        09:25 AM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 pb-8">
+                    <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-purple-500 border-4 border-white shadow"></div>
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">January 16, 2024</div>
+                    <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-purple-600 text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Priority updated to High</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-500">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-user text-gray-400"></i>
+                                        Michael Torres
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        3:45 PM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 pb-8">
+                    <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow"></div>
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">January 17, 2024</div>
+                    <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-amber-600 text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Assignee changed</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-500">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-user text-gray-400"></i>
+                                        Jennifer Park
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        10:15 AM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-12">
+                    <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-blue-500 border-4 border-white shadow"></div>
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">January 20, 2024</div>
+                    <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Status changed to In Progress</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-500">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-user text-gray-400"></i>
+                                        Sarah Chen
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-gray-400"></i>
+                                        2 hours ago
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section-change-types" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Change Type Variations</h2>
+            <p class="text-gray-600">Different visual treatments for various types of object changes to enhance scannability and context.</p>
+        </div>
+
+        <div id="change-types-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            
+            <div id="change-type-1" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                        <i class="fa-solid fa-plus text-green-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Create</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Initial object creation with default values and system initialization.</p>
+            </div>
+
+            <div id="change-type-2" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                        <i class="fa-solid fa-pen text-blue-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Update</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Modification of existing field values or object properties.</p>
+            </div>
+
+            <div id="change-type-3" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                        <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Status Change</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Workflow state transition indicating process progression.</p>
+            </div>
+
+            <div id="change-type-4" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
+                        <i class="fa-solid fa-link text-amber-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Association</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Relationship created or modified with another object.</p>
+            </div>
+
+            <div id="change-type-5" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
+                        <i class="fa-solid fa-trash text-red-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Delete</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Object or associated data removed from the system.</p>
+            </div>
+
+            <div id="change-type-6" class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-0.5">Change Type</div>
+                        <div class="text-sm font-semibold text-gray-900">Permission</div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600">Access control or security settings modified.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-actor-types" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Actor Representation</h2>
+            <p class="text-gray-600">Visual distinction between different types of actors who can initiate object changes.</p>
+        </div>
+
+        <div id="actor-types-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+            <div id="actor-type-1" class="bg-white border border-gray-200 rounded-lg shadow-sm p-5">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-user text-arkcase-primary text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">User</div>
+                    <div class="text-xs text-gray-600">Manual action by authenticated staff member</div>
+                </div>
+            </div>
+
+            <div id="actor-type-2" class="bg-white border border-gray-200 rounded-lg shadow-sm p-5">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-robot text-gray-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">System</div>
+                    <div class="text-xs text-gray-600">Automated process or scheduled task</div>
+                </div>
+            </div>
+
+            <div id="actor-type-3" class="bg-white border border-gray-200 rounded-lg shadow-sm p-5">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-gears text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">Integration</div>
+                    <div class="text-xs text-gray-600">External system or API connection</div>
+                </div>
+            </div>
+
+            <div id="actor-type-4" class="bg-white border border-gray-200 rounded-lg shadow-sm p-5">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-bolt text-amber-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">Workflow</div>
+                    <div class="text-xs text-gray-600">Business process automation trigger</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-metadata-display" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Metadata Display Patterns</h2>
+            <p class="text-gray-600">Consistent approaches for displaying change metadata across all card variants.</p>
+        </div>
+
+        <div id="metadata-patterns" class="space-y-6 max-w-4xl">
+            
+            <div id="metadata-pattern-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Inline Metadata (Small Cards)</div>
+                <div class="flex items-center gap-4 text-xs text-gray-500">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user text-gray-400"></i>
+                        Sarah Chen
+                    </span>
+                    <span class="text-gray-300">|</span>
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-clock text-gray-400"></i>
+                        2 hours ago
+                    </span>
+                    <span class="text-gray-300">|</span>
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-tag text-gray-400"></i>
+                        Status
+                    </span>
+                </div>
+            </div>
+
+            <div id="metadata-pattern-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Grid Metadata (Medium Cards)</div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <div class="text-xs text-gray-500 mb-1.5">Changed By</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-900">Sarah Chen</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-1.5">Timestamp</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-clock text-gray-400"></i>
+                            <span class="text-sm font-medium text-gray-900">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="metadata-pattern-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Card Grid Metadata (Large Cards)</div>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="p-3 bg-gray-50 rounded-lg">
+                        <div class="text-xs text-gray-500 mb-1.5">Changed By</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user text-gray-400"></i>
+                            <span class="text-sm font-semibold text-gray-900">Sarah Chen</span>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-lg">
+                        <div class="text-xs text-gray-500 mb-1.5">Timestamp</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-clock text-gray-400"></i>
+                            <span class="text-sm font-semibold text-gray-900">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-lg">
+                        <div class="text-xs text-gray-500 mb-1.5">Change Category</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-tag text-gray-400"></i>
+                            <span class="text-sm font-semibold text-gray-900">Status</span>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-lg">
+                        <div class="text-xs text-gray-500 mb-1.5">Change Type</div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-pen text-gray-400"></i>
+                            <span class="text-sm font-semibold text-gray-900">Update</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-context-states" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Contextual States</h2>
+            <p class="text-gray-600">Different visual states for Object History cards based on context and interaction.</p>
+        </div>
+
+        <div id="context-states-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl">
+            
+            <div id="state-default" class="space-y-3">
+                <div class="text-sm font-semibold text-gray-700">Default State</div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <div class="px-4 py-3 flex items-center gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span class="text-sm font-semibold text-gray-900 truncate">Status changed to In Progress</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user text-gray-400"></i>
+                                    Sarah Chen
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    2 hours ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="state-hover" class="space-y-3">
+                <div class="text-sm font-semibold text-gray-700">Hover State</div>
+                <div class="bg-white border border-blue-300 rounded-lg shadow-md cursor-pointer">
+                    <div class="px-4 py-3 flex items-center gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span class="text-sm font-semibold text-gray-900 truncate">Status changed to In Progress</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user text-gray-400"></i>
+                                    Sarah Chen
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    2 hours ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="state-selected" class="space-y-3">
+                <div class="text-sm font-semibold text-gray-700">Selected State</div>
+                <div class="bg-blue-50 border border-blue-400 rounded-lg shadow-sm">
+                    <div class="px-4 py-3 flex items-center gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center">
+                                <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span class="text-sm font-semibold text-gray-900 truncate">Status changed to In Progress</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-600">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-user text-gray-500"></i>
+                                    Sarah Chen
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-regular fa-clock text-gray-500"></i>
+                                    2 hours ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="state-disabled" class="space-y-3">
+                <div class="text-sm font-semibold text-gray-700">Disabled State (No Permission)</div>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg opacity-60 cursor-not-allowed">
+                    <div class="px-4 py-3 flex items-center gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                                <i class="fa-solid fa-clock-rotate-left text-gray-400 text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span class="text-sm font-semibold text-gray-500 truncate">Status changed to In Progress</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-gray-400">
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-solid fa-lock text-gray-400"></i>
+                                    Restricted
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa-regular fa-clock text-gray-400"></i>
+                                    2 hours ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-object-reference" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Affected Object Reference Patterns</h2>
+            <p class="text-gray-600">Consistent approaches for displaying which object was affected by the historical change.</p>
+        </div>
+
+        <div id="object-reference-patterns" class="space-y-6 max-w-4xl">
+            
+            <div id="object-ref-1" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Compact Reference (Medium Cards)</div>
+                <div class="flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-folder text-gray-400"></i>
+                    <span class="font-medium text-gray-700">Case</span>
+                    <span class="text-gray-400">·</span>
+                    <span class="text-gray-900">CASE-2024-1547</span>
+                </div>
+            </div>
+
+            <div id="object-ref-2" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Extended Reference (Large Cards)</div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-folder text-arkcase-primary text-lg"></i>
+                        <div>
+                            <div class="text-xs text-gray-500 mb-0.5">Object Type</div>
+                            <div class="text-sm font-semibold text-gray-900">Case</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-gray-600">Reference:</span>
+                        <span class="text-sm font-semibold text-gray-900">CASE-2024-1547</span>
+                        <span class="text-gray-400">·</span>
+                        <span class="text-sm text-gray-700">Data Breach Investigation Q1 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="object-ref-3" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="text-sm font-semibold text-gray-900 mb-4">Multi-Object Reference</div>
+                <div class="space-y-3">
+                    <div class="p-3 bg-gray-50 rounded-lg border border-gray-100">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-folder text-arkcase-primary"></i>
+                            <span class="font-medium text-gray-700">Primary:</span>
+                            <span class="text-gray-900">CASE-2024-1547</span>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-lg border border-gray-100">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-file text-gray-400"></i>
+                            <span class="font-medium text-gray-700">Related:</span>
+                            <span class="text-gray-900">DOC-2024-8832</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-responsive-behavior" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior Guidelines</h2>
+            <p class="text-gray-600">How Object History cards adapt across different screen sizes and container widths.</p>
+        </div>
+
+        <div id="responsive-examples" class="space-y-8">
+            
+            <div id="responsive-desktop" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-desktop text-arkcase-primary text-xl"></i>
+                    <div class="text-sm font-semibold text-gray-900">Desktop (1024px+)</div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-clock-rotate-left text-arkcase-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                        <h3 class="text-base font-semibold text-gray-900">Status Changed</h3>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Status</span>
+                            </div>
+                            <div class="text-xs text-gray-600">Full metadata grid visible with all details</div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-clock-rotate-left text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                        <h3 class="text-base font-semibold text-gray-900">Object Created</h3>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full">Create</span>
+                            </div>
+                            <div class="text-xs text-gray-600">Multi-column layout maintained</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="responsive-tablet" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-tablet-screen-button text-purple-600 text-xl"></i>
+                    <div class="text-sm font-semibold text-gray-900">Tablet (768px - 1023px)</div>
+                </div>
+                <div class="max-w-md">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-clock-rotate-left text-arkcase-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Object History</div>
+                                        <h3 class="text-base font-semibold text-gray-900">Status Changed</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-600">Single column layout, stacked metadata</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="responsive-mobile" class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-mobile-screen text-green-600 text-xl"></i>
+                    <div class="text-sm font-semibold text-gray-900">Mobile (< 768px)</div>
+                </div>
+                <div class="max-w-xs">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div class="px-4 py-3 flex items-center gap-3">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock-rotate-left text-arkcase-primary text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-0.5">
+                                    <span class="text-sm font-semibold text-gray-900 truncate">Status changed</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <span class="truncate">Sarah Chen</span>
+                                    <span>·</span>
+                                    <span>2h ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-600 mt-3">Minimal compact view with truncated text</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-design-specs" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Specifications</h2>
+            <p class="text-gray-600">Technical specifications and measurements for implementing Object History cards.</p>
+        </div>
+
+        <div id="design-specs-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div id="spec-spacing" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Spacing & Dimensions</h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Small card height</span>
+                        <span class="font-mono font-semibold text-gray-900">56px - 64px</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Medium card min height</span>
+                        <span class="font-mono font-semibold text-gray-900">180px - 220px</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Large card min height</span>
+                        <span class="font-mono font-semibold text-gray-900">280px - 320px</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Card padding (small)</span>
+                        <span class="font-mono font-semibold text-gray-900">12px - 16px</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Card padding (medium/large)</span>
+                        <span class="font-mono font-semibold text-gray-900">20px - 24px</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Icon container size</span>
+                        <span class="font-mono font-semibold text-gray-900">32px - 48px</span>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <span class="text-gray-600">Border radius</span>
+                        <span class="font-mono font-semibold text-gray-900">8px - 12px</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-typography" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Typography</h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Card title (small)</span>
+                        <span class="font-mono font-semibold text-gray-900">14px / 600</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Card title (medium)</span>
+                        <span class="font-mono font-semibold text-gray-900">16px / 600</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Card title (large)</span>
+                        <span class="font-mono font-semibold text-gray-900">20px / 700</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Metadata labels</span>
+                        <span class="font-mono font-semibold text-gray-900">11px - 12px / 600</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Metadata values</span>
+                        <span class="font-mono font-semibold text-gray-900">13px - 14px / 500</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-gray-100">
+                        <span class="text-gray-600">Description text</span>
+                        <span class="font-mono font-semibold text-gray-900">14px / 400</span>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <span class="text-gray-600">Font family</span>
+                        <span class="font-mono font-semibold text-gray-900">Inter, system-ui</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-colors" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Color Palette</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-blue-600"></div>
+                        <div class="text-sm">
+                            <div class="font-semibold text-gray-900">Primary Blue</div>
+                            <div class="font-mono text-xs text-gray-500">#2563eb</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-green-600"></div>
+                        <div class="text-sm">
+                            <div class="font-semibold text-gray-900">Success Green</div>
+                            <div class="font-mono text-xs text-gray-500">#10b981</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-purple-600"></div>
+                        <div class="text-sm">
+                            <div class="font-semibold text-gray-900">Metadata Purple</div>
+                            <div class="font-mono text-xs text-gray-500">#9333ea</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-amber-600"></div>
+                        <div class="text-sm">
+                            <div class="font-semibold text-gray-900">Association Amber</div>
+                            <div class="font-mono text-xs text-gray-500">#d97706</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-red-600"></div>
+                        <div class="text-sm">
+                            <div class="font-semibold text-gray-900">Delete Red</div>
+                            <div class="font-mono text-xs text-gray-500">#ef4444</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec-accessibility" class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Accessibility Requirements</h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-green-600 mt-0.5"></i>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">WCAG 2.1 AA Compliant</div>
+                            <div class="text-gray-600">All text meets minimum contrast ratios of 4.5:1</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-green-600 mt-0.5"></i>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Keyboard Navigation</div>
+                            <div class="text-gray-600">All interactive elements accessible via Tab key</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-green-600 mt-0.5"></i>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Screen Reader Support</div>
+                            <div class="text-gray-600">Semantic HTML with ARIA labels where needed</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-green-600 mt-0.5"></i>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Focus Indicators</div>
+                            <div class="text-gray-600">Visible focus states on all interactive components</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-green-600 mt-0.5"></i>
+                        <div>
+                            <div class="font-semibold text-gray-900 mb-1">Color Independence</div>
+                            <div class="text-gray-600">Information not conveyed by color alone</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-implementation-notes" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
+            <p class="text-gray-600">Key considerations and best practices for implementing Object History cards in production.</p>
+        </div>
+
+        <div id="implementation-cards" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div id="impl-note-1" class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <i class="fa-solid fa-lightbulb text-blue-600 text-xl"></i>
+                    <h3 class="text-base font-semibold text-gray-900">Performance Optimization</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <span class="text-blue-600 mt-1">•</span>
+                        <span>Implement virtual scrolling for long history lists</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-blue-600 mt-1">•</span>
+                        <span>Lazy load change summaries and metadata</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-blue-600 mt-1">•</span>
+                        <span>Cache rendered cards for frequently accessed objects</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="impl-note-2" class="bg-green-50 border border-green-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <i class="fa-solid fa-shield-halved text-green-600 text-xl"></i>
+                    <h3 class="text-base font-semibold text-gray-900">Security Considerations</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 mt-1">•</span>
+                        <span>Respect object-level permissions for history visibility</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 mt-1">•</span>
+                        <span>Redact sensitive field changes based on user role</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 mt-1">•</span>
+                        <span>Audit access to historical snapshots</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="impl-note-3" class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <i class="fa-solid fa-code text-purple-600 text-xl"></i>
+                    <h3 class="text-base font-semibold text-gray-900">Data Structure</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <span class="text-purple-600 mt-1">•</span>
+                        <span>Store change summaries separately from full snapshots</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-purple-600 mt-1">•</span>
+                        <span>Index by timestamp and object reference</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-purple-600 mt-1">•</span>
+                        <span>Maintain referential integrity with archived objects</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="impl-note-4" class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                <div class="flex items-start gap-3 mb-3">
+                    <i class="fa-solid fa-users text-amber-600 text-xl"></i>
+                    <h3 class="text-base font-semibold text-gray-900">User Experience</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-600 mt-1">•</span>
+                        <span>Provide filtering by change type and actor</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-600 mt-1">•</span>
+                        <span>Enable date range selection for history queries</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-600 mt-1">•</span>
+                        <span>Show loading states during history retrieval</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-footer-summary" class="pb-12">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-8">
+            <div class="flex items-start gap-4 mb-6">
+                <div class="w-14 h-14 rounded-xl bg-arkcase-primary flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-clock-rotate-left text-white text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Object History Card System</h2>
+                    <p class="text-gray-700 text-lg">Complete wireframe specifications for displaying historical object changes</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white rounded-lg p-5 border border-blue-100">
+                    <div class="text-3xl font-bold text-arkcase-primary mb-1">3</div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">Card Variants</div>
+                    <div class="text-xs text-gray-600">Small, Medium, and Large formats</div>
+                </div>
+                <div class="bg-white rounded-lg p-5 border border-blue-100">
+                    <div class="text-3xl font-bold text-arkcase-primary mb-1">6</div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">Change Types</div>
+                    <div class="text-xs text-gray-600">Create, Update, Status, Association, Delete, Permission</div>
+                </div>
+                <div class="bg-white rounded-lg p-5 border border-blue-100">
+                    <div class="text-3xl font-bold text-arkcase-primary mb-1">4</div>
+                    <div class="text-sm font-semibold text-gray-900 mb-1">Actor Types</div>
+                    <div class="text-xs text-gray-600">User, System, Integration, Workflow</div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-200">
+                    <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                    Timeline Integration
+                </span>
+                <span class="px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-200">
+                    <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                    Responsive Design
+                </span>
+                <span class="px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-200">
+                    <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                    Accessibility Compliant
+                </span>
+                <span class="px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-200">
+                    <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                    Permission Aware
+                </span>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
