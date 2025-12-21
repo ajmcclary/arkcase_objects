@@ -16,10 +16,29 @@ ArkCase UI Wireframes - A static HTML design system and component library for th
 ## Architecture
 
 ### File Organization
-Each HTML file represents a business object type (Case.html, Task.html, Person.html, etc.) and contains:
-- Multiple card variants (small cards, medium cards, large cards where applicable)
-- Responsive grid layouts (mobile 1-col → tablet 2-col → desktop 3-col)
-- Consistent header, sidebar navigation, main content grid, and footer sections
+- **index.html** - Navigation hub with all 28 wireframes organized by category
+- Each object file (Case.html, Task.html, etc.) contains:
+  - Multiple card variants (small, medium, large)
+  - Responsive grid layouts (mobile 1-col → tablet 2-col → desktop 3-col)
+
+### Page Structure
+All pages share a consistent layout:
+```
+├── Header (fixed, h-16) - ArkCase logo, Design System badge, search/notifications/help, avatar
+├── Sidebar (fixed, w-64) - Navigation with all 28 objects in 8 categories
+├── Main Content (ml-64) - Card variants and documentation
+└── Footer (ml-64, dark gradient) - 4-column grid with links
+```
+
+### Sidebar Categories
+- **Core Objects**: Case, Complaint, Consultation, Task
+- **People & Orgs**: Person, User, Organization, Group, Participant
+- **Documents**: File Object, File Version, Folder, Container, Note
+- **Workflow**: Queue, Business Process
+- **Communication**: Chat Conversation, Chat Message, Notification, Subscription
+- **Financial**: Cost, Costsheet
+- **Metadata**: Tag, Associated Tag, Object Association
+- **Audit**: Audit Event, Object History, Recycle Bin Item
 
 ### Technology Stack
 - **Tailwind CSS** via CDN (`cdn.tailwindcss.com`)
@@ -59,6 +78,19 @@ Cards follow consistent patterns:
 ```html
 <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
 ```
+
+### Sidebar Active State
+The current page is highlighted in the sidebar with:
+```html
+<a class="flex items-center px-3 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-lg">
+    <i class="fa-solid fa-[icon] w-5 text-indigo-600"></i>
+    <span class="ml-3">[Page Name]</span>
+</a>
+```
+
+### Brand Colors
+- **Primary**: Indigo (`indigo-600`) for logo and active states
+- **Footer**: Dark gradient (`from-gray-800 via-gray-850 to-gray-900`)
 
 ## Business Objects
 
