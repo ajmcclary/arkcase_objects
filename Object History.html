@@ -878,6 +878,552 @@
         </div>
     </section>
 
+    <!-- 22.4 Dashboard Widgets -->
+    <section id="dashboard-widgets-section" class="mb-20 py-12 bg-gray-50 -mx-8 px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Object History cards configured as dashboard widgets for tracking changes and monitoring data modifications.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <!-- Recent Changes Widget -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left text-blue-600"></i>
+                        <h3 class="font-semibold text-gray-900">Recent Changes</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select class="text-xs border border-gray-300 rounded px-2 py-1">
+                            <option>All Objects</option>
+                            <option>Cases</option>
+                            <option>Documents</option>
+                            <option>Tasks</option>
+                        </select>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-arrows-rotate text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-pen text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Case #2847 updated</p>
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">Case</span>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-0.5">Status: <span class="line-through text-gray-400">Open</span> → <span class="font-medium">Under Review</span></p>
+                                <p class="text-xs text-gray-400 mt-1">Sarah Chen · 5 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-plus text-green-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Document created</p>
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded">File</span>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-0.5">Settlement_Agreement_v2.docx</p>
+                                <p class="text-xs text-gray-400 mt-1">Michael Torres · 12 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-link text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Participant linked</p>
+                                    <span class="text-xs bg-green-100 text-green-700 px-1.5 py-0.5 rounded">Person</span>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-0.5">John Martinez added to Case #2841</p>
+                                <p class="text-xs text-gray-400 mt-1">System · 25 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-trash text-red-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Task deleted</p>
+                                    <span class="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">Task</span>
+                                </div>
+                                <p class="text-xs text-gray-600 mt-0.5">Review initial documentation (duplicate)</p>
+                                <p class="text-xs text-gray-400 mt-1">Admin · 1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3 border-t border-gray-200 bg-gray-50">
+                    <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All Changes →</button>
+                </div>
+            </div>
+
+            <!-- Reverted Changes Widget -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="px-4 py-3 border-b border-amber-200 bg-amber-50 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-rotate-left text-amber-600"></i>
+                        <h3 class="font-semibold text-amber-900">Recently Reverted</h3>
+                        <span class="bg-amber-500 text-white text-xs font-medium px-2 py-0.5 rounded-full">2</span>
+                    </div>
+                    <button class="text-amber-600 hover:text-amber-700 text-sm font-medium">
+                        View History
+                    </button>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-4 py-3 hover:bg-amber-50/50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-rotate-left text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Status change reverted</p>
+                                <p class="text-xs text-gray-600">Case #2845: Closed → Reopened</p>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-xs text-gray-400">Legal Team</span>
+                                    <span class="text-xs text-gray-300">·</span>
+                                    <span class="text-xs text-gray-400">2 hours ago</span>
+                                </div>
+                                <p class="text-xs text-amber-600 mt-1">Reason: New evidence submitted</p>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 text-xs">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-amber-50/50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-rotate-left text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Document version rolled back</p>
+                                <p class="text-xs text-gray-600">Contract_Final.docx: v3 → v2</p>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-xs text-gray-400">Sarah Chen</span>
+                                    <span class="text-xs text-gray-300">·</span>
+                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                </div>
+                                <p class="text-xs text-amber-600 mt-1">Reason: Incorrect formatting in v3</p>
+                            </div>
+                            <button class="text-gray-400 hover:text-gray-600 text-xs">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 text-center text-sm text-gray-500 border-t border-gray-100">
+                    <i class="fa-solid fa-circle-check text-green-500 mr-1"></i>
+                    No pending revert requests
+                </div>
+            </div>
+        </div>
+
+        <!-- Object History Activity Grid -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm mb-12">
+            <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-table-list text-blue-600"></i>
+                    <h3 class="font-semibold text-gray-900">Change History Grid</h3>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <input type="text" placeholder="Search changes..." class="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-lg w-64 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <i class="fa-solid fa-search absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                    </div>
+                    <button class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center gap-1">
+                        <i class="fa-solid fa-download text-gray-500 text-xs"></i>
+                        Export
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 divide-x divide-gray-200">
+                <!-- Filters Sidebar -->
+                <div class="col-span-3 p-4 bg-gray-50">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Filters</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Change Type</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Create</span>
+                                    <span class="text-xs text-gray-400 ml-auto">847</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Update</span>
+                                    <span class="text-xs text-gray-400 ml-auto">2,156</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Delete</span>
+                                    <span class="text-xs text-gray-400 ml-auto">89</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Restore</span>
+                                    <span class="text-xs text-gray-400 ml-auto">23</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Object Type</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Cases</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Documents</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Tasks</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">People</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Date Range</label>
+                            <select class="w-full text-sm border border-gray-300 rounded-lg p-2">
+                                <option>Last 24 hours</option>
+                                <option selected>Last 7 days</option>
+                                <option>Last 30 days</option>
+                                <option>Custom range</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Modified By</label>
+                            <input type="text" placeholder="Search users..." class="w-full text-sm border border-gray-300 rounded-lg p-2">
+                        </div>
+                    </div>
+                </div>
+                <!-- History Grid -->
+                <div class="col-span-9">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+                        <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-pen text-blue-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Case Updated</p>
+                                        <p class="text-xs text-gray-500">Case #2847</p>
+                                    </div>
+                                </div>
+                                <div class="text-xs text-gray-600 mb-2">
+                                    <span class="text-gray-500">Status:</span>
+                                    <span class="line-through text-gray-400 mx-1">Open</span>
+                                    <i class="fa-solid fa-arrow-right text-gray-300 text-[10px] mx-1"></i>
+                                    <span class="font-medium text-gray-900">Under Review</span>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Sarah Chen</span>
+                                    <span class="text-gray-400">5 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-plus text-green-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Document Created</p>
+                                        <p class="text-xs text-gray-500">File Object</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-2 truncate">Settlement_Agreement_v2.docx</p>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Michael Torres</span>
+                                    <span class="text-gray-400">12 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-amber-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer bg-amber-50/30">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-rotate-left text-amber-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Change Reverted</p>
+                                        <p class="text-xs text-gray-500">Case #2845</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-2">Status reverted: Closed → Reopened</p>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Legal Team</span>
+                                    <span class="text-gray-400">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 border-t border-gray-200 flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Showing 1-50 of 3,115 changes</span>
+                        <div class="flex items-center gap-2">
+                            <button class="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-50" disabled>Previous</button>
+                            <button class="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-50">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600">3,115</div>
+                <div class="text-sm text-gray-500">Total Changes</div>
+                <div class="text-xs text-gray-400 mt-1">Last 7 days</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-green-600">847</div>
+                <div class="text-sm text-gray-500">Objects Created</div>
+                <div class="text-xs text-green-500 mt-1">↑ 12% from last week</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600">2,156</div>
+                <div class="text-sm text-gray-500">Updates</div>
+                <div class="text-xs text-gray-400 mt-1">69% of changes</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-amber-600">23</div>
+                <div class="text-sm text-gray-500">Reverted</div>
+                <div class="text-xs text-gray-400 mt-1">0.7% rollback rate</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-purple-600">89</div>
+                <div class="text-sm text-gray-500">Active Users</div>
+                <div class="text-xs text-gray-400 mt-1">Making changes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 22.5 Sidebar Items -->
+    <section id="sidebar-items-section" class="mb-20">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">Object History cards configured for sidebar panels, providing contextual change tracking and version comparison tools.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Object Change Timeline -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Object Change Timeline</h3>
+                <p class="text-sm text-gray-600">Displays chronological history of changes for the currently viewed object.</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                <span class="font-medium text-sm text-gray-900">History</span>
+                            </div>
+                            <span class="text-xs text-gray-500">12 changes</span>
+                        </div>
+                        <div class="relative p-3">
+                            <div class="absolute left-5 top-3 bottom-3 w-0.5 bg-gray-200"></div>
+                            <div class="space-y-3">
+                                <div class="relative pl-6">
+                                    <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow flex items-center justify-center">
+                                        <i class="fa-solid fa-pen text-white text-[8px]"></i>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-medium text-gray-900">Status updated</p>
+                                        <p class="text-gray-500">Open → Under Review</p>
+                                        <p class="text-gray-400 text-[10px] mt-0.5">Sarah Chen · 5m ago</p>
+                                    </div>
+                                </div>
+                                <div class="relative pl-6">
+                                    <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-green-500 border-2 border-white shadow flex items-center justify-center">
+                                        <i class="fa-solid fa-plus text-white text-[8px]"></i>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-medium text-gray-900">Document added</p>
+                                        <p class="text-gray-500 truncate">Settlement_v2.docx</p>
+                                        <p class="text-gray-400 text-[10px] mt-0.5">Michael Torres · 1h ago</p>
+                                    </div>
+                                </div>
+                                <div class="relative pl-6">
+                                    <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow flex items-center justify-center">
+                                        <i class="fa-solid fa-user-plus text-white text-[8px]"></i>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-medium text-gray-900">Participant added</p>
+                                        <p class="text-gray-500">John Martinez</p>
+                                        <p class="text-gray-400 text-[10px] mt-0.5">System · 3h ago</p>
+                                    </div>
+                                </div>
+                                <div class="relative pl-6">
+                                    <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-gray-400 border-2 border-white shadow flex items-center justify-center">
+                                        <i class="fa-solid fa-plus text-white text-[8px]"></i>
+                                    </div>
+                                    <div class="text-xs">
+                                        <p class="font-medium text-gray-900">Case created</p>
+                                        <p class="text-gray-500">Initial creation</p>
+                                        <p class="text-gray-400 text-[10px] mt-0.5">Admin · Jan 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                            <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View All Changes →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version Comparison Panel -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Version Comparison</h3>
+                <p class="text-sm text-gray-600">Compare different versions of an object to see what changed.</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200">
+                            <span class="font-medium text-sm text-gray-900">Compare Versions</span>
+                        </div>
+                        <div class="p-3 space-y-3">
+                            <div>
+                                <label class="text-xs text-gray-500 block mb-1">From Version</label>
+                                <select class="w-full text-xs border border-gray-300 rounded p-1.5">
+                                    <option>v11 - Jan 20, 2024</option>
+                                    <option>v10 - Jan 18, 2024</option>
+                                    <option>v9 - Jan 15, 2024</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-xs text-gray-500 block mb-1">To Version</label>
+                                <select class="w-full text-xs border border-gray-300 rounded p-1.5">
+                                    <option>v12 - Current</option>
+                                    <option>v11 - Jan 20, 2024</option>
+                                    <option>v10 - Jan 18, 2024</option>
+                                </select>
+                            </div>
+                            <button class="w-full px-3 py-1.5 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700">
+                                <i class="fa-solid fa-code-compare mr-1"></i>
+                                Compare
+                            </button>
+                        </div>
+                        <div class="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                            <div class="text-xs text-gray-500 mb-2">Quick Compare:</div>
+                            <div class="space-y-1">
+                                <button class="w-full text-left px-2 py-1 text-xs text-blue-600 hover:bg-blue-50 rounded">
+                                    Current vs Previous
+                                </button>
+                                <button class="w-full text-left px-2 py-1 text-xs text-blue-600 hover:bg-blue-50 rounded">
+                                    Current vs Original
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Field Change Summary -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Field Change Summary</h3>
+                <p class="text-sm text-gray-600">Overview of which fields have been modified most frequently.</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200 flex items-center justify-between">
+                            <span class="font-medium text-sm text-gray-900">Changed Fields</span>
+                            <span class="text-xs text-gray-500">Last 30 days</span>
+                        </div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                    <span class="text-xs text-gray-700">Status</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-blue-500 h-1.5 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">24</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                    <span class="text-xs text-gray-700">Assignee</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-green-500 h-1.5 rounded-full" style="width: 55%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">18</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-purple-500"></div>
+                                    <span class="text-xs text-gray-700">Priority</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-purple-500 h-1.5 rounded-full" style="width: 35%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">11</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+                                    <span class="text-xs text-gray-700">Due Date</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-amber-500 h-1.5 rounded-full" style="width: 25%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">8</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+                                    <span class="text-xs text-gray-700">Description</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-gray-400 h-1.5 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                            <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="section-timeline-integration" class="mb-20">
         <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Timeline Integration Example</h2>

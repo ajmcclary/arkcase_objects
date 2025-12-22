@@ -937,6 +937,538 @@
     </div>
 </section>
 
+<!-- 21.4 Dashboard Widgets -->
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Audit Event cards configured as dashboard widgets for monitoring system activity and security events.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <!-- My Recent Activity Widget -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left text-blue-600"></i>
+                        <h3 class="font-semibold text-gray-900">My Recent Activity</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-gray-500">Last 24 hours</span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-arrows-rotate text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-plus text-green-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Created new document</p>
+                                <p class="text-xs text-gray-500">Settlement Agreement - Case #2847</p>
+                                <p class="text-xs text-gray-400 mt-1">10 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-pen text-blue-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Updated case status</p>
+                                <p class="text-xs text-gray-500">Case #2841 → Under Review</p>
+                                <p class="text-xs text-gray-400 mt-1">25 minutes ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-eye text-purple-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Viewed confidential file</p>
+                                <p class="text-xs text-gray-500">Medical Records - Jane Smith</p>
+                                <p class="text-xs text-gray-400 mt-1">1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-plus text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900">Added participant</p>
+                                <p class="text-xs text-gray-500">John Martinez to Case #2839</p>
+                                <p class="text-xs text-gray-400 mt-1">2 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3 border-t border-gray-200 bg-gray-50">
+                    <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All My Activity →</button>
+                </div>
+            </div>
+
+            <!-- Security Alerts Widget -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="px-4 py-3 border-b border-amber-200 bg-amber-50 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-amber-600"></i>
+                        <h3 class="font-semibold text-amber-900">Security Alerts</h3>
+                        <span class="bg-amber-500 text-white text-xs font-medium px-2 py-0.5 rounded-full">3</span>
+                    </div>
+                    <button class="text-amber-600 hover:text-amber-700 text-sm font-medium">
+                        Review All
+                    </button>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-4 py-3 hover:bg-red-50 cursor-pointer bg-red-50/50">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-triangle-exclamation text-red-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-red-900">Failed login attempts</p>
+                                    <span class="text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded">Critical</span>
+                                </div>
+                                <p class="text-xs text-gray-600">5 failed attempts for user admin@arkcase.com</p>
+                                <p class="text-xs text-gray-400 mt-1">15 minutes ago · IP: 192.168.1.105</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-amber-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-download text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Bulk export detected</p>
+                                    <span class="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">Warning</span>
+                                </div>
+                                <p class="text-xs text-gray-600">250+ records exported by legal.team@arkcase.com</p>
+                                <p class="text-xs text-gray-400 mt-1">1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-amber-50 cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-lock text-amber-600 text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm font-medium text-gray-900">Permission escalation</p>
+                                    <span class="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">Warning</span>
+                                </div>
+                                <p class="text-xs text-gray-600">User granted admin access to Case Management</p>
+                                <p class="text-xs text-gray-400 mt-1">3 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3 border-t border-gray-200 bg-gray-50 flex items-center justify-between">
+                    <span class="text-xs text-gray-500">Auto-refresh: 5 min</span>
+                    <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">Security Dashboard →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audit Activity Grid Widget -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm mb-12">
+            <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-table-list text-blue-600"></i>
+                    <h3 class="font-semibold text-gray-900">Audit Activity Grid</h3>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <input type="text" placeholder="Search events..." class="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-lg w-64 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <i class="fa-solid fa-search absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                    </div>
+                    <button class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center gap-1">
+                        <i class="fa-solid fa-download text-gray-500 text-xs"></i>
+                        Export
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 divide-x divide-gray-200">
+                <!-- Filters Sidebar -->
+                <div class="col-span-3 p-4 bg-gray-50">
+                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Filters</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Event Type</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Create</span>
+                                    <span class="text-xs text-gray-400 ml-auto">1,247</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Update</span>
+                                    <span class="text-xs text-gray-400 ml-auto">3,891</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Delete</span>
+                                    <span class="text-xs text-gray-400 ml-auto">156</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">View</span>
+                                    <span class="text-xs text-gray-400 ml-auto">12,403</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Login/Logout</span>
+                                    <span class="text-xs text-gray-400 ml-auto">892</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Status</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Success</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                    <span class="text-sm text-gray-600">Failed</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Date Range</label>
+                            <select class="w-full text-sm border border-gray-300 rounded-lg p-2">
+                                <option>Last 24 hours</option>
+                                <option>Last 7 days</option>
+                                <option selected>Last 30 days</option>
+                                <option>Custom range</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium text-gray-700 block mb-2">Actor</label>
+                            <input type="text" placeholder="Search users..." class="w-full text-sm border border-gray-300 rounded-lg p-2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Events Grid -->
+                <div class="col-span-9">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+                        <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-plus text-green-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Document Created</p>
+                                        <p class="text-xs text-gray-500">File Object · Create</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-2">Settlement_Agreement_v2.docx</p>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Sarah Chen</span>
+                                    <span class="text-gray-400">2 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-pen text-blue-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Case Updated</p>
+                                        <p class="text-xs text-gray-500">Case · Update</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-2">Status changed: Open → Under Review</p>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Michael Torres</span>
+                                    <span class="text-gray-400">5 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-red-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer bg-red-50/30">
+                            <div class="p-4">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-xmark text-red-600 text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Login Failed</p>
+                                        <p class="text-xs text-gray-500">Authentication · Failed</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-2">Invalid credentials for admin@arkcase.com</p>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-gray-500">Unknown</span>
+                                    <span class="text-gray-400">8 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 border-t border-gray-200 flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Showing 1-50 of 18,589 events</span>
+                        <div class="flex items-center gap-2">
+                            <button class="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-50" disabled>Previous</button>
+                            <button class="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-50">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600">18,589</div>
+                <div class="text-sm text-gray-500">Total Events</div>
+                <div class="text-xs text-gray-400 mt-1">Last 30 days</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-green-600">17,842</div>
+                <div class="text-sm text-gray-500">Successful</div>
+                <div class="text-xs text-green-500 mt-1">95.9% success rate</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-red-600">747</div>
+                <div class="text-sm text-gray-500">Failed Events</div>
+                <div class="text-xs text-gray-400 mt-1">4.1% of total</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-purple-600">142</div>
+                <div class="text-sm text-gray-500">Active Users</div>
+                <div class="text-xs text-gray-400 mt-1">Today</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-amber-600">12</div>
+                <div class="text-sm text-gray-500">Security Alerts</div>
+                <div class="text-xs text-amber-500 mt-1">3 require attention</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 21.5 Sidebar Items -->
+<section id="sidebar-items-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">Audit Event cards configured for sidebar panels, providing contextual activity information and quick access to recent events.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Object Activity Panel -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Object Activity Panel</h3>
+                <p class="text-sm text-gray-600">Shows recent audit events for the currently viewed object (case, document, etc.).</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                <span class="font-medium text-sm text-gray-900">Activity</span>
+                            </div>
+                            <span class="text-xs text-gray-500">Case #2847</span>
+                        </div>
+                        <div class="divide-y divide-gray-100 max-h-80 overflow-y-auto">
+                            <div class="px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-start gap-2">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-plus text-green-600 text-[10px]"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-medium text-gray-900">Document added</p>
+                                        <p class="text-xs text-gray-500 truncate">Settlement_v2.docx</p>
+                                        <p class="text-[10px] text-gray-400 mt-0.5">Sarah Chen · 5m ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-start gap-2">
+                                    <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-pen text-blue-600 text-[10px]"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-medium text-gray-900">Status updated</p>
+                                        <p class="text-xs text-gray-500">Open → Under Review</p>
+                                        <p class="text-[10px] text-gray-400 mt-0.5">Michael Torres · 1h ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-start gap-2">
+                                    <div class="w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-user-plus text-amber-600 text-[10px]"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-medium text-gray-900">Participant added</p>
+                                        <p class="text-xs text-gray-500 truncate">John Martinez</p>
+                                        <p class="text-[10px] text-gray-400 mt-0.5">Admin · 2h ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-start gap-2">
+                                    <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-eye text-purple-600 text-[10px]"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-medium text-gray-900">Case viewed</p>
+                                        <p class="text-xs text-gray-500">Compliance review</p>
+                                        <p class="text-[10px] text-gray-400 mt-0.5">Legal Team · 3h ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                            <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View Full History →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Type Browser -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Event Type Browser</h3>
+                <p class="text-sm text-gray-600">Navigate audit events by category with counts and quick filters.</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200">
+                            <div class="relative">
+                                <input type="text" placeholder="Search events..." class="w-full pl-7 pr-3 py-1.5 text-xs border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <i class="fa-solid fa-search absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-[10px]"></i>
+                            </div>
+                        </div>
+                        <div class="divide-y divide-gray-100">
+                            <div class="px-3 py-2">
+                                <div class="flex items-center justify-between cursor-pointer hover:bg-gray-50 -mx-3 px-3 py-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-chevron-down text-gray-400 text-[10px]"></i>
+                                        <i class="fa-solid fa-database text-blue-500 text-xs"></i>
+                                        <span class="text-sm font-medium text-gray-900">Data Events</span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">5,294</span>
+                                </div>
+                                <div class="ml-6 mt-2 space-y-1">
+                                    <div class="flex items-center justify-between px-2 py-1 text-xs hover:bg-gray-50 rounded cursor-pointer bg-blue-50">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-plus text-green-500 text-[10px]"></i>
+                                            <span class="text-gray-700">Create</span>
+                                        </div>
+                                        <span class="text-gray-500">1,247</span>
+                                    </div>
+                                    <div class="flex items-center justify-between px-2 py-1 text-xs hover:bg-gray-50 rounded cursor-pointer">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-pen text-blue-500 text-[10px]"></i>
+                                            <span class="text-gray-700">Update</span>
+                                        </div>
+                                        <span class="text-gray-500">3,891</span>
+                                    </div>
+                                    <div class="flex items-center justify-between px-2 py-1 text-xs hover:bg-gray-50 rounded cursor-pointer">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-trash text-red-500 text-[10px]"></i>
+                                            <span class="text-gray-700">Delete</span>
+                                        </div>
+                                        <span class="text-gray-500">156</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2">
+                                <div class="flex items-center justify-between cursor-pointer hover:bg-gray-50 -mx-3 px-3 py-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-[10px]"></i>
+                                        <i class="fa-solid fa-shield-halved text-amber-500 text-xs"></i>
+                                        <span class="text-sm font-medium text-gray-900">Security</span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">892</span>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2">
+                                <div class="flex items-center justify-between cursor-pointer hover:bg-gray-50 -mx-3 px-3 py-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-[10px]"></i>
+                                        <i class="fa-solid fa-robot text-purple-500 text-xs"></i>
+                                        <span class="text-sm font-medium text-gray-900">System</span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">2,403</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Filters Panel -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-gray-900">Quick Filters Panel</h3>
+                <p class="text-sm text-gray-600">Saved filters and common audit searches for quick access.</p>
+                <div class="bg-gray-100 rounded-lg p-4" style="width: 264px;">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                        <div class="px-3 py-2 border-b border-gray-200 flex items-center justify-between">
+                            <span class="font-medium text-sm text-gray-900">Quick Filters</span>
+                            <button class="text-blue-600 hover:text-blue-700">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                        </div>
+                        <div class="p-2 space-y-1">
+                            <div class="flex items-center gap-2 px-2 py-1.5 bg-blue-50 rounded-lg cursor-pointer">
+                                <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                                <span class="text-sm text-gray-900">My Activity Today</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded-lg cursor-pointer">
+                                <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                                <span class="text-sm text-gray-700">Failed Events</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded-lg cursor-pointer">
+                                <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                                <span class="text-sm text-gray-700">Security Alerts</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded-lg cursor-pointer">
+                                <i class="fa-regular fa-star text-gray-300 text-xs"></i>
+                                <span class="text-sm text-gray-700">Document Changes</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded-lg cursor-pointer">
+                                <i class="fa-regular fa-star text-gray-300 text-xs"></i>
+                                <span class="text-sm text-gray-700">Permission Changes</span>
+                            </div>
+                        </div>
+                        <div class="px-3 py-2 border-t border-gray-200">
+                            <div class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Recent Searches</div>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2 px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-clock-rotate-left text-gray-400 text-[10px]"></i>
+                                    <span class="text-xs text-gray-600 truncate">case_id:2847</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-clock-rotate-left text-gray-400 text-[10px]"></i>
+                                    <span class="text-xs text-gray-600 truncate">actor:sarah.chen</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="system-events-section" class="py-12 bg-white">
     <div class="container mx-auto px-8">
         <div class="mb-8">
