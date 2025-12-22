@@ -234,247 +234,580 @@
 
                 <!-- Hero Section -->
                 <section class="mb-12">
-                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
-                        <h1 class="text-4xl font-bold mb-4">ArkCase Design System</h1>
-                        <p class="text-xl text-indigo-100 max-w-2xl mb-6">
-                            Comprehensive wireframe library for enterprise case management.
-                            Explore 28 object types across Small, Medium, and Large card variants.
-                        </p>
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">28 Object Types</span>
-                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">3 Card Sizes</span>
-                            <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium">Tailwind CSS</span>
+                    <div class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-2xl p-8 md:p-10 text-white shadow-xl relative overflow-hidden">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                        <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                                    <i class="fa-solid fa-swatchbook text-2xl"></i>
+                                </div>
+                                <span class="text-indigo-200 text-sm font-medium uppercase tracking-wider">Wireframe Library</span>
+                            </div>
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">ArkCase Design System</h1>
+                            <p class="text-lg md:text-xl text-indigo-100 max-w-2xl mb-8 leading-relaxed">
+                                Comprehensive wireframe library for enterprise case management. Explore object types across multiple card variants.
+                            </p>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
+                                    <i class="fa-solid fa-cube text-indigo-200"></i>
+                                    28 Object Types
+                                </span>
+                                <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
+                                    <i class="fa-solid fa-layer-group text-indigo-200"></i>
+                                    3 Card Sizes
+                                </span>
+                                <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
+                                    <i class="fa-brands fa-css3-alt text-indigo-200"></i>
+                                    Tailwind CSS
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Quick Access -->
+                <!-- Featured Wireframes -->
                 <section class="mb-12">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Access</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Case.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
-                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
-                                <i class="fa-solid fa-briefcase text-blue-600 text-xl"></i>
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Featured Wireframes</h2>
+                            <p class="text-gray-500 mt-1">Most commonly used object types</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Case -->
+                        <a href="Case.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                    <i class="fa-solid fa-briefcase text-blue-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700">Core</span>
                             </div>
-                            <h3 class="font-semibold text-gray-900 mb-1">Case</h3>
-                            <p class="text-sm text-gray-500">Core case management cards</p>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Case</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">Primary case management cards for tracking matters, investigations, and legal proceedings.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
                         </a>
-                        <a href="Task.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
-                                <i class="fa-solid fa-list-check text-green-600 text-xl"></i>
+
+                        <!-- Task -->
+                        <a href="Task.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                    <i class="fa-solid fa-list-check text-blue-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700">Core</span>
                             </div>
-                            <h3 class="font-semibold text-gray-900 mb-1">Task</h3>
-                            <p class="text-sm text-gray-500">Task tracking and workflow</p>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Task</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">Task cards for workflow management, assignments, due dates, and progress tracking.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
                         </a>
-                        <a href="Person.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
-                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
-                                <i class="fa-solid fa-user text-purple-600 text-xl"></i>
+
+                        <!-- Person -->
+                        <a href="Person.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-green-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                    <i class="fa-solid fa-user text-green-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-50 text-green-700">People</span>
                             </div>
-                            <h3 class="font-semibold text-gray-900 mb-1">Person</h3>
-                            <p class="text-sm text-gray-500">People and contacts</p>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Person</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">Contact and person cards displaying profiles, roles, and relationship information.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
                         </a>
-                        <a href="File Object.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-indigo-300 transition-all group">
-                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
-                                <i class="fa-solid fa-file text-orange-600 text-xl"></i>
+
+                        <!-- File Object -->
+                        <a href="File Object.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-purple-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                    <i class="fa-solid fa-file text-purple-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-purple-50 text-purple-700">Docs</span>
                             </div>
-                            <h3 class="font-semibold text-gray-900 mb-1">File Object</h3>
-                            <p class="text-sm text-gray-500">Document management</p>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">File Object</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">Document cards for file management, metadata display, and content preview.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
+                        </a>
+
+                        <!-- Complaint -->
+                        <a href="Complaint.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700">Core</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Complaint</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">Complaint intake and tracking cards for managing formal complaints and issues.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
+                        </a>
+
+                        <!-- User -->
+                        <a href="User.html" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-green-300 transition-all group">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                    <i class="fa-solid fa-user-gear text-green-600 text-2xl"></i>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-50 text-green-700">People</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">User</h3>
+                            <p class="text-sm text-gray-500 mb-4 leading-relaxed">System user cards showing account details, permissions, and activity status.</p>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-layer-group mr-1.5"></i>
+                                3 card variants
+                            </div>
                         </a>
                     </div>
                 </section>
 
                 <!-- All Wireframes by Category -->
                 <section>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">All Wireframes</h2>
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">All Wireframes</h2>
+                            <p class="text-gray-500 mt-1">Browse all 28 object types organized by category</p>
+                        </div>
+                    </div>
 
                     <!-- Core Objects -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-cube text-indigo-500 mr-2"></i>
-                            Core Objects
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Case.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-briefcase text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Case</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-cube text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Core Objects</h3>
+                                <p class="text-sm text-gray-500">Primary case management entities</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Case.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                        <i class="fa-solid fa-briefcase text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Case</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Complaint.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-file-lines text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Complaint</div>
+                            <a href="Complaint.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                        <i class="fa-solid fa-file-lines text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Complaint</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Consultation.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-comments text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Consultation</div>
+                            <a href="Consultation.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                        <i class="fa-solid fa-comments text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Consultation</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Task.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-list-check text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Task</div>
+                            <a href="Task.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                                        <i class="fa-solid fa-list-check text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Task</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- People & Orgs -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-users text-indigo-500 mr-2"></i>
-                            People & Organizations
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                            <a href="Person.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-user text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Person</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-users text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">People & Organizations</h3>
+                                <p class="text-sm text-gray-500">Users, contacts, and organizational entities</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <a href="Person.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                        <i class="fa-solid fa-user text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Person</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="User.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-user-gear text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">User</div>
+                            <a href="User.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                        <i class="fa-solid fa-user-gear text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">User</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Organization.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-building text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Organization</div>
+                            <a href="Organization.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                        <i class="fa-solid fa-building text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Organization</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Group.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-users text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Group</div>
+                            <a href="Group.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                        <i class="fa-solid fa-users text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Group</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Participant.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-user-plus text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Participant</div>
+                            <a href="Participant.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                                        <i class="fa-solid fa-user-plus text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Participant</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Documents -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-folder-open text-indigo-500 mr-2"></i>
-                            Documents
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                            <a href="File Object.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-file text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">File Object</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-folder-open text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Documents</h3>
+                                <p class="text-sm text-gray-500">Files, folders, and document management</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <a href="File Object.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                        <i class="fa-solid fa-file text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">File Object</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="File Version.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-code-branch text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">File Version</div>
+                            <a href="File Version.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                        <i class="fa-solid fa-code-branch text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">File Version</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Folder.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-folder text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Folder</div>
+                            <a href="Folder.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                        <i class="fa-solid fa-folder text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Folder</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Container.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-box text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Container</div>
+                            <a href="Container.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                        <i class="fa-solid fa-box text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Container</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Note.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-sticky-note text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Note</div>
+                            <a href="Note.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                                        <i class="fa-solid fa-sticky-note text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Note</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Workflow -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-diagram-project text-indigo-500 mr-2"></i>
-                            Workflow
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Queue.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-layer-group text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Queue</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-diagram-project text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Workflow</h3>
+                                <p class="text-sm text-gray-500">Queues and business process management</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Queue.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                                        <i class="fa-solid fa-layer-group text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Queue</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Business Process.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-diagram-project text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Business Process</div>
+                            <a href="Business Process.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                                        <i class="fa-solid fa-diagram-project text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Business Process</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Communication -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-comments text-indigo-500 mr-2"></i>
-                            Communication
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Chat Conversation.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-comments text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Chat Conversation</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-comments text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Communication</h3>
+                                <p class="text-sm text-gray-500">Messaging, notifications, and subscriptions</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Chat Conversation.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                                        <i class="fa-solid fa-comments text-cyan-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Chat Conversation</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Chat Message.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-message text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Chat Message</div>
+                            <a href="Chat Message.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                                        <i class="fa-solid fa-message text-cyan-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Chat Message</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Notification.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-bell text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Notification</div>
+                            <a href="Notification.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                                        <i class="fa-solid fa-bell text-cyan-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Notification</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Subscription.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-rss text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Subscription</div>
+                            <a href="Subscription.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                                        <i class="fa-solid fa-rss text-cyan-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Subscription</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Financial -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-dollar-sign text-indigo-500 mr-2"></i>
-                            Financial
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Cost.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-dollar-sign text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Cost</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-dollar-sign text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Financial</h3>
+                                <p class="text-sm text-gray-500">Cost tracking and financial management</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Cost.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors">
+                                        <i class="fa-solid fa-dollar-sign text-amber-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Cost</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Costsheet.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-file-invoice-dollar text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Costsheet</div>
+                            <a href="Costsheet.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors">
+                                        <i class="fa-solid fa-file-invoice-dollar text-amber-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Costsheet</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Metadata -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-tags text-indigo-500 mr-2"></i>
-                            Metadata
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Tag.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-tag text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Tag</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-tags text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Metadata</h3>
+                                <p class="text-sm text-gray-500">Tags, associations, and object relationships</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Tag.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
+                                        <i class="fa-solid fa-tag text-pink-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Tag</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Associated Tag.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-tags text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Associated Tag</div>
+                            <a href="Associated Tag.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
+                                        <i class="fa-solid fa-tags text-pink-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Associated Tag</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Object Association.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-link text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Object Association</div>
+                            <a href="Object Association.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
+                                        <i class="fa-solid fa-link text-pink-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Object Association</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Audit -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center">
-                            <i class="fa-solid fa-clipboard-list text-indigo-500 mr-2"></i>
-                            Audit
-                        </h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <a href="Audit Event.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-clipboard-list text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Audit Event</div>
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-clipboard-list text-slate-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Audit</h3>
+                                <p class="text-sm text-gray-500">Event logging, history, and data recovery</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href="Audit Event.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+                                        <i class="fa-solid fa-clipboard-list text-slate-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Audit Event</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Object History.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-clock-rotate-left text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Object History</div>
+                            <a href="Object History.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+                                        <i class="fa-solid fa-clock-rotate-left text-slate-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Object History</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
-                            <a href="Recycle Bin Item.html" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-gray-300 transition-all text-center">
-                                <i class="fa-solid fa-trash-can text-gray-400 mb-2"></i>
-                                <div class="text-sm font-medium text-gray-700">Recycle Bin Item</div>
+                            <a href="Recycle Bin Item.html" class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+                                        <i class="fa-solid fa-trash-can text-slate-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Recycle Bin Item</h4>
+                                        <p class="text-xs text-gray-500">3 card variants</p>
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>
