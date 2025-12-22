@@ -41,11 +41,11 @@ Legend:
 | ------------------ | - | - | - | ------- | ------- | ------- | ------ | ----------- | ---------- | ---- | ----- | ------ | ----------- | ---- | -------- | ---------- | ------ | ------- | --------- | ------ |
 | Associated Tag     | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
 | Audit Event        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | △      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | —      | —       | △         | ✓      |
-| Business Process   | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | —    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | ✓         | —      |
-| Case               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | —          | —      | —       | —         | —      |
+| Business Process   | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | ✓         | ✓      |
+| Case               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | —          | —      | —       | —         | ✓      |
 | Chat Conversation  | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
 | Chat Message       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | ✓        | ✓          | —      | —       | —         | ✓      |
-| Complaint          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | —     | ✓      | —           | —    | ✓        | —          | —      | —       | —         | —      |
+| Complaint          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | —     | ✓      | —           | —    | ✓        | —          | —      | —       | —         | ✓      |
 | Consultation       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | ✓         | ✓      |
 | Container          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | ✓          | —      | —       | ✓         | ✓      |
 | Cost               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | ✓      |
@@ -58,15 +58,15 @@ Legend:
 | Notification       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
 | Object Association | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | ✓         | ✓      |
 | Object History     | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
-| Organization       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | —          | ✓    | ✓     | ✓      | ✓           | —    | —        | —          | —      | —       | —         | ✓      |
+| Organization       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | —    | —        | —          | —      | —       | —         | ✓      |
 | Participant        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
 | Person             | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | ✓      |
 | Queue              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | —      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
 | Recycle Bin Item   | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | ✓      |
-| Subscription       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | —          | ✓    | —     | ✓      | —           | —    | —        | —          | —      | —       | ✓         | ✓      |
-| Tag                | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | ✓    | —        | —          | —      | —       | —         | —      |
-| Task               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | —          | —    | —     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | —      |
-| User               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | —          | —    | —     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | —      |
+| Subscription       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | —     | ✓      | —           | —    | —        | —          | —      | —       | ✓         | ✓      |
+| Tag                | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | ✓    | —        | —          | —      | —       | —         | ✓      |
+| Task               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | —     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
+| User               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
 
 ---
 
@@ -172,12 +172,24 @@ Every object **should** contain the following, in this order:
 | Person.html | Accessibility | 2024-12-22 |
 | Queue.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
 
-### Batch 5: Pending (0/8 files)
-- Subscription.html
-- Task.html
-- User.html
-- Business Process.html
-- Case.html
-- Complaint.html
-- Organization.html
-- Tag.html
+### Batch 5: Complete (8/8 files)
+
+| File | Sections Added | Date |
+|------|----------------|------|
+| Subscription.html | Responsive Behavior | 2024-12-22 |
+| Task.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| User.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Business Process.html | Accessibility | 2024-12-22 |
+| Case.html | Summary | 2024-12-22 |
+| Complaint.html | Summary | 2024-12-22 |
+| Organization.html | Responsive Behavior | 2024-12-22 |
+| Tag.html | Already complete (no changes needed) | 2024-12-22 |
+
+---
+
+## Implementation Complete
+
+All 28 wireframe files have been updated with consistent documentation sections:
+- **Responsive Behavior**: Breakpoint-specific layout guidelines
+- **Accessibility**: Keyboard navigation and screen reader support
+- **Summary**: Quick reference for card variants and core principles
