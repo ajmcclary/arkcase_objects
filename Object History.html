@@ -2392,7 +2392,47 @@
     </div>
 </section>
 
-<section id="section-footer-summary" class="py-12 bg-gray-50">
+<!-- Accessibility Section -->
+<section id="accessibility-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
+            <p class="text-gray-600">Keyboard navigation and screen reader support for Object History cards.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-keyboard text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Keyboard Navigation</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Tab:</strong> Navigate between history entries</li>
+                    <li><strong>Enter/Space:</strong> Expand entry details</li>
+                    <li><strong>Arrow Keys:</strong> Navigate timeline chronologically</li>
+                    <li><strong>Escape:</strong> Collapse expanded details</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-universal-access text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Screen Reader Support</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Semantic HTML with proper timeline structure</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>ARIA labels for change types and actors</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Clear announcement of before/after values</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Timestamp formatting for screen readers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-footer-summary" class="py-12 bg-white">
     <div class="container mx-auto px-8">
         <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-8">
             <div class="flex items-start gap-4 mb-6">

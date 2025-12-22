@@ -56,12 +56,12 @@ Legend:
 | Group              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | ✓      | —           | ✓    | —        | ✓          | —      | —       | —         | ✓      |
 | Note               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | —     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
 | Notification       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
-| Object Association | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | —          | —    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | ✓         | —      |
-| Object History     | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | —           | ✓          | —    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
+| Object Association | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | ✓         | ✓      |
+| Object History     | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
 | Organization       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | —          | ✓    | ✓     | ✓      | ✓           | —    | —        | —          | —      | —       | —         | ✓      |
-| Participant        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | —          | —    | ✓     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | —      |
-| Person             | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | ✓          | —    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | ✓      |
-| Queue              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | —      | ✓           | ✓    | —        | —          | —      | —       | —         | —      |
+| Participant        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
+| Person             | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | ✓      |
+| Queue              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | —      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
 | Recycle Bin Item   | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | ✓      |
 | Subscription       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | —          | ✓    | —     | ✓      | —           | —    | —        | —          | —      | —       | ✓         | ✓      |
 | Tag                | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | ✓    | —        | —          | —      | —       | —         | —      |
@@ -162,12 +162,15 @@ Every object **should** contain the following, in this order:
 | Note.html | Accessibility, Summary | 2024-12-22 |
 | Notification.html | Responsive Behavior, Summary | 2024-12-22 |
 
-### Batch 4: Pending (0/5 files)
-- Object Association.html
-- Object History.html
-- Participant.html
-- Person.html
-- Queue.html
+### Batch 4: Complete (5/5 files)
+
+| File | Sections Added | Date |
+|------|----------------|------|
+| Object Association.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Object History.html | Accessibility | 2024-12-22 |
+| Participant.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Person.html | Accessibility | 2024-12-22 |
+| Queue.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
 
 ### Batch 5: Pending (0/8 files)
 - Subscription.html
