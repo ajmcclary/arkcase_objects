@@ -2313,6 +2313,132 @@
     </div>
 </section>
 
+<!-- Responsive Behavior Section -->
+<section id="responsive-behavior-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
+            <p class="text-gray-600">How Folder cards adapt to different screen sizes.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900">Variant</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-desktop mr-2"></i>Desktop (1024px+)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-tablet-screen-button mr-2"></i>Tablet (768-1023px)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-mobile-screen mr-2"></i>Mobile (&lt;768px)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Small</td>
+                        <td class="px-6 py-4 text-gray-700">Inline with folder name and item count</td>
+                        <td class="px-6 py-4 text-gray-700">Inline layout maintained</td>
+                        <td class="px-6 py-4 text-gray-700">Compact row, count badge only</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Medium</td>
+                        <td class="px-6 py-4 text-gray-700">Full details with path breadcrumb</td>
+                        <td class="px-6 py-4 text-gray-700">2 column grid</td>
+                        <td class="px-6 py-4 text-gray-700">Single column, path truncated</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Large</td>
+                        <td class="px-6 py-4 text-gray-700">Complete folder view with contents preview</td>
+                        <td class="px-6 py-4 text-gray-700">Condensed contents list</td>
+                        <td class="px-6 py-4 text-gray-700">Expandable sections</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Accessibility Section -->
+<section id="accessibility-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
+            <p class="text-gray-600">Keyboard navigation and screen reader support for Folder cards.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-keyboard text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Keyboard Navigation</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Tab:</strong> Navigate between folder cards</li>
+                    <li><strong>Enter/Space:</strong> Open folder contents</li>
+                    <li><strong>Arrow Right:</strong> Expand folder tree</li>
+                    <li><strong>Arrow Left:</strong> Collapse or go to parent</li>
+                    <li><strong>Escape:</strong> Close folder view</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-universal-access text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Screen Reader Support</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Folder name and item count announced</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Expand/collapse state communicated</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Path hierarchy context provided</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>ARIA tree role for folder navigation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Summary Section -->
+<section id="summary-section" class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Folder Card System Summary</h2>
+            <p class="text-gray-600">Quick reference for Folder card variants and usage.</p>
+        </div>
+        <div class="bg-white border border-blue-200 rounded-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Small Cards</h3>
+                    <p class="text-sm text-gray-600">Compact folder references in tree views and breadcrumbs.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Medium Cards</h3>
+                    <p class="text-sm text-gray-600">Folder browsers with item counts and path context.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Large Cards</h3>
+                    <p class="text-sm text-gray-600">Full folder inspector with contents preview and actions.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200">
+                <h4 class="font-semibold text-gray-900 mb-3">Core Principles</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Yellow folder icon family for consistency
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Clear item count and hierarchy indicators
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Accessible keyboard and screen reader support
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Visual alignment with File and Container cards
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
     </div>
 

@@ -51,11 +51,11 @@ Legend:
 | Cost               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | ✓      |
 | Costsheet          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | ✓       | —         | ✓      |
 | File Object        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
-| File Version       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | ✓      | ✓           | —    | ✓        | ✓          | —      | —       | —         | —      |
-| Folder             | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | —      |
-| Group              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | —          | —    | ✓     | ✓      | —           | ✓    | —        | ✓          | —      | —       | —         | —      |
-| Note               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | —    | —     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | —      |
-| Notification       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | —          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | —         | —      |
+| File Version       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | —    | ✓        | ✓          | —      | —       | —         | ✓      |
+| Folder             | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | ✓      |
+| Group              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | ✓      | —           | ✓    | —        | ✓          | —      | —       | —         | ✓      |
+| Note               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | —     | ✓      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
+| Notification       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | —         | ✓      |
 | Object Association | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | —          | —    | ✓     | —      | —           | —    | —        | ✓          | —      | —       | ✓         | —      |
 | Object History     | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | —           | ✓          | —    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
 | Organization       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | —          | ✓    | ✓     | ✓      | ✓           | —    | —        | —          | —      | —       | —         | ✓      |
@@ -152,12 +152,15 @@ Every object **should** contain the following, in this order:
 | Cost.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
 | File Object.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
 
-### Batch 3: Pending (0/5 files)
-- File Version.html
-- Folder.html
-- Group.html
-- Note.html
-- Notification.html
+### Batch 3: Complete (5/5 files)
+
+| File | Sections Added | Date |
+|------|----------------|------|
+| File Version.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Folder.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Group.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| Note.html | Accessibility, Summary | 2024-12-22 |
+| Notification.html | Responsive Behavior, Summary | 2024-12-22 |
 
 ### Batch 4: Pending (0/5 files)
 - Object Association.html
