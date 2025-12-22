@@ -1048,6 +1048,722 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-16 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Dashboard Widgets</h2>
+            <p class="text-gray-600 mb-4">Folder widgets for dashboard views, providing quick access to folder contents, recent activity, and storage analytics.</p>
+        </div>
+
+        <!-- Widget 1: My Folders -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-folder text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">My Folders</span>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">18</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>All Folders</option>
+                        <option>Case Folders</option>
+                        <option>Shared with Me</option>
+                        <option>Recently Modified</option>
+                    </select>
+                    <a href="#" class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Folder Item 1 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-folder text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Case Evidence</p>
+                                <p class="text-xs text-gray-500">Case #2024-1847</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>42 items</span>
+                            <span>1.2 GB</span>
+                        </div>
+                    </div>
+
+                    <!-- Folder Item 2 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-folder-closed text-amber-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Confidential Files</p>
+                                <p class="text-xs text-amber-600">Restricted Access</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>15 items</span>
+                            <span>856 MB</span>
+                        </div>
+                    </div>
+
+                    <!-- Folder Item 3 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-folder text-green-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Legal Documents</p>
+                                <p class="text-xs text-gray-500">Complaint #COM-392</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>28 items</span>
+                            <span>540 MB</span>
+                        </div>
+                    </div>
+
+                    <!-- Folder Item 4 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-users text-purple-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Shared Resources</p>
+                                <p class="text-xs text-purple-600">Team Shared</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>67 items</span>
+                            <span>2.4 GB</span>
+                        </div>
+                    </div>
+
+                    <!-- Folder Item 5 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-folder text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Training Materials</p>
+                                <p class="text-xs text-gray-500">Task #TSK-1203</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>19 items</span>
+                            <span>325 MB</span>
+                        </div>
+                    </div>
+
+                    <!-- Folder Item 6 -->
+                    <div class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-folder text-gray-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900 truncate">Archive 2023</p>
+                                <p class="text-xs text-gray-500">Archived</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>156 items</span>
+                            <span>4.8 GB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 2: Folders Needing Attention (Amber themed) -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-folder-open text-amber-600"></i>
+                    <span class="font-semibold text-gray-900">Folders Needing Attention</span>
+                    <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">4</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="text-sm text-amber-600 hover:text-amber-700 font-medium">Review All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="space-y-3">
+                    <!-- Attention Item 1 -->
+                    <div class="flex items-center p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-folder-open text-amber-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Pending Review Files</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">12 unreviewed</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Case #2024-1892 • Last updated 3 days ago</p>
+                        </div>
+                        <button class="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-medium rounded transition-colors">
+                            Review
+                        </button>
+                    </div>
+
+                    <!-- Attention Item 2 -->
+                    <div class="flex items-center p-3 bg-red-50 border border-red-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-hard-drive text-red-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Large File Archive</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">Near Quota</span>
+                            </div>
+                            <p class="text-xs text-red-600">Using 95% of 5GB allocation • Consider cleanup</p>
+                        </div>
+                        <button class="px-3 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium rounded transition-colors">
+                            Manage
+                        </button>
+                    </div>
+
+                    <!-- Attention Item 3 -->
+                    <div class="flex items-center p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-user-clock text-amber-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Shared Folder Access</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">3 pending requests</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Users awaiting folder access approval</p>
+                        </div>
+                        <button class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded transition-colors">
+                            Approve
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 3: Folder Activity Grid -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-8">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-folder-tree text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Folder Activity by Case</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>Last 7 Days</option>
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Filter Sidebar -->
+                    <div class="col-span-3 border-r border-gray-200 pr-6">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Filter by Type</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Case Folders</span>
+                                <span class="ml-auto text-xs text-gray-500">24</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Complaint Folders</span>
+                                <span class="ml-auto text-xs text-gray-500">18</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Task Folders</span>
+                                <span class="ml-auto text-xs text-gray-500">12</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Archived</span>
+                                <span class="ml-auto text-xs text-gray-500">45</span>
+                            </label>
+                        </div>
+
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 mt-6">Filter by Access</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Standard</span>
+                                <span class="ml-auto text-xs text-gray-500">67</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Restricted</span>
+                                <span class="ml-auto text-xs text-gray-500">21</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Confidential</span>
+                                <span class="ml-auto text-xs text-gray-500">11</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Folder Grid -->
+                    <div class="col-span-9">
+                        <div class="grid grid-cols-3 gap-4">
+                            <!-- Case Folder 1 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder text-blue-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Case #2024-1847</p>
+                                            <p class="text-xs text-gray-500">Evidence Files</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>42 items</span>
+                                    <span class="text-green-600">+8 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-blue-500 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Case Folder 2 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-amber-100 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder-closed text-amber-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Complaint #COM-392</p>
+                                            <p class="text-xs text-amber-600">Restricted</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>28 items</span>
+                                    <span class="text-green-600">+3 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-amber-500 rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Case Folder 3 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-green-100 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder text-green-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Task #TSK-1203</p>
+                                            <p class="text-xs text-gray-500">Training Docs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>19 items</span>
+                                    <span class="text-gray-500">No changes</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-green-500 rounded-full" style="width: 30%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Case Folder 4 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder text-purple-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Case #2024-2156</p>
+                                            <p class="text-xs text-gray-500">Legal Docs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>67 items</span>
+                                    <span class="text-green-600">+12 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-purple-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Case Folder 5 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder text-blue-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Consultation #CON-45</p>
+                                            <p class="text-xs text-gray-500">Research Files</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>34 items</span>
+                                    <span class="text-green-600">+5 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-blue-500 rounded-full" style="width: 55%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Case Folder 6 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded bg-gray-200 flex items-center justify-center mr-2">
+                                            <i class="fa-solid fa-folder text-gray-500 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Archive 2023</p>
+                                            <p class="text-xs text-gray-500">Archived</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>156 items</span>
+                                    <span class="text-gray-500">Archived</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-gray-400 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">99</div>
+                    <div class="text-xs text-gray-500">Total Folders</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-green-600 mb-1">54</div>
+                    <div class="text-xs text-gray-500">Active Folders</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">23</div>
+                    <div class="text-xs text-gray-500">Shared Folders</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-amber-600 mb-1">11</div>
+                    <div class="text-xs text-gray-500">Restricted</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-gray-600 mb-1">12.4 GB</div>
+                    <div class="text-xs text-gray-500">Total Storage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-16 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Sidebar Items</h2>
+            <p class="text-gray-600 mb-4">Folder sidebar components for navigation, folder browsing, and quick access to commonly used folders.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Sidebar Item 1: Related Folders Panel -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Related Folders Panel</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Case/object context</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Panel Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Case Folders</span>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">6</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Case #2024-1847-CR</p>
+                    </div>
+
+                    <!-- Folder List -->
+                    <div class="p-3 space-y-1">
+                        <!-- Folder 1 - Active -->
+                        <div class="flex items-center p-2 rounded-lg bg-blue-50 border border-blue-200 cursor-pointer">
+                            <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-folder-open text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">Evidence Files</p>
+                                <p class="text-xs text-gray-500">42 items • 1.2 GB</p>
+                            </div>
+                        </div>
+
+                        <!-- Folder 2 -->
+                        <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-folder text-gray-500 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">Legal Documents</p>
+                                <p class="text-xs text-gray-500">28 items • 540 MB</p>
+                            </div>
+                        </div>
+
+                        <!-- Folder 3 - Restricted -->
+                        <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="w-8 h-8 rounded bg-amber-100 flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-folder-closed text-amber-600 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">Confidential</p>
+                                <p class="text-xs text-amber-600">Restricted • 15 items</p>
+                            </div>
+                            <i class="fa-solid fa-lock text-amber-500 text-xs"></i>
+                        </div>
+
+                        <!-- Folder 4 -->
+                        <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-folder text-gray-500 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">Correspondence</p>
+                                <p class="text-xs text-gray-500">19 items • 125 MB</p>
+                            </div>
+                        </div>
+
+                        <!-- Folder 5 -->
+                        <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center mr-2">
+                                <i class="fa-solid fa-folder text-gray-500 text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">Court Filings</p>
+                                <p class="text-xs text-gray-500">8 items • 245 MB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="px-3 py-3 border-t border-gray-200">
+                        <button class="w-full flex items-center justify-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors">
+                            <i class="fa-solid fa-folder-plus"></i>
+                            New Folder
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 2: Folder Browser Tree -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Folder Browser Tree</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Navigation context</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Tree Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder-tree text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Document Browser</span>
+                            </div>
+                            <button class="p-1 text-gray-400 hover:text-gray-600 rounded">
+                                <i class="fa-solid fa-arrows-rotate text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tree Content -->
+                    <div class="p-3">
+                        <div class="space-y-0.5">
+                            <!-- Root Folder Expanded -->
+                            <div>
+                                <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                    <i class="fa-solid fa-chevron-down text-gray-400 text-xs w-4 mr-1"></i>
+                                    <i class="fa-solid fa-folder text-blue-600 mr-2"></i>
+                                    <span class="text-sm text-gray-900 flex-1">Case Files</span>
+                                    <span class="text-xs text-gray-400">3</span>
+                                </div>
+                                <div class="ml-5 pl-3 border-l border-gray-200 space-y-0.5">
+                                    <!-- Selected Subfolder -->
+                                    <div class="flex items-center p-1.5 rounded bg-blue-50 border-l-2 border-blue-600 -ml-px cursor-pointer">
+                                        <i class="fa-solid fa-chevron-down text-gray-400 text-xs w-4 mr-1"></i>
+                                        <i class="fa-solid fa-folder-open text-blue-600 mr-2"></i>
+                                        <span class="text-sm font-medium text-gray-900 flex-1">Case Attachments</span>
+                                        <span class="text-xs text-blue-600">24</span>
+                                    </div>
+                                    <!-- Files inside selected folder -->
+                                    <div class="ml-5 pl-3 border-l border-gray-200 space-y-0.5">
+                                        <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer">
+                                            <i class="fa-solid fa-file-pdf text-red-500 mr-2 text-sm"></i>
+                                            <span class="text-xs text-gray-700 truncate">Evidence_001.pdf</span>
+                                        </div>
+                                        <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer">
+                                            <i class="fa-solid fa-file-word text-blue-500 mr-2 text-sm"></i>
+                                            <span class="text-xs text-gray-700 truncate">Witness_Statement.docx</span>
+                                        </div>
+                                        <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer">
+                                            <i class="fa-solid fa-file-image text-purple-500 mr-2 text-sm"></i>
+                                            <span class="text-xs text-gray-700 truncate">Scene_Photo_01.jpg</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Collapsed Subfolder -->
+                                    <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer">
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                        <i class="fa-solid fa-folder-closed text-amber-600 mr-2"></i>
+                                        <span class="text-sm text-gray-900 flex-1">Confidential</span>
+                                        <i class="fa-solid fa-lock text-amber-500 text-xs mr-1"></i>
+                                        <span class="text-xs text-gray-400">15</span>
+                                    </div>
+
+                                    <!-- Collapsed Subfolder -->
+                                    <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer">
+                                        <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                        <i class="fa-solid fa-folder text-blue-600 mr-2"></i>
+                                        <span class="text-sm text-gray-900 flex-1">Legal Docs</span>
+                                        <span class="text-xs text-gray-400">28</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Root Folder Collapsed -->
+                            <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                <i class="fa-solid fa-folder text-blue-600 mr-2"></i>
+                                <span class="text-sm text-gray-900 flex-1">Complaint Files</span>
+                                <span class="text-xs text-gray-400">2</span>
+                            </div>
+
+                            <!-- Root Folder Collapsed -->
+                            <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                <i class="fa-solid fa-folder text-gray-500 mr-2"></i>
+                                <span class="text-sm text-gray-900 flex-1">Archive 2023</span>
+                                <span class="text-xs text-gray-400">156</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 3: Quick Access Folders -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Quick Access Folders</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Pinned & recent folders</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Quick Access Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <span class="font-semibold text-gray-900 text-sm">Quick Access</span>
+                        </div>
+                    </div>
+
+                    <!-- Pinned Folders -->
+                    <div class="p-3 border-b border-gray-100">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Pinned</span>
+                            <button class="text-xs text-blue-600 hover:text-blue-700">Manage</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-folder text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Case Evidence</p>
+                                    <p class="text-xs text-gray-500">Case #2024-1847</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-amber-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-folder text-purple-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Team Resources</p>
+                                    <p class="text-xs text-gray-500">Shared • 67 items</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-amber-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Folders -->
+                    <div class="p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent</span>
+                            <button class="text-xs text-gray-400 hover:text-gray-600">Clear</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-green-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-folder text-green-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Legal Documents</p>
+                                    <p class="text-xs text-gray-500">Opened 1 hour ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-amber-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-folder-closed text-amber-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Confidential Files</p>
+                                    <p class="text-xs text-gray-500">Opened yesterday</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-folder text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Training Materials</p>
+                                    <p class="text-xs text-gray-500">Opened 2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="px-3 pb-3">
+                        <div class="relative">
+                            <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                            <input type="text" placeholder="Search folders..." class="w-full pl-8 pr-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="behavioral-states-section" class="mb-16">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900 mb-3">Interaction Patterns</h2>

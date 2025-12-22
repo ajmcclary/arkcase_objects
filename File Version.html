@@ -830,6 +830,698 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-sm text-gray-600">File Version widgets for dashboard views, providing version tracking, approval workflows, and document history at a glance.</p>
+        </div>
+
+        <!-- Widget 1: Recent Version Activity -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code-branch text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Recent Version Activity</span>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">12</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>All Documents</option>
+                        <option>My Documents</option>
+                        <option>Shared with Me</option>
+                    </select>
+                    <a href="#" class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="space-y-3">
+                    <!-- Version Item 1 -->
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-pdf text-red-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Contract_Agreement.pdf</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-medium rounded">v5.2</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Updated by Sarah Mitchell • 2 hours ago</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <span class="text-xs text-gray-500">3.2 MB</span>
+                            <button class="p-1.5 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Version Item 2 -->
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-word text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Policy_Manual.docx</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">v3.1</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Updated by Michael Chen • 5 hours ago</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <span class="text-xs text-gray-500">1.8 MB</span>
+                            <button class="p-1.5 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Version Item 3 -->
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-excel text-green-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Budget_Report_Q4.xlsx</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">v2.0</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Updated by Emily Davis • Yesterday</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <span class="text-xs text-gray-500">856 KB</span>
+                            <button class="p-1.5 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Version Item 4 -->
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-video text-purple-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Training_Module_2.mp4</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">v3.0</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Updated by James Wilson • 2 days ago</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <span class="text-xs text-gray-500">127 MB</span>
+                            <button class="p-1.5 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 2: Pending Version Approvals (Amber themed) -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-clock-rotate-left text-amber-600"></i>
+                    <span class="font-semibold text-gray-900">Pending Version Approvals</span>
+                    <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">5</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="text-sm text-amber-600 hover:text-amber-700 font-medium">Review All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="space-y-3">
+                    <!-- Pending Item 1 -->
+                    <div class="flex items-center p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-pdf text-red-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Legal_Brief_2024.pdf</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">v2.1 Draft</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Submitted by Sarah Chen • Awaiting your review</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded transition-colors">
+                                Approve
+                            </button>
+                            <button class="px-3 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium rounded transition-colors">
+                                Review
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pending Item 2 -->
+                    <div class="flex items-center p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-word text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Compliance_Report.docx</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">v4.0 Draft</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Submitted by Robert Taylor • 3 hours ago</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded transition-colors">
+                                Approve
+                            </button>
+                            <button class="px-3 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium rounded transition-colors">
+                                Review
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pending Item 3 (Overdue) -->
+                    <div class="flex items-center p-3 bg-red-50 border border-red-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-file-excel text-green-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Financial_Statement.xlsx</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">v1.5 Overdue</span>
+                            </div>
+                            <p class="text-xs text-red-600">Submitted 5 days ago • Review deadline passed</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded transition-colors">
+                                Approve
+                            </button>
+                            <button class="px-3 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium rounded transition-colors">
+                                Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 3: Version Comparison Grid -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-8">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code-compare text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Version Activity by Document</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>Last 7 Days</option>
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Filter Sidebar -->
+                    <div class="col-span-3 border-r border-gray-200 pr-6">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Filter by Status</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Active Versions</span>
+                                <span class="ml-auto text-xs text-gray-500">48</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Draft Versions</span>
+                                <span class="ml-auto text-xs text-gray-500">12</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Archived</span>
+                                <span class="ml-auto text-xs text-gray-500">156</span>
+                            </label>
+                        </div>
+
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 mt-6">Filter by Type</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">PDF Documents</span>
+                                <span class="ml-auto text-xs text-gray-500">89</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Word Documents</span>
+                                <span class="ml-auto text-xs text-gray-500">67</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Spreadsheets</span>
+                                <span class="ml-auto text-xs text-gray-500">34</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Media Files</span>
+                                <span class="ml-auto text-xs text-gray-500">26</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Version Grid -->
+                    <div class="col-span-9">
+                        <div class="grid grid-cols-3 gap-4">
+                            <!-- Document 1 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-red-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-pdf text-red-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Contract_Agreement.pdf</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v5.2</span>
+                                    <span>12 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v5.2 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v5.1"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v5.0"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full" title="...9 more"></div>
+                                </div>
+                            </div>
+
+                            <!-- Document 2 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-word text-blue-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Policy_Manual.docx</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v3.1</span>
+                                    <span>8 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v3.1 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-amber-400 rounded-full" title="v3.2 Draft"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v3.0"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full" title="...5 more"></div>
+                                </div>
+                            </div>
+
+                            <!-- Document 3 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-green-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-excel text-green-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Budget_Report_Q4.xlsx</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v2.0</span>
+                                    <span>5 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v2.0 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v1.9"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v1.8"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full" title="...2 more"></div>
+                                </div>
+                            </div>
+
+                            <!-- Document 4 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-video text-purple-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Training_Module.mp4</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v3.0</span>
+                                    <span>3 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v3.0 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v2.0"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v1.0"></div>
+                                </div>
+                            </div>
+
+                            <!-- Document 5 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-red-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-pdf text-red-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Legal_Brief_2024.pdf</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v2.0</span>
+                                    <span>6 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v2.0 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-amber-400 rounded-full" title="v2.1 Draft"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v1.9"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full" title="...3 more"></div>
+                                </div>
+                            </div>
+
+                            <!-- Document 6 with Versions -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-indigo-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-image text-indigo-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Site_Survey_Photo.jpg</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>Current: v1.2</span>
+                                    <span>2 versions</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="flex-1 h-1.5 bg-green-500 rounded-full" title="v1.2 Active"></div>
+                                    <div class="flex-1 h-1.5 bg-gray-300 rounded-full" title="v1.1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">216</div>
+                    <div class="text-xs text-gray-500">Total Versions</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-green-600 mb-1">48</div>
+                    <div class="text-xs text-gray-500">Active Versions</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-amber-600 mb-1">12</div>
+                    <div class="text-xs text-gray-500">Pending Approval</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">156</div>
+                    <div class="text-xs text-gray-500">Archived</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-gray-600 mb-1">2.8 GB</div>
+                    <div class="text-xs text-gray-500">Total Storage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-sm text-gray-600">File Version sidebar components for contextual navigation, version history browsing, and quick access to document versions.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Sidebar Item 1: Version History Panel -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Version History Panel</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Document inspector context</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Panel Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Version History</span>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">12</span>
+                        </div>
+                        <p class="text-xs text-gray-500 truncate">Contract_Agreement_Final.pdf</p>
+                    </div>
+
+                    <!-- Version Timeline -->
+                    <div class="p-4">
+                        <div class="space-y-0">
+                            <!-- Current Version -->
+                            <div class="relative pl-6 pb-4 border-l-2 border-green-400 ml-2">
+                                <div class="absolute -left-2 top-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-sm font-semibold text-gray-900">v5.2</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-medium rounded">Current</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600 mb-1">Sarah Mitchell</p>
+                                    <p class="text-xs text-gray-400">Dec 21, 2024 • 3.2 MB</p>
+                                </div>
+                            </div>
+
+                            <!-- Previous Version -->
+                            <div class="relative pl-6 pb-4 border-l-2 border-gray-200 ml-2">
+                                <div class="absolute -left-2 top-0 w-4 h-4 bg-gray-300 rounded-full border-2 border-white"></div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-sm font-semibold text-gray-900">v5.1</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600 mb-1">Michael Chen</p>
+                                    <p class="text-xs text-gray-400">Dec 20, 2024 • 3.1 MB</p>
+                                </div>
+                            </div>
+
+                            <!-- Older Version -->
+                            <div class="relative pl-6 pb-4 border-l-2 border-gray-200 ml-2">
+                                <div class="absolute -left-2 top-0 w-4 h-4 bg-gray-300 rounded-full border-2 border-white"></div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-sm font-semibold text-gray-900">v5.0</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600 mb-1">Emily Davis</p>
+                                    <p class="text-xs text-gray-400">Dec 18, 2024 • 3.0 MB</p>
+                                </div>
+                            </div>
+
+                            <!-- More Versions Link -->
+                            <div class="relative pl-6 ml-2">
+                                <div class="absolute -left-2 top-0 w-4 h-4 bg-gray-200 rounded-full border-2 border-white flex items-center justify-center">
+                                    <span class="text-xs text-gray-500">+</span>
+                                </div>
+                                <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">
+                                    Show 9 more versions
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compare Actions -->
+                    <div class="px-4 py-3 border-t border-gray-200 bg-gray-50">
+                        <button class="w-full flex items-center justify-center gap-2 px-3 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fa-solid fa-code-compare text-blue-600"></i>
+                            Compare Versions
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 2: Document Versions Tree -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Document Versions Tree</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Folder/case context</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Tree Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-folder-tree text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Document Versions</span>
+                            </div>
+                            <button class="p-1 text-gray-400 hover:text-gray-600 rounded">
+                                <i class="fa-solid fa-arrows-rotate text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tree Content -->
+                    <div class="p-3">
+                        <div class="space-y-1">
+                            <!-- Document 1 Expanded -->
+                            <div>
+                                <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                    <i class="fa-solid fa-chevron-down text-gray-400 text-xs w-4 mr-1"></i>
+                                    <div class="w-6 h-6 rounded bg-red-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-file-pdf text-red-600 text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-900 truncate flex-1">Contract_Agreement.pdf</span>
+                                    <span class="text-xs text-gray-400 ml-1">12</span>
+                                </div>
+                                <div class="ml-5 pl-3 border-l border-gray-200 space-y-0.5">
+                                    <div class="flex items-center p-1.5 rounded bg-blue-50 text-blue-700">
+                                        <i class="fa-solid fa-code-branch text-xs w-4 mr-1"></i>
+                                        <span class="text-xs font-medium">v5.2</span>
+                                        <span class="ml-auto px-1.5 py-0.5 bg-green-100 text-green-700 text-xs rounded">Current</span>
+                                    </div>
+                                    <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer text-gray-600">
+                                        <i class="fa-solid fa-code-branch text-xs w-4 mr-1"></i>
+                                        <span class="text-xs">v5.1</span>
+                                    </div>
+                                    <div class="flex items-center p-1.5 rounded hover:bg-gray-50 cursor-pointer text-gray-600">
+                                        <i class="fa-solid fa-code-branch text-xs w-4 mr-1"></i>
+                                        <span class="text-xs">v5.0</span>
+                                    </div>
+                                    <div class="flex items-center p-1.5 text-gray-400">
+                                        <i class="fa-solid fa-ellipsis text-xs w-4 mr-1"></i>
+                                        <span class="text-xs">9 more</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Document 2 Collapsed -->
+                            <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                <div class="w-6 h-6 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-word text-blue-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm text-gray-900 truncate flex-1">Policy_Manual.docx</span>
+                                <span class="text-xs text-gray-400 ml-1">8</span>
+                            </div>
+
+                            <!-- Document 3 Collapsed -->
+                            <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                <div class="w-6 h-6 rounded bg-green-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-excel text-green-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm text-gray-900 truncate flex-1">Budget_Report.xlsx</span>
+                                <span class="text-xs text-gray-400 ml-1">5</span>
+                            </div>
+
+                            <!-- Document 4 Collapsed -->
+                            <div class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs w-4 mr-1"></i>
+                                <div class="w-6 h-6 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-video text-purple-600 text-xs"></i>
+                                </div>
+                                <span class="text-sm text-gray-900 truncate flex-1">Training_Video.mp4</span>
+                                <span class="text-xs text-gray-400 ml-1">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 3: Quick Access Versions -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Quick Access Versions</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Pinned & recently viewed</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Quick Access Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="font-semibold text-gray-900 text-sm">Quick Access</span>
+                        </div>
+                    </div>
+
+                    <!-- Pinned Versions -->
+                    <div class="p-3 border-b border-gray-100">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Pinned</span>
+                            <button class="text-xs text-blue-600 hover:text-blue-700">Manage</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-red-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-pdf text-red-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Contract_Agreement.pdf</p>
+                                    <p class="text-xs text-gray-500">v5.2 • Current</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-blue-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-word text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Policy_Manual.docx</p>
+                                    <p class="text-xs text-gray-500">v3.0 • Baseline</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-blue-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Versions -->
+                    <div class="p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent</span>
+                            <button class="text-xs text-gray-400 hover:text-gray-600">Clear</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-green-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-excel text-green-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Budget_Report.xlsx</p>
+                                    <p class="text-xs text-gray-500">v2.0 • 2 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-red-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-pdf text-red-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Legal_Brief.pdf</p>
+                                    <p class="text-xs text-gray-500">v2.0 • Yesterday</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                    <i class="fa-solid fa-file-video text-purple-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Training_Module.mp4</p>
+                                    <p class="text-xs text-gray-500">v3.0 • 2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="px-3 pb-3">
+                        <div class="relative">
+                            <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                            <input type="text" placeholder="Search versions..." class="w-full pl-8 pr-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="context-usage-section" class="mb-12">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Usage Guidelines</h2>

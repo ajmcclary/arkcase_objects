@@ -1061,6 +1061,663 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Note widgets for dashboard views, providing quick access to recent notes, pending reviews, and note activity across cases.</p>
+        </div>
+
+        <!-- Widget 1: Recent Notes -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-note-sticky text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Recent Notes</span>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">24</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>All Notes</option>
+                        <option>My Notes</option>
+                        <option>Case Notes</option>
+                        <option>Internal Only</option>
+                    </select>
+                    <a href="#" class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="space-y-3">
+                    <!-- Note Item 1 -->
+                    <div class="flex items-start p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-note-sticky text-blue-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Case Progress Update</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded">Case Note</span>
+                            </div>
+                            <p class="text-xs text-gray-600 line-clamp-2 mb-1">Evidence review completed. All submitted documents verified against the original sources. Moving to witness interviews next week...</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Sarah Mitchell" class="w-4 h-4 rounded-full">
+                                <span>Sarah Mitchell</span>
+                                <span>•</span>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note Item 2 -->
+                    <div class="flex items-start p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-lock text-amber-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Attorney-Client Communication</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">Privileged</span>
+                            </div>
+                            <p class="text-xs text-gray-600 line-clamp-2 mb-1">Discussed settlement options with client. They are open to mediation if the opposing party agrees to the proposed terms...</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Michael Chen" class="w-4 h-4 rounded-full">
+                                <span>Michael Chen</span>
+                                <span>•</span>
+                                <span>5 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note Item 3 -->
+                    <div class="flex items-start p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-clipboard-list text-purple-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Task Completion Notes</span>
+                                <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-medium rounded">Task Note</span>
+                            </div>
+                            <p class="text-xs text-gray-600 line-clamp-2 mb-1">Document review task completed ahead of schedule. All 45 documents cataloged and tagged appropriately for case management system...</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Emily Davis" class="w-4 h-4 rounded-full">
+                                <span>Emily Davis</span>
+                                <span>•</span>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note Item 4 -->
+                    <div class="flex items-start p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-phone text-green-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Client Call Summary</span>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-medium rounded">Communication</span>
+                            </div>
+                            <p class="text-xs text-gray-600 line-clamp-2 mb-1">Spoke with client regarding upcoming hearing date. They confirmed availability for the rescheduled date of January 15th...</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="James Wilson" class="w-4 h-4 rounded-full">
+                                <span>James Wilson</span>
+                                <span>•</span>
+                                <span>2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 2: Notes Requiring Review (Amber themed) -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-6">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square text-amber-600"></i>
+                    <span class="font-semibold text-gray-900">Notes Requiring Review</span>
+                    <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">5</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="text-sm text-amber-600 hover:text-amber-700 font-medium">Review All</a>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="space-y-3">
+                    <!-- Review Item 1 -->
+                    <div class="flex items-start p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-flag text-amber-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Draft: Investigation Summary</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">Pending Approval</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Case #2024-1847 • Submitted by Sarah Mitchell • 3 hours ago</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded transition-colors">
+                                Approve
+                            </button>
+                            <button class="px-3 py-1.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-medium rounded transition-colors">
+                                Review
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Review Item 2 -->
+                    <div class="flex items-start p-3 bg-red-50 border border-red-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-exclamation-triangle text-red-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Overdue: Witness Statement Notes</span>
+                                <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs font-medium rounded">2 days overdue</span>
+                            </div>
+                            <p class="text-xs text-red-600">Complaint #COM-392 • Review deadline passed Dec 20</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded transition-colors">
+                                Review Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Review Item 3 -->
+                    <div class="flex items-start p-3 bg-amber-50 border border-amber-100 rounded-lg">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mr-3 flex-shrink-0">
+                            <i class="fa-solid fa-user-edit text-amber-600"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-sm font-semibold text-gray-900">Changes Requested: Meeting Notes</span>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-xs font-medium rounded">Revisions Needed</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Consultation #CON-45 • Feedback from Michael Chen</p>
+                        </div>
+                        <div class="flex items-center gap-2 ml-4">
+                            <button class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded transition-colors">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 3: Notes by Category Grid -->
+        <div class="bg-white border border-gray-200 rounded-lg mb-8">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">Notes by Category</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white">
+                        <option>Last 7 Days</option>
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Filter Sidebar -->
+                    <div class="col-span-3 border-r border-gray-200 pr-6">
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Filter by Type</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Case Notes</span>
+                                <span class="ml-auto text-xs text-gray-500">45</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Task Notes</span>
+                                <span class="ml-auto text-xs text-gray-500">28</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Communication</span>
+                                <span class="ml-auto text-xs text-gray-500">19</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Internal Only</span>
+                                <span class="ml-auto text-xs text-gray-500">12</span>
+                            </label>
+                        </div>
+
+                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 mt-6">Filter by Author</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">My Notes</span>
+                                <span class="ml-auto text-xs text-gray-500">34</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" checked class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Team Notes</span>
+                                <span class="ml-auto text-xs text-gray-500">70</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Notes Grid -->
+                    <div class="col-span-9">
+                        <div class="grid grid-cols-3 gap-4">
+                            <!-- Note Category Card 1 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-briefcase text-blue-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Case Notes</p>
+                                        <p class="text-xs text-gray-500">General case updates</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>45 notes</span>
+                                    <span class="text-green-600">+8 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-blue-500 rounded-full" style="width: 43%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Note Category Card 2 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-amber-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-lock text-amber-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Privileged</p>
+                                        <p class="text-xs text-amber-600">Attorney-client</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>12 notes</span>
+                                    <span class="text-green-600">+2 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-amber-500 rounded-full" style="width: 12%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Note Category Card 3 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-purple-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-clipboard-list text-purple-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Task Notes</p>
+                                        <p class="text-xs text-gray-500">Task completion logs</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>28 notes</span>
+                                    <span class="text-green-600">+5 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-purple-500 rounded-full" style="width: 27%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Note Category Card 4 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-green-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-phone text-green-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Communication</p>
+                                        <p class="text-xs text-gray-500">Calls & meetings</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>19 notes</span>
+                                    <span class="text-green-600">+3 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-green-500 rounded-full" style="width: 18%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Note Category Card 5 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-red-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-eye-slash text-red-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Internal Only</p>
+                                        <p class="text-xs text-gray-500">Private notes</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>12 notes</span>
+                                    <span class="text-gray-500">No changes</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-red-500 rounded-full" style="width: 12%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Note Category Card 6 -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded bg-indigo-100 flex items-center justify-center mr-2">
+                                        <i class="fa-solid fa-gavel text-indigo-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-900">Legal Research</p>
+                                        <p class="text-xs text-gray-500">Research findings</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                    <span>8 notes</span>
+                                    <span class="text-green-600">+1 this week</span>
+                                </div>
+                                <div class="w-full h-1.5 bg-gray-200 rounded-full">
+                                    <div class="h-1.5 bg-indigo-500 rounded-full" style="width: 8%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">104</div>
+                    <div class="text-xs text-gray-500">Total Notes</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-green-600 mb-1">34</div>
+                    <div class="text-xs text-gray-500">My Notes</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-amber-600 mb-1">5</div>
+                    <div class="text-xs text-gray-500">Pending Review</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">12</div>
+                    <div class="text-xs text-gray-500">Privileged</div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="text-2xl font-bold text-gray-600 mb-1">19</div>
+                    <div class="text-xs text-gray-500">This Week</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">Note sidebar components for contextual navigation, note browsing, and quick access to related notes.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Sidebar Item 1: Related Notes Panel -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Related Notes Panel</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Case/object context</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Panel Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-note-sticky text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Case Notes</span>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">8</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Case #2024-1847-CR</p>
+                    </div>
+
+                    <!-- Notes List -->
+                    <div class="p-3 space-y-2">
+                        <!-- Note 1 - Selected -->
+                        <div class="p-2 rounded-lg bg-blue-50 border border-blue-200 cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-note-sticky text-blue-600 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Case Progress Update</span>
+                            </div>
+                            <p class="text-xs text-gray-500 line-clamp-2">Evidence review completed. All submitted documents verified...</p>
+                            <div class="flex items-center gap-2 mt-1 text-xs text-gray-400">
+                                <span>Sarah M.</span>
+                                <span>•</span>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+
+                        <!-- Note 2 -->
+                        <div class="p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-lock text-amber-500 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Attorney Notes</span>
+                            </div>
+                            <p class="text-xs text-gray-500 line-clamp-2">Discussed settlement options with client...</p>
+                            <div class="flex items-center gap-2 mt-1 text-xs text-gray-400">
+                                <span>Michael C.</span>
+                                <span>•</span>
+                                <span>5 hours ago</span>
+                            </div>
+                        </div>
+
+                        <!-- Note 3 -->
+                        <div class="p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-phone text-green-500 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Client Call Summary</span>
+                            </div>
+                            <p class="text-xs text-gray-500 line-clamp-2">Spoke with client regarding upcoming hearing...</p>
+                            <div class="flex items-center gap-2 mt-1 text-xs text-gray-400">
+                                <span>James W.</span>
+                                <span>•</span>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+
+                        <!-- Note 4 -->
+                        <div class="p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-note-sticky text-blue-500 text-xs"></i>
+                                <span class="text-sm font-medium text-gray-900 truncate">Initial Assessment</span>
+                            </div>
+                            <p class="text-xs text-gray-500 line-clamp-2">Case intake completed with full documentation...</p>
+                            <div class="flex items-center gap-2 mt-1 text-xs text-gray-400">
+                                <span>Emily D.</span>
+                                <span>•</span>
+                                <span>Dec 18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="px-3 py-3 border-t border-gray-200">
+                        <button class="w-full flex items-center justify-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors">
+                            <i class="fa-solid fa-plus"></i>
+                            Add Note
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 2: Notes Timeline -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Notes Timeline</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Chronological view</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Timeline Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-blue-600"></i>
+                                <span class="font-semibold text-gray-900 text-sm">Activity Timeline</span>
+                            </div>
+                            <button class="p-1 text-gray-400 hover:text-gray-600 rounded">
+                                <i class="fa-solid fa-filter text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Content -->
+                    <div class="p-4">
+                        <div class="space-y-0">
+                            <!-- Today -->
+                            <div class="mb-3">
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Today</div>
+                                <div class="relative pl-6 pb-4 border-l-2 border-blue-400 ml-2">
+                                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-2">
+                                        <p class="text-xs font-medium text-gray-900">Case Progress Update</p>
+                                        <p class="text-xs text-gray-500">Sarah M. • 2 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="relative pl-6 pb-4 border-l-2 border-amber-400 ml-2">
+                                    <div class="absolute -left-2 top-0 w-4 h-4 bg-amber-500 rounded-full border-2 border-white"></div>
+                                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-2">
+                                        <p class="text-xs font-medium text-gray-900">Attorney Notes</p>
+                                        <p class="text-xs text-gray-500">Michael C. • 5 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Yesterday -->
+                            <div class="mb-3">
+                                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Yesterday</div>
+                                <div class="relative pl-6 pb-4 border-l-2 border-gray-200 ml-2">
+                                    <div class="absolute -left-2 top-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-2 hover:bg-gray-50 cursor-pointer">
+                                        <p class="text-xs font-medium text-gray-900">Client Call Summary</p>
+                                        <p class="text-xs text-gray-500">James W. • 1:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="relative pl-6 border-l-2 border-gray-200 ml-2">
+                                    <div class="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full border-2 border-white"></div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-2 hover:bg-gray-50 cursor-pointer">
+                                        <p class="text-xs font-medium text-gray-900">Task Completion</p>
+                                        <p class="text-xs text-gray-500">Emily D. • 10:15 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Item 3: Quick Access Notes -->
+            <div class="bg-white border border-gray-200 rounded-lg">
+                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
+                    <h3 class="text-sm font-semibold text-gray-900">Quick Access Notes</h3>
+                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Pinned & recent</p>
+                </div>
+                <div class="p-0" style="width: 264px;">
+                    <!-- Quick Access Header -->
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <span class="font-semibold text-gray-900 text-sm">Quick Access</span>
+                        </div>
+                    </div>
+
+                    <!-- Pinned Notes -->
+                    <div class="p-3 border-b border-gray-100">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Pinned</span>
+                            <button class="text-xs text-blue-600 hover:text-blue-700">Manage</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-start p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-blue-100 flex items-center justify-center mr-2 flex-shrink-0">
+                                    <i class="fa-solid fa-note-sticky text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Case Strategy Notes</p>
+                                    <p class="text-xs text-gray-500">Case #2024-1847</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-amber-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                            <div class="flex items-start p-2 rounded-lg hover:bg-gray-50 cursor-pointer group">
+                                <div class="w-7 h-7 rounded bg-amber-100 flex items-center justify-center mr-2 flex-shrink-0">
+                                    <i class="fa-solid fa-lock text-amber-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Client Instructions</p>
+                                    <p class="text-xs text-gray-500">Privileged</p>
+                                </div>
+                                <i class="fa-solid fa-thumbtack text-amber-500 text-xs opacity-50 group-hover:opacity-100"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Notes -->
+                    <div class="p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent</span>
+                            <button class="text-xs text-gray-400 hover:text-gray-600">Clear</button>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-start p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-green-100 flex items-center justify-center mr-2 flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-green-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Client Call Summary</p>
+                                    <p class="text-xs text-gray-500">Viewed 1 hour ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-purple-100 flex items-center justify-center mr-2 flex-shrink-0">
+                                    <i class="fa-solid fa-clipboard-list text-purple-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Task Completion</p>
+                                    <p class="text-xs text-gray-500">Viewed yesterday</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-2 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <div class="w-7 h-7 rounded bg-blue-100 flex items-center justify-center mr-2 flex-shrink-0">
+                                    <i class="fa-solid fa-note-sticky text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Initial Assessment</p>
+                                    <p class="text-xs text-gray-500">Viewed 2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="px-3 pb-3">
+                        <div class="relative">
+                            <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                            <input type="text" placeholder="Search notes..." class="w-full pl-8 pr-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="comparison-section" class="mb-12">
         <div class="mb-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-2">Card Comparison</h2>
