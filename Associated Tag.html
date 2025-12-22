@@ -1024,6 +1024,289 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">19.4</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Dashboard Widgets</h2>
+                </div>
+                <p class="text-gray-600">Dashboard components for displaying tag associations, recent tagging activity, and association analytics.</p>
+            </div>
+
+            <!-- Recent Tag Associations Widget -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Tag Associations Widget</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-link text-blue-600"></i>
+                            <span class="font-semibold text-gray-900">Recent Associations</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">24</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center gap-1">
+                                    <span class="inline-flex items-center px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
+                                        <i class="fa-solid fa-tag text-xs mr-1"></i>Finance
+                                    </span>
+                                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                                    <span class="text-xs text-gray-600">Case #2847</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Added by Sarah Chen · 5 min ago</p>
+                        </div>
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center gap-1">
+                                    <span class="inline-flex items-center px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">
+                                        <i class="fa-solid fa-tag text-xs mr-1"></i>Urgent
+                                    </span>
+                                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                                    <span class="text-xs text-gray-600">Task #1847</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Added by Mike Rodriguez · 1h ago</p>
+                        </div>
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center gap-1">
+                                    <span class="inline-flex items-center px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">
+                                        <i class="fa-solid fa-tag text-xs mr-1"></i>Legal
+                                    </span>
+                                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                                    <span class="text-xs text-gray-600">Document #5123</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Added by System · 2h ago</p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 border-t border-gray-200">
+                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All Associations</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tags by Object Type Widget -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Tags by Object Type Widget</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-chart-pie text-blue-600"></i>
+                            <span class="font-semibold text-gray-900">Tags by Object</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-briefcase text-blue-500"></i>
+                                    <span class="text-sm text-gray-700">Cases</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-900">847</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-file text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Documents</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-900">632</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-list-check text-purple-500"></i>
+                                    <span class="text-sm text-gray-700">Tasks</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-500 h-2 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-900">423</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-amber-500"></i>
+                                    <span class="text-sm text-gray-700">People</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-amber-500 h-2 rounded-full" style="width: 25%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-900">156</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Statistics -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+                <div class="grid grid-cols-5 gap-4">
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-blue-600">2,058</div>
+                        <div class="text-xs text-gray-500 mt-1">Total Associations</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-green-600">127</div>
+                        <div class="text-xs text-gray-500 mt-1">Unique Tags</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-amber-600">48</div>
+                        <div class="text-xs text-gray-500 mt-1">Today</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-purple-600">4</div>
+                        <div class="text-xs text-gray-500 mt-1">Object Types</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-gray-700">16</div>
+                        <div class="text-xs text-gray-500 mt-1">Avg. per Object</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">19.5</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Sidebar Items</h2>
+                </div>
+                <p class="text-gray-600">Sidebar components for tag association navigation, filtering, and quick tagging actions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Object Tags Panel -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Object Tags Panel</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Tags on This Object</span>
+                            <button class="text-blue-600 hover:text-blue-700">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium group">
+                                    <i class="fa-solid fa-tag text-xs mr-1"></i>Finance
+                                    <button class="ml-1.5 text-blue-400 hover:text-blue-600 hidden group-hover:inline">
+                                        <i class="fa-solid fa-times text-xs"></i>
+                                    </button>
+                                </span>
+                                <span class="inline-flex items-center px-2.5 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium group">
+                                    <i class="fa-solid fa-tag text-xs mr-1"></i>Urgent
+                                    <button class="ml-1.5 text-red-400 hover:text-red-600 hidden group-hover:inline">
+                                        <i class="fa-solid fa-times text-xs"></i>
+                                    </button>
+                                </span>
+                                <span class="inline-flex items-center px-2.5 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium group">
+                                    <i class="fa-solid fa-tag text-xs mr-1"></i>Legal
+                                    <button class="ml-1.5 text-green-400 hover:text-green-600 hidden group-hover:inline">
+                                        <i class="fa-solid fa-times text-xs"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 border-t border-gray-200">
+                            <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">Add More Tags</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tag Suggestions -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Tag Suggestions</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Suggested Tags</span>
+                            <span class="text-xs text-gray-500">AI-powered</span>
+                        </div>
+                        <div class="p-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <span class="inline-flex items-center text-sm text-gray-700">
+                                        <i class="fa-solid fa-tag text-purple-500 text-xs mr-2"></i>
+                                        Investigation
+                                    </span>
+                                    <button class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded hover:bg-blue-200">Add</button>
+                                </div>
+                                <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <span class="inline-flex items-center text-sm text-gray-700">
+                                        <i class="fa-solid fa-tag text-amber-500 text-xs mr-2"></i>
+                                        Review Required
+                                    </span>
+                                    <button class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded hover:bg-blue-200">Add</button>
+                                </div>
+                                <div class="flex items-center justify-between px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <span class="inline-flex items-center text-sm text-gray-700">
+                                        <i class="fa-solid fa-tag text-gray-500 text-xs mr-2"></i>
+                                        Internal
+                                    </span>
+                                    <button class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded hover:bg-blue-200">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Tag Actions</span>
+                        </div>
+                        <div class="p-3">
+                            <div class="space-y-1">
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-plus text-blue-500 w-5"></i>
+                                    <span>Add Tag</span>
+                                </button>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-copy text-gray-400 w-5"></i>
+                                    <span>Copy Tags From...</span>
+                                </button>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-times text-gray-400 w-5"></i>
+                                    <span>Remove All Tags</span>
+                                </button>
+                                <div class="border-t border-gray-200 my-2"></div>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-history text-gray-400 w-5"></i>
+                                    <span>Tag History</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="comparison-section" class="mb-16">
         <div class="max-w-7xl mx-auto">
             <div class="mb-6">

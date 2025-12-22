@@ -1044,6 +1044,298 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">25.4</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Dashboard Widgets</h2>
+                </div>
+                <p class="text-gray-600">Dashboard components for managing subscriptions, viewing subscription activity, and subscription analytics.</p>
+            </div>
+
+            <!-- My Subscriptions Widget -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">My Subscriptions Widget</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-bell text-blue-600"></i>
+                            <span class="font-semibold text-gray-900">My Subscriptions</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">24</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-briefcase text-blue-600"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Case #2024-0847</p>
+                                    <p class="text-xs text-gray-500">Property Damage Investigation</p>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded-full">Active</span>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-list-check text-purple-600"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Task: Review Documents</p>
+                                    <p class="text-xs text-gray-500">Due Jan 25, 2024</p>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded-full">Active</span>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-alt text-amber-600"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Evidence Summary v2.3</p>
+                                    <p class="text-xs text-gray-500">Document Updates</p>
+                                </div>
+                                <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded-full">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 border-t border-gray-200">
+                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">Manage Subscriptions</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscription Updates Widget -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Subscription Updates Widget</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-bell-concierge text-amber-600"></i>
+                            <span class="font-semibold text-gray-900">Recent Updates</span>
+                            <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">7 new</span>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        <div class="px-5 py-3 bg-blue-50">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-info text-blue-500 mt-0.5"></i>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-900">Case #2024-0847 Updated</p>
+                                    <p class="text-xs text-gray-600">Status changed to "In Review"</p>
+                                    <p class="text-xs text-gray-400 mt-1">5 min ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-paperclip text-purple-500 mt-0.5"></i>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-900">New Document Attached</p>
+                                    <p class="text-xs text-gray-600">Evidence_Photos.zip added to Case</p>
+                                    <p class="text-xs text-gray-400 mt-1">1 hour ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-comment text-green-500 mt-0.5"></i>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-900">Comment Added</p>
+                                    <p class="text-xs text-gray-600">Sarah Chen commented on Task</p>
+                                    <p class="text-xs text-gray-400 mt-1">3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Statistics -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+                <div class="grid grid-cols-5 gap-4">
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-blue-600">24</div>
+                        <div class="text-xs text-gray-500 mt-1">Active</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-amber-600">7</div>
+                        <div class="text-xs text-gray-500 mt-1">New Updates</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-green-600">156</div>
+                        <div class="text-xs text-gray-500 mt-1">Total Alerts</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-purple-600">12</div>
+                        <div class="text-xs text-gray-500 mt-1">Cases</div>
+                    </div>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                        <div class="text-2xl font-bold text-gray-700">8</div>
+                        <div class="text-xs text-gray-500 mt-1">Documents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">25.5</span>
+                    <h2 class="text-2xl font-bold text-gray-900">Sidebar Items</h2>
+                </div>
+                <p class="text-gray-600">Sidebar components for subscription management, quick filters, and subscription settings.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Subscribed Objects Panel -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Subscribed Objects Panel</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Subscribed Objects</span>
+                            <span class="text-xs text-gray-500">24 items</span>
+                        </div>
+                        <div class="divide-y divide-gray-100">
+                            <div class="px-4 py-3 bg-blue-50 border-l-2 border-blue-600">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-briefcase text-blue-600 text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-blue-700 truncate">Case #2024-0847</p>
+                                        <p class="text-xs text-gray-500">3 new updates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-list-check text-purple-600 text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Task: Review Docs</p>
+                                        <p class="text-xs text-gray-500">1 update</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-file-alt text-amber-600 text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Evidence Summary</p>
+                                        <p class="text-xs text-gray-500">No new updates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 border-t border-gray-200">
+                            <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View All Subscriptions</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subscription Type Browser -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Subscription Browser</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Browse by Type</span>
+                        </div>
+                        <div class="p-3">
+                            <!-- Cases -->
+                            <div class="mb-2">
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-chevron-down text-gray-400 text-xs"></i>
+                                    <i class="fa-solid fa-briefcase text-blue-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Cases</span>
+                                    <span class="text-xs text-gray-400 ml-auto">12</span>
+                                </div>
+                                <div class="ml-6 border-l border-gray-200 pl-2">
+                                    <div class="flex items-center gap-2 px-2 py-1.5 bg-blue-50 rounded cursor-pointer">
+                                        <i class="fa-solid fa-bell text-blue-600 text-sm"></i>
+                                        <span class="text-sm text-blue-700">Case #2847</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                        <i class="fa-solid fa-bell text-gray-400 text-sm"></i>
+                                        <span class="text-sm text-gray-600">Case #2846</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tasks -->
+                            <div class="mb-2">
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                    <i class="fa-solid fa-list-check text-purple-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Tasks</span>
+                                    <span class="text-xs text-gray-400 ml-auto">8</span>
+                                </div>
+                            </div>
+                            <!-- Documents -->
+                            <div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                    <i class="fa-solid fa-file-alt text-amber-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Documents</span>
+                                    <span class="text-xs text-gray-400 ml-auto">4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <span class="text-sm font-semibold text-gray-900">Subscription Actions</span>
+                        </div>
+                        <div class="p-3">
+                            <div class="space-y-1">
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-bell text-blue-500 w-5"></i>
+                                    <span>Subscribe to Object</span>
+                                </button>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-bell-slash text-gray-400 w-5"></i>
+                                    <span>Unsubscribe Selected</span>
+                                </button>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-pause text-amber-500 w-5"></i>
+                                    <span>Pause Notifications</span>
+                                </button>
+                                <div class="border-t border-gray-200 my-2"></div>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-filter text-gray-400 w-5"></i>
+                                    <span>Filter Preferences</span>
+                                </button>
+                                <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                                    <i class="fa-solid fa-cog text-gray-400 w-5"></i>
+                                    <span>Notification Settings</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="comparison-section" class="mb-16">
         <div class="max-w-7xl mx-auto">
             <div class="mb-8">

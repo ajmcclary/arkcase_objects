@@ -854,6 +854,296 @@
     </div>
 </div>
 
+<!-- Dashboard Widgets Section -->
+<div id="dashboard-widgets-section" class="mb-16">
+    <div class="mb-8">
+        <div class="flex items-center gap-3 mb-3">
+            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.4</span>
+            <h2 class="text-2xl font-semibold text-gray-900">Dashboard Widgets</h2>
+        </div>
+        <p class="text-gray-600">Dashboard components for displaying costsheet summaries, budget tracking, and financial overviews.</p>
+    </div>
+
+    <!-- My Costsheets Widget -->
+    <div class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">My Costsheets Widget</h3>
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-file-invoice-dollar text-blue-600"></i>
+                    <span class="font-semibold text-gray-900">My Costsheets</span>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">8</span>
+                </div>
+                <button class="text-gray-400 hover:text-gray-600">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </div>
+            <div class="divide-y divide-gray-100">
+                <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Case #2847 Costsheet</p>
+                                <p class="text-xs text-gray-500">12 line items</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-sm font-semibold text-gray-900">$24,500</span>
+                            <p class="text-xs text-green-600">Under budget</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-amber-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Case #2846 Costsheet</p>
+                                <p class="text-xs text-gray-500">8 line items</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-sm font-semibold text-gray-900">$18,750</span>
+                            <p class="text-xs text-amber-600">Near limit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Case #2845 Costsheet</p>
+                                <p class="text-xs text-gray-500">6 line items</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-sm font-semibold text-gray-900">$9,200</span>
+                            <p class="text-xs text-green-600">Finalized</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-5 py-3 border-t border-gray-200">
+                <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All Costsheets</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Budget Alerts Widget -->
+    <div class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Budget Alerts Widget</h3>
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-amber-600"></i>
+                    <span class="font-semibold text-gray-900">Budget Alerts</span>
+                    <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">3</span>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100">
+                <div class="px-5 py-3 bg-red-50 border-l-4 border-red-400">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-exclamation-circle text-red-500 mt-0.5"></i>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-900">Budget Exceeded</p>
+                            <p class="text-xs text-gray-600">Case #2844 - Over by $3,200</p>
+                            <p class="text-xs text-red-600 mt-1">Requires approval</p>
+                        </div>
+                        <button class="px-2 py-1 bg-red-600 text-white text-xs rounded hover:bg-red-700">Review</button>
+                    </div>
+                </div>
+                <div class="px-5 py-3 bg-amber-50 border-l-4 border-amber-400">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-chart-line text-amber-500 mt-0.5"></i>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-900">90% Budget Used</p>
+                            <p class="text-xs text-gray-600">Case #2846 - $1,250 remaining</p>
+                            <p class="text-xs text-amber-600 mt-1">Monitor spending</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-3">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-clock text-gray-400 mt-0.5"></i>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-900">Pending Reconciliation</p>
+                            <p class="text-xs text-gray-600">Case #2843 - 5 items pending</p>
+                            <p class="text-xs text-gray-500 mt-1">Due in 2 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Statistics -->
+    <div class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600">$156K</div>
+                <div class="text-xs text-gray-500 mt-1">Total Budget</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-green-600">$98.5K</div>
+                <div class="text-xs text-gray-500 mt-1">Spent</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-amber-600">$57.5K</div>
+                <div class="text-xs text-gray-500 mt-1">Remaining</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-purple-600">24</div>
+                <div class="text-xs text-gray-500 mt-1">Active Sheets</div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-gray-700">63%</div>
+                <div class="text-xs text-gray-500 mt-1">Utilization</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar Items Section -->
+<div id="sidebar-items-section" class="mb-16">
+    <div class="mb-8">
+        <div class="flex items-center gap-3 mb-3">
+            <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.5</span>
+            <h2 class="text-2xl font-semibold text-gray-900">Sidebar Items</h2>
+        </div>
+        <p class="text-gray-600">Sidebar components for costsheet navigation, budget tracking, and quick financial actions.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Costsheet List Panel -->
+        <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Costsheet List Panel</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                    <span class="text-sm font-semibold text-gray-900">Costsheets</span>
+                    <span class="text-xs text-gray-500">24 total</span>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-4 py-3 bg-blue-50 border-l-2 border-blue-600">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-blue-700">Case #2847</p>
+                                <p class="text-xs text-gray-500">$24,500 / $30,000</p>
+                            </div>
+                            <div class="w-12 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-green-500 h-1.5 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Case #2846</p>
+                                <p class="text-xs text-gray-500">$18,750 / $20,000</p>
+                            </div>
+                            <div class="w-12 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Case #2845</p>
+                                <p class="text-xs text-gray-500">$9,200 / $15,000</p>
+                            </div>
+                            <div class="w-12 bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-green-500 h-1.5 rounded-full" style="width: 61%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3 border-t border-gray-200">
+                    <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View All Costsheets</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Budget Overview -->
+        <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Budget Overview</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                    <span class="text-sm font-semibold text-gray-900">Budget Status</span>
+                </div>
+                <div class="p-4">
+                    <div class="text-center mb-4">
+                        <div class="text-3xl font-bold text-gray-900">$57.5K</div>
+                        <p class="text-xs text-gray-500">Remaining Budget</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between text-xs text-gray-600 mb-1">
+                            <span>Used</span>
+                            <span>$98.5K of $156K</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 63%"></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 text-center">
+                        <div class="bg-green-50 rounded-lg p-2">
+                            <div class="text-sm font-semibold text-green-700">18</div>
+                            <div class="text-xs text-gray-500">Under</div>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-2">
+                            <div class="text-sm font-semibold text-red-700">2</div>
+                            <div class="text-xs text-gray-500">Over</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                <div class="px-4 py-3 border-b border-gray-200">
+                    <span class="text-sm font-semibold text-gray-900">Costsheet Actions</span>
+                </div>
+                <div class="p-3">
+                    <div class="space-y-1">
+                        <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-plus text-blue-500 w-5"></i>
+                            <span>New Costsheet</span>
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-calculator text-gray-400 w-5"></i>
+                            <span>Budget Calculator</span>
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-file-export text-gray-400 w-5"></i>
+                            <span>Export to Excel</span>
+                        </button>
+                        <div class="border-t border-gray-200 my-2"></div>
+                        <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-sync text-gray-400 w-5"></i>
+                            <span>Reconcile Costs</span>
+                        </button>
+                        <button class="w-full flex items-center gap-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-chart-bar text-gray-400 w-5"></i>
+                            <span>Financial Report</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="costsheet-status-variants" class="mb-16">
     <div class="mb-6">
         <h2 class="text-2xl font-semibold text-gray-900 mb-2">Status Variations</h2>

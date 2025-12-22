@@ -1182,6 +1182,448 @@
         </div>
     </section>
 
+    <!-- Dashboard Widgets Section -->
+    <section id="dashboard-widgets-section" class="mb-12">
+        <div class="mb-8">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">27.4</span>
+                <h2 class="text-2xl font-semibold text-gray-900">Dashboard Widgets</h2>
+            </div>
+            <p class="text-gray-600">Dashboard components for displaying chat conversation summaries, active chats, and conversation analytics.</p>
+        </div>
+
+        <!-- My Conversations Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">My Conversations Widget</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-comments text-blue-600"></i>
+                        <span class="font-semibold text-gray-900">My Conversations</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">12</span>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-robot text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Case Timeline Inquiry</p>
+                                    <span class="text-xs text-gray-500">2m ago</span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate">Re: Evidence collection timeline...</p>
+                            </div>
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User" class="w-10 h-10 rounded-full">
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Document Review</p>
+                                    <span class="text-xs text-gray-500">1h ago</span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate">Sarah: Can you check the attachments...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-10 h-10 rounded-full">
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Policy Clarification</p>
+                                    <span class="text-xs text-gray-500">3h ago</span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate">Mike: Thanks for the update on...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-3 border-t border-gray-200">
+                    <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All Conversations</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversation Alerts Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Conversation Alerts Widget</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-exclamation text-amber-600"></i>
+                        <span class="font-semibold text-gray-900">Conversation Alerts</span>
+                        <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">4</span>
+                    </div>
+                    <button class="text-xs text-amber-700 hover:text-amber-800 font-medium">Mark All Read</button>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-5 py-3 bg-red-50 border-l-4 border-red-400">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clock text-red-500 mt-0.5"></i>
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-gray-900">Awaiting Response - 24h+</p>
+                                <p class="text-xs text-gray-600">Case #2847 inquiry - Client waiting</p>
+                                <p class="text-xs text-red-600 mt-1">Response overdue by 6 hours</p>
+                            </div>
+                            <button class="px-2 py-1 bg-red-600 text-white text-xs rounded hover:bg-red-700">Respond</button>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-user-plus text-blue-500 mt-0.5"></i>
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-gray-900">New Participant Added</p>
+                                <p class="text-xs text-gray-600">Legal team joined Case Review chat</p>
+                                <p class="text-xs text-gray-500 mt-1">15 min ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-paperclip text-purple-500 mt-0.5"></i>
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-gray-900">Document Shared</p>
+                                <p class="text-xs text-gray-600">Evidence_Summary.pdf in Investigation chat</p>
+                                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversation Activity Grid Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Conversation Activity Grid Widget</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-comments text-blue-600"></i>
+                        <span class="font-semibold text-gray-900">Conversation Activity</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5">
+                            <option>Last 7 Days</option>
+                            <option>Last 30 Days</option>
+                            <option>Last 90 Days</option>
+                        </select>
+                        <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="grid grid-cols-12 gap-4">
+                        <!-- Filters Column -->
+                        <div class="col-span-3 border-r border-gray-200 pr-4">
+                            <div class="mb-4">
+                                <label class="block text-xs font-medium text-gray-700 mb-2">Status</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">Active</span>
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">Awaiting Response</span>
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">Closed</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-xs font-medium text-gray-700 mb-2">Type</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">AI Assistant</span>
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" checked class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">Team Chat</span>
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                        <span class="text-sm text-gray-700">Client Chat</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content Grid -->
+                        <div class="col-span-9">
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                                            <i class="fa-solid fa-robot text-white text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Case Analysis</p>
+                                            <p class="text-xs text-gray-500">AI Assistant</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-xs">
+                                        <span class="text-gray-500">24 messages</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded-full">Active</span>
+                                    </div>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div class="flex -space-x-2">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" class="w-8 h-8 rounded-full border-2 border-white">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" class="w-8 h-8 rounded-full border-2 border-white">
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Legal Review</p>
+                                            <p class="text-xs text-gray-500">Team Chat</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-xs">
+                                        <span class="text-gray-500">156 messages</span>
+                                        <span class="px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">Awaiting</span>
+                                    </div>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div class="flex -space-x-2">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" class="w-8 h-8 rounded-full border-2 border-white">
+                                            <div class="w-8 h-8 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center text-xs text-gray-600">+3</div>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">Investigation</p>
+                                            <p class="text-xs text-gray-500">Team Chat</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-xs">
+                                        <span class="text-gray-500">89 messages</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded-full">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-blue-600">48</div>
+                    <div class="text-xs text-gray-500 mt-1">Active Chats</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-amber-600">7</div>
+                    <div class="text-xs text-gray-500 mt-1">Awaiting Response</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-green-600">1,284</div>
+                    <div class="text-xs text-gray-500 mt-1">Messages Today</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-purple-600">2.4m</div>
+                    <div class="text-xs text-gray-500 mt-1">Avg Response Time</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-gray-700">94%</div>
+                    <div class="text-xs text-gray-500 mt-1">Resolution Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Items Section -->
+    <section id="sidebar-items-section" class="mb-12">
+        <div class="mb-8">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">27.5</span>
+                <h2 class="text-2xl font-semibold text-gray-900">Sidebar Items</h2>
+            </div>
+            <p class="text-gray-600">Sidebar components for conversation navigation, quick access, and contextual chat panels.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Related Conversations Panel -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Related Conversations Panel</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                    <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                        <span class="text-sm font-semibold text-gray-900">Related Conversations</span>
+                        <span class="text-xs text-gray-500">8 chats</span>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        <div class="px-4 py-3 bg-blue-50 border-l-2 border-blue-600">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-robot text-white text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-blue-700 truncate">Case Timeline Q&A</p>
+                                    <p class="text-xs text-gray-500">AI · Current</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" class="w-8 h-8 rounded-full">
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Document Review</p>
+                                    <p class="text-xs text-gray-500">Sarah Chen · 1h ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="flex -space-x-1">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" class="w-6 h-6 rounded-full border border-white">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" class="w-6 h-6 rounded-full border border-white">
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Legal Review Team</p>
+                                    <p class="text-xs text-gray-500">5 participants · 3h ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-robot text-white text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate">Evidence Analysis</p>
+                                    <p class="text-xs text-gray-500">AI · Yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 border-t border-gray-200">
+                        <button class="text-xs text-blue-600 hover:text-blue-700 font-medium">View All Related</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversation History Tree -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Conversation Browser</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                    <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                        <span class="text-sm font-semibold text-gray-900">Browse by Case</span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-search text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-3">
+                        <!-- Case 2847 -->
+                        <div class="mb-2">
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-down text-gray-400 text-xs"></i>
+                                <i class="fa-solid fa-briefcase text-blue-500 text-sm"></i>
+                                <span class="text-sm text-gray-700">Case #2847</span>
+                                <span class="text-xs text-gray-400 ml-auto">4</span>
+                            </div>
+                            <div class="ml-6 border-l border-gray-200 pl-2">
+                                <div class="flex items-center gap-2 px-2 py-1.5 bg-blue-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-comments text-blue-600 text-sm"></i>
+                                    <span class="text-sm text-blue-700">Timeline Q&A</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-comments text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-600">Evidence Review</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-robot text-purple-500 text-sm"></i>
+                                    <span class="text-sm text-gray-600">AI Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Case 2846 -->
+                        <div class="mb-2">
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                <i class="fa-solid fa-briefcase text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">Case #2846</span>
+                                <span class="text-xs text-gray-400 ml-auto">2</span>
+                            </div>
+                        </div>
+                        <!-- Case 2845 -->
+                        <div>
+                            <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                <i class="fa-solid fa-chevron-right text-gray-400 text-xs"></i>
+                                <i class="fa-solid fa-briefcase text-gray-400 text-sm"></i>
+                                <span class="text-sm text-gray-700">Case #2845</span>
+                                <span class="text-xs text-gray-400 ml-auto">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Access Conversations -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Access</h3>
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px;">
+                    <div class="px-4 py-3 border-b border-gray-200">
+                        <div class="relative">
+                            <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                            <input type="text" placeholder="Search conversations..." class="w-full pl-9 pr-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="mb-3">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fa-solid fa-star text-amber-500 text-xs"></i>
+                                <span class="text-xs font-medium text-gray-500 uppercase">Pinned</span>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-robot text-purple-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">AI Assistant</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-users text-blue-500 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Legal Team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fa-solid fa-clock text-gray-400 text-xs"></i>
+                                <span class="text-xs font-medium text-gray-500 uppercase">Recent</span>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-comments text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Case #2847 Chat</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-comments text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Document Review</span>
+                                </div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-50 rounded cursor-pointer">
+                                    <i class="fa-solid fa-comments text-gray-400 text-sm"></i>
+                                    <span class="text-sm text-gray-700">Investigation Team</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="consistency-rules-section" class="mb-12">
         <div class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center">
