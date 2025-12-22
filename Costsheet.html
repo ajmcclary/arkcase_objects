@@ -230,13 +230,34 @@
 
     <!-- Main Content -->
     <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
 
-<div id="costsheet-small-cards" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Small Card</h2>
-        <p class="text-sm text-gray-600">Compact representation for related-object panels and dense financial summaries</p>
+<section id="costsheet-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-file-invoice-dollar text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Costsheet Cards</h1>
+                    <p class="text-gray-600 mt-1">Cost aggregation and budget tracking</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent costsheets that aggregate expenses for cases and projects in ArkCase. Each variant shows budget summaries, cost breakdowns, and approval workflows.
+                </p>
+            </div>
+        </div>
     </div>
+</section>
+
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Costsheet — Small Card</h2>
+            <p class="text-gray-600">Compact representation for related-object panels and dense financial summaries</p>
+        </div>
     
     <div class="space-y-4 max-w-md">
         <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
@@ -321,13 +342,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-medium-cards" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Medium Card</h2>
-        <p class="text-sm text-gray-600">Default representation in financial panels with balanced context</p>
     </div>
+</section>
+
+<section id="medium-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Costsheet — Medium Card</h2>
+            <p class="text-gray-600">Default representation in financial panels with balanced context</p>
+        </div>
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
@@ -518,13 +541,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-large-cards" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Costsheet — Large Card</h2>
-        <p class="text-sm text-gray-600">Expanded view for inspector panels with comprehensive financial context</p>
     </div>
+</section>
+
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Costsheet — Large Card</h2>
+            <p class="text-gray-600">Expanded view for inspector panels with comprehensive financial context</p>
+        </div>
     
     <div class="space-y-6">
         <div class="bg-white border border-gray-200 rounded-lg shadow-md">
@@ -839,17 +864,19 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 
 <!-- Dashboard Widgets Section -->
-<div id="dashboard-widgets-section" class="mb-16">
-    <div class="mb-8">
-        <div class="flex items-center gap-3 mb-3">
-            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.4</span>
-            <h2 class="text-2xl font-semibold text-gray-900">Dashboard Widgets</h2>
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.4</span>
+                <h2 class="text-2xl font-bold text-gray-900">Dashboard Widgets</h2>
+            </div>
+            <p class="text-gray-600">Dashboard components for displaying costsheet summaries, budget tracking, and financial overviews.</p>
         </div>
-        <p class="text-gray-600">Dashboard components for displaying costsheet summaries, budget tracking, and financial overviews.</p>
-    </div>
 
     <!-- My Costsheets Widget -->
     <div class="mb-8">
@@ -997,17 +1024,19 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 
 <!-- Sidebar Items Section -->
-<div id="sidebar-items-section" class="mb-16">
-    <div class="mb-8">
-        <div class="flex items-center gap-3 mb-3">
-            <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.5</span>
-            <h2 class="text-2xl font-semibold text-gray-900">Sidebar Items</h2>
+<section id="sidebar-items-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">23.5</span>
+                <h2 class="text-2xl font-bold text-gray-900">Sidebar Items</h2>
+            </div>
+            <p class="text-gray-600">Sidebar components for costsheet navigation, budget tracking, and quick financial actions.</p>
         </div>
-        <p class="text-gray-600">Sidebar components for costsheet navigation, budget tracking, and quick financial actions.</p>
-    </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Costsheet List Panel -->
@@ -1129,13 +1158,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-status-variants" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Status Variations</h2>
-        <p class="text-sm text-gray-600">Costsheet cards displaying different status states</p>
     </div>
+</section>
+
+<section id="costsheet-status-variants" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Status Variations</h2>
+            <p class="text-gray-600">Costsheet cards displaying different status states</p>
+        </div>
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -1326,13 +1357,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-grid-layout" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Grid Layout — Small Cards</h2>
-        <p class="text-sm text-gray-600">Dense grid view for financial dashboard panels</p>
     </div>
+</section>
+
+<section id="costsheet-grid-layout" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Grid Layout — Small Cards</h2>
+            <p class="text-gray-600">Dense grid view for financial dashboard panels</p>
+        </div>
     
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer">
@@ -1425,13 +1458,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-list-layout" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">List Layout — Medium Cards</h2>
-        <p class="text-sm text-gray-600">Vertical list view for financial tracking panels</p>
     </div>
+</section>
+
+<section id="costsheet-list-layout" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">List Layout — Medium Cards</h2>
+            <p class="text-gray-600">Vertical list view for financial tracking panels</p>
+        </div>
     
     <div class="space-y-4 max-w-4xl">
         <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all">
@@ -1574,13 +1609,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-special-states" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Special States — Large Cards</h2>
-        <p class="text-sm text-gray-600">Costsheet cards with special indicators and restrictions</p>
     </div>
+</section>
+
+<section id="costsheet-special-states" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Special States — Large Cards</h2>
+            <p class="text-gray-600">Costsheet cards with special indicators and restrictions</p>
+        </div>
     
     <div class="space-y-6">
         <div class="bg-white border-2 border-purple-200 rounded-lg shadow-md">
@@ -1795,13 +1832,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-empty-states" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Empty & Zero States</h2>
-        <p class="text-sm text-gray-600">Costsheet cards with no financial data or items</p>
     </div>
+</section>
+
+<section id="costsheet-empty-states" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Empty & Zero States</h2>
+            <p class="text-gray-600">Costsheet cards with no financial data or items</p>
+        </div>
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -1900,13 +1939,15 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="costsheet-comparison" class="mb-16">
-    <div class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Card Comparison</h2>
-        <p class="text-sm text-gray-600">Visual comparison of all three card sizes for the same costsheet</p>
     </div>
+</section>
+
+<section id="costsheet-comparison" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Card Comparison</h2>
+            <p class="text-gray-600">Visual comparison of all three card sizes for the same costsheet</p>
+        </div>
     
     <div class="bg-white border border-gray-200 rounded-lg p-8">
         <div class="mb-8">
@@ -2077,9 +2118,9 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 
-        </div>
     </main>
 
 </div>

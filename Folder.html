@@ -230,25 +230,33 @@
 
         <!-- Main Content -->
         <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-            <div id="main-container" class="max-w-7xl mx-auto px-8 py-12">
 
-    <section id="header-section" class="mb-12">
-        <div class="bg-white border-b border-gray-200 -mx-8 -mt-8 px-8 py-6 mb-8">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">Folder Object Cards — ArkCase ECM</h1>
-            <p class="text-gray-600">Card-based wireframes representing folder objects within the document management system. These cards communicate structure, containment, and navigation without exposing file content.</p>
+<section id="folder-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-folder text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Folder Cards</h1>
+                    <p class="text-gray-600 mt-1">Document organization and hierarchy</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent folders that organize documents within ArkCase. Each variant shows folder contents, hierarchy position, and access permissions for file management interfaces.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="small-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-center mb-3">
-                <h2 class="text-2xl font-bold text-gray-900">Folder — Small Card</h2>
-                <span class="ml-3 px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">COMPACT</span>
-            </div>
-            <p class="text-gray-600 mb-4">Optimized for dense folder lists, tree-style views, and navigation panels. Minimal vertical height with essential identification only.</p>
-            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-                <p class="text-sm text-blue-900"><strong>Use Case:</strong> Sidebar navigation, nested folder trees, quick-scan lists</p>
-            </div>
+<section id="small-card-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Folder — Small Card</h2>
+            <p class="text-gray-600">Optimized for dense folder lists, tree-style views, and navigation panels. Minimal vertical height with essential identification only.</p>
         </div>
 
         <div id="small-card-examples" class="space-y-4">
@@ -335,18 +343,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="medium-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-center mb-3">
-                <h2 class="text-2xl font-bold text-gray-900">Folder — Medium Card</h2>
-                <span class="ml-3 px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">DEFAULT</span>
-            </div>
-            <p class="text-gray-600 mb-4">Default representation in folder lists and document panels. Balances navigation with light metadata and clear context.</p>
-            <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
-                <p class="text-sm text-green-900"><strong>Use Case:</strong> Document management panels, folder browsers, attachment lists</p>
-            </div>
+<section id="medium-card-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Folder — Medium Card</h2>
+            <p class="text-gray-600">Default representation in folder lists and document panels. Balances navigation with light metadata and clear context.</p>
         </div>
 
         <div id="medium-card-examples" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -528,18 +532,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="large-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-center mb-3">
-                <h2 class="text-2xl font-bold text-gray-900">Folder — Large Card</h2>
-                <span class="ml-3 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">DETAILED</span>
-            </div>
-            <p class="text-gray-600 mb-4">Used in inspector panels and expanded previews. Provides structural context and comprehensive metadata without turning into a file browser.</p>
-            <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mb-6">
-                <p class="text-sm text-purple-900"><strong>Use Case:</strong> Inspector panels, detail views, expanded previews, audit trails</p>
-            </div>
+<section id="large-card-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Folder — Large Card</h2>
+            <p class="text-gray-600">Used in inspector panels and expanded previews. Provides structural context and comprehensive metadata without turning into a file browser.</p>
         </div>
 
         <div id="large-card-examples" class="space-y-6">
@@ -961,12 +961,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="comparison-section" class="mb-16">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Card Comparison</h2>
-            <p class="text-gray-600 mb-4">Side-by-side comparison demonstrating consistent visual language and progressive information disclosure across all three card sizes.</p>
+<section id="comparison-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Card Comparison</h2>
+            <p class="text-gray-600">Side-by-side comparison demonstrating consistent visual language and progressive information disclosure across all three card sizes.</p>
         </div>
 
         <div id="comparison-grid" class="bg-white border border-gray-200 rounded-lg p-6">
@@ -1044,13 +1046,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Dashboard Widgets Section -->
-    <section id="dashboard-widgets-section" class="mb-16 mt-12 pt-8 border-t border-gray-200">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Dashboard Widgets</h2>
-            <p class="text-gray-600 mb-4">Folder widgets for dashboard views, providing quick access to folder contents, recent activity, and storage analytics.</p>
+<!-- Dashboard Widgets Section -->
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Folder widgets for dashboard views, providing quick access to folder contents, recent activity, and storage analytics.</p>
         </div>
 
         <!-- Widget 1: My Folders -->
@@ -1476,13 +1480,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sidebar Items Section -->
-    <section id="sidebar-items-section" class="mb-16 mt-12 pt-8 border-t border-gray-200">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Sidebar Items</h2>
-            <p class="text-gray-600 mb-4">Folder sidebar components for navigation, folder browsing, and quick access to commonly used folders.</p>
+<!-- Sidebar Items Section -->
+<section id="sidebar-items-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">Folder sidebar components for navigation, folder browsing, and quick access to commonly used folders.</p>
         </div>
 
         <div class="grid grid-cols-3 gap-6">
@@ -1760,12 +1766,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="behavioral-states-section" class="mb-16">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Interaction Patterns</h2>
-            <p class="text-gray-600 mb-4">Comprehensive state variations demonstrating hover, selected, disabled, and error states across folder cards.</p>
+<section id="behavioral-states-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction Patterns</h2>
+            <p class="text-gray-600">Comprehensive state variations demonstrating hover, selected, disabled, and error states across folder cards.</p>
         </div>
 
         <div id="behavioral-examples" class="grid grid-cols-2 gap-6">
@@ -1860,12 +1868,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contextual-usage-section" class="mb-16">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Usage Guidelines</h2>
-            <p class="text-gray-600 mb-4">Real-world implementation scenarios showing how folder cards integrate into different UI contexts and workflows.</p>
+<section id="contextual-usage-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Guidelines</h2>
+            <p class="text-gray-600">Real-world implementation scenarios showing how folder cards integrate into different UI contexts and workflows.</p>
         </div>
 
         <div id="contextual-examples" class="space-y-6">
@@ -2084,12 +2094,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="design-specifications-section" class="mb-16">
-        <div class="mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Design Guidelines</h2>
-            <p class="text-gray-600 mb-4">Technical specifications, spacing guidelines, and implementation notes for developers and designers.</p>
+<section id="design-specifications-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Guidelines</h2>
+            <p class="text-gray-600">Technical specifications, spacing guidelines, and implementation notes for developers and designers.</p>
         </div>
 
         <div id="specifications-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -2270,9 +2282,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="footer-section" class="mb-8">
+<section id="footer-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
         <div class="bg-gray-100 border border-gray-200 rounded-lg p-6">
             <div class="flex items-start space-x-4">
                 <i class="fa-solid fa-lightbulb text-blue-600 text-2xl mt-1"></i>
@@ -2296,8 +2310,9 @@
                 </div>
             </div>
         </div>
-    </section>
-            </div>
+    </div>
+</section>
+
         </main>
     </div>
 

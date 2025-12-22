@@ -231,22 +231,33 @@
     <!-- Main Content -->
     <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
 
-<div id="cost-cards-container" class="max-w-7xl mx-auto px-6 py-12">
-
-    <div id="header-section" class="mb-12">
-        <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                <i class="fa-solid fa-dollar-sign text-blue-600 text-lg"></i>
+<section id="cost-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-dollar-sign text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Cost Cards</h1>
+                    <p class="text-gray-600 mt-1">Financial tracking and expense items</p>
+                </div>
             </div>
-            <h1 class="text-3xl font-bold text-gray-900">Cost Object Cards</h1>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent individual cost entries and expense items in ArkCase. Each variant shows cost amounts, categories, and approval status optimized for financial tracking and reporting.
+                </p>
+            </div>
         </div>
-        <p class="text-gray-600 text-base max-w-4xl">Card-based wireframes representing individual cost line items associated with parent Costsheets. Each variant emphasizes amount, purpose, and date for quick financial context.</p>
     </div>
+</section>
 
-    <div id="small-card-section" class="mb-16">
-        <div class="mb-6">
+
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Cost — Small Card</h2>
-            <p class="text-gray-600 text-sm">Used in dense cost lists and summaries. Optimized for quick scanning of amounts with minimal vertical height.</p>
+            <p class="text-gray-600">Used in dense cost lists and summaries. Optimized for quick scanning of amounts with minimal vertical height.</p>
         </div>
 
         <div class="space-y-4">
@@ -336,11 +347,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="medium-card-section" class="mb-16">
-        <div class="mb-6">
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Cost — Medium Card</h2>
-            <p class="text-gray-600 text-sm">Default representation in cost lists. Balances amount visibility with context and parent Costsheet reference.</p>
+            <p class="text-gray-600">Default representation in cost lists. Balances amount visibility with context and parent Costsheet reference.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -513,11 +526,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="large-card-section" class="mb-16">
-        <div class="mb-6">
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Cost — Large Card</h2>
-            <p class="text-gray-600 text-sm">Used in inspector panels and expanded previews. Provides comprehensive financial clarity with structured metadata sections.</p>
+            <p class="text-gray-600">Used in inspector panels and expanded previews. Provides comprehensive financial clarity with structured metadata sections.</p>
         </div>
 
         <div class="space-y-6">
@@ -720,9 +735,11 @@
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Dashboard Widgets Section -->
-    <div id="dashboard-widgets-section" class="mb-16">
+<!-- Dashboard Widgets Section -->
+<section id="dashboard-widgets-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
         <div class="mb-8">
             <div class="flex items-center gap-3 mb-3">
                 <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">24.4</span>
@@ -864,9 +881,11 @@
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Sidebar Items Section -->
-    <div id="sidebar-items-section" class="mb-16">
+<!-- Sidebar Items Section -->
+<section id="sidebar-items-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="mb-8">
             <div class="flex items-center gap-3 mb-3">
                 <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">24.5</span>
@@ -1004,11 +1023,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="comparison-section" class="mb-16">
-        <div class="mb-6">
+<section id="comparison-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Card Comparison</h2>
-            <p class="text-gray-600 text-sm">All three card variants displayed side-by-side to demonstrate scaling and information hierarchy.</p>
+            <p class="text-gray-600">All three card variants displayed side-by-side to demonstrate scaling and information hierarchy.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -1127,11 +1148,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="list-view-section" class="mb-16">
-        <div class="mb-6">
+<section id="list-view-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Small Cards in List Context</h2>
-            <p class="text-gray-600 text-sm">Demonstration of small cards in a typical list view for dense cost scanning.</p>
+            <p class="text-gray-600">Demonstration of small cards in a typical list view for dense cost scanning.</p>
         </div>
 
         <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
@@ -1249,11 +1272,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="grid-view-section" class="mb-16">
-        <div class="mb-6">
+<section id="grid-view-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Medium Cards in Grid Layout</h2>
-            <p class="text-gray-600 text-sm">Medium cards arranged in a responsive grid for dashboard or summary views.</p>
+            <p class="text-gray-600">Medium cards arranged in a responsive grid for dashboard or summary views.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1480,11 +1505,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="inspector-panel-section" class="mb-16">
-        <div class="mb-6">
+<section id="inspector-panel-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Large Card in Inspector Panel Context</h2>
-            <p class="text-gray-600 text-sm">Large card as it would appear in a side panel or detail view with full contextual information.</p>
+            <p class="text-gray-600">Large card as it would appear in a side panel or detail view with full contextual information.</p>
         </div>
 
         <div class="bg-gray-100 rounded-lg p-6">
@@ -1560,11 +1587,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="design-specifications-section" class="mb-16">
-        <div class="mb-6">
+<section id="design-specifications-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Guidelines</h2>
-            <p class="text-gray-600 text-sm">Technical specifications and consistency rules for implementing Cost cards across the ArkCase platform.</p>
+            <p class="text-gray-600">Technical specifications and consistency rules for implementing Cost cards across the ArkCase platform.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -1761,11 +1790,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="consistency-rules-section" class="mb-16">
-        <div class="mb-6">
+<section id="consistency-rules-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Consistency Rules</h2>
-            <p class="text-gray-600 text-sm">Essential rules for maintaining visual and functional consistency across all Cost card variants.</p>
+            <p class="text-gray-600">Essential rules for maintaining visual and functional consistency across all Cost card variants.</p>
         </div>
 
         <div class="bg-white border border-gray-200 rounded-lg">
@@ -1836,11 +1867,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="implementation-notes-section">
-        <div class="mb-6">
+<section id="implementation-notes-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
-            <p class="text-gray-600 text-sm">Technical considerations and best practices for implementing Cost cards in production.</p>
+            <p class="text-gray-600">Technical considerations and best practices for implementing Cost cards in production.</p>
         </div>
 
         <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8">
@@ -1926,8 +1959,7 @@
             </div>
         </div>
     </div>
-
-</div>
+</section>
 
     </main>
 

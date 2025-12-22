@@ -230,28 +230,33 @@
 
         <!-- Main Content -->
         <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-            <div id="file-cards-container" class="max-w-7xl mx-auto px-6 py-12">
 
-    <div id="header-section" class="mb-12">
-        <div class="flex items-center justify-between mb-2">
-            <h1 class="text-3xl font-semibold text-gray-900">File Object Cards</h1>
-            <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">ArkCase ECM System</span>
+<section id="file-object-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-file text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">File Object Cards</h1>
+                    <p class="text-gray-600 mt-1">Document and attachment representation</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent files and documents attached to cases and other ArkCase objects. Each variant displays file metadata, preview capabilities, and version history optimized for document management workflows.
+                </p>
+            </div>
         </div>
-        <p class="text-gray-600 text-sm max-w-3xl">Card-based wireframes representing documents and digital assets stored in the ECM system. Each variant is optimized for different contexts within the case management platform.</p>
     </div>
+</section>
 
-    <div id="small-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-baseline gap-3 mb-2">
-                <h2 class="text-2xl font-semibold text-gray-900">File Object — Small Card</h2>
-                <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Compact</span>
-            </div>
-            <p class="text-sm text-gray-600 mb-4">Used in dense file lists, attachment sections, and search results. Optimized for quick identification and scanning.</p>
-            <div class="flex gap-2 text-xs text-gray-500">
-                <span class="bg-gray-100 px-2 py-1 rounded">Single-row layout</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">Minimal height</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">No expandable regions</span>
-            </div>
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Object — Small Card</h2>
+            <p class="text-gray-600">Compact format for dense file lists, attachment sections, and search results. Optimized for quick identification and scanning.</p>
         </div>
 
         <div id="small-cards-grid" class="space-y-3">
@@ -358,19 +363,14 @@
             </div>
         </div>
     </div>
+    </div>
+</section>
 
-    <div id="medium-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-baseline gap-3 mb-2">
-                <h2 class="text-2xl font-semibold text-gray-900">File Object — Medium Card</h2>
-                <span class="text-xs font-medium text-green-600 bg-green-50 px-2 py-1 rounded">Balanced</span>
-            </div>
-            <p class="text-sm text-gray-600 mb-4">Default representation in document panels and related-object sections. Balances identification with light metadata.</p>
-            <div class="flex gap-2 text-xs text-gray-500">
-                <span class="bg-gray-100 px-2 py-1 rounded">Clear hierarchy</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">Moderate spacing</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">Scannable metadata</span>
-            </div>
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Object — Medium Card</h2>
+            <p class="text-gray-600">Default representation in document panels and related-object sections. Balances identification with light metadata.</p>
         </div>
 
         <div id="medium-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -578,19 +578,13 @@
             </div>
         </div>
     </div>
+</section>
 
-    <div id="large-card-section" class="mb-16">
-        <div class="mb-6">
-            <div class="flex items-baseline gap-3 mb-2">
-                <h2 class="text-2xl font-semibold text-gray-900">File Object — Large Card</h2>
-                <span class="text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">Detailed</span>
-            </div>
-            <p class="text-sm text-gray-600 mb-4">Used in inspector panels and expanded previews. Provides meaningful document context without becoming a full document viewer.</p>
-            <div class="flex gap-2 text-xs text-gray-500">
-                <span class="bg-gray-100 px-2 py-1 rounded">Structured sections</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">Strong hierarchy</span>
-                <span class="bg-gray-100 px-2 py-1 rounded">Multiple actions</span>
-            </div>
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Object — Large Card</h2>
+            <p class="text-gray-600">Used in inspector panels and expanded previews. Provides meaningful document context without becoming a full document viewer.</p>
         </div>
 
         <div id="large-cards-container" class="space-y-6">
@@ -842,7 +836,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Dashboard Widgets Section -->
     <section id="dashboard-widgets-section" class="mb-16">
@@ -1189,7 +1182,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Sidebar Items Section -->
@@ -2053,7 +2045,9 @@
             </div>
         </div>
     </div>
-            </div>
+    </div>
+</section>
+
         </main>
     </div>
 

@@ -230,22 +230,36 @@
 
         <!-- Main Content -->
         <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-            <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
-    <div id="header-section" class="mb-12">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-3xl font-semibold text-gray-900 mb-2">Group Object Cards</h1>
-            <p class="text-gray-600">Card-based wireframes for Group objects in ArkCase — Small, Medium, and Large variants</p>
+
+<section id="group-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-users text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Group Cards</h1>
+                    <p class="text-gray-600 mt-1">User groups and team organization</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent user groups and teams within ArkCase. Each variant shows group membership, permissions, and assignment queues optimized for administration and workflow routing.
+                </p>
+            </div>
         </div>
     </div>
+</section>
 
-    <div id="small-card-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Group — Small Card</h2>
-                <p class="text-gray-600 mb-4">Compact representation for assignment pickers, participant lists, and dense views</p>
-            </div>
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Group — Small Card</h2>
+            <p class="text-gray-600">Compact representation for assignment pickers, participant lists, and dense views</p>
+        </div>
 
-            <div class="bg-white p-8 rounded-lg border border-gray-200">
+        <div class="max-w-2xl">
                 <div class="space-y-4">
                     <div id="small-card-1" class="flex items-center justify-between p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
                         <div class="flex items-center space-x-3">
@@ -334,15 +348,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="medium-card-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Group — Medium Card</h2>
-                <p class="text-gray-600 mb-4">Default representation in group lists and related-object panels with structural context</p>
-            </div>
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Group — Medium Card</h2>
+            <p class="text-gray-600">Default representation in group lists and related-object panels with structural context</p>
+        </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
@@ -579,15 +593,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="large-card-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Group — Large Card</h2>
-                <p class="text-gray-600 mb-4">Expanded representation for inspector panels with comprehensive structural context and associations</p>
-            </div>
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Group — Large Card</h2>
+            <p class="text-gray-600">Expanded representation for inspector panels with comprehensive structural context and associations</p>
+        </div>
 
             <div class="space-y-6">
                 <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
@@ -896,16 +910,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <!-- Dashboard Widgets Section -->
-    <section id="dashboard-widgets-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-8">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Dashboard Widgets</h2>
-                <p class="text-gray-600">Group-related widgets for dashboard display, showing team groups, permission groups, and group management views.</p>
-            </div>
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Group-related widgets for dashboard display, showing team groups, permission groups, and group management views.</p>
+        </div>
 
             <!-- My Groups Widget -->
             <div class="mb-8">
@@ -1224,16 +1237,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sidebar Items Section -->
-    <section id="sidebar-items-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-8">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Sidebar Items</h2>
-                <p class="text-gray-600">Group elements displayed in application sidebars, including assigned groups, group trees, and quick access lists.</p>
-            </div>
+<section id="sidebar-items-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">Group elements displayed in application sidebars, including assigned groups, group trees, and quick access lists.</p>
+        </div>
 
             <div class="grid grid-cols-3 gap-8">
                 <!-- Assigned Groups Panel -->
@@ -1551,12 +1563,12 @@
         </div>
     </div>
 
-    <div id="states-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Status Variations</h2>
-                <p class="text-gray-600 mb-4">Different states and conditions for group cards</p>
-            </div>
+<section id="states-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Status Variations</h2>
+            <p class="text-gray-600">Different states and conditions for group cards</p>
+        </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div id="state-active" class="bg-white border border-gray-200 rounded-lg p-5">
@@ -1746,15 +1758,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="hierarchy-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Hierarchical Representation</h2>
-                <p class="text-gray-600 mb-4">Showing parent-child relationships in group structures</p>
-            </div>
+<section id="hierarchy-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Hierarchical Representation</h2>
+            <p class="text-gray-600">Showing parent-child relationships in group structures</p>
+        </div>
 
             <div class="bg-white border border-gray-200 rounded-lg p-6">
                 <div id="hierarchy-tree" class="space-y-4">
@@ -1834,15 +1846,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="usage-contexts-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Usage Guidelines</h2>
-                <p class="text-gray-600 mb-4">How group cards appear in different UI contexts</p>
-            </div>
+<section id="usage-contexts-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Guidelines</h2>
+            <p class="text-gray-600">How group cards appear in different UI contexts</p>
+        </div>
 
             <div class="space-y-6">
                 <div id="context-picker" class="bg-white border border-gray-200 rounded-lg p-6">
@@ -2041,15 +2053,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="design-principles-section" class="mb-16">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Design Guidelines</h2>
-                <p class="text-gray-600 mb-4">Core principles guiding the group card design system</p>
-            </div>
+<section id="design-principles-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Guidelines</h2>
+            <p class="text-gray-600">Core principles guiding the group card design system</p>
+        </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div id="principle-1" class="bg-white border border-gray-200 rounded-lg p-6">
@@ -2154,15 +2166,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-    <div id="implementation-notes-section">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-6">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Implementation Notes</h2>
-                <p class="text-gray-600 mb-4">Technical guidelines and considerations for developers</p>
-            </div>
+<section id="implementation-notes-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
+            <p class="text-gray-600">Technical guidelines and considerations for developers</p>
+        </div>
 
             <div class="bg-white border border-gray-200 rounded-lg p-6">
                 <div class="space-y-6">
@@ -2257,10 +2269,9 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</section>
 
-            </div>
         </main>
     </div>
 

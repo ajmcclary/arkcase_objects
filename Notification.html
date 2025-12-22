@@ -230,40 +230,31 @@
 
     <!-- Main Content -->
     <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
 
-    <div id="header-section" class="mb-12">
-        <div class="flex items-center justify-between mb-6">
-            <div>
-                <h1 class="text-3xl font-bold text-gray-900 mb-2">Notification Object — Card Wireframes</h1>
-                <p class="text-gray-600">ArkCase Design System — Component Library v2.4</p>
+<section id="notification-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-bell text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Notification Cards</h1>
+                    <p class="text-gray-600 mt-1">System alerts and user notifications</p>
+                </div>
             </div>
-            <div class="flex items-center space-x-3">
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded">Enterprise UI</span>
-                <span class="px-3 py-1 bg-gray-200 text-gray-700 text-sm font-medium rounded">Card-Based</span>
-            </div>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-lg p-6">
-            <h2 class="text-lg font-semibold text-gray-900 mb-3">Component Overview</h2>
-            <p class="text-gray-700 mb-4">Notification cards represent system-generated or user-targeted notifications related to cases, tasks, documents, or other system events. These cards emphasize timing, relevance, and actionability.</p>
-            <div class="grid grid-cols-3 gap-4 mt-4">
-                <div class="bg-gray-50 p-4 rounded">
-                    <div class="text-sm font-medium text-gray-900 mb-1">Small Card (17.1)</div>
-                    <div class="text-xs text-gray-600">Notification trays, dropdowns, activity feeds</div>
-                </div>
-                <div class="bg-gray-50 p-4 rounded">
-                    <div class="text-sm font-medium text-gray-900 mb-1">Medium Card (17.2)</div>
-                    <div class="text-xs text-gray-600">Default notification lists, balanced context</div>
-                </div>
-                <div class="bg-gray-50 p-4 rounded">
-                    <div class="text-sm font-medium text-gray-900 mb-1">Large Card (17.3)</div>
-                    <div class="text-xs text-gray-600">Inspector panels, expanded previews</div>
-                </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent system notifications and alerts for ArkCase users. Each variant shows notification type, priority, and read status optimized for notification centers and activity feeds.
+                </p>
             </div>
         </div>
     </div>
+</section>
 
-    <div id="small-card-section" class="mb-16">
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div id="small-card-section" class="mb-16">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Notification — Small Card</h2>
             <p class="text-gray-600">Compact representation for notification trays, dropdowns, and activity feeds. Optimized for rapid awareness.</p>
@@ -349,8 +340,12 @@
             </div>
         </div>
     </div>
+    </div>
+</section>
 
-    <div id="medium-card-section" class="mb-16">
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div id="medium-card-section" class="mb-16">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Notification — Medium Card</h2>
             <p class="text-gray-600">Default representation in notification lists. Balances awareness with light context.</p>
@@ -561,8 +556,12 @@
             </div>
         </div>
     </div>
+    </div>
+</section>
 
-    <div id="large-card-section" class="mb-16">
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div id="large-card-section" class="mb-16">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Notification — Large Card</h2>
             <p class="text-gray-600">Used in inspector panels and expanded previews. Provides full context without becoming a message center.</p>
@@ -1824,8 +1823,9 @@
             </div>
         </div>
     </div>
+    </div>
+</section>
 
-        </div>
     </main>
 </div>
 

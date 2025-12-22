@@ -230,47 +230,33 @@
 
         <!-- Main Content -->
         <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-            <div id="main-container" class="max-w-7xl mx-auto p-8">
 
-    <section id="header-section" class="mb-12">
-        <div class="bg-white border border-gray-200 rounded-lg p-6">
-            <div class="flex items-center justify-between">
+<section id="file-version-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-code-branch text-blue-600 text-xl"></i>
+                </div>
                 <div>
-                    <h1 class="text-2xl font-semibold text-gray-900 mb-2">File Version Card Wireframes</h1>
-                    <p class="text-sm text-gray-600">ArkCase Design System — Component Library</p>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Component: File Version</span>
-                    <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Status: Draft</span>
+                    <h1 class="text-3xl font-bold text-gray-900">File Version Cards</h1>
+                    <p class="text-gray-600 mt-1">Document version history and tracking</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="overview-section" class="mb-12">
-        <div class="bg-white border border-gray-200 rounded-lg p-6">
-            <h2 class="text-lg font-semibold text-gray-900 mb-4">Overview</h2>
-            <div class="grid grid-cols-3 gap-6">
-                <div class="border-l-4 border-blue-500 pl-4">
-                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Purpose</h3>
-                    <p class="text-sm text-gray-600">Represent individual versions of documents within ArkCase, subordinate to parent File objects.</p>
-                </div>
-                <div class="border-l-4 border-green-500 pl-4">
-                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Variants</h3>
-                    <p class="text-sm text-gray-600">Three card sizes: Small (12.1), Medium (12.2), and Large (12.3) for different contexts.</p>
-                </div>
-                <div class="border-l-4 border-purple-500 pl-4">
-                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Context</h3>
-                    <p class="text-sm text-gray-600">Used in version history panels, inspector views, and comparison interfaces.</p>
-                </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent individual versions of files within ArkCase. Each variant shows version numbers, change authors, and modification timestamps for document version control.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="small-card-section" class="mb-12">
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold text-gray-900 mb-2">File Version — Small Card</h2>
-            <p class="text-sm text-gray-600">Optimized for dense version lists and history panels. Minimal vertical height, single-row layout.</p>
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Version — Small Card</h2>
+            <p class="text-gray-600">Optimized for dense version lists and history panels. Minimal vertical height, single-row layout.</p>
         </div>
 
         <div class="bg-white border border-gray-200 rounded-lg p-8">
@@ -391,12 +377,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="medium-card-section" class="mb-12">
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold text-gray-900 mb-2">File Version — Medium Card</h2>
-            <p class="text-sm text-gray-600">Default representation in version history lists. Balances identification with light metadata.</p>
+<section id="medium-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Version — Medium Card</h2>
+            <p class="text-gray-600">Default representation in version history lists. Balances identification with light metadata.</p>
         </div>
 
         <div class="bg-white border border-gray-200 rounded-lg p-8">
@@ -605,12 +593,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="large-card-section" class="mb-12">
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold text-gray-900 mb-2">File Version — Large Card</h2>
-            <p class="text-sm text-gray-600">Used in inspector panels and expanded previews. Provides clear differentiation and comprehensive metadata.</p>
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">File Version — Large Card</h2>
+            <p class="text-gray-600">Used in inspector panels and expanded previews. Provides clear differentiation and comprehensive metadata.</p>
         </div>
 
         <div class="bg-white border border-gray-200 rounded-lg p-8">
@@ -826,13 +816,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Dashboard Widgets Section -->
-    <section id="dashboard-widgets-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold text-gray-900 mb-2">Dashboard Widgets</h2>
-            <p class="text-sm text-gray-600">File Version widgets for dashboard views, providing version tracking, approval workflows, and document history at a glance.</p>
+<!-- Dashboard Widgets Section -->
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">File Version widgets for dashboard views, providing version tracking, approval workflows, and document history at a glance.</p>
         </div>
 
         <!-- Widget 1: Recent Version Activity -->
@@ -1247,13 +1239,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sidebar Items Section -->
-    <section id="sidebar-items-section" class="mb-12 mt-12 pt-8 border-t border-gray-200">
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold text-gray-900 mb-2">Sidebar Items</h2>
-            <p class="text-sm text-gray-600">File Version sidebar components for contextual navigation, version history browsing, and quick access to document versions.</p>
+<!-- Sidebar Items Section -->
+<section id="sidebar-items-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">File Version sidebar components for contextual navigation, version history browsing, and quick access to document versions.</p>
         </div>
 
         <div class="grid grid-cols-3 gap-6">
@@ -1518,9 +1512,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="context-usage-section" class="mb-12">
+<section id="context-usage-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Usage Guidelines</h2>
             
@@ -1593,9 +1589,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="consistency-rules-section" class="mb-12">
+<section id="consistency-rules-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Consistency Rules</h2>
             
@@ -1633,9 +1631,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="states-section" class="mb-12">
+<section id="states-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Interaction Patterns</h2>
             
@@ -1680,9 +1680,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="file-type-indicators-section" class="mb-12">
+<section id="file-type-indicators-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">File Type Icon System</h2>
             
@@ -1744,9 +1746,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="status-badges-section" class="mb-12">
+<section id="status-badges-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Status Badge System</h2>
             
@@ -1777,9 +1781,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="metadata-patterns-section" class="mb-12">
+<section id="metadata-patterns-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Metadata Display Patterns</h2>
             
@@ -1825,9 +1831,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="action-patterns-section" class="mb-12">
+<section id="action-patterns-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-white border border-gray-200 rounded-lg p-6">
             <h2 class="text-lg font-semibold text-gray-900 mb-6">Action Button Patterns</h2>
             
@@ -1871,9 +1879,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="constraints-section" class="mb-12">
+<section id="constraints-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-6">
             <div class="flex items-start space-x-3">
                 <div class="flex-shrink-0">
@@ -1906,9 +1916,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="footer-section" class="mb-8">
+<section id="footer-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
         <div class="bg-gray-900 text-white rounded-lg p-6">
             <div class="flex items-center justify-between">
                 <div>
@@ -1922,8 +1934,9 @@
                 </div>
             </div>
         </div>
-    </section>
-            </div>
+    </div>
+</section>
+
         </main>
     </div>
 

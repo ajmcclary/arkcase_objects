@@ -230,21 +230,36 @@
 
     <!-- Main Content -->
     <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
-        <div class="mb-8">
-            <div class="mb-6">
-                <h1 class="text-3xl font-bold text-gray-900">Case File Cards</h1>
-                <p class="text-gray-600 mt-1">Comprehensive card variants for case management</p>
+
+<section id="case-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-briefcase text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Case Cards</h1>
+                    <p class="text-gray-600 mt-1">Comprehensive card variants for case management</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent case files, the primary container for investigations, complaints, and other managed work items in ArkCase. Each variant is optimized for different contexts from dense list views to detailed case summaries.
+                </p>
             </div>
         </div>
+    </div>
+</section>
 
-        <section id="small-cards-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Small Card</h2>
-                <p class="text-gray-600">Compact cards optimized for dense lists, queues, and search results</p>
-            </div>
+<section id="small-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Small Card</h2>
+            <p class="text-gray-600">Compact cards optimized for dense lists, queues, and search results</p>
+        </div>
 
-            <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
                 <h3 class="text-lg font-semibold text-gray-900 mb-4">List View - Small Cards</h3>
                 <div class="space-y-3">
                     <div id="small-card-1" class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
@@ -361,16 +376,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="medium-cards-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Medium Card</h2>
-                <p class="text-gray-600">Default cards for dashboards, related-object sections, and browse views</p>
-            </div>
+<section id="medium-cards-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Medium Card</h2>
+            <p class="text-gray-600">Default cards for dashboards, related-object sections, and browse views</p>
+        </div>
 
-            <div class="grid grid-cols-2 gap-6">
+        <div class="grid grid-cols-2 gap-6">
                 <div id="medium-card-1" class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
                     <div class="flex items-start justify-between mb-4">
                         <div class="flex items-center">
@@ -615,16 +632,18 @@
                         </button>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="large-cards-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Large Card</h2>
-                <p class="text-gray-600">Detailed cards for preview panels, inspector views, and expanded layouts</p>
-            </div>
+<section id="large-cards-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Case — Large Card</h2>
+            <p class="text-gray-600">Detailed cards for preview panels, inspector views, and expanded layouts</p>
+        </div>
 
-            <div class="space-y-6">
+        <div class="space-y-6">
                 <div id="large-card-1" class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
                     <div class="p-6 border-b border-gray-200">
                         <div class="flex items-start justify-between mb-4">
@@ -933,16 +952,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="comparison-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Card Comparison</h2>
-                <p class="text-gray-600">Visual comparison of all three card variants side by side</p>
-            </div>
+<section id="comparison-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Card Comparison</h2>
+            <p class="text-gray-600">Visual comparison of all three card variants side by side</p>
+        </div>
 
-            <div class="bg-white rounded-lg border border-gray-200 p-8">
+        <div class="bg-white rounded-lg border border-gray-200 p-8">
                 <div class="grid grid-cols-3 gap-8">
                     <div>
                         <div class="text-sm font-semibold text-gray-900 mb-4 text-center">Small Card</div>
@@ -1051,18 +1072,20 @@
                             </button>
                         </div>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="dashboard-widgets-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
-                <p class="text-gray-600">Case cards displayed in various dashboard widget contexts</p>
-            </div>
+<section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600">Case cards displayed in various dashboard widget contexts</p>
+        </div>
 
-            <!-- My Cases Widget -->
-            <div class="mb-8">
+        <!-- My Cases Widget -->
+        <div class="mb-8">
                 <h3 class="text-lg font-semibold text-gray-900 mb-4">My Cases Widget</h3>
                 <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
                     <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
@@ -1362,17 +1385,19 @@
                         <div class="text-2xl font-bold text-red-600">3</div>
                         <div class="text-sm text-gray-500">Overdue Cases</div>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="sidebar-items-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
-                <p class="text-gray-600">How Case objects appear in various sidebar contexts throughout the application</p>
-            </div>
+<section id="sidebar-items-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">How Case objects appear in various sidebar contexts throughout the application</p>
+        </div>
 
-            <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6">
                 <!-- Related Cases Panel -->
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Related Cases Panel</h3>
@@ -1527,16 +1552,18 @@
                     </div>
                     <p class="text-xs text-gray-500 mt-3">Recent and pinned cases for quick navigation from any screen</p>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="status-variations-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Status Variations</h2>
-                <p class="text-gray-600">Different status and priority indicator combinations across card variants</p>
-            </div>
+<section id="status-variations-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Status Variations</h2>
+            <p class="text-gray-600">Different status and priority indicator combinations across card variants</p>
+        </div>
 
-            <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <h3 class="text-sm font-semibold text-gray-900 mb-4">Status Badges</h3>
@@ -1597,17 +1624,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="interaction-states-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction States</h2>
-                <p class="text-gray-600">Visual representation of different card interaction states</p>
-            </div>
+<section id="interaction-states-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction States</h2>
+            <p class="text-gray-600">Visual representation of different card interaction states</p>
+        </div>
 
-            <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6">
                 <div class="bg-white rounded-lg border border-gray-200 p-6">
                     <h3 class="text-sm font-semibold text-gray-900 mb-4">Default State</h3>
                     <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
@@ -1654,17 +1683,19 @@
                         </div>
                         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Active</span>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="responsive-behavior-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
-                <p class="text-gray-600">How cards adapt to different container widths</p>
-            </div>
+<section id="responsive-behavior-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
+            <p class="text-gray-600">How cards adapt to different container widths</p>
+        </div>
 
-            <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
                 <div class="space-y-6">
                     <div>
                         <div class="text-sm font-medium text-gray-700 mb-3">Full Width Container</div>
@@ -1741,17 +1772,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="accessibility-section" class="mb-12">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
-                <p class="text-gray-600">Keyboard navigation and screen reader considerations</p>
-            </div>
+<section id="accessibility-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
+            <p class="text-gray-600">Keyboard navigation and screen reader considerations</p>
+        </div>
 
-            <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
                 <div class="grid grid-cols-2 gap-8">
                     <div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Keyboard Navigation</h3>
@@ -1812,17 +1845,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="usage-guidelines-section">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Guidelines</h2>
-                <p class="text-gray-600">Best practices for implementing case file cards</p>
-            </div>
+<section id="usage-guidelines-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Guidelines</h2>
+            <p class="text-gray-600">Best practices for implementing case file cards</p>
+        </div>
 
-            <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6">
                 <div class="bg-white rounded-lg border border-gray-200 p-6">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fa-solid fa-check text-green-600 text-xl"></i>
@@ -1897,10 +1932,10 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-
         </div>
+    </div>
+</section>
+
     </main>
 </div>
 

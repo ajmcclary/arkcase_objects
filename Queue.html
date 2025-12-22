@@ -230,72 +230,30 @@
 
     <!-- Main Content -->
     <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
 
-        <div class="mb-8">
-            <div class="mb-6">
-                <h1 class="text-3xl font-bold text-gray-900">Queue Cards</h1>
-                <p class="text-gray-600 mt-1">Card-based wireframes for workflow queue representation across Small, Medium, and Large variants</p>
+<section id="queue-card-overview" class="bg-white py-12">
+    <div class="container mx-auto px-8">
+        <div class="max-w-5xl">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-layer-group text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Queue Cards</h1>
+                    <p class="text-gray-600 mt-1">Workflow queues for work item routing</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    These cards represent workflow queues that route, prioritize, and organize work items in ArkCase. Each variant shows queue depth, assignment rules, and item counts optimized for workflow management.
+                </p>
             </div>
         </div>
+    </div>
+</section>
 
-        <section id="overview-section" class="px-8 py-8 bg-white border-b border-gray-200">
-            <div class="max-w-5xl">
-                <h2 class="text-xl font-semibold text-gray-900 mb-4">Overview</h2>
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                        <div class="flex items-center mb-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <i class="fa-solid fa-layer-group text-blue-600"></i>
-                            </div>
-                            <div class="ml-3">
-                                <div class="text-sm font-semibold text-gray-900">Object Type</div>
-                                <div class="text-xs text-gray-500">Queue</div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-600">Workflow queues route, prioritize, and organize work items including cases, complaints, and tasks throughout the system.</p>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                        <div class="flex items-center mb-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <i class="fa-solid fa-check-double text-blue-600"></i>
-                            </div>
-                            <div class="ml-3">
-                                <div class="text-sm font-semibold text-gray-900">Variants</div>
-                                <div class="text-xs text-gray-500">3 Sizes</div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-600">Small (26.1), Medium (26.2), and Large (26.3) card variants designed for different contexts and information density needs.</p>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                        <div class="flex items-center mb-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <i class="fa-solid fa-eye text-blue-600"></i>
-                            </div>
-                            <div class="ml-3">
-                                <div class="text-sm font-semibold text-gray-900">Focus</div>
-                                <div class="text-xs text-gray-500">Workload Context</div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-600">Cards emphasize workload visibility and navigation, not queue configuration or administrative settings.</p>
-                    </div>
-                </div>
-                
-                <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <div class="flex">
-                        <i class="fa-solid fa-circle-info text-blue-600 mt-0.5"></i>
-                        <div class="ml-3">
-                            <h3 class="text-sm font-semibold text-blue-900 mb-1">Design Principle</h3>
-                            <p class="text-sm text-blue-800">All queue card variants must clearly communicate the object type, queue name, work type handled, relative workload, and queue usage context. Cards align visually with Group and Business Process cards for system-wide consistency.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="small-card-section" class="px-8 py-8 bg-gray-50">
+<section id="small-card-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <div class="flex items-center justify-between mb-6">
                     <div>
@@ -437,9 +395,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="medium-card-section" class="px-8 py-8 bg-white">
+<section id="medium-card-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <div class="flex items-center justify-between mb-6">
                     <div>
@@ -677,9 +637,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="large-card-section" class="px-8 py-8 bg-gray-50">
+<section id="large-card-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <div class="flex items-center justify-between mb-6">
                     <div>
@@ -996,9 +958,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="consistency-rules-section" class="px-8 py-8 bg-white border-t border-gray-200">
+<section id="consistency-rules-section" class="py-12 bg-white border-t border-gray-200">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Cross-Variant Consistency Rules</h2>
                 
@@ -1066,11 +1030,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <!-- Dashboard Widgets Section -->
-        <section id="dashboard-widgets-section" class="px-8 py-8 bg-white border-t border-gray-200">
-            <div class="max-w-7xl">
+<!-- Dashboard Widgets Section -->
+<section id="dashboard-widgets-section" class="py-12 bg-white border-t border-gray-200">
+    <div class="container mx-auto px-8">
+        <div class="max-w-7xl">
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
                     <p class="text-gray-600">Queue widgets for dashboard views, providing real-time queue monitoring, workload distribution, and queue performance metrics.</p>
@@ -1540,12 +1506,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- Sidebar Items Section -->
-        <section id="sidebar-items-section" class="px-8 py-8 bg-gray-50 border-t border-gray-200">
-            <div class="max-w-7xl">
+<!-- Sidebar Items Section -->
+<section id="sidebar-items-section" class="py-12 bg-gray-50 border-t border-gray-200">
+    <div class="container mx-auto px-8">
+        <div class="max-w-7xl">
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
                     <p class="text-gray-600">Queue sidebar components for navigation, queue monitoring, and quick access to frequently used queues.</p>
@@ -1805,10 +1773,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="usage-guidelines-section" class="px-8 py-8 bg-gray-50">
+<section id="usage-guidelines-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Usage Guidelines</h2>
 
@@ -1907,9 +1877,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="constraints-section" class="px-8 py-8 bg-white border-t border-gray-200">
+<section id="constraints-section" class="py-12 bg-white border-t border-gray-200">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Design Constraints & Boundaries</h2>
                 
@@ -2011,9 +1983,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="interaction-patterns-section" class="px-8 py-8 bg-gray-50">
+<section id="interaction-patterns-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Interaction Patterns</h2>
                 
@@ -2111,9 +2085,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="variants-comparison-section" class="px-8 py-8 bg-white border-t border-gray-200">
+<section id="variants-comparison-section" class="py-12 bg-white border-t border-gray-200">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Side-by-Side Variant Comparison</h2>
                 
@@ -2200,9 +2176,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        <section id="implementation-notes-section" class="px-8 py-8 bg-gray-50">
+<section id="implementation-notes-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
             <div class="max-w-5xl">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Implementation Notes</h2>
                 
@@ -2320,10 +2298,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+</section>
 
-        </div>
-    </main>
+</main>
 </div>
 
 <!-- Footer -->
