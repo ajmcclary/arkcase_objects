@@ -3996,7 +3996,7 @@
                         <div
                             class="bg-white rounded-lg border border-gray-200 p-6"
                         >
-                            <div class="grid grid-cols-2 gap-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div>
                                     <h3
                                         class="text-lg font-semibold text-gray-900 mb-4"
@@ -4434,113 +4434,6 @@
                                     <span class="font-medium text-purple-900">Desktop</span>
                                 </div>
                                 <p class="text-sm text-purple-800">1024px+: Full multi-column grids</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Accessibility Section -->
-                <section id="accessibility-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
-                        <div class="mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
-                                Accessibility
-                            </h2>
-                            <p class="text-gray-600">
-                                Keyboard navigation and screen reader support for Case cards.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-                                    >
-                                        <i
-                                            class="fa-solid fa-keyboard text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Keyboard Navigation
-                                    </h3>
-                                </div>
-                                <ul class="space-y-2 text-sm text-gray-700">
-                                    <li>
-                                        <strong>Tab:</strong> Navigate between case cards
-                                    </li>
-                                    <li>
-                                        <strong>Enter/Space:</strong> Open selected case
-                                    </li>
-                                    <li>
-                                        <strong>Arrow Keys:</strong> Navigate within case list
-                                    </li>
-                                    <li>
-                                        <strong>Escape:</strong> Close modals or deselect
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-                                    >
-                                        <i
-                                            class="fa-solid fa-universal-access text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Screen Reader Support
-                                    </h3>
-                                </div>
-                                <ul class="space-y-2 text-sm text-gray-700">
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mr-2 mt-0.5"
-                                        ></i
-                                        >Case cards have descriptive ARIA labels
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mr-2 mt-0.5"
-                                        ></i
-                                        >Status badges announced with context
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mr-2 mt-0.5"
-                                        ></i
-                                        >Interactive elements have focus indicators
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mr-2 mt-0.5"
-                                        ></i
-                                        >Priority levels announced clearly
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- ARIA Implementation Notes -->
-                        <div class="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-6">
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-lightbulb text-amber-600 text-xl mt-0.5"></i>
-                                <div>
-                                    <h4 class="font-semibold text-amber-900 mb-2">Implementation Notes</h4>
-                                    <ul class="space-y-1 text-sm text-amber-800">
-                                        <li>Use <code class="bg-amber-100 px-1 rounded">role="article"</code> for case card containers</li>
-                                        <li>Ensure color contrast ratio of 4.5:1 minimum for all text</li>
-                                        <li>Provide text alternatives for status indicator icons</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
