@@ -2447,6 +2447,351 @@
         </div>
     </div>
 </section>
+
+<!-- Interaction Patterns Section -->
+<section id="interaction-patterns-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction Patterns</h2>
+            <p class="text-gray-600">User interaction behaviors for Container cards.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-mouse-pointer text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Click Behavior</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Card click:</strong> Navigate to container contents view</li>
+                    <li><strong>Expand icon:</strong> Expand/collapse nested hierarchy</li>
+                    <li><strong>File count:</strong> Show file type breakdown tooltip</li>
+                    <li><strong>Restriction badge:</strong> Show access level details</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-hand-pointer text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Hover States</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Card hover:</strong> Subtle shadow elevation</li>
+                    <li><strong>Folder icon:</strong> Show open folder state</li>
+                    <li><strong>Action buttons:</strong> Appear on card hover</li>
+                    <li><strong>Nested items:</strong> Highlight parent container</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive Behavior Section -->
+<section id="responsive-behavior-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
+            <p class="text-gray-600">How Container cards adapt to different screen sizes.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900">Variant</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-desktop mr-2"></i>Desktop (1024px+)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-tablet-screen-button mr-2"></i>Tablet (768-1023px)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-mobile-screen mr-2"></i>Mobile (&lt;768px)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Small</td>
+                        <td class="px-6 py-4 text-gray-700">Inline with file counts</td>
+                        <td class="px-6 py-4 text-gray-700">Inline, counts visible</td>
+                        <td class="px-6 py-4 text-gray-700">Icon + name only</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Medium</td>
+                        <td class="px-6 py-4 text-gray-700">Grid with full hierarchy</td>
+                        <td class="px-6 py-4 text-gray-700">2 column grid</td>
+                        <td class="px-6 py-4 text-gray-700">Single column list</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Large</td>
+                        <td class="px-6 py-4 text-gray-700">Full metadata + preview</td>
+                        <td class="px-6 py-4 text-gray-700">Condensed preview</td>
+                        <td class="px-6 py-4 text-gray-700">Vertical stacking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Accessibility Section -->
+<section id="accessibility-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
+            <p class="text-gray-600">Keyboard navigation and screen reader support for Container cards.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-keyboard text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Keyboard Navigation</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Tab:</strong> Navigate between containers</li>
+                    <li><strong>Enter/Space:</strong> Open container or expand</li>
+                    <li><strong>Arrow Right:</strong> Expand nested hierarchy</li>
+                    <li><strong>Arrow Left:</strong> Collapse or go to parent</li>
+                    <li><strong>Escape:</strong> Close expanded view</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-universal-access text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Screen Reader Support</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Container name and type announced</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>File/folder counts read aloud</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Restriction levels announced</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Hierarchy depth indicated</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Usage Guidelines Section -->
+<section id="usage-guidelines-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Usage Guidelines</h2>
+            <p class="text-gray-600">When and how to use each Container card variant.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="font-semibold text-gray-900 mb-3">Small Cards</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-blue-600 text-xs mr-2 mt-1.5"></i>Sidebar navigation trees</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-blue-600 text-xs mr-2 mt-1.5"></i>Breadcrumb navigation</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-blue-600 text-xs mr-2 mt-1.5"></i>Inline container references</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-blue-600 text-xs mr-2 mt-1.5"></i>Compact file browser lists</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="font-semibold text-gray-900 mb-3">Medium Cards</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-purple-600 text-xs mr-2 mt-1.5"></i>Document management grids</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-purple-600 text-xs mr-2 mt-1.5"></i>Case attachments panels</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-purple-600 text-xs mr-2 mt-1.5"></i>Search results</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-purple-600 text-xs mr-2 mt-1.5"></i>Related containers widgets</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="font-semibold text-gray-900 mb-3">Large Cards</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-green-600 text-xs mr-2 mt-1.5"></i>Container detail panels</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-green-600 text-xs mr-2 mt-1.5"></i>Evidence container views</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-green-600 text-xs mr-2 mt-1.5"></i>Full hierarchy displays</li>
+                    <li class="flex items-start"><i class="fa-solid fa-circle text-green-600 text-xs mr-2 mt-1.5"></i>Container metadata panels</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Design Guidelines Section -->
+<section id="design-guidelines-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Design Guidelines</h2>
+            <p class="text-gray-600">Constraints and focus areas for Container card design.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div class="p-6 border-b bg-red-50">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center">
+                    <i class="fa-solid fa-circle-xmark text-red-600 mr-2"></i>Prohibited Elements
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-xmark text-red-600 mr-2 mt-0.5"></i>Do not show file contents preview inline</li>
+                    <li class="flex items-start"><i class="fa-solid fa-xmark text-red-600 mr-2 mt-0.5"></i>Do not display internal path structures</li>
+                    <li class="flex items-start"><i class="fa-solid fa-xmark text-red-600 mr-2 mt-0.5"></i>Do not allow drag-drop in card view</li>
+                    <li class="flex items-start"><i class="fa-solid fa-xmark text-red-600 mr-2 mt-0.5"></i>Do not show restricted content to unauthorized users</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-green-50">
+                <h3 class="text-base font-semibold text-gray-900 mb-3 flex items-center">
+                    <i class="fa-solid fa-circle-check text-green-600 mr-2"></i>Design Focus Areas
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Clear visual hierarchy for nesting depth</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Prominent restriction/access level indicators</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>File count summaries at a glance</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Parent object context visibility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Consistency Rules Section -->
+<section id="consistency-rules-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Consistency Rules</h2>
+            <p class="text-gray-600">Design principles ensuring Container cards align with the broader design system.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-palette text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Visual Alignment</h3>
+                        <p class="text-sm text-gray-700">Container cards must align visually with Folder cards, sharing icon styles and hierarchy indicators.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Progressive Disclosure</h3>
+                        <p class="text-sm text-gray-700">Hierarchy depth scales from icon-only in Small to full tree in Large variants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-lock text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Restriction Indicators</h3>
+                        <p class="text-sm text-gray-700">Access restriction badges must use consistent colors and icons across all container types.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-folder-tree text-amber-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Parent Context</h3>
+                        <p class="text-sm text-gray-700">Container cards must always display their parent object (Case, Complaint, etc.) context.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Notes Section -->
+<section id="implementation-notes-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
+            <p class="text-gray-600">Technical considerations for Container card development.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3">Data Requirements</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>containerId, name, parentObjectRef</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>fileCount, folderCount aggregations</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>restrictionLevel, accessPermissions</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>hierarchyPath for nesting display</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3">Performance</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Lazy load deep nested hierarchies</li>
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Cache file count aggregations</li>
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Virtualize large container lists</li>
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Defer permission checks where possible</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Container Card System Summary -->
+<section id="summary-section" class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Container Card System Summary</h2>
+            <p class="text-gray-600">Quick reference for Container card variants and usage patterns.</p>
+        </div>
+        <div class="bg-white border border-blue-200 rounded-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-3">
+                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-2">
+                            <i class="fa-solid fa-compress text-blue-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900">Small Cards</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Compact container references for navigation trees, breadcrumbs, and inline mentions with file counts.</p>
+                </div>
+                <div>
+                    <div class="flex items-center mb-3">
+                        <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-2">
+                            <i class="fa-solid fa-grip text-purple-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900">Medium Cards</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Standard view for document management with parent context, restriction badges, and action buttons.</p>
+                </div>
+                <div>
+                    <div class="flex items-center mb-3">
+                        <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-2">
+                            <i class="fa-solid fa-expand text-green-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900">Large Cards</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Full detail view with complete hierarchy, metadata, and contents preview for inspector panels.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200">
+                <h4 class="font-semibold text-gray-900 mb-3">Core Principles</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>
+                        Clear visual hierarchy for nesting depth
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>
+                        File counts always visible
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>
+                        Consistent restriction indicators with Folder cards
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>
+                        Accessible keyboard navigation for hierarchy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
     </div>
 
