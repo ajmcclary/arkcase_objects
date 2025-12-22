@@ -1038,6 +1038,490 @@
         </div>
     </section>
 
+    <section id="dashboard-widgets-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
+            <p class="text-gray-600 text-sm">Complaint cards displayed in various dashboard widget contexts</p>
+        </div>
+
+        <!-- My Complaints Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">My Complaints Widget</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-file-lines text-blue-600"></i>
+                        <span class="font-semibold text-gray-900">My Complaints</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">8</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select class="text-xs border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>All Statuses</option>
+                            <option>Open</option>
+                            <option>Under Review</option>
+                            <option>Pending</option>
+                        </select>
+                        <a href="#" class="text-sm text-blue-600 hover:text-blue-800 font-medium">View All</a>
+                    </div>
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Billing Dispute - Incorrect Charges</div>
+                            <div class="text-xs text-gray-500">CMPL-2024-0892</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">Under Review</span>
+                            <span class="text-xs text-gray-500">Due Jan 25</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Service Quality Issue - Delayed Response</div>
+                            <div class="text-xs text-gray-500">CMPL-2024-0891</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">Open</span>
+                            <span class="text-xs text-gray-500">Due Jan 28</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Product Defect Report - Safety Concern</div>
+                            <div class="text-xs text-gray-500">CMPL-2024-0889</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-700">Escalated</span>
+                            <span class="text-xs text-red-600 font-medium">Due Today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Complaints Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">New Complaints Widget</h3>
+            <div class="bg-white rounded-lg border border-amber-200 shadow-sm">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-inbox text-amber-600"></i>
+                        <span class="font-semibold text-amber-900">New Complaints</span>
+                        <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">5</span>
+                    </div>
+                    <a href="#" class="text-sm text-amber-600 hover:text-amber-800 font-medium">View Queue</a>
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex items-center gap-3 p-3 border border-amber-100 bg-amber-50/50 rounded-lg hover:bg-amber-50 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-file-lines text-amber-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Privacy Violation Concern</div>
+                            <div class="text-xs text-gray-500">CMPL-2024-0895 • Submitted 15 min ago</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">Privacy</span>
+                            <button class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Assign</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 border border-amber-100 bg-amber-50/50 rounded-lg hover:bg-amber-50 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-file-lines text-amber-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Harassment Report - Workplace</div>
+                            <div class="text-xs text-gray-500">CMPL-2024-0894 • Submitted 1 hour ago</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-700">HR</span>
+                            <button class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Assign</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complaints by Status Grid -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Complaints by Status Grid</h3>
+            <div class="grid grid-cols-12 gap-6">
+                <!-- Filter Sidebar -->
+                <div class="col-span-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 sticky top-6">
+                        <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4">Filter & Sort</h4>
+                        <div class="mb-5">
+                            <label class="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2 block">Status</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Open</span>
+                                    <span class="ml-auto text-xs text-gray-500">18</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Under Review</span>
+                                    <span class="ml-auto text-xs text-gray-500">12</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Escalated</span>
+                                    <span class="ml-auto text-xs bg-red-100 text-red-700 px-1.5 rounded">4</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Resolved</span>
+                                    <span class="ml-auto text-xs text-gray-500">87</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-5 pb-5 border-b border-gray-200">
+                            <label class="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2 block">Category</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Billing</span>
+                                    <span class="ml-auto text-xs text-gray-500">23</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Service</span>
+                                    <span class="ml-auto text-xs text-gray-500">31</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Product</span>
+                                    <span class="ml-auto text-xs text-gray-500">15</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">HR/Personnel</span>
+                                    <span class="ml-auto text-xs text-gray-500">8</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2 block">Date Received</label>
+                            <select class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>All dates</option>
+                                <option>Today</option>
+                                <option>Last 7 days</option>
+                                <option>Last 30 days</option>
+                                <option>This quarter</option>
+                            </select>
+                        </div>
+                        <button class="w-full mt-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-lg text-sm transition-colors">
+                            Clear All Filters
+                        </button>
+                    </div>
+                </div>
+                <!-- Complaints Grid -->
+                <div class="col-span-9">
+                    <div class="mb-4 flex items-center justify-between">
+                        <div class="text-sm text-gray-600">Showing <span class="font-semibold">30</span> complaints</div>
+                        <div class="flex items-center gap-2">
+                            <select class="text-sm border border-gray-300 rounded px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Sort by Date Received</option>
+                                <option>Sort by Due Date</option>
+                                <option>Sort by Priority</option>
+                                <option>Sort by Category</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-500 font-medium">CMPL-2024-0892</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">Under Review</span>
+                            </div>
+                            <h4 class="text-sm font-semibold text-gray-900 mb-2">Billing Dispute - Incorrect Charges</h4>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fa-solid fa-tag mr-1"></i>Billing</span>
+                                <span><i class="fa-regular fa-calendar mr-1"></i>Jan 22</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-500 font-medium">CMPL-2024-0889</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-700">Escalated</span>
+                            </div>
+                            <h4 class="text-sm font-semibold text-gray-900 mb-2">Product Defect Report - Safety Concern</h4>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fa-solid fa-tag mr-1"></i>Product</span>
+                                <span class="text-red-600"><i class="fa-regular fa-calendar mr-1"></i>Due Today</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-500 font-medium">CMPL-2024-0891</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">Open</span>
+                            </div>
+                            <h4 class="text-sm font-semibold text-gray-900 mb-2">Service Quality Issue - Delayed Response</h4>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fa-solid fa-tag mr-1"></i>Service</span>
+                                <span><i class="fa-regular fa-calendar mr-1"></i>Jan 20</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-start justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-500 font-medium">CMPL-2024-0887</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-700">Resolved</span>
+                            </div>
+                            <h4 class="text-sm font-semibold text-gray-900 mb-2">Refund Request - Cancelled Order</h4>
+                            <div class="flex items-center justify-between text-xs text-gray-500">
+                                <span><i class="fa-solid fa-tag mr-1"></i>Billing</span>
+                                <span><i class="fa-solid fa-check mr-1 text-green-600"></i>Closed Jan 18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics Widget</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-file-lines text-blue-600"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 font-medium">Total</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">121</div>
+                    <div class="text-sm text-gray-500">All Complaints</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-folder-open text-green-600"></i>
+                        </div>
+                        <span class="text-xs text-green-600 font-medium">Active</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">18</div>
+                    <div class="text-sm text-gray-500">Open</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass text-amber-600"></i>
+                        </div>
+                        <span class="text-xs text-amber-600 font-medium">Review</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">12</div>
+                    <div class="text-sm text-gray-500">Under Review</div>
+                </div>
+                <div class="bg-white rounded-lg border border-red-200 p-5 bg-red-50/30">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-up text-red-600"></i>
+                        </div>
+                        <span class="text-xs text-red-600 font-medium">Alert</span>
+                    </div>
+                    <div class="text-2xl font-bold text-red-600">4</div>
+                    <div class="text-sm text-gray-500">Escalated</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-circle-check text-gray-600"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 font-medium">Done</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">87</div>
+                    <div class="text-sm text-gray-500">Resolved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sidebar-items-section" class="mb-16">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600 text-sm">How Complaint objects appear in various sidebar contexts throughout the application</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Related Complaints Panel -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Related Complaints Panel</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-file-lines text-blue-600 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Related Complaints</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 text-xs font-medium px-1.5 py-0.5 rounded">2</span>
+                        </div>
+                        <div class="p-2 space-y-1">
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Original Complaint</div>
+                                    <div class="text-xs text-gray-500">CMPL-2024-0850</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Follow-up Complaint</div>
+                                    <div class="text-xs text-gray-500">CMPL-2024-0878</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-4 py-2 border-t border-gray-100">
+                            <a href="#" class="text-xs text-blue-600 hover:text-blue-800 font-medium">View all related</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Appears when viewing a Case, Person, or linked Complaint</p>
+            </div>
+
+            <!-- Complaint Browser Tree -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Complaint Browser Tree</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-sitemap text-gray-500 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Complaints</span>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="space-y-0.5">
+                                <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600">
+                                    <i class="fa-solid fa-chevron-down text-xs text-gray-400 w-4"></i>
+                                    <i class="fa-solid fa-layer-group text-gray-400"></i>
+                                    <span>By Category</span>
+                                </div>
+                                <div class="ml-4 space-y-0.5">
+                                    <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600">
+                                        <i class="fa-solid fa-chevron-down text-xs text-gray-400 w-4"></i>
+                                        <i class="fa-solid fa-folder text-amber-500"></i>
+                                        <span>Billing</span>
+                                        <span class="ml-auto text-xs text-gray-400">23</span>
+                                    </div>
+                                    <div class="ml-4 space-y-0.5">
+                                        <a href="#" class="flex items-center gap-2 px-2 py-1.5 text-sm rounded bg-blue-50 text-blue-700 font-medium">
+                                            <i class="fa-solid fa-chevron-right text-xs text-blue-400 w-4"></i>
+                                            <i class="fa-solid fa-file-lines text-blue-600"></i>
+                                            <span class="truncate">CMPL-2024-0892</span>
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 rounded">
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-400 w-4"></i>
+                                            <i class="fa-solid fa-file-lines text-blue-500"></i>
+                                            <span class="truncate">CMPL-2024-0887</span>
+                                        </a>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 rounded">
+                                        <i class="fa-solid fa-chevron-right text-xs text-gray-400 w-4"></i>
+                                        <i class="fa-solid fa-folder text-amber-500"></i>
+                                        <span>Service</span>
+                                        <span class="ml-auto text-xs text-gray-400">31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Complaints organized by category in tree navigation</p>
+            </div>
+
+            <!-- Quick Access List -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Access List</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-gray-500 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Recent Complaints</span>
+                            </div>
+                        </div>
+                        <div class="p-2 space-y-1">
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded bg-gray-50 border-l-2 border-blue-500">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Billing Dispute</div>
+                                    <div class="text-xs text-gray-500">Viewed 10 min ago</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Safety Concern Report</div>
+                                    <div class="text-xs text-gray-500">Viewed 2 hours ago</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-lines text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Service Quality Issue</div>
+                                    <div class="text-xs text-gray-500">Viewed yesterday</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-4 py-3 border-t border-gray-100">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-gray-500">Watching</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Manage</a>
+                            </div>
+                            <div class="mt-2 space-y-1">
+                                <a href="#" class="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-eye text-blue-500 text-xs"></i>
+                                    <span class="text-sm text-gray-700 truncate">VIP Customer Issue</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Recent and watched complaints for quick access</p>
+            </div>
+        </div>
+    </section>
+
     <section id="metadata-section" class="mb-16">
         <div class="mb-6">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Metadata Structure</h2>
