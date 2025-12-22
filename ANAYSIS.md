@@ -39,18 +39,18 @@ Legend:
 
 | Object             | S | M | L | Compare | Widgets | Sidebar | Status | Interaction | Responsive | A11y | Usage | Design | Consistency | Impl | Metadata | Indicators | Layout | Special | Reference | System |
 | ------------------ | - | - | - | ------- | ------- | ------- | ------ | ----------- | ---------- | ---- | ----- | ------ | ----------- | ---- | -------- | ---------- | ------ | ------- | --------- | ------ |
-| Associated Tag     | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | ✓      | ✓           | —    | —        | —          | —      | —       | —         | —      |
-| Audit Event        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | △      | —           | —          | —    | —     | ✓      | ✓           | —    | —        | —          | —      | —       | △         | —      |
+| Associated Tag     | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
+| Audit Event        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | △      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | —      | —       | △         | ✓      |
 | Business Process   | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | —    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | ✓         | —      |
 | Case               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | —      | —           | —    | —        | —          | —      | —       | —         | —      |
 | Chat Conversation  | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | —         | ✓      |
-| Chat Message       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | —          | —    | ✓     | ✓      | ✓           | —    | ✓        | ✓          | —      | —       | —         | —      |
+| Chat Message       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | —           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | ✓        | ✓          | —      | —       | —         | ✓      |
 | Complaint          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | —     | ✓      | —           | —    | ✓        | —          | —      | —       | —         | —      |
 | Consultation       | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | —          | —      | —       | ✓         | ✓      |
 | Container          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | ✓     | ✓      | ✓           | ✓    | —        | ✓          | —      | —       | ✓         | ✓      |
-| Cost               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | —          | —    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | —      |
+| Cost               | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | —       | —         | ✓      |
 | Costsheet          | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | ✓          | ✓    | —     | ✓      | ✓           | ✓    | —        | —          | ✓      | ✓       | —         | ✓      |
-| File Object        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | —          | —    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | —      |
+| File Object        | ✓ | ✓ | ✓ | —       | ✓       | ✓       | ✓      | ✓           | ✓          | ✓    | —     | ✓      | —           | ✓    | ✓        | ✓          | —      | —       | ✓         | ✓      |
 | File Version       | ✓ | ✓ | ✓ | —       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | ✓      | ✓           | —    | ✓        | ✓          | —      | —       | —         | —      |
 | Folder             | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | —      | ✓           | —          | —    | ✓     | ✓      | —           | —    | —        | —          | —      | —       | —         | —      |
 | Group              | ✓ | ✓ | ✓ | ✓       | ✓       | ✓       | ✓      | —           | —          | —    | ✓     | ✓      | —           | ✓    | —        | ✓          | —      | —       | —         | —      |
@@ -142,12 +142,15 @@ Every object **should** contain the following, in this order:
 | Costsheet.html | Responsive Behavior, Accessibility, Design Guidelines, Consistency Rules, Implementation Notes, Summary | 2024-12-22 |
 | Recycle Bin Item.html | Responsive Behavior, Accessibility, Consistency Rules, Implementation Notes, Summary | 2024-12-22 |
 
-### Batch 2: Pending (0/5 files)
-- Associated Tag.html
-- Audit Event.html
-- Chat Message.html
-- Cost.html
-- File Object.html
+### Batch 2: Complete (5/5 files)
+
+| File | Sections Added | Date |
+|------|----------------|------|
+| Associated Tag.html | Responsive Behavior, Accessibility, Implementation Notes, Summary | 2024-12-22 |
+| Audit Event.html | Responsive Behavior, Accessibility, Implementation Notes, Summary | 2024-12-22 |
+| Chat Message.html | Responsive Behavior, Accessibility, Implementation Notes, Summary | 2024-12-22 |
+| Cost.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
+| File Object.html | Responsive Behavior, Accessibility, Summary | 2024-12-22 |
 
 ### Batch 3: Pending (0/5 files)
 - File Version.html

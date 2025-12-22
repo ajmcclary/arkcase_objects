@@ -366,7 +366,7 @@
         </div>
     </section>
 
-    <section id="medium-card-section" class="py-12 bg-gray-50">
+    <section id="medium-card-section" class="py-12 bg-white">
         <div class="container mx-auto px-8">
             <div class="mb-6">
                 <div class="flex items-center justify-between mb-3">
@@ -1018,7 +1018,7 @@
     </section>
 
     <!-- Dashboard Widgets Section -->
-    <section id="dashboard-widgets-section" class="py-12 bg-gray-50">
+    <section id="dashboard-widgets-section" class="py-12 bg-white">
         <div class="container mx-auto px-8">
             <div class="mb-8">
                 <div class="flex items-center gap-3 mb-3">
@@ -1300,7 +1300,7 @@
         </div>
     </section>
 
-    <section id="comparison-section" class="py-12 bg-gray-50">
+    <section id="comparison-section" class="py-12 bg-white">
         <div class="container mx-auto px-8">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-900 mb-3">Card Comparison</h2>
@@ -1508,7 +1508,7 @@
         </div>
     </section>
 
-    <section id="consistency-rules-section" class="py-12 bg-gray-50">
+    <section id="consistency-rules-section" class="py-12 bg-white">
         <div class="container mx-auto px-8">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-900 mb-3">Consistency Rules</h2>
@@ -1680,7 +1680,7 @@
         </div>
     </section>
 
-    <section id="use-cases-section" class="py-12 bg-gray-50">
+    <section id="use-cases-section" class="py-12 bg-white">
         <div class="container mx-auto px-8">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-900 mb-3">Usage Guidelines</h2>
@@ -1781,6 +1781,159 @@
             </div>
         </div>
     </section>
+
+<!-- Responsive Behavior Section -->
+<section id="responsive-behavior-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Responsive Behavior</h2>
+            <p class="text-gray-600">How Associated Tag cards adapt to different screen sizes.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900">Variant</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-desktop mr-2"></i>Desktop (1024px+)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-tablet-screen-button mr-2"></i>Tablet (768-1023px)</th>
+                        <th class="px-6 py-3 text-left font-semibold text-gray-900"><i class="fa-solid fa-mobile-screen mr-2"></i>Mobile (&lt;768px)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Small</td>
+                        <td class="px-6 py-4 text-gray-700">Inline pill with full tag name</td>
+                        <td class="px-6 py-4 text-gray-700">Inline pill maintained</td>
+                        <td class="px-6 py-4 text-gray-700">Wrap to multiple lines if needed</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Medium</td>
+                        <td class="px-6 py-4 text-gray-700">Full parent object context visible</td>
+                        <td class="px-6 py-4 text-gray-700">2 column grid</td>
+                        <td class="px-6 py-4 text-gray-700">Single column, stacked layout</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-medium text-gray-900">Large</td>
+                        <td class="px-6 py-4 text-gray-700">Full metadata and actions visible</td>
+                        <td class="px-6 py-4 text-gray-700">Condensed metadata grid</td>
+                        <td class="px-6 py-4 text-gray-700">Vertical stacking, actions at bottom</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Accessibility Section -->
+<section id="accessibility-section" class="py-12 bg-white">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Accessibility</h2>
+            <p class="text-gray-600">Keyboard navigation and screen reader support for Associated Tag cards.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-keyboard text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Keyboard Navigation</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><strong>Tab:</strong> Navigate between tag cards</li>
+                    <li><strong>Enter/Space:</strong> Select tag or navigate to parent</li>
+                    <li><strong>Delete/Backspace:</strong> Remove tag association (with confirmation)</li>
+                    <li><strong>Escape:</strong> Cancel tag operations</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-universal-access text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Screen Reader Support</h3>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Tag name and color category announced</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Parent object context clearly labeled</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>Association date and creator announced</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-green-600 mr-2 mt-0.5"></i>ARIA labels for remove/edit actions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Notes Section -->
+<section id="implementation-notes-section" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Implementation Notes</h2>
+            <p class="text-gray-600">Technical considerations for Associated Tag card development.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3">Component Architecture</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>Compose from base Tag card with parent context</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>Support dynamic color theming from tag definition</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code text-blue-600 mr-2 mt-0.5"></i>Handle bidirectional navigation (tag ↔ parent)</li>
+                </ul>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 class="text-base font-semibold text-gray-900 mb-3">Performance</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Cache tag color mappings for consistency</li>
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Lazy load parent object details on hover/expand</li>
+                    <li class="flex items-start"><i class="fa-solid fa-bolt text-amber-600 mr-2 mt-0.5"></i>Batch tag operations for bulk updates</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Summary Section -->
+<section id="summary-section" class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="container mx-auto px-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Associated Tag Card System Summary</h2>
+            <p class="text-gray-600">Quick reference for Associated Tag card variants and usage.</p>
+        </div>
+        <div class="bg-white border border-blue-200 rounded-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Small Cards</h3>
+                    <p class="text-sm text-gray-600">Compact colored pills for inline tag lists and quick scanning.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Medium Cards</h3>
+                    <p class="text-sm text-gray-600">Tag management panels with parent object context and actions.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Large Cards</h3>
+                    <p class="text-sm text-gray-600">Inspector views with full association metadata and audit trail.</p>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200">
+                <h4 class="font-semibold text-gray-900 mb-3">Core Principles</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Color-coded visual identity from parent tag
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Clear parent object context in all variants
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Accessible keyboard and screen reader support
+                    </div>
+                    <div class="flex items-center text-sm text-gray-700">
+                        <i class="fa-solid fa-check-double text-blue-600 mr-2"></i>Bidirectional navigation to parent objects
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 </div>
