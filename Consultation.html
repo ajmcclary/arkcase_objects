@@ -1386,22 +1386,144 @@
     <div class="max-w-7xl mx-auto">
         <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Widgets</h2>
-            <p class="text-gray-600">Consultation cards displayed in a dashboard grid layout with filtering and grouping options.</p>
+            <p class="text-gray-600">Consultation cards displayed in various dashboard widget contexts</p>
         </div>
 
-        <div class="grid grid-cols-12 gap-6">
-            <div class="col-span-3">
-                <div class="bg-white border border-gray-200 rounded-lg p-5 sticky top-6">
-                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4">Filter & Sort</h3>
-                    
-                    <div class="mb-5">
-                        <label class="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2 block">Status</label>
-                        <div class="space-y-2">
-                            <label class="flex items-center">
-                                <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
-                                <span class="ml-2 text-sm text-gray-700">Pending Review</span>
-                                <span class="ml-auto text-xs text-gray-500">6</span>
-                            </label>
+        <!-- My Consultations Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">My Consultations Widget</h3>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-comments text-blue-600"></i>
+                        <span class="font-semibold text-gray-900">My Consultations</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">9</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select class="text-xs border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>All Types</option>
+                            <option>Internal</option>
+                            <option>External</option>
+                        </select>
+                        <a href="#" class="text-sm text-blue-600 hover:text-blue-800 font-medium">View All</a>
+                    </div>
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-comments text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Inter-Agency Records Request Review</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0156 • Legal Department</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">Pending Review</span>
+                            <span class="text-xs text-gray-500">Due Jan 28</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-comments text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Budget Allocation Consultation</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0152 • Finance</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">In Progress</span>
+                            <span class="text-xs text-gray-500">Due Feb 5</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-building text-purple-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">External Vendor Assessment</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0149 • Procurement • External</div>
+                        </div>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">Awaiting Response</span>
+                            <span class="text-xs text-gray-500">Due Jan 30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pending Review Widget -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Pending Your Review Widget</h3>
+            <div class="bg-white rounded-lg border border-amber-200 shadow-sm">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-amber-200 bg-amber-50">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-amber-600"></i>
+                        <span class="font-semibold text-amber-900">Pending Your Review</span>
+                        <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full">4</span>
+                    </div>
+                    <a href="#" class="text-sm text-amber-600 hover:text-amber-800 font-medium">View All</a>
+                </div>
+                <div class="p-4 space-y-3">
+                    <div class="flex items-center gap-3 p-3 border border-amber-100 bg-amber-50/50 rounded-lg hover:bg-amber-50 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-comments text-amber-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Legal Compliance Review - External</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0158 • Requested by Sarah Chen</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-700">High Priority</span>
+                            <button class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Review</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 border border-amber-100 bg-amber-50/50 rounded-lg hover:bg-amber-50 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-comments text-amber-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Policy Exception Request</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0155 • Requested by Mike Johnson</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">Normal</span>
+                            <button class="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Review</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 border border-red-200 bg-red-50/50 rounded-lg hover:bg-red-50 cursor-pointer transition-colors">
+                        <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-exclamation-triangle text-red-600 text-sm"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="text-sm font-medium text-gray-900 truncate">Urgent: Contract Terms Review</div>
+                            <div class="text-xs text-gray-500">CONS-2024-0160 • Overdue by 2 days</div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-700">Overdue</span>
+                            <button class="px-3 py-1 text-xs font-medium text-white bg-red-600 rounded hover:bg-red-700">Review Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consultations by Status Grid -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Consultations by Status Grid</h3>
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 sticky top-6">
+                        <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4">Filter & Sort</h4>
+
+                        <div class="mb-5">
+                            <label class="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2 block">Status</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2 text-sm text-gray-700">Pending Review</span>
+                                    <span class="ml-auto text-xs text-gray-500">6</span>
+                                </label>
                             <label class="flex items-center">
                                 <input type="checkbox" checked class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
                                 <span class="ml-2 text-sm text-gray-700">In Progress</span>
@@ -1894,6 +2016,241 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Summary Statistics -->
+        <div class="mb-8 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Summary Statistics Widget</h3>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-comments text-blue-600"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 font-medium">Total</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">42</div>
+                    <div class="text-sm text-gray-500">All Consultations</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-clock text-amber-600"></i>
+                        </div>
+                        <span class="text-xs text-amber-600 font-medium">Action</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">6</div>
+                    <div class="text-sm text-gray-500">Pending Review</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-spinner text-green-600"></i>
+                        </div>
+                        <span class="text-xs text-green-600 font-medium">Active</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">12</div>
+                    <div class="text-sm text-gray-500">In Progress</div>
+                </div>
+                <div class="bg-white rounded-lg border border-red-200 p-5 bg-red-50/30">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-exclamation-triangle text-red-600"></i>
+                        </div>
+                        <span class="text-xs text-red-600 font-medium">Alert</span>
+                    </div>
+                    <div class="text-2xl font-bold text-red-600">3</div>
+                    <div class="text-sm text-gray-500">Overdue</div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-circle-check text-gray-600"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 font-medium">Done</span>
+                    </div>
+                    <div class="text-2xl font-bold text-gray-900">21</div>
+                    <div class="text-sm text-gray-500">Completed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sidebar-items-section" class="py-12 px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Sidebar Items</h2>
+            <p class="text-gray-600">How Consultation objects appear in various sidebar contexts throughout the application</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Related Consultations Panel -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Related Consultations Panel</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-comments text-blue-600 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Related Consultations</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 text-xs font-medium px-1.5 py-0.5 rounded">3</span>
+                        </div>
+                        <div class="p-2 space-y-1">
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-comments text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Legal Review Request</div>
+                                    <div class="text-xs text-gray-500">CONS-2024-0145</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-comments text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Compliance Assessment</div>
+                                    <div class="text-xs text-gray-500">CONS-2024-0142</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-green-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-circle-check text-green-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Initial Consultation</div>
+                                    <div class="text-xs text-gray-500">CONS-2024-0098 • Completed</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-4 py-2 border-t border-gray-100">
+                            <a href="#" class="text-xs text-blue-600 hover:text-blue-800 font-medium">View all consultations</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Appears when viewing a Case, Complaint, or Person record</p>
+            </div>
+
+            <!-- Consultation Browser Tree -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Consultation Browser Tree</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-sitemap text-gray-500 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Consultations</span>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="space-y-0.5">
+                                <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600">
+                                    <i class="fa-solid fa-chevron-down text-xs text-gray-400 w-4"></i>
+                                    <i class="fa-solid fa-layer-group text-gray-400"></i>
+                                    <span>By Department</span>
+                                </div>
+                                <div class="ml-4 space-y-0.5">
+                                    <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600">
+                                        <i class="fa-solid fa-chevron-down text-xs text-gray-400 w-4"></i>
+                                        <i class="fa-solid fa-folder text-amber-500"></i>
+                                        <span>Legal</span>
+                                        <span class="ml-auto text-xs text-gray-400">15</span>
+                                    </div>
+                                    <div class="ml-4 space-y-0.5">
+                                        <a href="#" class="flex items-center gap-2 px-2 py-1.5 text-sm rounded bg-blue-50 text-blue-700 font-medium">
+                                            <i class="fa-solid fa-chevron-right text-xs text-blue-400 w-4"></i>
+                                            <i class="fa-solid fa-comments text-blue-600"></i>
+                                            <span class="truncate">CONS-2024-0145</span>
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 rounded">
+                                            <i class="fa-solid fa-chevron-right text-xs text-gray-400 w-4"></i>
+                                            <i class="fa-solid fa-comments text-blue-500"></i>
+                                            <span class="truncate">CONS-2024-0142</span>
+                                        </a>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 rounded">
+                                        <i class="fa-solid fa-chevron-right text-xs text-gray-400 w-4"></i>
+                                        <i class="fa-solid fa-folder text-amber-500"></i>
+                                        <span>Compliance</span>
+                                        <span class="ml-auto text-xs text-gray-400">8</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 rounded">
+                                        <i class="fa-solid fa-chevron-right text-xs text-gray-400 w-4"></i>
+                                        <i class="fa-solid fa-folder text-amber-500"></i>
+                                        <span>Finance</span>
+                                        <span class="ml-auto text-xs text-gray-400">12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Consultations organized by department in tree navigation</p>
+            </div>
+
+            <!-- Quick Access List -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Access List</h3>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock-rotate-left text-gray-500 text-sm"></i>
+                                <span class="text-sm font-semibold text-gray-900">Recent Consultations</span>
+                            </div>
+                        </div>
+                        <div class="p-2 space-y-1">
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded bg-gray-50 border-l-2 border-blue-500">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-comments text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Legal Review Request</div>
+                                    <div class="text-xs text-gray-500">Viewed 15 min ago</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-comments text-amber-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Budget Consultation</div>
+                                    <div class="text-xs text-amber-600">Pending your review</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50 transition-colors">
+                                <div class="w-6 h-6 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-comments text-blue-600 text-xs"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-medium text-gray-900 truncate">Policy Guidance</div>
+                                    <div class="text-xs text-gray-500">Viewed yesterday</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-4 py-3 border-t border-gray-100">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-gray-500">Participating In</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View All</a>
+                            </div>
+                            <div class="mt-2 space-y-1">
+                                <a href="#" class="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-user-group text-blue-500 text-xs"></i>
+                                    <span class="text-sm text-gray-700 truncate">Q4 Planning Review</span>
+                                </a>
+                                <a href="#" class="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-gray-50 transition-colors">
+                                    <i class="fa-solid fa-user-group text-blue-500 text-xs"></i>
+                                    <span class="text-sm text-gray-700 truncate">Vendor Assessment</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Recent and active consultations for quick navigation</p>
             </div>
         </div>
     </div>
