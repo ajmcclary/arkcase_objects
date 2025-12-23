@@ -1,6 +1,6 @@
 # UX Improvements Guide
 
-This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, and Task.html. Use this as a checklist when refactoring other HTML wireframe files.
+This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, and User.html. Use this as a checklist when refactoring other HTML wireframe files.
 
 ---
 
@@ -14,6 +14,11 @@ This document summarizes the UX improvements applied to Case.html, Complaint.htm
 6. [Interaction States Section](#6-interaction-states-section)
 7. [Timeline Icon Sizing (Large Cards)](#7-timeline-icon-sizing-large-cards)
 8. [Timeline Dot Sizing (Sidebar)](#8-timeline-dot-sizing-sidebar)
+9. [Collapsible Headers with Item Counts](#9-collapsible-headers-with-item-counts)
+10. [Narrow Widget Headers](#10-narrow-widget-headers)
+11. [Object-Specific Section Icons](#11-object-specific-section-icons)
+12. [Object-Specific Timeline Events](#12-object-specific-timeline-events)
+13. [Interaction States Content Guidelines](#13-interaction-states-content-guidelines)
 
 ---
 
@@ -406,12 +411,174 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
+## 9. Collapsible Headers with Item Counts
+
+**Purpose:** Some sections display item counts (e.g., "5 total", "8 total") that should be preserved in collapsible headers.
+
+### Pattern
+```html
+<button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+    <div class="flex items-center gap-2">
+        <i class="fa-solid fa-link text-gray-400"></i>
+        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Associations</span>
+        <span class="text-xs text-gray-500 font-normal">5 total</span>
+    </div>
+    <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+</button>
+```
+
+### Notes
+- Count badge uses `font-normal` to differentiate from the bold section title
+- Position count after the section name within the same flex container
+- Common count formats: "5 total", "3 visible", "8 items"
+
+---
+
+## 10. Narrow Widget Headers
+
+**Purpose:** Dashboard widgets with constrained width (`max-w-md`) cannot accommodate pill filters.
+
+### When to Use Pill Filters vs Dropdown
+| Widget Width | Filter Pattern |
+|--------------|----------------|
+| Full-width dashboard sections | Pill filters (hidden sm:flex) |
+| Narrow widgets (`max-w-md`, `w-64`) | Compact dropdown only |
+
+### Compact Widget Header Pattern
+```html
+<div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
+    <div class="flex items-center gap-2">
+        <i class="fa-solid fa-[icon] text-blue-600"></i>
+        <span class="font-semibold text-gray-900">Widget Title</span>
+        <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">24</span>
+    </div>
+    <div class="flex items-center gap-2">
+        <select class="text-xs border border-gray-300 rounded-lg px-2 py-1.5 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option>Frequent</option>
+            <option>Recent</option>
+            <option>All</option>
+        </select>
+        <a href="#" class="text-sm text-blue-600 hover:text-blue-800 font-medium whitespace-nowrap">View All</a>
+    </div>
+</div>
+```
+
+### Key Differences from Full-Width Pattern
+- No responsive pill/dropdown toggle - always use dropdown
+- Smaller gap between elements (`gap-2` vs `gap-3`)
+- `whitespace-nowrap` on View All link to prevent wrapping
+
+---
+
+## 11. Object-Specific Section Icons
+
+**Purpose:** Each object type has relevant section icons for its collapsible headers.
+
+### Person Object Icons
+| Section | Icon |
+|---------|------|
+| Contact Information | `fa-solid fa-address-card` |
+| Metadata | `fa-solid fa-circle-info` |
+| Associations | `fa-solid fa-link` |
+| Recent Activity | `fa-solid fa-clock-rotate-left` |
+
+### Task Object Icons
+| Section | Icon |
+|---------|------|
+| Parent Object | `fa-regular fa-folder` |
+| Assignees | `fa-solid fa-users` |
+| Related Items | `fa-solid fa-link` |
+| Recent Activity | `fa-solid fa-clock-rotate-left` |
+
+### Case/Complaint Object Icons
+| Section | Icon |
+|---------|------|
+| Case Details | `fa-solid fa-briefcase` |
+| Participants | `fa-solid fa-users` |
+| Documents | `fa-solid fa-file-lines` |
+| Timeline | `fa-solid fa-clock-rotate-left` |
+
+---
+
+## 12. Object-Specific Timeline Events
+
+**Purpose:** Each object type has characteristic activity events for timelines.
+
+### Person Timeline Events
+| Event | Background | Icon | Icon Color |
+|-------|------------|------|------------|
+| Contact info updated | `bg-green-100` | `fa-circle` | `text-green-600` |
+| Added to Case | `bg-blue-100` | `fa-briefcase` | `text-blue-600` |
+| Profile verified | `bg-purple-100` | `fa-check` | `text-purple-600` |
+| Document uploaded | `bg-amber-100` | `fa-file` | `text-amber-600` |
+| Assigned as witness/expert | `bg-amber-100` | `fa-eye` | `text-amber-600` |
+| Protection status applied | `bg-red-100` | `fa-exclamation` | `text-red-600` |
+| Organization linked | `bg-teal-100` | `fa-building` | `text-teal-600` |
+| Credentials verified | `bg-teal-100` | `fa-check` | `text-teal-600` |
+| Record created | `bg-green-100` | `fa-circle` | `text-green-600` |
+
+### Task Timeline Events
+| Event | Background | Icon | Icon Color |
+|-------|------------|------|------------|
+| Status changed | `bg-green-100` | `fa-circle` | `text-green-600` |
+| Comment added | `bg-blue-100` | `fa-comment` | `text-blue-600` |
+| Assigned to user | `bg-purple-100` | `fa-user` | `text-purple-600` |
+| Due date changed | `bg-amber-100` | `fa-calendar` | `text-amber-600` |
+| Priority changed | `bg-amber-100` | `fa-flag` | `text-amber-600` |
+| Task completed | `bg-teal-100` | `fa-check` | `text-teal-600` |
+| Blocked | `bg-red-100` | `fa-exclamation` | `text-red-600` |
+
+---
+
+## 13. Interaction States Content Guidelines
+
+**Purpose:** Ensure interaction state cards display object-appropriate content.
+
+### Badge Content Rule
+The status/type badge in interaction state cards should reflect the **object type**, not a role or relationship:
+
+| Object Page | Badge Text | Badge Color |
+|-------------|------------|-------------|
+| Person.html | "Person" | `bg-blue-100 text-blue-800` |
+| User.html | "User" | `bg-blue-100 text-blue-700` |
+| Task.html | "Task" | `bg-blue-100 text-blue-800` |
+| Case.html | "Case" | `bg-blue-100 text-blue-800` |
+| Complaint.html | "Complaint" | `bg-blue-100 text-blue-800` |
+
+### Example Card Content
+```html
+<!-- Person card in interaction states -->
+<div class="flex items-start gap-3">
+    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+        <i class="fa-solid fa-user text-white text-sm"></i>
+    </div>
+    <div class="flex-1 min-w-0">
+        <h4 class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</h4>
+        <p class="text-xs text-gray-500 mt-0.5">PER-2024-0145</p>
+        <div class="flex items-center gap-2 mt-2">
+            <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Person</span>
+        </div>
+    </div>
+</div>
+```
+
+### Disabled State Styling
+For disabled cards, apply grayscale to all elements:
+- Avatar: `bg-gray-300` instead of gradient
+- Icon: `text-gray-400`
+- Text: `text-gray-400`
+- Badge: `bg-gray-200 text-gray-500`
+
+---
+
 ## Files Completed
 
 - [x] Case.html
 - [x] Complaint.html
 - [x] Consultation.html
 - [x] Task.html
+- [x] Person.html
+- [x] User.html
 
 ## Files Remaining
 
@@ -433,7 +600,6 @@ Change sidebar items grid from 3 to 4 columns:
 - [ ] Object History.html
 - [ ] Organization.html
 - [ ] Participant.html
-- [ ] Person.html
 - [ ] Queue.html
 - [ ] Recycle Bin Item.html
 - [ ] Subscription.html
