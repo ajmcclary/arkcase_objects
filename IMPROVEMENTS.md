@@ -1,6 +1,6 @@
 # UX Improvements Guide
 
-This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, User.html, Organization.html, and Group.html. Use this as a checklist when refactoring other HTML wireframe files.
+This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, User.html, Organization.html, Group.html, and Participant.html. Use this as a checklist when refactoring other HTML wireframe files.
 
 ---
 

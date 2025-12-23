@@ -1571,11 +1571,13 @@
                                         class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Access & Privileges
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-shield-halved text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Access & Privileges</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -1636,11 +1638,13 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Participation Details
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-user-tag text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Participation Details</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -1707,11 +1711,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Parent Object
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-folder-open text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="flex items-center gap-3 p-4 bg-enterprise-gray-50 rounded-lg"
                                         >
@@ -1749,11 +1755,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Metadata
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             <div>
                                                 <div
@@ -1828,6 +1836,53 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="mb-6">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-sm font-medium text-gray-900">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-8 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-user-plus text-blue-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Added as Assignee</p>
+                                                    <p class="text-xs text-gray-500">Added to CASE-2024-00147 by Sarah Chen</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 15, 2024 at 2:30 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-shield text-amber-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Permissions updated</p>
+                                                    <p class="text-xs text-gray-500">Full Access granted</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 15, 2024 at 2:35 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-check text-green-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Status verified</p>
+                                                    <p class="text-xs text-gray-500">Participant marked as active</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 15, 2024 at 2:40 PM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium mt-3">
+                                            View full timeline
+                                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                        </a>
                                     </div>
 
                                     <div class="flex items-center gap-3">
@@ -1920,11 +1975,13 @@
                                         class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Access & Privileges
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-shield-halved text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Access & Privileges</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -1985,11 +2042,13 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Participation Details
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-user-tag text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Participation Details</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -2063,11 +2122,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Parent Object
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-folder-open text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="flex items-center gap-3 p-4 bg-enterprise-gray-50 rounded-lg"
                                         >
@@ -2105,11 +2166,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Group Information
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Group Information</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             <div>
                                                 <div
@@ -2187,11 +2250,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Group Members (Sample)
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-users text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Group Members (Sample)</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex items-center gap-2">
                                             <img
                                                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
@@ -2219,6 +2284,53 @@
                                                 +8
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="mb-6">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-sm font-medium text-gray-900">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-8 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-users text-emerald-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Added as Approver</p>
+                                                    <p class="text-xs text-gray-500">Added to CONS-2024-00234 by System</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 14, 2024 at 9:15 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-shield text-amber-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Permissions configured</p>
+                                                    <p class="text-xs text-gray-500">Write access granted to group</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 14, 2024 at 9:20 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-bell text-purple-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Notification sent</p>
+                                                    <p class="text-xs text-gray-500">Group members notified of assignment</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 14, 2024 at 9:21 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium mt-3">
+                                            View full timeline
+                                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                        </a>
                                     </div>
 
                                     <div class="flex items-center gap-3">
@@ -2309,11 +2421,13 @@
                                         class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Access & Privileges
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-shield-halved text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Access & Privileges</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -2374,11 +2488,13 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h3
-                                                class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                            >
-                                                Participation Details
-                                            </h3>
+                                            <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="fa-solid fa-user-tag text-gray-400"></i>
+                                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Participation Details</span>
+                                                </div>
+                                                <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                            </button>
                                             <div class="space-y-2">
                                                 <div
                                                     class="flex items-center justify-between"
@@ -2445,11 +2561,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-enterprise-gray-200"
                                     >
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Parent Object
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-folder-open text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="flex items-center gap-3 p-4 bg-enterprise-gray-50 rounded-lg"
                                         >
@@ -2488,11 +2606,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h3
-                                            class="text-xs font-semibold text-enterprise-gray-500 uppercase tracking-wide mb-3"
-                                        >
-                                            Metadata
-                                        </h3>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             <div>
                                                 <div
@@ -2567,6 +2687,53 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="mb-6">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-sm font-medium text-gray-900">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-8 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-crown text-purple-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Assigned as Owner</p>
+                                                    <p class="text-xs text-gray-500">Made owner of CASE-2024-00147</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 10, 2024 at 10:00 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-user-plus text-blue-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Added participant</p>
+                                                    <p class="text-xs text-gray-500">Added Michael Rodriguez as Assignee</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 15, 2024 at 2:30 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-file-signature text-green-600 text-[10px]"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-gray-900 font-medium">Case updated</p>
+                                                    <p class="text-xs text-gray-500">Modified case details and status</p>
+                                                    <p class="text-xs text-gray-400 mt-1">Dec 18, 2024 at 3:45 PM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium mt-3">
+                                            View full timeline
+                                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                        </a>
                                     </div>
 
                                     <div class="flex items-center gap-3">
@@ -2702,8 +2869,9 @@
                                         </select>
                                         <a
                                             href="#"
-                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                            >View All</a
+                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium inline-flex items-center gap-1"
+                                            >View All
+                                            <i class="fa-solid fa-arrow-right text-xs"></i></a
                                         >
                                     </div>
                                 </div>
@@ -2947,8 +3115,9 @@
                                         </div>
                                         <a
                                             href="#"
-                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                            >View All</a
+                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium inline-flex items-center gap-1"
+                                            >View All
+                                            <i class="fa-solid fa-arrow-right text-xs"></i></a
                                         >
                                     </div>
                                     <!-- Mobile Filter Toggle -->
@@ -3953,6 +4122,224 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Activity Timeline -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                                    Participant Activity
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4">
+                                    Timeline of participant changes and role updates.
+                                </p>
+                                <div class="bg-gray-100 rounded-lg p-3" style="width: 264px">
+                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                                        <div class="flex items-center justify-between px-3 py-2.5 border-b border-gray-200">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                                <span class="font-semibold text-gray-900 text-sm">Activity</span>
+                                            </div>
+                                            <button class="text-gray-400 hover:text-gray-600">
+                                                <i class="fa-solid fa-ellipsis text-xs"></i>
+                                            </button>
+                                        </div>
+                                        <div class="p-3">
+                                            <!-- Today -->
+                                            <div class="mb-4">
+                                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2 px-1">Today</div>
+                                                <div class="relative pl-5 border-l-2 border-gray-200 space-y-3">
+                                                    <div class="relative">
+                                                        <div class="absolute -left-[21px] w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                            <i class="fa-solid fa-user-plus text-blue-600" style="font-size: 8px"></i>
+                                                        </div>
+                                                        <div class="pb-1">
+                                                            <p class="text-sm text-gray-900 font-medium">Member added</p>
+                                                            <p class="text-xs text-gray-500">Sarah Chen added as Owner</p>
+                                                            <div class="flex items-center gap-1.5 mt-1">
+                                                                <div class="w-4 h-4 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                                                                    <span class="text-white text-[8px] font-medium">JD</span>
+                                                                </div>
+                                                                <span class="text-xs text-gray-400">2:30 PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative">
+                                                        <div class="absolute -left-[21px] w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                            <i class="fa-solid fa-shield text-amber-600" style="font-size: 8px"></i>
+                                                        </div>
+                                                        <div class="pb-1">
+                                                            <p class="text-sm text-gray-900 font-medium">Role updated</p>
+                                                            <p class="text-xs text-gray-500">Michael → Assignee</p>
+                                                            <div class="flex items-center gap-1.5 mt-1">
+                                                                <div class="w-4 h-4 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                                                                    <span class="text-white text-[8px] font-medium">SC</span>
+                                                                </div>
+                                                                <span class="text-xs text-gray-400">11:15 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Yesterday -->
+                                            <div>
+                                                <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2 px-1">Yesterday</div>
+                                                <div class="relative pl-5 border-l-2 border-gray-200 space-y-3">
+                                                    <div class="relative">
+                                                        <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                            <i class="fa-solid fa-users text-green-600" style="font-size: 8px"></i>
+                                                        </div>
+                                                        <div class="pb-1">
+                                                            <p class="text-sm text-gray-900 font-medium">Group added</p>
+                                                            <p class="text-xs text-gray-500">Legal Review Team as Approver</p>
+                                                            <div class="flex items-center gap-1.5 mt-1">
+                                                                <div class="w-4 h-4 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
+                                                                    <span class="text-white text-[8px] font-medium">MR</span>
+                                                                </div>
+                                                                <span class="text-xs text-gray-400">4:45 PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative">
+                                                        <div class="absolute -left-[21px] w-5 h-5 bg-red-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                            <i class="fa-solid fa-user-minus text-red-600" style="font-size: 8px"></i>
+                                                        </div>
+                                                        <div class="pb-1">
+                                                            <p class="text-sm text-gray-900 font-medium">Member removed</p>
+                                                            <p class="text-xs text-gray-500">Emily Watson removed</p>
+                                                            <div class="flex items-center gap-1.5 mt-1">
+                                                                <div class="w-4 h-4 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                                                                    <span class="text-white text-[8px] font-medium">JD</span>
+                                                                </div>
+                                                                <span class="text-xs text-gray-400">9:20 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="mb-16">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual feedback states for participant cards across different user interactions.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Default</h3>
+                                <p class="text-sm text-gray-600 mb-4">Standard appearance when no interaction is occurring.</p>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User Avatar" class="w-9 h-9 rounded-full object-cover flex-shrink-0"/>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Rodriguez</h3>
+                                                <span class="inline-flex items-center px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-medium rounded">Assignee</span>
+                                            </div>
+                                            <p class="text-xs text-gray-500 truncate">Full Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hover State -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Hover</h3>
+                                <p class="text-sm text-gray-600 mb-4">Elevated appearance when cursor hovers over the card.</p>
+                                <div class="bg-white border border-gray-300 rounded-lg p-4 shadow-sm cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User Avatar" class="w-9 h-9 rounded-full object-cover flex-shrink-0"/>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Rodriguez</h3>
+                                                <span class="inline-flex items-center px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-medium rounded">Assignee</span>
+                                            </div>
+                                            <p class="text-xs text-gray-500 truncate">Full Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Selected State -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Selected</h3>
+                                <p class="text-sm text-gray-600 mb-4">Active selection indicator with accent color border.</p>
+                                <div class="bg-blue-50 border-2 border-blue-500 rounded-lg p-4 shadow-sm cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User Avatar" class="w-9 h-9 rounded-full object-cover flex-shrink-0"/>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Rodriguez</h3>
+                                                <span class="inline-flex items-center px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-medium rounded">Assignee</span>
+                                            </div>
+                                            <p class="text-xs text-gray-500 truncate">Full Access</p>
+                                        </div>
+                                        <i class="fa-solid fa-check-circle text-blue-500"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Focus State (Keyboard) -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Focus (Keyboard)</h3>
+                                <p class="text-sm text-gray-600 mb-4">Keyboard navigation focus ring for accessibility.</p>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 ring-2 ring-blue-500 ring-offset-2 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User Avatar" class="w-9 h-9 rounded-full object-cover flex-shrink-0"/>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Rodriguez</h3>
+                                                <span class="inline-flex items-center px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-medium rounded">Assignee</span>
+                                            </div>
+                                            <p class="text-xs text-gray-500 truncate">Full Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disabled State -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Disabled</h3>
+                                <p class="text-sm text-gray-600 mb-4">Muted appearance for non-interactive participants.</p>
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-60 cursor-not-allowed">
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="User Avatar" class="w-9 h-9 rounded-full object-cover flex-shrink-0 grayscale"/>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="text-sm font-semibold text-gray-500 truncate">Michael Rodriguez</h3>
+                                                <span class="inline-flex items-center px-2 py-0.5 bg-gray-100 text-gray-500 text-xs font-medium rounded">Assignee</span>
+                                            </div>
+                                            <p class="text-xs text-gray-400 truncate">Full Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Loading Skeleton</h3>
+                                <p class="text-sm text-gray-600 mb-4">Placeholder content while data is being fetched.</p>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-center gap-3 animate-pulse">
+                                        <div class="w-9 h-9 rounded-full bg-gray-200 flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="flex items-center gap-2">
+                                                <div class="h-4 bg-gray-200 rounded w-32"></div>
+                                                <div class="h-4 bg-gray-200 rounded w-16"></div>
+                                            </div>
+                                            <div class="h-3 bg-gray-200 rounded w-20"></div>
                                         </div>
                                     </div>
                                 </div>
