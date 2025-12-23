@@ -431,7 +431,7 @@
             <!-- Main Content -->
             <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
                 <section id="notification-card-overview" class="bg-white py-12">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -470,7 +470,7 @@
                 </section>
 
                 <section id="small-cards-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div id="small-card-section" class="mb-16">
                             <div class="mb-6">
                                 <h2
@@ -665,7 +665,7 @@
                 </section>
 
                 <section id="medium-cards-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div id="medium-card-section" class="mb-16">
                             <div class="mb-6">
                                 <h2
@@ -1168,7 +1168,7 @@
                 </section>
 
                 <section id="large-cards-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div id="large-card-section" class="mb-16">
                             <div class="mb-6">
                                 <h2
@@ -1272,7 +1272,7 @@
                                             >
                                                 Notification Details
                                             </h4>
-                                            <div class="grid grid-cols-2 gap-4">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <div>
                                                     <div
                                                         class="text-xs text-gray-500 uppercase tracking-wide mb-1"
@@ -1505,7 +1505,7 @@
                                             >
                                                 Notification Details
                                             </h4>
-                                            <div class="grid grid-cols-2 gap-4">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <div>
                                                     <div
                                                         class="text-xs text-gray-500 uppercase tracking-wide mb-1"
@@ -1754,7 +1754,7 @@
                                             >
                                                 Notification Details
                                             </h4>
-                                            <div class="grid grid-cols-2 gap-4">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <div>
                                                     <div
                                                         class="text-xs text-gray-500 uppercase tracking-wide mb-1"
@@ -1999,7 +1999,7 @@
                                             >
                                                 Notification Details
                                             </h4>
-                                            <div class="grid grid-cols-2 gap-4">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <div>
                                                     <div
                                                         class="text-xs text-gray-500 uppercase tracking-wide mb-1"
@@ -2068,7 +2068,7 @@
                                                 class="bg-white border border-gray-200 rounded-lg p-4"
                                             >
                                                 <div
-                                                    class="grid grid-cols-2 gap-4"
+                                                    class="grid grid-cols-1 md:grid-cols-2 gap-4"
                                                 >
                                                     <div>
                                                         <div
@@ -2466,6 +2466,15 @@
                                             >
                                         </div>
                                         <div class="flex items-center gap-2">
+                                            <button
+                                                id="notification-filter-toggle"
+                                                class="lg:hidden px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center gap-2"
+                                                aria-label="Toggle filters"
+                                                aria-expanded="false"
+                                            >
+                                                <i class="fa-solid fa-filter text-gray-600"></i>
+                                                <span>Filters</span>
+                                            </button>
                                             <select
                                                 class="text-sm border border-gray-300 rounded-lg px-3 py-1.5"
                                             >
@@ -2475,10 +2484,11 @@
                                         </div>
                                     </div>
                                     <div class="p-5">
-                                        <div class="grid grid-cols-12 gap-4">
+                                        <div class="lg:grid lg:grid-cols-12 gap-4">
                                             <!-- Filters Column -->
                                             <div
-                                                class="col-span-3 border-r border-gray-200 pr-4"
+                                                id="notification-filters"
+                                                class="hidden lg:block lg:col-span-3 lg:border-r border-gray-200 lg:pr-4 mb-4 lg:mb-0"
                                             >
                                                 <div class="mb-4">
                                                     <label
@@ -2589,7 +2599,7 @@
                                                 </div>
                                             </div>
                                             <!-- Content Grid -->
-                                            <div class="col-span-9">
+                                            <div class="lg:col-span-9">
                                                 <div class="space-y-3">
                                                     <div
                                                         class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer"
@@ -2706,7 +2716,7 @@
                                 >
                                     Summary Statistics
                                 </h3>
-                                <div class="grid grid-cols-5 gap-4">
+                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                     <div
                                         class="bg-white rounded-lg border border-gray-200 p-4 text-center"
                                     >
@@ -3147,7 +3157,7 @@
                             <div
                                 class="bg-white border border-gray-200 rounded-lg p-6"
                             >
-                                <div class="grid grid-cols-3 gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <div>
                                         <div
                                             class="text-sm font-semibold text-gray-900 mb-3"
@@ -3373,7 +3383,7 @@
                                                         Details
                                                     </div>
                                                     <div
-                                                        class="grid grid-cols-2 gap-1 text-xs text-gray-600"
+                                                        class="grid grid-cols-1 md:grid-cols-2 gap-1 text-xs text-gray-600"
                                                     >
                                                         <div>
                                                             Time: 2 min ago
@@ -3465,7 +3475,7 @@
                                 </p>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div
                                     class="bg-white border border-gray-200 rounded-lg p-6"
                                 >
@@ -3634,7 +3644,7 @@
                             <div
                                 class="bg-white border border-gray-200 rounded-lg p-6"
                             >
-                                <div class="grid grid-cols-4 gap-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                                     <div
                                         id="priority-critical"
                                         class="border-2 border-red-300 rounded-lg p-4 bg-red-50"
@@ -3744,7 +3754,7 @@
                                 </p>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div
                                     class="bg-white border border-gray-200 rounded-lg p-6"
                                 >
@@ -3872,7 +3882,7 @@
                             <div
                                 class="bg-white border border-gray-200 rounded-lg p-6"
                             >
-                                <div class="grid grid-cols-2 gap-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div
                                         id="related-case"
                                         class="border border-gray-200 rounded-lg p-4"
@@ -4050,7 +4060,7 @@
                                 </p>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div
                                     class="bg-white border border-gray-200 rounded-lg p-6"
                                 >
@@ -4213,7 +4223,7 @@
                             <div
                                 class="bg-white border border-gray-200 rounded-lg p-6"
                             >
-                                <div class="grid grid-cols-3 gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <div
                                         id="accessibility-keyboard"
                                         class="border border-gray-200 rounded-lg p-5"
@@ -4302,7 +4312,7 @@
                     id="responsive-behavior-section"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Responsive Behavior
@@ -4413,7 +4423,7 @@
                     id="summary-section"
                     class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Notification Card System Summary
@@ -4595,6 +4605,38 @@
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
                 });
+            })();
+
+            // Notification Filter Toggle
+            (function () {
+                const filterToggle = document.getElementById(
+                    "notification-filter-toggle",
+                );
+                const filters = document.getElementById("notification-filters");
+                let filterOpen = false;
+
+                if (filterToggle && filters) {
+                    filterToggle.addEventListener("click", function () {
+                        filterOpen = !filterOpen;
+                        if (filterOpen) {
+                            filters.classList.remove("hidden");
+                            filters.classList.add("block");
+                            filterToggle.setAttribute("aria-expanded", "true");
+                        } else {
+                            filters.classList.add("hidden");
+                            filters.classList.remove("block");
+                            filterToggle.setAttribute("aria-expanded", "false");
+                        }
+                    });
+
+                    // Close filters on resize to desktop
+                    window.addEventListener("resize", function () {
+                        if (window.innerWidth >= 1024 && filterOpen) {
+                            filterOpen = false;
+                            filterToggle.setAttribute("aria-expanded", "false");
+                        }
+                    });
+                }
             })();
         </script>
     </body>

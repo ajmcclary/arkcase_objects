@@ -432,7 +432,7 @@
             <!-- Main Content -->
             <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
                 <section id="container-card-overview" class="bg-white py-12">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -471,7 +471,7 @@
                 </section>
 
                 <section id="container-small-cards" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -565,7 +565,7 @@
                                     Variant: Compact Vertical
                                 </h3>
 
-                                <div class="grid grid-cols-4 gap-3">
+                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                                     <div
                                         id="small-card-4"
                                         class="bg-white border border-gray-200 rounded p-3 hover:border-blue-500 hover:shadow-sm cursor-pointer transition-all"
@@ -728,7 +728,7 @@
                 </section>
 
                 <section id="container-medium-cards" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -742,7 +742,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="medium-card-1"
                                 class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow"
@@ -1286,7 +1286,7 @@
                 </section>
 
                 <section id="container-large-cards" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -1380,7 +1380,7 @@
                                         >
                                             Container Metadata
                                         </h4>
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
                                                     class="text-xs text-gray-500 mb-1"
@@ -1572,7 +1572,7 @@
                                         >
                                             Container Metadata
                                         </h4>
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
                                                     class="text-xs text-gray-500 mb-1"
@@ -1770,7 +1770,7 @@
                                         >
                                             Container Metadata
                                         </h4>
-                                        <div class="grid grid-cols-2 gap-4">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
                                                     class="text-xs text-gray-500 mb-1"
@@ -1898,7 +1898,7 @@
                     id="dashboard-widgets-section"
                     class="py-12 bg-white border-t border-gray-200"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -2261,6 +2261,15 @@
                                     >
                                 </div>
                                 <div class="flex items-center gap-3">
+                                    <button
+                                        id="filter-toggle"
+                                        class="lg:hidden px-3 py-1.5 text-sm border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+                                        aria-label="Toggle filters"
+                                        aria-expanded="false"
+                                    >
+                                        <i class="fa-solid fa-filter mr-2"></i>
+                                        Filters
+                                    </button>
                                     <select
                                         class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white"
                                     >
@@ -2271,10 +2280,11 @@
                                 </div>
                             </div>
                             <div class="p-5">
-                                <div class="grid grid-cols-12 gap-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                     <!-- Filter Sidebar -->
                                     <div
-                                        class="col-span-3 border-r border-gray-200 pr-6"
+                                        id="filter-sidebar"
+                                        class="lg:col-span-3 lg:border-r border-gray-200 lg:pr-6 hidden lg:block"
                                     >
                                         <h4
                                             class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
@@ -2394,8 +2404,8 @@
                                     </div>
 
                                     <!-- Container Grid -->
-                                    <div class="col-span-9">
-                                        <div class="grid grid-cols-3 gap-4">
+                                    <div class="lg:col-span-9">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             <!-- Container Card 1 -->
                                             <div
                                                 class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
@@ -2725,7 +2735,7 @@
                             >
                                 Summary Statistics
                             </h3>
-                            <div class="grid grid-cols-5 gap-4">
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 <div
                                     class="bg-white border border-gray-200 rounded-lg p-4 text-center"
                                 >
@@ -2796,7 +2806,7 @@
                     id="sidebar-items-section"
                     class="py-12 bg-gray-50 border-t border-gray-200"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -2810,7 +2820,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- Sidebar Item 1: Related Containers Panel -->
                             <div
                                 class="bg-white border border-gray-200 rounded-lg"
@@ -3378,7 +3388,7 @@
                 </section>
 
                 <section id="container-comparison-grid" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -3391,7 +3401,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div>
                                 <h3
                                     class="text-sm font-semibold text-gray-700 mb-4"
@@ -3585,7 +3595,7 @@
                                             class="border-t border-gray-200 pt-3 mb-4"
                                         >
                                             <div
-                                                class="grid grid-cols-2 gap-3 text-xs"
+                                                class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs"
                                             >
                                                 <div>
                                                     <p
@@ -3677,7 +3687,7 @@
                     id="container-status-variants"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -3690,7 +3700,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-2 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div
                                 id="status-card-1"
                                 class="bg-white border border-gray-200 rounded-lg shadow-sm"
@@ -4062,7 +4072,7 @@
                     id="container-restriction-patterns"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4075,7 +4085,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="restriction-card-1"
                                 class="bg-white border border-gray-200 rounded-lg shadow-sm"
@@ -4456,7 +4466,7 @@
                     id="container-parent-object-types"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4470,7 +4480,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-4 gap-6">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             <div
                                 id="parent-type-1"
                                 class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow"
@@ -4862,7 +4872,7 @@
                     id="container-action-variations"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4875,7 +4885,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="action-card-1"
                                 class="bg-white border border-gray-200 rounded-lg shadow-sm"
@@ -5385,7 +5395,7 @@
                     id="interaction-patterns-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Interaction Patterns
@@ -5476,7 +5486,7 @@
                     id="responsive-behavior-section"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Responsive Behavior
@@ -5582,7 +5592,7 @@
 
                 <!-- Accessibility Section -->
                 <section id="accessibility-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Accessibility
@@ -5683,7 +5693,7 @@
 
                 <!-- Usage Guidelines Section -->
                 <section id="usage-guidelines-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Usage Guidelines
@@ -5801,7 +5811,7 @@
                     id="design-guidelines-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Design Guidelines
@@ -5896,7 +5906,7 @@
 
                 <!-- Consistency Rules Section -->
                 <section id="consistency-rules-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Consistency Rules
@@ -6016,7 +6026,7 @@
                     id="implementation-notes-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Implementation Notes
@@ -6106,7 +6116,7 @@
                     id="summary-section"
                     class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Container Card System Summary
@@ -6313,6 +6323,41 @@
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
                 });
+            })();
+
+            // Filter Toggle Script
+            (function () {
+                const filterToggle = document.getElementById("filter-toggle");
+                const filterSidebar = document.getElementById("filter-sidebar");
+                let isFilterOpen = false;
+
+                if (filterToggle && filterSidebar) {
+                    filterToggle.addEventListener("click", function () {
+                        isFilterOpen = !isFilterOpen;
+                        if (isFilterOpen) {
+                            filterSidebar.classList.remove("hidden");
+                            filterSidebar.classList.add("block");
+                            filterToggle.setAttribute("aria-expanded", "true");
+                        } else {
+                            filterSidebar.classList.add("hidden");
+                            filterSidebar.classList.remove("block");
+                            filterToggle.setAttribute("aria-expanded", "false");
+                        }
+                    });
+
+                    // Reset filter visibility on resize
+                    window.addEventListener("resize", function () {
+                        if (window.innerWidth >= 1024) {
+                            filterSidebar.classList.remove("hidden");
+                            filterSidebar.classList.add("lg:block");
+                            isFilterOpen = false;
+                            filterToggle.setAttribute("aria-expanded", "false");
+                        } else {
+                            filterSidebar.classList.add("hidden");
+                            filterSidebar.classList.remove("block");
+                        }
+                    });
+                }
             })();
         </script>
     </body>

@@ -434,7 +434,7 @@
             <!-- Main Content -->
             <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
                 <section id="folder-card-overview" class="bg-white py-12">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -473,7 +473,7 @@
                 </section>
 
                 <section id="small-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Folder — Small Card
@@ -697,7 +697,7 @@
                 </section>
 
                 <section id="medium-card-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Folder — Medium Card
@@ -1119,7 +1119,7 @@
                 </section>
 
                 <section id="large-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Folder — Large Card
@@ -1204,7 +1204,7 @@
                                         </div>
 
                                         <div
-                                            class="grid grid-cols-2 gap-4 mb-6"
+                                            class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
                                         >
                                             <div
                                                 class="bg-white rounded-lg p-4 border border-gray-200"
@@ -1465,7 +1465,7 @@
                                         </div>
 
                                         <div
-                                            class="grid grid-cols-2 gap-4 mb-6"
+                                            class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
                                         >
                                             <div
                                                 class="bg-white rounded-lg p-4 border border-gray-200"
@@ -1738,7 +1738,7 @@
                                         </div>
 
                                         <div
-                                            class="grid grid-cols-2 gap-4 mb-6"
+                                            class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
                                         >
                                             <div
                                                 class="bg-white rounded-lg p-4 border border-gray-200"
@@ -1958,7 +1958,7 @@
                                         </div>
 
                                         <div
-                                            class="grid grid-cols-3 gap-4 mb-6"
+                                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6"
                                         >
                                             <div
                                                 class="bg-white rounded-lg p-4 border border-gray-200"
@@ -2225,7 +2225,7 @@
                 </section>
 
                 <section id="comparison-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Card Comparison
@@ -2241,7 +2241,7 @@
                             id="comparison-grid"
                             class="bg-white border border-gray-200 rounded-lg p-6"
                         >
-                            <div class="grid grid-cols-3 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 <div>
                                     <div class="text-center mb-4">
                                         <span
@@ -2419,7 +2419,7 @@
                     id="dashboard-widgets-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Dashboard Widgets
@@ -2467,7 +2467,7 @@
                                 </div>
                             </div>
                             <div class="p-5">
-                                <div class="grid grid-cols-3 gap-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                     <!-- Folder Item 1 -->
                                     <div
                                         class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer border border-gray-200"
@@ -2825,6 +2825,15 @@
                                     >
                                 </div>
                                 <div class="flex items-center gap-3">
+                                    <button
+                                        id="filter-toggle-1"
+                                        class="lg:hidden px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                                        aria-label="Toggle filters"
+                                        aria-expanded="false"
+                                    >
+                                        <i class="fa-solid fa-filter mr-2"></i>
+                                        Filters
+                                    </button>
                                     <select
                                         class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white"
                                     >
@@ -2836,10 +2845,11 @@
                                 </div>
                             </div>
                             <div class="p-5">
-                                <div class="grid grid-cols-12 gap-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                     <!-- Filter Sidebar -->
                                     <div
-                                        class="col-span-3 border-r border-gray-200 pr-6"
+                                        id="filter-panel-1"
+                                        class="hidden lg:block lg:col-span-3 lg:border-r border-gray-200 lg:pr-6"
                                     >
                                         <h4
                                             class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
@@ -2976,8 +2986,8 @@
                                     </div>
 
                                     <!-- Folder Grid -->
-                                    <div class="col-span-9">
-                                        <div class="grid grid-cols-3 gap-4">
+                                    <div class="lg:col-span-9">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             <!-- Case Folder 1 -->
                                             <div
                                                 class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
@@ -3286,7 +3296,7 @@
                             >
                                 Summary Statistics
                             </h3>
-                            <div class="grid grid-cols-5 gap-4">
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 <div
                                     class="bg-white border border-gray-200 rounded-lg p-4 text-center"
                                 >
@@ -3354,7 +3364,7 @@
 
                 <!-- Sidebar Items Section -->
                 <section id="sidebar-items-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Sidebar Items
@@ -3366,7 +3376,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- Sidebar Item 1: Related Folders Panel -->
                             <div
                                 class="bg-white border border-gray-200 rounded-lg"
@@ -3992,7 +4002,7 @@
                     id="behavioral-states-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Interaction Patterns
@@ -4006,7 +4016,7 @@
 
                         <div
                             id="behavioral-examples"
-                            class="grid grid-cols-2 gap-6"
+                            class="grid grid-cols-1 md:grid-cols-2 gap-6"
                         >
                             <div
                                 class="bg-white border border-gray-200 rounded-lg p-6"
@@ -4228,7 +4238,7 @@
                 </section>
 
                 <section id="contextual-usage-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Usage Guidelines
@@ -4249,9 +4259,9 @@
                                 >
                                     Context A: Sidebar Navigation Tree
                                 </h3>
-                                <div class="grid grid-cols-12 gap-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                     <div
-                                        class="col-span-4 bg-gray-50 border border-gray-200 rounded-lg p-4"
+                                        class="lg:col-span-4 bg-gray-50 border border-gray-200 rounded-lg p-4"
                                     >
                                         <div
                                             class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3"
@@ -4351,7 +4361,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="col-span-8 bg-white border border-gray-200 rounded-lg p-4"
+                                        class="lg:col-span-8 bg-white border border-gray-200 rounded-lg p-4"
                                     >
                                         <div
                                             class="flex items-center justify-between mb-4"
@@ -4383,7 +4393,7 @@
                                         <div class="text-sm text-gray-600 mb-4">
                                             24 items in this folder
                                         </div>
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                             <div
                                                 class="border border-gray-200 rounded p-3 hover:shadow-md cursor-pointer"
                                             >
@@ -4592,9 +4602,9 @@
                                 >
                                     Context C: Inspector Panel Detail View
                                 </h3>
-                                <div class="grid grid-cols-12 gap-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                     <div
-                                        class="col-span-7 bg-gray-50 border border-gray-200 rounded-lg p-4"
+                                        class="lg:col-span-7 bg-gray-50 border border-gray-200 rounded-lg p-4"
                                     >
                                         <div
                                             class="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3"
@@ -4666,7 +4676,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="col-span-5 bg-white border border-gray-200 rounded-lg overflow-hidden"
+                                        class="lg:col-span-5 bg-white border border-gray-200 rounded-lg overflow-hidden"
                                     >
                                         <div
                                             class="bg-gray-100 px-4 py-3 border-b border-gray-200"
@@ -4778,7 +4788,7 @@
                     id="design-specifications-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Design Guidelines
@@ -5145,7 +5155,7 @@
                                 >
                                     Implementation Notes
                                 </h3>
-                                <div class="grid grid-cols-2 gap-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div
                                         class="bg-blue-50 border border-blue-200 rounded-lg p-4"
                                     >
@@ -5257,7 +5267,7 @@
                 </section>
 
                 <section id="footer-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-gray-100 border border-gray-200 rounded-lg p-6"
                         >
@@ -5316,7 +5326,7 @@
                     id="responsive-behavior-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Responsive Behavior
@@ -5424,7 +5434,7 @@
 
                 <!-- Accessibility Section -->
                 <section id="accessibility-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Accessibility
@@ -5528,7 +5538,7 @@
                     id="summary-section"
                     class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Folder Card System Summary
@@ -5713,6 +5723,34 @@
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
                 });
+            })();
+        </script>
+
+        <!-- Filter Toggle Script -->
+        <script>
+            (function () {
+                // Filter toggle handler
+                function setupFilterToggle(toggleId, panelId) {
+                    const toggleBtn = document.getElementById(toggleId);
+                    const filterPanel = document.getElementById(panelId);
+
+                    if (toggleBtn && filterPanel) {
+                        toggleBtn.addEventListener("click", function () {
+                            const isHidden = filterPanel.classList.contains("hidden");
+
+                            if (isHidden) {
+                                filterPanel.classList.remove("hidden");
+                                toggleBtn.setAttribute("aria-expanded", "true");
+                            } else {
+                                filterPanel.classList.add("hidden");
+                                toggleBtn.setAttribute("aria-expanded", "false");
+                            }
+                        });
+                    }
+                }
+
+                // Initialize all filter toggles
+                setupFilterToggle("filter-toggle-1", "filter-panel-1");
             })();
         </script>
     </body>

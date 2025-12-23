@@ -431,7 +431,7 @@
             <!-- Main Content -->
             <main id="main-content" class="flex-1 ml-0 md:ml-64 min-h-screen">
                 <section id="chat-message-card-overview" class="bg-white py-12">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -470,7 +470,7 @@
                 </section>
 
                 <section id="design-principles" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -566,7 +566,7 @@
                 </section>
 
                 <section id="small-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center space-x-3 mb-3">
                                 <span
@@ -915,7 +915,7 @@
                 </section>
 
                 <section id="medium-card-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center space-x-3 mb-3">
                                 <span
@@ -1522,7 +1522,7 @@
                 </section>
 
                 <section id="large-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center space-x-3 mb-3">
                                 <span
@@ -1628,7 +1628,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -1809,7 +1809,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -2000,7 +2000,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -2166,7 +2166,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -2379,7 +2379,7 @@
 
                 <!-- Dashboard Widgets Section -->
                 <section id="dashboard-widgets-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center gap-3 mb-3">
                                 <span
@@ -2685,10 +2685,23 @@
                                     >
                                 </div>
                                 <div class="p-5">
-                                    <div class="grid grid-cols-12 gap-4">
+                                    <!-- Mobile Filter Toggle Button -->
+                                    <button
+                                        id="filter-toggle"
+                                        class="lg:hidden w-full mb-4 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-between text-sm font-medium text-gray-700 transition-colors"
+                                    >
+                                        <span class="flex items-center gap-2">
+                                            <i class="fa-solid fa-filter"></i>
+                                            Filters
+                                        </span>
+                                        <i class="fa-solid fa-chevron-down transition-transform" id="filter-chevron"></i>
+                                    </button>
+
+                                    <div class="lg:grid lg:grid-cols-12 gap-4">
                                         <!-- Filters Column -->
                                         <div
-                                            class="col-span-3 border-r border-gray-200 pr-4"
+                                            id="filter-panel"
+                                            class="hidden lg:block lg:col-span-3 lg:border-r border-gray-200 lg:pr-4 mb-4 lg:mb-0"
                                         >
                                             <div class="mb-4">
                                                 <label
@@ -2756,7 +2769,7 @@
                                             </div>
                                         </div>
                                         <!-- Results Grid -->
-                                        <div class="col-span-9 space-y-3">
+                                        <div class="lg:col-span-9 space-y-3">
                                             <div
                                                 class="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:bg-gray-100 cursor-pointer"
                                             >
@@ -2869,7 +2882,7 @@
                             >
                                 Summary Statistics
                             </h3>
-                            <div class="grid grid-cols-5 gap-4">
+                            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 <div
                                     class="bg-white rounded-lg border border-gray-200 p-4 text-center"
                                 >
@@ -2937,7 +2950,7 @@
 
                 <!-- Sidebar Items Section -->
                 <section id="sidebar-items-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center gap-3 mb-3">
                                 <span
@@ -3247,7 +3260,7 @@
                 </section>
 
                 <section id="consistency-rules" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -3413,7 +3426,7 @@
                 </section>
 
                 <section id="metadata-structure" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -3781,7 +3794,7 @@
                 </section>
 
                 <section id="role-indicators" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4031,7 +4044,7 @@
                 </section>
 
                 <section id="usage-contexts" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4332,7 +4345,7 @@
                 </section>
 
                 <section id="constraints-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2
                                 class="text-2xl font-semibold text-gray-900 mb-2"
@@ -4456,7 +4469,7 @@
                     id="responsive-behavior-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Responsive Behavior
@@ -4563,7 +4576,7 @@
 
                 <!-- Accessibility Section -->
                 <section id="accessibility-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Accessibility
@@ -4664,7 +4677,7 @@
                     id="implementation-notes-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Implementation Notes
@@ -4744,7 +4757,7 @@
                     id="summary-section"
                     class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Chat Message Card System Summary
@@ -4926,6 +4939,29 @@
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
                 });
+            })();
+
+            // Filter Toggle Script
+            (function () {
+                const filterToggle = document.getElementById("filter-toggle");
+                const filterPanel = document.getElementById("filter-panel");
+                const filterChevron = document.getElementById("filter-chevron");
+
+                if (filterToggle && filterPanel && filterChevron) {
+                    filterToggle.addEventListener("click", function () {
+                        const isHidden = filterPanel.classList.contains("hidden");
+
+                        if (isHidden) {
+                            filterPanel.classList.remove("hidden");
+                            filterPanel.classList.add("block");
+                            filterChevron.classList.add("rotate-180");
+                        } else {
+                            filterPanel.classList.add("hidden");
+                            filterPanel.classList.remove("block");
+                            filterChevron.classList.remove("rotate-180");
+                        }
+                    });
+                }
             })();
         </script>
     </body>

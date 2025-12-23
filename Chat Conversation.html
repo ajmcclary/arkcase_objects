@@ -434,7 +434,7 @@
                     id="chat-conversation-card-overview"
                     class="bg-white py-12"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -473,7 +473,7 @@
                 </section>
 
                 <section id="small-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Chat Conversation — Small Card
@@ -826,7 +826,7 @@
                 </section>
 
                 <section id="medium-card-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Chat Conversation — Medium Card
@@ -1357,7 +1357,7 @@
                 </section>
 
                 <section id="large-card-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Chat Conversation — Large Card
@@ -1411,7 +1411,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -1683,7 +1683,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -1932,7 +1932,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -2207,7 +2207,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-gray-200"
                                     >
                                         <div>
                                             <div
@@ -2563,7 +2563,7 @@
 
                 <!-- Card Comparison Section -->
                 <section id="card-comparison-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Card Comparison
@@ -2729,7 +2729,7 @@
                     id="dashboard-widgets-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center gap-3 mb-3">
                                 <span
@@ -3036,6 +3036,13 @@
                                         >
                                     </div>
                                     <div class="flex items-center gap-2">
+                                        <button
+                                            id="filter-toggle-btn"
+                                            class="lg:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+                                            aria-label="Toggle filters"
+                                        >
+                                            <i class="fa-solid fa-filter"></i>
+                                        </button>
                                         <select
                                             class="text-sm border border-gray-300 rounded-lg px-3 py-1.5"
                                         >
@@ -3051,10 +3058,11 @@
                                     </div>
                                 </div>
                                 <div class="p-5">
-                                    <div class="grid grid-cols-12 gap-4">
+                                    <div class="lg:grid lg:grid-cols-12 gap-4">
                                         <!-- Filters Column -->
                                         <div
-                                            class="col-span-3 border-r border-gray-200 pr-4"
+                                            id="filter-panel"
+                                            class="hidden lg:block lg:col-span-3 lg:border-r border-gray-200 lg:pr-4 mb-4 lg:mb-0"
                                         >
                                             <div class="mb-4">
                                                 <label
@@ -3151,8 +3159,8 @@
                                             </div>
                                         </div>
                                         <!-- Content Grid -->
-                                        <div class="col-span-9">
-                                            <div class="grid grid-cols-3 gap-4">
+                                        <div class="lg:col-span-9">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                                 <div
                                                     class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer"
                                                 >
@@ -3295,7 +3303,7 @@
                             >
                                 Summary Statistics
                             </h3>
-                            <div class="grid grid-cols-5 gap-4">
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 <div
                                     class="bg-white rounded-lg border border-gray-200 p-4 text-center"
                                 >
@@ -3363,7 +3371,7 @@
 
                 <!-- Sidebar Items Section -->
                 <section id="sidebar-items-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <div class="flex items-center gap-3 mb-3">
                                 <span
@@ -3779,7 +3787,7 @@
                     id="consistency-rules-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8"
                         >
@@ -3886,7 +3894,7 @@
                 </section>
 
                 <section id="constraints-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-white border border-gray-200 rounded-lg p-8"
                         >
@@ -4019,7 +4027,7 @@
                 </section>
 
                 <section id="use-cases-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Usage Guidelines
@@ -4182,7 +4190,7 @@
                     id="interaction-patterns-section"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-white border border-gray-200 rounded-lg p-8"
                         >
@@ -4343,7 +4351,7 @@
                     id="status-indicators-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Status Variations
@@ -4451,7 +4459,7 @@
                 </section>
 
                 <section id="accessibility-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-8"
                         >
@@ -4572,7 +4580,7 @@
                     id="responsive-behavior-section"
                     class="py-12 bg-gray-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-white border border-gray-200 rounded-lg p-8"
                         >
@@ -4636,7 +4644,7 @@
                     id="implementation-notes-section"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-white border border-gray-200 rounded-lg p-8"
                         >
@@ -4863,7 +4871,7 @@
                     id="summary-section"
                     class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Chat Conversation Card System Summary
@@ -5094,6 +5102,25 @@
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
                 });
+            })();
+
+            // Filter Toggle for Conversation Activity Grid Widget
+            (function () {
+                const filterToggleBtn = document.getElementById("filter-toggle-btn");
+                const filterPanel = document.getElementById("filter-panel");
+
+                if (filterToggleBtn && filterPanel) {
+                    filterToggleBtn.addEventListener("click", function () {
+                        filterPanel.classList.toggle("hidden");
+                    });
+
+                    // Auto-hide filter panel on resize if screen becomes large
+                    window.addEventListener("resize", function () {
+                        if (window.innerWidth >= 1024) {
+                            filterPanel.classList.remove("hidden");
+                        }
+                    });
+                }
             })();
         </script>
     </body>
