@@ -434,7 +434,7 @@
                     id="object-history-card-overview"
                     class="bg-white py-12"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">
                             <div class="flex items-center mb-6">
                                 <div
@@ -473,7 +473,7 @@
                 </section>
 
                 <section id="section-small-cards" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Object History — Small Card
@@ -726,7 +726,7 @@
                 </section>
 
                 <section id="section-medium-cards" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Object History — Medium Card
@@ -790,7 +790,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
+                                        class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
                                     >
                                         <div>
                                             <div
@@ -902,7 +902,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
+                                        class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
                                     >
                                         <div>
                                             <div
@@ -1019,7 +1019,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
+                                        class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
                                     >
                                         <div>
                                             <div
@@ -1137,7 +1137,7 @@
                                     </div>
 
                                     <div
-                                        class="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
+                                        class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 pb-4 border-b border-gray-100"
                                     >
                                         <div>
                                             <div
@@ -1212,7 +1212,7 @@
                 </section>
 
                 <section id="section-large-cards" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Object History — Large Card
@@ -1290,7 +1290,7 @@
                                             Change Metadata
                                         </div>
                                         <div
-                                            class="grid grid-cols-2 lg:grid-cols-4 gap-4"
+                                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
                                         >
                                             <div
                                                 class="p-3 bg-gray-50 rounded-lg"
@@ -1505,7 +1505,7 @@
                                             Change Metadata
                                         </div>
                                         <div
-                                            class="grid grid-cols-2 lg:grid-cols-4 gap-4"
+                                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
                                         >
                                             <div
                                                 class="p-3 bg-gray-50 rounded-lg"
@@ -1728,7 +1728,7 @@
                                             Change Metadata
                                         </div>
                                         <div
-                                            class="grid grid-cols-2 lg:grid-cols-4 gap-4"
+                                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
                                         >
                                             <div
                                                 class="p-3 bg-gray-50 rounded-lg"
@@ -1888,7 +1888,7 @@
 
                 <!-- 22.4 Dashboard Widgets -->
                 <section id="dashboard-widgets-section" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Dashboard Widgets
@@ -2273,7 +2273,18 @@
                                     </h3>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <div class="relative">
+                                    <button
+                                        id="filter-toggle"
+                                        class="lg:hidden px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center gap-1"
+                                        aria-label="Toggle filters"
+                                        aria-expanded="false"
+                                    >
+                                        <i
+                                            class="fa-solid fa-filter text-gray-500 text-xs"
+                                        ></i>
+                                        Filters
+                                    </button>
+                                    <div class="relative hidden sm:block">
                                         <input
                                             type="text"
                                             placeholder="Search changes..."
@@ -2289,20 +2300,37 @@
                                         <i
                                             class="fa-solid fa-download text-gray-500 text-xs"
                                         ></i>
-                                        Export
+                                        <span class="hidden sm:inline">Export</span>
                                     </button>
                                 </div>
                             </div>
-                            <div
-                                class="grid grid-cols-12 divide-x divide-gray-200"
-                            >
+                            <div class="lg:grid lg:grid-cols-12 lg:divide-x lg:divide-gray-200">
+                                <!-- Mobile Filter Backdrop -->
+                                <div
+                                    id="filter-backdrop"
+                                    class="fixed inset-0 bg-gray-900/50 z-40 lg:hidden hidden opacity-0 transition-opacity duration-300"
+                                    aria-hidden="true"
+                                ></div>
+
                                 <!-- Filters Sidebar -->
-                                <div class="col-span-3 p-4 bg-gray-50">
-                                    <h4
-                                        class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3"
-                                    >
-                                        Filters
-                                    </h4>
+                                <div
+                                    id="filter-sidebar"
+                                    class="fixed lg:static inset-y-0 left-0 z-50 lg:z-auto w-80 lg:w-auto bg-white lg:bg-gray-50 lg:col-span-3 p-4 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 overflow-y-auto shadow-xl lg:shadow-none"
+                                >
+                                    <div class="flex items-center justify-between mb-3 lg:mb-0">
+                                        <h4
+                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wide"
+                                        >
+                                            Filters
+                                        </h4>
+                                        <button
+                                            id="filter-close"
+                                            class="lg:hidden p-1 text-gray-400 hover:text-gray-600"
+                                            aria-label="Close filters"
+                                        >
+                                            <i class="fa-solid fa-times text-xl"></i>
+                                        </button>
+                                    </div>
                                     <div class="space-y-4">
                                         <div>
                                             <label
@@ -2468,7 +2496,7 @@
                                     </div>
                                 </div>
                                 <!-- History Grid -->
-                                <div class="col-span-9">
+                                <div class="lg:col-span-9">
                                     <div
                                         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-4"
                                     >
@@ -2652,7 +2680,7 @@
                             </h3>
                         </div>
                         <div
-                            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
                         >
                             <div
                                 class="bg-white rounded-lg border border-gray-200 p-4 text-center"
@@ -2723,7 +2751,7 @@
 
                 <!-- 22.5 Sidebar Items -->
                 <section id="sidebar-items-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Sidebar Items
@@ -3198,7 +3226,7 @@
                     id="section-timeline-integration"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Timeline Integration Example
@@ -3513,7 +3541,7 @@
                 </section>
 
                 <section id="section-change-types" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Change Type Variations
@@ -3719,7 +3747,7 @@
                 </section>
 
                 <section id="section-actor-types" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Actor Representation
@@ -3839,7 +3867,7 @@
                 </section>
 
                 <section id="section-metadata-display" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Metadata Display Patterns
@@ -3895,7 +3923,7 @@
                                 >
                                     Grid Metadata (Medium Cards)
                                 </div>
-                                <div class="grid grid-cols-2 gap-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <div
                                             class="text-xs text-gray-500 mb-1.5"
@@ -3940,7 +3968,7 @@
                                 >
                                     Card Grid Metadata (Large Cards)
                                 </div>
-                                <div class="grid grid-cols-4 gap-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                     <div class="p-3 bg-gray-50 rounded-lg">
                                         <div
                                             class="text-xs text-gray-500 mb-1.5"
@@ -4012,7 +4040,7 @@
                 </section>
 
                 <section id="section-context-states" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Contextual States
@@ -4255,7 +4283,7 @@
                 </section>
 
                 <section id="section-object-reference" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Affected Object Reference Patterns
@@ -4395,7 +4423,7 @@
                     id="section-responsive-behavior"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Responsive Behavior
@@ -4421,7 +4449,7 @@
                                         Desktop (1024px+)
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-2 gap-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                     <div
                                         class="bg-white border border-gray-200 rounded-lg shadow-sm"
                                     >
@@ -4622,7 +4650,7 @@
                 </section>
 
                 <section id="section-design-specs" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Design Guidelines
@@ -5011,7 +5039,7 @@
                     id="section-implementation-notes"
                     class="py-12 bg-white"
                 >
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Implementation Notes
@@ -5211,7 +5239,7 @@
 
                 <!-- Accessibility Section -->
                 <section id="accessibility-section" class="py-12 bg-gray-50">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Accessibility
@@ -5309,7 +5337,7 @@
                 </section>
 
                 <section id="section-footer-summary" class="py-12 bg-white">
-                    <div class="container mx-auto px-8">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div
                             class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-8"
                         >
@@ -5514,6 +5542,51 @@
                 });
                 window.addEventListener("resize", function () {
                     if (window.innerWidth >= 768 && isOpen) closeSidebar();
+                });
+            })();
+
+            // Filter Toggle Script
+            (function () {
+                const filterSidebar = document.getElementById("filter-sidebar");
+                const filterBackdrop = document.getElementById("filter-backdrop");
+                const filterToggleBtn = document.getElementById("filter-toggle");
+                const filterCloseBtn = document.getElementById("filter-close");
+                let isFilterOpen = false;
+
+                function openFilter() {
+                    isFilterOpen = true;
+                    filterSidebar.classList.remove("-translate-x-full");
+                    filterSidebar.classList.add("translate-x-0");
+                    filterBackdrop.classList.remove("hidden", "opacity-0");
+                    filterBackdrop.classList.add("opacity-100");
+                    filterToggleBtn.setAttribute("aria-expanded", "true");
+                    document.body.classList.add("overflow-hidden", "lg:overflow-auto");
+                }
+
+                function closeFilter() {
+                    isFilterOpen = false;
+                    filterSidebar.classList.add("-translate-x-full");
+                    filterSidebar.classList.remove("translate-x-0");
+                    filterBackdrop.classList.add("opacity-0");
+                    filterBackdrop.classList.remove("opacity-100");
+                    filterToggleBtn.setAttribute("aria-expanded", "false");
+                    document.body.classList.remove("overflow-hidden", "lg:overflow-auto");
+                    setTimeout(function () {
+                        if (!isFilterOpen) filterBackdrop.classList.add("hidden");
+                    }, 300);
+                }
+
+                if (filterToggleBtn)
+                    filterToggleBtn.addEventListener("click", function () {
+                        isFilterOpen ? closeFilter() : openFilter();
+                    });
+                if (filterCloseBtn) filterCloseBtn.addEventListener("click", closeFilter);
+                if (filterBackdrop) filterBackdrop.addEventListener("click", closeFilter);
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && isFilterOpen) closeFilter();
+                });
+                window.addEventListener("resize", function () {
+                    if (window.innerWidth >= 1024 && isFilterOpen) closeFilter();
                 });
             })();
         </script>
