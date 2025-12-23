@@ -1,6 +1,6 @@
 # UX Improvements Guide
 
-This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, and User.html. Use this as a checklist when refactoring other HTML wireframe files.
+This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, User.html, and Organization.html. Use this as a checklist when refactoring other HTML wireframe files.
 
 ---
 
@@ -541,6 +541,7 @@ The status/type badge in interaction state cards should reflect the **object typ
 |-------------|------------|-------------|
 | Person.html | "Person" | `bg-blue-100 text-blue-800` |
 | User.html | "User" | `bg-blue-100 text-blue-700` |
+| Organization.html | "Organization" | `bg-blue-100 text-blue-700` |
 | Task.html | "Task" | `bg-blue-100 text-blue-800` |
 | Case.html | "Case" | `bg-blue-100 text-blue-800` |
 | Complaint.html | "Complaint" | `bg-blue-100 text-blue-800` |
@@ -579,6 +580,7 @@ For disabled cards, apply grayscale to all elements:
 - [x] Task.html
 - [x] Person.html
 - [x] User.html
+- [x] Organization.html
 
 ## Files Remaining
 
