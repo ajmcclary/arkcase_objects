@@ -798,7 +798,7 @@
                                         for accuracy
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -922,7 +922,7 @@
                                         Approve budget request for Q1 operations
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -1052,7 +1052,7 @@
                                         certification
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -1172,7 +1172,7 @@
                                         findings
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -1297,7 +1297,7 @@
                                         background
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -1420,7 +1420,7 @@
                                         witness
                                     </h3>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 mb-4">
                                         <div
                                             class="flex items-center gap-2 text-sm"
                                         >
@@ -1710,17 +1710,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-folder text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Parent Object</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-folder text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="bg-blue-50 border border-blue-100 rounded-lg p-3"
                                         >
@@ -1759,17 +1755,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-paperclip text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Related Items</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-paperclip text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Related Items</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex items-center gap-4">
                                             <div
                                                 class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded"
@@ -1805,6 +1797,59 @@
                                                 >
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-green-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-circle-dot text-green-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Status changed to "In Progress"</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-comment text-blue-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Comment added</p>
+                                                        <p class="text-xs text-gray-500">by David Martinez</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-user-plus text-purple-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Assigned to Jennifer Smith</p>
+                                                        <p class="text-xs text-gray-500">by System</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2039,17 +2084,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-folder text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Parent Object</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-folder text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="bg-blue-50 border border-blue-100 rounded-lg p-3"
                                         >
@@ -2087,17 +2128,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-paperclip text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Related Items</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-paperclip text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Related Items</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex items-center gap-4">
                                             <div
                                                 class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded"
@@ -2133,6 +2170,59 @@
                                                 >
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-flag text-amber-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Priority changed to High</p>
+                                                        <p class="text-xs text-gray-500">by System</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">1 hour ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-green-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-circle-dot text-green-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Status changed to "Ready"</p>
+                                                        <p class="text-xs text-gray-500">by Sarah Chen</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-check-circle text-teal-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Subtask "Gather data" completed</p>
+                                                        <p class="text-xs text-gray-500">by Michael Wong</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2389,17 +2479,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-folder text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Parent Object</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-folder text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="bg-blue-50 border border-blue-100 rounded-lg p-3"
                                         >
@@ -2437,17 +2523,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-paperclip text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Related Items</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-paperclip text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Related Items</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex items-center gap-4">
                                             <div
                                                 class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded"
@@ -2483,6 +2565,59 @@
                                                 >
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-red-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-exclamation text-red-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-red-600">Status changed to "Blocked"</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">4 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-comment text-blue-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Blocker note added</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">4 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-green-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-circle-dot text-green-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Status changed to "In Progress"</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2735,17 +2870,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-folder text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Parent Object</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-folder text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Parent Object</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div
                                             class="bg-blue-50 border border-blue-100 rounded-lg p-3"
                                         >
@@ -2783,17 +2914,13 @@
                                     <div
                                         class="border-t border-gray-200 pt-5 mb-5"
                                     >
-                                        <div
-                                            class="flex items-center gap-2 mb-3"
-                                        >
-                                            <i
-                                                class="fa-regular fa-paperclip text-gray-400"
-                                            ></i>
-                                            <span
-                                                class="text-sm font-medium text-gray-500"
-                                                >Related Items</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-regular fa-paperclip text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Related Items</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex items-center gap-4">
                                             <div
                                                 class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded"
@@ -2829,6 +2956,59 @@
                                                 >
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-check-circle text-teal-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-teal-600">Task completed</p>
+                                                        <p class="text-xs text-gray-500">by David Martinez</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">1 day ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-green-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-circle-dot text-green-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">All subtasks completed</p>
+                                                        <p class="text-xs text-gray-500">by David Martinez</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 days ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[25px] w-4 h-4 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                    <i class="fa-solid fa-comment text-blue-600 text-[8px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Final review comment added</p>
+                                                        <p class="text-xs text-gray-500">by Sarah Chen</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">3 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -3354,19 +3534,25 @@
                                             >14</span
                                         >
                                     </div>
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex items-center gap-3">
+                                        <!-- Desktop pill filters -->
+                                        <div class="hidden sm:flex items-center gap-1">
+                                            <button class="px-3 py-1.5 text-xs font-medium rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors">All</button>
+                                            <button class="px-3 py-1.5 text-xs font-medium rounded-full text-gray-600 hover:bg-gray-100 transition-colors">In Progress</button>
+                                            <button class="px-3 py-1.5 text-xs font-medium rounded-full text-gray-600 hover:bg-gray-100 transition-colors">Blocked</button>
+                                        </div>
+                                        <!-- Mobile dropdown -->
                                         <select
-                                            class="text-xs border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            class="sm:hidden text-xs border border-gray-300 rounded-lg px-3 py-2 min-h-[44px] focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         >
-                                            <option>All Statuses</option>
+                                            <option>All</option>
                                             <option>In Progress</option>
-                                            <option>Ready</option>
                                             <option>Blocked</option>
                                         </select>
                                         <a
                                             href="#"
-                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                            >View All</a
+                                            class="inline-flex items-center px-3 py-1.5 text-sm font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-lg transition-colors"
+                                            >View All <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i></a
                                         >
                                     </div>
                                 </div>
@@ -4186,7 +4372,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                             <!-- Related Tasks Panel -->
                             <div>
                                 <h3
@@ -4580,6 +4766,93 @@
                                 </div>
                                 <p class="text-xs text-gray-500 mt-3">
                                     Recent and pinned tasks for quick navigation
+                                </p>
+                            </div>
+
+                            <!-- Activity Timeline -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Activity Timeline</h3>
+                                <div class="bg-gray-100 rounded-lg p-4">
+                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                                <span class="text-sm font-semibold text-gray-900">Task Activity</span>
+                                            </div>
+                                            <a href="#" class="text-xs text-blue-600 hover:text-blue-800 font-medium">View All</a>
+                                        </div>
+                                        <!-- Timeline Content -->
+                                        <div class="p-3">
+                                            <!-- Today -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
+                                            <div class="relative pl-5 border-l-2 border-gray-200 space-y-3 mb-4">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[17px] w-3 h-3 bg-green-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Status changed to "In Progress"</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">JS</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">2 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[17px] w-3 h-3 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Comment added</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-purple-600">DM</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">5 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Yesterday -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
+                                            <div class="relative pl-5 border-l-2 border-gray-200 space-y-3">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[17px] w-3 h-3 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Assigned to Jennifer Smith</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-gray-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-gray-600">SYS</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">Yesterday at 9:15 AM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[17px] w-3 h-3 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white">
+                                                        <div class="w-1.5 h-1.5 bg-teal-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Subtask completed</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-green-600">SC</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">Yesterday at 4:30 PM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-3">
+                                    Chronological feed of task events and updates
                                 </p>
                             </div>
                         </div>
@@ -5011,232 +5284,141 @@
                     </div>
                 </section>
 
-                <section id="design-notes-section" class="py-12 bg-gray-50">
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2
-                                class="text-2xl font-semibold text-gray-900 mb-2"
-                            >
-                                Design Guidelines
-                            </h2>
-                            <p class="text-gray-600">
-                                Key principles and consistency rules for Task
-                                card implementation
-                            </p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for task card interaction states across the design system</p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div
-                                id="notes-hierarchy"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <i
-                                        class="fa-solid fa-layer-group text-blue-600 text-xl"
-                                    ></i>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Visual Hierarchy
-                                    </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
                                 </div>
-                                <ul class="space-y-3 text-sm text-gray-700">
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Task title is always the primary
-                                            visual element</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Status badge positioned
-                                            consistently across all
-                                            variants</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Due date and assignee information
-                                            always visible</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Parent object reference scales with
-                                            card size</span
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-check text-orange-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Review Contract Terms</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">TASK-2024-001847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
                             </div>
 
-                            <div
-                                id="notes-consistency"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <i
-                                        class="fa-solid fa-arrows-left-right text-blue-600 text-xl"
-                                    ></i>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Cross-Object Consistency
-                                    </h3>
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
                                 </div>
-                                <ul class="space-y-3 text-sm text-gray-700">
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Matches visual language of Case
-                                            File, Complaint cards</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Consistent color coding for status
-                                            across object types</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Unified icon system and
-                                            typography</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Predictable action button
-                                            placement</span
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-check text-orange-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Review Contract Terms</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">TASK-2024-001847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
                             </div>
 
-                            <div
-                                id="notes-interaction"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <i
-                                        class="fa-solid fa-hand-pointer text-blue-600 text-xl"
-                                    ></i>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Interaction Patterns
-                                    </h3>
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
                                 </div>
-                                <ul class="space-y-3 text-sm text-gray-700">
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Entire card acts as primary click
-                                            target</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Hover states provide visual
-                                            feedback</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Actions scaled to card size and
-                                            context</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Permission-aware action
-                                            visibility</span
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-check text-orange-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Review Contract Terms</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">TASK-2024-001847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
                             </div>
 
-                            <div
-                                id="notes-accessibility"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <i
-                                        class="fa-solid fa-universal-access text-blue-600 text-xl"
-                                    ></i>
-                                    <h3
-                                        class="text-lg font-semibold text-gray-900"
-                                    >
-                                        Accessibility
-                                    </h3>
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
                                 </div>
-                                <ul class="space-y-3 text-sm text-gray-700">
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >WCAG AA compliant color contrast
-                                            ratios</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Icons paired with text labels</span
-                                        >
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span>Keyboard navigation support</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <span
-                                            >Screen reader friendly
-                                            structure</span
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-check text-orange-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Review Contract Terms</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">TASK-2024-001847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                            </div>
+
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-check text-gray-400"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Review Contract Terms</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">TASK-2024-001847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-20 mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>
