@@ -1464,11 +1464,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Contact Information
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-address-card text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Contact Information</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="space-y-3">
                                             <div
                                                 class="flex items-center gap-3"
@@ -1569,11 +1571,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-gray-100"
                                     >
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Metadata
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
@@ -1632,11 +1636,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Associations
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-link text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Associations</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex flex-wrap gap-2">
                                             <span
                                                 class="inline-flex items-center px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-medium rounded-full"
@@ -1663,6 +1669,59 @@
                                                 Related to 2 organizations
                                             </span>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-circle text-green-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Contact info updated</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-briefcase text-blue-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Added to Case CASE-2024-0089</p>
+                                                        <p class="text-xs text-gray-500">by David Martinez</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-check text-purple-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Profile verified</p>
+                                                        <p class="text-xs text-gray-500">by System</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -1755,11 +1814,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Contact Information
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-address-card text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Contact Information</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="space-y-3">
                                             <div
                                                 class="flex items-center gap-3"
@@ -1852,11 +1913,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-gray-100"
                                     >
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Metadata
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
@@ -1915,18 +1978,14 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <div
-                                            class="flex items-center justify-between mb-3"
-                                        >
-                                            <h4
-                                                class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                                            >
-                                                Associations
-                                            </h4>
-                                            <span class="text-xs text-gray-500"
-                                                >5 total</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-link text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Associations</span>
+                                                <span class="text-xs text-gray-500 font-normal">5 total</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex flex-wrap gap-2">
                                             <span
                                                 class="inline-flex items-center px-3 py-1.5 bg-purple-50 text-purple-700 text-xs font-medium rounded-full"
@@ -1953,6 +2012,59 @@
                                                 Affiliated with 1 organization
                                             </span>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-file text-amber-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Document uploaded</p>
+                                                        <p class="text-xs text-gray-500">by Dr. Rodriguez</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">3 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-user text-purple-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Assigned as Expert Witness</p>
+                                                        <p class="text-xs text-gray-500">by Case Manager</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">1 day ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-check text-teal-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Credentials verified</p>
+                                                        <p class="text-xs text-gray-500">by System</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">3 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2043,11 +2155,13 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Contact Information
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-address-card text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Contact Information</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="space-y-3">
                                             <div
                                                 class="flex items-center gap-3"
@@ -2148,11 +2262,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-gray-100"
                                     >
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Metadata
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
@@ -2211,18 +2327,14 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <div
-                                            class="flex items-center justify-between mb-3"
-                                        >
-                                            <h4
-                                                class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                                            >
-                                                Associations
-                                            </h4>
-                                            <span class="text-xs text-gray-500"
-                                                >8 total</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-link text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Associations</span>
+                                                <span class="text-xs text-gray-500 font-normal">8 total</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex flex-wrap gap-2">
                                             <span
                                                 class="inline-flex items-center px-3 py-1.5 bg-teal-50 text-teal-700 text-xs font-medium rounded-full"
@@ -2249,6 +2361,59 @@
                                                 Mentioned in 4 documents
                                             </span>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-comment text-blue-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Interview notes added</p>
+                                                        <p class="text-xs text-gray-500">by Jennifer Smith</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">4 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-user text-teal-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Tagged as Subject</p>
+                                                        <p class="text-xs text-gray-500">by Case Manager</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-circle text-green-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Record created</p>
+                                                        <p class="text-xs text-gray-500">by Intake Specialist</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">3 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2423,11 +2588,13 @@
                                     <div
                                         class="mb-6 pb-6 border-b border-gray-100"
                                     >
-                                        <h4
-                                            class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"
-                                        >
-                                            Metadata
-                                        </h4>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-circle-info text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Metadata</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div>
                                                 <p
@@ -2481,18 +2648,14 @@
                                     </div>
 
                                     <div class="mb-6">
-                                        <div
-                                            class="flex items-center justify-between mb-3"
-                                        >
-                                            <h4
-                                                class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                                            >
-                                                Associations
-                                            </h4>
-                                            <span class="text-xs text-gray-500"
-                                                >3 visible</span
-                                            >
-                                        </div>
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-link text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Associations</span>
+                                                <span class="text-xs text-gray-500 font-normal">3 visible</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
                                         <div class="flex flex-wrap gap-2">
                                             <span
                                                 class="inline-flex items-center px-3 py-1.5 bg-amber-50 text-amber-700 text-xs font-medium rounded-full"
@@ -2511,6 +2674,59 @@
                                                 Protected status
                                             </span>
                                         </div>
+                                    </div>
+
+                                    <!-- Recent Activity Timeline -->
+                                    <div class="border-t border-gray-200 pt-5 mb-5">
+                                        <button class="w-full flex items-center justify-between text-left group mb-3" aria-expanded="true">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-gray-400"></i>
+                                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Recent Activity</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-up text-gray-400 group-hover:text-gray-600 transition-transform"></i>
+                                        </button>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-4">
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-red-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-exclamation text-red-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Protection status applied</p>
+                                                        <p class="text-xs text-gray-500">by Security Officer</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">1 hour ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-eye text-amber-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Assigned as witness</p>
+                                                        <p class="text-xs text-gray-500">by Case Manager</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">2 days ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="relative">
+                                                <div class="absolute -left-[29px] w-6 h-6 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                    <i class="fa-solid fa-circle text-green-600 text-[10px]"></i>
+                                                </div>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <p class="text-sm font-medium text-gray-900">Record created</p>
+                                                        <p class="text-xs text-gray-500">by Intake Specialist</p>
+                                                    </div>
+                                                    <span class="text-xs text-gray-400">5 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-sm text-blue-600 hover:text-blue-700 font-medium mt-3 flex items-center">
+                                            <i class="fa-solid fa-clock-rotate-left mr-1.5"></i>
+                                            View full timeline
+                                        </button>
                                     </div>
 
                                     <div
@@ -2643,35 +2859,19 @@
                             <div
                                 class="bg-white rounded-lg border border-gray-200 shadow-sm max-w-md"
                             >
-                                <div
-                                    class="flex items-center justify-between px-5 py-4 border-b border-gray-200"
-                                >
+                                <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
                                     <div class="flex items-center gap-2">
-                                        <i
-                                            class="fa-solid fa-address-book text-blue-600"
-                                        ></i>
-                                        <span
-                                            class="font-semibold text-gray-900"
-                                            >My Contacts</span
-                                        >
-                                        <span
-                                            class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full"
-                                            >24</span
-                                        >
+                                        <i class="fa-solid fa-address-book text-blue-600"></i>
+                                        <span class="font-semibold text-gray-900">My Contacts</span>
+                                        <span class="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">24</span>
                                     </div>
-                                    <div class="flex items-center gap-3">
-                                        <select
-                                            class="text-xs border border-gray-300 rounded px-2 py-1 text-gray-600"
-                                        >
+                                    <div class="flex items-center gap-2">
+                                        <select class="text-xs border border-gray-300 rounded-lg px-2 py-1.5 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                             <option>Frequent</option>
                                             <option>Recent</option>
                                             <option>All</option>
                                         </select>
-                                        <a
-                                            href="#"
-                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                            >View All</a
-                                        >
+                                        <a href="#" class="text-sm text-blue-600 hover:text-blue-800 font-medium whitespace-nowrap">View All</a>
                                     </div>
                                 </div>
                                 <div class="divide-y divide-gray-100">
@@ -2853,11 +3053,10 @@
                                             >Recently Viewed</span
                                         >
                                     </div>
-                                    <a
-                                        href="#"
-                                        class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                        >Clear History</a
-                                    >
+                                    <a href="#" class="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors">
+                                        <i class="fa-solid fa-trash-can mr-1.5 text-xs"></i>
+                                        Clear History
+                                    </a>
                                 </div>
                                 <div class="divide-y divide-gray-100">
                                     <div
@@ -2997,11 +3196,10 @@
                                                 class="pl-8 pr-3 py-1.5 text-xs border border-gray-300 rounded-lg w-48 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                             />
                                         </div>
-                                        <a
-                                            href="#"
-                                            class="text-sm text-blue-600 hover:text-blue-800 font-medium"
-                                            >View All</a
-                                        >
+                                        <a href="#" class="inline-flex items-center px-3 py-1.5 text-sm font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-lg transition-colors">
+                                            View All
+                                            <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="lg:grid lg:grid-cols-12">
@@ -3556,7 +3754,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                             <!-- Related Persons Panel -->
                             <div>
                                 <h3
@@ -4112,6 +4310,91 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Activity Timeline -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Activity Timeline</h3>
+                                <div class="bg-gray-100 rounded-lg p-4">
+                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                                <span class="text-sm font-semibold text-gray-900">Person Activity</span>
+                                            </div>
+                                            <a href="#" class="text-xs text-blue-600 hover:text-blue-800 font-medium">View All</a>
+                                        </div>
+                                        <!-- Timeline Content -->
+                                        <div class="p-3">
+                                            <!-- Today -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3 mb-4">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <div class="w-2.5 h-2.5 bg-green-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Contact info updated</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">SM</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">2 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <div class="w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Added to Case CASE-2024-0089</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-purple-600">JW</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">5 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Yesterday -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <div class="w-2.5 h-2.5 bg-purple-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Profile verified</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-gray-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-gray-600">SYS</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">Yesterday at 9:15 AM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-teal-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Organization linked</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-green-600">RT</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">Yesterday at 4:30 PM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-3">Chronological feed of person events and updates</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -4634,229 +4917,141 @@
                     </div>
                 </section>
 
-                <section
-                    id="interaction-patterns-section"
-                    class="py-12 bg-white"
-                >
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-3xl font-bold text-gray-900 mb-3">
-                                Interaction Patterns
-                            </h2>
-                            <p class="text-gray-600 mb-6">
-                                Common interaction states and action patterns
-                                across all card variants.
-                            </p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for person card interaction states across the design system</p>
                         </div>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                            <div
-                                id="interaction-hover"
-                                class="bg-white border-2 border-blue-400 rounded-lg p-6 shadow-lg"
-                            >
-                                <div class="mb-4">
-                                    <div
-                                        class="flex items-center justify-between mb-2"
-                                    >
-                                        <h3
-                                            class="text-lg font-semibold text-gray-900"
-                                        >
-                                            Hover State
-                                        </h3>
-                                        <i
-                                            class="fa-solid fa-hand-pointer text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <p class="text-sm text-gray-600">
-                                        Enhanced border and shadow on hover
-                                    </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
                                 </div>
-                                <div
-                                    class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg"
-                                >
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-user text-white text-sm"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h4
-                                            class="text-sm font-semibold text-gray-900"
-                                        >
-                                            Person Name
-                                        </h4>
-                                        <p class="text-xs text-gray-500">
-                                            Role or relationship
-                                        </p>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-user text-white text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">PER-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Complainant</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mt-4 text-xs text-gray-600">
-                                    <p class="mb-2">
-                                        <span class="font-medium"
-                                            >Visual change:</span
-                                        >
-                                        Border color shifts to blue-400
-                                    </p>
-                                    <p>
-                                        <span class="font-medium">Shadow:</span>
-                                        Elevation increases from sm to lg
-                                    </p>
-                                </div>
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
                             </div>
 
-                            <div
-                                id="interaction-selected"
-                                class="bg-white border-2 border-blue-600 rounded-lg p-6 shadow-lg bg-blue-50"
-                            >
-                                <div class="mb-4">
-                                    <div
-                                        class="flex items-center justify-between mb-2"
-                                    >
-                                        <h3
-                                            class="text-lg font-semibold text-gray-900"
-                                        >
-                                            Selected State
-                                        </h3>
-                                        <i
-                                            class="fa-solid fa-check-circle text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <p class="text-sm text-gray-600">
-                                        Active selection with checkbox
-                                    </p>
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
                                 </div>
-                                <div
-                                    class="flex items-center gap-3 p-4 bg-white rounded-lg border border-blue-200"
-                                >
-                                    <input
-                                        type="checkbox"
-                                        checked
-                                        class="w-4 h-4 text-blue-600 rounded"
-                                    />
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-user text-white text-sm"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h4
-                                            class="text-sm font-semibold text-gray-900"
-                                        >
-                                            Person Name
-                                        </h4>
-                                        <p class="text-xs text-gray-500">
-                                            Role or relationship
-                                        </p>
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-user text-white text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">PER-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Complainant</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mt-4 text-xs text-gray-600">
-                                    <p class="mb-2">
-                                        <span class="font-medium"
-                                            >Background:</span
-                                        >
-                                        Light blue tint applied
-                                    </p>
-                                    <p>
-                                        <span class="font-medium">Border:</span>
-                                        Solid blue-600 at 2px
-                                    </p>
-                                </div>
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
                             </div>
 
-                            <div
-                                id="interaction-actions"
-                                class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"
-                            >
-                                <div class="mb-4">
-                                    <div
-                                        class="flex items-center justify-between mb-2"
-                                    >
-                                        <h3
-                                            class="text-lg font-semibold text-gray-900"
-                                        >
-                                            Action Menu
-                                        </h3>
-                                        <i
-                                            class="fa-solid fa-ellipsis-vertical text-gray-600"
-                                        ></i>
-                                    </div>
-                                    <p class="text-sm text-gray-600">
-                                        Contextual actions dropdown
-                                    </p>
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
                                 </div>
-                                <div class="relative">
-                                    <div
-                                        class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg mb-2"
-                                    >
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
-                                        >
-                                            <i
-                                                class="fa-solid fa-user text-white text-sm"
-                                            ></i>
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-user text-white text-sm"></i>
                                         </div>
-                                        <div class="flex-1">
-                                            <h4
-                                                class="text-sm font-semibold text-gray-900"
-                                            >
-                                                Person Name
-                                            </h4>
-                                            <p class="text-xs text-gray-500">
-                                                Role or relationship
-                                            </p>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">PER-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Complainant</span>
+                                            </div>
                                         </div>
-                                        <button
-                                            class="p-2 hover:bg-gray-200 rounded-lg"
-                                        >
-                                            <i
-                                                class="fa-solid fa-ellipsis-vertical text-gray-500"
-                                            ></i>
-                                        </button>
-                                    </div>
-                                    <div
-                                        class="bg-white border border-gray-200 rounded-lg shadow-xl p-2"
-                                    >
-                                        <button
-                                            class="w-full text-left px-3 py-2 hover:bg-gray-50 rounded text-sm flex items-center gap-2"
-                                        >
-                                            <i
-                                                class="fa-solid fa-eye text-gray-500 w-4"
-                                            ></i>
-                                            View Details
-                                        </button>
-                                        <button
-                                            class="w-full text-left px-3 py-2 hover:bg-gray-50 rounded text-sm flex items-center gap-2"
-                                        >
-                                            <i
-                                                class="fa-solid fa-envelope text-gray-500 w-4"
-                                            ></i>
-                                            Send Message
-                                        </button>
-                                        <button
-                                            class="w-full text-left px-3 py-2 hover:bg-gray-50 rounded text-sm flex items-center gap-2"
-                                        >
-                                            <i
-                                                class="fa-solid fa-pen text-gray-500 w-4"
-                                            ></i>
-                                            Edit Person
-                                        </button>
-                                        <div
-                                            class="border-t border-gray-100 my-1"
-                                        ></div>
-                                        <button
-                                            class="w-full text-left px-3 py-2 hover:bg-red-50 rounded text-sm flex items-center gap-2 text-red-600"
-                                        >
-                                            <i
-                                                class="fa-solid fa-trash text-red-500 w-4"
-                                            ></i>
-                                            Remove
-                                        </button>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
+                            </div>
+
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
+                                </div>
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-user text-white text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">PER-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">Complainant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                            </div>
+
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-user text-gray-400 text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Sarah Mitchell</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">PER-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Complainant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-20 mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>
