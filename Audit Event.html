@@ -484,7 +484,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 gap-4 max-w-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="audit-small-card-1"
                                 class="bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer"
@@ -2214,9 +2214,10 @@
                                     class="px-4 py-3 border-t border-gray-200 bg-gray-50"
                                 >
                                     <button
-                                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                                        class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium"
                                     >
-                                        View All My Activity →
+                                        View All My Activity
+                                        <i class="fa-solid fa-arrow-right text-xs"></i>
                                     </button>
                                 </div>
                             </div>
@@ -2854,7 +2855,7 @@
                         </div>
 
                         <div
-                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
                         >
                             <!-- Object Activity Panel -->
                             <div class="space-y-4">
@@ -3328,6 +3329,91 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- Activity Timeline Sidebar Panel -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Activity Timeline</h3>
+                                <div class="bg-gray-100 rounded-lg p-4">
+                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                                <span class="text-sm font-semibold text-gray-900">Audit Activity</span>
+                                            </div>
+                                            <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium">View All <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                                        </div>
+                                        <!-- Timeline Content -->
+                                        <div class="p-3">
+                                            <!-- Today Section -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3 mb-4">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-shield-halved text-blue-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Event logged</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">SC</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">2 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-check text-green-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Audit completed</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-green-600">SY</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">5 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Yesterday Section -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-exclamation text-amber-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Alert triggered</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-amber-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-amber-600">SY</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-file text-purple-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Report generated</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-purple-600">MT</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-3">Chronological feed of audit event activities and updates</p>
                             </div>
                         </div>
                     </div>
@@ -4571,477 +4657,144 @@
                     </div>
                 </section>
 
-                <section id="design-specifications" class="py-12 bg-gray-50">
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
-                                Design Guidelines
-                            </h2>
-                            <p class="text-gray-600">
-                                Comprehensive design system rules and
-                                cross-variant consistency requirements for Audit
-                                Event cards.
-                            </p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for audit event card interaction states across the design system</p>
                         </div>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                            <div
-                                id="spec-card-1"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-ruler-combined text-blue-600 text-xl"
-                                    ></i>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
                                 </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Sizing & Spacing
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Small Card Height:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >~60px</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Medium Card Height:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >~240px</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Large Card Height:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >~500px</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Card Padding:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >12-24px</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Icon Size:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >32-48px</span
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                id="spec-card-2"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-palette text-blue-600 text-xl"
-                                    ></i>
-                                </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Color System
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Success State:</span
-                                        >
-                                        <div class="flex items-center">
-                                            <div
-                                                class="w-4 h-4 bg-green-100 border border-green-200 rounded mr-2"
-                                            ></div>
-                                            <span
-                                                class="text-xs font-mono text-gray-900"
-                                                >green-100</span
-                                            >
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-list text-slate-600"></i>
                                         </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Error State:</span
-                                        >
-                                        <div class="flex items-center">
-                                            <div
-                                                class="w-4 h-4 bg-red-100 border border-red-200 rounded mr-2"
-                                            ></div>
-                                            <span
-                                                class="text-xs font-mono text-gray-900"
-                                                >red-100</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Warning State:</span
-                                        >
-                                        <div class="flex items-center">
-                                            <div
-                                                class="w-4 h-4 bg-amber-100 border border-amber-200 rounded mr-2"
-                                            ></div>
-                                            <span
-                                                class="text-xs font-mono text-gray-900"
-                                                >amber-100</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >System Event:</span
-                                        >
-                                        <div class="flex items-center">
-                                            <div
-                                                class="w-4 h-4 bg-gray-300 border border-gray-400 rounded mr-2"
-                                            ></div>
-                                            <span
-                                                class="text-xs font-mono text-gray-900"
-                                                >gray-300</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >API Event:</span
-                                        >
-                                        <div class="flex items-center">
-                                            <div
-                                                class="w-4 h-4 bg-violet-100 border border-violet-200 rounded mr-2"
-                                            ></div>
-                                            <span
-                                                class="text-xs font-mono text-gray-900"
-                                                >violet-100</span
-                                            >
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">User login successful</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">AUD-2024-0847 • 2 hours ago</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Success</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
                             </div>
 
-                            <div
-                                id="spec-card-3"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-font text-purple-600 text-xl"
-                                    ></i>
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
                                 </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Typography
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Card Title:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >16-20px Bold</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Event Type:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >14-16px Semibold</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Description:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >14px Regular</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Metadata Labels:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >12px Medium</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Timestamps:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >12-14px Regular</span
-                                        >
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-list text-slate-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">User login successful</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">AUD-2024-0847 • 2 hours ago</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Success</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
                             </div>
 
-                            <div
-                                id="spec-card-4"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-layer-group text-indigo-600 text-xl"
-                                    ></i>
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
                                 </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Component Hierarchy
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Event Icon:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Primary</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Event Type:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Primary</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Status Badge:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Secondary</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Description:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Secondary</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Metadata:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Tertiary</span
-                                        >
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-list text-slate-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">User login successful</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">AUD-2024-0847 • 2 hours ago</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Success</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
                             </div>
 
-                            <div
-                                id="spec-card-5"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-circle-check text-amber-600 text-xl"
-                                    ></i>
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
                                 </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Status Indicators
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Success:</span
-                                        >
-                                        <span
-                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800"
-                                        >
-                                            <i
-                                                class="fa-solid fa-circle-check mr-1"
-                                            ></i>
-                                            Success
-                                        </span>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Failed:</span
-                                        >
-                                        <span
-                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800"
-                                        >
-                                            <i
-                                                class="fa-solid fa-circle-xmark mr-1"
-                                            ></i>
-                                            Failed
-                                        </span>
-                                    </div>
-                                    <div
-                                        class="flex items-center justify-between"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Warning:</span
-                                        >
-                                        <span
-                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800"
-                                        >
-                                            <i
-                                                class="fa-solid fa-circle-exclamation mr-1"
-                                            ></i>
-                                            Warning
-                                        </span>
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-list text-slate-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">User login successful</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">AUD-2024-0847 • 2 hours ago</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Success</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
                             </div>
 
-                            <div
-                                id="spec-card-6"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div
-                                    class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4"
-                                >
-                                    <i
-                                        class="fa-solid fa-hand-pointer text-cyan-600 text-xl"
-                                    ></i>
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
                                 </div>
-                                <h3
-                                    class="text-lg font-bold text-gray-900 mb-3"
-                                >
-                                    Interactive States
-                                </h3>
-                                <div class="space-y-3">
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Hover:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Border + Shadow</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Click Action:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >View Details</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Small Card:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Entire card</span
-                                        >
-                                    </div>
-                                    <div
-                                        class="flex justify-between items-start"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >Medium/Large:</span
-                                        >
-                                        <span
-                                            class="text-sm font-semibold text-gray-900"
-                                            >Button actions</span
-                                        >
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-clipboard-list text-gray-400"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">User login successful</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">AUD-2024-0847 • 2 hours ago</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Archived</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>
                 </section>
-
                 <section id="consistency-rules" class="py-12 bg-white">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="max-w-5xl">

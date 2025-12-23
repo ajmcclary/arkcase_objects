@@ -2352,141 +2352,119 @@
                     </div>
                 </section>
 
-                <!-- Interaction States Section -->
-                <section id="interaction-states-section" class="py-12 bg-gray-50">
+                <section
+                    id="design-constraints-section"
+                    class="py-12 bg-gray-50"
+                >
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
-                            <p class="text-gray-600">Visual reference for business process card interaction states across the design system</p>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                                Design Guidelines
+                            </h2>
+                            <p class="text-gray-600">
+                                Critical limitations and scope boundaries that
+                                define what Business Process cards should and
+                                should not include.
+                            </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Default State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-diagram-project text-cyan-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Review Workflow</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">BP-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Running</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
+                        <div
+                            class="bg-white border border-gray-200 rounded-lg overflow-hidden"
+                        >
+                            <div class="p-6 border-b border-gray-200 bg-red-50">
+                                <h3
+                                    class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2"
+                                >
+                                    <i class="fa-solid fa-ban text-red-600"></i>
+                                    <span>Prohibited Elements</span>
+                                </h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-times text-red-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Do not design BPMN diagrams or task
+                                            flow visualizations</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-times text-red-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Do not invent workflow states or
+                                            metrics not provided by the
+                                            system</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-times text-red-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Do not assume administrative
+                                            workflow access or permissions</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-times text-red-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Do not include workflow editing or
+                                            modification capabilities</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
-
-                            <!-- Hover State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
-                                </div>
-                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-diagram-project text-cyan-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Review Workflow</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">BP-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Running</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
-                            </div>
-
-                            <!-- Selected State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
-                                </div>
-                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-diagram-project text-cyan-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Review Workflow</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">BP-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Running</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
-                            </div>
-
-                            <!-- Focus State (Keyboard) -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
-                                </div>
-                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-diagram-project text-cyan-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Review Workflow</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">BP-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Running</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
-                            </div>
-
-                            <!-- Disabled State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
-                                </div>
-                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-diagram-project text-gray-400"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Case Review Workflow</h4>
-                                            <p class="text-xs text-gray-400 mt-0.5">BP-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Completed</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
-                            </div>
-
-                            <!-- Loading Skeleton State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
-                                        <div class="flex-1 min-w-0 space-y-2">
-                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
-                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
-                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
+                            <div class="p-6 bg-green-50">
+                                <h3
+                                    class="text-base font-semibold text-gray-900 mb-4 flex items-center gap-2"
+                                >
+                                    <i
+                                        class="fa-solid fa-check-circle text-green-600"
+                                    ></i>
+                                    <span>Design Focus Areas</span>
+                                </h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Focus strictly on status, context,
+                                            and presentation</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Prioritize clear communication of
+                                            process state and progress</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Emphasize participant visibility
+                                            and accountability</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-0.5"
+                                        ></i>
+                                        <span
+                                            >Provide quick access to related
+                                            objects and context</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -4464,7 +4442,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- Sidebar Item 1: Related Processes Panel -->
                             <div
                                 class="bg-white border border-gray-200 rounded-lg"
@@ -5042,100 +5020,6 @@
                             </div>
                         </div>
                     </div>
-
-                            <!-- Sidebar Item 4: Business Process Activity Timeline -->
-                            <div class="bg-white border border-gray-200 rounded-lg">
-                                <div class="px-4 py-3 border-b border-gray-200 bg-gray-50">
-                                    <h3 class="text-sm font-semibold text-gray-900">Process Activity</h3>
-                                    <p class="text-xs text-gray-500 mt-1">Width: 264px • Recent process activity</p>
-                                </div>
-                                <div class="p-0" style="width: 264px">
-                                    <!-- Panel Header -->
-                                    <div class="px-4 py-3 border-b border-gray-200">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-2">
-                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
-                                                <span class="font-semibold text-gray-900 text-sm">Process Activity</span>
-                                            </div>
-                                            <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium">
-                                                View All
-                                                <i class="fa-solid fa-arrow-right text-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Activity Timeline Content -->
-                                    <div class="p-3">
-                                        <!-- Today Section -->
-                                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
-                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-3 mb-4">
-                                            <div class="relative">
-                                                <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                    <i class="fa-solid fa-circle text-green-600 text-[8px]"></i>
-                                                </div>
-                                                <div>
-                                                    <p class="text-xs font-medium text-gray-900">Process started</p>
-                                                    <div class="flex items-center gap-1 mt-0.5">
-                                                        <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
-                                                            <span class="text-[8px] font-medium text-blue-600">SM</span>
-                                                        </div>
-                                                        <span class="text-[10px] text-gray-500">2 hours ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="relative">
-                                                <div class="absolute -left-[21px] w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                    <i class="fa-solid fa-check text-blue-600 text-[8px]"></i>
-                                                </div>
-                                                <div>
-                                                    <p class="text-xs font-medium text-gray-900">Step completed</p>
-                                                    <div class="flex items-center gap-1 mt-0.5">
-                                                        <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
-                                                            <span class="text-[8px] font-medium text-purple-600">JD</span>
-                                                        </div>
-                                                        <span class="text-[10px] text-gray-500">4 hours ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Yesterday Section -->
-                                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
-                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
-                                            <div class="relative">
-                                                <div class="absolute -left-[21px] w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                    <i class="fa-solid fa-user text-purple-600 text-[8px]"></i>
-                                                </div>
-                                                <div>
-                                                    <p class="text-xs font-medium text-gray-900">User assigned</p>
-                                                    <div class="flex items-center gap-1 mt-0.5">
-                                                        <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
-                                                            <span class="text-[8px] font-medium text-green-600">AR</span>
-                                                        </div>
-                                                        <span class="text-[10px] text-gray-500">1 day ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="relative">
-                                                <div class="absolute -left-[21px] w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                    <i class="fa-solid fa-diagram-project text-amber-600 text-[8px]"></i>
-                                                </div>
-                                                <div>
-                                                    <p class="text-xs font-medium text-gray-900">Process created</p>
-                                                    <div class="flex items-center gap-1 mt-0.5">
-                                                        <div class="w-4 h-4 rounded-full bg-amber-100 flex items-center justify-center">
-                                                            <span class="text-[8px] font-medium text-amber-600">MR</span>
-                                                        </div>
-                                                        <span class="text-[10px] text-gray-500">1 day ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                 </section>
 
                 <section id="usage-contexts-section" class="py-12 bg-white">

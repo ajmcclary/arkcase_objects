@@ -1,28 +1,75 @@
 # UX Improvements Guide
 
-This document summarizes the UX improvements applied to Case.html, Complaint.html, Consultation.html, Task.html, Person.html, User.html, Organization.html, Group.html, Participant.html, File Object.html, File Version.html, Folder.html, and Container.html. Use this as a checklist when refactoring other HTML wireframe files.
+This document summarizes the UX improvements applied to all 28 HTML wireframe files in the ArkCase design system. Use this as a reference guide for maintaining consistency across components.
 
 ---
 
 ## Table of Contents
 
-1. [Medium Cards Internal Grid](#1-medium-cards-internal-grid)
-2. [Collapsible Sections in Large Cards](#2-collapsible-sections-in-large-cards)
-3. [Activity Timeline in Large Cards](#3-activity-timeline-in-large-cards)
-4. [Activity Timeline Sidebar Variant](#4-activity-timeline-sidebar-variant)
-5. [Dashboard Widget Headers](#5-dashboard-widget-headers)
-6. [Interaction States Section](#6-interaction-states-section)
-7. [Timeline Icon Sizing (Large Cards)](#7-timeline-icon-sizing-large-cards)
-8. [Timeline Dot Sizing (Sidebar)](#8-timeline-dot-sizing-sidebar)
-9. [Collapsible Headers with Item Counts](#9-collapsible-headers-with-item-counts)
-10. [Narrow Widget Headers](#10-narrow-widget-headers)
-11. [Object-Specific Section Icons](#11-object-specific-section-icons)
-12. [Object-Specific Timeline Events](#12-object-specific-timeline-events)
-13. [Interaction States Content Guidelines](#13-interaction-states-content-guidelines)
+1. [Small Cards Grid Layout](#1-small-cards-grid-layout)
+2. [Medium Cards Internal Grid](#2-medium-cards-internal-grid)
+3. [Collapsible Sections in Large Cards](#3-collapsible-sections-in-large-cards)
+4. [Activity Timeline in Large Cards](#4-activity-timeline-in-large-cards)
+5. [Activity Timeline Sidebar Variant](#5-activity-timeline-sidebar-variant)
+6. [Dashboard Widget Headers](#6-dashboard-widget-headers)
+7. [View All Links with Arrow Icons](#7-view-all-links-with-arrow-icons)
+8. [Interaction States Section](#8-interaction-states-section)
+9. [Timeline Icon Sizing (Large Cards)](#9-timeline-icon-sizing-large-cards)
+10. [Timeline Dot Sizing (Sidebar)](#10-timeline-dot-sizing-sidebar)
+11. [Collapsible Headers with Item Counts](#11-collapsible-headers-with-item-counts)
+12. [Narrow Widget Headers](#12-narrow-widget-headers)
+13. [Object-Specific Section Icons](#13-object-specific-section-icons)
+14. [Object-Specific Timeline Events](#14-object-specific-timeline-events)
+15. [Object-Specific Card Icons](#15-object-specific-card-icons)
+16. [Interaction States Content Guidelines](#16-interaction-states-content-guidelines)
 
 ---
 
-## 1. Medium Cards Internal Grid
+## 1. Small Cards Grid Layout
+
+**Purpose:** Convert small card sections from vertical stacking to responsive grid layouts.
+
+### Before
+```html
+<div class="space-y-4">
+    <!-- Cards stacked vertically -->
+</div>
+```
+
+### After
+```html
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Cards in responsive grid -->
+</div>
+```
+
+### Small Card Structure
+```html
+<div class="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer">
+    <div class="flex items-start gap-3">
+        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-[icon] text-blue-600"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+            <h4 class="text-sm font-semibold text-gray-900 truncate">Object Name</h4>
+            <p class="text-xs text-gray-500 mt-0.5">ID or metadata</p>
+            <div class="flex items-center gap-2 mt-2">
+                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Status</span>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### Notes
+- Use `gap-6` for consistent spacing between cards
+- Cards should have consistent height - avoid extra padding on individual cards
+- Include `hover:border-gray-300 hover:shadow-sm transition-all cursor-pointer` for interactivity
+- Use `truncate` on titles to handle overflow gracefully
+
+---
+
+## 2. Medium Cards Internal Grid
 
 **Purpose:** Improve metadata layout on desktop with a 4-column grid.
 
@@ -43,7 +90,7 @@ This document summarizes the UX improvements applied to Case.html, Complaint.htm
 
 ---
 
-## 2. Collapsible Sections in Large Cards
+## 3. Collapsible Sections in Large Cards
 
 **Purpose:** Allow users to collapse/expand sections to reduce visual clutter.
 
@@ -75,7 +122,7 @@ Replace static section headers with collapsible button toggles:
 
 ---
 
-## 3. Activity Timeline in Large Cards
+## 4. Activity Timeline in Large Cards
 
 **Purpose:** Show recent activity history within large card views.
 
@@ -129,7 +176,7 @@ Replace static section headers with collapsible button toggles:
 
 ---
 
-## 4. Activity Timeline Sidebar Variant
+## 5. Activity Timeline Sidebar Variant
 
 **Purpose:** Add a compact activity timeline as a sidebar panel option.
 
@@ -196,7 +243,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 5. Dashboard Widget Headers
+## 6. Dashboard Widget Headers
 
 **Purpose:** Add filtering options and improve touch targets for mobile.
 
@@ -233,7 +280,31 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 6. Interaction States Section
+## 7. View All Links with Arrow Icons
+
+**Purpose:** Add visual affordance to "View All" links indicating navigation.
+
+### Before
+```html
+<a href="#" class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All</a>
+```
+
+### After
+```html
+<a href="#" class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium">
+    View All
+    <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+```
+
+### Notes
+- Use `inline-flex items-center gap-1` to align text and icon
+- Arrow icon should be `text-xs` (smaller than the text)
+- Apply to all "View All" and "View full timeline" links throughout the design system
+
+---
+
+## 8. Interaction States Section
 
 **Purpose:** Replace conceptual "Design Guidelines" with visual interaction state examples.
 
@@ -343,7 +414,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 7. Timeline Icon Sizing (Large Cards)
+## 9. Timeline Icon Sizing (Large Cards)
 
 **Purpose:** Fix tiny timeline icons that render as barely visible dots.
 
@@ -378,7 +449,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 8. Timeline Dot Sizing (Sidebar)
+## 10. Timeline Dot Sizing (Sidebar)
 
 **Purpose:** Fix tiny dots in sidebar activity timeline panels.
 
@@ -411,7 +482,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 9. Collapsible Headers with Item Counts
+## 11. Collapsible Headers with Item Counts
 
 **Purpose:** Some sections display item counts (e.g., "5 total", "8 total") that should be preserved in collapsible headers.
 
@@ -434,7 +505,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 10. Narrow Widget Headers
+## 12. Narrow Widget Headers
 
 **Purpose:** Dashboard widgets with constrained width (`max-w-md`) cannot accommodate pill filters.
 
@@ -470,7 +541,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 11. Object-Specific Section Icons
+## 13. Object-Specific Section Icons
 
 **Purpose:** Each object type has relevant section icons for its collapsible headers.
 
@@ -500,7 +571,7 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 12. Object-Specific Timeline Events
+## 14. Object-Specific Timeline Events
 
 **Purpose:** Each object type has characteristic activity events for timelines.
 
@@ -530,7 +601,49 @@ Change sidebar items grid from 3 to 4 columns:
 
 ---
 
-## 13. Interaction States Content Guidelines
+## 15. Object-Specific Card Icons
+
+**Purpose:** Each object type uses a distinctive icon and color combination in cards.
+
+### Icon and Color Reference
+
+| Object Type | Icon | Background | Icon Color |
+|-------------|------|------------|------------|
+| Container | `fa-solid fa-box` | `bg-blue-100` | `text-blue-600` |
+| Folder | `fa-solid fa-folder` | `bg-amber-100` | `text-amber-600` |
+| File Object | `fa-solid fa-file` | `bg-blue-100` | `text-blue-600` |
+| File Version | `fa-solid fa-file-circle-check` | `bg-green-100` | `text-green-600` |
+| Task | `fa-solid fa-clipboard-check` | `bg-orange-100` | `text-orange-600` |
+| Case | `fa-solid fa-briefcase` | `bg-blue-100` | `text-blue-600` |
+| Complaint | `fa-solid fa-clipboard-list` | `bg-red-100` | `text-red-600` |
+| Person | `fa-solid fa-user` | `bg-blue-100` | `text-blue-600` |
+| User | `fa-solid fa-user-gear` | `bg-indigo-100` | `text-indigo-600` |
+| Organization | `fa-solid fa-building` | `bg-purple-100` | `text-purple-600` |
+| Group | `fa-solid fa-users` | `bg-blue-100` | `text-blue-600` |
+| Participant | `fa-solid fa-user-tag` | `bg-teal-100` | `text-teal-600` |
+| Note | `fa-solid fa-sticky-note` | `bg-yellow-100` | `text-yellow-600` |
+| Notification | `fa-solid fa-bell` | `bg-amber-100` | `text-amber-600` |
+
+### Usage in Interaction States
+When creating Interaction States sections, use the object's specific icon and color:
+
+```html
+<div class="w-10 h-10 bg-[color]-100 rounded-lg flex items-center justify-center flex-shrink-0">
+    <i class="fa-solid fa-[icon] text-[color]-600"></i>
+</div>
+```
+
+### Disabled State Override
+For disabled states, override with gray:
+```html
+<div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+    <i class="fa-solid fa-[icon] text-gray-400"></i>
+</div>
+```
+
+---
+
+## 16. Interaction States Content Guidelines
 
 **Purpose:** Ensure interaction state cards display object-appropriate content.
 
@@ -581,41 +694,52 @@ For disabled cards, apply grayscale to all elements:
 - [x] Person.html
 - [x] User.html
 - [x] Organization.html
+- [x] Group.html
+- [x] Participant.html
+- [x] File Object.html
+- [x] File Version.html
+- [x] Folder.html
+- [x] Container.html
+- [x] Associated Tag.html
+- [x] Tag.html
+- [x] Object Association.html
+- [x] Audit Event.html
+- [x] Object History.html
+- [x] Recycle Bin Item.html
+- [x] Chat Conversation.html
+- [x] Chat Message.html
+- [x] Notification.html
+- [x] Cost.html
+- [x] Costsheet.html
+- [x] Queue.html
+- [x] Note.html
+- [x] Subscription.html
+- [x] Business Process.html
 
 ## Files Remaining
 
-- [ ] Associated Tag.html
-- [ ] Audit Event.html
-- [ ] Business Process.html
-- [ ] Chat Conversation.html
-- [ ] Chat Message.html
-- [ ] Container.html
-- [ ] Cost.html
-- [ ] Costsheet.html
-- [ ] File Object.html
-- [ ] File Version.html
-- [ ] Folder.html
-- [ ] Group.html
-- [ ] Note.html
-- [ ] Notification.html
-- [ ] Object Association.html
-- [ ] Object History.html
-- [ ] Organization.html
-- [ ] Participant.html
-- [ ] Queue.html
-- [ ] Recycle Bin Item.html
-- [ ] Subscription.html
-- [ ] Tag.html
-- [ ] User.html
+All 28 wireframe files have been updated with UX improvements!
 
 ---
 
 ## Quick Reference: Find & Replace Patterns
 
+### Small Cards Grid (Vertical to Grid)
+```
+Find:    <div class="space-y-4">
+Replace: <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+```
+
 ### Medium Card Grids
 ```
 Find:    grid grid-cols-1 md:grid-cols-2 gap-3
 Replace: grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3
+```
+
+### View All Links (Add Arrow Icon)
+```
+Find:    class="text-sm text-blue-600 hover:text-blue-700 font-medium">View All</a>
+Replace: class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium">View All <i class="fa-solid fa-arrow-right text-xs"></i></a>
 ```
 
 ### Large Card Timeline Icons
@@ -643,4 +767,13 @@ Replace: w-2.5 h-2.5 bg-{color}-500 rounded-full
 ```
 Find:    grid-cols-1 md:grid-cols-2 lg:grid-cols-3
 Replace: grid-cols-1 md:grid-cols-2 xl:grid-cols-4
+```
+
+### Interaction States Section ID
+```
+Find:    id="behavioral-states-section"
+Replace: id="interaction-states-section"
+
+Find:    id="interaction-patterns-section"
+Replace: id="interaction-states-section"
 ```

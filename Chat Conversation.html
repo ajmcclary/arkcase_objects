@@ -2885,11 +2885,13 @@
                                     </div>
                                 </div>
                                 <div class="px-5 py-3 border-t border-gray-200">
-                                    <button
-                                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                                    <a
+                                        href="#"
+                                        class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium"
                                     >
                                         View All Conversations
-                                    </button>
+                                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -3388,7 +3390,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                             <!-- Related Conversations Panel -->
                             <div>
                                 <h3
@@ -3524,11 +3526,13 @@
                                     <div
                                         class="px-4 py-3 border-t border-gray-200"
                                     >
-                                        <button
-                                            class="text-xs text-blue-600 hover:text-blue-700 font-medium"
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 font-medium"
                                         >
                                             View All Related
-                                        </button>
+                                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3778,6 +3782,96 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- Conversation Activity Timeline -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                                    Conversation Activity Timeline
+                                </h3>
+                                <div class="bg-gray-100 rounded-lg p-4">
+                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
+                                        <!-- Header -->
+                                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
+                                                <span class="text-sm font-semibold text-gray-900">Conversation Activity</span>
+                                            </div>
+                                            <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium">
+                                                View All
+                                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                                            </a>
+                                        </div>
+                                        <!-- Timeline Content -->
+                                        <div class="p-3">
+                                            <!-- Today Section -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3 mb-4">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-message text-blue-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">New message sent</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">SC</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">2 mins ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <div class="w-2.5 h-2.5 bg-green-500 rounded-full"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Conversation started</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">SC</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">15 mins ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Yesterday Section -->
+                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
+                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-user text-purple-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Participant added</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">DM</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[21px] w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                                                        <i class="fa-solid fa-file text-amber-600 text-[8px]"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-xs font-medium text-gray-900">Document shared</p>
+                                                        <div class="flex items-center gap-1 mt-0.5">
+                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                                <span class="text-[8px] font-medium text-blue-600">MT</span>
+                                                            </div>
+                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-3">Chronological feed of conversation events and updates</p>
                             </div>
                         </div>
                     </div>
@@ -4186,162 +4280,141 @@
                     </div>
                 </section>
 
-                <section
-                    id="interaction-patterns-section"
-                    class="py-12 bg-white"
-                >
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
-                        <div
-                            class="bg-white border border-gray-200 rounded-lg p-8"
-                        >
-                            <h2
-                                class="text-2xl font-bold text-gray-900 mb-6 flex items-center"
-                            >
-                                <i
-                                    class="fa-solid fa-hand-pointer text-blue-600 mr-3 text-xl"
-                                ></i>
-                                Interaction Patterns
-                            </h2>
-                            <div class="space-y-6">
-                                <div class="flex items-start">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                                    >
-                                        <i
-                                            class="fa-solid fa-mouse-pointer text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-semibold text-gray-900 mb-2"
-                                        >
-                                            Clickable Card Areas
-                                        </h3>
-                                        <p class="text-sm text-gray-600 mb-2">
-                                            In Small and Medium variants, the
-                                            entire card should be clickable to
-                                            open the conversation. In Large
-                                            variants, specific action buttons
-                                            provide clear navigation paths.
-                                        </p>
-                                        <div class="flex space-x-2 mt-3">
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
-                                                >Small: Full Card</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
-                                                >Medium: Full Card</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
-                                                >Large: Button Actions</span
-                                            >
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for conversation card interaction states across the design system</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-comments text-blue-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Customer Support Inquiry</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">CHAT-2024-00847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex items-start">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                                    >
-                                        <i
-                                            class="fa-solid fa-arrow-pointer text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-semibold text-gray-900 mb-2"
-                                        >
-                                            Hover States
-                                        </h3>
-                                        <p class="text-sm text-gray-600 mb-2">
-                                            Cards should provide visual feedback
-                                            on hover with subtle border color
-                                            changes and shadow elevation to
-                                            indicate interactivity.
-                                        </p>
-                                        <div class="flex space-x-2 mt-3">
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-purple-50 text-purple-700 border border-purple-200"
-                                                >Border Highlight</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-purple-50 text-purple-700 border border-purple-200"
-                                                >Shadow Elevation</span
-                                            >
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
+                            </div>
+
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
+                                </div>
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-comments text-blue-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Customer Support Inquiry</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">CHAT-2024-00847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex items-start">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                                    >
-                                        <i
-                                            class="fa-solid fa-keyboard text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-semibold text-gray-900 mb-2"
-                                        >
-                                            Keyboard Navigation
-                                        </h3>
-                                        <p class="text-sm text-gray-600 mb-2">
-                                            Cards must be keyboard accessible
-                                            with clear focus indicators. Tab
-                                            navigation should move logically
-                                            through card elements and action
-                                            buttons.
-                                        </p>
-                                        <div class="flex space-x-2 mt-3">
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-50 text-green-700 border border-green-200"
-                                                >Tab Navigation</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-50 text-green-700 border border-green-200"
-                                                >Focus Indicators</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-50 text-green-700 border border-green-200"
-                                                >Enter to Activate</span
-                                            >
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
+                            </div>
+
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
+                                </div>
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-comments text-blue-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Customer Support Inquiry</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">CHAT-2024-00847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex items-start">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                                    >
-                                        <i
-                                            class="fa-solid fa-ellipsis-vertical text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-semibold text-gray-900 mb-2"
-                                        >
-                                            Contextual Actions
-                                        </h3>
-                                        <p class="text-sm text-gray-600 mb-2">
-                                            Large cards include a more menu (⋮)
-                                            for additional actions such as
-                                            archiving, sharing, or marking as
-                                            unread. Actions must respect user
-                                            permissions.
-                                        </p>
-                                        <div class="flex space-x-2 mt-3">
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-orange-50 text-orange-700 border border-orange-200"
-                                                >Permission-Aware</span
-                                            >
-                                            <span
-                                                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-orange-50 text-orange-700 border border-orange-200"
-                                                >Contextual Menu</span
-                                            >
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
+                            </div>
+
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
+                                </div>
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-comments text-blue-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Customer Support Inquiry</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">CHAT-2024-00847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                            </div>
+
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-comments text-gray-400"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Customer Support Inquiry</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">CHAT-2024-00847</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Archived</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>

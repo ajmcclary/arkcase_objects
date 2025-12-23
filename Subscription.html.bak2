@@ -2582,7 +2582,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <!-- Subscribed Objects Panel -->
                             <div>
                                 <h3
@@ -2884,100 +2884,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Sidebar Item 4: Subscription Activity Timeline -->
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-4">
-                                    Activity Timeline
-                                </h3>
-                                <div class="bg-gray-100 rounded-lg p-4">
-                                    <div class="bg-white rounded-lg border border-gray-200 shadow-sm w-64">
-                                        <!-- Header -->
-                                        <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
-                                            <div class="flex items-center gap-2">
-                                                <i class="fa-solid fa-clock-rotate-left text-blue-600 text-sm"></i>
-                                                <span class="text-sm font-semibold text-gray-900">Subscription Activity</span>
-                                            </div>
-                                            <a href="#" class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium">
-                                                View All
-                                                <i class="fa-solid fa-arrow-right text-xs"></i>
-                                            </a>
-                                        </div>
-
-                                        <!-- Activity Timeline Content -->
-                                        <div class="p-3">
-                                            <!-- Today Section -->
-                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Today</div>
-                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3 mb-4">
-                                                <div class="relative">
-                                                    <div class="absolute -left-[21px] w-5 h-5 bg-green-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                        <i class="fa-solid fa-circle text-green-600 text-[8px]"></i>
-                                                    </div>
-                                                    <div>
-                                                        <p class="text-xs font-medium text-gray-900">Subscription created</p>
-                                                        <div class="flex items-center gap-1 mt-0.5">
-                                                            <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
-                                                                <span class="text-[8px] font-medium text-blue-600">SM</span>
-                                                            </div>
-                                                            <span class="text-[10px] text-gray-500">2 hours ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="relative">
-                                                    <div class="absolute -left-[21px] w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                        <i class="fa-solid fa-user text-purple-600 text-[8px]"></i>
-                                                    </div>
-                                                    <div>
-                                                        <p class="text-xs font-medium text-gray-900">Notification sent</p>
-                                                        <div class="flex items-center gap-1 mt-0.5">
-                                                            <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
-                                                                <span class="text-[8px] font-medium text-purple-600">JD</span>
-                                                            </div>
-                                                            <span class="text-[10px] text-gray-500">4 hours ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Yesterday Section -->
-                                            <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Yesterday</div>
-                                            <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
-                                                <div class="relative">
-                                                    <div class="absolute -left-[21px] w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                        <i class="fa-solid fa-cog text-amber-600 text-[8px]"></i>
-                                                    </div>
-                                                    <div>
-                                                        <p class="text-xs font-medium text-gray-900">Settings updated</p>
-                                                        <div class="flex items-center gap-1 mt-0.5">
-                                                            <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
-                                                                <span class="text-[8px] font-medium text-green-600">AR</span>
-                                                            </div>
-                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="relative">
-                                                    <div class="absolute -left-[21px] w-5 h-5 bg-red-100 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
-                                                        <i class="fa-solid fa-xmark text-red-600 text-[8px]"></i>
-                                                    </div>
-                                                    <div>
-                                                        <p class="text-xs font-medium text-gray-900">Subscription paused</p>
-                                                        <div class="flex items-center gap-1 mt-0.5">
-                                                            <div class="w-4 h-4 rounded-full bg-amber-100 flex items-center justify-center">
-                                                                <span class="text-[8px] font-medium text-amber-600">MR</span>
-                                                            </div>
-                                                            <span class="text-[10px] text-gray-500">1 day ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-gray-500 mt-3">Chronological feed of subscription events and updates</p>
                             </div>
                         </div>
                     </div>
@@ -3282,141 +3188,295 @@
                     </div>
                 </section>
 
-                <!-- Interaction States Section -->
-                <section id="interaction-states-section" class="py-12 bg-gray-50">
+                <section
+                    id="design-principles-section"
+                    class="py-12 bg-gray-50"
+                >
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
-                            <p class="text-gray-600">Visual reference for subscription card interaction states across the design system</p>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">
+                                Design Principles & Guidelines
+                            </h2>
+                            <p class="text-gray-600">
+                                Core principles governing subscription card
+                                design in ArkCase
+                            </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Default State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-rss text-purple-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Status Updates</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">SUB-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
-                                            </div>
-                                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div
+                                id="principle-card-1"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-eye text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            Clear Object Identity
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            Every subscription card must
+                                            immediately communicate what object
+                                            is being subscribed to, with clear
+                                            visual hierarchy distinguishing the
+                                            subscription from the subscribed
+                                            object.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
+                                <div
+                                    class="bg-blue-50 rounded-lg p-4 border border-blue-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-blue-900 mb-2"
+                                    >
+                                        Implementation
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>
+                                            • Subscription icon always visible
+                                        </li>
+                                        <li>• Object type clearly labeled</li>
+                                        <li>
+                                            • Primary title uses consistent
+                                            formatting
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <!-- Hover State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
-                                </div>
-                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-rss text-purple-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Status Updates</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">SUB-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
-                                            </div>
-                                        </div>
+                            <div
+                                id="principle-card-2"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user-check text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            Subscriber Prominence
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            The subscribed user must be
+                                            immediately identifiable through
+                                            avatar, name, or both depending on
+                                            card size, ensuring clarity about
+                                            who will receive notifications.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
+                                <div
+                                    class="bg-green-50 rounded-lg p-4 border border-green-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-green-900 mb-2"
+                                    >
+                                        Implementation
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>• Avatar in all variants</li>
+                                        <li>
+                                            • Name visible in medium and large
+                                        </li>
+                                        <li>• Role/title in large cards</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <!-- Selected State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
-                                </div>
-                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-rss text-purple-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Status Updates</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">SUB-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
-                                            </div>
-                                        </div>
+                            <div
+                                id="principle-card-3"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-layer-group text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            Scalable Context
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            Information density must scale
+                                            appropriately from small to large
+                                            cards, with each variant feeling
+                                            like a natural expansion of the
+                                            previous, not a completely different
+                                            design.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
+                                <div
+                                    class="bg-purple-50 rounded-lg p-4 border border-purple-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-purple-900 mb-2"
+                                    >
+                                        Implementation
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>• Consistent visual language</li>
+                                        <li>
+                                            • Progressive information disclosure
+                                        </li>
+                                        <li>• Predictable layout expansion</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <!-- Focus State (Keyboard) -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
-                                </div>
-                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-rss text-purple-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Status Updates</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">SUB-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
-                                            </div>
-                                        </div>
+                            <div
+                                id="principle-card-4"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-shield-halved text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            Permission Awareness
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            Subscription cards must respect
+                                            permission boundaries, showing or
+                                            hiding actions like unsubscribe
+                                            based on user roles and object
+                                            access rights.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                                <div
+                                    class="bg-orange-50 rounded-lg p-4 border border-orange-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-orange-900 mb-2"
+                                    >
+                                        Implementation
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>• Conditional action visibility</li>
+                                        <li>
+                                            • Disabled states for restricted
+                                            actions
+                                        </li>
+                                        <li>• Clear permission indicators</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <!-- Disabled State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
-                                </div>
-                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-rss text-gray-400"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Case Status Updates</h4>
-                                            <p class="text-xs text-gray-400 mt-0.5">SUB-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Paused</span>
-                                            </div>
-                                        </div>
+                            <div
+                                id="principle-card-5"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-ban text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            No Notification Mechanics
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            Subscription cards focus on
+                                            subscription context, not
+                                            notification delivery. Avoid showing
+                                            notification types, schedules, or
+                                            delivery preferences.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                                <div
+                                    class="bg-red-50 rounded-lg p-4 border border-red-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-red-900 mb-2"
+                                    >
+                                        What to Avoid
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>
+                                            • Notification frequency settings
+                                        </li>
+                                        <li>• Delivery channel preferences</li>
+                                        <li>• Message templates or rules</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <!-- Loading Skeleton State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
-                                        <div class="flex-1 min-w-0 space-y-2">
-                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
-                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
-                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
-                                        </div>
+                            <div
+                                id="principle-card-6"
+                                class="bg-white rounded-lg border border-gray-200 p-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="flex-shrink-0 bg-blue-100 p-3 rounded-lg"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrows-up-down text-blue-600 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-bold text-gray-900 mb-2"
+                                        >
+                                            Status Visibility
+                                        </h3>
+                                        <p class="text-sm text-gray-600">
+                                            Subscription state (active, paused,
+                                            expired) must be clearly visible and
+                                            consistently styled across all card
+                                            variants to prevent confusion.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
+                                <div
+                                    class="bg-teal-50 rounded-lg p-4 border border-teal-200"
+                                >
+                                    <div
+                                        class="text-xs font-semibold text-teal-900 mb-2"
+                                    >
+                                        Implementation
+                                    </div>
+                                    <ul class="text-xs text-gray-700 space-y-1">
+                                        <li>• Color-coded status badges</li>
+                                        <li>• Consistent badge positioning</li>
+                                        <li>
+                                            • Explanatory text in large cards
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -729,7 +729,7 @@
                                 Design Specifications
                             </h3>
                             <div
-                                class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 text-sm"
+                                class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"
                             >
                                 <div>
                                     <p class="font-medium text-gray-700 mb-2">
@@ -1220,7 +1220,7 @@
                                 Design Specifications
                             </h3>
                             <div
-                                class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 text-sm"
+                                class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"
                             >
                                 <div>
                                     <p class="font-medium text-gray-700 mb-2">
@@ -2150,7 +2150,7 @@
                                 Design Specifications
                             </h3>
                             <div
-                                class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 text-sm"
+                                class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"
                             >
                                 <div>
                                     <p class="font-medium text-gray-700 mb-2">
@@ -4048,133 +4048,395 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Default State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-sticky-note text-yellow-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Client Call Summary</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">NOTE-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">General</span>
-                                            </div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-1"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Authorship Clarity
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Author identity must be immediately
+                                            clear
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Always display author name
+                                            prominently</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Use avatars for human authors in
+                                            Medium/Large cards</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Distinguish system-generated notes
+                                            with appropriate iconography</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Maintain consistent author
+                                            placement across all variants</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
 
-                            <!-- Hover State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
-                                </div>
-                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-sticky-note text-yellow-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Client Call Summary</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">NOTE-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">General</span>
-                                            </div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-2"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-clock text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Temporal Context
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Time information must be
+                                            contextually appropriate
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Use relative time ("2h ago") for
+                                            Small cards in recent activity</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Show full timestamps in Medium
+                                            cards for clarity</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Include both created and modified
+                                            dates in Large cards</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Ensure timestamps are always
+                                            visible and legible</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
 
-                            <!-- Selected State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
-                                </div>
-                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-sticky-note text-yellow-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Client Call Summary</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">NOTE-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">General</span>
-                                            </div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-3"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-layer-group text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Visual Hierarchy
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Content priority must guide visual
+                                            weight
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Note content is primary; metadata
+                                            is secondary</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Use typography scale to establish
+                                            clear hierarchy</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Group related information
+                                            visually</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Maintain visual balance across card
+                                            variants</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
 
-                            <!-- Focus State (Keyboard) -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
-                                </div>
-                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-sticky-note text-yellow-600"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Client Call Summary</h4>
-                                            <p class="text-xs text-gray-500 mt-0.5">NOTE-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">General</span>
-                                            </div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-4"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-shield-halved text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Access Control
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Visibility and permissions must be
+                                            clear
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Clearly distinguish Internal vs.
+                                            General notes</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Use consistent visual indicators
+                                            for restricted content</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Show permission-aware actions
+                                            only</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Include access warnings for
+                                            sensitive notes</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
 
-                            <!-- Disabled State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
-                                </div>
-                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-sticky-note text-gray-400"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Client Call Summary</h4>
-                                            <p class="text-xs text-gray-400 mt-0.5">NOTE-2024-0156</p>
-                                            <div class="flex items-center gap-2 mt-2">
-                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Archived</span>
-                                            </div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-5"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-link text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Contextual Relationship
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Parent object connection must be
+                                            evident
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Show parent context in Large cards
+                                            with clear linking</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Keep parent reference visually
+                                            subordinate to note content</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Use consistent parent object card
+                                            styling</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Provide clear navigation to parent
+                                            object</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
 
-                            <!-- Loading Skeleton State -->
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
-                                </div>
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
-                                        <div class="flex-1 min-w-0 space-y-2">
-                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
-                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
-                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
-                                        </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-6"
+                                id="principle-6"
+                            >
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                                    >
+                                        <i
+                                            class="fa-solid fa-hand-pointer text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-lg font-semibold text-gray-900"
+                                        >
+                                            Progressive Disclosure
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Information scales with card size
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Small cards show minimal essential
+                                            information</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Medium cards add context and
+                                            preview</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Large cards reveal full content and
+                                            relationships</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i
+                                            class="fa-solid fa-check text-green-600 mt-1 flex-shrink-0"
+                                        ></i>
+                                        <span
+                                            >Each variant feels like natural
+                                            progression</span
+                                        >
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="type-indicators-section" class="py-12 bg-gray-50">
+                    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                        <div class="mb-8">
                             <h2 class="text-2xl font-bold text-gray-900 mb-2">
                                 Note Type Indicators
                             </h2>

@@ -482,7 +482,7 @@
                             </p>
                         </div>
 
-                        <div class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div
                                 id="small-card-1"
                                 class="bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow cursor-pointer"
@@ -1720,9 +1720,10 @@
                                 </div>
                                 <div class="px-5 py-3 border-t border-gray-200">
                                     <button
-                                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                                        class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium"
                                     >
                                         View All Costs
+                                        <i class="fa-solid fa-arrow-right text-xs"></i>
                                     </button>
                                 </div>
                             </div>
@@ -2217,6 +2218,102 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Sidebar Item 4: Cost Activity Timeline -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                                    Cost Activity
+                                </h3>
+                                <div class="bg-white rounded-lg border border-gray-200 shadow-sm" style="width: 264px">
+                                    <!-- Panel Header -->
+                                    <div class="px-4 py-3 border-b border-gray-200">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-clock-rotate-left text-blue-600"></i>
+                                            <span class="font-semibold text-gray-900 text-sm">Activity Timeline</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Today Section -->
+                                    <div class="px-4 py-3">
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Today</h4>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
+                                            <div class="relative">
+                                                <div class="absolute w-5 h-5 bg-green-100 rounded-full flex items-center justify-center -left-[21px] border-2 border-white shadow-sm">
+                                                    <div class="w-2.5 h-2.5 bg-green-500 rounded-full"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="text-xs font-medium text-gray-900">Cost added</p>
+                                                    <div class="flex items-center gap-1 mt-0.5">
+                                                        <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                            <span class="text-[8px] font-medium text-blue-600">JD</span>
+                                                        </div>
+                                                        <span class="text-[10px] text-gray-500">2 hours ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="relative">
+                                                <div class="absolute w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center -left-[21px] border-2 border-white shadow-sm">
+                                                    <div class="w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="text-xs font-medium text-gray-900">Amount updated</p>
+                                                    <div class="flex items-center gap-1 mt-0.5">
+                                                        <div class="w-4 h-4 rounded-full bg-purple-100 flex items-center justify-center">
+                                                            <span class="text-[8px] font-medium text-purple-600">SM</span>
+                                                        </div>
+                                                        <span class="text-[10px] text-gray-500">4 hours ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Yesterday Section -->
+                                    <div class="px-4 py-3 border-t border-gray-100">
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Yesterday</h4>
+                                        <div class="relative pl-6 border-l-2 border-gray-200 space-y-3">
+                                            <div class="relative">
+                                                <div class="absolute w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center -left-[21px] border-2 border-white shadow-sm">
+                                                    <div class="w-2.5 h-2.5 bg-amber-500 rounded-full"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="text-xs font-medium text-gray-900">Cost approved</p>
+                                                    <div class="flex items-center gap-1 mt-0.5">
+                                                        <div class="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
+                                                            <span class="text-[8px] font-medium text-green-600">AR</span>
+                                                        </div>
+                                                        <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="relative">
+                                                <div class="absolute w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center -left-[21px] border-2 border-white shadow-sm">
+                                                    <div class="w-2.5 h-2.5 bg-purple-500 rounded-full"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="text-xs font-medium text-gray-900">Category changed</p>
+                                                    <div class="flex items-center gap-1 mt-0.5">
+                                                        <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                                                            <span class="text-[8px] font-medium text-blue-600">MR</span>
+                                                        </div>
+                                                        <span class="text-[10px] text-gray-500">1 day ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- View Full Timeline Link -->
+                                    <div class="px-4 py-3 border-t border-gray-200">
+                                        <a href="#" class="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 font-medium">
+                                            View full timeline
+                                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -2234,7 +2331,7 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                             <div id="comparison-small" class="space-y-2">
                                 <div
                                     class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 px-1"
@@ -3435,426 +3532,141 @@
                     </div>
                 </section>
 
-                <section
-                    id="design-specifications-section"
-                    class="py-12 bg-white"
-                >
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
-                                Design Guidelines
-                            </h2>
-                            <p class="text-gray-600">
-                                Technical specifications and consistency rules
-                                for implementing Cost cards across the ArkCase
-                                platform.
-                            </p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for cost card interaction states across the design system</p>
                         </div>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                            <div
-                                id="spec-visual-hierarchy"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-layer-group text-purple-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Visual Hierarchy
-                                    </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Amount Prominence
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                Cost amount must be the most
-                                                visually prominent element in
-                                                all variants
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Office Supplies - Q1</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">COST-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Approved</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Object Type Clarity
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                Cost icon and label must clearly
-                                                identify the object type
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Progressive Disclosure
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                Information density scales from
-                                                Small → Medium → Large
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
                             </div>
 
-                            <div
-                                id="spec-typography"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-font text-blue-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Typography Scale
-                                    </h3>
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Small Card Amount
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                text-lg font-bold (18px, 700
-                                                weight)
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Office Supplies - Q1</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">COST-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Approved</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Medium Card Amount
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                text-xl font-bold (20px, 700
-                                                weight)
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Large Card Amount
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                text-3xl font-bold (30px, 700
-                                                weight)
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
                             </div>
 
-                            <div
-                                id="spec-spacing"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-ruler-combined text-orange-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Spacing & Layout
-                                    </h3>
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Small Card Padding
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                px-4 py-3 (16px horizontal, 12px
-                                                vertical)
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Office Supplies - Q1</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">COST-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Approved</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Medium Card Padding
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                p-5 (20px all sides)
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Large Card Padding
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                p-6 (24px all sides)
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
                             </div>
 
-                            <div
-                                id="spec-colors"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-palette text-pink-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Color System
-                                    </h3>
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Cost Icon Background
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                bg-blue-100 (light blue,
-                                                #DBEAFE)
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Office Supplies - Q1</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">COST-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Approved</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Cost Icon Color
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                text-blue-600 (blue, #2563EB)
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Parent Reference
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                bg-blue-50 with border-blue-100
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
                             </div>
 
-                            <div
-                                id="spec-interactions"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-hand-pointer text-green-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Interaction States
-                                    </h3>
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Hover State
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                shadow-md or shadow-lg with
-                                                smooth transition
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-dollar-sign text-gray-400"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Office Supplies - Q1</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">COST-2024-0145</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Rejected</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Clickable Cards
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                cursor-pointer on Small cards,
-                                                actions visible on Medium/Large
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Button States
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                hover:bg-blue-700 for primary
-                                                actions
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
                             </div>
 
-                            <div
-                                id="spec-accessibility"
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <div class="flex items-center gap-3 mb-4">
-                                    <div
-                                        class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center"
-                                    >
-                                        <i
-                                            class="fa-solid fa-universal-access text-indigo-600"
-                                        ></i>
-                                    </div>
-                                    <h3 class="text-lg font-bold text-gray-900">
-                                        Accessibility
-                                    </h3>
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
                                 </div>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Color Contrast
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                Minimum WCAG AA compliance for
-                                                all text
-                                            </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
                                         </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Keyboard Navigation
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                All interactive elements must be
-                                                keyboard accessible
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i
-                                            class="fa-solid fa-check text-green-600 mt-1"
-                                        ></i>
-                                        <div>
-                                            <div
-                                                class="font-medium text-gray-900"
-                                            >
-                                                Screen Reader Support
-                                            </div>
-                                            <div class="text-sm text-gray-600">
-                                                Semantic HTML and ARIA labels
-                                                where needed
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>
