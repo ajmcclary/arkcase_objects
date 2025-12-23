@@ -4260,240 +4260,141 @@
                     </div>
                 </section>
 
-                <section
-                    id="behavioral-states-section"
-                    class="py-12 bg-gray-50"
-                >
+                <!-- Interaction States Section -->
+                <section id="interaction-states-section" class="py-12 bg-gray-50">
                     <div class="container mx-auto px-4 md:px-6 lg:px-8">
                         <div class="mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900 mb-2">
-                                Interaction Patterns
-                            </h2>
-                            <p class="text-gray-600">
-                                Comprehensive state variations demonstrating
-                                hover, selected, disabled, and error states
-                                across folder cards.
-                            </p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Interaction States</h2>
+                            <p class="text-gray-600">Visual reference for folder card interaction states across the design system</p>
                         </div>
 
-                        <div
-                            id="behavioral-examples"
-                            class="grid grid-cols-1 md:grid-cols-2 gap-6"
-                        >
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <h3
-                                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4"
-                                >
-                                    Hover State
-                                </h3>
-                                <div
-                                    class="bg-gray-50 border border-gray-300 rounded-lg p-4 shadow-md transition-shadow"
-                                >
-                                    <div
-                                        class="flex items-start space-x-3 mb-3"
-                                    >
-                                        <i
-                                            class="fa-regular fa-folder text-blue-600 text-2xl mt-1"
-                                        ></i>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Default State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-700">Default</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-folder text-amber-600"></i>
+                                        </div>
                                         <div class="flex-1 min-w-0">
-                                            <div
-                                                class="flex items-center space-x-2 mb-1"
-                                            >
-                                                <span
-                                                    class="text-xs font-medium text-gray-500 uppercase tracking-wide"
-                                                    >Folder</span
-                                                >
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Attachments</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">24 items • 156 MB</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
                                             </div>
-                                            <h4
-                                                class="text-base font-semibold text-gray-900 mb-1 truncate"
-                                            >
-                                                Case Attachments
-                                            </h4>
-                                            <p class="text-sm text-gray-500">
-                                                Case #2024-1847-CR
-                                            </p>
                                         </div>
                                     </div>
-                                    <div
-                                        class="flex items-center justify-between pt-3 border-t border-gray-200"
-                                    >
-                                        <span class="text-sm text-gray-600"
-                                            >24 items</span
-                                        >
-                                        <button
-                                            class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700"
-                                        >
-                                            Open
-                                        </button>
-                                    </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Standard card appearance with no user interaction</p>
                             </div>
 
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <h3
-                                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4"
-                                >
-                                    Selected State
-                                </h3>
-                                <div
-                                    class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4 shadow-lg"
-                                >
-                                    <div
-                                        class="flex items-start space-x-3 mb-3"
-                                    >
-                                        <i
-                                            class="fa-solid fa-folder text-blue-600 text-2xl mt-1"
-                                        ></i>
+                            <!-- Hover State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Hover</span>
+                                </div>
+                                <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-md cursor-pointer">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-folder text-amber-600"></i>
+                                        </div>
                                         <div class="flex-1 min-w-0">
-                                            <div
-                                                class="flex items-center space-x-2 mb-1"
-                                            >
-                                                <span
-                                                    class="text-xs font-medium text-blue-700 uppercase tracking-wide"
-                                                    >Folder</span
-                                                >
-                                                <i
-                                                    class="fa-solid fa-check-circle text-blue-600"
-                                                ></i>
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Attachments</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">24 items • 156 MB</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
                                             </div>
-                                            <h4
-                                                class="text-base font-semibold text-gray-900 mb-1 truncate"
-                                            >
-                                                Case Attachments
-                                            </h4>
-                                            <p class="text-sm text-blue-700">
-                                                Case #2024-1847-CR
-                                            </p>
                                         </div>
                                     </div>
-                                    <div
-                                        class="flex items-center justify-between pt-3 border-t border-blue-200"
-                                    >
-                                        <span class="text-sm text-gray-700"
-                                            >24 items</span
-                                        >
-                                        <button
-                                            class="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded"
-                                        >
-                                            Open
-                                        </button>
-                                    </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Background shifts, border darkens, shadow appears on mouse hover</p>
                             </div>
 
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <h3
-                                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4"
-                                >
-                                    Disabled State
-                                </h3>
-                                <div
-                                    class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed"
-                                >
-                                    <div
-                                        class="flex items-start space-x-3 mb-3"
-                                    >
-                                        <i
-                                            class="fa-solid fa-folder text-gray-400 text-2xl mt-1"
-                                        ></i>
+                            <!-- Selected State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700">Selected</span>
+                                </div>
+                                <div class="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-folder text-amber-600"></i>
+                                        </div>
                                         <div class="flex-1 min-w-0">
-                                            <div
-                                                class="flex items-center space-x-2 mb-1"
-                                            >
-                                                <span
-                                                    class="text-xs font-medium text-gray-500 uppercase tracking-wide"
-                                                    >Folder</span
-                                                >
-                                                <span
-                                                    class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-semibold rounded"
-                                                    >No Access</span
-                                                >
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Attachments</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">24 items • 156 MB</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
                                             </div>
-                                            <h4
-                                                class="text-base font-semibold text-gray-600 mb-1 truncate"
-                                            >
-                                                HR Personnel Files
-                                            </h4>
-                                            <p class="text-sm text-gray-500">
-                                                Case #2024-2156-HR
-                                            </p>
                                         </div>
                                     </div>
-                                    <div
-                                        class="flex items-center justify-between pt-3 border-t border-gray-200"
-                                    >
-                                        <span class="text-sm text-gray-400"
-                                            >Restricted</span
-                                        >
-                                        <button
-                                            class="px-3 py-1 bg-gray-300 text-gray-500 text-sm font-medium rounded cursor-not-allowed"
-                                            disabled
-                                        >
-                                            Open
-                                        </button>
-                                    </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Blue tint background with prominent blue border for active selection</p>
                             </div>
 
-                            <div
-                                class="bg-white border border-gray-200 rounded-lg p-6"
-                            >
-                                <h3
-                                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4"
-                                >
-                                    Error State
-                                </h3>
-                                <div
-                                    class="bg-red-50 border-2 border-red-300 rounded-lg p-4"
-                                >
-                                    <div
-                                        class="flex items-start space-x-3 mb-3"
-                                    >
-                                        <i
-                                            class="fa-solid fa-folder-open text-red-600 text-2xl mt-1"
-                                        ></i>
+                            <!-- Focus State (Keyboard) -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-purple-100 text-purple-700">Focus (Keyboard)</span>
+                                </div>
+                                <div class="bg-white border-2 border-blue-500 rounded-lg p-4 ring-2 ring-blue-200 ring-offset-2">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-folder text-amber-600"></i>
+                                        </div>
                                         <div class="flex-1 min-w-0">
-                                            <div
-                                                class="flex items-center space-x-2 mb-1"
-                                            >
-                                                <span
-                                                    class="text-xs font-medium text-gray-500 uppercase tracking-wide"
-                                                    >Folder</span
-                                                >
-                                                <span
-                                                    class="px-2 py-0.5 bg-red-200 text-red-900 text-xs font-semibold rounded"
-                                                    >Error</span
-                                                >
+                                            <h4 class="text-sm font-semibold text-gray-900 truncate">Case Attachments</h4>
+                                            <p class="text-xs text-gray-500 mt-0.5">24 items • 156 MB</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
                                             </div>
-                                            <h4
-                                                class="text-base font-semibold text-gray-900 mb-1 truncate"
-                                            >
-                                                Corrupted Archive
-                                            </h4>
-                                            <p class="text-sm text-red-700">
-                                                Unable to load folder contents
-                                            </p>
                                         </div>
                                     </div>
-                                    <div
-                                        class="flex items-center justify-between pt-3 border-t border-red-200"
-                                    >
-                                        <span class="text-sm text-red-700"
-                                            >Access failed</span
-                                        >
-                                        <button
-                                            class="px-3 py-1 bg-red-600 text-white text-sm font-medium rounded hover:bg-red-700"
-                                        >
-                                            Retry
-                                        </button>
+                                </div>
+                                <p class="text-xs text-gray-500">Visible focus ring for keyboard navigation (WCAG 2.4.7 compliant)</p>
+                            </div>
+
+                            <!-- Disabled State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-gray-200 text-gray-600">Disabled</span>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 opacity-50 cursor-not-allowed">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fa-solid fa-folder text-gray-400"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="text-sm font-semibold text-gray-400 truncate">Case Attachments</h4>
+                                            <p class="text-xs text-gray-400 mt-0.5">24 items • 156 MB</p>
+                                            <div class="flex items-center gap-2 mt-2">
+                                                <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-500">Archived</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500">Reduced opacity with not-allowed cursor for unavailable items</p>
+                            </div>
+
+                            <!-- Loading Skeleton State -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-1 text-xs font-medium rounded bg-amber-100 text-amber-700">Loading Skeleton</span>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 animate-pulse">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-gray-200 rounded-lg flex-shrink-0"></div>
+                                        <div class="flex-1 min-w-0 space-y-2">
+                                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                                            <div class="h-5 bg-gray-200 rounded w-16 mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500">Animated placeholder while content loads asynchronously</p>
                             </div>
                         </div>
                     </div>
