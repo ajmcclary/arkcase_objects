@@ -88,7 +88,7 @@
                 </div>
 
                 <div id="small-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Small Card 1: PDF - Completed Review, No Redaction -->
+                    <!-- Small Card 1: PDF - Completed Review, No Redaction, OCR Searchable -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -96,7 +96,13 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records_Export.pdf</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 1.8 MB • 42 pages</p>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">PDF • 1.8 MB • 42 pages</span>
+                                    <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>Documents / Customer Data
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -110,15 +116,25 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 2: Word - In Review, Partial Redaction -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <!-- Small Card 2: Word - In Review, Partial Redaction, Restricted -->
+                    <div class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fa-solid fa-file-word text-blue-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History_J_Smith.docx</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">DOCX • 245 KB • 12 pages</p>
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History_J_Smith.docx</h3>
+                                    <i class="fa-solid fa-lock text-amber-500 text-[9px]" title="Restricted Access"></i>
+                                </div>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">DOCX • 245 KB • 12 pages</span>
+                                    <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
+                                    <span class="inline-flex items-center px-1 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">(b)(6)</span>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>HR Records / Personnel Files
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -132,7 +148,7 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 3: Excel - Pending Review -->
+                    <!-- Small Card 3: Excel - Pending Review, Not Searchable -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -140,7 +156,13 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Transaction_History_2020-2024.xlsx</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">XLSX • 892 KB</p>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">XLSX • 892 KB</span>
+                                    <i class="fa-solid fa-magnifying-glass-minus text-gray-400 text-[9px]" title="Not Text Searchable"></i>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>Financial Records / Transactions
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -154,14 +176,24 @@
                     </div>
 
                     <!-- Small Card 4: PDF - Completed, Full Redaction -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="bg-white border border-red-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fa-solid fa-file-pdf text-red-500"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract_2021.pdf</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 3.2 MB • 18 pages</p>
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract_2021.pdf</h3>
+                                    <i class="fa-solid fa-ban text-red-500 text-[9px]" title="Fully Withheld"></i>
+                                </div>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">PDF • 3.2 MB • 18 pages</span>
+                                    <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
+                                    <span class="inline-flex items-center px-1 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">(b)(4)</span>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>Contracts / Third Party
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -175,7 +207,7 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 5: Image - With Exemption Code -->
+                    <!-- Small Card 5: Image - With Exemption Code, Media Metadata -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -183,7 +215,13 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">ID_Document_Scan.jpg</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">JPG • 2.1 MB <span class="ml-1 px-1 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">(b)(6)</span></p>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">JPG • 2.1 MB • 3024×4032</span>
+                                    <span class="inline-flex items-center px-1 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">(b)(6)</span>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>Identity Documents / Scans
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -198,18 +236,28 @@
                     </div>
 
                     <!-- Small Card 6: ZIP Archive - Public Release -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="bg-white border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-file-zipper text-gray-500"></i>
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-globe text-green-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">SAR_Response_Package.zip</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">ZIP • 15.8 MB • 24 files <i class="fa-solid fa-globe text-green-500 ml-1" title="Public Release"></i></p>
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">SAR_Response_Package.zip</h3>
+                                    <i class="fa-solid fa-globe text-green-500 text-[9px]" title="Public Release"></i>
+                                </div>
+                                <div class="flex items-center gap-1 mt-0.5">
+                                    <span class="text-xs text-gray-500">ZIP • 15.8 MB • 24 files</span>
+                                </div>
+                                <div class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-folder-tree mr-0.5"></i>Response Packages / Final
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
-                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">Released</span>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-globe mr-0.5 text-[8px]"></i>Public
+                                    </span>
                                     <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
                                 </div>
                                 <div class="text-xs text-gray-600">
@@ -268,16 +316,21 @@
                                     <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract.pdf</h3>
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract.pdf</h3>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[8px]" title="OCR"></i>
+                                        <i class="fa-solid fa-ban text-red-400 text-[8px]" title="Withheld"></i>
+                                    </div>
                                     <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 3.2 MB • SAR-2024-0511</p>
+                                    <p class="text-[10px] text-gray-400 truncate"><i class="fa-solid fa-folder-tree mr-0.5"></i>Contracts / Third Party</p>
                                 </div>
                                 <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                     <div class="flex items-center gap-1.5">
                                         <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Full Redaction</span>
                                         <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
                                     </div>
-                                    <div class="text-[11px] text-gray-600">
-                                        <i class="fa-solid fa-eraser mr-0.5 text-red-400"></i>All content redacted
+                                    <div class="text-[11px] text-red-600">
+                                        <i class="fa-solid fa-scale-balanced mr-0.5"></i>(b)(4) Trade Secrets
                                     </div>
                                 </div>
                             </div>
@@ -290,16 +343,21 @@
                                     <i class="fa-solid fa-file-word text-blue-600 text-sm"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History.docx</h3>
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History.docx</h3>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[8px]" title="OCR"></i>
+                                        <i class="fa-solid fa-lock text-amber-400 text-[8px]" title="Restricted"></i>
+                                    </div>
                                     <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">DOCX • 245 KB • SAR-2024-0512</p>
+                                    <p class="text-[10px] text-gray-400 truncate"><i class="fa-solid fa-folder-tree mr-0.5"></i>HR Records / Personnel</p>
                                 </div>
                                 <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                     <div class="flex items-center gap-1.5">
                                         <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
                                         <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-800">In Review</span>
                                     </div>
-                                    <div class="text-[11px] text-amber-600">
-                                        <i class="fa-solid fa-eraser mr-0.5"></i>3 sections redacted
+                                    <div class="text-[11px] text-purple-600">
+                                        <i class="fa-solid fa-scale-balanced mr-0.5"></i>(b)(6) (b)(7)(C)
                                     </div>
                                 </div>
                             </div>
@@ -312,16 +370,21 @@
                                     <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records.pdf</h3>
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records.pdf</h3>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[8px]" title="OCR"></i>
+                                        <i class="fa-solid fa-globe text-green-500 text-[8px]" title="Public"></i>
+                                    </div>
                                     <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 1.8 MB • SAR-2024-0512</p>
+                                    <p class="text-[10px] text-gray-400 truncate"><i class="fa-solid fa-folder-tree mr-0.5"></i>Documents / Customer Data</p>
                                 </div>
                                 <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                     <div class="flex items-center gap-1.5">
                                         <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">No Redaction</span>
                                         <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
                                     </div>
-                                    <div class="text-[11px] text-gray-600">
-                                        <i class="fa-regular fa-clock mr-0.5 text-gray-400"></i>v1.0 • Released
+                                    <div class="text-[11px] text-green-600">
+                                        <i class="fa-solid fa-check mr-0.5"></i>v1.0 • Released
                                     </div>
                                 </div>
                             </div>
@@ -359,12 +422,32 @@
                                 <div class="flex-1">
                                     <div class="flex items-center gap-2 mb-1">
                                         <span class="text-xs font-medium text-gray-500 uppercase">SAR File</span>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR"></i>
+                                        <i class="fa-solid fa-lock text-amber-400 text-[9px]" title="Restricted"></i>
                                         <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial Redaction</span>
                                     </div>
                                     <h3 class="text-base font-semibold text-gray-900">Employment_History_J_Smith.docx</h3>
                                     <div class="flex items-center gap-2 mt-0.5">
                                         <p class="text-xs text-gray-500">DOCX • 245 KB • 12 pages</p>
                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="text-xs text-gray-600 mb-3 line-clamp-2">Employment records including performance evaluations, salary history, and disciplinary actions from 2018-2024.</p>
+
+                            <!-- Folder Path -->
+                            <div class="text-[10px] text-gray-400 mb-3">
+                                <i class="fa-solid fa-folder-tree mr-1"></i>SAR-2024-0512 / HR Records / Personnel Files
+                            </div>
+
+                            <!-- Data Subject -->
+                            <div class="mb-3 p-2 bg-purple-50 rounded border border-purple-100">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-purple-500 text-xs"></i>
+                                    <span class="text-xs text-gray-500">Data Subject:</span>
+                                    <span class="text-xs font-medium text-gray-900">John Smith</span>
+                                    <span class="text-[10px] text-gray-500">(Requester)</span>
                                 </div>
                             </div>
 
@@ -392,16 +475,22 @@
                                 </div>
                             </div>
 
-                            <!-- Exemption Codes (if present) -->
+                            <!-- Exemption Codes with Statutes -->
                             <div class="mb-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
-                                <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">Exemption Codes Applied</p>
-                                <div class="flex flex-wrap gap-1.5">
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
-                                        (b)(6) Privacy
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
-                                        (b)(7)(C) Law Enforcement
-                                    </span>
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">Exemption Codes & Statutes</p>
+                                <div class="space-y-1.5">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
+                                            (b)(6)
+                                        </span>
+                                        <span class="text-[10px] text-gray-500">Personal Privacy • 5 U.S.C. § 552(b)(6)</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
+                                            (b)(7)(C)
+                                        </span>
+                                        <span class="text-[10px] text-gray-500">Law Enforcement Privacy</span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -522,8 +611,9 @@
                                     <i class="fa-solid fa-file-pdf text-red-500"></i>
                                 </div>
                                 <div>
-                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        SAR Document
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
                                     </div>
                                     <div class="flex items-center mt-1 gap-2">
                                         <span
@@ -539,12 +629,33 @@
                             </button>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <h3 class="text-lg font-semibold text-gray-900 mb-1">
                                 Customer_Records_Export.pdf
                             </h3>
                             <div class="flex items-center gap-2">
                                 <p class="text-sm text-gray-500">PDF • 1.8 MB • 42 pages</p>
+                            </div>
+                        </div>
+
+                        <!-- Description Preview -->
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-2">Customer account records and transaction history for the data subject covering the requested period from January 2020 to December 2024.</p>
+
+                        <!-- Folder Path -->
+                        <div class="mb-3 text-xs text-gray-500">
+                            <i class="fa-solid fa-folder-tree mr-1"></i>
+                            <span class="text-gray-400">SAR-2024-0512 /</span> Documents / Customer Data
+                        </div>
+
+                        <!-- Data Subject -->
+                        <div class="mb-4 p-2 bg-purple-50 rounded border border-purple-100">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-purple-500 text-sm"></i>
+                                <div>
+                                    <span class="text-xs text-gray-500">Data Subject:</span>
+                                    <span class="text-sm font-medium text-gray-900 ml-1">John Smith</span>
+                                    <span class="text-xs text-gray-500">(Requester)</span>
+                                </div>
                             </div>
                         </div>
 
@@ -592,15 +703,17 @@
 
                     <!-- Medium Card 2 - In Review, Partial Redaction -->
                     <div id="medium-card-2"
-                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        class="bg-white rounded-lg border border-amber-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
                         <div class="flex items-start justify-between mb-4">
                             <div class="flex items-center">
                                 <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
                                     <i class="fa-solid fa-file-word text-blue-600"></i>
                                 </div>
                                 <div>
-                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        SAR Document
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
+                                        <i class="fa-solid fa-lock text-amber-500 text-[9px]" title="Restricted"></i>
                                     </div>
                                     <div class="flex items-center mt-1 gap-2">
                                         <span
@@ -616,7 +729,7 @@
                             </button>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <h3 class="text-lg font-semibold text-gray-900 mb-1">
                                 Employment_History_J_Smith.docx
                             </h3>
@@ -625,12 +738,51 @@
                             </div>
                         </div>
 
-                        <!-- Exemption Codes -->
-                        <div class="mb-4 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                        <!-- Description Preview -->
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-2">Employment records for the data subject including performance evaluations, salary history, and disciplinary actions from 2018-2024.</p>
+
+                        <!-- Folder Path -->
+                        <div class="mb-3 text-xs text-gray-500">
+                            <i class="fa-solid fa-folder-tree mr-1"></i>
+                            <span class="text-gray-400">SAR-2024-0512 /</span> HR Records / Personnel Files
+                        </div>
+
+                        <!-- Data Subject -->
+                        <div class="mb-3 p-2 bg-purple-50 rounded border border-purple-100">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-purple-500 text-sm"></i>
+                                <div>
+                                    <span class="text-xs text-gray-500">Data Subject:</span>
+                                    <span class="text-sm font-medium text-gray-900 ml-1">John Smith</span>
+                                    <span class="text-xs text-gray-500">(Requester)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Codes with Statutes -->
+                        <div class="mb-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
                             <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Exemption Codes</div>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(6)</span>
-                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(7)(C)</span>
+                            <div class="space-y-1.5">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(6)</span>
+                                    <span class="text-xs text-gray-500">Personal Privacy</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(7)(C)</span>
+                                    <span class="text-xs text-gray-500">Law Enforcement Privacy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review/Redaction Status Indicators -->
+                        <div class="mb-4 p-2 bg-amber-50 rounded border border-amber-100">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-blue-700">
+                                    <i class="fa-solid fa-user-check mr-1"></i>Review: In Progress
+                                </span>
+                                <span class="text-amber-600">
+                                    <i class="fa-solid fa-scissors mr-1"></i>Redaction: Partial (3 sections)
+                                </span>
                             </div>
                         </div>
 
@@ -675,8 +827,9 @@
                                     <i class="fa-solid fa-file-excel text-green-600"></i>
                                 </div>
                                 <div>
-                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        SAR Document
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                        <i class="fa-solid fa-magnifying-glass-minus text-gray-400 text-[9px]" title="Not Text Searchable"></i>
                                     </div>
                                     <div class="flex items-center mt-1 gap-2">
                                         <span
@@ -690,12 +843,33 @@
                             </button>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <h3 class="text-lg font-semibold text-gray-900 mb-1">
                                 Transaction_History_2020-2024.xlsx
                             </h3>
                             <div class="flex items-center gap-2">
                                 <p class="text-sm text-gray-500">XLSX • 892 KB</p>
+                            </div>
+                        </div>
+
+                        <!-- Description Preview -->
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-2">Financial transaction records including account activity, payments, and transfers for the requested period.</p>
+
+                        <!-- Folder Path -->
+                        <div class="mb-3 text-xs text-gray-500">
+                            <i class="fa-solid fa-folder-tree mr-1"></i>
+                            <span class="text-gray-400">SAR-2024-0511 /</span> Financial Records / Transactions
+                        </div>
+
+                        <!-- Data Subject -->
+                        <div class="mb-4 p-2 bg-purple-50 rounded border border-purple-100">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-purple-500 text-sm"></i>
+                                <div>
+                                    <span class="text-xs text-gray-500">Data Subject:</span>
+                                    <span class="text-sm font-medium text-gray-900 ml-1">Sarah Williams</span>
+                                    <span class="text-xs text-gray-500">(Requester)</span>
+                                </div>
                             </div>
                         </div>
 
@@ -731,15 +905,17 @@
 
                     <!-- Medium Card 4 - Full Redaction, Completed -->
                     <div id="medium-card-4"
-                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        class="bg-white rounded-lg border border-red-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
                         <div class="flex items-start justify-between mb-4">
                             <div class="flex items-center">
                                 <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
                                     <i class="fa-solid fa-file-pdf text-red-500"></i>
                                 </div>
                                 <div>
-                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        SAR Document
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR Searchable"></i>
+                                        <i class="fa-solid fa-ban text-red-500 text-[9px]" title="Fully Withheld"></i>
                                     </div>
                                     <div class="flex items-center mt-1 gap-2">
                                         <span
@@ -755,7 +931,7 @@
                             </button>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <h3 class="text-lg font-semibold text-gray-900 mb-1">
                                 Third_Party_Contract_2021.pdf
                             </h3>
@@ -764,13 +940,34 @@
                             </div>
                         </div>
 
+                        <!-- Description Preview -->
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-2">Service agreement between the organization and third-party vendor containing confidential commercial terms.</p>
+
+                        <!-- Folder Path -->
+                        <div class="mb-3 text-xs text-gray-500">
+                            <i class="fa-solid fa-folder-tree mr-1"></i>
+                            <span class="text-gray-400">SAR-2024-0511 /</span> Contracts / Third Party
+                        </div>
+
                         <!-- Full Redaction Notice -->
-                        <div class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+                        <div class="mb-3 p-3 bg-red-50 border border-red-200 rounded-lg">
                             <div class="flex items-center gap-2">
                                 <i class="fa-solid fa-ban text-red-600"></i>
                                 <div>
                                     <p class="text-xs font-medium text-red-800">Fully Redacted - Third Party Information</p>
-                                    <p class="text-[10px] text-red-600">Document withheld under exemption (b)(4)</p>
+                                    <p class="text-[10px] text-red-600">Document withheld under exemption (b)(4) - Trade Secrets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Subject -->
+                        <div class="mb-4 p-2 bg-purple-50 rounded border border-purple-100">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user text-purple-500 text-sm"></i>
+                                <div>
+                                    <span class="text-xs text-gray-500">Data Subject:</span>
+                                    <span class="text-sm font-medium text-gray-900 ml-1">Sarah Williams</span>
+                                    <span class="text-xs text-gray-500">(Requester)</span>
                                 </div>
                             </div>
                         </div>
@@ -825,18 +1022,21 @@
                 </div>
 
                 <div class="space-y-6">
-                    <!-- Large Card 1 - Partial Redaction with Exemptions -->
+                    <!-- Large Card 1 - Partial Redaction with Exemptions (Full Featured) -->
                     <div id="large-card-1"
-                        class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                        <div class="p-6 border-b border-gray-200">
+                        class="bg-white rounded-lg border border-amber-200 hover:shadow-lg transition-shadow">
+                        <!-- Header -->
+                        <div class="p-6 border-b border-gray-200 bg-gray-50">
                             <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fa-solid fa-file-word text-blue-600 text-lg"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
-                                            SAR Document
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                            <i class="fa-solid fa-magnifying-glass text-blue-500 text-[10px]" title="OCR Searchable"></i>
+                                            <i class="fa-solid fa-lock text-amber-500 text-[10px]" title="Restricted"></i>
                                         </div>
                                         <h3 class="text-xl font-bold text-gray-900">
                                             Employment_History_J_Smith.docx
@@ -861,23 +1061,109 @@
                             </div>
                         </div>
 
-                        <!-- Exemption Codes Section -->
-                        <div class="p-6 border-b border-gray-200 bg-purple-50">
-                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes Applied</div>
-                            <div class="flex flex-wrap gap-2">
-                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-purple-100 text-purple-700 border border-purple-200">
-                                    <i class="fa-solid fa-scale-balanced mr-2"></i>
-                                    <span class="font-semibold mr-1">(b)(6)</span>
-                                    <span class="text-purple-600">Personal Privacy</span>
+                        <!-- Description Section -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Description</div>
+                            <p class="text-sm text-gray-700">Employment records for the data subject including performance evaluations, salary history, disciplinary actions, and benefits enrollment from 2018-2024. Contains personally identifiable information requiring redaction under privacy exemptions.</p>
+                        </div>
+
+                        <!-- Folder Path -->
+                        <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Location</div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-folder text-yellow-500"></i>
+                                <span class="text-gray-400">SAR-2024-0512</span>
+                                <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                                <span class="text-gray-400">Documents</span>
+                                <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                                <span class="text-gray-900 font-medium">HR Records</span>
+                            </div>
+                        </div>
+
+                        <!-- Data Subject Section -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Data Subject</div>
+                            <div class="flex items-center gap-3 p-3 bg-purple-50 rounded-lg border border-purple-100">
+                                <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-user text-purple-600"></i>
                                 </div>
-                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-purple-100 text-purple-700 border border-purple-200">
-                                    <i class="fa-solid fa-scale-balanced mr-2"></i>
-                                    <span class="font-semibold mr-1">(b)(7)(C)</span>
-                                    <span class="text-purple-600">Law Enforcement Privacy</span>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900">John Smith</p>
+                                    <p class="text-xs text-gray-500">SAR Requester • john.smith@email.com</p>
+                                </div>
+                                <span class="ml-auto px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-medium rounded">Self-Request</span>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Codes Section with Statutes -->
+                        <div class="p-6 border-b border-gray-200 bg-purple-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes & Statutes</div>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-purple-100">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-solid fa-scale-balanced text-purple-600"></i>
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-900">(b)(6) - Personal Privacy</span>
+                                            <p class="text-xs text-gray-500">5 U.S.C. § 552(b)(6)</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">Applied</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-purple-100">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-solid fa-scale-balanced text-purple-600"></i>
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-900">(b)(7)(C) - Law Enforcement Privacy</span>
+                                            <p class="text-xs text-gray-500">5 U.S.C. § 552(b)(7)(C)</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">Applied</span>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Review Workflow Progress -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Document Review Workflow</div>
+                            <div class="flex items-center gap-4 mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-white text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-green-700 font-medium">Pending</span>
+                                </div>
+                                <div class="flex-1 h-1 bg-green-200 rounded">
+                                    <div class="h-full bg-green-500 rounded" style="width: 100%"></div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center">
+                                        <i class="fa-solid fa-spinner fa-spin text-white text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-blue-700 font-medium">In Review</span>
+                                </div>
+                                <div class="flex-1 h-1 bg-gray-200 rounded">
+                                    <div class="h-full bg-blue-500 rounded" style="width: 60%"></div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+                                        <i class="fa-solid fa-flag text-gray-400 text-xs"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-400 font-medium">Completed</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-gray-500">Reviewer:</span>
+                                    <span class="font-medium text-gray-900 ml-1">L. Martinez</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Started:</span>
+                                    <span class="font-medium text-gray-900 ml-1">Jan 26, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Metadata Grid -->
                         <div class="p-6 border-b border-gray-200">
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                                 <div>
@@ -906,7 +1192,7 @@
                         </div>
 
                         <div class="p-6 border-b border-gray-200">
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
                                 <div>
                                     <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">File Type</div>
                                     <div class="text-sm font-medium text-gray-900">Word Document</div>
@@ -925,6 +1211,57 @@
                                         <i class="fa-solid fa-circle-xmark mr-1"></i>No
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Searchable</div>
+                                    <div class="text-sm font-medium text-green-600">
+                                        <i class="fa-solid fa-check-circle mr-1"></i>Yes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Version History -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide">Version History</div>
+                                <button class="text-xs text-purple-600 hover:text-purple-700 font-medium">View All</button>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-start gap-3 p-2 bg-purple-50 rounded border border-purple-100">
+                                    <div class="w-8 h-8 bg-purple-600 rounded flex items-center justify-center flex-shrink-0">
+                                        <span class="text-white text-xs font-bold">2.1</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-sm font-medium text-gray-900">v2.1 (Current)</span>
+                                            <span class="px-1.5 py-0.5 rounded text-[9px] font-medium bg-amber-100 text-amber-700">Partial Redaction</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-0.5">Jan 28, 2024 by L. Martinez</p>
+                                        <p class="text-xs text-gray-600 mt-1">Applied PII redactions per exemption review</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 p-2 bg-gray-50 rounded">
+                                    <div class="w-8 h-8 bg-gray-400 rounded flex items-center justify-center flex-shrink-0">
+                                        <span class="text-white text-xs font-bold">1.0</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <span class="text-sm font-medium text-gray-900">v1.0</span>
+                                        <p class="text-xs text-gray-500 mt-0.5">Jan 22, 2024 by System Import</p>
+                                        <p class="text-xs text-gray-600 mt-1">Initial upload</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- File Integrity -->
+                        <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">File Integrity</div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-fingerprint text-gray-400"></i>
+                                <code class="text-xs text-gray-600 font-mono">SHA256: 9f86d081884c7d659a2feaa0c55ad015...b3e</code>
+                                <button class="text-xs text-purple-600 hover:text-purple-700">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
                             </div>
                         </div>
 
@@ -964,20 +1301,22 @@
                                 <i class="fa-solid fa-ban text-red-600 text-lg"></i>
                                 <div>
                                     <p class="text-sm font-medium text-red-800">Document Fully Redacted</p>
-                                    <p class="text-xs text-red-600">Withheld under exemption (b)(4) - Trade Secrets</p>
+                                    <p class="text-xs text-red-600">Withheld under exemption (b)(4) - Trade Secrets • 5 U.S.C. § 552(b)(4)</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="p-6 border-b border-gray-200">
+                        <div class="p-6 border-b border-gray-200 bg-gray-50">
                             <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fa-solid fa-file-pdf text-red-500 text-lg"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
-                                            SAR Document
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">SAR Document</span>
+                                            <i class="fa-solid fa-magnifying-glass text-blue-500 text-[10px]" title="OCR Searchable"></i>
+                                            <i class="fa-solid fa-ban text-red-500 text-[10px]" title="Fully Withheld"></i>
                                         </div>
                                         <h3 class="text-xl font-bold text-gray-900">
                                             Third_Party_Contract_2021.pdf
@@ -1002,10 +1341,44 @@
                             </div>
                         </div>
 
-                        <!-- Exemption Code Section -->
+                        <!-- Description Section -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Description</div>
+                            <p class="text-sm text-gray-700">Service agreement between the organization and third-party vendor containing confidential commercial terms, proprietary pricing structures, and trade secret information protected under privacy exemptions.</p>
+                        </div>
+
+                        <!-- Folder Path -->
+                        <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Location</div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <i class="fa-solid fa-folder text-yellow-500"></i>
+                                <span class="text-gray-400">SAR-2024-0511</span>
+                                <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                                <span class="text-gray-400">Contracts</span>
+                                <i class="fa-solid fa-chevron-right text-gray-300 text-xs"></i>
+                                <span class="text-gray-900 font-medium">Third Party</span>
+                            </div>
+                        </div>
+
+                        <!-- Data Subject Section -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Data Subject</div>
+                            <div class="flex items-center gap-3 p-3 bg-purple-50 rounded-lg border border-purple-100">
+                                <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-user text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900">Sarah Williams</p>
+                                    <p class="text-xs text-gray-500">SAR Requester • s.williams@company.com</p>
+                                </div>
+                                <span class="ml-auto px-2 py-0.5 bg-purple-100 text-purple-700 text-xs font-medium rounded">Self-Request</span>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Code Section with Statutes -->
                         <div class="p-6 border-b border-gray-200 bg-red-50">
-                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes Applied</div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes & Statutes</div>
+                            <div class="space-y-2">
                                 <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-red-100 text-red-700 border border-red-200">
                                     <i class="fa-solid fa-scale-balanced mr-2"></i>
                                     <span class="font-semibold mr-1">(b)(4)</span>
@@ -1064,6 +1437,458 @@
                                         Open File
                                     </button>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- MEDIA FILE VARIANTS SECTION -->
+        <!-- ============================================================== -->
+        <section id="media-variants-section" class="py-12 bg-gray-100">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Media Variants
+                    </h2>
+                    <p class="text-gray-600">
+                        Specialized cards for video, audio, and image files with media-specific metadata
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Video File Card -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Video Thumbnail -->
+                        <div class="relative bg-gray-900 aspect-video flex items-center justify-center">
+                            <i class="fa-solid fa-film text-gray-500 text-4xl"></i>
+                            <div class="absolute bottom-2 right-2 px-2 py-1 bg-black/70 rounded text-white text-xs font-medium">
+                                <i class="fa-solid fa-clock mr-1"></i>12:34
+                            </div>
+                            <div class="absolute top-2 left-2 flex gap-1">
+                                <span class="px-1.5 py-0.5 bg-purple-600 rounded text-white text-[9px] font-medium">(b)(6)</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-video text-purple-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Interview_Recording.mp4</h3>
+                                        <i class="fa-solid fa-closed-captioning text-blue-500 text-[9px]" title="Transcribed"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">MP4 • 856 MB • 1920×1080</p>
+                                </div>
+                            </div>
+                            <!-- Media Metadata -->
+                            <div class="grid grid-cols-2 gap-2 mb-3 p-2 bg-gray-50 rounded text-xs">
+                                <div>
+                                    <span class="text-gray-500">Duration:</span>
+                                    <span class="font-medium text-gray-900 ml-1">12:34</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Device:</span>
+                                    <span class="font-medium text-gray-900 ml-1">iPhone 14</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Recorded:</span>
+                                    <span class="font-medium text-gray-900 ml-1">Jan 15, 2024</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Transcription:</span>
+                                    <span class="font-medium text-green-600 ml-1">Complete</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-800">In Review</span>
+                                </div>
+                                <span class="text-xs text-gray-500">SAR-2024-0512</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio File Card -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Audio Waveform Visual -->
+                        <div class="relative bg-gradient-to-r from-blue-100 to-purple-100 h-24 flex items-center justify-center px-4">
+                            <div class="flex items-end gap-0.5 h-12">
+                                <div class="w-1 bg-blue-400 rounded-t" style="height: 30%"></div>
+                                <div class="w-1 bg-blue-500 rounded-t" style="height: 60%"></div>
+                                <div class="w-1 bg-blue-600 rounded-t" style="height: 45%"></div>
+                                <div class="w-1 bg-purple-500 rounded-t" style="height: 80%"></div>
+                                <div class="w-1 bg-purple-600 rounded-t" style="height: 50%"></div>
+                                <div class="w-1 bg-purple-500 rounded-t" style="height: 70%"></div>
+                                <div class="w-1 bg-blue-500 rounded-t" style="height: 40%"></div>
+                                <div class="w-1 bg-blue-400 rounded-t" style="height: 55%"></div>
+                                <div class="w-1 bg-blue-500 rounded-t" style="height: 65%"></div>
+                                <div class="w-1 bg-purple-400 rounded-t" style="height: 35%"></div>
+                            </div>
+                            <div class="absolute bottom-2 right-2 px-2 py-1 bg-black/70 rounded text-white text-xs font-medium">
+                                <i class="fa-solid fa-clock mr-1"></i>45:22
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-headphones text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Phone_Call_Jan15.mp3</h3>
+                                        <i class="fa-solid fa-closed-captioning text-blue-500 text-[9px]" title="Transcribed"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">MP3 • 42 MB • 45:22</p>
+                                </div>
+                            </div>
+                            <!-- Audio Metadata -->
+                            <div class="grid grid-cols-2 gap-2 mb-3 p-2 bg-gray-50 rounded text-xs">
+                                <div>
+                                    <span class="text-gray-500">Duration:</span>
+                                    <span class="font-medium text-gray-900 ml-1">45:22</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Sample Rate:</span>
+                                    <span class="font-medium text-gray-900 ml-1">44.1kHz</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Recorded:</span>
+                                    <span class="font-medium text-gray-900 ml-1">Jan 15, 2024</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Transcription:</span>
+                                    <span class="font-medium text-amber-600 ml-1">In Progress</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Pending</span>
+                                </div>
+                                <span class="text-xs text-gray-500">SAR-2024-0512</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image File Card -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Image Thumbnail -->
+                        <div class="relative bg-gray-200 aspect-[4/3] flex items-center justify-center">
+                            <i class="fa-solid fa-image text-gray-400 text-4xl"></i>
+                            <div class="absolute top-2 left-2 flex gap-1">
+                                <span class="px-1.5 py-0.5 bg-purple-600 rounded text-white text-[9px] font-medium">(b)(6)</span>
+                            </div>
+                            <div class="absolute bottom-2 right-2 px-2 py-1 bg-black/70 rounded text-white text-xs font-medium">
+                                3024 × 4032
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-image text-green-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">ID_Document_Scan.jpg</h3>
+                                    </div>
+                                    <p class="text-xs text-gray-500">JPEG • 4.2 MB • 3024×4032</p>
+                                </div>
+                            </div>
+                            <!-- Image Metadata -->
+                            <div class="grid grid-cols-2 gap-2 mb-3 p-2 bg-gray-50 rounded text-xs">
+                                <div>
+                                    <span class="text-gray-500">Dimensions:</span>
+                                    <span class="font-medium text-gray-900 ml-1">3024×4032</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Device:</span>
+                                    <span class="font-medium text-gray-900 ml-1">Canon EOS</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">Taken:</span>
+                                    <span class="font-medium text-gray-900 ml-1">Jan 10, 2024</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500">GPS:</span>
+                                    <span class="font-medium text-blue-600 ml-1">
+                                        <i class="fa-solid fa-location-dot mr-0.5"></i>Available
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <span class="text-xs text-gray-500">SAR-2024-0510</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- DUPLICATE FILE VARIANT SECTION -->
+        <!-- ============================================================== -->
+        <section id="duplicate-variant-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Duplicate Detection
+                    </h2>
+                    <p class="text-gray-600">
+                        Cards showing files flagged as duplicates with hash match indicators
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+                    <!-- Duplicate File Warning Card -->
+                    <div class="bg-white rounded-lg border-2 border-yellow-300 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Duplicate Warning Banner -->
+                        <div class="bg-yellow-100 border-b border-yellow-200 px-4 py-2 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation text-yellow-600"></i>
+                            <span class="text-sm font-medium text-yellow-800">Potential Duplicate Detected</span>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records_Copy.pdf</h3>
+                                        <i class="fa-solid fa-clone text-yellow-500 text-[10px]" title="Duplicate"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PDF • 1.8 MB • 42 pages</p>
+                                </div>
+                            </div>
+
+                            <!-- Duplicate Match Info -->
+                            <div class="p-3 bg-yellow-50 border border-yellow-200 rounded-lg mb-3">
+                                <p class="text-xs text-yellow-800 font-medium mb-2">
+                                    <i class="fa-solid fa-fingerprint mr-1"></i>Hash Match Found
+                                </p>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <span class="text-gray-500">Matches:</span>
+                                    <span class="text-blue-600 font-medium hover:underline cursor-pointer">
+                                        Customer_Records_Export.pdf
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs mt-1">
+                                    <span class="text-gray-500">Location:</span>
+                                    <span class="text-gray-700">SAR-2024-0512 / Documents</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-gray-500">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0513
+                                </span>
+                                <div class="flex gap-2">
+                                    <button class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 font-medium">
+                                        <i class="fa-solid fa-link-slash mr-1"></i>Remove Duplicate
+                                    </button>
+                                    <button class="px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 font-medium">
+                                        <i class="fa-solid fa-eye mr-1"></i>Compare
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linked File Card -->
+                    <div class="bg-white rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Link Indicator Banner -->
+                        <div class="bg-blue-50 border-b border-blue-100 px-4 py-2 flex items-center gap-2">
+                            <i class="fa-solid fa-link text-blue-600"></i>
+                            <span class="text-sm font-medium text-blue-800">Linked File</span>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records_Link.pdf</h3>
+                                        <i class="fa-solid fa-link text-blue-500 text-[10px]" title="Linked"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PDF • 1.8 MB • 42 pages</p>
+                                </div>
+                            </div>
+
+                            <!-- Link Source Info -->
+                            <div class="p-3 bg-blue-50 border border-blue-100 rounded-lg mb-3">
+                                <p class="text-xs text-blue-800 font-medium mb-2">
+                                    <i class="fa-solid fa-link mr-1"></i>Linked to Source File
+                                </p>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <span class="text-gray-500">Source:</span>
+                                    <span class="text-blue-600 font-medium hover:underline cursor-pointer">
+                                        Customer_Records_Export.pdf
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs mt-1">
+                                    <span class="text-gray-500">Changes sync:</span>
+                                    <span class="text-green-600 font-medium">
+                                        <i class="fa-solid fa-check-circle mr-0.5"></i>Automatic
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-gray-500">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0514
+                                </span>
+                                <button class="px-2 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 font-medium">
+                                    <i class="fa-solid fa-arrow-right mr-1"></i>Go to Source
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- EMAIL-DERIVED FILE VARIANT SECTION -->
+        <!-- ============================================================== -->
+        <section id="email-variant-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Email-Derived Files
+                    </h2>
+                    <p class="text-gray-600">
+                        Cards for files extracted from or derived from email communications
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+                    <!-- Email File Card -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Email Header -->
+                        <div class="bg-gray-50 border-b border-gray-200 px-4 py-3">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fa-solid fa-envelope text-gray-500"></i>
+                                <span class="text-sm font-medium text-gray-900">Re: Contract Review Request</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-xs text-gray-500">
+                                <div>
+                                    <span class="text-gray-400">From:</span>
+                                    <span class="ml-1 text-gray-700">john.smith@company.com</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400">Sent:</span>
+                                    <span class="ml-1 text-gray-700">Jan 15, 2024 at 2:34 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope-open-text text-blue-600"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Email_20240115_143422.eml</h3>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">EML • 128 KB • 2 attachments</p>
+                                </div>
+                            </div>
+
+                            <!-- Email Preview -->
+                            <div class="p-3 bg-gray-50 border border-gray-100 rounded-lg mb-3">
+                                <p class="text-xs text-gray-600 line-clamp-2">
+                                    Hi Sarah, Please find attached the contract documents you requested for your Subject Access Request. I've highlighted the relevant sections...
+                                </p>
+                            </div>
+
+                            <!-- Attachments -->
+                            <div class="mb-3">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">Attachments (2)</p>
+                                <div class="flex gap-2">
+                                    <span class="inline-flex items-center px-2 py-1 bg-red-50 text-red-700 rounded text-xs">
+                                        <i class="fa-solid fa-file-pdf mr-1"></i>Contract.pdf
+                                    </span>
+                                    <span class="inline-flex items-center px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">
+                                        <i class="fa-solid fa-file-word mr-1"></i>Summary.docx
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-800">In Review</span>
+                                </div>
+                                <span class="text-gray-500">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0512
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Attachment Card -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Source Email Indicator -->
+                        <div class="bg-blue-50 border-b border-blue-100 px-4 py-2 flex items-center gap-2">
+                            <i class="fa-solid fa-paperclip text-blue-600"></i>
+                            <span class="text-sm font-medium text-blue-800">Email Attachment</span>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Contract_Attachment.pdf</h3>
+                                        <i class="fa-solid fa-magnifying-glass text-blue-500 text-[9px]" title="OCR"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PDF • 2.1 MB • 24 pages</p>
+                                </div>
+                            </div>
+
+                            <!-- Source Email Info -->
+                            <div class="p-3 bg-blue-50 border border-blue-100 rounded-lg mb-3">
+                                <p class="text-xs text-blue-800 font-medium mb-1">
+                                    <i class="fa-solid fa-envelope mr-1"></i>Extracted from Email
+                                </p>
+                                <div class="text-xs text-gray-600">
+                                    <div class="flex items-center gap-1">
+                                        <span class="text-gray-400">Subject:</span>
+                                        <span class="text-gray-700 truncate">Re: Contract Review Request</span>
+                                    </div>
+                                    <div class="flex items-center gap-1 mt-0.5">
+                                        <span class="text-gray-400">Sent:</span>
+                                        <span class="text-gray-700">Jan 15, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Exemption Codes -->
+                            <div class="mb-3">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">(b)(4)</span>
+                                    <span class="text-[10px] text-gray-500">Trade Secrets</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Full Redaction</span>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <span class="text-gray-500">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0512
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -1161,10 +1986,59 @@
                         <div class="space-y-3">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-magnifying-glass text-blue-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">OCR Searchable</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Text is extractable</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-minus text-gray-400"></i>
+                                    <span class="text-sm font-medium text-gray-900">Not Searchable</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Image-only file</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-lock text-amber-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Restricted</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Limited access</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-ban text-red-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Withheld</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Fully redacted</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
                                     <i class="fa-solid fa-globe text-green-500"></i>
                                     <span class="text-sm font-medium text-gray-900">Public Release</span>
                                 </div>
                                 <span class="text-sm text-gray-600">Released publicly</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-clone text-yellow-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Duplicate</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Hash match found</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-link text-blue-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Linked File</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Syncs with source</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-closed-captioning text-blue-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Transcribed</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Audio/video transcript</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">

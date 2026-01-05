@@ -1,887 +1,1127 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ArkCase Design System - Wireframe Library</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script>
+            window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+            }
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArkCase Design System - Wireframe Library</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <script>
-        window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <style>
-        ::-webkit-scrollbar {
-            display: none;
-        }
+            html {
+                scroll-behavior: smooth;
+            }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Prevent sidebar transition on page load */
-        .sidebar-loading {
-            transition: none !important;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ["Inter", "system-ui", "sans-serif"],
+            /* Prevent sidebar transition on page load */
+            .sidebar-loading {
+                transition: none !important;
+            }
+        </style>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "system-ui", "sans-serif"],
+                        },
                     },
                 },
-            },
-        };
-    </script>
-</head>
+            };
+        </script>
+    </head>
 
-<body class="bg-gray-50 font-sans antialiased">
-    <main id="main-content" class="flex-1 ml-0  min-h-screen">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
-            <!-- Hero Section -->
-            <section class="mb-12">
-                <div
-                    class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-2xl p-8 md:p-10 text-white shadow-xl relative overflow-hidden">
-                    <!-- Decorative elements -->
+    <body class="bg-gray-50 font-sans antialiased">
+        <main id="main-content" class="flex-1 ml-0 min-h-screen">
+            <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
+                <!-- Hero Section -->
+                <section class="mb-12">
                     <div
-                        class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2">
+                        class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-2xl p-8 md:p-10 text-white shadow-xl relative overflow-hidden"
+                    >
+                        <!-- Decorative elements -->
+                        <div
+                            class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"
+                        ></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"
+                        ></div>
+
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm"
+                                >
+                                    <i
+                                        class="fa-solid fa-swatchbook text-2xl"
+                                    ></i>
+                                </div>
+                                <span
+                                    class="text-indigo-200 text-sm font-medium uppercase tracking-wider"
+                                    >Wireframe Library</span
+                                >
+                            </div>
+                            <h1
+                                class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight"
+                            >
+                                ArkCase Design System
+                            </h1>
+                            <p
+                                class="text-lg md:text-xl text-indigo-100 max-w-2xl mb-8 leading-relaxed"
+                            >
+                                Comprehensive wireframe library for enterprise
+                                case management. Small, Medium, and Large card
+                                variants with responsive layouts, accessibility
+                                support, and consistent design patterns.
+                            </p>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span
+                                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors"
+                                >
+                                    <i
+                                        class="fa-solid fa-cube text-indigo-200"
+                                    ></i>
+                                    36 Object Types
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors"
+                                >
+                                    <i
+                                        class="fa-solid fa-layer-group text-indigo-200"
+                                    ></i>
+                                    Small / Medium / Large / Compact / Expanded
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors"
+                                >
+                                    <i
+                                        class="fa-brands fa-css3-alt text-indigo-200"
+                                    ></i>
+                                    Tailwind CSS
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div
-                        class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2">
+                </section>
+
+                <!-- All Wireframes by Category -->
+                <section>
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">
+                                All Wireframes
+                            </h2>
+                            <p class="text-gray-500 mt-1">
+                                Browse all 36 object types organized by category
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-3 mb-4">
+                    <!-- Core Objects -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
                             <div
-                                class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                                <i class="fa-solid fa-swatchbook text-2xl"></i>
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i class="fa-solid fa-cube text-blue-600"></i>
                             </div>
-                            <span class="text-indigo-200 text-sm font-medium uppercase tracking-wider">Wireframe
-                                Library</span>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Core Objects
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Primary case management entities
+                                </p>
+                            </div>
                         </div>
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                            ArkCase Design System
-                        </h1>
-                        <p class="text-lg md:text-xl text-indigo-100 max-w-2xl mb-8 leading-relaxed">
-                            Comprehensive wireframe library for
-                            enterprise case management. Small, Medium,
-                            and Large card variants with responsive
-                            layouts, accessibility support, and
-                            consistent design patterns.
-                        </p>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <span
-                                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
-                                <i class="fa-solid fa-cube text-indigo-200"></i>
-                                36 Object Types
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
-                                <i class="fa-solid fa-layer-group text-indigo-200"></i>
-                                Small / Medium / Large / Compact / Expanded
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors">
-                                <i class="fa-brands fa-css3-alt text-indigo-200"></i>
-                                Tailwind CSS
-                            </span>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Case.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-briefcase text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Case
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Status, participants, files
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="SAR.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user-secret text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            SAR Request
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Subject Access Request
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Complaint.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file-lines text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Complaint
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Priority, complainant, status
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="FOIA Request.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file-text text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            FOIA Request
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Freedom of Information Act
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Consultation.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-comments text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Consultation
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Inter-agency requests
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Task.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-list-check text-blue-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Task
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Due dates, assignees
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <!-- All Wireframes by Category -->
-            <section>
-                <div class="flex items-center justify-between mb-8">
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-900">
-                            All Wireframes
-                        </h2>
-                        <p class="text-gray-500 mt-1">
-                            Browse all 36 object types organized by
-                            category
-                        </p>
+                    <!-- People & Orgs -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i class="fa-solid fa-users text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    People & Organizations
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Users, contacts, and organizational entities
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
+                        >
+                            <a
+                                href="Person.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Person
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Contacts, roles, profiles
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="FOIA Person.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Requester
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            FOIA Requester
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="SAR Person.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user-secret text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Subject
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            SAR Person
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="User.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user-gear text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            User
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Accounts, permissions
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Organization.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-building text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Organization
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Companies, agencies
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Group.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-users text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Group
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Teams, access groups
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Participant.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-user-plus text-green-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Participant
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Case involvement roles
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Core Objects -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-cube text-blue-600"></i>
+                    <!-- Documents -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i
+                                    class="fa-solid fa-folder-open text-purple-600"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Documents
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Files, folders, and document management
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Core Objects
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Primary case management entities
-                            </p>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
+                        >
+                            <a
+                                href="File Object.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            File Object
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Type icons, metadata
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="FOIA File.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            FOIA File
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Exemptions, public flag
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="SAR File.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            SAR File
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Review, redaction status
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="File Version.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-code-branch text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            File Version
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Version history, diffs
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Folder.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-folder text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Folder
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Hierarchy, file counts
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Container.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-box text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Container
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Evidence, custody
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Note.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-sticky-note text-purple-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Note
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Annotations, comments
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Case.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-briefcase text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Case
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Status, participants, files
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SAR.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        SAR
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Subject Access Request
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Complaint.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-file-lines text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Complaint
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Priority, complainant, status
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="FOIA Request.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-file-text text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        FOIA Request
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Freedom of Information
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Consultation.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-comments text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Consultation
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Inter-agency requests
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Task.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                    <i class="fa-solid fa-list-check text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Task
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Due dates, assignees
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- People & Orgs -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-users text-green-600"></i>
+                    <!-- Workflow -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i
+                                    class="fa-solid fa-diagram-project text-orange-600"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Workflow
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Queues and business process management
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                People & Organizations
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Users, contacts, and organizational
-                                entities
-                            </p>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Queue.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-layer-group text-orange-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Queue
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Work items, assignments
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Business Process.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-diagram-project text-orange-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Business Process
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Stages, workflow state
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                        <a href="Person.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-user text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Person
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Contacts, roles, profiles
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="FOIA Person.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-user text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        FOIA Person
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        FOIA requesters
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SAR Person.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-user-secret text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        SAR Person
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Data subjects
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="User.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-user-gear text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        User
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Accounts, permissions
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Organization.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-building text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Organization
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Companies, agencies
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Group.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-users text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Group
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Teams, access groups
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Participant.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-green-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                    <i class="fa-solid fa-user-plus text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Participant
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Case involvement roles
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Documents -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-folder-open text-purple-600"></i>
+                    <!-- Communication -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i
+                                    class="fa-solid fa-comments text-cyan-600"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Communication
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Messaging, notifications, and subscriptions
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Documents
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Files, folders, and document management
-                            </p>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Chat Conversation.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-comments text-cyan-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Chat Conversation
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Threads, participants
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Chat Message.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-message text-cyan-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Chat Message
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Sender, timestamp
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Notification.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell text-cyan-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Notification
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Alerts, read status
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Subscription.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-rss text-cyan-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Subscription
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Watchers, preferences
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                        <a href="File Object.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-file text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        File Object
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Type icons, metadata
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="FOIA File.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-file text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        FOIA File
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Exemptions, public flag
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SAR File.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-file text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        SAR File
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Review, redaction status
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="File Version.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-code-branch text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        File Version
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Version history, diffs
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Folder.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-folder text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Folder
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Hierarchy, file counts
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Container.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-box text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Container
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Evidence, custody
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Note.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-purple-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                    <i class="fa-solid fa-sticky-note text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Note
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Annotations, comments
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Workflow -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-diagram-project text-orange-600"></i>
+                    <!-- Financial -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i
+                                    class="fa-solid fa-dollar-sign text-amber-600"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Financial
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Cost tracking and financial management
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Workflow
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Queues and business process management
-                            </p>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Cost.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-dollar-sign text-amber-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Cost
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Expenses, categories
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Costsheet.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-file-invoice-dollar text-amber-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Costsheet
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Budget totals, approval
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Queue.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                                    <i class="fa-solid fa-layer-group text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Queue
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Work items, assignments
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Business Process.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-orange-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                                    <i class="fa-solid fa-diagram-project text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Business Process
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Stages, workflow state
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Communication -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-comments text-cyan-600"></i>
+                    <!-- Metadata -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i class="fa-solid fa-tags text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Metadata
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Tags, associations, and object relationships
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Communication
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Messaging, notifications, and
-                                subscriptions
-                            </p>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Tag.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-tag text-pink-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Tag
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Labels, colors, usage
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Exemption Statute.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-balance-scale text-pink-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Exemption Statute
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            FOIA/SAR exemptions
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Associated Tag.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-tags text-pink-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Associated Tag
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Tag-object links
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="Object Association.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-link text-pink-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Object Association
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Relationships, types
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Chat Conversation.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                    <i class="fa-solid fa-comments text-cyan-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Chat Conversation
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Threads, participants
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Chat Message.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                    <i class="fa-solid fa-message text-cyan-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Chat Message
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Sender, timestamp
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Notification.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                    <i class="fa-solid fa-bell text-cyan-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Notification
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Alerts, read status
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Subscription.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-cyan-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                    <i class="fa-solid fa-rss text-cyan-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Subscription
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Watchers, preferences
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Financial -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-dollar-sign text-amber-600"></i>
+                    <!-- Audit -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div
+                                class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center"
+                            >
+                                <i
+                                    class="fa-solid fa-clipboard-list text-slate-600"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    Audit
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Event logging, history, and data recovery
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Financial
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Cost tracking and financial management
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Cost.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors">
-                                    <i class="fa-solid fa-dollar-sign text-amber-600"></i>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                        >
+                            <a
+                                href="Audit Event.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-clipboard-list text-slate-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Audit Event
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Actions, users, times
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Cost
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Expenses, categories
-                                    </p>
+                            </a>
+                            <a
+                                href="Hold Event.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-pause-circle text-slate-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Hold Event
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Tolling, pause/resume
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="Costsheet.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-amber-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center group-hover:bg-amber-200 transition-colors">
-                                    <i class="fa-solid fa-file-invoice-dollar text-amber-600"></i>
+                            </a>
+                            <a
+                                href="Object History.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-clock-rotate-left text-slate-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Object History
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Change timeline, diffs
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Costsheet
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Budget totals, approval
-                                    </p>
+                            </a>
+                            <a
+                                href="Recycle Bin Item.html"
+                                class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors"
+                                    >
+                                        <i
+                                            class="fa-solid fa-trash-can text-slate-600"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">
+                                            Recycle Bin Item
+                                        </h4>
+                                        <p class="text-xs text-gray-500">
+                                            Deleted items, restore
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Metadata -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-tags text-pink-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Metadata
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Tags, associations, and object
-                                relationships
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Tag.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                                    <i class="fa-solid fa-tag text-pink-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Tag
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Labels, colors, usage
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Exemption Statute.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                                    <i class="fa-solid fa-balance-scale text-pink-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Exemption Statute
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        FOIA/SAR exemptions
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Associated Tag.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                                    <i class="fa-solid fa-tags text-pink-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Associated Tag
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Tag-object links
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Object Association.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-pink-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                                    <i class="fa-solid fa-link text-pink-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Object Association
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Relationships, types
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Audit -->
-                <div class="mb-10">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-clipboard-list text-slate-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">
-                                Audit
-                            </h3>
-                            <p class="text-sm text-gray-500">
-                                Event logging, history, and data
-                                recovery
-                            </p>
+                            </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="Audit Event.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
-                                    <i class="fa-solid fa-clipboard-list text-slate-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Audit Event
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Actions, users, times
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Hold Event.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
-                                    <i class="fa-solid fa-pause-circle text-slate-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Hold Event
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Tolling, pause/resume
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Object History.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
-                                    <i class="fa-solid fa-clock-rotate-left text-slate-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Object History
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Change timeline, diffs
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Recycle Bin Item.html"
-                            class="group bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-slate-300 transition-all">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center group-hover:bg-slate-200 transition-colors">
-                                    <i class="fa-solid fa-trash-can text-slate-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">
-                                        Recycle Bin Item
-                                    </h4>
-                                    <p class="text-xs text-gray-500">
-                                        Deleted items, restore
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-</body>
-
+                </section>
+            </div>
+        </main>
+    </body>
 </html>

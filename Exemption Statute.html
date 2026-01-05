@@ -83,7 +83,7 @@
                 </div>
 
                 <div id="small-card-variants" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Small Card 1: Applied Exemption (most common state) -->
+                    <!-- Small Card 1: Applied Exemption with Justification -->
                     <div id="small-card-applied"
                         class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
@@ -94,6 +94,9 @@
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(6) - Personal Privacy</h3>
                                 <p class="text-xs text-gray-500 mt-0.5 truncate">Protects personal privacy information</p>
+                                <p class="text-xs text-gray-400 mt-1 truncate italic">
+                                    <i class="fa-solid fa-quote-left text-[8px] mr-1"></i>SSN and home address redacted per privacy policy
+                                </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
@@ -113,38 +116,41 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 2: Under Review -->
-                    <div id="small-card-review"
-                        class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <!-- Small Card 2: Draft Status with Creator -->
+                    <div id="small-card-draft"
+                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-scale-balanced text-amber-600"></i>
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-scale-balanced text-blue-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(A) - Law Enforcement</h3>
                                 <p class="text-xs text-gray-500 mt-0.5 truncate">Interference with law enforcement proceedings</p>
+                                <p class="text-[10px] text-gray-400 mt-0.5 truncate">
+                                    <i class="fa-solid fa-user text-[8px] mr-0.5"></i>Applied by Jane Doe
+                                </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
                                     <span
-                                        class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-amber-100 text-amber-700">
-                                        <i class="fa-solid fa-clock mr-0.5 text-[8px]"></i>Reviewed
+                                        class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-700">
+                                        <i class="fa-solid fa-pencil mr-0.5 text-[8px]"></i>Draft
                                     </span>
                                     <span
                                         class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-pink-100 text-pink-700">
                                         89 uses
                                     </span>
                                 </div>
-                                <div class="text-[11px] text-amber-600">
-                                    <i class="fa-regular fa-clock text-amber-500 mr-0.5"></i>Updated today
+                                <div class="text-[11px] text-blue-600">
+                                    <i class="fa-regular fa-clock text-blue-500 mr-0.5"></i>Updated today
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Small Card 3: Pending -->
-                    <div id="small-card-pending"
+                    <!-- Small Card 3: Draft (National Security) -->
+                    <div id="small-card-draft-2"
                         class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div
@@ -159,7 +165,7 @@
                                 <div class="flex items-center gap-1.5">
                                     <span
                                         class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-700">
-                                        <i class="fa-solid fa-hourglass-half mr-0.5 text-[8px]"></i>Pending
+                                        <i class="fa-solid fa-pencil mr-0.5 text-[8px]"></i>Draft
                                     </span>
                                     <span
                                         class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-pink-100 text-pink-700">
@@ -173,8 +179,8 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 4: High Usage (Popular) -->
-                    <div id="small-card-popular"
+                    <!-- Small Card 4: Request-Level with Scope Badge -->
+                    <div id="small-card-request-level"
                         class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div
@@ -182,8 +188,13 @@
                                 <i class="fa-solid fa-scale-balanced text-pink-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(C) - LE Privacy</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Unwarranted invasion of personal privacy</p>
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(C) - LE Privacy</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">
+                                        <i class="fa-solid fa-folder text-[7px] mr-0.5"></i>Req
+                                    </span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate">Unwarranted invasion of personal privacy</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
@@ -234,8 +245,8 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 6: With Parent Reference -->
-                    <div id="small-card-with-parent"
+                    <!-- Small Card 6: Document-Level with Scope Badge -->
+                    <div id="small-card-document-level"
                         class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div
@@ -243,10 +254,15 @@
                                 <i class="fa-solid fa-scale-balanced text-pink-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(E) - LE Techniques</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 flex items-center gap-1 truncate">
-                                    <i class="fa-solid fa-file text-gray-400 text-[10px]"></i>
-                                    <span class="truncate">FOIA-2024-00847</span>
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(E) - LE Techniques</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-medium bg-indigo-100 text-indigo-700">
+                                        <i class="fa-solid fa-file text-[7px] mr-0.5"></i>Doc
+                                    </span>
+                                </div>
+                                <p class="text-xs text-gray-500 flex items-center gap-1 truncate">
+                                    <i class="fa-solid fa-paperclip text-gray-400 text-[10px]"></i>
+                                    <span class="truncate">Investigation_Report_v2.pdf</span>
                                 </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
@@ -316,16 +332,12 @@
                                 <span class="text-sm font-medium text-green-800">(b)(6) Applied</span>
                             </div>
                             <div
-                                class="inline-flex items-center bg-amber-100 border border-amber-300 rounded-full px-3 py-1.5 ml-2">
-                                <i class="fa-solid fa-clock text-amber-600 text-xs mr-2"></i>
-                                <span class="text-sm font-medium text-amber-800">(b)(7)(A) Reviewed</span>
-                            </div>
-                            <div
                                 class="inline-flex items-center bg-blue-100 border border-blue-300 rounded-full px-3 py-1.5 ml-2">
-                                <i class="fa-solid fa-hourglass-half text-blue-600 text-xs mr-2"></i>
-                                <span class="text-sm font-medium text-blue-800">(b)(1) Pending</span>
+                                <i class="fa-solid fa-pencil text-blue-600 text-xs mr-2"></i>
+                                <span class="text-sm font-medium text-blue-800">(b)(7)(A) Draft</span>
                             </div>
                         </div>
+                        <p class="text-xs text-gray-500 mt-3">Status values: DRAFT (blue), MANUAL/Applied (green)</p>
                     </div>
 
                     <!-- Dense Context (on Document Card) -->
@@ -413,13 +425,13 @@
                             </div>
                         </div>
 
-                        <!-- Compact Card 2: Under Review -->
+                        <!-- Compact Card 2: Draft Status -->
                         <div
-                            class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            class="chatbot-card-compact bg-white border border-blue-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
                             <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-scale-balanced text-amber-600 text-sm"></i>
+                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-scale-balanced text-blue-600 text-sm"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3 class="text-sm font-semibold text-gray-900 truncate">(b)(7)(A) - Law Enforcement</h3>
@@ -428,8 +440,8 @@
                                 <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                     <div class="flex items-center gap-1.5">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
-                                            Reviewed
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">
+                                            <i class="fa-solid fa-pencil mr-0.5 text-[8px]"></i>Draft
                                         </span>
                                         <span
                                             class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-pink-100 text-pink-700">
@@ -527,6 +539,17 @@
                                 </div>
                             </div>
 
+                            <!-- Justification Preview -->
+                            <div class="mb-3 p-3 bg-amber-50 rounded-lg border border-amber-100">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide font-medium mb-1 flex items-center gap-1">
+                                    <i class="fa-solid fa-quote-left text-amber-400 text-[8px]"></i>
+                                    Justification
+                                </p>
+                                <p class="text-xs text-gray-700 italic line-clamp-2">
+                                    SSN and home addresses redacted to protect individual privacy per agency policy...
+                                </p>
+                            </div>
+
                             <!-- Metadata -->
                             <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
                                 <div class="bg-gray-50 rounded p-2">
@@ -539,6 +562,14 @@
                                 <div class="bg-gray-50 rounded p-2">
                                     <p class="text-[10px] text-gray-500 uppercase tracking-wide">Last Modified</p>
                                     <p class="font-medium text-gray-700">Jan 5, 2024</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-2">
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide">Created By</p>
+                                    <p class="font-medium text-gray-700">Sarah Johnson</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-2">
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide">Created</p>
+                                    <p class="font-medium text-gray-700">Jan 3, 2024</p>
                                 </div>
                             </div>
 
@@ -633,7 +664,7 @@
                 </div>
 
                 <div id="medium-card-variants" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Medium Card 1: (b)(6) -->
+                    <!-- Medium Card 1: (b)(6) with Justification -->
                     <div id="medium-card-1"
                         class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                         <div class="p-5">
@@ -655,10 +686,24 @@
                                 </span>
                             </div>
 
-                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                            <p class="text-sm text-gray-600 mb-3 line-clamp-2">
                                 Protects information about individuals in personnel, medical, and similar files when
                                 disclosure would constitute a clearly unwarranted invasion of personal privacy.
                             </p>
+
+                            <!-- Justification Section -->
+                            <div class="bg-gray-50 rounded-lg p-3 mb-4 border border-gray-100">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-quote-left text-gray-300 text-xs mt-0.5"></i>
+                                    <div>
+                                        <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Justification</p>
+                                        <p class="text-sm text-gray-700 line-clamp-2 italic">
+                                            Social Security numbers, home addresses, and personal phone numbers redacted to protect
+                                            individual privacy per agency policy and FOIA guidelines.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="flex items-center justify-between pt-3 border-t border-gray-100">
                                 <div class="flex items-center text-sm text-gray-500">
@@ -672,14 +717,14 @@
                         </div>
                     </div>
 
-                    <!-- Medium Card 2: (b)(7)(A) -->
+                    <!-- Medium Card 2: (b)(7)(A) - Draft Status -->
                     <div id="medium-card-2"
                         class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                         <div class="p-5">
                             <div class="flex items-start justify-between mb-3">
                                 <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
-                                        <i class="fa-solid fa-scale-balanced text-pink-600 text-lg"></i>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                        <i class="fa-solid fa-scale-balanced text-blue-600 text-lg"></i>
                                     </div>
                                     <div>
                                         <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-0.5">
@@ -689,8 +734,8 @@
                                     </div>
                                 </div>
                                 <span
-                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700">
-                                    <i class="fa-solid fa-clock mr-1 text-[10px]"></i>Reviewed
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                                    <i class="fa-solid fa-pencil mr-1 text-[10px]"></i>Draft
                                 </span>
                             </div>
 
@@ -711,14 +756,14 @@
                         </div>
                     </div>
 
-                    <!-- Medium Card 3: (b)(1) -->
+                    <!-- Medium Card 3: (b)(1) - Draft Status -->
                     <div id="medium-card-3"
                         class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                         <div class="p-5">
                             <div class="flex items-start justify-between mb-3">
                                 <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
-                                        <i class="fa-solid fa-scale-balanced text-pink-600 text-lg"></i>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                        <i class="fa-solid fa-scale-balanced text-blue-600 text-lg"></i>
                                     </div>
                                     <div>
                                         <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-0.5">
@@ -729,7 +774,7 @@
                                 </div>
                                 <span
                                     class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
-                                    <i class="fa-solid fa-hourglass-half mr-1 text-[10px]"></i>Pending
+                                    <i class="fa-solid fa-pencil mr-1 text-[10px]"></i>Draft
                                 </span>
                             </div>
 
@@ -803,7 +848,7 @@
                 </div>
 
                 <div id="large-card-variants" class="grid grid-cols-1 gap-6">
-                    <!-- Large Card 1: (b)(6) -->
+                    <!-- Large Card 1: (b)(6) - Request Level -->
                     <div id="large-card-1" class="bg-white border border-gray-200 rounded-lg shadow-md">
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-5">
@@ -812,8 +857,13 @@
                                         <i class="fa-solid fa-scale-balanced text-pink-600 text-xl"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">
-                                            FOIA Exemption
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs text-gray-500 font-medium uppercase tracking-wide">
+                                                FOIA Exemption
+                                            </span>
+                                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
+                                                <i class="fa-solid fa-folder text-[8px] mr-1"></i>Request Level
+                                            </span>
                                         </div>
                                         <h3 class="text-xl font-bold text-gray-900">(b)(6) - Personal Privacy</h3>
                                     </div>
@@ -841,22 +891,57 @@
                                 </p>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-5 pb-5 border-b border-gray-200">
-                                <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Total Uses</div>
-                                    <div class="text-base font-semibold text-gray-900">142</div>
+                            <!-- Justification Section (Editable) -->
+                            <div class="mb-5 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1.5">
+                                        <i class="fa-solid fa-quote-left text-amber-400"></i>
+                                        Justification
+                                        <span class="text-[10px] text-amber-600 font-normal">(Required for FOIA compliance)</span>
+                                    </h4>
+                                    <button class="text-xs text-pink-600 hover:text-pink-700 font-medium flex items-center gap-1">
+                                        <i class="fa-solid fa-pencil text-[10px]"></i>Edit
+                                    </button>
                                 </div>
+                                <p class="text-sm text-gray-700 leading-relaxed italic">
+                                    Social Security numbers, home addresses, personal phone numbers, and date of birth information
+                                    have been redacted from pages 3, 7, 12-15, and 23 to protect individual privacy. The disclosure
+                                    of this personally identifiable information would constitute a clearly unwarranted invasion of
+                                    personal privacy under 5 U.S.C. 552(b)(6), and the public interest in disclosure does not
+                                    outweigh the privacy interests of the individuals named in these records.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-5 pb-5 border-b border-gray-200">
                                 <div>
                                     <div class="text-xs text-gray-500 font-medium mb-1">Status</div>
                                     <div class="text-base font-semibold text-green-700">Applied</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Last Modified</div>
-                                    <div class="text-base font-semibold text-gray-900">Jan 15, 2024</div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Total Uses</div>
+                                    <div class="text-base font-semibold text-gray-900">142</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Modified By</div>
-                                    <div class="text-base font-semibold text-gray-900">John Smith</div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">File Version</div>
+                                    <div class="text-base font-semibold text-gray-900">2.3</div>
+                                </div>
+                            </div>
+
+                            <!-- Creator & Modifier Info -->
+                            <div class="grid grid-cols-2 gap-4 mb-5 pb-5 border-b border-gray-200">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <div class="text-xs text-gray-500 font-medium mb-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-user-plus text-gray-400 text-[10px]"></i>Created
+                                    </div>
+                                    <div class="text-sm font-semibold text-gray-900">Sarah Johnson</div>
+                                    <div class="text-xs text-gray-500">Jan 10, 2024 at 2:34 PM</div>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <div class="text-xs text-gray-500 font-medium mb-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-user-pen text-gray-400 text-[10px]"></i>Last Modified
+                                    </div>
+                                    <div class="text-sm font-semibold text-gray-900">John Smith</div>
+                                    <div class="text-xs text-gray-500">Jan 15, 2024 at 10:15 AM</div>
                                 </div>
                             </div>
 
@@ -902,29 +987,58 @@
                         </div>
                     </div>
 
-                    <!-- Large Card 2: (b)(7)(A) -->
+                    <!-- Large Card 2: (b)(7)(A) - Document Level -->
                     <div id="large-card-2" class="bg-white border border-gray-200 rounded-lg shadow-md">
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-5">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
-                                        <i class="fa-solid fa-scale-balanced text-amber-600 text-xl"></i>
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fa-solid fa-scale-balanced text-blue-600 text-xl"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">
-                                            FOIA Exemption
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs text-gray-500 font-medium uppercase tracking-wide">
+                                                FOIA Exemption
+                                            </span>
+                                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">
+                                                <i class="fa-solid fa-file text-[8px] mr-1"></i>Document Level
+                                            </span>
                                         </div>
                                         <h3 class="text-xl font-bold text-gray-900">(b)(7)(A) - Law Enforcement Proceedings</h3>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span
-                                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700">
-                                        <i class="fa-solid fa-clock mr-1"></i>Reviewed
+                                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                                        <i class="fa-solid fa-pencil mr-1"></i>Draft
                                     </span>
                                     <button class="text-gray-400 hover:text-gray-600">
                                         <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
                                     </button>
+                                </div>
+                            </div>
+
+                            <!-- Attached Document Context -->
+                            <div class="mb-5 bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1.5">
+                                        <i class="fa-solid fa-paperclip text-indigo-400"></i>
+                                        Attached Document
+                                    </h4>
+                                    <a href="#" class="text-xs text-pink-600 hover:text-pink-700 font-medium">View File</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-white rounded border border-indigo-200 flex items-center justify-center">
+                                        <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-gray-900 truncate">Investigation_Report_Final.pdf</p>
+                                        <div class="flex items-center gap-3 text-xs text-gray-500">
+                                            <span><i class="fa-solid fa-code-branch mr-1"></i>Version 1.2</span>
+                                            <span><i class="fa-solid fa-weight-hanging mr-1"></i>2.4 MB</span>
+                                            <span><i class="fa-solid fa-calendar mr-1"></i>Jan 12, 2024</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -940,22 +1054,36 @@
                                 </p>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-5 pb-5 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-5 pb-5 border-b border-gray-200">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Status</div>
+                                    <div class="text-base font-semibold text-blue-700">Draft</div>
+                                </div>
                                 <div>
                                     <div class="text-xs text-gray-500 font-medium mb-1">Total Uses</div>
                                     <div class="text-base font-semibold text-gray-900">89</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Status</div>
-                                    <div class="text-base font-semibold text-amber-700">Reviewed</div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">File Version</div>
+                                    <div class="text-base font-semibold text-gray-900">1.2</div>
                                 </div>
-                                <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Last Modified</div>
-                                    <div class="text-base font-semibold text-gray-900">Jan 18, 2024</div>
+                            </div>
+
+                            <!-- Creator & Modifier Info -->
+                            <div class="grid grid-cols-2 gap-4 mb-5 pb-5 border-b border-gray-200">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <div class="text-xs text-gray-500 font-medium mb-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-user-plus text-gray-400 text-[10px]"></i>Created
+                                    </div>
+                                    <div class="text-sm font-semibold text-gray-900">Mike Wilson</div>
+                                    <div class="text-xs text-gray-500">Jan 12, 2024 at 9:15 AM</div>
                                 </div>
-                                <div>
-                                    <div class="text-xs text-gray-500 font-medium mb-1">Modified By</div>
-                                    <div class="text-base font-semibold text-gray-900">Sarah Johnson</div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <div class="text-xs text-gray-500 font-medium mb-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-user-pen text-gray-400 text-[10px]"></i>Last Modified
+                                    </div>
+                                    <div class="text-sm font-semibold text-gray-900">Sarah Johnson</div>
+                                    <div class="text-xs text-gray-500">Jan 18, 2024 at 3:42 PM</div>
                                 </div>
                             </div>
 

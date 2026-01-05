@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Small Card 1: Under Investigation (Standard) -->
+                    <!-- Small Card 1: In Process with Compliance Context -->
                     <div id="small-card-1"
                         class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
@@ -76,65 +76,89 @@
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Records regarding environmental impact study</h3>
                                 <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00847</p>
+                                <!-- NEW: Progress bar showing timeline consumption -->
+                                <div class="mt-1.5 flex items-center gap-2">
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-amber-500 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-amber-600 font-medium whitespace-nowrap">Day 45/60</span>
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
                                     <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Initial</span>
-                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-orange-800">In Process</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">In Process</span>
                                     <i class="fa-solid fa-flag text-red-500" title="Critical Priority"></i>
                                 </div>
-                                <div class="text-xs text-gray-600">
-                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>Due Jan 28
+                                <!-- NEW: Days remaining with urgency indicator -->
+                                <div class="text-xs text-amber-600 font-medium">
+                                    <i class="fa-solid fa-clock text-amber-500 mr-1"></i>15 days left
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Small Card 2: Expedited Request -->
+                    <!-- Small Card 2: Expedited Request (Granted) -->
                     <div id="small-card-2"
                         class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Media request for press briefing documents</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00846
-                                    <i class="fa-solid fa-bolt text-amber-500 ml-1" title="Expedited"></i>
-                                </p>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00846</p>
+                                <!-- NEW: Progress bar at critical level -->
+                                <div class="mt-1.5 flex items-center gap-2">
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-red-500 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-red-600 font-medium whitespace-nowrap">Day 10/10</span>
+                                </div>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
-                                    <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Expedited</span>
+                                    <!-- NEW: Shows decision status, not just flag -->
+                                    <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-bolt mr-0.5"></i><i class="fa-solid fa-check text-[8px]"></i>
+                                    </span>
                                     <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Under Review</span>
                                 </div>
-                                <div class="text-xs text-amber-600 font-medium">
-                                    <i class="fa-regular fa-calendar text-amber-500 mr-1"></i>Due Today
+                                <!-- NEW: Critical due date alert -->
+                                <div class="text-xs text-red-600 font-semibold">
+                                    <i class="fa-solid fa-exclamation-triangle text-red-500 mr-1"></i>Due Today!
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Small Card 3: On Hold (Tolling) -->
+                    <!-- Small Card 3: On Hold (Tolling) with Duration -->
                     <div id="small-card-3"
                         class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 relative">
                                 <i class="fa-solid fa-pause-circle text-blue-600"></i>
+                                <!-- NEW: Hold duration badge on icon -->
+                                <span class="absolute -bottom-1 -right-1 bg-blue-600 text-white text-[8px] font-bold px-1 rounded">18d</span>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Financial audit records FY2023</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00845
-                                    <i class="fa-solid fa-pause text-blue-500 ml-1" title="On Hold"></i>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00845</p>
+                                <!-- NEW: Hold reason snippet -->
+                                <p class="text-[10px] text-blue-600 mt-0.5 truncate">
+                                    <i class="fa-solid fa-info-circle mr-0.5"></i>Awaiting fee payment
                                 </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
                                     <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">Complex</span>
-                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">On Hold</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                        <i class="fa-solid fa-pause mr-1 text-[10px]"></i>On Hold
+                                    </span>
                                 </div>
-                                <div class="text-xs text-blue-600">
-                                    <i class="fa-solid fa-pause-circle text-blue-400 mr-1"></i>Tolling
+                                <!-- NEW: Hold duration with fee context -->
+                                <div class="text-xs text-blue-600 font-medium">
+                                    <i class="fa-solid fa-dollar-sign text-blue-500 mr-1"></i>$450 owed
                                 </div>
                             </div>
                         </div>
@@ -166,16 +190,20 @@
                         </div>
                     </div>
 
-                    <!-- Small Card 5: Appeal -->
+                    <!-- Small Card 5: Appeal with Original Request Link -->
                     <div id="small-card-5"
-                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        class="bg-white border border-indigo-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fa-solid fa-scale-balanced text-indigo-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Appeal of partial denial - FOIA-2024-00712</h3>
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Appeal of partial denial</h3>
                                 <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00843</p>
+                                <!-- NEW: Link to original request -->
+                                <p class="text-[10px] text-indigo-600 mt-0.5">
+                                    <i class="fa-solid fa-link mr-0.5"></i>Original: <span class="underline">FOIA-2024-00712</span>
+                                </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
@@ -183,32 +211,102 @@
                                     <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Under Review</span>
                                 </div>
                                 <div class="text-xs text-gray-600">
-                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>Due Feb 5
+                                    <i class="fa-solid fa-clock text-gray-400 mr-1"></i>12 days left
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Small Card 6: Closed/Released -->
+                    <!-- Small Card 6: Closed with Disposition Details -->
                     <div id="small-card-6"
-                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        class="bg-white border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fa-solid fa-circle-check text-green-600"></i>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-sm font-semibold text-gray-900 truncate">Public meeting minutes 2023</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00842
-                                    <i class="fa-solid fa-globe text-green-500 ml-1" title="Public Reading Room"></i>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00842</p>
+                                <!-- NEW: Disposition outcome -->
+                                <p class="text-[10px] text-green-600 mt-0.5">
+                                    <i class="fa-solid fa-check-double mr-0.5"></i>Full Grant - 24 pages released
                                 </p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-2">
-                                    <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Simple</span>
+                                    <span class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-globe mr-0.5 text-[8px]"></i>Public
+                                    </span>
                                     <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Released</span>
                                 </div>
                                 <div class="text-xs text-gray-500">
-                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>Closed: Jan 15
+                                    <i class="fa-regular fa-calendar-check text-gray-400 mr-1"></i>Closed: Jan 15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Small Card 7: Overdue (Critical Compliance) -->
+                    <div id="small-card-7"
+                        class="bg-red-50 border-2 border-red-300 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 relative">
+                                <i class="fa-solid fa-file-lines text-red-600"></i>
+                                <!-- Pulsing alert indicator -->
+                                <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Budget allocation documents</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00840</p>
+                                <!-- Progress bar showing overdue -->
+                                <div class="mt-1.5 flex items-center gap-2">
+                                    <div class="flex-1 h-1.5 bg-red-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-red-600 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-red-700 font-bold whitespace-nowrap">+5 days</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold bg-red-600 text-white">
+                                        <i class="fa-solid fa-exclamation-triangle mr-1 text-[10px]"></i>OVERDUE
+                                    </span>
+                                </div>
+                                <div class="text-xs text-red-700 font-semibold">
+                                    <i class="fa-solid fa-calendar-xmark text-red-600 mr-1"></i>Was due Dec 31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Small Card 8: Fee Waiver Pending Decision -->
+                    <div id="small-card-8"
+                        class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-lines text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Employee training records</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">FOIA-2024-00839</p>
+                                <!-- Progress bar -->
+                                <div class="mt-1.5 flex items-center gap-2">
+                                    <div class="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-blue-500 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-gray-600 font-medium whitespace-nowrap">Day 6/20</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <!-- NEW: Fee waiver pending badge -->
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-dollar-sign mr-0.5"></i><i class="fa-solid fa-clock text-[8px]"></i>
+                                    </span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">New</span>
+                                </div>
+                                <div class="text-xs text-amber-600">
+                                    <i class="fa-solid fa-hourglass-half text-amber-500 mr-1"></i>Waiver pending
                                 </div>
                             </div>
                         </div>
@@ -365,8 +463,10 @@
                         <div class="p-4">
                             <!-- Header -->
                             <div class="flex items-start gap-3 mb-3">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-file-lines text-blue-600"></i>
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-file-lines text-red-600"></i>
+                                    <!-- Pulsing overdue indicator -->
+                                    <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center gap-2 mb-1">
@@ -380,11 +480,29 @@
                                 </div>
                             </div>
 
+                            <!-- NEW: Compliance Alert Box -->
+                            <div class="mb-3 p-2 bg-red-50 border border-red-200 rounded-lg">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-exclamation-triangle text-red-500"></i>
+                                    <div class="flex-1">
+                                        <p class="text-xs font-semibold text-red-700">Compliance Alert</p>
+                                        <p class="text-[10px] text-red-600">3 days past due date - requires immediate attention</p>
+                                    </div>
+                                </div>
+                                <!-- Progress bar showing overdue -->
+                                <div class="mt-2 flex items-center gap-2">
+                                    <div class="flex-1 h-1.5 bg-red-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-red-600 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                    <span class="text-[10px] text-red-700 font-bold">+3 days</span>
+                                </div>
+                            </div>
+
                             <!-- Metadata Grid -->
                             <div class="grid grid-cols-2 gap-3 mb-3 p-3 bg-gray-50 rounded-lg">
                                 <div>
                                     <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Status</p>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-orange-800">In Process</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">In Process</span>
                                 </div>
                                 <div>
                                     <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Track</p>
@@ -395,7 +513,7 @@
                                 <div>
                                     <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Due Date</p>
                                     <span class="text-xs font-medium text-red-600">
-                                        <i class="fa-regular fa-calendar mr-1"></i>Dec 28, 2024
+                                        <i class="fa-solid fa-calendar-xmark mr-1"></i>Dec 28, 2024
                                     </span>
                                 </div>
                                 <div>
@@ -411,18 +529,36 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Queue</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Source</p>
                                     <span class="text-xs font-medium text-gray-700">
-                                        <i class="fa-solid fa-layer-group mr-1 text-gray-400"></i>Environmental
+                                        <i class="fa-solid fa-globe mr-1 text-gray-400"></i>Web Portal
                                     </span>
                                 </div>
                             </div>
 
-                            <!-- Flags Row -->
+                            <!-- NEW: Fee Status Summary -->
+                            <div class="mb-3 p-2 bg-green-50 border border-green-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        <span class="text-xs font-medium text-gray-700">Fee Status:</span>
+                                    </div>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-check mr-0.5"></i>Waiver Granted
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between mt-1 text-[10px]">
+                                    <span class="text-gray-600">$450 waived</span>
+                                    <span class="text-gray-600">$0 owed</span>
+                                </div>
+                            </div>
+
+                            <!-- Flags Row with Decision Status -->
                             <div class="flex items-center gap-2 mb-3 flex-wrap">
                                 <p class="text-[10px] text-gray-500 uppercase tracking-wide">Flags</p>
-                                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
-                                    <i class="fa-solid fa-dollar-sign mr-1"></i>Fee Waiver
+                                <!-- Fee Waiver shows GRANTED status -->
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-dollar-sign mr-0.5"></i><i class="fa-solid fa-check text-[8px]"></i>
                                 </span>
                                 <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">
                                     <i class="fa-solid fa-clock mr-1"></i>Extension
@@ -527,7 +663,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Medium Card 1: In Process -->
+                    <!-- Medium Card 1: In Process with Timeline & Fee Status -->
                     <div id="medium-card-1" class="bg-white border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
                         <div class="p-5">
                             <div class="flex items-start justify-between mb-4">
@@ -541,12 +677,38 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-orange-800">In Process</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">In Process</span>
                                     <i class="fa-solid fa-flag text-red-500" title="High Priority"></i>
                                 </div>
                             </div>
 
-                            <h4 class="text-sm font-medium text-gray-900 mb-2">Records regarding environmental impact study</h4>
+                            <h4 class="text-sm font-medium text-gray-900 mb-3">Records regarding environmental impact study</h4>
+
+                            <!-- NEW: Timeline Visualization -->
+                            <div class="mb-4 p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center justify-between text-[10px] text-gray-500 mb-2">
+                                    <span>Received</span>
+                                    <span>Perfected</span>
+                                    <span>Due</span>
+                                </div>
+                                <div class="relative">
+                                    <div class="h-2 bg-gray-200 rounded-full">
+                                        <div class="h-full bg-gradient-to-r from-green-500 via-amber-500 to-amber-500 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <div class="flex justify-between mt-1">
+                                        <span class="text-[10px] font-medium text-gray-700">Nov 28</span>
+                                        <span class="text-[10px] font-medium text-gray-700">Nov 30</span>
+                                        <span class="text-[10px] font-medium text-amber-600">Jan 28</span>
+                                    </div>
+                                </div>
+                                <!-- NEW: Days context -->
+                                <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-200">
+                                    <span class="text-xs text-gray-600">Day 45 of 60</span>
+                                    <span class="text-xs font-semibold text-amber-600">
+                                        <i class="fa-solid fa-clock mr-1"></i>15 days remaining
+                                    </span>
+                                </div>
+                            </div>
 
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                                 <div>
@@ -554,19 +716,33 @@
                                     <div class="text-sm font-semibold text-purple-700">Complex</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium">Due Date</div>
-                                    <div class="text-sm font-semibold text-red-600">Jan 28, 2024</div>
+                                    <div class="text-xs text-gray-500 font-medium">Component</div>
+                                    <div class="text-sm font-semibold text-gray-900">Environmental</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium">Received</div>
-                                    <div class="text-sm font-semibold text-gray-900">Nov 28, 2024</div>
+                                    <div class="text-xs text-gray-500 font-medium">Source</div>
+                                    <div class="text-sm font-semibold text-gray-900">Web Portal</div>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Fee Status Section -->
+                            <div class="mb-4 p-2 bg-green-50 border border-green-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-dollar-sign text-green-600"></i>
+                                        <span class="text-xs font-medium text-gray-700">Fee Waiver:</span>
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-green-100 text-green-700">
+                                            <i class="fa-solid fa-check mr-0.5"></i>GRANTED
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-green-700 font-medium">$450 waived</span>
                                 </div>
                             </div>
 
                             <div class="flex items-center gap-2 mb-4">
                                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">Initial</span>
-                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">
-                                    <i class="fa-solid fa-dollar-sign mr-1"></i>Fee Waiver
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <i class="fa-solid fa-clock-rotate-left mr-1"></i>Extension
                                 </span>
                             </div>
 
@@ -583,13 +759,15 @@
                         </div>
                     </div>
 
-                    <!-- Medium Card 2: On Hold -->
+                    <!-- Medium Card 2: On Hold with Enhanced Hold Info -->
                     <div id="medium-card-2" class="bg-white border border-blue-200 rounded-lg hover:shadow-lg transition-shadow">
                         <div class="p-5">
                             <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center relative">
                                         <i class="fa-solid fa-pause-circle text-blue-600"></i>
+                                        <!-- Hold duration badge -->
+                                        <span class="absolute -bottom-1 -right-1 bg-blue-600 text-white text-[8px] font-bold px-1.5 rounded">18d</span>
                                     </div>
                                     <div class="ml-3">
                                         <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">FOIA Request</span>
@@ -603,20 +781,57 @@
                                 </div>
                             </div>
 
-                            <h4 class="text-sm font-medium text-gray-900 mb-2">Financial audit records FY2023</h4>
+                            <h4 class="text-sm font-medium text-gray-900 mb-3">Financial audit records FY2023</h4>
 
-                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <!-- NEW: Hold Duration & History Section -->
+                            <div class="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-semibold text-blue-800 uppercase tracking-wide">
+                                        <i class="fa-solid fa-clock-rotate-left mr-1"></i>Hold Status
+                                    </span>
+                                    <span class="text-xs font-bold text-blue-700">18 days on hold</span>
+                                </div>
+                                <div class="text-xs text-blue-700 mb-2">
+                                    <strong>Reason:</strong> Awaiting fee payment
+                                </div>
+                                <!-- Hold timeline mini -->
+                                <div class="flex items-center gap-2 text-[10px] text-blue-600">
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-play text-green-500"></i>Started: Jan 10
+                                    </span>
+                                    <span class="text-blue-300">|</span>
+                                    <span class="flex items-center gap-1">
+                                        <i class="fa-solid fa-hourglass-half"></i>Total tolled: 18 days
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Fee Payment Status -->
+                            <div class="mb-4 p-2 bg-amber-50 border border-amber-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-receipt text-amber-600"></i>
+                                        <span class="text-xs font-medium text-gray-700">Fees:</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs font-semibold text-amber-700">$450.00 estimated</div>
+                                        <div class="text-[10px] text-amber-600">$0.00 paid</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 mb-4">
                                 <div>
                                     <div class="text-xs text-gray-500 font-medium">Track</div>
                                     <div class="text-sm font-semibold text-purple-700">Complex</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium">Hold Since</div>
-                                    <div class="text-sm font-semibold text-blue-600">Jan 10, 2024</div>
+                                    <div class="text-xs text-gray-500 font-medium">Received</div>
+                                    <div class="text-sm font-semibold text-gray-900">Dec 15</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium">Received</div>
-                                    <div class="text-sm font-semibold text-gray-900">Dec 15, 2024</div>
+                                    <div class="text-xs text-gray-500 font-medium">Days until auto-close</div>
+                                    <div class="text-sm font-semibold text-red-600">12 days</div>
                                 </div>
                             </div>
 
@@ -625,13 +840,6 @@
                                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">
                                     <i class="fa-solid fa-pause mr-1"></i>Tolling
                                 </span>
-                            </div>
-
-                            <div class="p-2 bg-blue-50 rounded-lg border border-blue-100 mb-4">
-                                <p class="text-xs text-blue-700">
-                                    <i class="fa-solid fa-info-circle mr-1"></i>
-                                    <strong>Hold Reason:</strong> Awaiting fee payment - $450.00 estimated
-                                </p>
                             </div>
 
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
@@ -808,44 +1016,161 @@
                                 </p>
                             </div>
 
-                            <!-- Requester Info -->
+                            <!-- NEW: Workflow Stage Visualization -->
+                            <div class="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg">
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Workflow Progress</h5>
+                                <div class="flex items-center justify-between">
+                                    <!-- Intake -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center mb-1">
+                                            <i class="fa-solid fa-check text-sm"></i>
+                                        </div>
+                                        <span class="text-[10px] font-medium text-green-700">Intake</span>
+                                        <span class="text-[9px] text-gray-500">Nov 30</span>
+                                    </div>
+                                    <div class="flex-1 h-1 bg-green-500 mx-2"></div>
+                                    <!-- Fulfill -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center mb-1 ring-4 ring-blue-200">
+                                            <i class="fa-solid fa-folder-open text-sm"></i>
+                                        </div>
+                                        <span class="text-[10px] font-semibold text-blue-700">Fulfill</span>
+                                        <span class="text-[9px] text-blue-600 font-medium">Current</span>
+                                    </div>
+                                    <div class="flex-1 h-1 bg-gray-300 mx-2"></div>
+                                    <!-- Approve -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-400 flex items-center justify-center mb-1">
+                                            <i class="fa-solid fa-thumbs-up text-sm"></i>
+                                        </div>
+                                        <span class="text-[10px] font-medium text-gray-400">Approve</span>
+                                        <span class="text-[9px] text-gray-400">Pending</span>
+                                    </div>
+                                    <div class="flex-1 h-1 bg-gray-300 mx-2"></div>
+                                    <!-- Release -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-400 flex items-center justify-center mb-1">
+                                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                                        </div>
+                                        <span class="text-[10px] font-medium text-gray-400">Release</span>
+                                        <span class="text-[9px] text-gray-400">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Compliance Timeline Section -->
                             <div class="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                                <div class="flex items-center justify-between mb-3">
+                                    <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Compliance Timeline</h5>
+                                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-800">
+                                        <i class="fa-solid fa-clock mr-1"></i>15 days remaining
+                                    </span>
+                                </div>
+                                <!-- Timeline bar -->
+                                <div class="mb-3">
+                                    <div class="flex items-center justify-between text-[10px] text-gray-500 mb-1">
+                                        <span>Received</span>
+                                        <span>Perfected</span>
+                                        <span>Original Due</span>
+                                        <span>Extended Due</span>
+                                    </div>
+                                    <div class="h-3 bg-gray-200 rounded-full overflow-hidden relative">
+                                        <div class="h-full bg-gradient-to-r from-green-500 via-amber-400 to-amber-400 rounded-full" style="width: 75%"></div>
+                                        <!-- Original due date marker -->
+                                        <div class="absolute top-0 bottom-0 w-0.5 bg-gray-400" style="left: 60%"></div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10px] font-medium mt-1">
+                                        <span class="text-gray-700">Nov 28</span>
+                                        <span class="text-gray-700">Nov 30</span>
+                                        <span class="text-gray-400 line-through">Jan 15</span>
+                                        <span class="text-amber-600">Jan 28</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-center pt-3 border-t border-amber-200">
+                                    <div>
+                                        <div class="text-lg font-bold text-gray-900">45</div>
+                                        <div class="text-[10px] text-gray-500">Days Elapsed</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-amber-600">15</div>
+                                        <div class="text-[10px] text-gray-500">Days Remaining</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-blue-600">+10</div>
+                                        <div class="text-[10px] text-gray-500">Extension Days</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Requester Info -->
+                            <div class="mb-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
                                 <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Requester Information</h5>
-                                <div class="flex items-center gap-4">
+                                <div class="flex items-center gap-4 flex-wrap">
                                     <div class="flex items-center gap-2">
-                                        <i class="fa-solid fa-user text-amber-600"></i>
+                                        <i class="fa-solid fa-user text-gray-500"></i>
                                         <span class="text-sm font-medium text-gray-900">Jane Doe</span>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <i class="fa-solid fa-building text-amber-600"></i>
+                                        <i class="fa-solid fa-building text-gray-500"></i>
                                         <span class="text-sm text-gray-700">Environmental Law Center</span>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <i class="fa-solid fa-envelope text-amber-600"></i>
+                                        <i class="fa-solid fa-envelope text-gray-500"></i>
                                         <span class="text-sm text-gray-700">jane.doe@envlaw.org</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">
+                                            <i class="fa-solid fa-globe mr-0.5"></i>Web Portal
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NEW: Fee Status Section -->
+                            <div class="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Fee Status</h5>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-check mr-1"></i>WAIVER GRANTED
+                                    </span>
+                                </div>
+                                <div class="grid grid-cols-4 gap-4 text-center">
+                                    <div>
+                                        <div class="text-sm font-bold text-gray-900">$450.00</div>
+                                        <div class="text-[10px] text-gray-500">Estimated</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-bold text-green-600">$450.00</div>
+                                        <div class="text-[10px] text-gray-500">Waived</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-bold text-gray-900">$0.00</div>
+                                        <div class="text-[10px] text-gray-500">Owed</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-bold text-gray-900">$0.00</div>
+                                        <div class="text-[10px] text-gray-500">Paid</div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Key Details Grid -->
-                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-                                <div>
-                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Due Date</div>
-                                    <div class="text-base font-semibold text-red-600">
-                                        <i class="fa-regular fa-calendar mr-1"></i>Jan 28, 2024
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Received</div>
-                                    <div class="text-base font-semibold text-gray-900">Nov 28, 2024</div>
-                                </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                                 <div>
                                     <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Track</div>
                                     <div class="text-base font-semibold text-purple-700">Complex</div>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Component</div>
                                     <div class="text-base font-semibold text-gray-900">Environmental</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                    <div class="text-base font-semibold text-gray-900">Fulfill</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Throughput</div>
+                                    <div class="text-base font-semibold text-gray-900">45 days</div>
                                 </div>
                             </div>
 
@@ -1054,6 +1379,186 @@
                             <div class="flex items-center gap-2">
                                 <i class="fa-solid fa-lock text-amber-500"></i>
                                 <span class="text-sm text-gray-700">Restricted Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Compliance Indicators -->
+                    <div class="bg-red-50 rounded-lg p-6 border border-red-200">
+                        <h3 class="text-sm font-semibold text-red-700 mb-4 uppercase tracking-wide">
+                            <i class="fa-solid fa-exclamation-triangle mr-1"></i>Compliance Indicators
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-600 text-white">
+                                    <i class="fa-solid fa-exclamation-triangle mr-1"></i>OVERDUE
+                                </span>
+                                <span class="text-xs text-gray-500">Past due date</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700">
+                                    <i class="fa-solid fa-clock mr-1"></i>Due Today
+                                </span>
+                                <span class="text-xs text-gray-500">Due within 24hrs</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700">
+                                    <i class="fa-solid fa-clock mr-1"></i>Due This Week
+                                </span>
+                                <span class="text-xs text-gray-500">Due within 7 days</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-check mr-1"></i>On Track
+                                </span>
+                                <span class="text-xs text-gray-500">Within timeline</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Decision Status Badges -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Decision Status Badges</h3>
+                        <div class="space-y-4">
+                            <!-- Expedited Processing -->
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2 font-medium">Expedited Processing</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-bolt mr-0.5"></i><i class="fa-solid fa-clock text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Pending</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-bolt mr-0.5"></i><i class="fa-solid fa-check text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Granted</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">
+                                        <i class="fa-solid fa-bolt mr-0.5"></i><i class="fa-solid fa-times text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Denied</span>
+                                </div>
+                            </div>
+                            <!-- Fee Waiver -->
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2 font-medium">Fee Waiver</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-dollar-sign mr-0.5"></i><i class="fa-solid fa-clock text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Pending</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-dollar-sign mr-0.5"></i><i class="fa-solid fa-check text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Granted</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">
+                                        <i class="fa-solid fa-dollar-sign mr-0.5"></i><i class="fa-solid fa-times text-[8px]"></i>
+                                    </span>
+                                    <span class="text-[10px] text-gray-500">Denied</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Disposition Outcomes -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Disposition Outcomes</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-check-double mr-1"></i>Full Grant
+                                </span>
+                                <span class="text-xs text-gray-500">All records released</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-amber-100 text-amber-700">
+                                    <i class="fa-solid fa-check mr-1"></i>Partial Grant
+                                </span>
+                                <span class="text-xs text-gray-500">Some records released</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-red-100 text-red-700">
+                                    <i class="fa-solid fa-times mr-1"></i>Full Denial
+                                </span>
+                                <span class="text-xs text-gray-500">No records released</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700">
+                                    <i class="fa-solid fa-ban mr-1"></i>No Records
+                                </span>
+                                <span class="text-xs text-gray-500">Records don't exist</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <i class="fa-solid fa-arrow-right mr-1"></i>Referred
+                                </span>
+                                <span class="text-xs text-gray-500">Sent to another agency</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">
+                                    <i class="fa-solid fa-xmark mr-1"></i>Withdrawn
+                                </span>
+                                <span class="text-xs text-gray-500">Requester withdrew</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Progress Indicators -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">Timeline Progress</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2">On Track (50%)</p>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-500 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2">Warning (75%)</p>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-amber-500 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2">Critical (95%)</p>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-red-500 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 mb-2">Overdue (+10%)</p>
+                                <div class="h-2 bg-red-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-red-600 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Hold Duration Badges -->
+                    <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                        <h3 class="text-sm font-semibold text-blue-700 mb-4 uppercase tracking-wide">
+                            <i class="fa-solid fa-pause-circle mr-1"></i>Hold Duration
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center relative">
+                                    <i class="fa-solid fa-pause-circle text-blue-600"></i>
+                                    <span class="absolute -bottom-1 -right-1 bg-blue-600 text-white text-[8px] font-bold px-1 rounded">5d</span>
+                                </div>
+                                <span class="text-sm text-gray-700">Short hold (1-7 days)</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center relative">
+                                    <i class="fa-solid fa-pause-circle text-amber-600"></i>
+                                    <span class="absolute -bottom-1 -right-1 bg-amber-600 text-white text-[8px] font-bold px-1 rounded">30d</span>
+                                </div>
+                                <span class="text-sm text-gray-700">Medium hold (8-30 days)</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center relative">
+                                    <i class="fa-solid fa-pause-circle text-red-600"></i>
+                                    <span class="absolute -bottom-1 -right-1 bg-red-600 text-white text-[8px] font-bold px-1 rounded">90d</span>
+                                </div>
+                                <span class="text-sm text-gray-700">Long hold (31+ days)</span>
                             </div>
                         </div>
                     </div>

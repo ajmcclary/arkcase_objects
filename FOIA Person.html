@@ -56,15 +56,18 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Active Requester with Portal Access -->
+                    <!-- Active Requester with Portal Access + Photo -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-user text-green-600"></i>
+                            <div class="w-10 h-10 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face" alt="Jane Doe" class="w-full h-full object-cover">
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Jane Doe</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Environmental Law Center</p>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Jane Doe</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">Environmental Law Center · Attorney</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
@@ -73,121 +76,273 @@
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
                                 </div>
-                                <div class="text-[11px] text-gray-500">
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
                                     <i class="fa-solid fa-envelope mr-0.5"></i>jane@envlaw.org
                                 </div>
                             </div>
                         </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 234-5678</span>
+                            <span><i class="fa-solid fa-file-lines mr-0.5"></i>3 requests</span>
+                        </div>
                     </div>
 
-                    <!-- Media Requester -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <!-- Media Requester + Photo -->
+                    <div class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-newspaper text-amber-600"></i>
+                            <div class="w-10 h-10 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="John Smith" class="w-full h-full object-cover">
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Daily News Tribune</p>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">Daily News Tribune · Reporter</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
                                     <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Media</span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
                                 </div>
-                                <div class="text-[11px] text-gray-500">
-                                    <i class="fa-solid fa-phone mr-0.5"></i>(555) 123-4567
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
+                                    <i class="fa-solid fa-envelope mr-0.5"></i>jsmith@tribune.com
                                 </div>
                             </div>
                         </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 123-4567</span>
+                            <span><i class="fa-solid fa-file-lines mr-0.5"></i>8 requests</span>
+                        </div>
                     </div>
 
-                    <!-- Commercial Requester -->
+                    <!-- Commercial Requester + Initials Avatar -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-building text-green-600"></i>
+                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-semibold text-purple-700">SJ</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Acme Research Corp</p>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">Acme Research Corp · Analyst</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
                                     <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">Commercial</span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
                                 </div>
-                                <div class="text-[11px] text-gray-500">
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
                                     <i class="fa-solid fa-envelope mr-0.5"></i>sarah@acme.com
                                 </div>
                             </div>
                         </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 987-6543</span>
+                            <span><i class="fa-solid fa-file-lines mr-0.5"></i>2 requests</span>
+                        </div>
                     </div>
 
-                    <!-- Individual Requester -->
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <!-- Subject (Different Person Type) -->
+                    <div class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-user text-gray-600"></i>
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-semibold text-blue-700">MC</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Individual Requester</p>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">Subject</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">Individual</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
                                     <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-700">Other</span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
                                 </div>
-                                <div class="text-[11px] text-gray-500">
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
                                     <i class="fa-solid fa-envelope mr-0.5"></i>mchen@email.com
                                 </div>
                             </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 456-7890</span>
+                            <span>Subject in 1 request</span>
                         </div>
                     </div>
 
                     <!-- Inactive Requester -->
                     <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer opacity-75">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-user text-gray-400"></i>
+                            <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-semibold text-gray-500">RW</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-600 truncate">Robert Wilson</h3>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-600 truncate">Robert Wilson</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-500">Requester</span>
+                                </div>
                                 <p class="text-xs text-gray-400 mt-0.5 truncate">Former Employee</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-gray-100 text-gray-600">Inactive</span>
                                 <div class="text-[11px] text-gray-400">
-                                    Last active: 6mo ago
+                                    Since: Jun 2023
                                 </div>
                             </div>
                         </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-400">
+                            <span>Last active: 6mo ago</span>
+                            <span><i class="fa-solid fa-file-lines mr-0.5"></i>1 request</span>
+                        </div>
                     </div>
 
-                    <!-- Portal User with Multiple Requests -->
-                    <div class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                    <!-- Portal User with Photo + Multiple Requests -->
+                    <div class="bg-white border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 relative">
-                                <i class="fa-solid fa-user text-green-600"></i>
-                                <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-600 rounded-full flex items-center justify-center">
-                                    <i class="fa-solid fa-globe text-white text-[8px]"></i>
+                            <div class="w-10 h-10 rounded-full flex-shrink-0 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Lisa Wang" class="w-full h-full object-cover">
+                                <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-600 rounded-full flex items-center justify-center border-2 border-white">
+                                    <i class="fa-solid fa-globe text-white text-[7px]"></i>
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-sm font-semibold text-gray-900 truncate">Lisa Wang</h3>
-                                <p class="text-xs text-gray-500 mt-0.5 truncate">Public Interest Group</p>
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Lisa Wang</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">Public Interest Group · Director</p>
                             </div>
                             <div class="flex flex-col items-end gap-1 flex-shrink-0">
                                 <div class="flex items-center gap-1.5">
                                     <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
-                                        <i class="fa-solid fa-file-lines mr-0.5"></i>12 requests
+                                        <i class="fa-solid fa-globe mr-0.5"></i>Portal
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
                                 </div>
-                                <div class="text-[11px] text-gray-500">
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
                                     <i class="fa-solid fa-envelope mr-0.5"></i>lwang@pig.org
                                 </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 321-0987</span>
+                            <span><i class="fa-solid fa-file-lines mr-0.5"></i>12 requests</span>
+                        </div>
+                    </div>
+
+                    <!-- Third Party Person Type -->
+                    <div class="bg-white border border-gray-300 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-semibold text-gray-600">TM</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Thomas Martinez</h3>
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-200 text-gray-700">Third Party</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-0.5 truncate">City Planning Dept · Consultant</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
+                                <div class="text-[11px] text-gray-500 truncate max-w-[140px]">
+                                    <i class="fa-solid fa-envelope mr-0.5"></i>tmartinez@city.gov
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-100 text-[11px] text-gray-500">
+                            <span><i class="fa-solid fa-phone mr-0.5"></i>(555) 654-3210</span>
+                            <span>Mentioned in 3 requests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anonymous Requester Cards -->
+                <div class="mt-12">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Anonymous Requester Cards</h3>
+                        <p class="text-gray-600 text-sm">Special masked design for anonymous requesters - contact info withheld</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Anonymous Requester - Small Card -->
+                        <div class="bg-gray-50 border border-gray-300 border-dashed rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-gray-500"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-700">Anonymous Requester</h3>
+                                    </div>
+                                    <p class="text-xs text-gray-400 mt-0.5">Contact information withheld</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-gray-200 text-gray-600">
+                                        <i class="fa-solid fa-eye-slash mr-0.5"></i>Anonymous
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-200 text-[11px] text-gray-400">
+                                <span>Request: FOIA-2024-001234</span>
+                                <span>In Progress</span>
+                            </div>
+                        </div>
+
+                        <!-- Anonymous Requester - With Request Context -->
+                        <div class="bg-gray-50 border border-gray-300 border-dashed rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-gray-500"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-700">Anonymous Requester</h3>
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 mt-1">
+                                        <span class="text-xs text-gray-400 bg-gray-200 px-1.5 py-0.5 rounded font-mono">████████████</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-gray-200 text-gray-600">
+                                        <i class="fa-solid fa-eye-slash mr-0.5"></i>Anonymous
+                                    </span>
+                                    <span class="text-[11px] text-gray-400">ID: 45678</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-200 text-[11px] text-gray-400">
+                                <span><i class="fa-solid fa-calendar mr-0.5"></i>Since: Mar 2024</span>
+                                <span><i class="fa-solid fa-file-lines mr-0.5"></i>2 requests</span>
+                            </div>
+                        </div>
+
+                        <!-- Anonymous Subject -->
+                        <div class="bg-gray-50 border border-blue-200 border-dashed rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-blue-400"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-700">Anonymous Subject</h3>
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">Subject</span>
+                                    </div>
+                                    <p class="text-xs text-gray-400 mt-0.5">Identity protected per policy</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-600">
+                                        <i class="fa-solid fa-shield-halved mr-0.5"></i>Protected
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-2 pt-2 border-t border-gray-200 text-[11px] text-gray-400">
+                                <span>Subject in FOIA-2024-000891</span>
+                                <span>Completed</span>
                             </div>
                         </div>
                     </div>
@@ -205,7 +360,7 @@
                         </div>
                         <div>
                             <h2 class="text-2xl font-bold text-white">FOIA Person - Chatbot Cards</h2>
-                            <p class="text-blue-100">AI assistant cards for requester lookup</p>
+                            <p class="text-blue-100">AI assistant cards with photos and person type badges</p>
                         </div>
                     </div>
                 </div>
@@ -220,14 +375,18 @@
                     <div class="space-y-3 mb-4">
                         <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards</p>
 
+                        <!-- Compact Card - With Photo -->
                         <div class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md cursor-pointer">
                             <div class="flex items-center gap-3">
-                                <div class="w-9 h-9 bg-green-100 rounded-full flex items-center justify-center">
-                                    <i class="fa-solid fa-user text-green-600 text-sm"></i>
+                                <div class="w-9 h-9 rounded-full overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=72&h=72&fit=crop&crop=face" alt="Jane Doe" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Jane Doe</h3>
-                                    <p class="text-xs text-gray-500">Environmental Law Center</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Jane Doe</h3>
+                                        <span class="px-1 py-0.5 rounded text-[9px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                    </div>
+                                    <p class="text-xs text-gray-500 truncate">Environmental Law Center · Attorney</p>
                                 </div>
                                 <div class="flex flex-col items-end gap-1">
                                     <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">Portal</span>
@@ -236,18 +395,62 @@
                             </div>
                         </div>
 
+                        <!-- Compact Card - Media -->
                         <div class="bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md cursor-pointer">
                             <div class="flex items-center gap-3">
-                                <div class="w-9 h-9 bg-amber-100 rounded-full flex items-center justify-center">
-                                    <i class="fa-solid fa-newspaper text-amber-600 text-sm"></i>
+                                <div class="w-9 h-9 rounded-full overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=72&h=72&fit=crop&crop=face" alt="John Smith" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
-                                    <p class="text-xs text-gray-500">Daily News Tribune</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
+                                        <span class="px-1 py-0.5 rounded text-[9px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                    </div>
+                                    <p class="text-xs text-gray-500 truncate">Daily News Tribune · Reporter</p>
                                 </div>
                                 <div class="flex flex-col items-end gap-1">
                                     <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Media</span>
                                     <span class="text-[11px] text-gray-500">8 requests</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Subject -->
+                        <div class="bg-white border border-blue-200 rounded-lg p-3 hover:shadow-md cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-xs font-semibold text-indigo-700">MC</span>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
+                                        <span class="px-1 py-0.5 rounded text-[9px] font-medium bg-indigo-100 text-indigo-700">Subject</span>
+                                    </div>
+                                    <p class="text-xs text-gray-500 truncate">Individual</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1">
+                                    <span class="text-[11px] text-gray-500">Subject in 1 req</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Anonymous -->
+                        <div class="bg-gray-50 border border-gray-300 border-dashed rounded-lg p-3 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-gray-500 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <h3 class="text-sm font-semibold text-gray-600 truncate">Anonymous</h3>
+                                        <span class="px-1 py-0.5 rounded text-[9px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                    </div>
+                                    <p class="text-xs text-gray-400 truncate">Contact withheld</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1">
+                                    <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-200 text-gray-600">
+                                        <i class="fa-solid fa-eye-slash text-[8px] mr-0.5"></i>Anon
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -260,39 +463,53 @@
 
                 <!-- Expanded Card -->
                 <div class="max-w-[400px] mx-auto mt-8">
-                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Expanded Card</p>
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Expanded Card (Selected for Context)</p>
 
                     <div class="bg-white border-2 border-blue-400 rounded-xl shadow-lg overflow-hidden">
                         <div class="bg-green-600 text-white px-3 py-1.5 flex items-center justify-between">
                             <span class="text-xs font-medium flex items-center gap-1.5">
                                 <i class="fa-solid fa-check-circle"></i> Selected for Context
                             </span>
-                            <button class="text-blue-200 hover:text-white text-xs">
+                            <button class="text-green-200 hover:text-white text-xs">
                                 <i class="fa-solid fa-times"></i>
                             </button>
                         </div>
 
                         <div class="p-4">
+                            <!-- Header with Photo -->
                             <div class="flex items-start gap-3 mb-3">
-                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                    <i class="fa-solid fa-user text-green-600 text-lg"></i>
+                                <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face" alt="Jane Doe" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1">
-                                    <span class="text-xs font-medium text-gray-500 uppercase">FOIA Requester</span>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">FOIA Requester</span>
+                                        <span class="px-1 py-0.5 rounded text-[9px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                    </div>
                                     <h3 class="text-base font-semibold text-gray-900">Jane Doe</h3>
-                                    <p class="text-xs text-gray-500">Environmental Law Center</p>
+                                    <p class="text-xs text-gray-500">Environmental Law Center · Attorney</p>
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
-                                <div class="bg-gray-50 rounded p-2">
-                                    <p class="text-[10px] text-gray-500 uppercase">Email</p>
-                                    <p class="font-medium text-gray-700">jane@envlaw.org</p>
+                            <!-- Expandable Contact Info -->
+                            <div class="space-y-2 mb-3">
+                                <div class="flex items-center justify-between bg-gray-50 rounded p-2">
+                                    <div>
+                                        <p class="text-[10px] text-gray-500 uppercase">Email</p>
+                                        <p class="text-xs font-medium text-gray-700">jane@envlaw.org <span class="text-[9px] text-green-600">(Primary)</span></p>
+                                    </div>
+                                    <button class="text-[10px] text-blue-600 hover:text-blue-800">
+                                        <i class="fa-solid fa-chevron-down"></i> +1
+                                    </button>
                                 </div>
                                 <div class="bg-gray-50 rounded p-2">
                                     <p class="text-[10px] text-gray-500 uppercase">Phone</p>
-                                    <p class="font-medium text-gray-700">(555) 234-5678</p>
+                                    <p class="text-xs font-medium text-gray-700">(555) 234-5678 <span class="text-[9px] text-gray-500">(Mobile)</span></p>
                                 </div>
+                            </div>
+
+                            <!-- Info Grid -->
+                            <div class="grid grid-cols-2 gap-2 mb-3 text-xs">
                                 <div class="bg-gray-50 rounded p-2">
                                     <p class="text-[10px] text-gray-500 uppercase">Portal Role</p>
                                     <p class="font-medium text-green-600">
@@ -303,11 +520,26 @@
                                     <p class="text-[10px] text-gray-500 uppercase">Source</p>
                                     <p class="font-medium text-gray-700">Online Portal</p>
                                 </div>
+                                <div class="bg-gray-50 rounded p-2">
+                                    <p class="text-[10px] text-gray-500 uppercase">Category</p>
+                                    <p class="font-medium text-gray-700">Other</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-2">
+                                    <p class="text-[10px] text-gray-500 uppercase">Since</p>
+                                    <p class="font-medium text-gray-700">Jan 2024</p>
+                                </div>
                             </div>
 
-                            <div class="mb-3 p-2 bg-green-50 rounded-lg border border-blue-100">
+                            <!-- Aliases -->
+                            <div class="mb-3 p-2 bg-gray-50 rounded-lg">
+                                <p class="text-[10px] text-gray-500 uppercase mb-1">Aliases</p>
+                                <p class="text-xs text-gray-700">Jane M. Doe, J. Doe</p>
+                            </div>
+
+                            <!-- Request History -->
+                            <div class="mb-3 p-2 bg-green-50 rounded-lg border border-green-100">
                                 <p class="text-[10px] text-gray-500 uppercase mb-1">Request History</p>
-                                <p class="text-xs text-gray-700">3 requests submitted, 2 completed</p>
+                                <p class="text-xs text-gray-700">3 requests submitted, 2 completed, 1 in progress</p>
                             </div>
 
                             <div class="flex gap-2 pt-3 border-t border-gray-100">
@@ -315,7 +547,57 @@
                                     <i class="fa-solid fa-file-lines mr-1"></i> View Requests
                                 </button>
                                 <button class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200">
-                                    <i class="fa-solid fa-external-link"></i>
+                                    <i class="fa-solid fa-external-link"></i> Open Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anonymous Expanded Card -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Anonymous Person Card</p>
+
+                    <div class="bg-gray-100 border-2 border-gray-400 border-dashed rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gray-500 text-white px-3 py-1.5 flex items-center justify-between">
+                            <span class="text-xs font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-eye-slash"></i> Anonymous Requester
+                            </span>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-user-secret text-gray-500 text-lg"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <span class="text-xs font-medium text-gray-500 uppercase">Anonymous</span>
+                                    <h3 class="text-base font-semibold text-gray-700">Identity Withheld</h3>
+                                    <p class="text-xs text-gray-400">Contact information protected</p>
+                                </div>
+                            </div>
+
+                            <!-- Masked Info -->
+                            <div class="space-y-2 mb-3">
+                                <div class="bg-gray-200 rounded p-2">
+                                    <p class="text-[10px] text-gray-400 uppercase">Email</p>
+                                    <p class="text-xs font-medium text-gray-400 font-mono">████████@████.███</p>
+                                </div>
+                                <div class="bg-gray-200 rounded p-2">
+                                    <p class="text-[10px] text-gray-400 uppercase">Phone</p>
+                                    <p class="text-xs font-medium text-gray-400 font-mono">(███) ███-████</p>
+                                </div>
+                            </div>
+
+                            <!-- Request Context Only -->
+                            <div class="mb-3 p-2 bg-gray-200 rounded-lg">
+                                <p class="text-[10px] text-gray-500 uppercase mb-1">Request Context</p>
+                                <p class="text-xs text-gray-600">FOIA-2024-001234 · 2 requests</p>
+                            </div>
+
+                            <div class="flex gap-2 pt-3 border-t border-gray-300">
+                                <button class="flex-1 px-3 py-2 bg-gray-500 text-white text-xs font-medium rounded-lg hover:bg-gray-600">
+                                    <i class="fa-solid fa-file-lines mr-1"></i> View Requests Only
                                 </button>
                             </div>
                         </div>
@@ -329,78 +611,139 @@
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">FOIA Person - Medium Card</h2>
-                    <p class="text-gray-600">Dashboard view with contact and request details</p>
+                    <p class="text-gray-600">Dashboard view with expandable contacts, aliases, and identification</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Enhanced Medium Card - Portal User with Photo -->
                     <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md">
                         <div class="p-5">
+                            <!-- Header with Photo -->
                             <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                        <i class="fa-solid fa-user text-green-600 text-lg"></i>
+                                    <div class="w-14 h-14 rounded-full overflow-hidden mr-3 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=112&h=112&fit=crop&crop=face" alt="Jane Doe" class="w-full h-full object-cover">
                                     </div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-gray-900">Jane Doe</h3>
+                                        <div class="flex items-center gap-2">
+                                            <h3 class="text-base font-semibold text-gray-900">Jane Doe</h3>
+                                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                        </div>
                                         <p class="text-sm text-gray-500">Environmental Law Center</p>
+                                        <p class="text-xs text-gray-400">Attorney · Portal Requester</p>
                                     </div>
                                 </div>
                                 <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-3 mb-4">
-                                <div>
-                                    <p class="text-xs text-gray-500 mb-1">Email</p>
-                                    <p class="text-sm font-medium text-gray-900">jane@envlaw.org</p>
+                            <!-- Expandable Contacts -->
+                            <div class="space-y-2 mb-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <p class="text-xs text-gray-500 mb-1">Email</p>
+                                        <p class="text-sm font-medium text-gray-900">jane@envlaw.org <span class="text-[10px] text-green-600 font-normal">(Primary)</span></p>
+                                    </div>
+                                    <button class="text-xs text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                                        <i class="fa-solid fa-chevron-down text-[10px]"></i>+1 more
+                                    </button>
                                 </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 mb-1">Phone</p>
-                                    <p class="text-sm font-medium text-gray-900">(555) 234-5678</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <p class="text-xs text-gray-500 mb-1">Phone</p>
+                                        <p class="text-sm font-medium text-gray-900">(555) 234-5678 <span class="text-[10px] text-gray-500 font-normal">(Mobile)</span></p>
+                                    </div>
+                                    <button class="text-xs text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                                        <i class="fa-solid fa-chevron-down text-[10px]"></i>+1 more
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Aliases & ID Summary -->
+                            <div class="grid grid-cols-2 gap-3 mb-4 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Aliases</p>
+                                    <p class="text-xs text-gray-700">Jane M. Doe, J. Doe</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Identification</p>
+                                    <p class="text-xs text-gray-700">Driver's License (CA DMV)</p>
+                                </div>
+                            </div>
+
+                            <!-- Tags & Source -->
                             <div class="flex items-center gap-2 mb-4">
                                 <span class="px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">
-                                    <i class="fa-solid fa-globe mr-1"></i>Portal Access
+                                    <i class="fa-solid fa-globe mr-1"></i>Portal
                                 </span>
                                 <span class="px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-700">
                                     Source: Online Portal
                                 </span>
                             </div>
 
+                            <!-- Footer -->
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                                <span class="text-sm text-gray-500">3 FOIA Requests</span>
-                                <button class="text-sm font-medium text-green-600 hover:text-green-700">View Profile</button>
+                                <div class="text-sm text-gray-500">
+                                    <span class="font-medium">3 FOIA Requests</span>
+                                    <span class="text-gray-400 ml-2">· Since Jan 2024</span>
+                                </div>
+                                <button class="text-sm font-medium text-green-600 hover:text-green-700">View Profile →</button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Enhanced Medium Card - Media Requester -->
                     <div class="bg-white border border-amber-200 rounded-lg shadow-sm hover:shadow-md">
                         <div class="p-5">
+                            <!-- Header with Photo -->
                             <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-3">
-                                        <i class="fa-solid fa-newspaper text-amber-600 text-lg"></i>
+                                    <div class="w-14 h-14 rounded-full overflow-hidden mr-3 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=112&h=112&fit=crop&crop=face" alt="John Smith" class="w-full h-full object-cover">
                                     </div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-gray-900">John Smith</h3>
+                                        <div class="flex items-center gap-2">
+                                            <h3 class="text-base font-semibold text-gray-900">John Smith</h3>
+                                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                        </div>
                                         <p class="text-sm text-gray-500">Daily News Tribune</p>
+                                        <p class="text-xs text-gray-400">Investigative Reporter</p>
                                     </div>
                                 </div>
                                 <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-3 mb-4">
-                                <div>
-                                    <p class="text-xs text-gray-500 mb-1">Email</p>
-                                    <p class="text-sm font-medium text-gray-900">jsmith@tribune.com</p>
+                            <!-- Expandable Contacts -->
+                            <div class="space-y-2 mb-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <p class="text-xs text-gray-500 mb-1">Email</p>
+                                        <p class="text-sm font-medium text-gray-900">jsmith@tribune.com <span class="text-[10px] text-green-600 font-normal">(Primary)</span></p>
+                                    </div>
+                                    <button class="text-xs text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                                        <i class="fa-solid fa-chevron-down text-[10px]"></i>+2 more
+                                    </button>
                                 </div>
-                                <div>
-                                    <p class="text-xs text-gray-500 mb-1">Phone</p>
-                                    <p class="text-sm font-medium text-gray-900">(555) 123-4567</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <p class="text-xs text-gray-500 mb-1">Phone</p>
+                                        <p class="text-sm font-medium text-gray-900">(555) 123-4567 <span class="text-[10px] text-gray-500 font-normal">(Office)</span></p>
+                                    </div>
                                 </div>
                             </div>
 
+                            <!-- Aliases & ID Summary -->
+                            <div class="grid grid-cols-2 gap-3 mb-4 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Aliases</p>
+                                    <p class="text-xs text-gray-400 italic">None</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Identification</p>
+                                    <p class="text-xs text-gray-700">Press Badge (Tribune)</p>
+                                </div>
+                            </div>
+
+                            <!-- Tags & Source -->
                             <div class="flex items-center gap-2 mb-4">
                                 <span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">
                                     <i class="fa-solid fa-newspaper mr-1"></i>Media
@@ -410,9 +753,127 @@
                                 </span>
                             </div>
 
+                            <!-- Footer -->
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                                <span class="text-sm text-gray-500">8 FOIA Requests</span>
-                                <button class="text-sm font-medium text-green-600 hover:text-green-700">View Profile</button>
+                                <div class="text-sm text-gray-500">
+                                    <span class="font-medium">8 FOIA Requests</span>
+                                    <span class="text-gray-400 ml-2">· Since Mar 2022</span>
+                                </div>
+                                <button class="text-sm font-medium text-green-600 hover:text-green-700">View Profile →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card - Subject with Initials -->
+                    <div class="bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md">
+                        <div class="p-5">
+                            <!-- Header with Initials -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                        <span class="text-lg font-semibold text-indigo-700">MC</span>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <h3 class="text-base font-semibold text-gray-900">Michael Chen</h3>
+                                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">Subject</span>
+                                        </div>
+                                        <p class="text-sm text-gray-500">Individual</p>
+                                        <p class="text-xs text-gray-400">Software Engineer</p>
+                                    </div>
+                                </div>
+                                <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                            </div>
+
+                            <!-- Contacts -->
+                            <div class="space-y-2 mb-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Email</p>
+                                    <p class="text-sm font-medium text-gray-900">mchen@email.com</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 mb-1">Phone</p>
+                                    <p class="text-sm font-medium text-gray-900">(555) 456-7890 <span class="text-[10px] text-gray-500 font-normal">(Mobile)</span></p>
+                                </div>
+                            </div>
+
+                            <!-- Aliases & ID Summary -->
+                            <div class="grid grid-cols-2 gap-3 mb-4 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Aliases</p>
+                                    <p class="text-xs text-gray-700">Mike Chen</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase mb-1">Identification</p>
+                                    <p class="text-xs text-gray-400 italic">Not on file</p>
+                                </div>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-700">
+                                    Other
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <div class="text-sm text-gray-500">
+                                    <span class="font-medium">Subject in 1 request</span>
+                                    <span class="text-gray-400 ml-2">· Since Dec 2024</span>
+                                </div>
+                                <button class="text-sm font-medium text-green-600 hover:text-green-700">View Profile →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card - Anonymous (Masked) -->
+                    <div class="bg-gray-50 border border-gray-300 border-dashed rounded-lg shadow-sm hover:shadow-md">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 bg-gray-200 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fa-solid fa-user-secret text-gray-500 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <h3 class="text-base font-semibold text-gray-700">Anonymous Requester</h3>
+                                            <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
+                                        </div>
+                                        <p class="text-sm text-gray-400">Contact information withheld</p>
+                                    </div>
+                                </div>
+                                <span class="px-2 py-1 rounded-full text-xs font-medium bg-gray-200 text-gray-600">
+                                    <i class="fa-solid fa-eye-slash mr-1"></i>Anonymous
+                                </span>
+                            </div>
+
+                            <!-- Masked Contact Info -->
+                            <div class="space-y-2 mb-4">
+                                <div>
+                                    <p class="text-xs text-gray-400 mb-1">Email</p>
+                                    <p class="text-sm font-medium text-gray-400 font-mono">████████████@████.███</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 mb-1">Phone</p>
+                                    <p class="text-sm font-medium text-gray-400 font-mono">(███) ███-████</p>
+                                </div>
+                            </div>
+
+                            <!-- Request Context -->
+                            <div class="p-3 bg-gray-100 rounded-lg mb-4">
+                                <p class="text-[10px] text-gray-500 uppercase mb-1">Request Context</p>
+                                <p class="text-xs text-gray-600">FOIA-2024-001234 · Environmental Records</p>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                                <div class="text-sm text-gray-500">
+                                    <span class="font-medium">2 FOIA Requests</span>
+                                    <span class="text-gray-400 ml-2">· Since Mar 2024</span>
+                                </div>
+                                <button class="text-sm font-medium text-gray-500 hover:text-gray-700">View Requests →</button>
                             </div>
                         </div>
                     </div>
@@ -425,15 +886,16 @@
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">FOIA Person - Large Card</h2>
-                    <p class="text-gray-600">Full profile view with request history</p>
+                    <p class="text-gray-600">Comprehensive profile with all data model fields</p>
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <!-- Header with Photo -->
                     <div class="border-b border-gray-200 bg-gray-50 px-6 py-4">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center">
-                                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fa-solid fa-user text-green-600 text-2xl"></i>
+                                <div class="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0 ring-2 ring-white shadow">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=128&h=128&fit=crop&crop=face" alt="Jane Doe" class="w-full h-full object-cover">
                                 </div>
                                 <div>
                                     <div class="flex items-center gap-2 mb-1">
@@ -441,9 +903,11 @@
                                         <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
                                             <i class="fa-solid fa-globe mr-0.5"></i>Portal User
                                         </span>
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Requester</span>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900">Jane Doe</h3>
-                                    <p class="text-sm text-gray-500">Environmental Law Center</p>
+                                    <p class="text-sm text-gray-500">Environmental Law Center · Attorney</p>
+                                    <p class="text-xs text-gray-400 mt-0.5">ID: 12345</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
@@ -456,34 +920,174 @@
                     </div>
 
                     <div class="p-6">
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-                            <div>
-                                <p class="text-xs text-gray-500 font-medium uppercase mb-1">Email</p>
-                                <p class="text-base font-medium text-gray-900">jane@envlaw.org</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gray-500 font-medium uppercase mb-1">Phone</p>
-                                <p class="text-base font-medium text-gray-900">(555) 234-5678</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gray-500 font-medium uppercase mb-1">Portal Role</p>
-                                <p class="text-base font-medium text-green-600">Requester</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gray-500 font-medium uppercase mb-1">Source</p>
-                                <p class="text-base font-medium text-gray-900">Online Portal</p>
-                            </div>
-                        </div>
-
-                        <div class="mb-6 p-4 border border-gray-200 rounded-lg">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Address</h4>
-                            <p class="text-sm text-gray-900">123 Legal Way, Suite 400</p>
-                            <p class="text-sm text-gray-600">Washington, DC 20001</p>
-                        </div>
-
+                        <!-- Contact Information Section -->
                         <div class="mb-6">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-3">FOIA Request History</h4>
-                            <div class="grid grid-cols-3 gap-4 p-4 bg-gray-50 rounded-lg">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-address-book text-gray-400 mr-2"></i>
+                                Contact Information
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-gray-200 rounded-lg">
+                                <!-- Emails -->
+                                <div>
+                                    <p class="text-xs text-gray-500 font-medium uppercase mb-2">Email Addresses</p>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-sm text-gray-900">jane@envlaw.org</p>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-gray-500">Work</span>
+                                                <span class="text-[10px] px-1.5 py-0.5 bg-green-100 text-green-700 rounded">Primary</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-sm text-gray-600">jane.personal@gmail.com</p>
+                                            <span class="text-[10px] text-gray-500">Personal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Phones -->
+                                <div>
+                                    <p class="text-xs text-gray-500 font-medium uppercase mb-2">Phone Numbers</p>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-sm text-gray-900">(555) 234-5678</p>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-gray-500">Mobile</span>
+                                                <span class="text-[10px] px-1.5 py-0.5 bg-green-100 text-green-700 rounded">Primary</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-sm text-gray-600">(555) 234-5600</p>
+                                            <span class="text-[10px] text-gray-500">Office</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address Section -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-location-dot text-gray-400 mr-2"></i>
+                                Address
+                            </h4>
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-900">123 Legal Way, Suite 400</p>
+                                        <p class="text-sm text-gray-600">Washington, DC 20001</p>
+                                        <p class="text-sm text-gray-600">United States</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[10px] text-gray-500">Work</span>
+                                        <span class="text-[10px] px-1.5 py-0.5 bg-green-100 text-green-700 rounded">Primary</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Identification Section -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-id-card text-gray-400 mr-2"></i>
+                                Identification
+                            </h4>
+                            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                <table class="w-full text-sm">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Type</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Number</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Issuer</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-100">
+                                        <tr>
+                                            <td class="px-4 py-3 text-gray-900">Driver's License</td>
+                                            <td class="px-4 py-3 text-gray-600 font-mono">D12345678</td>
+                                            <td class="px-4 py-3 text-gray-600">California DMV</td>
+                                            <td class="px-4 py-3"><span class="text-[10px] px-1.5 py-0.5 bg-green-100 text-green-700 rounded">Verified</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3 text-gray-900">Passport</td>
+                                            <td class="px-4 py-3 text-gray-600 font-mono">P98765432</td>
+                                            <td class="px-4 py-3 text-gray-600">US State Dept</td>
+                                            <td class="px-4 py-3"><span class="text-[10px] px-1.5 py-0.5 bg-green-100 text-green-700 rounded">Verified</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Organizations Section -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-building text-gray-400 mr-2"></i>
+                                Organizations
+                            </h4>
+                            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                <table class="w-full text-sm">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Organization</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Role/Position</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase">Relationship</th>
+                                            <th class="text-left px-4 py-2 text-xs font-medium text-gray-500 uppercase"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-100">
+                                        <tr>
+                                            <td class="px-4 py-3">
+                                                <span class="text-gray-900 font-medium">Environmental Law Center</span>
+                                            </td>
+                                            <td class="px-4 py-3 text-gray-600">Attorney</td>
+                                            <td class="px-4 py-3 text-gray-600">Employee</td>
+                                            <td class="px-4 py-3"><span class="text-[10px] px-1.5 py-0.5 bg-blue-100 text-blue-700 rounded">Primary</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3">
+                                                <span class="text-gray-900">Sierra Club</span>
+                                            </td>
+                                            <td class="px-4 py-3 text-gray-600">Board Member</td>
+                                            <td class="px-4 py-3 text-gray-600">Volunteer</td>
+                                            <td class="px-4 py-3"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Aliases Section -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-user-tag text-gray-400 mr-2"></i>
+                                Aliases
+                            </h4>
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <div class="flex flex-wrap gap-3">
+                                    <div class="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg">
+                                        <span class="text-[10px] text-gray-500 uppercase">Maiden Name:</span>
+                                        <span class="text-sm text-gray-900">Jane Smith</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg">
+                                        <span class="text-[10px] text-gray-500 uppercase">Preferred:</span>
+                                        <span class="text-sm text-gray-900">J. Doe</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-lg">
+                                        <span class="text-[10px] text-gray-500 uppercase">AKA:</span>
+                                        <span class="text-sm text-gray-900">Jane M. Doe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FOIA Request History -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-file-lines text-gray-400 mr-2"></i>
+                                FOIA Request History
+                            </h4>
+                            <div class="grid grid-cols-4 gap-4 p-4 bg-gray-50 rounded-lg">
                                 <div class="text-center">
                                     <p class="text-2xl font-bold text-gray-900">3</p>
                                     <p class="text-xs text-gray-500">Total Requests</p>
@@ -493,21 +1097,161 @@
                                     <p class="text-xs text-gray-500">Completed</p>
                                 </div>
                                 <div class="text-center">
-                                    <p class="text-2xl font-bold text-orange-600">1</p>
+                                    <p class="text-2xl font-bold text-orange-500">1</p>
                                     <p class="text-xs text-gray-500">In Progress</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl font-bold text-red-500">0</p>
+                                    <p class="text-xs text-gray-500">Denied</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notes Section -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <i class="fa-solid fa-sticky-note text-gray-400 mr-2"></i>
+                                Notes
+                            </h4>
+                            <div class="p-4 border border-gray-200 rounded-lg bg-amber-50 border-amber-200">
+                                <p class="text-sm text-gray-700">Environmental attorney specializing in FOIA litigation. Has submitted several requests related to EPA enforcement actions. Prefers email communication and typically responds quickly to follow-up questions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer with Metadata -->
+                    <div class="border-t border-gray-200 bg-gray-50 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-6 text-xs text-gray-500">
+                                <div>
+                                    <span class="text-gray-400">Source:</span> Online Portal
+                                </div>
+                                <div>
+                                    <span class="text-gray-400">Role:</span> <span class="text-green-600 font-medium">Portal Requester</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400">Created:</span> Jan 15, 2024 <span class="text-gray-400">by</span> admin
+                                </div>
+                                <div>
+                                    <span class="text-gray-400">Modified:</span> Mar 22, 2024 <span class="text-gray-400">by</span> john.smith
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button class="px-4 py-2 border border-gray-300 hover:bg-gray-100 text-gray-700 font-medium rounded-lg text-sm">
+                                    <i class="fa-solid fa-envelope mr-2"></i>Contact
+                                </button>
+                                <button class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg text-sm">
+                                    View All Requests
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Large Card - Anonymous Requester -->
+                <div class="mt-8 bg-gray-100 border border-gray-300 border-dashed rounded-lg shadow-sm">
+                    <!-- Header -->
+                    <div class="border-b border-gray-300 bg-gray-200 px-6 py-4">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-gray-500 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs text-gray-500 font-medium uppercase">Anonymous Requester</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-300 text-gray-600">
+                                            <i class="fa-solid fa-eye-slash mr-0.5"></i>Anonymous
+                                        </span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-700">Identity Withheld</h3>
+                                    <p class="text-sm text-gray-500">Contact information protected</p>
+                                    <p class="text-xs text-gray-400 mt-0.5">ID: 45678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-3 py-1.5 rounded-full text-sm font-medium bg-gray-300 text-gray-600">
+                                    <i class="fa-solid fa-eye-slash mr-1"></i>Anonymous
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <!-- Masked Contact Information -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-600 mb-3 flex items-center">
+                                <i class="fa-solid fa-address-book text-gray-400 mr-2"></i>
+                                Contact Information (Withheld)
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-gray-300 rounded-lg bg-gray-50">
+                                <div>
+                                    <p class="text-xs text-gray-400 font-medium uppercase mb-2">Email</p>
+                                    <p class="text-sm text-gray-400 font-mono">████████████@████.███</p>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400 font-medium uppercase mb-2">Phone</p>
+                                    <p class="text-sm text-gray-400 font-mono">(███) ███-████</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Context Only -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-gray-600 mb-3 flex items-center">
+                                <i class="fa-solid fa-file-lines text-gray-400 mr-2"></i>
+                                Request Context
+                            </h4>
+                            <div class="p-4 border border-gray-300 rounded-lg bg-gray-50">
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between py-2 border-b border-gray-200">
+                                        <span class="text-sm font-medium text-gray-700">FOIA-2024-001234</span>
+                                        <span class="text-xs px-2 py-1 bg-orange-100 text-orange-700 rounded">In Progress</span>
+                                    </div>
+                                    <div class="flex items-center justify-between py-2">
+                                        <span class="text-sm font-medium text-gray-700">FOIA-2024-000891</span>
+                                        <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Stats -->
+                        <div class="mb-6">
+                            <div class="grid grid-cols-4 gap-4 p-4 bg-gray-200 rounded-lg">
+                                <div class="text-center">
+                                    <p class="text-2xl font-bold text-gray-700">2</p>
+                                    <p class="text-xs text-gray-500">Total Requests</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl font-bold text-green-600">1</p>
+                                    <p class="text-xs text-gray-500">Completed</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl font-bold text-orange-500">1</p>
+                                    <p class="text-xs text-gray-500">In Progress</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl font-bold text-red-500">0</p>
+                                    <p class="text-xs text-gray-500">Denied</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="border-t border-gray-200 bg-gray-50 px-6 py-4">
-                        <div class="flex justify-end gap-3">
-                            <button class="px-4 py-2 border border-gray-300 hover:bg-gray-100 text-gray-700 font-medium rounded-lg text-sm">
-                                <i class="fa-solid fa-envelope mr-2"></i>Contact
-                            </button>
-                            <button class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg text-sm">
-                                View All Requests
-                            </button>
+                    <!-- Footer -->
+                    <div class="border-t border-gray-300 bg-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-6 text-xs text-gray-500">
+                                <div>
+                                    <span class="text-gray-400">Created:</span> Mar 10, 2024
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button class="px-4 py-2 bg-gray-400 hover:bg-gray-500 text-white font-medium rounded-lg text-sm">
+                                    View Requests Only
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
