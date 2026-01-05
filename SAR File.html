@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAR File Cards - ArkCase Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar-loading {
+            transition: none !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <main id="main-content" class="flex-1 ml-0 min-h-screen">
+        <!-- ============================================================== -->
+        <!-- OVERVIEW SECTION -->
+        <!-- ============================================================== -->
+        <section id="sar-file-card-overview" class="bg-white py-12">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="max-w-5xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-file-shield text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900">
+                                SAR File Cards
+                            </h1>
+                            <p class="text-gray-600 mt-1">
+                                Documents attached to Subject Access Requests
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 border-l-4 border-purple-600 p-4 rounded">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            These cards represent files and documents attached to Subject Access Requests (SARs).
+                            They include SAR-specific fields like review status (PENDING/IN_REVIEW/COMPLETED),
+                            redaction status (NONE/PARTIAL/FULL), and exemption codes for privacy compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- SMALL CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="small-cards-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Small Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Compact format for dense file lists, attachment sections, and search results
+                    </p>
+                </div>
+
+                <div id="small-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Small Card 1: PDF - Completed Review, No Redaction -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records_Export.pdf</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 1.8 MB • 42 pages</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">No Redaction</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 2: Word - In Review, Partial Redaction -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-word text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History_J_Smith.docx</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">DOCX • 245 KB • 12 pages</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In Review</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 3: Excel - Pending Review -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-excel text-green-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Transaction_History_2020-2024.xlsx</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">XLSX • 892 KB</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 4: PDF - Completed, Full Redaction -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract_2021.pdf</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 3.2 MB • 18 pages</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Full Redaction</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 5: Image - With Exemption Code -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-image text-purple-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">ID_Document_Scan.jpg</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">JPG • 2.1 MB <span class="ml-1 px-1 py-0.5 rounded text-[9px] font-medium bg-purple-100 text-purple-700">(b)(6)</span></p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0510
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 6: ZIP Archive - Public Release -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-zipper text-gray-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">SAR_Response_Package.zip</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">ZIP • 15.8 MB • 24 files <i class="fa-solid fa-globe text-green-500 ml-1" title="Public Release"></i></p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">Released</span>
+                                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0509
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- CHATBOT CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="chatbot-cards-section" class="py-12 bg-gradient-to-br from-purple-600 to-indigo-800">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">
+                                SAR File - Chatbot Cards
+                            </h2>
+                            <p class="text-purple-100">
+                                Adaptive cards optimized for AI assistant responses (~350px width)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 mt-4">
+                        <p class="text-sm text-white/90">
+                            <strong>Chatbot Integration:</strong> These cards show SAR-specific file metadata including
+                            review status, redaction status, and exemption codes. Cards support selection states
+                            and RAG-enabled actions for privacy document analysis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chatbot Card Container -->
+                <div class="max-w-[400px] mx-auto bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+                    <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-message text-purple-500"></i>
+                        <span>AI Assistant Response Preview</span>
+                    </div>
+
+                    <!-- ===== COMPACT CHATBOT CARDS ===== -->
+                    <div class="space-y-3 mb-6">
+                        <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards (Default)</p>
+
+                        <!-- Compact Card - Full Redaction (red indicator) -->
+                        <div class="chatbot-card-compact bg-white border border-red-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Third_Party_Contract.pdf</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 3.2 MB • SAR-2024-0511</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Full Redaction</span>
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
+                                    </div>
+                                    <div class="text-[11px] text-gray-600">
+                                        <i class="fa-solid fa-eraser mr-0.5 text-red-400"></i>All content redacted
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Partial Redaction (amber indicator) -->
+                        <div class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-word text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Employment_History.docx</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">DOCX • 245 KB • SAR-2024-0512</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial</span>
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-800">In Review</span>
+                                    </div>
+                                    <div class="text-[11px] text-amber-600">
+                                        <i class="fa-solid fa-eraser mr-0.5"></i>3 sections redacted
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - No Redaction (green indicator) -->
+                        <div class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Customer_Records.pdf</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">PDF • 1.8 MB • SAR-2024-0512</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">No Redaction</span>
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Completed</span>
+                                    </div>
+                                    <div class="text-[11px] text-gray-600">
+                                        <i class="fa-regular fa-clock mr-0.5 text-gray-400"></i>v1.0 • Released
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Show More Toggle -->
+                    <button
+                        class="w-full text-center text-xs text-purple-600 hover:text-purple-800 font-medium py-2 border-t border-gray-100">
+                        <i class="fa-solid fa-chevron-down mr-1"></i> Show 3 more files
+                    </button>
+                </div>
+
+                <!-- ===== EXPANDED CHATBOT CARD ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Expanded Card (On Click/Tap)</p>
+
+                    <div class="bg-white border-2 border-purple-300 rounded-xl shadow-lg overflow-hidden">
+                        <!-- Selection Badge -->
+                        <div class="bg-purple-600 text-white px-3 py-1.5 flex items-center justify-between">
+                            <span class="text-xs font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-check-circle"></i> Selected for Context
+                            </span>
+                            <button class="text-purple-200 hover:text-white text-xs">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-4">
+                            <!-- Header -->
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-file-word text-blue-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">SAR File</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial Redaction</span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Employment_History_J_Smith.docx</h3>
+                                    <div class="flex items-center gap-2 mt-0.5">
+                                        <p class="text-xs text-gray-500">DOCX • 245 KB • 12 pages</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metadata Grid -->
+                            <div class="grid grid-cols-2 gap-3 mb-3 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Review Status</p>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In Review</span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Redaction Status</p>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-eraser mr-1"></i>Partial
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Parent Request</p>
+                                    <span class="text-xs font-medium text-purple-700">
+                                        <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Version</p>
+                                    <span class="text-xs font-medium text-gray-700">v2.1</span>
+                                </div>
+                            </div>
+
+                            <!-- Exemption Codes (if present) -->
+                            <div class="mb-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">Exemption Codes Applied</p>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
+                                        (b)(6) Privacy
+                                    </span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-700">
+                                        (b)(7)(C) Law Enforcement
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- File Details -->
+                            <div class="flex items-center gap-4 mb-3 text-xs text-gray-600">
+                                <span><i class="fa-solid fa-file-lines mr-1 text-gray-400"></i>12 pages</span>
+                                <span><i class="fa-solid fa-hdd mr-1 text-gray-400"></i>245 KB</span>
+                                <span><i class="fa-solid fa-code-branch mr-1 text-gray-400"></i>v2.1</span>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="flex gap-2 pt-3 border-t border-gray-100">
+                                <button
+                                    class="flex-1 px-3 py-2 bg-purple-600 text-white text-xs font-medium rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-comment-dots"></i> Ask about this
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-eye"></i> Preview
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== REDACTION STATUS REFERENCE ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Redaction Status Reference</p>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-green-100 text-green-700 border border-green-200">
+                                <i class="fa-solid fa-check mr-1"></i>No Redaction
+                            </span>
+                            <span class="text-xs text-gray-600">Full document released</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-700 border border-amber-200">
+                                <i class="fa-solid fa-eraser mr-1"></i>Partial
+                            </span>
+                            <span class="text-xs text-gray-600">Some sections redacted</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-red-100 text-red-700 border border-red-200">
+                                <i class="fa-solid fa-ban mr-1"></i>Full Redaction
+                            </span>
+                            <span class="text-xs text-gray-600">Entire document withheld</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SELECTION STATES ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Selection States</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Unselected -->
+                        <div>
+                            <p class="text-[10px] text-white/50 mb-2">Unselected</p>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-gray-300">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-pdf text-red-500 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">Document.pdf</h4>
+                                        <p class="text-[10px] text-gray-500">SAR-2024-001</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selected -->
+                        <div>
+                            <p class="text-[10px] text-white/50 mb-2">Selected</p>
+                            <div class="bg-purple-50 border-2 border-purple-400 rounded-lg p-3 cursor-pointer relative">
+                                <div class="absolute -top-2 -right-2 w-5 h-5 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-check text-white text-[10px]"></i>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-red-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-file-pdf text-red-500 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">Document.pdf</h4>
+                                        <p class="text-[10px] text-gray-500">SAR-2024-001</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- MEDIUM CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="medium-cards-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Medium Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Default cards for dashboards, document sections, and browse views
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Medium Card 1 - Completed, No Redaction -->
+                    <div id="medium-card-1"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Document
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">No Redaction</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Customer_Records_Export.pdf
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">PDF • 1.8 MB • 42 pages</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Review Status</div>
+                                <div class="text-sm font-medium text-green-600">
+                                    <i class="fa-solid fa-check-circle mr-1"></i>Completed
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Redaction</div>
+                                <div class="text-sm font-medium text-green-600">None</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Parent Request</div>
+                                <div class="text-sm font-medium text-purple-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Version</div>
+                                <div class="text-sm font-medium text-gray-900">v1.0 (Current)</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Size</div>
+                                <div class="text-sm font-medium text-gray-900">1.8 MB</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Pages</div>
+                                <div class="text-sm font-medium text-gray-900">42 pages</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+                            <div class="text-xs text-gray-500">
+                                <i class="fa-regular fa-clock mr-1"></i>Modified Jan 25, 2024
+                            </div>
+                            <button
+                                class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                View File
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 2 - In Review, Partial Redaction -->
+                    <div id="medium-card-2"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-file-word text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Document
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In Review</span>
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Partial Redaction</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Employment_History_J_Smith.docx
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">DOCX • 245 KB • 12 pages</p>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Codes -->
+                        <div class="mb-4 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Exemption Codes</div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(6)</span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">(b)(7)(C)</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Review Status</div>
+                                <div class="text-sm font-medium text-blue-600">
+                                    <i class="fa-solid fa-eye mr-1"></i>In Review
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Redaction</div>
+                                <div class="text-sm font-medium text-amber-600">
+                                    <i class="fa-solid fa-eraser mr-1"></i>Partial
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Parent Request</div>
+                                <div class="text-sm font-medium text-purple-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+                            <div class="text-xs text-gray-500">
+                                <i class="fa-regular fa-clock mr-1"></i>Modified Jan 28, 2024
+                            </div>
+                            <button
+                                class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                View File
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 3 - Pending Review -->
+                    <div id="medium-card-3"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-file-excel text-green-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Document
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">Pending Review</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Transaction_History_2020-2024.xlsx
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">XLSX • 892 KB</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Review Status</div>
+                                <div class="text-sm font-medium text-amber-600">
+                                    <i class="fa-solid fa-clock mr-1"></i>Pending
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Redaction</div>
+                                <div class="text-sm font-medium text-gray-500">Not determined</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Parent Request</div>
+                                <div class="text-sm font-medium text-purple-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+                            <div class="text-xs text-gray-500">
+                                <i class="fa-regular fa-clock mr-1"></i>Added Jan 22, 2024
+                            </div>
+                            <button
+                                class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                View File
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 4 - Full Redaction, Completed -->
+                    <div id="medium-card-4"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Document
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span>
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Full Redaction</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Third_Party_Contract_2021.pdf
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">PDF • 3.2 MB • 18 pages</p>
+                            </div>
+                        </div>
+
+                        <!-- Full Redaction Notice -->
+                        <div class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-ban text-red-600"></i>
+                                <div>
+                                    <p class="text-xs font-medium text-red-800">Fully Redacted - Third Party Information</p>
+                                    <p class="text-[10px] text-red-600">Document withheld under exemption (b)(4)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Review Status</div>
+                                <div class="text-sm font-medium text-green-600">
+                                    <i class="fa-solid fa-check-circle mr-1"></i>Completed
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Redaction</div>
+                                <div class="text-sm font-medium text-red-600">
+                                    <i class="fa-solid fa-ban mr-1"></i>Full
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Parent Request</div>
+                                <div class="text-sm font-medium text-purple-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+                            <div class="text-xs text-gray-500">
+                                <i class="fa-regular fa-clock mr-1"></i>Reviewed Jan 26, 2024
+                            </div>
+                            <button
+                                class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                View File
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- LARGE CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="large-cards-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File - Large Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Detailed cards for preview panels, inspector views, and expanded layouts
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Large Card 1 - Partial Redaction with Exemptions -->
+                    <div id="large-card-1"
+                        class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fa-solid fa-file-word text-blue-600 text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
+                                            SAR Document
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-900">
+                                            Employment_History_J_Smith.docx
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <p class="text-sm text-gray-500">DOCX • 245 KB • 12 pages</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-blue-100 text-blue-800">In Review</span>
+                                    <span
+                                        class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-eraser mr-1"></i>Partial Redaction
+                                    </span>
+                                    <button
+                                        class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors ml-2">
+                                        <i class="fa-solid fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Codes Section -->
+                        <div class="p-6 border-b border-gray-200 bg-purple-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes Applied</div>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-purple-100 text-purple-700 border border-purple-200">
+                                    <i class="fa-solid fa-scale-balanced mr-2"></i>
+                                    <span class="font-semibold mr-1">(b)(6)</span>
+                                    <span class="text-purple-600">Personal Privacy</span>
+                                </div>
+                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-purple-100 text-purple-700 border border-purple-200">
+                                    <i class="fa-solid fa-scale-balanced mr-2"></i>
+                                    <span class="font-semibold mr-1">(b)(7)(C)</span>
+                                    <span class="text-purple-600">Law Enforcement Privacy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Review Status</div>
+                                    <div class="text-sm font-medium text-blue-600">
+                                        <i class="fa-solid fa-eye mr-1"></i>In Review
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Redaction Status</div>
+                                    <div class="text-sm font-medium text-amber-600">
+                                        <i class="fa-solid fa-eraser mr-1"></i>Partial (3 sections)
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Parent Request</div>
+                                    <div class="text-sm font-medium text-purple-700">
+                                        <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Version</div>
+                                    <div class="text-sm font-medium text-gray-900">v2.1 (Current)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">File Type</div>
+                                    <div class="text-sm font-medium text-gray-900">Word Document</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">File Size</div>
+                                    <div class="text-sm font-medium text-gray-900">245 KB</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Page Count</div>
+                                    <div class="text-sm font-medium text-gray-900">12 pages</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Public Release</div>
+                                    <div class="text-sm font-medium text-gray-500">
+                                        <i class="fa-solid fa-circle-xmark mr-1"></i>No
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="p-6 bg-gray-50">
+                            <div class="flex flex-wrap items-center justify-between gap-4">
+                                <div class="flex items-center gap-6">
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-clock mr-1"></i>
+                                        Created Jan 22, 2024 by <span class="text-gray-700">System Import</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-solid fa-pen mr-1"></i>
+                                        Modified Jan 28, 2024 by <span class="text-gray-700">L. Martinez</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-300 transition-colors">
+                                        <i class="fa-solid fa-download mr-2"></i>Download
+                                    </button>
+                                    <button
+                                        class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                        Open File
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Large Card 2 - Full Redaction -->
+                    <div id="large-card-2"
+                        class="bg-white rounded-lg border border-red-200 hover:shadow-lg transition-shadow">
+                        <!-- Full Redaction Banner -->
+                        <div class="bg-red-100 border-b border-red-200 px-6 py-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-ban text-red-600 text-lg"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-red-800">Document Fully Redacted</p>
+                                    <p class="text-xs text-red-600">Withheld under exemption (b)(4) - Trade Secrets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fa-solid fa-file-pdf text-red-500 text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
+                                            SAR Document
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-900">
+                                            Third_Party_Contract_2021.pdf
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <p class="text-sm text-gray-500">PDF • 3.2 MB • 18 pages</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-green-100 text-green-800">Completed</span>
+                                    <span
+                                        class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-red-100 text-red-700">
+                                        <i class="fa-solid fa-ban mr-1"></i>Full Redaction
+                                    </span>
+                                    <button
+                                        class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors ml-2">
+                                        <i class="fa-solid fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exemption Code Section -->
+                        <div class="p-6 border-b border-gray-200 bg-red-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Exemption Codes Applied</div>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-scale-balanced mr-2"></i>
+                                    <span class="font-semibold mr-1">(b)(4)</span>
+                                    <span class="text-red-600">Trade Secrets / Confidential Commercial Information</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Review Status</div>
+                                    <div class="text-sm font-medium text-green-600">
+                                        <i class="fa-solid fa-check-circle mr-1"></i>Completed
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Redaction Status</div>
+                                    <div class="text-sm font-medium text-red-600">
+                                        <i class="fa-solid fa-ban mr-1"></i>Full (100%)
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Parent Request</div>
+                                    <div class="text-sm font-medium text-purple-700">
+                                        <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0511
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Version</div>
+                                    <div class="text-sm font-medium text-gray-900">v1.0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="p-6 bg-gray-50">
+                            <div class="flex flex-wrap items-center justify-between gap-4">
+                                <div class="flex items-center gap-6">
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-clock mr-1"></i>
+                                        Created Jan 20, 2024 by <span class="text-gray-700">System Import</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-solid fa-pen mr-1"></i>
+                                        Reviewed Jan 26, 2024 by <span class="text-gray-700">R. Johnson</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-300 transition-colors">
+                                        <i class="fa-solid fa-file-lines mr-2"></i>View Redaction Log
+                                    </button>
+                                    <button
+                                        class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors">
+                                        Open File
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- STATUS VARIATIONS SECTION -->
+        <!-- ============================================================== -->
+        <section id="status-variations-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR File Status Variations
+                    </h2>
+                    <p class="text-gray-600">
+                        Status badges and indicators used across all card sizes
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Review Status -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Review Status</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-800">
+                                    <i class="fa-solid fa-clock mr-1.5"></i>Pending
+                                </span>
+                                <span class="text-sm text-gray-600">Awaiting review</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                    <i class="fa-solid fa-eye mr-1.5"></i>In Review
+                                </span>
+                                <span class="text-sm text-gray-600">Currently being reviewed</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                                    <i class="fa-solid fa-check-circle mr-1.5"></i>Completed
+                                </span>
+                                <span class="text-sm text-gray-600">Review finished</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redaction Status -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Redaction Status</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded text-sm font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-check mr-1.5"></i>No Redaction
+                                </span>
+                                <span class="text-sm text-gray-600">Full document released</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded text-sm font-medium bg-amber-100 text-amber-700">
+                                    <i class="fa-solid fa-eraser mr-1.5"></i>Partial
+                                </span>
+                                <span class="text-sm text-gray-600">Some sections redacted</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded text-sm font-medium bg-red-100 text-red-700">
+                                    <i class="fa-solid fa-ban mr-1.5"></i>Full Redaction
+                                </span>
+                                <span class="text-sm text-gray-600">Document withheld entirely</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Common Exemption Codes -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Common Exemption Codes</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-purple-100 text-purple-700">(b)(4)</span>
+                                <span class="text-sm text-gray-600">Trade Secrets</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-purple-100 text-purple-700">(b)(6)</span>
+                                <span class="text-sm text-gray-600">Personal Privacy</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-purple-100 text-purple-700">(b)(7)(C)</span>
+                                <span class="text-sm text-gray-600">Law Enforcement Privacy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Indicators -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Special Indicators</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-globe text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Public Release</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Released publicly</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-user-secret text-purple-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Parent Request</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Link to SAR</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-code-branch text-gray-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Version</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Document version</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

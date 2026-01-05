@@ -1,0 +1,1506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject Access Request Cards - ArkCase Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar-loading {
+            transition: none !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <main id="main-content" class="flex-1 ml-0 min-h-screen">
+        <!-- ============================================================== -->
+        <!-- OVERVIEW SECTION -->
+        <!-- ============================================================== -->
+        <section id="sar-card-overview" class="bg-white py-12">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="max-w-5xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-user-secret text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900">
+                                Subject Access Request Cards
+                            </h1>
+                            <p class="text-gray-600 mt-1">
+                                Privacy request management for data subject rights (GDPR/CCPA)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            These cards represent Subject Access Requests (SARs) - formal requests from individuals
+                            to access, modify, or delete their personal data under privacy regulations like GDPR,
+                            CCPA, and other data protection laws. Cards support request types (Data Access, Erasure,
+                            Modification), identity verification status, and sworn statement tracking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- SMALL CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="small-cards-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR - Small Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Compact cards optimized for dense lists, queues, and search results
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Small Card 1 - Data Access Request, Active -->
+                    <div id="small-card-1"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Data Access Request - John Smith
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0512</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>
+                                    Due Feb 15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 2 - Erasure Request, Pending -->
+                    <div id="small-card-2"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Right to Erasure - Maria Garcia
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0511</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Erasure</span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                                </div>
+                                <div class="text-xs text-red-600">
+                                    <i class="fa-regular fa-calendar text-red-500 mr-1"></i>
+                                    Due Jan 28
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 3 - Modification Request, In Review -->
+                    <div id="small-card-3"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Data Correction Request - James Chen
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0510</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Modification</span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In
+                                        Review</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>
+                                    Due Feb 22
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 4 - Closed Request -->
+                    <div id="small-card-4"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Data Portability - Sarah Johnson
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0509</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">Closed</span>
+                                </div>
+                                <div class="text-xs text-gray-500">
+                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>
+                                    Closed: Jan 20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 5 - On Hold, Restricted -->
+                    <div id="small-card-5"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Complex Records Request - Alex Kim
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0508 <i
+                                        class="fa-solid fa-lock text-amber-500 ml-1" title="Restricted Access"></i></p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                                        <i class="fa-solid fa-pause-circle mr-1"></i>On Hold
+                                    </span>
+                                    <i class="fa-solid fa-flag text-red-500" title="High Priority"></i>
+                                </div>
+                                <div class="text-xs text-amber-600 font-medium">
+                                    <i class="fa-solid fa-pause mr-1"></i>
+                                    Identity verification pending
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 6 - Sworn Statement Verified -->
+                    <div id="small-card-6"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user-secret text-blue-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">
+                                    Employee Records Access - Pat Williams
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0507 <i
+                                        class="fa-solid fa-certificate text-green-500 ml-1" title="Sworn Statement Verified"></i></p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-regular fa-calendar text-gray-400 mr-1"></i>
+                                    Due Feb 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- CHATBOT CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="chatbot-cards-section" class="py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">
+                                SAR - Chatbot Cards
+                            </h2>
+                            <p class="text-gray-600">
+                                Adaptive cards optimized for AI assistant responses (~350px width)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-100 border-l-4 border-blue-600 p-4 rounded">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            <strong>Chatbot Integration:</strong> These cards are designed for the AI assistant chat
+                            panel. They feature adaptive sizing (compact → expanded), request type badges,
+                            identity verification status, and sworn statement indicators.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chatbot Card Container -->
+                <div class="max-w-[400px] mx-auto bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+                    <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-message text-blue-500"></i>
+                        <span>AI Assistant Response Preview</span>
+                    </div>
+
+                    <!-- ===== COMPACT CHATBOT CARDS ===== -->
+                    <div class="space-y-3 mb-6">
+                        <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards (Default)</p>
+
+                        <!-- Compact Card - Overdue State -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-red-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Erasure Request - M. Garcia</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0511 <i
+                                            class="fa-solid fa-lock text-amber-500 ml-1" title="Restricted"></i></p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Erasure</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-amber-100 text-amber-800">Pending</span>
+                                    </div>
+                                    <div class="text-[11px] text-red-600 font-medium">
+                                        <i class="fa-regular fa-calendar mr-0.5"></i>Overdue - Was due Jan 28
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Due Today -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Data Access - J. Smith</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0512 <i
+                                            class="fa-solid fa-certificate text-green-500 ml-1" title="Identity Verified"></i></p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-100 text-green-800">Active</span>
+                                    </div>
+                                    <div class="text-[11px] text-amber-600 font-medium">
+                                        <i class="fa-regular fa-calendar mr-0.5"></i>Due today
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Normal State -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-blue-600 text-sm"></i>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Modification - J. Chen</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">SAR-2024-0510</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Modification</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-100 text-blue-800">In
+                                            Review</span>
+                                    </div>
+                                    <div class="text-[11px] text-gray-600">
+                                        <i class="fa-regular fa-calendar mr-0.5 text-gray-400"></i>Due Feb 22
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Show More Toggle -->
+                    <button
+                        class="w-full text-center text-xs text-blue-600 hover:text-blue-800 font-medium py-2 border-t border-gray-100">
+                        <i class="fa-solid fa-chevron-down mr-1"></i> Show 2 more requests
+                    </button>
+                </div>
+
+                <!-- ===== EXPANDED CHATBOT CARD ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">Expanded Card (On Click/Tap)</p>
+
+                    <div class="bg-white border-2 border-purple-300 rounded-xl shadow-lg overflow-hidden">
+                        <!-- Selection Badge -->
+                        <div class="bg-blue-600 text-white px-3 py-1.5 flex items-center justify-between">
+                            <span class="text-xs font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-check-circle"></i> Selected for Context
+                            </span>
+                            <button class="text-purple-200 hover:text-white text-xs">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-4">
+                            <!-- Header -->
+                            <div class="flex items-start gap-3 mb-3">
+                                <div
+                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">Subject Access Request</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-red-100 text-red-700">
+                                            <i class="fa-solid fa-exclamation-circle mr-0.5"></i>OVERDUE
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">Right to Erasure - Maria Garcia</h3>
+                                    <div class="flex items-center gap-2 mt-0.5">
+                                        <p class="text-xs text-gray-500 font-mono">SAR-2024-0511</p>
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Erasure</span>
+                                        <i class="fa-solid fa-lock text-amber-500 text-[10px]" title="Restricted"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metadata Grid -->
+                            <div class="grid grid-cols-2 gap-3 mb-3 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Status</p>
+                                    <span
+                                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">Pending</span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Priority</p>
+                                    <span class="inline-flex items-center text-xs font-medium text-red-600">
+                                        <i class="fa-solid fa-flag mr-1"></i>High
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Due Date</p>
+                                    <span class="text-xs font-medium text-red-600">
+                                        <i class="fa-regular fa-calendar mr-1"></i>Jan 28, 2024
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Received</p>
+                                    <span class="text-xs font-medium text-gray-700">
+                                        <i class="fa-regular fa-clock mr-1"></i>Dec 28, 2024
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Queue</p>
+                                    <span class="text-xs font-medium text-gray-700">
+                                        <i class="fa-solid fa-layer-group mr-1 text-gray-400"></i>Privacy Office
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Component</p>
+                                    <span class="text-xs font-medium text-gray-700">
+                                        <i class="fa-solid fa-building mr-1 text-gray-400"></i>Marketing
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Identity Verification Status -->
+                            <div class="flex items-center gap-3 mb-3 p-2 bg-amber-50 border border-amber-200 rounded-lg">
+                                <i class="fa-solid fa-id-card text-amber-600"></i>
+                                <div class="flex-1">
+                                    <p class="text-xs font-medium text-amber-800">Identity Verification Required</p>
+                                    <p class="text-[10px] text-amber-600">Awaiting sworn statement</p>
+                                </div>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Pending</span>
+                            </div>
+
+                            <!-- Assignee -->
+                            <div class="flex items-center gap-2 mb-3">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Assigned To</p>
+                                <div class="flex items-center gap-2">
+                                    <div class="flex -space-x-1.5">
+                                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+                                            alt="User" class="w-6 h-6 rounded-full border-2 border-white" />
+                                    </div>
+                                    <span class="text-xs text-gray-600">L. Martinez (Privacy Team)</span>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="flex gap-2 pt-3 border-t border-gray-100">
+                                <button
+                                    class="flex-1 px-3 py-2 bg-blue-600 text-white text-xs font-medium rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-comment-dots"></i> Ask about this
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-file-lines"></i> Docs
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== REQUEST TYPE REFERENCE ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">Request Type Reference</p>
+                    <div class="bg-white rounded-lg border border-gray-200 p-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-blue-100 text-blue-700 border border-blue-200">
+                                <i class="fa-solid fa-eye mr-1"></i>Data Access
+                            </span>
+                            <span class="text-xs text-gray-600">Request to access personal data held</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-red-100 text-red-700 border border-red-200">
+                                <i class="fa-solid fa-trash mr-1"></i>Erasure
+                            </span>
+                            <span class="text-xs text-gray-600">Right to be forgotten / data deletion</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-700 border border-amber-200">
+                                <i class="fa-solid fa-pen mr-1"></i>Modification
+                            </span>
+                            <span class="text-xs text-gray-600">Correct inaccurate personal data</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-2 py-1 rounded text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-200">
+                                <i class="fa-solid fa-question mr-1"></i>Other
+                            </span>
+                            <span class="text-xs text-gray-600">Objection, restriction, portability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SELECTION STATES ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">Selection States</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Unselected -->
+                        <div>
+                            <p class="text-[10px] text-gray-400 mb-2">Unselected</p>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-gray-300">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-user-secret text-blue-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">SAR Title</h4>
+                                        <p class="text-[10px] text-gray-500">SAR-2024-001</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selected -->
+                        <div>
+                            <p class="text-[10px] text-gray-400 mb-2">Selected</p>
+                            <div class="bg-blue-50 border-2 border-purple-400 rounded-lg p-3 cursor-pointer relative">
+                                <div class="absolute -top-2 -right-2 w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-check text-white text-[10px]"></i>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                        <i class="fa-solid fa-user-secret text-blue-600 text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">SAR Title</h4>
+                                        <p class="text-[10px] text-gray-500">SAR-2024-001</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- MEDIUM CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="medium-cards-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR - Medium Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Default cards for dashboards, related-object sections, and browse views
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Medium Card 1 - Data Access, Active -->
+                    <div id="medium-card-1"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Subject Access Request
+                                    </div>
+                                    <div class="flex items-center mt-1">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <i class="fa-solid fa-certificate text-green-500 text-xs ml-2"
+                                            title="Identity Verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Data Access Request - John Smith
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">SAR-2024-0512</p>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Priority</div>
+                                <div class="text-sm font-medium text-gray-900">Medium</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Due Date</div>
+                                <div class="text-sm font-medium text-gray-900">Feb 15, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Received</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 15, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                <div class="text-sm font-medium text-gray-900">Privacy Office</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Component</div>
+                                <div class="text-sm font-medium text-gray-900">Customer Service</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Documents</div>
+                                <div class="text-sm font-medium text-gray-900">
+                                    <i class="fa-solid fa-file-lines text-gray-400 mr-1"></i>12 files
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Assigned To</div>
+                            <div class="flex items-center">
+                                <div class="flex -space-x-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+                                        alt="User" class="w-8 h-8 rounded-full border-2 border-white" />
+                                </div>
+                                <span class="text-sm text-gray-700 ml-3">L. Martinez (Privacy Team)</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Request
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 2 - Erasure, On Hold -->
+                    <div id="medium-card-2"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Subject Access Request
+                                    </div>
+                                    <div class="flex items-center mt-1">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                                            <i class="fa-solid fa-pause-circle mr-1"></i>On Hold
+                                        </span>
+                                        <i class="fa-solid fa-flag text-red-500 text-xs ml-2" title="High Priority"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Right to Erasure - Maria Garcia
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">SAR-2024-0511 <i
+                                        class="fa-solid fa-lock text-amber-500 ml-1" title="Restricted"></i></p>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Erasure</span>
+                            </div>
+                        </div>
+
+                        <!-- Hold Reason Banner -->
+                        <div class="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-pause-circle text-amber-600"></i>
+                                <div>
+                                    <p class="text-xs font-medium text-amber-800">On Hold: Identity Verification Required</p>
+                                    <p class="text-[10px] text-amber-600">Hold entered Jan 20, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Priority</div>
+                                <div class="text-sm font-medium text-red-600">
+                                    <i class="fa-solid fa-flag mr-1"></i>High
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Due Date</div>
+                                <div class="text-sm font-medium text-red-600">Jan 28, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Received</div>
+                                <div class="text-sm font-medium text-gray-900">Dec 28, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                <div class="text-sm font-medium text-gray-900">Privacy Office</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Component</div>
+                                <div class="text-sm font-medium text-gray-900">Marketing</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Sworn Statement</div>
+                                <div class="text-sm font-medium text-amber-600">
+                                    <i class="fa-solid fa-circle-xmark mr-1"></i>Not Received
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-2">Assigned To</div>
+                            <div class="flex items-center">
+                                <div class="flex -space-x-2 mr-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
+                                        alt="User" class="w-8 h-8 rounded-full border-2 border-white" />
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
+                                        alt="User" class="w-8 h-8 rounded-full border-2 border-white" />
+                                </div>
+                                <span class="text-sm text-gray-700">R. Johnson (Legal Team) +1</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Request
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 3 - Modification, In Review -->
+                    <div id="medium-card-3"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Subject Access Request
+                                    </div>
+                                    <div class="flex items-center mt-1">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In Review</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Data Correction Request - James Chen
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">SAR-2024-0510 <i
+                                        class="fa-solid fa-certificate text-green-500 ml-1" title="Identity Verified"></i></p>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">Modification</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Priority</div>
+                                <div class="text-sm font-medium text-gray-900">Medium</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Due Date</div>
+                                <div class="text-sm font-medium text-gray-900">Feb 22, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Received</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 22, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                <div class="text-sm font-medium text-gray-900">Data Quality</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Component</div>
+                                <div class="text-sm font-medium text-gray-900">HR Systems</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Sworn Statement</div>
+                                <div class="text-sm font-medium text-green-600">
+                                    <i class="fa-solid fa-circle-check mr-1"></i>Verified
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-2">Assigned To</div>
+                            <div class="flex items-center">
+                                <div class="flex -space-x-2 mr-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
+                                        alt="User" class="w-8 h-8 rounded-full border-2 border-white" />
+                                </div>
+                                <span class="text-sm text-gray-700">S. Williams (Data Team)</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                Open Request
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 4 - Closed -->
+                    <div id="medium-card-4"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-user-secret text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Subject Access Request
+                                    </div>
+                                    <div class="flex items-center mt-1">
+                                        <span
+                                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                Data Portability - Sarah Johnson
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">SAR-2024-0509</p>
+                                <span
+                                    class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Disposition</div>
+                                <div class="text-sm font-medium text-green-600">
+                                    <i class="fa-solid fa-check-circle mr-1"></i>Completed
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Closed Date</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 20, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Released</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 19, 2024</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Delivery</div>
+                                <div class="text-sm font-medium text-gray-900">
+                                    <i class="fa-solid fa-envelope mr-1 text-gray-400"></i>Email
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Component</div>
+                                <div class="text-sm font-medium text-gray-900">Customer Service</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Documents</div>
+                                <div class="text-sm font-medium text-gray-900">
+                                    <i class="fa-solid fa-file-lines text-gray-400 mr-1"></i>8 files
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-2">Processed By</div>
+                            <div class="flex items-center">
+                                <div class="flex -space-x-2 mr-2">
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+                                        alt="User" class="w-8 h-8 rounded-full border-2 border-white" />
+                                </div>
+                                <span class="text-sm text-gray-700">A. Patel (Privacy Team)</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                View Request
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- LARGE CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="large-cards-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR - Large Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Detailed cards for preview panels, inspector views, and expanded layouts
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Large Card 1 - Active Data Access Request -->
+                    <div id="large-card-1"
+                        class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fa-solid fa-user-secret text-blue-600 text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
+                                            Subject Access Request
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-900">
+                                            Data Access Request - John Smith
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <p class="text-sm text-gray-500">SAR-2024-0512</p>
+                                            <span
+                                                class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">Data Access</span>
+                                            <span
+                                                class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">GDPR Article 15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                    <i class="fa-solid fa-certificate text-green-500" title="Identity Verified"></i>
+                                    <button
+                                        class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors ml-2">
+                                        <i class="fa-solid fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-gray-700 leading-relaxed">
+                                    Request for complete copy of all personal data held by the organization, including
+                                    transaction history, communications, and profile information. Requester has verified
+                                    identity via government-issued ID.
+                                </p>
+                            </div>
+
+                            <!-- Key Metadata -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Priority</div>
+                                    <div class="text-sm font-medium text-gray-900">Medium</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Due Date</div>
+                                    <div class="text-sm font-medium text-gray-900">Feb 15, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Received</div>
+                                    <div class="text-sm font-medium text-gray-900">Jan 15, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                    <div class="text-sm font-medium text-gray-900">Privacy Office</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Component Agency</div>
+                                    <div class="text-sm font-medium text-gray-900">Customer Service</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Owning Group</div>
+                                    <div class="text-sm font-medium text-gray-900">Privacy Team</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Delivery Method</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <i class="fa-solid fa-globe text-gray-400 mr-1"></i>Portal
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Documents</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <i class="fa-solid fa-file-lines text-gray-400 mr-1"></i>12 files
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Record Search Range -->
+                        <div class="p-6 border-b border-gray-200 bg-blue-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Record Search Range</div>
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-calendar-day text-blue-600"></i>
+                                    <span class="text-sm font-medium text-gray-900">Jan 1, 2020</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-calendar-day text-blue-600"></i>
+                                    <span class="text-sm font-medium text-gray-900">Jan 15, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verification Status -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Verification & Agreements</div>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Sworn Statement</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Processing Acknowledged</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Info Agreement</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Authorized</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Assignment & Timeline -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Assigned To</div>
+                                    <div class="flex items-center">
+                                        <div class="flex -space-x-2">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+                                                alt="User" class="w-10 h-10 rounded-full border-2 border-white" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-sm font-medium text-gray-900">Laura Martinez</p>
+                                            <p class="text-xs text-gray-500">Privacy Specialist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Signature</div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-signature text-blue-500"></i>
+                                        <span class="text-sm text-gray-900">John Smith</span>
+                                        <span class="text-xs text-gray-500">Jan 15, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="p-6 bg-gray-50">
+                            <div class="flex flex-wrap items-center justify-between gap-4">
+                                <div class="flex items-center gap-6">
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-clock mr-1"></i>
+                                        Created Jan 15, 2024 by <span class="text-gray-700">System</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-solid fa-pen mr-1"></i>
+                                        Modified Jan 25, 2024 by <span class="text-gray-700">L. Martinez</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-300 transition-colors">
+                                        <i class="fa-solid fa-file-lines mr-2"></i>Documents
+                                    </button>
+                                    <button
+                                        class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                        Open Request
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Large Card 2 - On Hold Erasure Request -->
+                    <div id="large-card-2"
+                        class="bg-white rounded-lg border border-orange-200 hover:shadow-lg transition-shadow">
+                        <!-- Hold Banner -->
+                        <div class="bg-orange-100 border-b border-orange-200 px-6 py-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-pause-circle text-orange-600 text-lg"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-orange-800">Request On Hold - Identity Verification Required</p>
+                                    <p class="text-xs text-orange-600">Hold entered Jan 20, 2024 - Awaiting sworn statement</p>
+                                </div>
+                            </div>
+                            <button class="px-3 py-1.5 bg-orange-600 text-white text-xs font-medium rounded-lg hover:bg-orange-700 transition-colors">
+                                <i class="fa-solid fa-play-circle mr-1"></i>Release Hold
+                            </button>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fa-solid fa-user-secret text-blue-600 text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
+                                            Subject Access Request
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-900">
+                                            Right to Erasure - Maria Garcia
+                                        </h3>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <p class="text-sm text-gray-500">SAR-2024-0511</p>
+                                            <span
+                                                class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-100 text-red-700">Erasure</span>
+                                            <span
+                                                class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">GDPR Article 17</span>
+                                            <i class="fa-solid fa-lock text-amber-500" title="Restricted"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-orange-100 text-orange-800">
+                                        <i class="fa-solid fa-pause-circle mr-1"></i>On Hold
+                                    </span>
+                                    <i class="fa-solid fa-flag text-red-500" title="High Priority"></i>
+                                    <button
+                                        class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors ml-2">
+                                        <i class="fa-solid fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-gray-700 leading-relaxed">
+                                    Request for complete deletion of all personal data including marketing preferences,
+                                    purchase history, and account information. Requires identity verification before
+                                    processing can proceed.
+                                </p>
+                            </div>
+
+                            <!-- Key Metadata -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Priority</div>
+                                    <div class="text-sm font-medium text-red-600">
+                                        <i class="fa-solid fa-flag mr-1"></i>High
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Due Date</div>
+                                    <div class="text-sm font-medium text-red-600">
+                                        <i class="fa-solid fa-exclamation-circle mr-1"></i>Jan 28, 2024 (Overdue)
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Received</div>
+                                    <div class="text-sm font-medium text-gray-900">Dec 28, 2024</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Queue</div>
+                                    <div class="text-sm font-medium text-gray-900">Privacy Office</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Component Agency</div>
+                                    <div class="text-sm font-medium text-gray-900">Marketing</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Owning Group</div>
+                                    <div class="text-sm font-medium text-gray-900">Legal Team</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Delivery Method</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <i class="fa-solid fa-envelope text-gray-400 mr-1"></i>Email
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Documents</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <i class="fa-solid fa-file-lines text-gray-400 mr-1"></i>3 files
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verification Status - Incomplete -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Verification & Agreements</div>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-xmark text-amber-500"></i>
+                                    <span class="text-sm text-gray-700">Sworn Statement</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Processing Acknowledged</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm text-gray-700">Info Agreement</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-xmark text-amber-500"></i>
+                                    <span class="text-sm text-gray-700">Authorized</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Assignment & Timeline -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Assigned To</div>
+                                    <div class="flex items-center">
+                                        <div class="flex -space-x-2">
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
+                                                alt="User" class="w-10 h-10 rounded-full border-2 border-white" />
+                                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
+                                                alt="User" class="w-10 h-10 rounded-full border-2 border-white" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-sm font-medium text-gray-900">Rachel Johnson +1</p>
+                                            <p class="text-xs text-gray-500">Legal Team</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Signature</div>
+                                    <div class="flex items-center gap-2 text-amber-600">
+                                        <i class="fa-solid fa-signature"></i>
+                                        <span class="text-sm">Not yet received</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="p-6 bg-gray-50">
+                            <div class="flex flex-wrap items-center justify-between gap-4">
+                                <div class="flex items-center gap-6">
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-clock mr-1"></i>
+                                        Created Dec 28, 2024 by <span class="text-gray-700">Portal</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-solid fa-pen mr-1"></i>
+                                        Modified Jan 20, 2024 by <span class="text-gray-700">R. Johnson</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-300 transition-colors">
+                                        <i class="fa-solid fa-file-lines mr-2"></i>Documents
+                                    </button>
+                                    <button
+                                        class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                                        Open Request
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- STATUS VARIATIONS SECTION -->
+        <!-- ============================================================== -->
+        <section id="status-variations-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR Status Variations
+                    </h2>
+                    <p class="text-gray-600">
+                        Status badges and request type indicators used across all card sizes
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Status Badges -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Status Badges</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                <span class="text-sm text-gray-600">Request is being processed</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-800">Pending</span>
+                                <span class="text-sm text-gray-600">Awaiting action or assignment</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">In Review</span>
+                                <span class="text-sm text-gray-600">Under review by privacy team</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
+                                    <i class="fa-solid fa-pause-circle mr-1"></i>On Hold
+                                </span>
+                                <span class="text-sm text-gray-600">Processing paused</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">Closed</span>
+                                <span class="text-sm text-gray-600">Request completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Request Types -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Request Types</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-blue-100 text-blue-700">
+                                    <i class="fa-solid fa-eye mr-1.5"></i>Data Access
+                                </span>
+                                <span class="text-sm text-gray-600">GDPR Art. 15 / Right to access</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-red-100 text-red-700">
+                                    <i class="fa-solid fa-trash mr-1.5"></i>Erasure
+                                </span>
+                                <span class="text-sm text-gray-600">GDPR Art. 17 / Right to be forgotten</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-amber-100 text-amber-700">
+                                    <i class="fa-solid fa-pen mr-1.5"></i>Modification
+                                </span>
+                                <span class="text-sm text-gray-600">GDPR Art. 16 / Right to rectification</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-gray-100 text-gray-700">
+                                    <i class="fa-solid fa-question mr-1.5"></i>Other
+                                </span>
+                                <span class="text-sm text-gray-600">Objection, restriction, portability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Identity Verification States -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Identity Verification</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-certificate text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Verified</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Identity confirmed</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-id-card text-amber-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Pending</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Awaiting verification</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-xmark text-red-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Failed</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Verification unsuccessful</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Indicators -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Special Indicators</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-lock text-amber-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Restricted</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Limited access</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-flag text-red-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">High Priority</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Urgent attention required</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Sworn Statement</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Identity statement received</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-link text-blue-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Follow-up</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Related to previous request</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAR Person Cards - ArkCase Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar-loading {
+            transition: none !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <main id="main-content" class="flex-1 ml-0 min-h-screen">
+        <!-- ============================================================== -->
+        <!-- OVERVIEW SECTION -->
+        <!-- ============================================================== -->
+        <section id="sar-person-card-overview" class="bg-white py-12">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="max-w-5xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-user-secret text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-bold text-gray-900">
+                                SAR Person Cards
+                            </h1>
+                            <p class="text-gray-600 mt-1">
+                                Data subjects and requesters for Subject Access Requests
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            These cards represent individuals associated with Subject Access Requests (SARs) -
+                            including data subjects making requests and portal users. They include SAR-specific
+                            fields like position, date of birth (for identity verification), portal roles,
+                            and requester source.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- SMALL CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="small-card-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR Person - Small Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Compact format for data subject lists, requester lookups, and search results
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Small Card 1 - Data Subject, Active -->
+                    <div id="small-card-1"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Acme Corporation</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">Data Subject</span>
+                                    <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" title="Active"></span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 2 - Portal User -->
+                    <div id="small-card-2"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Maria Garcia</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Self <i
+                                        class="fa-solid fa-key text-green-500 ml-1" title="Portal User"></i></p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">Portal User</span>
+                                    <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" title="Active"></span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 3 - Pending Verification -->
+                    <div id="small-card-3"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">James Chen</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">TechCorp Inc.</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700">
+                                        <i class="fa-solid fa-hourglass-half mr-1"></i>Pending
+                                    </span>
+                                </div>
+                                <div class="text-xs text-amber-600">
+                                    <i class="fa-solid fa-id-card mr-1"></i>Verify identity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 4 - With Position -->
+                    <div id="small-card-4"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Marketing Manager • Global Media</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">Data Subject</span>
+                                    <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" title="Active"></span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-user-secret text-purple-400 mr-1"></i>SAR-2024-0509
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 5 - Inactive -->
+                    <div id="small-card-5"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Robert Williams</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Former Employee</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600">Inactive</span>
+                                </div>
+                                <div class="text-xs text-gray-500">
+                                    <i class="fa-solid fa-user-secret text-gray-400 mr-1"></i>SAR-2023-0892
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 6 - Multiple Portal Roles -->
+                    <div id="small-card-6"
+                        class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-user text-white text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-semibold text-gray-900 truncate">Alex Kim</h3>
+                                <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Legal Counsel • Kim & Associates</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-key mr-0.5"></i>Admin
+                                    </span>
+                                    <span
+                                        class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">Portal User</span>
+                                    <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" title="Active"></span>
+                                </div>
+                                <div class="text-xs text-gray-600">
+                                    <i class="fa-solid fa-folder-open mr-1 text-gray-400"></i>5 requests
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- CHATBOT CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="chatbot-cards-section" class="py-12 bg-gradient-to-br from-purple-600 to-indigo-700">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">SAR Person - Chatbot Cards</h2>
+                            <p class="text-purple-100">Optimized for chat panel context (~350px width)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 mt-4">
+                        <p class="text-sm text-white/90">
+                            <i class="fa-solid fa-info-circle mr-2"></i>
+                            These card variants show data subjects and SAR requesters with identity verification status,
+                            portal roles, and linked request counts for AI assistant context.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chatbot Cards Container -->
+                <div class="max-w-[400px] mx-auto bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+                    <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-message text-green-500"></i>
+                        <span>AI Assistant Response Preview</span>
+                    </div>
+
+                    <!-- ===== COMPACT CHATBOT CARDS ===== -->
+                    <div class="space-y-3 mb-6">
+                        <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards (Default)</p>
+
+                        <!-- Compact Card - Verified Identity -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-green-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-user text-white text-sm"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-white text-[6px]"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">John Smith</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Acme Corporation <i
+                                            class="fa-solid fa-certificate text-green-500 ml-1" title="Identity Verified"></i></p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">Data Subject</span>
+                                    </div>
+                                    <div class="text-[11px] text-gray-600">
+                                        <i class="fa-solid fa-user-secret mr-0.5 text-purple-400"></i>SAR-2024-0512
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Pending Verification -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-user text-white text-sm"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-amber-500 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Maria Garcia</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Self-request</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-700">
+                                            <i class="fa-solid fa-hourglass-half mr-0.5"></i>Pending
+                                        </span>
+                                    </div>
+                                    <div class="text-[11px] text-amber-600">
+                                        <i class="fa-solid fa-id-card mr-0.5"></i>Verify identity
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compact Card - Portal User with Role -->
+                        <div
+                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-user text-white text-sm"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Alex Kim</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Legal Counsel <i
+                                            class="fa-solid fa-key text-green-500 ml-1" title="Portal Admin"></i></p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-1.5">
+                                        <span
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-indigo-100 text-indigo-700">Portal User</span>
+                                    </div>
+                                    <div class="text-[11px] text-gray-600">
+                                        <i class="fa-solid fa-folder-open mr-0.5 text-gray-400"></i>5 requests
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Show More Toggle -->
+                    <button
+                        class="w-full text-center text-xs text-green-600 hover:text-green-800 font-medium py-2 border-t border-gray-100">
+                        <i class="fa-solid fa-chevron-down mr-1"></i> Show 2 more people
+                    </button>
+                </div>
+
+                <!-- ===== EXPANDED CHATBOT CARD ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Expanded Card (On Click/Tap)</p>
+
+                    <div class="bg-white border-2 border-purple-300 rounded-xl shadow-lg overflow-hidden">
+                        <!-- Selection Badge -->
+                        <div class="bg-green-600 text-white px-3 py-1.5 flex items-center justify-between">
+                            <span class="text-xs font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-check-circle"></i> Selected for Context
+                            </span>
+                            <button class="text-purple-200 hover:text-white text-xs">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-4">
+                            <!-- Header -->
+                            <div class="flex items-start gap-3 mb-3">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-white text-[8px]"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-medium text-gray-500 uppercase">SAR Person</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                            <i class="fa-solid fa-certificate mr-0.5"></i>Verified
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-900">John Smith</h3>
+                                    <div class="flex items-center gap-2 mt-0.5">
+                                        <p class="text-xs text-gray-500">Software Engineer • Acme Corporation</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metadata Grid -->
+                            <div class="grid grid-cols-2 gap-3 mb-3 p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Status</p>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Identity</p>
+                                    <span class="inline-flex items-center text-xs font-medium text-green-600">
+                                        <i class="fa-solid fa-certificate mr-1"></i>Verified
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Portal Role</p>
+                                    <span class="text-xs font-medium text-gray-700">
+                                        <i class="fa-solid fa-user mr-1 text-gray-400"></i>Requester
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Source</p>
+                                    <span class="text-xs font-medium text-gray-700">
+                                        <i class="fa-solid fa-globe mr-1 text-gray-400"></i>Portal
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <div class="mb-3 p-3 bg-green-50 border border-purple-200 rounded-lg">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide mb-2">Contact Information</p>
+                                <div class="space-y-1.5">
+                                    <div class="flex items-center gap-2 text-xs text-gray-700">
+                                        <i class="fa-solid fa-envelope text-green-500 w-4"></i>
+                                        <span>john.smith@acme.com</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-xs text-gray-700">
+                                        <i class="fa-solid fa-phone text-green-500 w-4"></i>
+                                        <span>(555) 123-4567</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linked Request -->
+                            <div class="flex items-center gap-2 mb-3 text-xs">
+                                <span class="text-gray-500">Linked Request:</span>
+                                <span class="font-medium text-green-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                </span>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="flex gap-2 pt-3 border-t border-gray-100">
+                                <button
+                                    class="flex-1 px-3 py-2 bg-green-600 text-white text-xs font-medium rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-comment-dots"></i> Ask about this
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-user-secret"></i> View SAR
+                                </button>
+                                <button
+                                    class="px-3 py-2 bg-gray-100 text-gray-700 text-xs font-medium rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SELECTION STATES ===== -->
+                <div class="max-w-[400px] mx-auto mt-8">
+                    <p class="text-xs font-medium text-white/70 uppercase tracking-wide mb-3">Selection States</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Unselected -->
+                        <div>
+                            <p class="text-[10px] text-white/50 mb-2">Unselected</p>
+                            <div class="bg-white border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-gray-300">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                                        <i class="fa-solid fa-user text-white text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">Person Name</h4>
+                                        <p class="text-[10px] text-gray-500">Data Subject</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selected -->
+                        <div>
+                            <p class="text-[10px] text-white/50 mb-2">Selected</p>
+                            <div class="bg-green-50 border-2 border-purple-400 rounded-lg p-3 cursor-pointer relative">
+                                <div class="absolute -top-2 -right-2 w-5 h-5 bg-green-600 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-check text-white text-[10px]"></i>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                                        <i class="fa-solid fa-user text-white text-xs"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="text-xs font-medium text-gray-900 truncate">Person Name</h4>
+                                        <p class="text-[10px] text-gray-500">Data Subject</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- MEDIUM CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="medium-cards-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR Person - Medium Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Default cards for dashboards, requester details, and browse views
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Medium Card 1 - Verified Data Subject -->
+                    <div id="medium-card-1"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mr-3 relative">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-white text-[8px]"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Person
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <i class="fa-solid fa-certificate text-green-500" title="Identity Verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">John Smith</h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">Software Engineer • Acme Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Email</div>
+                                <div class="text-sm font-medium text-gray-900 truncate">john.smith@acme.com</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Phone</div>
+                                <div class="text-sm font-medium text-gray-900">(555) 123-4567</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Portal Role</div>
+                                <div class="text-sm font-medium text-gray-900">
+                                    <i class="fa-solid fa-user text-green-500 mr-1"></i>Requester
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Source</div>
+                                <div class="text-sm font-medium text-gray-900">Portal</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Linked Request</div>
+                                <div class="text-sm font-medium text-green-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-1">Modified</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 25, 2024</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 2 - Pending Verification -->
+                    <div id="medium-card-2"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center mr-3 relative">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-amber-500 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Person
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
+                                            <i class="fa-solid fa-hourglass-half mr-1"></i>Pending Verification
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Maria Garcia</h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">Self-request</p>
+                            </div>
+                        </div>
+
+                        <!-- Verification Required Banner -->
+                        <div class="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-id-card text-amber-600"></i>
+                                <div>
+                                    <p class="text-xs font-medium text-amber-800">Identity Verification Required</p>
+                                    <p class="text-[10px] text-amber-600">Awaiting sworn statement submission</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Email</div>
+                                <div class="text-sm font-medium text-gray-900 truncate">maria.garcia@email.com</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Phone</div>
+                                <div class="text-sm font-medium text-gray-500">Not provided</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Source</div>
+                                <div class="text-sm font-medium text-gray-900">Email</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Linked Request</div>
+                                <div class="text-sm font-medium text-green-700">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0511
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Request Type</div>
+                                <div class="text-sm font-medium text-red-600">
+                                    <i class="fa-solid fa-trash mr-1"></i>Erasure
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Created</div>
+                                <div class="text-sm font-medium text-gray-900">Dec 28, 2024</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 3 - Portal Admin -->
+                    <div id="medium-card-3"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center mr-3 relative">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                    <div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Portal SAR Person
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-100 text-green-700">
+                                            <i class="fa-solid fa-key mr-0.5"></i>Admin
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Alex Kim</h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">Legal Counsel • Kim & Associates</p>
+                            </div>
+                        </div>
+
+                        <!-- Portal Roles -->
+                        <div class="mb-4 p-3 bg-green-50 border border-purple-200 rounded-lg">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Portal Roles</div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-key mr-1"></i>Administrator
+                                </span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 text-indigo-700">
+                                    <i class="fa-solid fa-user-tie mr-1"></i>Legal Representative
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Email</div>
+                                <div class="text-sm font-medium text-gray-900 truncate">alex@kim-law.com</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Phone</div>
+                                <div class="text-sm font-medium text-gray-900">(555) 987-6543</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Source</div>
+                                <div class="text-sm font-medium text-gray-900">Portal Registration</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Requests</div>
+                                <div class="text-sm font-medium text-gray-900">
+                                    <i class="fa-solid fa-folder-open text-gray-400 mr-1"></i>5 requests
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Last Active</div>
+                                <div class="text-sm font-medium text-gray-900">Today</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Member Since</div>
+                                <div class="text-sm font-medium text-gray-900">Jan 10, 2024</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Medium Card 4 - Inactive Person -->
+                    <div id="medium-card-4"
+                        class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        SAR Person
+                                    </div>
+                                    <div class="flex items-center mt-1 gap-2">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600">Inactive</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors">
+                                <i class="fa-solid fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Robert Williams</h3>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm text-gray-500">Former Employee</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Email</div>
+                                <div class="text-sm font-medium text-gray-500">r.williams@oldmail.com</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Linked Request</div>
+                                <div class="text-sm font-medium text-gray-500">
+                                    <i class="fa-solid fa-user-secret mr-1"></i>SAR-2023-0892 (Closed)
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Request Type</div>
+                                <div class="text-sm font-medium text-blue-600">
+                                    <i class="fa-solid fa-eye mr-1"></i>Data Access
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Closed</div>
+                                <div class="text-sm font-medium text-gray-900">Nov 15, 2023</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-600 font-medium uppercase tracking-wide mb-1">Disposition</div>
+                                <div class="text-sm font-medium text-green-600">
+                                    <i class="fa-solid fa-check-circle mr-1"></i>Completed
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200">
+                            <button
+                                class="w-full lg:w-auto px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- LARGE CARDS SECTION -->
+        <!-- ============================================================== -->
+        <section id="large-cards-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR Person - Large Card
+                    </h2>
+                    <p class="text-gray-600">
+                        Detailed cards for profile views, inspector panels, and expanded layouts
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Large Card - Full Profile -->
+                    <div id="large-card-1"
+                        class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mr-4 relative">
+                                        <i class="fa-solid fa-user text-white text-xl"></i>
+                                        <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-3 border-white flex items-center justify-center">
+                                            <i class="fa-solid fa-check text-white text-[10px]"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">
+                                            SAR Person - Data Subject
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-900">John Smith</h3>
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <p class="text-sm text-gray-500">Software Engineer • Acme Corporation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-green-100 text-green-700">
+                                        <i class="fa-solid fa-certificate mr-1"></i>Identity Verified
+                                    </span>
+                                    <button
+                                        class="text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-1.5 rounded transition-colors ml-2">
+                                        <i class="fa-solid fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="p-6 border-b border-gray-200 bg-green-50">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Contact Information</div>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <i class="fa-solid fa-envelope text-green-500"></i>
+                                        <span class="text-xs text-gray-500 font-medium">Email</span>
+                                    </div>
+                                    <div class="text-sm font-medium text-gray-900">john.smith@acme.com</div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <i class="fa-solid fa-phone text-green-500"></i>
+                                        <span class="text-xs text-gray-500 font-medium">Phone</span>
+                                    </div>
+                                    <div class="text-sm font-medium text-gray-900">(555) 123-4567</div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <i class="fa-solid fa-cake-candles text-green-500"></i>
+                                        <span class="text-xs text-gray-500 font-medium">Date of Birth</span>
+                                    </div>
+                                    <div class="text-sm font-medium text-gray-900">March 15, 1985</div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <i class="fa-solid fa-map-marker-alt text-green-500"></i>
+                                        <span class="text-xs text-gray-500 font-medium">Address</span>
+                                    </div>
+                                    <div class="text-sm font-medium text-gray-900">123 Main St, City, ST 12345</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Portal & Source Info -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Portal Role</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-700">
+                                            <i class="fa-solid fa-user mr-1"></i>Requester
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Requester Source</div>
+                                    <div class="text-sm font-medium text-gray-900">
+                                        <i class="fa-solid fa-globe text-gray-400 mr-1"></i>Portal
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Linked Request</div>
+                                    <div class="text-sm font-medium text-green-700">
+                                        <i class="fa-solid fa-user-secret mr-1"></i>SAR-2024-0512
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">Request Type</div>
+                                    <div class="text-sm font-medium text-blue-600">
+                                        <i class="fa-solid fa-eye mr-1"></i>Data Access
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name Details -->
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="text-xs text-gray-500 font-medium uppercase tracking-wide mb-3">Name Details</div>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Title</div>
+                                    <div class="text-sm font-medium text-gray-900">Mr.</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Given Name</div>
+                                    <div class="text-sm font-medium text-gray-900">John</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Family Name</div>
+                                    <div class="text-sm font-medium text-gray-900">Smith</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium mb-1">Position</div>
+                                    <div class="text-sm font-medium text-gray-900">Software Engineer</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="p-6 bg-gray-50">
+                            <div class="flex flex-wrap items-center justify-between gap-4">
+                                <div class="flex items-center gap-6">
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-clock mr-1"></i>
+                                        Created Jan 15, 2024 by <span class="text-gray-700">Portal Registration</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-solid fa-pen mr-1"></i>
+                                        Modified Jan 25, 2024 by <span class="text-gray-700">L. Martinez</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-300 transition-colors">
+                                        <i class="fa-solid fa-user-secret mr-2"></i>View Request
+                                    </button>
+                                    <button
+                                        class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
+                                        Edit Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- STATUS VARIATIONS SECTION -->
+        <!-- ============================================================== -->
+        <section id="status-variations-section" class="py-12 bg-white">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                        SAR Person Status Variations
+                    </h2>
+                    <p class="text-gray-600">
+                        Status badges and indicators used across all card sizes
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Status Badges -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Status Badges</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                <span class="text-sm text-gray-600">Person record is active</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-800">
+                                    <i class="fa-solid fa-hourglass-half mr-1"></i>Pending
+                                </span>
+                                <span class="text-sm text-gray-600">Awaiting verification</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-600">Inactive</span>
+                                <span class="text-sm text-gray-600">Record no longer active</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Identity Verification -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Identity Verification</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-certificate text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Verified</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Identity confirmed</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-id-card text-amber-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Pending</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Awaiting verification</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-xmark text-red-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Failed</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Verification unsuccessful</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portal Roles -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Portal Roles</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-green-100 text-green-700">
+                                    <i class="fa-solid fa-key mr-1.5"></i>Administrator
+                                </span>
+                                <span class="text-sm text-gray-600">Full portal access</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-indigo-100 text-indigo-700">
+                                    <i class="fa-solid fa-user-tie mr-1.5"></i>Legal Rep
+                                </span>
+                                <span class="text-sm text-gray-600">Legal representative</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="inline-flex items-center px-2.5 py-1 rounded text-sm font-medium bg-blue-100 text-blue-700">
+                                    <i class="fa-solid fa-user mr-1.5"></i>Requester
+                                </span>
+                                <span class="text-sm text-gray-600">Standard requester</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Requester Sources -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Requester Sources</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-globe text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Portal</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Self-service portal</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Email</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Email submission</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-file-lines text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Mail</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Postal mail</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-green-500"></i>
+                                    <span class="text-sm font-medium text-gray-900">Phone</span>
+                                </div>
+                                <span class="text-sm text-gray-600">Phone request</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
