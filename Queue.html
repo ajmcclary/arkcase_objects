@@ -350,177 +350,133 @@
                         <span>AI Assistant Response Preview</span>
                     </div>
 
-                    <!-- ===== COMPACT CHATBOT CARDS (Default State) ===== -->
+                    <!-- ===== COMPACT CARDS (Default State) ===== -->
                     <div class="space-y-3 mb-6">
                         <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards (Default)</p>
 
                         <!-- Compact Card - Overloaded with SLA Risk -->
                         <div
-                            class="chatbot-card-compact bg-white border border-red-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-red-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-layer-group text-blue-600 text-sm"></i>
+                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-blue-600"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Queue Name -->
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate mb-1.5">Intake & Triage</h3>
-                                    <!-- Row 2: Urgency + Item Count + SLA Risk -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Intake & Triage</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">32 items · Intake Team</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-red-100 text-red-700">
-                                            <i class="fa-solid fa-exclamation-triangle mr-0.5"></i>OVERLOADED
-                                        </span>
-                                        <span class="text-gray-600 font-medium">32 items</span>
-                                        <span class="text-orange-600 font-medium">
-                                            <i class="fa-solid fa-clock mr-0.5"></i>2 at risk
-                                        </span>
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-red-100 text-red-700">OVERLOADED</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <i class="fa-solid fa-flag text-red-500" title="Critical"></i>
                                     </div>
-                                    <!-- Row 3: Status + Team -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">Active</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-users mr-0.5 text-gray-400"></i>Intake Team</span>
+                                    <div class="text-xs text-red-600 font-medium">
+                                        <i class="fa-solid fa-clock text-red-500 mr-1"></i>2 at SLA risk
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-blue-600"
-                                    title="Ask about this queue">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - High Volume -->
                         <div
-                            class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-layer-group text-blue-600 text-sm"></i>
+                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-blue-600"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate mb-1.5">Investigation Review
-                                    </h3>
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Investigation Review</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">15 items · Legal Review</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-700">
-                                            <i class="fa-solid fa-arrow-trend-up mr-0.5"></i>HIGH VOLUME
-                                        </span>
-                                        <span class="text-gray-600 font-medium">15 items</span>
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-700">HIGH VOLUME</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                                     </div>
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">Active</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-users mr-0.5 text-gray-400"></i>Legal Review</span>
+                                    <div class="text-xs text-gray-500">
+                                        +5 today
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-blue-600"
-                                    title="Ask about this queue">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
-                        <!-- Compact Card - Normal with Stale Items -->
+                        <!-- Compact Card - Stale Items -->
                         <div
-                            class="chatbot-card-compact bg-white border border-yellow-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-layer-group text-blue-600 text-sm"></i>
+                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-blue-600"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate mb-1.5">Final Disposition
-                                    </h3>
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Final Disposition</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">6 items · Supervisors</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-yellow-100 text-yellow-700">
-                                            <i class="fa-solid fa-hourglass-half mr-0.5"></i>STALE ITEMS
-                                        </span>
-                                        <span class="text-gray-600 font-medium">6 items</span>
-                                        <span class="text-yellow-600 font-medium">
-                                            <i class="fa-regular fa-clock mr-0.5"></i>Oldest: 8d
-                                        </span>
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-yellow-100 text-yellow-700">STALE ITEMS</span>
+                                        <span
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                                     </div>
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">Active</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-users mr-0.5 text-gray-400"></i>Supervisors</span>
+                                    <div class="text-xs text-yellow-600 font-medium">
+                                        <i class="fa-regular fa-clock text-yellow-500 mr-1"></i>Oldest: 8d
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-blue-600"
-                                    title="Ask about this queue">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Normal (No Issues) -->
                         <div
-                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-layer-group text-blue-600 text-sm"></i>
+                                    class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-blue-600"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-900 truncate mb-1.5">Escalated Cases</h3>
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
-                                        <span class="text-gray-600 font-medium">7 items</span>
-                                        <span class="text-gray-400">•</span>
-                                        <span class="text-gray-500">Avg age: 1.2d</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 text-xs">
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Escalated Cases</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">7 items · Management</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">Active</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-users mr-0.5 text-gray-400"></i>Management</span>
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                    </div>
+                                    <div class="text-xs text-gray-500">
+                                        Avg age: 1.2d
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-blue-600"
-                                    title="Ask about this queue">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Empty Queue -->
                         <div
-                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-layer-group text-gray-400 text-sm"></i>
+                                    class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-gray-400"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-sm font-semibold text-gray-500 truncate mb-1.5">Archive Processing
-                                    </h3>
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <h3 class="text-sm font-semibold text-gray-500 truncate">Archive Processing</h3>
+                                    <p class="text-xs text-gray-400 mt-0.5 whitespace-nowrap">0 items · Records Team</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-500">
-                                            <i class="fa-solid fa-inbox mr-0.5"></i>EMPTY
-                                        </span>
-                                        <span class="text-gray-400">0 items</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 text-xs">
+                                            class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-500">EMPTY</span>
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded bg-gray-100 text-gray-500 font-medium">Idle</span>
-                                        <span class="text-gray-400"><i class="fa-solid fa-users mr-0.5"></i>Records
-                                            Team</span>
+                                            class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-500">Idle</span>
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-blue-600"
-                                    title="Ask about this queue">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
                     </div>

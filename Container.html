@@ -300,131 +300,111 @@
                         <span>AI Assistant Response Preview</span>
                     </div>
 
-                    <!-- ===== COMPACT CHATBOT CARDS (Default State) ===== -->
+                    <!-- ===== COMPACT CARDS (Default State) ===== -->
                     <div class="space-y-3 mb-6">
                         <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Compact Cards (Default)</p>
 
                         <!-- Compact Card - Active Custody -->
                         <div
-                            class="chatbot-card-compact bg-white border border-green-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-box text-slate-600 text-sm"></i>
+                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-box text-slate-600"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Container Name + ID -->
                                     <h3 class="text-sm font-semibold text-gray-900 truncate">Case #2024-00156 Documents</h3>
-                                    <p class="text-xs text-gray-500 mt-0.5 mb-1.5 whitespace-nowrap">CNT-2024-0156</p>
-                                    <!-- Row 2: Custody Status + Parent Type + Repository -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">CNT-2024-0156</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
                                             class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-green-100 text-green-700">
                                             <i class="fa-solid fa-hand-holding mr-0.5"></i>IN CUSTODY
                                         </span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-briefcase mr-0.5 text-gray-400"></i>Case</span>
-                                        <span class="text-gray-400">•</span>
+                                        <span
+                                            class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">
+                                            <i class="fa-solid fa-briefcase mr-0.5"></i>Case
+                                        </span>
                                         <span class="text-xs text-gray-500">Alfresco</span>
                                     </div>
-                                    <!-- Row 3: Item Count + Custodian -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-600"><i
-                                                class="fa-regular fa-file mr-0.5 text-gray-400"></i>47 docs</span>
-                                        <span class="text-gray-400">•</span>
-                                        <span class="text-gray-600"><i
-                                                class="fa-regular fa-user mr-0.5 text-gray-400"></i>Sarah Mitchell</span>
+                                    <div class="text-xs text-gray-600">
+                                        <i class="fa-regular fa-file text-gray-400 mr-1"></i>47 docs
+                                        <span class="text-gray-400 mx-1">•</span>
+                                        <i class="fa-regular fa-user text-gray-400 mr-0.5"></i>Sarah Mitchell
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-slate-600"
-                                    title="Ask about this container">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Transferred -->
                         <div
-                            class="chatbot-card-compact bg-white border border-amber-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-amber-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 relative">
-                                    <i class="fa-solid fa-box text-slate-600 text-sm"></i>
+                                    class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 relative">
+                                    <i class="fa-solid fa-box text-slate-600"></i>
                                     <div
                                         class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-amber-500 rounded-full flex items-center justify-center">
                                         <i class="fa-solid fa-arrow-right-arrow-left text-white text-[7px]"></i>
                                     </div>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Container Name + ID -->
                                     <h3 class="text-sm font-semibold text-gray-900 truncate">Evidence #EVD-2024-089 Files</h3>
-                                    <p class="text-xs text-gray-500 mt-0.5 mb-1.5 whitespace-nowrap">CNT-2024-0089 <i
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">CNT-2024-0089 <i
                                             class="fa-solid fa-shield-halved text-red-500 ml-1" title="Confidential"></i></p>
-                                    <!-- Row 2: Custody Status + Parent Type + Repository -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
                                             class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-700">
                                             <i class="fa-solid fa-arrow-right-arrow-left mr-0.5"></i>TRANSFERRED
                                         </span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-briefcase mr-0.5 text-gray-400"></i>Case</span>
-                                        <span class="text-gray-400">•</span>
+                                        <span
+                                            class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-100 text-blue-700">
+                                            <i class="fa-solid fa-briefcase mr-0.5"></i>Case
+                                        </span>
                                         <span class="text-xs text-gray-500">S3</span>
                                     </div>
-                                    <!-- Row 3: Item Count + Last Transfer -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-600"><i
-                                                class="fa-regular fa-file mr-0.5 text-gray-400"></i>8 docs</span>
-                                        <span class="text-gray-400">•</span>
-                                        <span class="text-amber-600"><i class="fa-solid fa-arrow-right mr-0.5"></i>To:
-                                            Legal Dept</span>
+                                    <div class="text-xs text-gray-600">
+                                        <i class="fa-regular fa-file text-gray-400 mr-1"></i>8 docs
+                                        <span class="text-gray-400 mx-1">•</span>
+                                        <span class="text-amber-600"><i class="fa-solid fa-arrow-right mr-0.5"></i>To: Legal Dept</span>
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-slate-600"
-                                    title="Ask about this container">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Released -->
                         <div
-                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-box-open text-gray-400 text-sm"></i>
+                                    class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-box-open text-gray-400"></i>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Container Name + ID -->
                                     <h3 class="text-sm font-semibold text-gray-700 truncate">Complaint #COMP-2024-456 Evidence</h3>
-                                    <p class="text-xs text-gray-500 mt-0.5 mb-1.5 whitespace-nowrap">CNT-2024-0456</p>
-                                    <!-- Row 2: Custody Status + Parent Type + Repository -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">CNT-2024-0456</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
                                             class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-gray-100 text-gray-600">
                                             <i class="fa-solid fa-box-open mr-0.5"></i>RELEASED
                                         </span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-clipboard-list mr-0.5 text-gray-400"></i>Complaint</span>
-                                        <span class="text-gray-400">•</span>
+                                        <span
+                                            class="hidden md:inline-flex lg:hidden xl:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-orange-100 text-orange-700">
+                                            <i class="fa-solid fa-clipboard-list mr-0.5"></i>Complaint
+                                        </span>
                                         <span class="text-xs text-gray-500">MinIO</span>
                                     </div>
-                                    <!-- Row 3: Item Count + Release Date -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-500"><i
-                                                class="fa-regular fa-file mr-0.5 text-gray-400"></i>15 docs</span>
-                                        <span class="text-gray-400">•</span>
-                                        <span class="text-gray-500">Released Dec 1, 2024</span>
+                                    <div class="text-xs text-gray-500">
+                                        <i class="fa-regular fa-file text-gray-400 mr-1"></i>15 docs
+                                        <span class="text-gray-400 mx-1">•</span>
+                                        Released Dec 1, 2024
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-slate-600"
-                                    title="Ask about this container">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
                     </div>

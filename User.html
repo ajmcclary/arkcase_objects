@@ -270,128 +270,86 @@
 
                 <!-- Chatbot Cards Container -->
                 <div class="max-w-[400px] mx-auto">
-                    <!-- ===== COMPACT CHATBOT CARDS (Default State) ===== -->
+                    <!-- ===== COMPACT CARDS (Default State) ===== -->
                     <div class="space-y-3 mb-6">
                         <p class="text-xs font-medium text-white/70 uppercase tracking-wide">Compact Cards (Default)</p>
 
                         <!-- Compact Card - Active + High Workload -->
                         <div
-                            class="chatbot-card-compact bg-white border border-green-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold text-xs flex-shrink-0 mt-0.5 relative">
+                                    class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold flex-shrink-0">
                                     SJ
-                                    <!-- Online indicator -->
-                                    <div
-                                        class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
-                                    </div>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Name + Account Status -->
-                                    <div class="flex items-center gap-2 mb-1.5">
-                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Sarah Johnson</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Case Manager · Legal Affairs</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-green-100 text-green-700">Active</span>
+                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" title="Online"></span>
                                     </div>
-                                    <!-- Row 2: Title + Department -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
-                                        <span class="text-gray-700 font-medium">Case Manager</span>
-                                        <span class="text-gray-400">·</span>
-                                        <span class="text-gray-500">Legal Affairs</span>
-                                    </div>
-                                    <!-- Row 3: Workload + Online Status -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-folder-open mr-0.5 text-gray-400"></i>12 cases</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-list-check mr-0.5 text-gray-400"></i>5 tasks</span>
-                                        <span class="inline-flex items-center gap-1 text-green-600">
-                                            <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>Online
-                                        </span>
+                                    <div class="text-xs text-gray-600">
+                                        <i class="fa-solid fa-folder-open text-gray-400 mr-1"></i>12 cases
+                                        <span class="text-gray-400 mx-1">·</span>
+                                        <i class="fa-solid fa-list-check text-gray-400 mr-0.5"></i>5 tasks
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-indigo-600"
-                                    title="Ask about this user">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Active + Low Workload -->
                         <div
-                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer">
+                            <div class="flex items-center gap-3">
                                 <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
                                     alt="Michael Chen"
-                                    class="w-9 h-9 rounded-full flex-shrink-0 mt-0.5 object-cover relative" />
+                                    class="w-10 h-10 rounded-full flex-shrink-0 object-cover" />
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Name + Account Status -->
-                                    <div class="flex items-center gap-2 mb-1.5">
-                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Michael Chen</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Senior Investigator · Investigations</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-green-100 text-green-700">Active</span>
+                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                                        <span class="w-2 h-2 rounded-full bg-gray-400 flex-shrink-0" title="Away"></span>
                                     </div>
-                                    <!-- Row 2: Title + Department -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
-                                        <span class="text-gray-700 font-medium">Senior Investigator</span>
-                                        <span class="text-gray-400">·</span>
-                                        <span class="text-gray-500">Investigations</span>
-                                    </div>
-                                    <!-- Row 3: Workload + Online Status -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-folder-open mr-0.5 text-gray-400"></i>3 cases</span>
-                                        <span class="text-gray-500"><i
-                                                class="fa-solid fa-list-check mr-0.5 text-gray-400"></i>1 task</span>
-                                        <span class="inline-flex items-center gap-1 text-gray-500">
-                                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>Away
-                                        </span>
+                                    <div class="text-xs text-gray-600">
+                                        <i class="fa-solid fa-folder-open text-gray-400 mr-1"></i>3 cases
+                                        <span class="text-gray-400 mx-1">·</span>
+                                        <i class="fa-solid fa-list-check text-gray-400 mr-0.5"></i>1 task
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-indigo-600"
-                                    title="Ask about this user">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
 
                         <!-- Compact Card - Disabled Account -->
                         <div
-                            class="chatbot-card-compact bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-all cursor-pointer group opacity-75">
-                            <div class="flex items-start gap-3">
+                            class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer opacity-75">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="w-9 h-9 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-semibold text-xs flex-shrink-0 mt-0.5">
+                                    class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-semibold flex-shrink-0">
                                     ER
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <!-- Row 1: Name + Account Status -->
-                                    <div class="flex items-center gap-2 mb-1.5">
-                                        <h3 class="text-sm font-semibold text-gray-900 truncate">Emily Rodriguez</h3>
+                                    <h3 class="text-sm font-semibold text-gray-900 truncate">Emily Rodriguez</h3>
+                                    <p class="text-xs text-gray-500 mt-0.5 whitespace-nowrap">Legal Analyst · Legal Affairs</p>
+                                </div>
+                                <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                                    <div class="flex items-center gap-2">
                                         <span
-                                            class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-600">
-                                            <i class="fa-solid fa-ban mr-0.5"></i>Disabled
+                                            class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
+                                            <i class="fa-solid fa-ban mr-1"></i>Disabled
                                         </span>
                                     </div>
-                                    <!-- Row 2: Title + Department -->
-                                    <div class="flex items-center gap-2 text-xs mb-1.5">
-                                        <span class="text-gray-700 font-medium">Legal Analyst</span>
-                                        <span class="text-gray-400">·</span>
-                                        <span class="text-gray-500">Legal Affairs</span>
-                                    </div>
-                                    <!-- Row 3: Account note -->
-                                    <div class="flex items-center gap-2 text-xs">
-                                        <span class="text-gray-400 italic"><i
-                                                class="fa-solid fa-info-circle mr-0.5"></i>Account disabled on Dec 15,
-                                            2024</span>
+                                    <div class="text-xs text-gray-500">
+                                        Disabled Dec 15, 2024
                                     </div>
                                 </div>
-                                <button
-                                    class="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 hover:bg-gray-100 rounded text-gray-400 hover:text-indigo-600"
-                                    title="Ask about this user">
-                                    <i class="fa-solid fa-comment-dots text-sm"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
